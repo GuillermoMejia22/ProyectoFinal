@@ -1,0 +1,18 @@
+Hola
+Hola que tal
+Bien 
+Me alegro
+
+Quisiera consultar mi imc
+Claro, dame tu nombre
+Juan
+tu edad
+42
+Peso
+80.5
+Estatura en metros
+1.72
+Cual es tu genero
+masculino
+
+Juan tu IMC es x

@@ -1,0 +1,30 @@
+version: "3.1"
+
+stories:
+
+- story: usuario feliz
+  steps:
+  - intent: saludar
+  - action: action_saludo
+  - intent: mood_feliz
+  - action: utter_feliz
+
+- story: happy path 1
+  steps:
+  - intent: saludar
+  - action: action_saludo
+  - intent: mood_triste
+  - action: utter_manda_gif
+  - action: utter_eso_ayudo
+  - intent: afirmacion
+  - action: utter_feliz
+
+- story: sad path 2
+  steps:
+  - intent: saludar
+  - action: action_saludo
+  - intent: mood_triste
+  - action: utter_manda_gif
+  - action: utter_eso_ayudo
+  - intent: negacion
+  - action: utter_animo

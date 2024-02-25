@@ -1,0 +1,189 @@
+version: "3.1"
+nlu:
+  - intent: saludar
+    examples: |
+      - hey
+      - hola
+      - muy buenas
+      - buenos días
+      - buenos dias
+      - buenas tardes
+      - buenas noches
+      - hola que tal
+      - que onda
+      - buenas
+      - ola
+      - que tal
+      - saludos
+      - hey hey
+  - intent: despedirse
+    examples: |
+      - nos vemos
+      - adiós
+      - adios
+      - nos vemos después
+      - hasta luego
+      - hasta pronto
+      - que tengas un lindo día
+      - bye bye
+      - bye
+      - hablamos más tarde
+      - hablamos después
+      - hablaremos luego
+  - intent: afirmacion
+    examples: |
+      - si
+      - es correcto
+      - claro
+      - por supuesto
+      - suena bien
+      - correcto
+      - así es
+      - asi es
+      - en efecto
+      - yes
+  - intent: negacion
+    examples: |
+      - no
+      - creo que no
+      - nunca
+      - no lo creo
+      - no me parece bien
+      - no realmente
+      - no coincido
+      - no estoy de acuerdo
+  - intent: mood_feliz
+    examples: |
+      - me siento muy bien
+      - bien
+      - increible
+      - sintiendome como un rey
+      - asombroso
+      - me estoy sintiendo muy bien
+      - estoy genial
+      - estoy asombroso
+      - siento como si fuera a salvar el mundo
+      - super feliz
+      - extremadamente bien
+      - muy pero muy bien
+      - genial
+      - estupendo
+      - soy la persona mas feliz del mundo
+      - me encuentro muy bien
+      - soy feliz como una lombriz
+      - soy feliz
+  - intent: mood_triste
+    examples: |
+      - mal
+      - mi dia fue horrible
+      - mi día fue horrible
+      - no fue mi día
+      - estoy triste
+      - no me siento muy bien
+      - estoy bajoneado
+      - estoy bajoneada
+      - estoy agüitado
+      - estoy agüitada
+      - super triste
+      - estoy muy pero muy triste
+      - he tenido días mejores
+      - he tenido dias mejores
+      - me ha ido mejor otras veces
+      - triste
+      - muy triste
+      - soy infeliz
+      - no muy bien
+      - extremadamente triste
+      - muuuuyyy triste
+      - muy mal
+  - intent: bot_challenge
+    examples: |
+      - ¿eres un bot?
+      - eres un bot?
+      - eres un bot
+      - ¿acaso eres un bot?
+      - estoy hablando con una persona?
+      - estoy hablando con una persona normal?
+      - eres real?
+      - ¿eres real?
+      - con quién tengo el gusto?
+      - ¿con quén tengo el gusto?
+      - con quién tengo el placer?
+      - ¿con quién tengo el placer?
+      - ¿eres una inteligencia artificial?
+      - ¿estoy hablando con chatgpt?
+      - acaso eres chatgpt?
+  - intent: solicitar_imc
+    examples: |
+      - quisiera saber mi imc
+      - quiero saber mi imc
+      - ¿me podrias decir cual es mi imc?
+      - ¿me dices mi imc por favor?
+      - ¿me ayudas a calcular mi imc?
+      - ¿me ayudas a conocer mi índice de masa corporal?
+      - quiero conocer mi índice de masa corporal
+      - necesito saber mi imc
+      - quiero mi IMC
+  - intent: dar_nombre
+    examples: |
+      - me llamo [Guillermo Mejia](nombre)
+      - me llamo [Guillermo Mejia Contreras](nombre)
+      - mi nombre es [Guillermo Mejia Contreras](nombre)
+      - [Guillermo Mejia](nombre)
+      - [Guillermo Mejia Contreras](nombre)
+      - [Guillermo](nombre)
+      - me llamo [Juan Perez](nombre)
+      - mi nombre es [Pancho Pantera](nombre)
+  - intent: dar_edad
+    examples: |
+      - tengo [22](edad) años
+      - tengo [22](edad)
+      - [19](edad)
+      - [54](edad) años
+      - tengo [78](edad) años de edad
+      - mi edad es [64](edad) años
+      - recíen cumplí [40](edad) años
+      - apenas tengo [30](edad) años
+  - intent: dar_genero
+    examples: |
+      - soy [masculino](genero)
+      - soy [femenino](genero)
+      - soy [hombre](genero)
+      - soy [mujer](genero)
+      - [masculino](genero)
+      - [femenino](genero)
+      - [mujer](genero)
+      - [hombre](genero)
+  - intent: dar_peso
+    examples: |
+      - peso [80.4](peso) kilos
+      - peso aproximadamente [73.5](peso) kilos
+      - peso [78.7] kgs
+      - peso [82.1] kg
+      - creo que peso [56.74](peso) kilos
+      - me parece ue peso [95.5](peso) kilos
+      - peso [70.45](peso)
+      - [68.2](peso)
+  - intent: no_se_mi_peso
+    examples: |
+      - no me he pesado
+      - no conozco mi peso
+      - no he ido a pesarme
+      - desconozco mi peso
+      - no se cuanto peso
+      - no sé mi peso
+  - intent: dar_estatura
+    examples: |
+      - mido aproximadamente [1.70](estatura)
+      - creo que mido [1.72](estatura)
+      - me parece que mido [1.57](estatura)
+      - mido [1.84](estatura)
+      - [1.75](estatura)
+  - intent: no_se_mi_estatura
+    examples: |
+      - no me he ido a medir
+      - no me he medido
+      - no se cuanto mido
+      - desconozco mi estatura
+      - no se mi estatura
+      - no conozco mi estatura

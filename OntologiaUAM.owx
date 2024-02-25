@@ -1,0 +1,1356 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM">
+    <Prefix name="" IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Academico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Administrativo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alumno"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BajoPeso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CondicionPeso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Coordinador"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Empleado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JefeDepartamento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Materia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Normal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Obesidad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Persona"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Profesor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sobrepeso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Visitante"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#esProfesorTitularDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneClave"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneCreditos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneEdad"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneEstatura"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneGenero"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneIMC"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneMatricula"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneNombreMateria"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tieneNombrePersona"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tienePeso"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#alu001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#alu002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#alu003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mat001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mat002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#mat003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#prof001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#prof002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#prof003"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Academico"/>
+        <Class IRI="#Empleado"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Academico"/>
+        <Class IRI="#Persona"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Administrativo"/>
+        <Class IRI="#Empleado"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Administrativo"/>
+        <Class IRI="#Persona"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alumno"/>
+        <Class IRI="#Persona"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BajoPeso"/>
+        <Class IRI="#CondicionPeso"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coordinador"/>
+        <Class IRI="#Academico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coordinador"/>
+        <Class IRI="#Empleado"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Coordinador"/>
+        <Class IRI="#Persona"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Empleado"/>
+        <Class IRI="#Persona"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JefeDepartamento"/>
+        <Class IRI="#Academico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JefeDepartamento"/>
+        <Class IRI="#Empleado"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JefeDepartamento"/>
+        <Class IRI="#Persona"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Normal"/>
+        <Class IRI="#CondicionPeso"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Obesidad"/>
+        <Class IRI="#CondicionPeso"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Profesor"/>
+        <Class IRI="#Academico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Profesor"/>
+        <Class IRI="#Empleado"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Profesor"/>
+        <Class IRI="#Persona"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sobrepeso"/>
+        <Class IRI="#CondicionPeso"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Visitante"/>
+        <Class IRI="#Persona"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Alumno"/>
+        <NamedIndividual IRI="#alu001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CondicionPeso"/>
+        <NamedIndividual IRI="#alu001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Persona"/>
+        <NamedIndividual IRI="#alu001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sobrepeso"/>
+        <NamedIndividual IRI="#alu001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alumno"/>
+        <NamedIndividual IRI="#alu002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CondicionPeso"/>
+        <NamedIndividual IRI="#alu002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Normal"/>
+        <NamedIndividual IRI="#alu002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Persona"/>
+        <NamedIndividual IRI="#alu002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Alumno"/>
+        <NamedIndividual IRI="#alu003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CondicionPeso"/>
+        <NamedIndividual IRI="#alu003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Normal"/>
+        <NamedIndividual IRI="#alu003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Persona"/>
+        <NamedIndividual IRI="#alu003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Materia"/>
+        <NamedIndividual IRI="#mat001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Materia"/>
+        <NamedIndividual IRI="#mat002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Materia"/>
+        <NamedIndividual IRI="#mat003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Academico"/>
+        <NamedIndividual IRI="#prof001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CondicionPeso"/>
+        <NamedIndividual IRI="#prof001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Empleado"/>
+        <NamedIndividual IRI="#prof001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Persona"/>
+        <NamedIndividual IRI="#prof001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profesor"/>
+        <NamedIndividual IRI="#prof001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sobrepeso"/>
+        <NamedIndividual IRI="#prof001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Academico"/>
+        <NamedIndividual IRI="#prof002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CondicionPeso"/>
+        <NamedIndividual IRI="#prof002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Empleado"/>
+        <NamedIndividual IRI="#prof002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Normal"/>
+        <NamedIndividual IRI="#prof002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Persona"/>
+        <NamedIndividual IRI="#prof002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profesor"/>
+        <NamedIndividual IRI="#prof002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Academico"/>
+        <NamedIndividual IRI="#prof003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CondicionPeso"/>
+        <NamedIndividual IRI="#prof003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Empleado"/>
+        <NamedIndividual IRI="#prof003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Normal"/>
+        <NamedIndividual IRI="#prof003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Persona"/>
+        <NamedIndividual IRI="#prof003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Profesor"/>
+        <NamedIndividual IRI="#prof003"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#alu001"/>
+        <NamedIndividual IRI="#mat001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#alu001"/>
+        <NamedIndividual IRI="#prof001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#alu002"/>
+        <NamedIndividual IRI="#mat001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#alu002"/>
+        <NamedIndividual IRI="#mat002"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#alu002"/>
+        <NamedIndividual IRI="#mat003"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#alu002"/>
+        <NamedIndividual IRI="#prof001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#alu002"/>
+        <NamedIndividual IRI="#prof002"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#alu002"/>
+        <NamedIndividual IRI="#prof003"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#alu003"/>
+        <NamedIndividual IRI="#mat001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#alu003"/>
+        <NamedIndividual IRI="#mat002"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <NamedIndividual IRI="#alu003"/>
+        <NamedIndividual IRI="#mat003"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#alu003"/>
+        <NamedIndividual IRI="#prof001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#alu003"/>
+        <NamedIndividual IRI="#prof002"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <NamedIndividual IRI="#alu003"/>
+        <NamedIndividual IRI="#prof003"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esProfesorTitularDe"/>
+        <NamedIndividual IRI="#prof001"/>
+        <NamedIndividual IRI="#mat001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esProfesorTitularDe"/>
+        <NamedIndividual IRI="#prof002"/>
+        <NamedIndividual IRI="#mat003"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#esProfesorTitularDe"/>
+        <NamedIndividual IRI="#prof003"/>
+        <NamedIndividual IRI="#mat002"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#alu001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEstatura"/>
+        <NamedIndividual IRI="#alu001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.73</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#alu001"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneIMC"/>
+        <NamedIndividual IRI="#alu001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">26.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneMatricula"/>
+        <NamedIndividual IRI="#alu001"/>
+        <Literal>2193001028</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#alu001"/>
+        <Literal>Guillermo Mejia Contreras</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tienePeso"/>
+        <NamedIndividual IRI="#alu001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">78.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#alu002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEstatura"/>
+        <NamedIndividual IRI="#alu002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.85</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#alu002"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneIMC"/>
+        <NamedIndividual IRI="#alu002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">23.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneMatricula"/>
+        <NamedIndividual IRI="#alu002"/>
+        <Literal>162210309</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#alu002"/>
+        <Literal>Juan Perez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tienePeso"/>
+        <NamedIndividual IRI="#alu002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">80.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#alu003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEstatura"/>
+        <NamedIndividual IRI="#alu003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.64</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#alu003"/>
+        <Literal>Femenino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneIMC"/>
+        <NamedIndividual IRI="#alu003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">18.88</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneMatricula"/>
+        <NamedIndividual IRI="#alu003"/>
+        <Literal>2193000496</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#alu003"/>
+        <Literal>Karen Lizeth</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tienePeso"/>
+        <NamedIndividual IRI="#alu003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">50.78</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneClave"/>
+        <NamedIndividual IRI="#mat001"/>
+        <Literal>CBI001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCreditos"/>
+        <NamedIndividual IRI="#mat001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <NamedIndividual IRI="#mat001"/>
+        <Literal>Bases de Datos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneClave"/>
+        <NamedIndividual IRI="#mat002"/>
+        <Literal>CBI002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCreditos"/>
+        <NamedIndividual IRI="#mat002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <NamedIndividual IRI="#mat002"/>
+        <Literal>Programación Orientada a Servicios</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneClave"/>
+        <NamedIndividual IRI="#mat003"/>
+        <Literal>CBI003</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneCreditos"/>
+        <NamedIndividual IRI="#mat003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <NamedIndividual IRI="#mat003"/>
+        <Literal>Algoritmos y Estructuras de Datos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#prof001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEstatura"/>
+        <NamedIndividual IRI="#prof001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.72</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#prof001"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneIMC"/>
+        <NamedIndividual IRI="#prof001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">25.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#prof001"/>
+        <Literal>Rodrigo Alexander Castro Campos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tienePeso"/>
+        <NamedIndividual IRI="#prof001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">75.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#prof002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">42</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEstatura"/>
+        <NamedIndividual IRI="#prof002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.65</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#prof002"/>
+        <Literal>Femenino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneIMC"/>
+        <NamedIndividual IRI="#prof002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">20.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#prof002"/>
+        <Literal>Virginia Cuevas Mejia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tienePeso"/>
+        <NamedIndividual IRI="#prof002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">55.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEdad"/>
+        <NamedIndividual IRI="#prof003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneEstatura"/>
+        <NamedIndividual IRI="#prof003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.64</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneGenero"/>
+        <NamedIndividual IRI="#prof003"/>
+        <Literal>Femenino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneIMC"/>
+        <NamedIndividual IRI="#prof003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">21.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <NamedIndividual IRI="#prof003"/>
+        <Literal>Sandra Loera</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tienePeso"/>
+        <NamedIndividual IRI="#prof003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">56.7</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esProfesorTitularDe"/>
+        <Class IRI="#Academico"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esProfesorTitularDe"/>
+        <Class IRI="#Empleado"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esProfesorTitularDe"/>
+        <Class IRI="#Persona"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#esProfesorTitularDe"/>
+        <Class IRI="#Profesor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <Class IRI="#Alumno"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <Class IRI="#Persona"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <Class IRI="#Alumno"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <Class IRI="#Persona"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#esProfesorTitularDe"/>
+        <Class IRI="#Materia"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#estaInscritoEn"/>
+        <Class IRI="#Materia"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <Class IRI="#Academico"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <Class IRI="#Empleado"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <Class IRI="#Persona"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#tomaClaseCon"/>
+        <Class IRI="#Profesor"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneClave"/>
+        <Class IRI="#Materia"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneCreditos"/>
+        <Class IRI="#Materia"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneEdad"/>
+        <Class IRI="#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneEstatura"/>
+        <Class IRI="#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneGenero"/>
+        <Class IRI="#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneIMC"/>
+        <Class IRI="#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneMatricula"/>
+        <Class IRI="#Alumno"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneMatricula"/>
+        <Class IRI="#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <Class IRI="#Materia"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <Class IRI="#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tienePeso"/>
+        <Class IRI="#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneClave"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneCreditos"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneEdad"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneEstatura"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneGenero"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneIMC"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneMatricula"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneNombreMateria"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tieneNombrePersona"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tienePeso"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Listado de alumnos y los profesores con los que toman alguna materia</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>AlumnosTomanClaseCon</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Profesor"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Alumno"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Materia"/>
+                <Variable IRI="/materia"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tieneNombrePersona"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/nombreProf"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tieneNombrePersona"/>
+                <Variable IRI="/a"/>
+                <Variable IRI="/nombreAlu"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tieneNombreMateria"/>
+                <Variable IRI="/materia"/>
+                <Variable IRI="/nombreMat"/>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#esProfesorTitularDe"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/materia"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#estaInscritoEn"/>
+                <Variable IRI="/a"/>
+                <Variable IRI="/materia"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/nombreAlu"/>
+                <Variable IRI="/nombreProf"/>
+                <Variable IRI="/nombreMat"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Regla de inferencia para encontrar la relacion de tomaClaseCon</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>TomaClaseCon</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Profesor"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Alumno"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#Materia"/>
+                <Variable IRI="/materia"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tieneNombrePersona"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/nombreProf"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tieneNombrePersona"/>
+                <Variable IRI="/a"/>
+                <Variable IRI="/nombreAlumno"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tieneNombreMateria"/>
+                <Variable IRI="/materia"/>
+                <Variable IRI="/nombreMat"/>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#esProfesorTitularDe"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/materia"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#estaInscritoEn"/>
+                <Variable IRI="/a"/>
+                <Variable IRI="/materia"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#tomaClaseCon"/>
+                <Variable IRI="/a"/>
+                <Variable IRI="/p"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Lista de Materias por Alumno</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>MateriasPorAlumno</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Alumno"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tieneNombrePersona"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/nombre"/>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#estaInscritoEn"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/materia"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/nombre"/>
+                <Variable IRI="/materia"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Obtener peso y altura de las personas</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>DatosPesoYAltura</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Persona"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tienePeso"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/w"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tieneEstatura"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/h"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/p"/>
+                <Variable IRI="/w"/>
+                <Variable IRI="/h"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Infiere el valor del IMC por cada Persona</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>CalculaIMC</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Persona"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tienePeso"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/w"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tieneEstatura"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/h"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#multiply">
+                <Variable IRI="/altura2"/>
+                <Variable IRI="/h"/>
+                <Variable IRI="/h"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#divide">
+                <Variable IRI="/imc"/>
+                <Variable IRI="/w"/>
+                <Variable IRI="/altura2"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tieneIMC"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/imc"/>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Calculo del Indice de Masa Corporal</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>IMC</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Persona"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tienePeso"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/w"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tieneEstatura"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/h"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#multiply">
+                <Variable IRI="/altura2"/>
+                <Variable IRI="/h"/>
+                <Variable IRI="/h"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#divide">
+                <Variable IRI="/imc"/>
+                <Variable IRI="/w"/>
+                <Variable IRI="/altura2"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/p"/>
+                <Variable IRI="/imc"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Regla que identifica a las personas con peso normal</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>InfiereNormal</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Persona"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tieneIMC"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/imc"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="/imc"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">18.5</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="/imc"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24.9</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Normal"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Regla para determinar la clase de individuos que estan en sobrepeso</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>InfiereSobrePeso</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Persona"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tieneIMC"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/imc"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="/imc"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25.0</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="/imc"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">29.9</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Sobrepeso"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Regla para determinar los individuos que pertenecen a la clase de Obesidad</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>InfiereObesidad</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Persona"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tieneIMC"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/imc"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="/imc"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30.0</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Obesidad"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Regla para identificar individuos que estan en bajo peso</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>InfiereBajoPeso</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Persona"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tieneIMC"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/imc"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="/imc"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">18.5</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#BajoPeso"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Materias que imparte cada Profesor</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>MateriasProfesor</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Profesor"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tieneNombrePersona"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/nombre"/>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#esProfesorTitularDe"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/materia"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/nombre"/>
+                <Variable IRI="/materia"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Lista de profesores mayores de edad</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>ProfesoresMayores</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Profesor"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tieneNombrePersona"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/nombre"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tieneEdad"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/edad"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="/edad"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/nombre"/>
+                <Variable IRI="/edad"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Listado de profesores del genero femenino</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Profesoras</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Profesor"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tieneGenero"/>
+                <Variable IRI="/p"/>
+                <Literal>Femenino</Literal>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#tieneNombrePersona"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/nombre"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/nombre"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

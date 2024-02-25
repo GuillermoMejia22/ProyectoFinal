@@ -1,0 +1,106 @@
+version: "3.1"
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+  - saludar
+  - despedirse
+  - afirmacion
+  - negacion
+  - mood_feliz
+  - mood_triste
+  - bot_challenge
+  - solicitar_imc
+  - dar_nombre
+  - dar_edad
+  - dar_genero
+  - dar_peso
+  - no_se_mi_peso
+  - no_se_mi_estatura
+  - dar_estatura
+entities:
+  - nombre
+  - edad
+  - peso
+  - estatura
+  - genero
+slots:
+  nombre:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: nombre
+        active_loop: datos_generales_form
+      - type: from_entity
+        entity: nombre
+  edad:
+    type: float
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: edad
+        active_loop: datos_generales_form
+      - type: from_entity
+        entity: edad
+  peso:
+    type: float
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: peso
+        active_loop: datos_generales_form
+      - type: from_entity
+        entity: peso
+  estatura:
+    type: float
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: estatura
+        active_loop: datos_generales_form
+      - type: from_entity
+        entity: estatura
+  genero:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: genero
+        active_loop: datos_generales_form
+      - type: from_entity
+        entity: genero
+responses:
+  utter_manda_gif:
+    - text: "Espero esto te anime:"
+      image: https://i.imgur.com/tl91hI5.gif
+  utter_eso_ayudo:
+    - text: ¿Eso te animó?
+  utter_feliz:
+    - text: ¡Excelente, sigue así!
+  utter_soy_un_bot:
+    - text: Soy un bot de Rasa desarrollado por Guillermo Mejía
+  utter_animo:
+    - text: Trata de hacer algo que te guste para que te animes un poco :)
+  utter_solicitar_nombre:
+    - text: Claro, puedes proporcionarme tu nombre por favor
+  utter_solicitar_genero:
+    - text: Puedes proporcionarme tu género por favor
+  utter_solicitar_edad:
+    - text: Puedes proporcionarme tu edad por favor
+  utter_solicitar_peso:
+    - text: Puedes proporcionarme tu peso por favor
+  utter_solicitar_estatura:
+    - text: Puedes proporcionarme tu estatura por favor
+actions:
+  - action_saludo
+  - action_despedida
+  - action_calcular_imc
+forms:
+  datos_generales_form:
+    required_slots:
+      - nombre
+      - edad
+      - peso
+      - estatura
+      - genero
