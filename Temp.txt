@@ -1,0 +1,58 @@
+- story: interactive_story_1
+  steps:
+  - intent: saludar
+  - action: action_saludo
+  - intent: mood_feliz
+  - action: utter_feliz
+  - action: utter_en_que_puedo_ayudarte
+  - intent: solicitar_imc
+  - action: datos_generales_form
+  - active_loop: datos_generales_form
+  - slot_was_set:
+    - requested_slot: nombre
+  - intent: dar_nombre
+    entities:
+    - nombre: Guillermo Mejia Contreras
+  - slot_was_set:
+    - nombre: Guillermo Mejia Contreras
+  - action: datos_generales_form
+  - slot_was_set:
+    - requested_slot: edad
+  - intent: dar_edad
+    entities:
+    - edad: '22'
+  - slot_was_set:
+    - edad: '22'
+  - action: datos_generales_form
+  - slot_was_set:
+    - requested_slot: peso
+  - intent: dar_peso
+    entities:
+    - peso: '82.1'
+  - slot_was_set:
+    - peso: '82.1'
+  - action: datos_generales_form
+  - slot_was_set:
+    - requested_slot: estatura
+  - intent: dar_estatura
+    entities:
+    - estatura: '1.73'
+  - slot_was_set:
+    - estatura: '1.73'
+  - action: datos_generales_form
+  - slot_was_set:
+    - requested_slot: genero
+  - intent: dar_genero
+    entities:
+    - genero: masculino
+  - slot_was_set:
+    - genero: masculino
+  - action: datos_generales_form
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_calcular_imc
+  - intent: agradecer_ayuda
+  - action: utter_de_nada
+  - intent: despedirse
+  - action: action_despedida

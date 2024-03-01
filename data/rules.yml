@@ -2,11 +2,26 @@ version: "3.1"
 rules:
   - rule: Say goodbye anytime the user says goodbye
     steps:
-      - intent: despedirse
-      - action: action_despedida
+    - intent: despedirse
+    - action: action_despedida
 
   - rule: Say 'I am a bot' anytime the user challenges
     steps:
-      - intent: bot_challenge
-      - action: utter_soy_un_bot
-
+    - intent: bot_challenge
+    - action: utter_soy_un_bot
+  
+  - rule: Activar Form Datos Generales
+    steps:
+    - intent: solicitar_imc
+    - action: datos_generales_form
+    - active_loop: datos_generales_form
+  
+  - rule: Submit Form Datos Generales
+    condition:
+    - active_loop: datos_generales_form
+    steps:
+    - action: datos_generales_form
+    - active_loop: null
+    - slot_was_set:
+      - requested_slot: null
+    - action: action_calcular_imc

@@ -1,189 +1,767 @@
 version: "3.1"
 nlu:
-  - intent: saludar
-    examples: |
-      - hey
-      - hola
-      - muy buenas
-      - buenos días
-      - buenos dias
-      - buenas tardes
-      - buenas noches
-      - hola que tal
-      - que onda
-      - buenas
-      - ola
-      - que tal
-      - saludos
-      - hey hey
-  - intent: despedirse
-    examples: |
-      - nos vemos
-      - adiós
-      - adios
-      - nos vemos después
-      - hasta luego
-      - hasta pronto
-      - que tengas un lindo día
-      - bye bye
-      - bye
-      - hablamos más tarde
-      - hablamos después
-      - hablaremos luego
-  - intent: afirmacion
-    examples: |
-      - si
-      - es correcto
-      - claro
-      - por supuesto
-      - suena bien
-      - correcto
-      - así es
-      - asi es
-      - en efecto
-      - yes
-  - intent: negacion
-    examples: |
-      - no
-      - creo que no
-      - nunca
-      - no lo creo
-      - no me parece bien
-      - no realmente
-      - no coincido
-      - no estoy de acuerdo
-  - intent: mood_feliz
-    examples: |
-      - me siento muy bien
-      - bien
-      - increible
-      - sintiendome como un rey
-      - asombroso
-      - me estoy sintiendo muy bien
-      - estoy genial
-      - estoy asombroso
-      - siento como si fuera a salvar el mundo
-      - super feliz
-      - extremadamente bien
-      - muy pero muy bien
-      - genial
-      - estupendo
-      - soy la persona mas feliz del mundo
-      - me encuentro muy bien
-      - soy feliz como una lombriz
-      - soy feliz
-  - intent: mood_triste
-    examples: |
-      - mal
-      - mi dia fue horrible
-      - mi día fue horrible
-      - no fue mi día
-      - estoy triste
-      - no me siento muy bien
-      - estoy bajoneado
-      - estoy bajoneada
-      - estoy agüitado
-      - estoy agüitada
-      - super triste
-      - estoy muy pero muy triste
-      - he tenido días mejores
-      - he tenido dias mejores
-      - me ha ido mejor otras veces
-      - triste
-      - muy triste
-      - soy infeliz
-      - no muy bien
-      - extremadamente triste
-      - muuuuyyy triste
-      - muy mal
-  - intent: bot_challenge
-    examples: |
-      - ¿eres un bot?
-      - eres un bot?
-      - eres un bot
-      - ¿acaso eres un bot?
-      - estoy hablando con una persona?
-      - estoy hablando con una persona normal?
-      - eres real?
-      - ¿eres real?
-      - con quién tengo el gusto?
-      - ¿con quén tengo el gusto?
-      - con quién tengo el placer?
-      - ¿con quién tengo el placer?
-      - ¿eres una inteligencia artificial?
-      - ¿estoy hablando con chatgpt?
-      - acaso eres chatgpt?
-  - intent: solicitar_imc
-    examples: |
-      - quisiera saber mi imc
-      - quiero saber mi imc
-      - ¿me podrias decir cual es mi imc?
-      - ¿me dices mi imc por favor?
-      - ¿me ayudas a calcular mi imc?
-      - ¿me ayudas a conocer mi índice de masa corporal?
-      - quiero conocer mi índice de masa corporal
-      - necesito saber mi imc
-      - quiero mi IMC
-  - intent: dar_nombre
-    examples: |
-      - me llamo [Guillermo Mejia](nombre)
-      - me llamo [Guillermo Mejia Contreras](nombre)
-      - mi nombre es [Guillermo Mejia Contreras](nombre)
-      - [Guillermo Mejia](nombre)
-      - [Guillermo Mejia Contreras](nombre)
-      - [Guillermo](nombre)
-      - me llamo [Juan Perez](nombre)
-      - mi nombre es [Pancho Pantera](nombre)
-  - intent: dar_edad
-    examples: |
-      - tengo [22](edad) años
-      - tengo [22](edad)
-      - [19](edad)
-      - [54](edad) años
-      - tengo [78](edad) años de edad
-      - mi edad es [64](edad) años
-      - recíen cumplí [40](edad) años
-      - apenas tengo [30](edad) años
-  - intent: dar_genero
-    examples: |
-      - soy [masculino](genero)
-      - soy [femenino](genero)
-      - soy [hombre](genero)
-      - soy [mujer](genero)
-      - [masculino](genero)
-      - [femenino](genero)
-      - [mujer](genero)
-      - [hombre](genero)
-  - intent: dar_peso
-    examples: |
-      - peso [80.4](peso) kilos
-      - peso aproximadamente [73.5](peso) kilos
-      - peso [78.7] kgs
-      - peso [82.1] kg
-      - creo que peso [56.74](peso) kilos
-      - me parece ue peso [95.5](peso) kilos
-      - peso [70.45](peso)
-      - [68.2](peso)
-  - intent: no_se_mi_peso
-    examples: |
-      - no me he pesado
-      - no conozco mi peso
-      - no he ido a pesarme
-      - desconozco mi peso
-      - no se cuanto peso
-      - no sé mi peso
-  - intent: dar_estatura
-    examples: |
-      - mido aproximadamente [1.70](estatura)
-      - creo que mido [1.72](estatura)
-      - me parece que mido [1.57](estatura)
-      - mido [1.84](estatura)
-      - [1.75](estatura)
-  - intent: no_se_mi_estatura
-    examples: |
-      - no me he ido a medir
-      - no me he medido
-      - no se cuanto mido
-      - desconozco mi estatura
-      - no se mi estatura
-      - no conozco mi estatura
+- intent: saludar
+  examples: |
+    - hey
+    - hola
+    - muy buenas
+    - buenos días
+    - buenos dias
+    - buenas tardes
+    - buenas noches
+    - hola que tal
+    - que onda
+    - buenas
+    - ola
+    - que tal
+    - saludos
+    - hey hey
+    - Holaaaa
+    - Hola
+    - hola bot
+    - ¿cómo estás?
+    - saludos desde aquí
+    - buenas vibras
+    - hola, ¿qué hay de nuevo?
+    - ¡Hola! ¿Cómo va todo?
+    - hi
+    - saludos cordiales
+    - hola amigo
+    - qué pasa
+    - buen día
+    - hi there
+    - ¿qué tal estás?
+    - buenos días, bot
+    - hello
+    - ¿cómo va todo?
+- intent: despedirse
+  examples: |
+    - nos vemos
+    - adiós
+    - adios
+    - nos vemos después
+    - hasta luego
+    - hasta pronto
+    - que tengas un lindo día
+    - bye bye
+    - bye
+    - hablamos más tarde
+    - hablamos después
+    - hablaremos luego
+    - Hablamos luego
+    - De momento no, pero hablamos después
+    - Sería todo, hablamos después
+    - nos vemos pronto
+    - hasta la próxima
+    - adiós por ahora
+    - chao
+    - nos hablamos luego
+    - hasta la vista
+    - cuídate
+    - adiós, amigo
+    - bye for now
+    - nos vemos más tarde
+    - hasta pronto, bot
+    - nos vemos en un rato
+    - adiós, nos vemos
+    - bye bye, hasta luego
+    - No, hablamos despues
+    - hablamos luego
+- intent: afirmacion
+  examples: |
+    - si
+    - es correcto
+    - claro
+    - por supuesto
+    - suena bien
+    - correcto
+    - así es
+    - asi es
+    - en efecto
+    - yes
+    - sipi
+    - sip
+    - exacto
+    - obvio
+    - desde luego
+    - definitivamente
+    - ciertamente
+    - absolutamente
+    - indudablemente
+    - de acuerdo
+    - de una
+    - completamente
+    - vale
+    - seguro
+    - entendido
+    - sin duda
+    - por supuesto, sí
+    - ¡claro que sí!
+    - afirmativo
+    - claro que sí
+    - por supuesto, estoy de acuerdo
+    - absolutamente de acuerdo
+    - estoy de acuerdo
+    - totalmente de acuerdo
+    - claro, sin problemas
+    - de acuerdo, sí
+    - sí, sin duda
+    - ¡sí, por supuesto!
+    - desde luego, sí
+    - totalmente
+    - exactamente así
+    - claro, estoy de acuerdo
+    - por supuesto, sin duda
+- intent: negacion
+  examples: |
+    - no
+    - creo que no
+    - nunca
+    - no lo creo
+    - no me parece bien
+    - no realmente
+    - no coincido
+    - no estoy de acuerdo
+    - nop
+    - para nada
+    - de ninguna manera
+    - ni hablar
+    - imposible
+    - definitivamente no
+    - no way
+    - lo siento, no
+    - no, no creo
+    - lo siento, pero no
+    - no, en absoluto
+    - no estoy seguro
+    - no pienso así
+    - no, de ninguna forma
+    - no, para nada
+    - no, lo siento
+    - no, no estoy de acuerdo
+    - no, no creo eso
+    - no, eso no suena bien
+    - lo siento, pero no estoy de acuerdo
+    - no, no me gusta
+    - no, eso no funciona para mí
+    - no, eso no es correcto
+    - no, no quiero
+- intent: mood_feliz
+  examples: |
+    - me siento muy bien
+    - bien
+    - increíble
+    - asombroso
+    - me estoy sintiendo muy bien
+    - estoy genial
+    - estoy asombroso
+    - siento como si fuera a salvar el mundo
+    - super feliz
+    - extremadamente bien
+    - muy pero muy bien
+    - genial
+    - estupendo
+    - soy la persona más feliz del mundo
+    - me encuentro muy bien
+    - soy feliz como una lombriz
+    - soy feliz
+    - super bien gracias
+    - muy bien
+    - muy bien gracias
+    - excelente
+    - de maravilla
+    - radiante
+    - contento
+    - felizmente
+    - de buen humor
+    - emocionado
+    - lleno de alegría
+    - positivo y feliz
+    - dichoso
+    - optimista
+    - vibrante de felicidad
+    - gozoso
+    - jubiloso
+    - encantado
+    - lleno de felicidad
+    - radiante de alegría
+    - saltando de alegría
+    - rebosante de felicidad
+    - Muy bien
+- intent: mood_triste
+  examples: |
+    - mal
+    - mi día fue horrible
+    - no fue mi día
+    - estoy triste
+    - no me siento muy bien
+    - estoy bajoneado
+    - estoy bajoneada
+    - estoy agüitado
+    - estoy agüitada
+    - super triste
+    - estoy muy pero muy triste
+    - he tenido días mejores
+    - me ha ido mejor otras veces
+    - triste
+    - muy triste
+    - soy infeliz
+    - no muy bien
+    - extremadamente triste
+    - muuuuyyy triste
+    - muy mal
+    - devastado
+    - deprimido
+    - abatido
+    - afligido
+    - desanimado
+    - descorazonado
+    - apesadumbrado
+    - desilusionado
+    - melancólico
+    - desalentado
+    - abrumado
+    - desesperanzado
+    - sombrío
+    - desconsolado
+    - desolado
+    - agobiado
+    - desgarrado
+    - descontento
+    - insatisfecho
+- intent: bot_challenge
+  examples: |
+    - ¿eres un bot?
+    - eres un bot?
+    - eres un bot
+    - ¿acaso eres un bot?
+    - estoy hablando con una persona?
+    - estoy hablando con una persona normal?
+    - eres real?
+    - ¿eres real?
+    - con quién tengo el gusto?
+    - ¿con quién tengo el gusto?
+    - con quién tengo el placer?
+    - ¿con quién tengo el placer?
+    - ¿eres una inteligencia artificial?
+    - ¿estoy hablando con chatgpt?
+    - acaso eres chatgpt?
+    - Acaso eres real?
+    - eres humano?
+    - eres una máquina?
+    - eres un programa de computadora?
+    - ¿eres una IA?
+    - eres de verdad?
+    - ¿tienes emociones?
+    - ¿puedes sentir?
+    - ¿eres consciente?
+    - ¿eres consciente de ti mismo?
+    - ¿puedes soñar?
+    - ¿tienes sueños?
+    - ¿qué es lo que sientes?
+- intent: solicitar_imc
+  examples: |
+    - quisiera saber mi imc
+    - quiero saber mi imc
+    - ¿me podrias decir cual es mi imc?
+    - ¿me dices mi imc por favor?
+    - ¿me ayudas a calcular mi imc?
+    - ¿me ayudas a conocer mi índice de masa corporal?
+    - quiero conocer mi índice de masa corporal
+    - necesito saber mi imc
+    - quiero mi IMC
+    - Me gustaría saber cuál es mi imc
+    - Quiero saber mi imc
+    - quiero saber el imc de un paciente
+    - quiero calcular el índice de masa corporal de un paciente
+    - ayúdame a calcular el imc de un paciente
+    - ¿cuál es mi imc actual?
+    - ¿puedes darme mi imc?
+    - necesito conocer mi índice de masa corporal ahora
+    - quiero calcular el imc de una persona
+    - quiero mi imc
+- intent: dar_nombre
+  examples: |
+    - me llamo [Guillermo Mejia](nombre)
+    - me llamo [Guillermo Mejia Contreras](nombre)
+    - mi nombre es [Guillermo Mejia Contreras](nombre)
+    - [Guillermo Mejia](nombre)
+    - [Guillermo Mejia Contreras](nombre)
+    - [Guillermo](nombre)
+    - me llamo [Juan Perez](nombre)
+    - mi nombre es [Pancho Pantera](nombre)
+    - [Sebastian Castellanos](nombre)
+    - Soy [Guillermo Mejia](nombre)
+    - Puedes llamarme [Guillermo](nombre)
+    - [Guillermo Contreras](nombre) es mi nombre
+    - me llamo [Ana Ramírez](nombre)
+    - [Carlos Pérez](nombre) es mi nombre
+    - mi nombre es [Luisa González](nombre)
+    - soy [Pedro García](nombre)
+    - [Laura Martínez](nombre) es como me llamo
+    - [Roberto Hernández](nombre)
+    - me puedes llamar [Sofía Rodríguez](nombre)
+    - soy [Javier Vargas](nombre)
+    - [Isabella López](nombre) es mi nombre completo
+    - me llaman [Juan Carlos](nombre)
+    - [María Fernández](nombre) es como me identifico
+    - [Diego Castro](nombre) es mi nombre
+    - puedes decirme [Lucía](nombre)
+    - me conocen como [Ricardo](nombre)
+    - me dicen [Diana](nombre)
+    - [Fernando Morales](nombre) es mi identidad
+    - [Valentina](nombre) es como me llaman
+    - [Eduardo](nombre) es mi nombre
+    - me apodan [Monica](nombre)
+    - me dicen [Miguel Ángel](nombre)
+    - me llamo [María García](nombre)
+    - [Jorge Rodríguez](nombre) es mi nombre completo
+    - soy [Andrea Pérez](nombre)
+    - me dicen [Luis Torres](nombre)
+    - [Ana](nombre) es como me conocen
+    - [Carlos Martínez](nombre) es mi identidad
+    - me llaman [Sara](nombre)
+    - mi nombre es [Daniel Ramírez](nombre)
+    - soy [Laura González](nombre)
+    - [Eduardo](nombre) es como me llamo
+    - [Isabel](nombre) es mi nombre
+    - me conocen como [Alejandro](nombre)
+    - [Carmen](nombre) es mi identificación
+    - soy [Manuel López](nombre)
+    - [Patricia](nombre) es como me identifico
+    - [Francisco](nombre) es mi nombre completo
+    - [Silvia](nombre) es mi identidad
+    - [Miguel Ángel](nombre) es como me llaman
+    - me apodan [Verónica](nombre)
+    - [Gabriel](nombre) es mi nombre
+    - me dicen [Rosa](nombre)
+    - [José Luis](nombre) es como me identifico
+    - [Laura](nombre) es como me llamo
+    - [Fernando](nombre) es mi nombre completo
+    - soy [Adriana](nombre)
+    - [Roberto](nombre) es como me conocen
+    - [Ana María](nombre) es mi identificación
+    - [Luis](nombre) es como me llamo
+    - me llamo [Sofía](nombre)
+    - [Carlos](nombre) es mi nombre
+    - me conocen como [Valentina](nombre)
+    - [Javier](nombre) es mi identidad
+    - soy [Marina](nombre)
+    - [Lorenzo](nombre) es como me llamo
+    - [Camila](nombre) es mi nombre completo
+    - [Martín](nombre) es mi identificación
+    - me llaman [Isabella](nombre)
+    - [Diego](nombre) es como me conocen
+    - [Lucía](nombre) es mi identidad
+    - me llaman [Mateo](nombre)
+    - [Emma](nombre) es mi nombre
+    - soy [Iker](nombre)
+    - [Paula](nombre) es como me identifico
+    - [Hugo](nombre) es mi nombre completo
+    - [Mía](nombre) es mi identificación
+    - [Alejandro](nombre) es como me llaman
+    - soy [Catalina](nombre)
+    - [Adrián](nombre) es mi nombre
+    - [Fabiola](nombre) es mi identificación
+    - [Felipe](nombre) es como me llamo
+    - [Renata](nombre) es mi nombre completo
+    - [Lucas](nombre) es mi identificación
+    - [Victoria](nombre) es como me conocen
+    - [Emilio](nombre) es mi identidad
+    - me llaman [Bianca](nombre)
+    - [Maximiliano](nombre) es mi nombre
+    - [Daniela](nombre) es como me identifico
+    - [Sebastián](nombre) es como me llaman
+    - [Pamela Daniela Angeles Garcia](nombre)
+    - [Blanca Araceli Contreras Mondragon](nombre)
+    - [Anel Araceli Mejia Contreras](nombre)
+    - me llamo [Edgar Suarez Mejia](nombre)
+    - [Guillermo Mejia Olmos](nombre)
+    - me llamo [Karen Lizeth Romero Morales](nombre)
+    - [Ximena Lobera Ordoñez](nombre)
+    - [Alexis Sanchez Martinez](nombre)
+    - [Juan Perez](nombre)
+    - [Alonso Sanchez](nombre)
+    - [Beatriz Adriana](nombre)
+    - [Beatriz](nombre)
+    - [Maricela](nombre)
+    - [Maricela Claudia](nombre)
+    - me llamo [claudia](nombre)
+    - [Denisse Torres](nombre)
+    - me llamo [Luisa](nombre)
+    - me conocen como [Valentín](nombre)
+    - [Aurora](nombre) es mi identidad
+    - soy [Mario](nombre)
+    - [Gabriela](nombre) es mi nombre completo
+    - [Roberto](nombre) es mi identificación
+    - me llaman [Isabel](nombre)
+    - [Juan](nombre) es como me conocen
+    - [Laura](nombre) es mi identidad
+    - me llaman [Gustavo](nombre)
+    - [Carmen](nombre) es mi nombre
+    - soy [Santiago](nombre)
+    - [María](nombre) es como me identifico
+    - [Raúl](nombre) es mi nombre completo
+    - [Verónica](nombre) es mi identificación
+    - [Joaquín](nombre) es como me llamo
+    - soy [René](nombre)
+    - [Diana](nombre) es mi nombre
+    - [Francisco](nombre) es mi identificación
+    - [Andrea](nombre) es como me llamo
+    - [Jorge](nombre) es mi nombre completo
+    - [Ana](nombre) es mi identificación
+    - [Pablo](nombre) es como me conocen
+    - [Natalia](nombre) es mi identidad
+    - me llaman [Felipe](nombre)
+    - [Julia](nombre) es mi nombre
+    - [Antonio](nombre) es como me identifico
+    - [Carla](nombre) es como me llaman
+    - [José](nombre) es mi identidad
+    - [Camilo](nombre) es mi nombre completo
+    - [Mónica](nombre) es mi identificación
+    - [Héctor](nombre) es como me llamo
+    - me llamo [Lucía](nombre)
+    - [Martín](nombre) es mi nombre
+    - me conocen como [Valeria](nombre)
+    - [Rodrigo](nombre) es mi identidad
+    - soy [Fabiola](nombre)
+    - [Alejandro](nombre) es mi nombre completo
+    - [Daniela](nombre) es mi identificación
+    - me llaman [Hugo](nombre)
+    - [Sofía](nombre) es como me conocen
+    - [Maximiliano](nombre) es mi identidad
+    - me llaman [Lorena](nombre)
+    - soy [Elena](nombre)
+    - [Óscar](nombre) es mi identificación
+    - [Catalina](nombre) es como me llamo
+    - soy [Esteban](nombre)
+    - [Valentina](nombre) es mi nombre
+    - [Adrián](nombre) es mi identificación
+    - [Mariana](nombre) es como me identifico
+    - [Ricardo](nombre) es mi nombre completo
+    - [Victoria](nombre) es mi identidad
+    - [Josué](nombre) es como me conocen
+    - [Alicia](nombre) es mi identificación
+    - [Jaime](nombre) es mi nombre
+    - [Gabriela](nombre) es como me llamo
+    - [Javier](nombre) es mi identificación
+    - me llaman [Rafael](nombre)
+    - [Silvia](nombre) es mi nombre
+    - [Manuel](nombre) es mi identificación
+    - [Eva](nombre) es como me conocen
+    - [Diego](nombre) es mi identificación
+    - [Camila](nombre) es como me llamo
+    - soy [Juanita](nombre)
+    - [Mateo](nombre) es mi identificación
+    - [Bianca](nombre) es mi nombre
+    - [Pedro](nombre) es como me conocen
+    - [Isabella](nombre) es mi identificación
+    - [Itzel Castillo](nombre)
+    - [Arturo Mejia](nombre)
+- intent: dar_edad
+  examples: |
+    - tengo [25](edad) años
+    - tengo [30](edad)
+    - [28](edad) años
+    - [42](edad)
+    - tengo [19](edad) años
+    - mi edad es [56](edad) años
+    - recién cumplí [33](edad) años
+    - apenas tengo [47](edad) años
+    - Tengo [22](edad) años
+    - Tengo [29](edad) años
+    - [35](edad) años
+    - [50](edad) años
+    - tengo [26](edad)
+    - tengo [31](edad) años de edad
+    - [40](edad) años
+    - cumplí [38](edad) años
+    - soy mayor de [60](edad) años
+    - [23](edad) años
+    - [48](edad) años
+    - tengo [45](edad) años
+    - [18](edad) años
+    - [57](edad) años
+    - [34](edad) años
+    - tengo [27](edad) años
+    - [52](edad) años
+    - [32](edad) años
+    - [55](edad) años
+    - [21](edad) años
+    - [39](edad) años
+    - [44](edad) años
+    - [20](edad) años
+    - [49](edad) años
+    - [36](edad) años
+    - [46](edad) años
+    - [33](edad) años
+    - [51](edad) años
+    - [37](edad) años
+    - [54](edad) años
+    - [24](edad) años
+    - [41](edad) años
+    - [53](edad) años
+    - Tiene [24](edad) años
+    - [58](edad) años
+- intent: dar_genero
+  examples: |
+    - soy [masculino](genero)
+    - soy [femenino](genero)
+    - soy [hombre](genero)
+    - soy [mujer](genero)
+    - [masculino](genero)
+    - [femenino](genero)
+    - [mujer](genero)
+    - [hombre](genero)
+- intent: dar_peso
+  examples: |
+    - peso [80.4](peso) kilos
+    - peso aproximadamente [73.5](peso) kilos
+    - peso [78.7] kgs
+    - peso [82.1] kg
+    - creo que peso [56.74](peso) kilos
+    - me parece que peso [95.5](peso) kilos
+    - peso [70.45](peso)
+    - [68.2](peso)
+    - Peso [90](peso) kilos
+    - Peso [80](peso) kilos
+    - Peso [82.1](peso) kg
+    - peso [75.6](peso) kg
+    - [64.3](peso) kg
+    - Peso [93](peso) kilos
+    - peso [68](peso) kg
+    - mi peso es [85.2](peso) kilos
+    - peso alrededor de [60.8](peso) kilos
+    - Peso [72.5](peso) kg
+    - Peso [79.3](peso) kilogramos
+    - peso [88](peso) kg
+    - Peso [67](peso) kilogramos
+    - peso [76.9](peso) kg
+    - peso [63.7](peso) kilos
+    - [74.1](peso) kg
+    - mi peso es [91.8](peso) kg
+    - peso [65.5](peso) kilogramos
+    - Peso [84.2](peso) kilos
+    - peso [77](peso) kg
+    - Peso [69.6](peso) kilos
+    - peso [81.3](peso) kg
+    - Peso [73](peso) kilos
+    - peso [87.5](peso) kg
+    - peso [70](peso) kg
+    - Peso [79](peso) kilos
+    - Peso [82.5](peso) kg
+    - peso [75](peso) kg
+    - peso [63](peso) kilogramos
+    - peso [89.2](peso) kg
+    - peso [70.8](peso) kilos
+    - peso alrededor de [65.2](peso) kg
+    - Peso [78.9](peso) kg
+    - mi peso es [83.4](peso) kilos
+    - peso [69.1](peso) kilos
+    - Peso [75.7](peso) kg
+    - Peso [81.6](peso) kg
+    - peso [67.3](peso) kilogramos
+    - [76.5](peso) kg
+    - peso [88.7](peso) kg
+    - Peso [73.2](peso) kilogramos
+    - peso [79.8](peso) kg
+    - Peso [84.9](peso) kilos
+    - peso [66.4](peso) kg
+    - Peso [72.6](peso) kg
+    - peso [89.5](peso) kg
+    - mi peso es [61.9](peso) kilogramos
+    - peso [77.3](peso) kg
+    - Peso [82.8](peso) kilos
+    - peso [68.5](peso) kg
+    - Peso [74.7](peso) kilogramos
+    - peso [80.1](peso) kg
+    - Peso [85.3](peso) kg
+    - peso [63.8](peso) kilos
+    - Peso [71.2](peso) kg
+    - peso [87.9](peso) kg
+    - Peso [76.1](peso) kilos
+    - peso [81.4](peso) kg
+    - Peso [69.6](peso) kg
+    - peso [74.9](peso) kilogramos
+    - mi peso es [79.2](peso) kg
+    - peso [110.5](peso) kilos
+    - peso [95.3](peso) kg
+    - Tengo [120.8](peso) kg
+    - Peso [105.6](peso) kilogramos
+    - mi peso es [130.2](peso) kg
+    - Peso [115.9](peso) kg
+    - Peso [140.7](peso) kg
+    - peso [125.4](peso) kilogramos
+    - Peso [112.1](peso) kg
+    - [130.8](peso) kg
+    - peso [135.6](peso) kg
+    - Peso [122.3](peso) kilos
+    - peso [145.1](peso) kg
+    - Peso [132.7](peso) kg
+    - Peso [150.5](peso) kg
+    - peso [142.9](peso) kilogramos
+    - Peso [128.6](peso) kg
+    - peso [155.2](peso) kg
+    - Peso [137.4](peso) kg
+    - peso [160.3](peso) kg
+    - Peso [148.7](peso) kilos
+    - peso [165.9](peso) kg
+    - Peso [154.2](peso) kg
+    - mi peso es [170.6](peso) kg
+    - peso [162.8](peso) kg
+    - Peso [176.4](peso) kg
+    - peso [168.3](peso) kilogramos
+    - Peso [182.1](peso) kg
+    - peso [40.5](peso) kilos
+    - peso [35.2](peso) kg
+    - Tengo [38.9](peso) kg
+    - Peso [42.6](peso) kilogramos
+    - mi peso es [30.8](peso) kg
+    - Peso [45.1](peso) kg
+    - Peso [28.4](peso) kilogramos
+    - peso [50.3](peso) kg
+    - Peso [32.7](peso) kg
+    - [25.6](peso) kg
+    - peso [48.9](peso) kg
+    - Peso [37.2](peso) kilos
+    - peso [55.5](peso) kg
+    - Peso [34.1](peso) kg
+    - Peso [60.2](peso) kg
+    - peso [52.4](peso) kilogramos
+    - Peso [29.6](peso) kg
+    - peso [65.9](peso) kg
+    - Peso [40.7](peso) kg
+    - peso [70.3](peso) kg
+    - Peso [58.1](peso) kilos
+    - Peso [62.8](peso) kg
+    - mi peso es [80.2](peso) kg
+    - Peso [85.7](peso) kg
+    - peso [73.9](peso) kilogramos
+    - Peso [90.5](peso) kg
+    - pesa [51.5](peso) kilos
+    - pesa [55](peso) kilos
+- intent: no_se_mi_peso
+  examples: |
+    - no me he pesado nunca
+    - realmente no tengo idea de cuánto peso
+    - no estoy al tanto de mi peso actual
+    - nunca he tomado nota de mi peso
+    - ni idea de mi peso en este momento
+    - no tengo la menor pista de cuánto peso
+    - no poseo información sobre mi peso
+    - no llevo un registro de mi peso
+    - mi peso actual es un misterio para mí
+    - nunca me he preocupado por mi peso
+    - mi peso no está en mi mente
+- intent: dar_estatura
+  examples: |
+    - mido alrededor de [1.60](estatura) metros
+    - creo que mi estatura es [1.68](estatura) metros
+    - me parece que mido [1.45](estatura) metros
+    - mido [1.90](estatura) metros
+    - [1.55](estatura) metros
+    - mido [1.70](estatura) metros aproximadamente
+    - Mido [1.65](estatura) metros
+    - Mido [1.80](estatura) metros
+    - Tengo [1.50](estatura) metros de estatura
+    - Mido [1.73](estatura) metros, pero podría estar equivocado
+    - el paciente mide [1.20](estatura) metros
+    - mido [1.40](estatura), como es un niño aún
+    - el paciente tiene [1.10](estatura) metros de estatura
+    - la estatura del paciente es [1.30](estatura) metros
+    - mido [1.15](estatura) metros, es bastante pequeño
+    - el hermanito del paciente mide [1.25](estatura) metros
+    - la estatura de la sobrina del paciente es [1.18](estatura) metros
+    - mido [1.05](estatura) metros, siendo un niño
+    - el paciente tiene [1.28](estatura) metros de estatura
+    - el primo del paciente mide [1.22](estatura) metros
+    - el paciente mide [1.60](estatura) metros
+    - la estatura del adolescente es [1.75](estatura) metros
+    - mido [1.68](estatura) metros, estoy en la adolescencia
+    - el hermano mayor del paciente tiene [1.80](estatura) metros de estatura
+    - tengo [1.62](estatura) metros, siendo un adolescente
+    - la estatura de la prima adolescente del paciente es [1.70](estatura) metros
+    - el sobrino del paciente mide [1.78](estatura) metros
+    - la hermana mayor del paciente tiene [1.65](estatura) metros de estatura
+    - el amigo adolescente del paciente mide [1.73](estatura) metros
+    - el adolescente tiene [1.69](estatura) metros de estatura
+    - el paciente mide [1.78](estatura) metros
+    - la estatura del adulto es [1.85](estatura) metros
+    - mido [1.70](estatura) metros, siendo un adulto
+    - el hermano mayor del paciente tiene [1.90](estatura) metros de estatura
+    - tengo [1.75](estatura) metros, ya siendo adulto
+    - la estatura de la prima adulta del paciente es [1.68](estatura) metros
+    - el sobrino del paciente mide [1.82](estatura) metros
+    - la hermana mayor del paciente tiene [1.77](estatura) metros de estatura
+    - el amigo adulto del paciente mide [1.88](estatura) metros
+    - el adulto tiene [1.79](estatura) metros de estatura
+    - mide [1.84](estatura)
+    - mide [2.10](estatura) metros
+    - [1.69](estatura)
+    - Mide [1.65](estatura)
+- intent: no_se_mi_estatura
+  examples: |
+    - no me he ido a medir
+    - no me he medido
+    - no se cuanto mido
+    - desconozco mi estatura
+    - no se mi estatura
+    - no conozco mi estatura
+    - no me he medido últimamente
+    - nunca me he medido
+    - no estoy seguro de mi estatura
+    - no tengo idea de cuánto mido
+    - no he tenido la oportunidad de medirme
+    - no sé mi estatura exacta
+    - no tengo información sobre mi estatura
+    - no recuerdo la última vez que me medí
+    - no tengo registro de mi estatura
+    - no he comprobado mi estatura recientemente
+- intent: conocer_funcionalidades
+  examples: |
+    - y en qué me puedes ayudar?
+    - qué puedes hacer?
+    - qué sabes hacer?
+    - qué función tienes?
+    - cuál es tu proposito?
+    - qué eres capaz de hacer?
+    - qué funciones tienes?
+    - cuál es tu objetivo?
+    - Que sabes hacer?
+    - ¿puedes realizar cálculos matemáticos?
+    - ¿tienes funciones de salud?
+    - explícame tus capacidades
+    - ¿puedes ayudarme con información académica?
+    - ¿puedes contarme chistes?
+    - ¿tienes habilidades de conversación?
+    - ¿puedes proporcionar recomendaciones?
+    - ¿qué tipo de asistencia puedes brindar?
+    - ¿puedes darme consejos prácticos?
+    - ¿tienes características especiales?
+    - ¿puedes ayudarme con la planificación?
+    - ¿puedes dar información sobre eventos?
+    - ¿tienes habilidades de recordatorio?
+    - ¿puedes hacer traducciones?
+    - En que me puedes ayudar?
+- intent: agradecer_ayuda
+  examples: |
+    - Muchas gracias
+    - Me ha servido
+    - Me fue util
+    - Gracias
+    - Agradezco tu ayuda
+    - Te estoy muy agradecido
+    - Gracias por la asistencia
+    - ¡Mil gracias!
+    - Estoy agradecido por tu apoyo
+    - Has sido de gran ayuda
+    - Te doy las gracias
+    - No sé qué haría sin ti
+    - Aprecio tu colaboración
+    - Gracias por tu tiempo
+    - Me has facilitado mucho las cosas
+    - Te agradezco la orientación
+    - Eres increíble, ¡gracias!
+- synonym: masculino
+  examples: |
+    - Masculino

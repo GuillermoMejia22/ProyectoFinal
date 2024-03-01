@@ -8,6 +8,7 @@ stories:
   - action: action_saludo
   - intent: mood_feliz
   - action: utter_feliz
+  - action: utter_en_que_puedo_ayudarte
 
 - story: happy path 1
   steps:
@@ -28,3 +29,162 @@ stories:
   - action: utter_eso_ayudo
   - intent: negacion
   - action: utter_animo
+
+- story: interactive_story_1
+  steps:
+  - intent: saludar
+  - action: action_saludo
+  - intent: mood_feliz
+  - action: utter_feliz
+  - action: utter_en_que_puedo_ayudarte
+  - intent: solicitar_imc
+  - action: datos_generales_form
+  - active_loop: datos_generales_form
+  - slot_was_set:
+    - requested_slot: nombre
+  - intent: dar_nombre
+    entities:
+    - nombre: Guillermo Mejia Contreras
+  - slot_was_set:
+    - nombre: Guillermo Mejia Contreras
+  - action: datos_generales_form
+  - slot_was_set:
+    - requested_slot: edad
+  - intent: dar_edad
+    entities:
+    - edad: '22'
+  - slot_was_set:
+    - edad: '22'
+  - action: datos_generales_form
+  - slot_was_set:
+    - requested_slot: peso
+  - intent: dar_peso
+    entities:
+    - peso: '82.1'
+  - slot_was_set:
+    - peso: '82.1'
+  - action: datos_generales_form
+  - slot_was_set:
+    - requested_slot: estatura
+  - intent: dar_estatura
+    entities:
+    - estatura: '1.73'
+  - slot_was_set:
+    - estatura: '1.73'
+  - action: datos_generales_form
+  - slot_was_set:
+    - requested_slot: genero
+  - intent: dar_genero
+    entities:
+    - genero: masculino
+  - slot_was_set:
+    - genero: masculino
+  - action: datos_generales_form
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_calcular_imc
+  - intent: agradecer_ayuda
+  - action: utter_de_nada
+  - intent: despedirse
+  - action: action_despedida
+
+- story: interactive_story_2
+  steps:
+  - intent: saludar
+  - action: action_saludo
+  - intent: mood_feliz
+  - action: utter_feliz
+  - action: utter_en_que_puedo_ayudarte
+  - intent: conocer_funcionalidades
+  - action: utter_explicar_objetivo
+  - intent: solicitar_imc
+  - action: datos_generales_form
+  - active_loop: datos_generales_form
+  - slot_was_set:
+    - requested_slot: nombre
+  - intent: dar_nombre
+    entities:
+    - nombre: Itzel Castillo
+  - slot_was_set:
+    - nombre: Itzel Castillo
+  - action: datos_generales_form
+  - slot_was_set:
+    - requested_slot: edad
+  - intent: dar_edad
+    entities:
+    - edad: '24'
+  - slot_was_set:
+    - edad: '24'
+  - action: datos_generales_form
+  - slot_was_set:
+    - requested_slot: peso
+  - intent: dar_peso
+    entities:
+    - peso: '55'
+  - slot_was_set:
+    - peso: '55'
+  - action: datos_generales_form
+  - slot_was_set:
+    - requested_slot: estatura
+  - intent: dar_estatura
+    entities:
+    - estatura: '1.65'
+  - slot_was_set:
+    - estatura: '1.65'
+  - action: datos_generales_form
+  - slot_was_set:
+    - requested_slot: genero
+  - intent: dar_genero
+    entities:
+    - genero: femenino
+  - slot_was_set:
+    - genero: femenino
+  - action: datos_generales_form
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_calcular_imc
+  - intent: agradecer_ayuda
+  - action: utter_de_nada
+  - intent: despedirse
+  - action: action_despedida
+
+
+- story: interactive_story_3
+  steps:
+  - intent: saludar
+  - action: action_saludo
+  - intent: mood_feliz
+  - action: utter_feliz
+  - action: utter_en_que_puedo_ayudarte
+  - intent: solicitar_imc
+  - action: datos_generales_form
+  - active_loop: datos_generales_form
+  - slot_was_set:
+    - requested_slot: nombre
+  - intent: dar_nombre
+    entities:
+    - nombre: Arturo Mejia
+  - slot_was_set:
+    - nombre: Arturo Mejia
+  - action: datos_generales_form
+  - slot_was_set:
+    - requested_slot: edad
+  - intent: dar_edad
+    entities:
+    - edad: '58'
+  - slot_was_set:
+    - edad: '58'
+  - action: datos_generales_form
+  - slot_was_set:
+    - requested_slot: peso
+  - intent: no_se_mi_peso
+  - action: action_deactivate_loop
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_necesito_dato
+  - action: utter_en_que_puedo_ayudarte
+  - intent: despedirse
+  - action: action_despedida

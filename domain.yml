@@ -1,106 +1,129 @@
-version: "3.1"
+version: '3.1'
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-  - saludar
-  - despedirse
-  - afirmacion
-  - negacion
-  - mood_feliz
-  - mood_triste
-  - bot_challenge
-  - solicitar_imc
-  - dar_nombre
-  - dar_edad
-  - dar_genero
-  - dar_peso
-  - no_se_mi_peso
-  - no_se_mi_estatura
-  - dar_estatura
+- afirmacion
+- agradecer_ayuda
+- bot_challenge
+- conocer_funcionalidades
+- dar_edad
+- dar_estatura
+- dar_genero
+- dar_nombre
+- dar_peso
+- datos_generales_form
+- despedirse
+- mood_feliz
+- mood_triste
+- negacion
+- no_se_mi_estatura
+- no_se_mi_peso
+- saludar
+- solicitar_imc
 entities:
-  - nombre
-  - edad
-  - peso
-  - estatura
-  - genero
+- nombre
+- edad
+- peso
+- genero
+- estatura
 slots:
   nombre:
     type: text
     influence_conversation: true
     mappings:
-      - type: from_entity
-        entity: nombre
-        active_loop: datos_generales_form
-      - type: from_entity
-        entity: nombre
+    - type: from_entity
+      entity: nombre
+      conditions:
+      - active_loop: datos_generales_form
+    - type: from_entity
+      entity: nombre
   edad:
     type: float
     influence_conversation: true
     mappings:
-      - type: from_entity
-        entity: edad
-        active_loop: datos_generales_form
-      - type: from_entity
-        entity: edad
+    - type: from_entity
+      entity: edad
+      conditions:
+      - active_loop: datos_generales_form
+    - type: from_entity
+      entity: edad
   peso:
     type: float
     influence_conversation: true
     mappings:
-      - type: from_entity
-        entity: peso
-        active_loop: datos_generales_form
-      - type: from_entity
-        entity: peso
+    - type: from_entity
+      entity: peso
+      conditions:
+      - active_loop: datos_generales_form
+    - type: from_entity
+      entity: peso
   estatura:
     type: float
     influence_conversation: true
     mappings:
-      - type: from_entity
-        entity: estatura
-        active_loop: datos_generales_form
-      - type: from_entity
-        entity: estatura
+    - type: from_entity
+      entity: estatura
+      conditions:
+      - active_loop: datos_generales_form
+    - type: from_entity
+      entity: estatura
   genero:
     type: text
     influence_conversation: true
     mappings:
-      - type: from_entity
-        entity: genero
-        active_loop: datos_generales_form
-      - type: from_entity
-        entity: genero
+    - type: from_entity
+      entity: genero
+      conditions:
+      - active_loop: datos_generales_form
+    - type: from_entity
+      entity: genero
 responses:
+  utter_en_que_puedo_ayudarte:
+  - text: Dime ¿en qué puedo ayudarte?
+  utter_de_nada:
+  - text: No hay de qué, ¿hay algo más en lo qué pueda ayudarte?
   utter_manda_gif:
-    - text: "Espero esto te anime:"
-      image: https://i.imgur.com/tl91hI5.gif
+  - text: 'Espero esto te anime:'
+    image: https://i.imgur.com/tl91hI5.gif
   utter_eso_ayudo:
-    - text: ¿Eso te animó?
+  - text: ¿Eso te animó?
   utter_feliz:
-    - text: ¡Excelente, sigue así!
+  - text: ¡Excelente, sigue así!
   utter_soy_un_bot:
-    - text: Soy un bot de Rasa desarrollado por Guillermo Mejía
+  - text: Soy un bot de Rasa desarrollado por el estudiante Guillermo Mejía
   utter_animo:
-    - text: Trata de hacer algo que te guste para que te animes un poco :)
-  utter_solicitar_nombre:
-    - text: Claro, puedes proporcionarme tu nombre por favor
-  utter_solicitar_genero:
-    - text: Puedes proporcionarme tu género por favor
-  utter_solicitar_edad:
-    - text: Puedes proporcionarme tu edad por favor
-  utter_solicitar_peso:
-    - text: Puedes proporcionarme tu peso por favor
-  utter_solicitar_estatura:
-    - text: Puedes proporcionarme tu estatura por favor
+  - text: Trata de hacer algo que te guste para que te animes un poco :)
+  - text: Si necesitas algo aqui estoy
+  utter_ask_nombre:
+  - text: Claro, puedes proporcionarme el nombre del paciente por favor
+  utter_ask_genero:
+  - text: Puedes proporcionarme el género del paciente por favor
+  utter_ask_edad:
+  - text: Puedes proporcionarme la edad del paciente por favor
+  utter_ask_peso:
+  - text: Puedes proporcionarme el peso del paciente por favor
+  utter_ask_estatura:
+  - text: Puedes proporcionarme la estatura del paciente por favor
+  utter_explicar_objetivo:
+  - text: Soy DiaBot y puedo ayudarte con mucho gusto a responder preguntas relacionadas a la Diabetes Mellitus en México
+  utter_necesito_dato:
+  - text: Lo siento, necesito ese dato para poder ayudarte a calcular tu IMC
 actions:
-  - action_saludo
-  - action_despedida
-  - action_calcular_imc
+- utter_en_que_puedo_ayudarte
+- action_despedida
+- action_saludo
+- utter_necesito_dato
+- utter_feliz
+- action_calcular_imc
+- utter_explicar_objetivo
+- utter_de_nada
+- utter_soy_un_bot
 forms:
   datos_generales_form:
     required_slots:
-      - nombre
-      - edad
-      - peso
-      - estatura
-      - genero
+    - nombre
+    - edad
+    - peso
+    - estatura
+    - genero
