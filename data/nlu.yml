@@ -67,6 +67,7 @@ nlu:
     - bye bye, hasta luego
     - No, hablamos despues
     - hablamos luego
+    - hablamos despues
 - intent: afirmacion
   examples: |
     - si
@@ -112,6 +113,7 @@ nlu:
     - exactamente así
     - claro, estoy de acuerdo
     - por supuesto, sin duda
+    - sii
 - intent: negacion
   examples: |
     - no
@@ -280,229 +282,36 @@ nlu:
     - necesito conocer mi índice de masa corporal ahora
     - quiero calcular el imc de una persona
     - quiero mi imc
+    - imc
+    - ayudame a calcular el imc de un paciente
 - intent: dar_nombre
   examples: |
-    - me llamo [Guillermo Mejia](nombre)
-    - me llamo [Guillermo Mejia Contreras](nombre)
-    - mi nombre es [Guillermo Mejia Contreras](nombre)
-    - [Guillermo Mejia](nombre)
-    - [Guillermo Mejia Contreras](nombre)
-    - [Guillermo](nombre)
-    - me llamo [Juan Perez](nombre)
-    - mi nombre es [Pancho Pantera](nombre)
-    - [Sebastian Castellanos](nombre)
-    - Soy [Guillermo Mejia](nombre)
-    - Puedes llamarme [Guillermo](nombre)
-    - [Guillermo Contreras](nombre) es mi nombre
-    - me llamo [Ana Ramírez](nombre)
-    - [Carlos Pérez](nombre) es mi nombre
-    - mi nombre es [Luisa González](nombre)
-    - soy [Pedro García](nombre)
-    - [Laura Martínez](nombre) es como me llamo
-    - [Roberto Hernández](nombre)
-    - me puedes llamar [Sofía Rodríguez](nombre)
-    - soy [Javier Vargas](nombre)
-    - [Isabella López](nombre) es mi nombre completo
-    - me llaman [Juan Carlos](nombre)
-    - [María Fernández](nombre) es como me identifico
-    - [Diego Castro](nombre) es mi nombre
-    - puedes decirme [Lucía](nombre)
-    - me conocen como [Ricardo](nombre)
-    - me dicen [Diana](nombre)
-    - [Fernando Morales](nombre) es mi identidad
-    - [Valentina](nombre) es como me llaman
-    - [Eduardo](nombre) es mi nombre
-    - me apodan [Monica](nombre)
-    - me dicen [Miguel Ángel](nombre)
-    - me llamo [María García](nombre)
-    - [Jorge Rodríguez](nombre) es mi nombre completo
-    - soy [Andrea Pérez](nombre)
-    - me dicen [Luis Torres](nombre)
-    - [Ana](nombre) es como me conocen
-    - [Carlos Martínez](nombre) es mi identidad
-    - me llaman [Sara](nombre)
-    - mi nombre es [Daniel Ramírez](nombre)
-    - soy [Laura González](nombre)
-    - [Eduardo](nombre) es como me llamo
-    - [Isabel](nombre) es mi nombre
-    - me conocen como [Alejandro](nombre)
-    - [Carmen](nombre) es mi identificación
-    - soy [Manuel López](nombre)
-    - [Patricia](nombre) es como me identifico
-    - [Francisco](nombre) es mi nombre completo
-    - [Silvia](nombre) es mi identidad
-    - [Miguel Ángel](nombre) es como me llaman
-    - me apodan [Verónica](nombre)
-    - [Gabriel](nombre) es mi nombre
-    - me dicen [Rosa](nombre)
-    - [José Luis](nombre) es como me identifico
-    - [Laura](nombre) es como me llamo
-    - [Fernando](nombre) es mi nombre completo
-    - soy [Adriana](nombre)
-    - [Roberto](nombre) es como me conocen
-    - [Ana María](nombre) es mi identificación
-    - [Luis](nombre) es como me llamo
-    - me llamo [Sofía](nombre)
-    - [Carlos](nombre) es mi nombre
-    - me conocen como [Valentina](nombre)
-    - [Javier](nombre) es mi identidad
-    - soy [Marina](nombre)
-    - [Lorenzo](nombre) es como me llamo
-    - [Camila](nombre) es mi nombre completo
-    - [Martín](nombre) es mi identificación
-    - me llaman [Isabella](nombre)
-    - [Diego](nombre) es como me conocen
-    - [Lucía](nombre) es mi identidad
-    - me llaman [Mateo](nombre)
-    - [Emma](nombre) es mi nombre
-    - soy [Iker](nombre)
-    - [Paula](nombre) es como me identifico
-    - [Hugo](nombre) es mi nombre completo
-    - [Mía](nombre) es mi identificación
-    - [Alejandro](nombre) es como me llaman
-    - soy [Catalina](nombre)
-    - [Adrián](nombre) es mi nombre
-    - [Fabiola](nombre) es mi identificación
-    - [Felipe](nombre) es como me llamo
-    - [Renata](nombre) es mi nombre completo
-    - [Lucas](nombre) es mi identificación
-    - [Victoria](nombre) es como me conocen
-    - [Emilio](nombre) es mi identidad
-    - me llaman [Bianca](nombre)
-    - [Maximiliano](nombre) es mi nombre
-    - [Daniela](nombre) es como me identifico
-    - [Sebastián](nombre) es como me llaman
-    - [Pamela Daniela Angeles Garcia](nombre)
-    - [Blanca Araceli Contreras Mondragon](nombre)
-    - [Anel Araceli Mejia Contreras](nombre)
-    - me llamo [Edgar Suarez Mejia](nombre)
-    - [Guillermo Mejia Olmos](nombre)
-    - me llamo [Karen Lizeth Romero Morales](nombre)
-    - [Ximena Lobera Ordoñez](nombre)
-    - [Alexis Sanchez Martinez](nombre)
-    - [Juan Perez](nombre)
-    - [Alonso Sanchez](nombre)
-    - [Beatriz Adriana](nombre)
-    - [Beatriz](nombre)
-    - [Maricela](nombre)
-    - [Maricela Claudia](nombre)
-    - me llamo [claudia](nombre)
-    - [Denisse Torres](nombre)
-    - me llamo [Luisa](nombre)
-    - me conocen como [Valentín](nombre)
-    - [Aurora](nombre) es mi identidad
-    - soy [Mario](nombre)
-    - [Gabriela](nombre) es mi nombre completo
-    - [Roberto](nombre) es mi identificación
-    - me llaman [Isabel](nombre)
-    - [Juan](nombre) es como me conocen
-    - [Laura](nombre) es mi identidad
-    - me llaman [Gustavo](nombre)
-    - [Carmen](nombre) es mi nombre
-    - soy [Santiago](nombre)
-    - [María](nombre) es como me identifico
-    - [Raúl](nombre) es mi nombre completo
-    - [Verónica](nombre) es mi identificación
-    - [Joaquín](nombre) es como me llamo
-    - soy [René](nombre)
-    - [Diana](nombre) es mi nombre
-    - [Francisco](nombre) es mi identificación
-    - [Andrea](nombre) es como me llamo
-    - [Jorge](nombre) es mi nombre completo
-    - [Ana](nombre) es mi identificación
-    - [Pablo](nombre) es como me conocen
-    - [Natalia](nombre) es mi identidad
-    - me llaman [Felipe](nombre)
-    - [Julia](nombre) es mi nombre
-    - [Antonio](nombre) es como me identifico
-    - [Carla](nombre) es como me llaman
-    - [José](nombre) es mi identidad
-    - [Camilo](nombre) es mi nombre completo
-    - [Mónica](nombre) es mi identificación
-    - [Héctor](nombre) es como me llamo
-    - me llamo [Lucía](nombre)
-    - [Martín](nombre) es mi nombre
-    - me conocen como [Valeria](nombre)
-    - [Rodrigo](nombre) es mi identidad
-    - soy [Fabiola](nombre)
-    - [Alejandro](nombre) es mi nombre completo
-    - [Daniela](nombre) es mi identificación
-    - me llaman [Hugo](nombre)
-    - [Sofía](nombre) es como me conocen
-    - [Maximiliano](nombre) es mi identidad
-    - me llaman [Lorena](nombre)
-    - soy [Elena](nombre)
-    - [Óscar](nombre) es mi identificación
-    - [Catalina](nombre) es como me llamo
-    - soy [Esteban](nombre)
-    - [Valentina](nombre) es mi nombre
-    - [Adrián](nombre) es mi identificación
-    - [Mariana](nombre) es como me identifico
-    - [Ricardo](nombre) es mi nombre completo
-    - [Victoria](nombre) es mi identidad
-    - [Josué](nombre) es como me conocen
-    - [Alicia](nombre) es mi identificación
-    - [Jaime](nombre) es mi nombre
-    - [Gabriela](nombre) es como me llamo
-    - [Javier](nombre) es mi identificación
-    - me llaman [Rafael](nombre)
-    - [Silvia](nombre) es mi nombre
-    - [Manuel](nombre) es mi identificación
-    - [Eva](nombre) es como me conocen
-    - [Diego](nombre) es mi identificación
-    - [Camila](nombre) es como me llamo
-    - soy [Juanita](nombre)
-    - [Mateo](nombre) es mi identificación
-    - [Bianca](nombre) es mi nombre
-    - [Pedro](nombre) es como me conocen
-    - [Isabella](nombre) es mi identificación
-    - [Itzel Castillo](nombre)
-    - [Arturo Mejia](nombre)
+    - mi nombre es [Guillermo Mejia](nombre)
+    - el nombre del paciente es [Pamela Daniela](nombre)
+    - [Carolina Sandoval](nombre)
+    - me llamo [Juan Peralta](nombre)
+    - soy [Blanca Anahi](nombre)
+    - su nombre es [Ana Luz](nombre)
+    - me llamo [Alejandra Becerril](nombre)
+    - se llama [Viridiana Rojas](nombre)
+    - el nombre de la paciente es [Liliana Flores](nombre)
+    - se llama [Ximena Lobera](nombre)
+    - Se llama [Luis Hernandez](nombre)
 - intent: dar_edad
   examples: |
-    - tengo [25](edad) años
-    - tengo [30](edad)
-    - [28](edad) años
-    - [42](edad)
-    - tengo [19](edad) años
-    - mi edad es [56](edad) años
-    - recién cumplí [33](edad) años
-    - apenas tengo [47](edad) años
-    - Tengo [22](edad) años
-    - Tengo [29](edad) años
-    - [35](edad) años
-    - [50](edad) años
-    - tengo [26](edad)
-    - tengo [31](edad) años de edad
-    - [40](edad) años
-    - cumplí [38](edad) años
-    - soy mayor de [60](edad) años
+    - mi edad es de [22](edad) años
+    - tengo [45](edad)
+    - apenas cumplí [37](edad) años
+    - recíen tengo [15](edad)
+    - el paciente tiene [81](edad)
+    - el paciente tiene [36](edad) años
+    - [56](edad) años
+    - [64](edad)
+    - tiene [32](edad) años
+    - tiene [78](edad)
+    - [12](edad) años
     - [23](edad) años
-    - [48](edad) años
-    - tengo [45](edad) años
-    - [18](edad) años
-    - [57](edad) años
-    - [34](edad) años
-    - tengo [27](edad) años
-    - [52](edad) años
-    - [32](edad) años
-    - [55](edad) años
-    - [21](edad) años
-    - [39](edad) años
-    - [44](edad) años
-    - [20](edad) años
-    - [49](edad) años
-    - [36](edad) años
-    - [46](edad) años
-    - [33](edad) años
-    - [51](edad) años
-    - [37](edad) años
-    - [54](edad) años
-    - [24](edad) años
-    - [41](edad) años
-    - [53](edad) años
-    - Tiene [24](edad) años
-    - [58](edad) años
+    - [25](edad) años
 - intent: dar_genero
   examples: |
     - soy [masculino](genero)
@@ -513,210 +322,60 @@ nlu:
     - [femenino](genero)
     - [mujer](genero)
     - [hombre](genero)
+- intent: no_se_peso
+  examples: |
+    - desconozco el peso del paciente
+    - no sé el peso del paciente
+    - no sé cual es el peso del paciente
+    - no sé cual es mi peso
+    - no sé mi peso
+    - no se su peso
+    - no sé mi peso actual
+    - ni idea de cual sea mi peso
+    - no tengo el peso del paciente
+    - no he medido el peso del paciente
+    - no tengo la medida del peso
+    - no se cuanto pesa el paciente
+    - no se cuanto peso
 - intent: dar_peso
   examples: |
-    - peso [80.4](peso) kilos
-    - peso aproximadamente [73.5](peso) kilos
-    - peso [78.7] kgs
-    - peso [82.1] kg
-    - creo que peso [56.74](peso) kilos
-    - me parece que peso [95.5](peso) kilos
-    - peso [70.45](peso)
-    - [68.2](peso)
-    - Peso [90](peso) kilos
-    - Peso [80](peso) kilos
-    - Peso [82.1](peso) kg
-    - peso [75.6](peso) kg
-    - [64.3](peso) kg
-    - Peso [93](peso) kilos
-    - peso [68](peso) kg
-    - mi peso es [85.2](peso) kilos
-    - peso alrededor de [60.8](peso) kilos
-    - Peso [72.5](peso) kg
-    - Peso [79.3](peso) kilogramos
-    - peso [88](peso) kg
-    - Peso [67](peso) kilogramos
-    - peso [76.9](peso) kg
-    - peso [63.7](peso) kilos
-    - [74.1](peso) kg
-    - mi peso es [91.8](peso) kg
-    - peso [65.5](peso) kilogramos
-    - Peso [84.2](peso) kilos
-    - peso [77](peso) kg
-    - Peso [69.6](peso) kilos
-    - peso [81.3](peso) kg
-    - Peso [73](peso) kilos
-    - peso [87.5](peso) kg
-    - peso [70](peso) kg
-    - Peso [79](peso) kilos
-    - Peso [82.5](peso) kg
-    - peso [75](peso) kg
-    - peso [63](peso) kilogramos
-    - peso [89.2](peso) kg
-    - peso [70.8](peso) kilos
-    - peso alrededor de [65.2](peso) kg
-    - Peso [78.9](peso) kg
-    - mi peso es [83.4](peso) kilos
-    - peso [69.1](peso) kilos
-    - Peso [75.7](peso) kg
-    - Peso [81.6](peso) kg
-    - peso [67.3](peso) kilogramos
-    - [76.5](peso) kg
-    - peso [88.7](peso) kg
-    - Peso [73.2](peso) kilogramos
-    - peso [79.8](peso) kg
-    - Peso [84.9](peso) kilos
-    - peso [66.4](peso) kg
-    - Peso [72.6](peso) kg
-    - peso [89.5](peso) kg
-    - mi peso es [61.9](peso) kilogramos
-    - peso [77.3](peso) kg
-    - Peso [82.8](peso) kilos
-    - peso [68.5](peso) kg
-    - Peso [74.7](peso) kilogramos
-    - peso [80.1](peso) kg
-    - Peso [85.3](peso) kg
-    - peso [63.8](peso) kilos
-    - Peso [71.2](peso) kg
-    - peso [87.9](peso) kg
-    - Peso [76.1](peso) kilos
-    - peso [81.4](peso) kg
-    - Peso [69.6](peso) kg
-    - peso [74.9](peso) kilogramos
-    - mi peso es [79.2](peso) kg
-    - peso [110.5](peso) kilos
-    - peso [95.3](peso) kg
-    - Tengo [120.8](peso) kg
-    - Peso [105.6](peso) kilogramos
-    - mi peso es [130.2](peso) kg
-    - Peso [115.9](peso) kg
-    - Peso [140.7](peso) kg
-    - peso [125.4](peso) kilogramos
-    - Peso [112.1](peso) kg
-    - [130.8](peso) kg
-    - peso [135.6](peso) kg
-    - Peso [122.3](peso) kilos
-    - peso [145.1](peso) kg
-    - Peso [132.7](peso) kg
-    - Peso [150.5](peso) kg
-    - peso [142.9](peso) kilogramos
-    - Peso [128.6](peso) kg
-    - peso [155.2](peso) kg
-    - Peso [137.4](peso) kg
-    - peso [160.3](peso) kg
-    - Peso [148.7](peso) kilos
-    - peso [165.9](peso) kg
-    - Peso [154.2](peso) kg
-    - mi peso es [170.6](peso) kg
-    - peso [162.8](peso) kg
-    - Peso [176.4](peso) kg
-    - peso [168.3](peso) kilogramos
-    - Peso [182.1](peso) kg
-    - peso [40.5](peso) kilos
-    - peso [35.2](peso) kg
-    - Tengo [38.9](peso) kg
-    - Peso [42.6](peso) kilogramos
-    - mi peso es [30.8](peso) kg
-    - Peso [45.1](peso) kg
-    - Peso [28.4](peso) kilogramos
-    - peso [50.3](peso) kg
-    - Peso [32.7](peso) kg
-    - [25.6](peso) kg
-    - peso [48.9](peso) kg
-    - Peso [37.2](peso) kilos
-    - peso [55.5](peso) kg
-    - Peso [34.1](peso) kg
-    - Peso [60.2](peso) kg
-    - peso [52.4](peso) kilogramos
-    - Peso [29.6](peso) kg
-    - peso [65.9](peso) kg
-    - Peso [40.7](peso) kg
-    - peso [70.3](peso) kg
-    - Peso [58.1](peso) kilos
-    - Peso [62.8](peso) kg
-    - mi peso es [80.2](peso) kg
-    - Peso [85.7](peso) kg
-    - peso [73.9](peso) kilogramos
-    - Peso [90.5](peso) kg
-    - pesa [51.5](peso) kilos
-    - pesa [55](peso) kilos
-- intent: no_se_mi_peso
-  examples: |
-    - no me he pesado nunca
-    - realmente no tengo idea de cuánto peso
-    - no estoy al tanto de mi peso actual
-    - nunca he tomado nota de mi peso
-    - ni idea de mi peso en este momento
-    - no tengo la menor pista de cuánto peso
-    - no poseo información sobre mi peso
-    - no llevo un registro de mi peso
-    - mi peso actual es un misterio para mí
-    - nunca me he preocupado por mi peso
-    - mi peso no está en mi mente
+    - peso [78.5](peso) kilos
+    - pesa [89.42](peso) kilos
+    - peso [58](peso)
+    - pesa [42.7](peso)
+    - el paciente pesa [95](peso) kilos
+    - el paciente pesa [89.15](peso)
+    - [68.4](peso)
+    - [82.35](peso) kilos
+    - pesa [53.5](peso) kilos
+    - pesa [67.5](peso) kilos
 - intent: dar_estatura
   examples: |
-    - mido alrededor de [1.60](estatura) metros
-    - creo que mi estatura es [1.68](estatura) metros
-    - me parece que mido [1.45](estatura) metros
-    - mido [1.90](estatura) metros
-    - [1.55](estatura) metros
-    - mido [1.70](estatura) metros aproximadamente
-    - Mido [1.65](estatura) metros
-    - Mido [1.80](estatura) metros
-    - Tengo [1.50](estatura) metros de estatura
-    - Mido [1.73](estatura) metros, pero podría estar equivocado
-    - el paciente mide [1.20](estatura) metros
-    - mido [1.40](estatura), como es un niño aún
-    - el paciente tiene [1.10](estatura) metros de estatura
-    - la estatura del paciente es [1.30](estatura) metros
-    - mido [1.15](estatura) metros, es bastante pequeño
-    - el hermanito del paciente mide [1.25](estatura) metros
-    - la estatura de la sobrina del paciente es [1.18](estatura) metros
-    - mido [1.05](estatura) metros, siendo un niño
-    - el paciente tiene [1.28](estatura) metros de estatura
-    - el primo del paciente mide [1.22](estatura) metros
-    - el paciente mide [1.60](estatura) metros
-    - la estatura del adolescente es [1.75](estatura) metros
-    - mido [1.68](estatura) metros, estoy en la adolescencia
-    - el hermano mayor del paciente tiene [1.80](estatura) metros de estatura
-    - tengo [1.62](estatura) metros, siendo un adolescente
-    - la estatura de la prima adolescente del paciente es [1.70](estatura) metros
-    - el sobrino del paciente mide [1.78](estatura) metros
-    - la hermana mayor del paciente tiene [1.65](estatura) metros de estatura
-    - el amigo adolescente del paciente mide [1.73](estatura) metros
-    - el adolescente tiene [1.69](estatura) metros de estatura
-    - el paciente mide [1.78](estatura) metros
-    - la estatura del adulto es [1.85](estatura) metros
-    - mido [1.70](estatura) metros, siendo un adulto
-    - el hermano mayor del paciente tiene [1.90](estatura) metros de estatura
-    - tengo [1.75](estatura) metros, ya siendo adulto
-    - la estatura de la prima adulta del paciente es [1.68](estatura) metros
-    - el sobrino del paciente mide [1.82](estatura) metros
-    - la hermana mayor del paciente tiene [1.77](estatura) metros de estatura
-    - el amigo adulto del paciente mide [1.88](estatura) metros
-    - el adulto tiene [1.79](estatura) metros de estatura
-    - mide [1.84](estatura)
-    - mide [2.10](estatura) metros
-    - [1.69](estatura)
-    - Mide [1.65](estatura)
-- intent: no_se_mi_estatura
+    - mide [1.74](estatura) metros
+    - mide [1.89](estatura)
+    - mido [1.89](estatura) metros
+    - mido [1.52](estatura)
+    - el paciente mide [1.65](estatura) metros
+    - el paciente mide [1.47](estatura)
+    - [1.78](estatura) metros
+    - [1.54](estatura)
+    - mide [1.76](estatura)
+    - mide [1.77](estatura) metros
+- intent: no_se_estatura
   examples: |
-    - no me he ido a medir
-    - no me he medido
+    - desconozco la estatura del paciente
+    - no sé la estatura del paciente
+    - no sé cual es la estatura del paciente
+    - no sé cual es mi estatura
+    - no sé mi estatura
+    - no sé mi estatura actual
+    - ni idea de cual sea mi estatura
+    - no tengo la estatura del paciente
+    - no he medido la estatura del paciente
+    - no tengo la medida de la estatura
+    - no se cuanto mide el paciente
     - no se cuanto mido
-    - desconozco mi estatura
-    - no se mi estatura
-    - no conozco mi estatura
-    - no me he medido últimamente
-    - nunca me he medido
-    - no estoy seguro de mi estatura
-    - no tengo idea de cuánto mido
-    - no he tenido la oportunidad de medirme
-    - no sé mi estatura exacta
-    - no tengo información sobre mi estatura
-    - no recuerdo la última vez que me medí
-    - no tengo registro de mi estatura
-    - no he comprobado mi estatura recientemente
+    - no se su estatura
 - intent: conocer_funcionalidades
   examples: |
     - y en qué me puedes ayudar?
@@ -743,6 +402,252 @@ nlu:
     - ¿tienes habilidades de recordatorio?
     - ¿puedes hacer traducciones?
     - En que me puedes ayudar?
+    - que sabes hacer?
+- intent: que_es_la_diabetes
+  examples: |
+    - Explícame la diabetes
+    - ¿Cuál es la definición de la diabetes?
+    - Háblame sobre la diabetes
+    - Define diabetes mellitus
+    - ¿Puedes decirme en qué consiste la diabetes?
+    - Necesito información sobre la diabetes
+    - ¿Cuáles son los síntomas de la diabetes?
+    - ¿Qué significa tener diabetes?
+    - Cuéntame sobre la enfermedad de la diabetes
+    - define diabetes
+    - puedes definir que es la diabetes
+    - puedes explicar que es la diabetes mellitus?
+    - puedes contarme sobre la diabetes?
+    - puedes ayudarme a definir diabetes mellitus?
+- intent: factores_riesgo_diabetes
+  examples: |
+    - existen casos de riesgo de diabetes?
+    - cuáles son los factores de riesgo de la diabetes mellitus?
+    - cuales son los factores de riesgo de la diabetes?
+    - que personas son mas propensas a tener diabetes?
+    - que población de México es mas probable a tener diabetes mellitus?
+    - que factores influyen a un riesgo de diabetes?
+    - que influye en el desarrollo de la diabetes?
+    - puedes decirme que otros factores de riesgo hay?
+- intent: casos_riesgo
+  examples: |
+    - si mi paciente tiene familiares con historial diabetico es propenso?
+    - si los padres del paciente son diabeticos está en riesgo?
+    - si tengo antecedentes diabeticos es probable que desarrolle diabetes?
+    - si uno de mis padres es diabetico puedo desarrollar diabetes?
+    - si tengo sobrepeso puedo desarrollar diabetes?
+    - si mi paciente tiene sobrepeso puede tener diabetes?
+    - si el paciente es obeso tiene riesgo de diabetes?
+    - si soy una persona obesa puedo contraer diabetes?
+    - si tengo alta la glucosa puedo llegar a tener diabetes?
+    - si mi paciente tiene la glucosa alta puede llegar a tener diabetes?
+    - si mi paciente consume mucha azucar se encuentra en riesgo de padecer diabetes?
+    - si consumo mucha azucar es probable que desarrolle diabetes a futuro?
+    - si el paciente consume muchas grasas al día se encuentra en riesgo?
+    - si como muchas grasas diariamente estoy en riesgo de padecer diabetes mellitus?
+    - si una paciente ha tenido quistes en los ovarios se encuentra en riesgo de padecer diabetes?
+    - si tuve quistes en los ovarios en el pasado debo cuidarme para no desarrollar diabetes?
+    - si la paciente tuvo un bebé con un peso mayor a 4 kilos es un caso de riesgo?
+    - si el paciente recibe mediacion para la esquizofrenia es un factor de riesgo?
+    - si tengo un paciente que consume mucha azucar es probable que desarrolle diabetes si continua con ese habito?
+- intent: explicar_sintomas
+  examples: |
+    - puedes decirme los prinicipales síntomas de la diabetes mellitus?
+    - conoces los síntomas de la diabetes?
+    - puedes decirme en qué consisten los síntomas de las personas con diabetes?
+    - qué sintomas desarrollan las personas con diabetes?
+    - explicame los sintomas de la diabetes
+    - dime en que consisten los sintomas de la diabetes
+    - explica los sintomas de la diabetes mellitus
+- intent: decir_sintomas
+  examples: |
+    - si mi paciente presenta una sed excesiva es normal?
+    - es normal que el paciente presenta una sed insaciable?
+    - tengo una sed incontrolable
+    - el paciente orina mucho
+    - mi paciente orina más de lo normal
+    - por qué orino más de lo normal?
+    - últimamente me siento más cansado que otros días
+    - el paciente describe que se siente más cansado de lo habitual
+    - la paciente ha perdido mucho peso en poco tiempo
+    - he bajado muy rapido de peso ultimamente
+    - mi paciente describe que sus heridas en la piel tardan más en sanar
+    - por qué mis cortadas tardan mucho en curarse?
+    - la paciente describe que sus heridas le duran mucho tiempo o días
+    - es normal tener comezón en mi zona íntima?
+    - el paciente dice tener comezón frecuente en su zona intima
+    - la paciente describe que le da comezón sus genitales
+    - es normal tener visión borrosa de repente?
+    - el paciente dice que de pronto mientras camina se le nubla la vista
+    - últimamente he estado con muchas nauseas y vomito
+    - la paciente describe que no esta embarazada pero que ha tenido muchas nauseas y vomito con vision borrosa
+    - me ha dado mucha hambre estos días
+    - mi paciente come bastante
+    - la paciente descriibe que últimamente come mucho y no se llena
+    - el paciente describe que tiene sus codos negros
+    - he notado que mientras revisaba al paciente este muestra una coloración negra en el cuello
+    - es normal tener el cuello negro aunque me bañe todos los días?
+    - por qué tengo los codos negros si me baño diario?
+    - mi paciente describe que ultimamente tiene una hambre incontrolable
+- intent: tipos_diabetes
+  examples: |
+    - puedes decirme los tipos de diabetes?
+    - dime los tipos de diabetes
+    - explicame los tipos de diabetes
+    - cuantos tipos de diabetes hay?
+    - que tipos de diabetes hay?
+    - Puedes decirme que tipos de diabetes existen?
+- intent: conocer_cura
+  examples: |
+    - existe una cura para la diabetes?
+    - hay una cura de la diabetes?
+    - la diabetes tiene cura?
+    - han desarrollado una cura para la diabetes?
+    - existe una cura para curar la diabetes?
+    - la diabetes se cura?
+    - la diabetes es curable?
+    - actualmente hay cura para curar la diabetes?
+- intent: controlar_diabetes
+  examples: |
+    - cómo se controla la diabetes?
+    - la diabetes es controlable?
+    - como se maneja la diabetes?
+    - como lidiar con la diabetes
+    - como se vive con la diabetes?
+    - cómo es vivir con diabetes?
+    - con qué se controla la diabetes?
+    - cómo tener la diabetes a raya?
+- intent: dieta_diabetes
+  examples: |
+    - qué cosas me recomiendas para la diabetes?
+    - qué tipo de dieta se tiene que llevar al padecer diabetes?
+    - que dieta se lleva con la diabetes?
+    - que tipo de dieta se lleva con diabetes mellitus?
+    - que dieta debo llevar con diabetes?
+    - que dieta seguir cuando se tiene diabetes?
+    - que tipo de alimentación se debe llevar con diabetes?
+    - que alimentos se pueden comer con diabetes?
+    - que si se puede comer con diabetes?
+    - que alimentos son permitidos consumir con diabetes?
+    - a que alimentos hay que prestar atención?
+- intent: dar_alimentos_sanos
+  examples: |
+    - se pueden comer verduras?
+    - si se come verduras
+    - puedo comer verduras?
+    - el paciente consume verduras
+    - se pueden comer frutas?
+    - puedo comer frutas?
+    - el paciente come frutas
+    - es valido comer alimentos integrales?
+    - es valido comer frutas?
+    - es bueno comer verduras?
+    - es bueno tomar agua?
+    - puedo tomar agua
+- intent: dar_alimentos_insanos
+  examples: |
+    - puedo comer mucha grasa?
+    - puedo comer pizza todos los dias?
+    - puedo tomar alcohol diario?
+    - puedo consumir mucha carne roja?
+    - se puede consumir hamburguesas?
+    - es recomendable consumir hot dogs?
+    - puedo comer comida chatarra?
+    - se puede comer grasas saturadas?
+    - puedo tomar refresco?
+    - se puede consumir dulces?
+    - es valido tomar bebidas azucaradas?
+    - el paciente puede comer mucha sal?
+- intent: otros_cuidados
+  examples: |
+    - hay algún especie de cuidado especial?
+    - los pacientes que cuidados deben tener?
+    - que cuidados debo tener?
+    - que puedo hacer para cuidarme?
+    - el paciente cómo debe cuidarse?
+    - que cuidados conlleva la diabetes?
+    - cómo cuidarme?
+    - que cuidados debe tener mi paciente?
+- intent: prevencion
+  examples: |
+    - cómo la prevengo?
+    - cómo se previene la diabetes?
+    - cómo prevenir la diabetes?
+    - la diabetes es prevenible?
+    - cómo prevenir?
+    - cómo evito que me de la diabetes?
+    - hay formas de evitar la diabetes?
+    - tienes algunas recomendaciones para evitar la diabetes?
+    - sabes cómo se previene la diabetes?
+    - dime como prevenirla
+    - explicame cómo puedo llegar a prevenirla
+- intent: buenos_habitos
+  examples: |
+    - por qué es bueno alimentarse bien?
+    - que tan bueno es ejercitarse durante el día?
+    - por qué es importante mantener un peso corporal adecuado?
+    - que tan bueno es evitar el cigarro?
+- intent: complicaciones
+  examples: |
+    - qué complicaciones trae la diabetes?
+    - qué posibles complicaciones conlleva?
+    - existen complicaciones?
+    - cuál es el peor de los casos?
+    - hay órganos que puedan llegar a afectarse?
+    - qué partes del cuerpo son afectadas por este padecimiento?
+    - la diabetes potencia otras enfermedades?
+    - qué tan peligrosa es la diabetes mellitus?
+    - qué tipo de complicaciones pueden presentarse?
+    - la diabetes genera otras nuevas enfermedades?
+    - que enfermedades trae consigo la diabetes?
+    - qué complicaciones tiene la diabetes?
+- intent: decir_malos_habitos
+  examples: |
+    - y cuales se consideran cómo malos habitos?
+    - qué malos hábitos hay que tener para desarrollar diabetes?
+    - puedes decirme los malos habitos que propician el desarrollo de este padecimiento?
+    - y cuáles consideras son malos hábitos?
+    - dame ejemplos de malos hábitos
+    - que habitos no debe tener el paciente?
+- intent: decir_causas
+  examples: |
+    - puedes decirme las causas de la diabetes?
+    - dime las causas de la diabetes?
+    - mi paciente quiere saber las causas de la diabetes
+    - que causas propician el desarrollo de la diabetes?
+    - explicame las causas de la diabetes
+    - cuales son las principales causas de la diabetes?
+    - qué genera la diabetes?
+- intent: explica_tipo_diabetes
+  examples: |
+    - qué es la diabetes tipo [1](tipo)?
+    - qué es la diabetes tipo [I](tipo)?
+    - en qué consiste la diabetes tipo [2](tipo)?
+    - en qué consiste la diabetes tipo [II](tipo)?
+    - define la diabetes [gestacional](tipo)
+    - explicame la diabetes [gestacional](tipo)
+    - diabetes tipo [1](tipo)
+    - diabetes tipo [2](tipo)
+    - explicame que es la diabetes [gestacional](tipo)
+    - tipo [1](tipo)
+    - diabetes [gestacional](tipo)
+    - la tipo [2](tipo)
+- intent: otro_tipo
+  examples: |
+    - puedes decirme otro tipo de diabetes?
+    - ahora quiero información de otro tipo de diabetes
+    - dime ahora sobre otro tipo
+    - dame información sobre otro tipo de diabetes
+    - quiero saber sobre otro tipo de diabetes
+    - quiero informacion de otro tipo
+- intent: hiperglucemia
+  examples: |
+    - qué es la hiperglucemia?
+    - en qué consiste la hiperglucemia?
+    - define hiperglucemia
+    - dime qué es la hiperglucemia
+    - explica hiperglucemia
+    - me puedes decir qué es la hiperglucemia?
 - intent: agradecer_ayuda
   examples: |
     - Muchas gracias
@@ -765,3 +670,198 @@ nlu:
 - synonym: masculino
   examples: |
     - Masculino
+- lookup: nombre
+  examples: |
+    - Guillermo Mejia
+    - Juan Perez
+    - Itzel Castillo
+    - Ana Ramirez
+    - Carlos Gonzalez
+    - Beatriz Adriana
+    - Maricela Bravo
+    - Rodrigo Alexander
+    - Josue Figureoa
+    - Hugo Pablo
+    - Angeles Belem
+    - Ernesto Carrilo
+    - Pamela Angeles
+    - Daniela Garcia
+    - Guillermo Olmos
+    - Patricia Mejia
+    - Cristian Mejia
+    - Blanca Contreras
+    - Leonardo Sanchez
+    - Alonso Martinez
+    - Karen Pastrana
+    - Karen Romero
+    - Gloria Marin
+    - Edgar Suarez
+    - Raquel Murillo
+    - Carlos Gonzalez
+    - Maria Hernandez
+    - Jose Rodriguez
+    - Laura Martinez
+    - Ricardo Fernandez
+    - Sofia Lopez
+    - Alejandro Torres
+    - Valeria Garcia
+    - Luis Sanchez
+    - Natalia Morales
+    - Andres Jimenez
+    - Paola Castro
+    - Jorge Silva
+    - Gabriela Reyes
+    - Martin Ortega
+    - Daniela Paredes
+    - Ada Radanes
+    - Clara Hernandez
+    - Sofia Juarez
+    - Miguel Gutierrez
+    - Armando Fuentes
+    - Brenda Soto
+    - Carlos Mendoza
+    - Diana Flores
+    - Eduardo Vargas
+    - Fabiola Peralta
+    - Gerardo Castillo
+    - Helena Cervantes
+    - Ignacio Ruiz
+    - Jessica Guerrero
+    - Kevin Molina
+    - Leticia Ríos
+    - Miguel Navarro
+    - Norma Díaz
+    - Octavio Rangel
+    - Patricia León
+    - Quetzal Gómez
+    - Raúl Cisneros
+    - Silvia Salazar
+    - Tomás Vega
+    - Ubaldo Rojas
+    - Vanessa Pacheco
+    - Walter Cárdenas
+    - Ximena Ugalde
+    - Yahir Cortés
+    - Zaida Ramos
+    - Ximena Horan
+    - Areeli Ferrer
+    - Luis Angel
+    - Axel Jimenez
+    - Alan Gonzalez
+    - Antonio Mejia
+    - Arturo Mejia
+    - Adriana Hernández
+    - Bruno Sánchez
+    - Cecilia Cordero
+    - Diego Herrera
+    - Estela Montes
+    - Gabriela Martínez
+    - Héctor Varela
+    - Ingrid Castillo
+    - Juan Pablo Méndez
+    - Karla Núñez
+    - Luis Flores
+    - María del Carmen Torres
+    - Néstor Soto
+    - Olivia Díaz
+    - Pablo Ramírez
+    - Quetzalli Rojas
+    - Raúl Medina
+    - Sandra Jiménez
+    - Tomás Serrano
+    - Ursula Guzmán
+    - Víctor Mendoza
+    - Wendy Cervantes
+    - Xavier León
+    - Yolanda Vega
+    - Zenaida Paredes
+    - Carolina Herrera
+    - Coraline Estrada
+    - Mauricio Torres
+    - Andrea Silva
+    - David Villavicencio
+    - Alejandra Torres
+    - Denisse Torres
+    - Samantha Segundo
+    - Omar Ayala
+    - Alejandro Gómez
+    - Brenda Ortega
+    - Carlos Vargas
+    - Diana Ruiz
+    - Eduardo López
+    - Fabiola Soto
+    - Gerardo Morales
+    - Helena Reyes
+    - Iván Delgado
+    - Jessica Peralta
+    - Kevin Jiménez
+    - Laura González
+    - Manuel Herrera
+    - Norma Cisneros
+    - Óscar Salinas
+    - Patricia Mendoza
+    - Quirino Valdez
+    - Rosa Montiel
+    - Sergio Ramírez
+    - Teresa Sánchez
+    - Ulises Cervantes
+    - Verónica Navarro
+    - Walter Paredes
+    - Ximena Torres
+    - Yahir Núñez
+    - Zulema Ríos
+    - Paulina Ramos
+    - Mia Zavala
+    - Fernanda Saavedra
+    - Gustavo Huitzil
+    - Berelita Perez
+    - Yolanda Paredes
+    - Sebastian Castellanos
+    - Julia Aguilar
+    - Laura Saavedra
+    - Luisa Gomez
+    - Valentina Agudelo
+    - Constanza Belem
+    - Oscar Neria
+    - Jasmine Hernandez
+    - Gerardo Marcel
+    - Julio Aponte
+    - Adriana Martínez
+    - Benjamín Herrera
+    - Claudia Varela
+    - Diego Salgado
+    - Estela Robles
+    - Fernando Ríos
+    - Gabriela Cruz
+    - Héctor Ramírez
+    - Isabel Gutiérrez
+    - Jorge Mendoza
+    - Karla Sánchez
+    - Luis Torres
+    - Mariana Paredes
+    - Nicolás Vargas
+    - Olivia Díaz
+    - Pablo Delgado
+    - Quesia Gómez
+    - Ricardo Núñez
+    - Silvia Cervantes
+    - Tomás Valdez
+    - Ursula Montiel
+    - Víctor Ortega
+    - Wendy Jiménez
+    - Xavier Peralta
+    - Yolanda Reyes
+    - Zacarías Salinas
+    - Ángela Navarro
+    - Édgar Cisneros
+    - Úrsulo Soto
+    - Adriana Baranda
+    - Angel Emmanuel
+    - Itzel Castillo
+    - Cristopher Camporrojo
+    - Iziel Gonzalez
+    - Veronica Lopez
+    - Yamilet Montaño
+    - Ximena Lobera
+    - Pedro Alonso
+    - Rocio Ortega

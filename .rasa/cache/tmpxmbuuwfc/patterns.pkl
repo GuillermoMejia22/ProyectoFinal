@@ -1,0 +1,6 @@
+[
+  {
+    "name": "nombre",
+    "pattern": "\\s(.+)"
+  }
+]

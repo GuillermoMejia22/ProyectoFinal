@@ -10,12 +10,27 @@ rules:
     - intent: bot_challenge
     - action: utter_soy_un_bot
   
+  - rule: Di de nada cada que te agradezcan
+    steps:
+    - intent: agradecer_ayuda
+    - action: utter_de_nada
+
   - rule: Activar Form Datos Generales
     steps:
     - intent: solicitar_imc
     - action: datos_generales_form
     - active_loop: datos_generales_form
-  
+
+  - rule: Submit Form Tipo Diabetes
+    condition:
+    - active_loop: tipo_form
+    steps:
+    - action: tipo_form
+    - active_loop: null
+    - slot_was_set:
+      - requested_slot: null
+    - action: action_explica_tipos
+
   - rule: Submit Form Datos Generales
     condition:
     - active_loop: datos_generales_form
@@ -25,3 +40,114 @@ rules:
     - slot_was_set:
       - requested_slot: null
     - action: action_calcular_imc
+
+  - rule: Desactivar Form Datos Generales desconociendo Peso
+    steps:
+    - intent: no_se_peso
+    - action: action_deactivate_loop
+    - active_loop: null
+    - action: utter_necesito_dato
+
+  - rule: Desactivar Form Datos Generales desconociendo Estatura
+    steps:
+    - intent: no_se_estatura
+    - action: action_deactivate_loop
+    - active_loop: null
+    - action: utter_necesito_dato
+
+  - rule: Responde con la definicion de diabetes
+    steps:
+    - intent: que_es_la_diabetes
+    - action: utter_que_es_la_diabetes
+  
+  - rule: Detecta caso de riesgo
+    steps:
+    - intent: casos_riesgo
+    - action: utter_persona_riesgo
+  
+  - rule: Explica casos de riesgo
+    steps:
+    - intent: factores_riesgo_diabetes
+    - action: utter_casos_riesgo
+
+  - rule: Detecta sintoma
+    steps:
+    - intent: decir_sintomas
+    - action: utter_sintoma_detectado
+    - action: utter_explicar_sintomas
+
+  - rule: Explica sintomas
+    steps:
+    - intent: explicar_sintomas
+    - action: utter_explicar_sintomas
+
+  - rule: Di tipos
+    steps:
+    - intent: tipos_diabetes
+    - action: utter_explicar_tipos
+
+  - rule: Di cura
+    steps:
+    - intent: conocer_cura
+    - action: utter_cura_diabetes
+  
+  - rule: Di como se controla la diabetes
+    steps:
+    - intent: controlar_diabetes
+    - action: utter_controlar_diabetes
+  
+  - rule: Di la dieta general de la diabetes
+    steps:
+    - intent: dieta_diabetes
+    - action: utter_dieta_diabetes
+
+  - rule: Alimentos sanos
+    steps:
+    - intent: dar_alimentos_sanos
+    - action: utter_buenos_alimentos
+    - action: utter_dieta_diabetes
+  
+  - rule: Malos alimentos
+    steps:
+    - intent: dar_alimentos_insanos
+    - action: utter_malos_alimentos
+    - action: utter_dieta_diabetes
+
+  - rule: Cuidados
+    steps:
+    - intent: otros_cuidados
+    - action: utter_cuidados
+  
+  - rule: Prevencion de diabetes
+    steps:
+    - intent: prevencion
+    - action: utter_prevencion
+  
+  - rule: Habitos buenos
+    steps:
+    - intent: buenos_habitos
+    - action: utter_buenos_habitos
+    - action: utter_prevencion
+
+  - rule: Di malos habitos
+    steps:
+    - intent: decir_malos_habitos
+    - action: utter_malos_habitos
+    - action: utter_prevencion
+
+  - rule: Di las complicaciones
+    steps:
+    - intent: complicaciones
+    - action: utter_complicaciones
+    - action: utter_causa_muerte
+
+  - rule: Di las causas
+    steps: 
+    - intent: decir_causas
+    - action: utter_causas
+    - action: utter_causa_muerte
+
+  - rule: Define Hiperglucemia
+    steps:
+    - intent: hiperglucemia
+    - action: utter_hiperglucemia

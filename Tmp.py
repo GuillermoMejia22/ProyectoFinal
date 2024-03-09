@@ -1,28 +1,16 @@
-import requests
-from bs4 import BeautifulSoup
+import matplotlib.pyplot as plt
 
-def obtener_informacion_diabetes():
-    # URL de la página que deseas raspar
-    url = "https://www.insp.mx/avisos/3652-diabetes-en-mexico.html"
+years = [1980, 2040]
+population = [62, 109]
 
-    # Realiza la solicitud a la página web
-    response = requests.get(url)
+plt.bar(years, population, color=['blue', 'red'], linewidth=50)
 
-    # Verifica si la solicitud fue exitosa (código de estado 200)
-    if response.status_code == 200:
-        # Parsea el contenido HTML de la página
-        soup = BeautifulSoup(response.text, 'html.parser')
+plt.xticks(years)
 
-        # Encuentra y extrae la información que necesitas
-        informacion_diabetes = soup.find("div", class_="diabetes")
-        if informacion_diabetes:
-            # Imprime o retorna la información
-            print(informacion_diabetes.get_text())
-            return informacion_diabetes.get_text()
-        else:
-            print("No se encontró información sobre diabetes en la página.")
-    else:
-        print(f"No se pudo acceder a la página. Código de estado: {response.status_code}")
+plt.xlabel('Año')
+plt.ylabel('Población (en millones)')
+plt.title('Estimación de Diabetes Mellitus Tipo 2 en las Américas')
 
-# Llama a la función para obtener la información
-obtener_informacion_diabetes()
+plt.savefig('diabetes_mellitus_estimation.png')
+
+plt.clf()

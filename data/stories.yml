@@ -2,34 +2,6 @@ version: "3.1"
 
 stories:
 
-- story: usuario feliz
-  steps:
-  - intent: saludar
-  - action: action_saludo
-  - intent: mood_feliz
-  - action: utter_feliz
-  - action: utter_en_que_puedo_ayudarte
-
-- story: happy path 1
-  steps:
-  - intent: saludar
-  - action: action_saludo
-  - intent: mood_triste
-  - action: utter_manda_gif
-  - action: utter_eso_ayudo
-  - intent: afirmacion
-  - action: utter_feliz
-
-- story: sad path 2
-  steps:
-  - intent: saludar
-  - action: action_saludo
-  - intent: mood_triste
-  - action: utter_manda_gif
-  - action: utter_eso_ayudo
-  - intent: negacion
-  - action: utter_animo
-
 - story: interactive_story_1
   steps:
   - intent: saludar
@@ -150,8 +122,7 @@ stories:
   - intent: despedirse
   - action: action_despedida
 
-
-- story: interactive_story_3
+- story: interactive_story_4
   steps:
   - intent: saludar
   - action: action_saludo
@@ -165,26 +136,186 @@ stories:
     - requested_slot: nombre
   - intent: dar_nombre
     entities:
-    - nombre: Arturo Mejia
+    - nombre: Ximena Lobera
   - slot_was_set:
-    - nombre: Arturo Mejia
+    - nombre: Ximena Lobera
   - action: datos_generales_form
   - slot_was_set:
     - requested_slot: edad
   - intent: dar_edad
     entities:
-    - edad: '58'
+    - edad: '23'
   - slot_was_set:
-    - edad: '58'
+    - edad: '23'
   - action: datos_generales_form
   - slot_was_set:
     - requested_slot: peso
-  - intent: no_se_mi_peso
-  - action: action_deactivate_loop
-  - active_loop: null
+  - intent: dar_peso
+    entities:
+    - peso: '53.5'
+  - slot_was_set:
+    - peso: '53.5'
+  - action: datos_generales_form
+  - slot_was_set:
+    - requested_slot: estatura
+  - intent: dar_estatura
+    entities:
+    - estatura: '1.76'
+  - slot_was_set:
+    - estatura: '1.76'
+  - action: datos_generales_form
+  - slot_was_set:
+    - requested_slot: genero
+  - intent: dar_genero
+    entities:
+    - genero: femenino
+  - slot_was_set:
+    - genero: femenino
+  - action: datos_generales_form
   - slot_was_set:
     - requested_slot: null
-  - action: utter_necesito_dato
-  - action: utter_en_que_puedo_ayudarte
+  - active_loop: null
+  - action: action_calcular_imc
+  - intent: agradecer_ayuda
+  - action: utter_de_nada
   - intent: despedirse
   - action: action_despedida
+
+- story: interactive_story_5
+  steps:
+  - intent: saludar
+  - action: action_saludo
+  - intent: mood_triste
+  - action: utter_manda_gif
+  - action: utter_eso_ayudo
+  - intent: afirmacion
+  - action: utter_feliz
+  - action: utter_en_que_puedo_ayudarte
+  - intent: conocer_funcionalidades
+  - action: utter_explicar_objetivo
+  - intent: solicitar_imc
+  - action: datos_generales_form
+  - active_loop: datos_generales_form
+  - slot_was_set:
+    - requested_slot: nombre
+  - intent: dar_nombre
+    entities:
+    - nombre: Luis Hernandez
+  - slot_was_set:
+    - nombre: Luis Hernandez
+  - action: datos_generales_form
+  - slot_was_set:
+    - requested_slot: edad
+  - intent: dar_edad
+    entities:
+    - edad: '25'
+  - slot_was_set:
+    - edad: '25'
+  - action: datos_generales_form
+  - slot_was_set:
+    - requested_slot: peso
+  - intent: dar_peso
+    entities:
+    - peso: '67.5'
+  - slot_was_set:
+    - peso: '67.5'
+  - action: datos_generales_form
+  - slot_was_set:
+    - requested_slot: estatura
+  - intent: dar_estatura
+    entities:
+    - estatura: '1.77'
+  - slot_was_set:
+    - estatura: '1.77'
+  - action: datos_generales_form
+  - slot_was_set:
+    - requested_slot: genero
+  - intent: dar_genero
+    entities:
+    - genero: masculino
+  - slot_was_set:
+    - genero: masculino
+  - action: datos_generales_form
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_calcular_imc
+  - intent: agradecer_ayuda
+  - action: utter_de_nada
+  - intent: despedirse
+  - action: action_despedida
+
+- story: Activar Form Tipo Diabetes
+  steps:
+  - intent: tipos_diabetes
+  - action: utter_explicar_tipos
+  - intent: afirmacion
+  - action: tipo_form
+  - active_loop: tipo_form
+
+- story: Activar Form Tipo Diabetes Alternativo
+  steps:
+  - intent: otro_tipo
+  - action: tipo_form
+  - active_loop: tipo_form
+
+- story: interactive_story_6
+  steps:
+  - intent: saludar
+  - action: action_saludo
+  - intent: mood_feliz
+  - action: utter_feliz
+  - action: utter_en_que_puedo_ayudarte
+  - intent: tipos_diabetes
+  - action: utter_explicar_tipos
+  - intent: afirmacion
+  - action: tipo_form
+  - active_loop: tipo_form
+  - slot_was_set:
+    - requested_slot: tipo
+  - intent: explica_tipo_diabetes
+    entities:
+    - tipo: '1'
+  - slot_was_set:
+    - tipo: '1'
+  - action: tipo_form
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_explica_tipos
+  - slot_was_set:
+    - tipo: null
+  - intent: otro_tipo
+  - action: tipo_form
+  - active_loop: tipo_form
+  - slot_was_set:
+    - requested_slot: tipo
+  - intent: explica_tipo_diabetes
+    entities:
+    - tipo: gestacional
+  - slot_was_set:
+    - tipo: gestacional
+  - action: tipo_form
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_explica_tipos
+  - slot_was_set:
+    - tipo: null
+  - intent: otro_tipo
+  - action: tipo_form
+  - active_loop: tipo_form
+  - slot_was_set:
+    - requested_slot: tipo
+  - intent: explica_tipo_diabetes
+    entities:
+    - tipo: '2'
+  - slot_was_set:
+    - tipo: '2'
+  - action: tipo_form
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_explica_tipos
+  - slot_was_set:
+    - tipo: null
