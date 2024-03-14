@@ -530,34 +530,23 @@ nlu:
     - que si se puede comer con diabetes?
     - que alimentos son permitidos consumir con diabetes?
     - a que alimentos hay que prestar atención?
-- intent: dar_alimentos_sanos
+- intent: dar_alimentos
   examples: |
     - se pueden comer verduras?
     - si se come verduras
     - puedo comer verduras?
     - el paciente consume verduras
-    - se pueden comer frutas?
-    - puedo comer frutas?
+    - se pueden comer frutas
+    - puedo comer frutas
     - el paciente come frutas
-    - es valido comer alimentos integrales?
-    - es valido comer frutas?
-    - es bueno comer verduras?
-    - es bueno tomar agua?
+    - es valido comer alimentos integrales
+    - es valido comer frutas
+    - es bueno comer verduras
+    - es bueno tomar agua
     - puedo tomar agua
-- intent: dar_alimentos_insanos
-  examples: |
-    - puedo comer mucha grasa?
-    - puedo comer pizza todos los dias?
-    - puedo tomar alcohol diario?
-    - puedo consumir mucha carne roja?
-    - se puede consumir hamburguesas?
-    - es recomendable consumir hot dogs?
-    - puedo comer comida chatarra?
-    - se puede comer grasas saturadas?
-    - puedo tomar refresco?
-    - se puede consumir dulces?
-    - es valido tomar bebidas azucaradas?
-    - el paciente puede comer mucha sal?
+    - las personas con diabetes pueden comer pizza?
+    - que pueden comer las personas con diabetes?
+    - que alimentos consumen los diabeticos?
 - intent: otros_cuidados
   examples: |
     - hay algún especie de cuidado especial?
@@ -648,6 +637,47 @@ nlu:
     - dime qué es la hiperglucemia
     - explica hiperglucemia
     - me puedes decir qué es la hiperglucemia?
+    - cómo se le llama a eso que te da cuando tienes el azucar alta?
+    - que es lo que pasa cuando se tiene alta la glucosa?
+- intent: fuentes
+  examples: |
+    - puedes darme alguna de las fuentes que utilizas?
+    - podrías proporcionarme una fuente para profundizar más en este tema?
+    - necesito una fuenta para seguir conociendo sobre este tema
+    - dame una fuente
+    - podrías darme una fuente para saber más
+    - tienes algun enlace de interes?
+    - podrías mandarme un enlace sobre la diabetes?
+- intent: obtener_videos
+  examples: |
+    - podrías mandarme un vídeo sobre este tema?
+    - puedes mandarme un vídeo sobre esta enfermedad?
+    - tienes algún vídeo de interés sobre la diabetes
+    - quiero ver un vídeo sobre la diabetes
+    - proporcioname un vídeo sobre la diabetes en México
+- intent: explica_glucosa
+  examples: |
+    - y qué es la glucosa?
+    - me explicas que es la glucosa?
+    - define glucosa
+    - explicame que es la glucosa
+    - me podrías decir que es la glucosa?
+- intent: bajar_azucar
+  examples: |
+    - y qué recomiendas para bajar el nivel de azucar en sangre?
+    - que recomiendas para bajar los niveles de azucar?
+    - que es recomendable para bajar los niveles de azucar en la sangre?
+    - cómo se baja el azucar?
+    - dime como se reduce el nivel de glucosa en sangre
+    - y cómo se reduce el nivel de azucar en la sangre
+    - hay algo para reducir la glucosa del cuerpo?
+- intent: explica_hipoglucemia
+  examples: |
+    - qué es la hipoglucemia?
+    - define hipoglucemia
+    - explicame que es la hipoglucemia
+    - cómo se le llama cuando el nivel de azucar es muy bajo?
+    - como se le dice cuando se tiene el azucar baja?
 - intent: agradecer_ayuda
   examples: |
     - Muchas gracias

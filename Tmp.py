@@ -1,16 +1,28 @@
-import matplotlib.pyplot as plt
+from owlready2 import *
 
-years = [1980, 2040]
-population = [62, 109]
+onto = get_ontology("OntologiaUAM.owx").load()
 
-plt.bar(years, population, color=['blue', 'red'], linewidth=50)
+# Listado de Clases
+def listadoClases():
+    for class_ in onto.classes():
+        print(class_.name)
 
-plt.xticks(years)
+# Listado Data Properties    
+def listadoDataProperties():
+    props = {}
+    for prop in onto.data_properties():
+        props[prop.name] = prop
+    print(props)
 
-plt.xlabel('Año')
-plt.ylabel('Población (en millones)')
-plt.title('Estimación de Diabetes Mellitus Tipo 2 en las Américas')
-
-plt.savefig('diabetes_mellitus_estimation.png')
-
-plt.clf()
+# Listado de los Individuos (todos)
+def listadoIndividuos():
+    individuals = {}
+    try:
+        for instance in onto.individuals():
+            if instance.name in individuals:
+                print("Individual occurring twice:", {instance.name})
+            individuals[instance.name] = instance
+    except ValueError:
+        raise
+    print(individuals)
+    

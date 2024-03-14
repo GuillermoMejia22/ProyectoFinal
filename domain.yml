@@ -12,8 +12,7 @@ intents:
 - conocer_cura
 - conocer_funcionalidades
 - controlar_diabetes
-- dar_alimentos_insanos
-- dar_alimentos_sanos
+- dar_alimentos
 - dar_edad
 - dar_estatura
 - dar_genero
@@ -40,6 +39,11 @@ intents:
 - solicitar_imc
 - tipos_diabetes
 - hiperglucemia
+- fuentes
+- obtener_videos
+- explica_glucosa
+- bajar_azucar
+- explica_hipoglucemia
 entities:
 - tipo
 - nombre
@@ -104,20 +108,33 @@ slots:
     mappings:
     - type: from_entity
       entity: tipo
-      conditions:
-      - active_loop: tipo_form
     - type: from_entity
-      entity: tipo
+      entity: genero
 responses:
   utter_en_que_puedo_ayudarte:
   - text: Dime ¿en qué puedo ayudarte?
+  - text: Ahora dime ¿en qué puedo serte útil?
+  - text: ¿En qué puedo ayudarte el día de hoy?
+  - text: ¿Necesitas algo en lo que pueda ayudarte?
+  - text: ¿Te puedo ayudar con algo?
   utter_de_nada:
   - text: No hay de qué, ¿hay algo más en lo qué pueda ayudarte?
+  - text: Me alegro mucho que haya sido de utilidad :D si necesitas otra cosa aquí estoy
+  - text: Genial! si necesitas otra cosa puedes preguntarlo :)
+  - text: No hay de qué agradecer, si necesitas que responda a otra cosa sólo pídemelo :D
+  - text: Me alegra saber que te haya servido, cualquier cosa estoy disponible
   utter_manda_gif:
   - text: 'Espero esto te anime:'
-    image: https://i.imgur.com/tl91hI5.gif
+  - text: Espero esto te alegre el día
+  - text: Ve esta imagen para que se te olviden tus problemas
+  - text: Espero esto te saque una sonrisa
+  - text: Lo siento mucho, espero esto te anime un poco
   utter_eso_ayudo:
   - text: ¿Eso te animó?
+  - text: ¿Eso te ayudó?
+  - text: ¿Ya te sientes mejor?
+  - text: ¿Te sientes mejor que hace un minuto?
+  - text: ¿Ya te sientes un poco mejor?
   utter_feliz:
   - text: ¡Excelente, sigue así!
   - text: Me da mucho gusto
@@ -166,10 +183,12 @@ responses:
   - text: Puedes darme la estatura del paciente por favor
   - text: Podrías proporcionarme la estatura del paciente por favor
   - text: Gracias, ahora necesito la estatura del paciente por favor
-  utter_ask_tipo:
-  - text: ¿Qué tipo de diabetes?
   utter_explicar_objetivo:
   - text: Soy DiaBot y puedo ayudarte con mucho gusto a responder preguntas relacionadas a la Diabetes Mellitus en México Intenta algo como pedirme que calcule el IMC de un paciente
+  - text: Mi nombre es Diabot y puedo ayudarte a responder cuestionamientos comúnes sobre la Diabetes Mellitus en México
+  - text: Soy Diabot y puedo responder a preguntas sobre la diabetes en nuestro país
+  - text: Me presento, soy Diabot y mi objetivo es ayudarte a responder dudas comúnes que tengan tus pacientes sobre la Diabetes Mellitus
+  - text: Mi nombre es Diabot y puedo ayudarte a diagnosticar a pacientes de Diabetes Mellitus y también a resolver dudas frecuentes
   utter_necesito_dato:
   - text: Lo siento, necesito ese dato para poder ayudarte a calcular el IMC de tu paciente
   - text: Perdón, realmente necesito ese dato para calcular el Índice de Masa Corporal
@@ -187,37 +206,30 @@ responses:
   - text: 'De acuerdo con información del IMSS Algunos factores de riesgo son: antecedentes de familiares que padezcan o hayan padecido diabetes mellitus, sobrepeso y obesidad; enfermedad cardiovascular; grasas alteradas en sangre (dislipidemia); quistes en los ovarios; mujeres que haya tenido bebés con un peso mayor a 4 kilos y pacientes que, por enfermedad, tengan que usar tratamiento con esteroides o que tengan tratamiento de esquizofrenia.'
   utter_persona_riesgo:
   - text: Lo que describes es un factor de riesgo de diabetes, recomienda al paciente que trate de mejorar sus habitos alimenticios y que lo acompañe con actividad física, llevando un monitoreo entre médico y paciente se puede llegar a prevenir
-  utter_explicar_sintomas:
-  - text: 'El IMSS menciona que algunos de ellos pueden ser:'
-    image: Sintomas.png
-  - text: De acuerdo con información del Gobierno de México Los síntomas son diferentes dependiendo el tipo de la diabetes, pero cuando los niveles de azúcar son altos, se presenta una sensación de mucha hambre y sed, incluso llegar a perder peso, necesidad de orinar muy a menudo y sentir cansancio. Por otro lado, en las personas con diabetes tipo 2 es común no presentar síntomas al inicio, incluso es posible que no los tengan durante muchos años. En estos casos, la detección de la diabetes suele darse mediante un análisis de sangre, pero se puede reconocer la enfermedad ante síntomas como disfunción eréctil, visión borrosa y dolor o entumecimiento en los pies o las manos.
-  - text: 'La OMS dice que Los síntomas de la diabetes pueden ocurrir repentinamente. En la diabetes de tipo 2, los síntomas pueden ser leves y tardar muchos años en notarse. Algunos de ellos son:' 
-    image: SintomasV2.png
+  - text: Eso que describes corresponde a los factores de riesgo de diabetes, es probable que el paciente deba hacer conciencia y tener ciertos cuidados para evitar caer en esta terrible enfermedad
+  - text: Eso corresponde a un factor de riesgo de diabetes, recomiendo que el paciente debe optar por llevar una vida saludable, acompañada de actividad física para evitar contraer esta enfermedad
+  - text: Lo que me cuentas es un factor de riesgo, pero nunca es tarde para comenzar a cuidarse, recomienda al paciente el mejorar sus hábitos físicos como alimenticios, siguiendo eso puede evitar el caer en una zona de riesgo, y sobretodo el cuidar el peso y nivel de glucosa
+  - text: Eso que describes coincide con los factores de riesgo de diabetes, pero con un buen seguimiento del paciente acompañado de un buen cuidado físico y alimenticio se reducen los riesgos de padecer esta enfermedad
   utter_sintoma_detectado:
   - text: Eso que describes corresponde a uno de los principales síntomas de la diabetes, por si sólo no hay que alarmarse pero si detectas que el paciente cumple tres de los siguientes sintomas, es necesario realizar un estudio
+  - text: Lo que me cuentas corresponde a uno de los síntomas de la diabetes, si se detectan 3 o más de ellos es mejor analizar el nivel de glucosa en sangre y comenzar con un plan de cuidados
+  - text: Eso corresponde con los síntomas principales de la diabetes. Si el paciente presenta tres o más de estos síntomas, se recomienda realizar una evaluación médica más detallada.
+  - text: Eso que describes entra en los síntomas de la diabetes, debes saber que si se cumplen más de tres, existen altas probabilidades de que el paciente tenga diabetes y debas comenzar con un plan médico de cuidados, análisis y chequeos continuos
+  - text: Lo que me cuentas entra en los síntomas principales de la diabetes, recomiendo que realices un análisis de presión sanguinea y glucosa, asimismo no estaría de más que conozcas su IMC, si necesitas puedo ayudarte a obtenerlo
   utter_explicar_tipos:
-  - text: 'De acuerdo con información del IMSS (Instituto Mexicano del Seguro Social) Existen 3 tipos de diabetes, las cuales se denominan: Tipo I, Tipo II y Diabetes Gestacional (esta última ocurre durante el embarazo). Cualquier tipo de diabetes no controlada puede producir complicaciones en muchas partes del cuerpo y aumentar el riesgo de una muerte prematura. ¿Quieres saber más sobre uno de los tipos de diabetes?'
-  utter_controlar_diabetes:
-  - text: Existen distintos medicamentos en el mercado que ayudan a bajar el nivel de azucar en la sangre, suelen ser llamados como hipoglucemiantes, estos acompañados de una buena actividad física, una alimentación sana y seguimiento con un especialista de la salud se puede controlar adecuadamente
-  - text: 'La participación de la persona que vive con diabetes es necesaria para lograr un buen control de sus niveles de glucosa y una buena calidad de vida, siguiendo las siguientes recomendaciones:'
-    image: Recomendacion.png
-  - text: La diabetes se puede tratar y sus consecuencias se pueden evitar o retrasar con dieta, actividad física, medicación y exámenes y tratamientos regulares para las complicaciones.
-  - text: 'Algunas personas con diabetes de tipo 2 necesitan tomar medicamentos para ayudar a controlar los niveles de azúcar en la sangre. Estos medicamentos se administran en forma de inyección o por otras vías. Algunos de estos medicamentos son:
-          metformina; 
-          sulfonilureas; 
-          e inhibidores del cotransportador de sodio-glucosa de tipo 2.'
+  - text: 'De acuerdo con información del IMSS (Instituto Mexicano del Seguro Social) Existen 3 tipos de diabetes, las cuales se denominan: Tipo I, Tipo II y Diabetes Gestacional (esta última ocurre durante el embarazo). Cualquier tipo de diabetes no controlada puede producir complicaciones en muchas partes del cuerpo y aumentar el riesgo de una muerte prematura. Si necesitas información sobre un sólo tipo puedes pedirmelo :)'
   utter_cura_diabetes:
-  - text: Lamentablemente no es curable, pero es posible controlarla con éxito y tener una buena calidad de vida si sigues el tratamiento que te indicó tu médico.
-  utter_dieta_diabetes:
-  - text: 'De acuerdo con información del IMSS (Instituto Mexicano del Seguro Social) Debes tener una alimentación que ayude a mantener un nivel adecuado de azúcar en la sangre, puedes acudir con un experto en nutrición para que te recomiende un plan alimenticio. Sobre todo debes:'
-    image: Dieta.png
+  - text: Lamentablemente no es curable, pero es posible controlarla con éxito y tener una buena calidad de vida si sigues el tratamiento que te indicó tu médico
+  - text: Lamento decirte que NO es curable, pero si se lleva una buena alimentación, cuidados y ejercicio es probable retrasar y controlar sus complicaciones
+  - text: Actualmente no se cuenta con una cura pero se puede controlar con un buen plan médico que conlleve una buena alimentación, ejercitarse diariamente aunque sea por 30 minutos y constantes monitoreos y seguimientos sobre niveles de azúcar y presión arterial
+  - text: En nuestros días aún NO existe una cura como tal :( pero se puede vivir con diabetes manteniendo una dieta y ejercicio 
+  - text: Lamento decirte que actualmente NO es curable, pero la diabetes es controlable mediante medicamentos, dieta y actividad física constante.
   utter_buenos_alimentos:
-  - text: Sí, eso es parte de la dieta que deben llevar las personas que tienen este padecimiento.
-  utter_malos_alimentos:
-  - text: Noo, si bien NO esta prohibido el consumo de un alimento especifico, lo que hace el daño es el exceso.
-  utter_cuidados:
-  - text: 'Recomiendo seguir los siguientes cuidados:'
-    image: Cuidados.png
+  - text: Sí bien NO esta prohibido de manera extricta el consumo de cierto alimento lo que es MALO es el exceso :(  es bueno saber que existen ciertas dietas recomendadas para personas con este padecimiento.
+  - text: Como tal NO esta prohibido un cierto tipo de alimento, es cierto que cualquier exceso o abuso de ello causa daño, entonces recomiendo que se debe tener cuidado a la hora de consumir cierto tipo de alimentos tales como carnes o láctoes, siendo que esto debe ser en pequeñas cantidades y priorizar el consumo de frutas y verduras
+  - text: Como tal NO se prohibe a los alimentos, simplemente con que exista un equilibrio de nutrientes, carbohidratos y proteínas en la dieta del paciente
+  - text: Si bien NO existe una prohibición a ciertos alimentos, es bueno saber que las verduras, frutas, alimentos bajos en azúcar y en grasas, favoceren la dieta del paciente
+  - text: Es importante recordar que los alimentos buenos serán aquellos asociados a un gran aporte nutrimental y que se debe evitar el consumo de grasas procesadas o comida chatarra
   utter_prevencion:
   - text: De acuerdo con información del IMSS (Instituto Mexicano del Seguro Social) La diabetes puede prevenirse con una alimentación correcta, actividad física regular, mantener un peso corporal adecuado, evitar el cigarro y moderar el consumo de bebidas alcohólicas.
   - text: Algunas recomendaciones para prevenir la diabetes son llevar una dieta equilibrada, realizar 30 minutos de ejercicio y beber dos litros de agua al día. Recuerda que tu salud está en tus manos, debes llevar hábitos saludables que te permitan mantener una calidad de vida sana para ti y tu familia. 
@@ -239,6 +251,10 @@ responses:
           y Levantarse unos minutos después de un periodo prolongado de estar sentado'
   utter_buenos_habitos:
   - text: Es importante tener buenos hábitos tanto físicos como alimenticios para evitar caer en una zona de riesgo.
+  - text: Considero que es de suma importancia el tener buenos hábitos para no estar en posibilidad de contraer este padecimiento
+  - text: Los buenos hábitos hacen la diferencia, el comer sanamente, dormir bien, tener actividad física diariamente ayudan a no caer en una zona de riesgo
+  - text: Es importante desarrollar buenos hábitos como el hacer ejercicio al menos 20 minutos al día, salir a caminar, alimentarse sanamente y no consumir chatarra y beber al menos 2 litros de agua.
+  - text: Los buenos hhábitos son los aliados en la lucha contra la diabetes, pequeñas cosas como beber 2 litros de agua al día, comer más frutas y verduras, salir a caminar o ejercitarse pueden marcar la diferencia y mejoran la calidad de vida
   utter_malos_habitos:
   - text: Algunos de los malos hábitos conlleva el llevar una vida sedentaria, el consumir muchos alimentos procesados, muchos lácteos, carnes rojas, grasas saturadas, el abuso del azúcar, bebidas alcóholicas, el no hacer ejercicio, el no comer frutas y verduras.
   utter_complicaciones:
@@ -263,6 +279,76 @@ responses:
   - text: Actualmente en nuestro país, la diabetes es la tercera causa de muerte; es posible que más de cien mil personas mueran al año por esta enfermedad, dentro de estas cifras, las personas mayores de 65 años ocupan el primer lugar en muertes. Los niños no están exentos, e inclusive pueden nacer con esta enfermedad a causa de la famosa diabetes gestacional que suele darle a la madre durante el embarazo.
   utter_hiperglucemia:
   - text: Hiperglucemia significa glucosa en sangre alta. Afecta con más frecuencia a personas que tienen diabetes. Cuando tiene diabetes, el cuerpo no produce suficiente insulina, no puede usarla tan bien como debería. Demasiada glucosa permanece en la sangre y no llega a las células.
+  - text: 'La hiperglucemia es el término técnico para los niveles elevados de glucosa (azúcar) en sangre. Ocurre cuando el cuerpo tiene muy poca insulina o cuando el cuerpo no puede usar la insulina correctamente. Estas son algunas de las causas: Demasiada comida, como una comida o un refrigerio con más carbohidratos de lo habitual, Deshidratación, No estar activo, No hay suficiente insulina o medicamentos orales para la diabetes, Efectos secundarios de otros medicamentos, como los esteroides o los medicamentos antipsicóticos, Enfermedad, estrés, períodos menstruales o dolor a corto o largo plazo (todos hacen que tu cuerpo libere hormonas que pueden elevar los niveles de azúcar en la sangre)'
+  utter_preguntar_tipo:
+  - text: Claro, ¿qué tipo?
+  - text: Por supuesto, ¿qué tipo?
+  - text: Claro, ¿de qué tipo de diabetes te gustaría conocer un poco más?
+  - text: Sí, ¿en qué tipo estás interesado?
+  - text: Claro, dime en ¿qué tipo en partícular?
+  utter_decir_algunas_fuentes:
+  - text: Claro, puedes revisar este enlace para conocer más https://www.paho.org/es/temas/diabetes
+  - text: Sí, te dejo este enlace para que puedas revisar más https://www.imss.gob.mx/preguntas-de-salud/preguntas-frecuentes-sobre-diabetes
+  - text: Por supuesto, este es un enlace de interés https://www.who.int/es/news-room/fact-sheets/detail/diabetes
+  - text: Sí, puedes revisar detalles en este enlace https://www.insp.mx/avisos/3652-diabetes-en-mexico.html
+  - text: Este enlace puede serte de ayuda https://diabetes.org/espanol/la-glucosa-puede-marcar-una-gran-diferencia
+  utter_enviar_video:
+  - text: Aquí te dejo un vídeo bastante interesante https://www.youtube.com/watch?v=RbeHmfI-Fq8
+  - text: Puedes ver un vídeo que habla sobre esta terrible enfermedad https://www.youtube.com/watch?v=F6xFQ9oXQ-c
+  - text: Este vídeo te habla de cómo es el vivir con este padecimiento https://www.youtube.com/watch?v=6Bqp_eD5vA0
+  - text: Puedes ver este reportaje sobre la diabetes https://www.youtube.com/watch?v=4JfObbQr2VU
+  - text: Este es un vídeo de la Secretaría de Salud de México https://www.youtube.com/watch?v=vLiaCfy3AYg
+  utter_explica_glucosa:
+  - text: El azúcar en la sangre, o glucosa en la sangre, es un número importante cuando se trata del manejo de la diabetes. Muchos alimentos se convierten en glucosa (azúcar) en sangre, que se utiliza como energía para alimentar nuestro cerebro, corazón y músculos. La glucosa (azúcar) en la sangre proviene de los alimentos que comemos o es producida por el hígado, y se encuentra en el torrente sanguíneo (cuando se transporta a todos nuestros órganos y células) y dentro de las células (donde se transforma en energía).
+  utter_explica_hipoglucemia:
+  - text: 'La hipoglucemia es el término técnico para los niveles bajos de glucosa (azúcar) en la sangre. Es cuando tus niveles de glucosa (azúcar) en la sangre han bajado lo suficiente para que necesites tomar medidas para regresarlos a su rango objetivo. Estas son algunas de las causas: No hay suficiente comida, como una comida o un refrigerio con menos carbohidratos de lo habitual, u omitir una comida o un refrigerio, Alcohol, especialmente con el estómago vacío, Demasiada insulina o medicamentos orales para la diabetes, Efectos secundarios de otros medicamentos y Más actividades físicas o ejercicio de lo habitual'
+  utter_di_fuente:
+  - text: De acuerdo con Healthline
+  utter_como_reducir_azucar:
+  - text: El ejercicio regular puede ayudarte a perder peso e incrementar la sensibilidad a la insulina.
+  - text: El ejercicio también ayuda a tus músculos a usar el azúcar en la sangre para tener energía y mejorar la contracción muscular.
+  - text: El ejercicio regular puede ayudarte a perder peso e incrementar la sensibilidad a la insulina. El incremento en la sensibilidad a la insulina significa que tus células pueden usar mejor el azúcar disponible en tu torrente sanguíneo.
+  - text: El ejercicio incrementa la sensibilidad a la insulina y le ayuda a tus músculos a obtener los azúcares de la sangre. Esto puede ocasionar la reducción de los niveles de azúcar en la sangre.
+  - text: Muchos estudios también han demostrado que una dieta baja en carbohidratos ayuda a reducir los niveles de azúcar en la sangre y a evitar los picos. Lo que es más, una dieta baja en carbohidratos puede ayudar a controlar los niveles de azúcar en la sangre a largo plazo.
+  - text: Los carbohidratos se descomponen en glucosa, lo cual incrementa los niveles de azúcar en la sangre. Reducir la ingesta de carbohidratos puede ayudar a controlar el azúcar en la sangre.
+  - text: Ingerir suficiente fibra puede ayudar a controlar el azúcar en la sangre, y la fibra soluble es la más efectiva.
+  - text: Beber suficiente agua puede ayudarte a mantener tus niveles de azúcar en la sangre dentro de los límites saludables. Además de prevenir la deshidratación, ayuda a tus riñones a drenar el exceso de azúcar en la sangre a través de la orina.
+  - text: Un estudio observacional demostró que las personas que beben más agua tenían un riesgo menor de desarrollar niveles altos de azúcar en la sangre. Beber agua regularmente rehidrata la sangre, reduce los niveles de azúcar en la sangre y reduce el riesgo de diabetes. Ten presente que el agua y otras bebidas no calóricas son las mejores. Las bebidas endulzadas con azúcar aumentan la glucosa, impulsan el aumento de peso e incrementan el riesgo de diabetes.
+  - text: Permanecer hidratado puede reducir los niveles de azúcar en la sangre y ayudar a prevenir la diabetes. El agua es lo mejor.
+  - text: Controlar las porciones ayuda a regular la ingesta de calorías y puede ocasionar pérdida de peso. Por consiguiente, controlar tu peso promueve niveles saludables de azúcar en la sangre y se ha demostrado que reduce el riesgo de desarrollar diabetes tipo 2. Monitorear los tamaños de las porciones también ayuda a reducir la ingesta de calorías y posteriores picos de azúcar en la sangre.
+  - text: Mientras más control tengas sobre los tamaños de las porciones, mejor control tendrás sobre tus niveles de azúcar en la sangre.
+  - text: Tanto la cantidad como el tipo de carbohidratos determinan cómo una comida afecta los niveles de azúcar en la sangre. El índice glucémico se desarrolló para evaluar la respuesta del azúcar en la sangre del cuerpo a los alimentos que contienen carbohidratos. Se ha demostrado que ingerir alimentos con índice glucémico bajo reduce los niveles de azúcar en la sangre a largo plazo en los diabéticos tipo 1 y tipo 2. Aunque el índice glucémico de los alimentos es importante, la cantidad de carbohidratos consumidos también lo es. Los alimentos con un índice glucémico bajo incluyen los mariscos, carne, huevos, cereales, cebada, frijoles, lentejas, legumbres, batatas, maíz, camotes, la mayoría de las frutas y vegetales sin almidón.
+  - text: Es importante que elijas alimentos con un buen índice glucémico bajo y que controles tu ingesta general de carbohidratos.
+  - text: El estrés puede afectar tus niveles de azúcar en la sangre. Las hormonas como glucagón y cortisol se segregan durante el estrés. Estas hormonas hacen que los niveles de azúcar en la sangre se incrementen. Un estudio demostró que el ejercicio, la relajación y la meditación redujeron significativamente el estrés y bajaron los niveles de azúcar en la sangre en los estudiantes. Los métodos de ejercicio y relajación como yoga y reducción del estrés basada en la conciencia pura también pueden corregir los problemas de secreción de insulina en la diabetes crónica.
+  - text: Controlar los niveles de estrés a través de los métodos de ejercicio y relajación como yoga, te ayudará a nivelar el azúcar en la sangre.
+  - text: “Lo que se mide se controla”. Medir y monitorear los niveles de glucosa en sangre también puede ayudarte a controlarlos. Por ejemplo, mantener un registro te ayuda a determinar si necesitas ajustar tus comidas o medicamentos. También te ayuda a determinar cómo reacciona tu cuerpo a determinados alimentos. Intenta medir tus niveles todos los días y mantener un registro de las cifras en un diario.
+  - text: Verificar tus azúcares y mantener un diario te ayudará a ajustar los alimentos y medicamentos para disminuir tus niveles de azúcar.
+  - text: Dormir suficiente se siente maravilloso y es necesario para la buena salud. Los malos hábitos de sueño y la falta de descanso también afectan los niveles de azúcar en la sangre y la sensibilidad a la insulina. Pueden incrementar el apetito y promover el aumento de peso. La privación del sueño disminuye la liberación de las hormonas del crecimiento y aumenta los niveles de cortisol. Ambos juegan un papel importante en el control del azúcar en la sangre. Además, dormir bien se trata tanto de cantidad como de calidad. Es mejor dormir una cantidad suficiente y de alta calidad todas las noches.
+  - text: Dormir bien mantiene el control del azúcar en la sangre y promueve el peso saludable. Dormir mal puede interrumpir las hormonas metabólicas importantes.
+  - text: Los niveles altos de azúcar en la sangre y la diabetes también están vinculados a las deficiencias de los micronutrientes. Los ejemplos incluyen las deficiencias de cromo y magnesio. El cromo se encuentra en los carbohidratos y el metabolismo graso. También ayuda a controlar los niveles de azúcar en la sangre; la falta de cromo puede predisponerte a la intolerancia a los carbohidratos. Sin embargo, los mecanismos detrás de esto no se conocen por completo. Los estudios también informan hallazgos mezclados. Dos estudios de pacientes con diabetes mostraron que el cromo tenía beneficios para el control del azúcar en la sangre a largo plazo. Sin embargo, otro estudio no demostró beneficios. Los alimentos ricos en cromo incluyen la yema de los huevos, productos de granos enteros, cereales altos en salvado, café, nueces, arvejas, brócoli y carne. El magnesio también ha demostrado beneficiar los niveles de azúcar en la sangre, y la deficiencia de magnesio se ha relacionado a un riesgo mayor de desarrollar diabetes. En un estudio, las personas con la ingesta más alta de magnesio tuvieron un riesgo menor de 47% de convertirse en diabéticas. Sin embargo, si ya ingeriste suficientes alimentos ricos en magnesio, entonces probablemente no te beneficiarás de los suplementos. Los alimentos ricos en magnesio incluyen hojas verde oscuro, granos enteros, pescado, chocolate oscuro, bananas, aguacates y frijoles.
+  - text: Ingerir alimentos ricos en cromo y magnesio regularmente puede ayudar a prevenir las deficiencias y reducir los problemas de azúcar en la sangre.
+  - text: El vinagre de manzana tiene muchos beneficios para tu salud. Promueve niveles más bajos de azúcar en la sangre en ayunas, posiblemente, al disminuir su producción por el hígado o incrementar su uso por las células. Es más, los estudios demuestran que el vinagre influye significativamente en la respuesta de tu cuerpo a los azúcares y mejora la sensibilidad a la insulina. Para incorporar el vinagre de manzana en tu dieta, puedes agregarlo a los aderezos para ensalada o mezclar 2 cucharaditas en 8 onzas de agua.
+  - text: Agregar vinagre de manzana a tu dieta puede ayudarle a tu cuerpo de muchas maneras, incluyendo reducir los niveles de azúcar en la sangre.
+  - text: Se sabe que la canela tiene muchos beneficios para la salud. Uno de estos es que se ha demostrado que mejora la sensibilidad a la insulina al disminuir la resistencia a nivel celular. Los estudios muestran que la canela también puede reducir los niveles de azúcar en la sangre hasta en 29%. Esto disminuye la descomposición de los carbohidratos en el tracto digestivo, lo cual modera el incremento del azúcar en la sangre después de una comida. La canela también actúa de manera similar a la insulina, aunque a un ritmo mucho más lento. Una dosis efectiva es 1–6 gramos de canela al día, o aproximadamente 0.5–2 cucharaditas.
+  - text: La canela ha demostrado reducir los niveles de azúcar en la sangre en ayunas y mejorar la sensibilidad a la insulina.
+  - text: La berberina es un componente activo de una hierba china que se ha utilizado para tratar la diabetes durante miles de años. Se ha demostrado que la berberina ayuda a reducir el azúcar en la sangre y mejorar la descomposición de los carbohidratos para tener energía. Es más, la berberina puede ser tan efectiva como algunos medicamentos para reducir el azúcar en la sangre. Esto la hace uno de los suplementos más efectivos para aquellas personas con diabetes o prediabetes. Sin embargo, muchos de los mecanismos detrás de sus efectos todavía son desconocidos. Adicionalmente, puede tener algunos efectos secundarios. Se ha reportado diarrea, estreñimiento, flatulencia y dolor abdominal. Un protocolo de dosis común para la berberina es 1,500 mg al día, tomado antes de las comidas en 3 dosis de 500 mg. Te dejo un enlace de interés que habla más sobre esto https://medlineplus.gov/spanish/druginfo/natural/1126.html
+  - text: La berberina funciona bien para reducir los niveles de azúcar en la sangre y puede ayudar a manejar la diabetes. Sin embargo, puede tener algunos efectos secundarios digestivos.
+  - text: Las semillas de fenogreco son una gran fuente de fibra soluble, lo cual puede ayudar a controlar los niveles de azúcar en la sangre. Muchos estudios han demostrado que el fenogreco puede reducir el azúcar en la sangre efectivamente en los diabéticos. También ayuda a reducir la glucosa y ayuda a mejorar la tolerancia a la misma. Aunque no es tan popular, el fenogreco puede agregarse fácilmente a los productos horneados para ayudar a tratar la diabetes. También puedes usar la harina de fenogreco o prepararla en té. Las semillas de fenogreco también se consideran una de las hierbas más seguras para la diabetes. La dosis recomendada de semillas de fenogreco es de 2-5 gramos al día.
+  - text: Considera probar las semillas de fenogreco. Son fáciles de agregar a tu dieta y pueden ayudar a regular los niveles de glucosa en la sangre.
+  - text: Es simple, mantener un peso saludable mejorará tu salud y te evitará futuras complicaciones. El control de peso también promueve niveles saludables de azúcar en la sangre y ha demostrado reducir tu riesgo de desarrollar diabetes. Incluso una reducción del 7% en el peso corporal puede disminuir tu riesgo de desarrollar diabetes hasta en 58%, y parece funcionar aún mejor que el medicamento. Es más, esta reducción en los riesgos se puede mantener con los años. También debes estar consciente de tu cintura, ya que posiblemente es el factor más importante relacionado con el peso para calcular tu riesgo de diabetes. Una medición de 35 pulgadas (88.9 cm) o más para las mujeres y 40 pulgadas (101.6 cm) o más para los hombres se relaciona con un riesgo incrementado de desarrollar resistencia a la insulina, niveles altos de azúcar en la sangre y diabetes tipo 2. Tener una medida saludable de la cintura puede incluso ser más importante que tu peso general.
+  - text: Mantener un peso y una cintura saludables te ayudará a controlar los niveles de azúcar en la sangre y disminuir tu riesgo de desarrollar diabetes.
+  utter_default:
+  - text: Lo siento, no comprendí eso último, ¿podrías reformularlo por favor?
+  - text: Lo siento :/ no capté bien eso último que escribiste, ¿podrías reformularlo por favor?
+  - text: Perdona :( eso último no lo pude comprender totalmente ¿serías tan amable de reformularlo?
+  - text: Ups perdón :( no comprendí al 100% eso último ¿podrías reformularlo?
+  - text: Lo siento, no comprendí totalmente tú último mensaje, si lo reformulas quizá pueda comprenderlo
+  utter_default_ask_rephrase:
+  - text: Perdona :( no capté muy bien eso último, ¿podrías reformularlo?
+  - text: Lo siento :/ eso último me costó entenderlo, quizá si reformulas la pregunta pueda entenderte :D
+  - text: Me disculpo, eso último no lo comprendí totalmente, me ayudas a entender ¿reformulando?
+  - text: Perdoname :( no capté totalmente ese último mensaje, quizá se deba a que aún no tengo conocimiento sobre ese cuestionamiento o porque no entendí al 100% la intención
+  - text: Perdón, es probable que aún no cuente con ese conocimiento o quizá si reformulas el cuestionamiento, pueda ser capaz de entenderte y ayudarte :D
 actions:
 - action_saludo
 - utter_explicar_tipos
@@ -273,7 +359,6 @@ actions:
 - utter_casos_riesgo
 - utter_sintoma_detectado
 - utter_persona_riesgo
-- utter_explicar_sintomas
 - utter_que_es_la_diabetes
 - utter_de_nada
 - utter_explicar_objetivo
@@ -282,6 +367,7 @@ actions:
 - action_calcular_imc
 - utter_necesito_dato
 - utter_soy_un_bot
+- action_manda_imagen
 forms:
   datos_generales_form:
     required_slots:
@@ -290,6 +376,4 @@ forms:
     - peso
     - estatura
     - genero
-  tipo_form:
-    required_slots:
-    - tipo
+  

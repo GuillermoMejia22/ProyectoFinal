@@ -1,5 +1,10 @@
 version: "3.1"
 rules:
+  - rule: Di Hola
+    steps:
+    - intent: saludar
+    - action: action_saludo
+
   - rule: Say goodbye anytime the user says goodbye
     steps:
     - intent: despedirse
@@ -20,16 +25,6 @@ rules:
     - intent: solicitar_imc
     - action: datos_generales_form
     - active_loop: datos_generales_form
-
-  - rule: Submit Form Tipo Diabetes
-    condition:
-    - active_loop: tipo_form
-    steps:
-    - action: tipo_form
-    - active_loop: null
-    - slot_was_set:
-      - requested_slot: null
-    - action: action_explica_tipos
 
   - rule: Submit Form Datos Generales
     condition:
@@ -74,12 +69,12 @@ rules:
     steps:
     - intent: decir_sintomas
     - action: utter_sintoma_detectado
-    - action: utter_explicar_sintomas
+    - action: action_manda_imagen
 
   - rule: Explica sintomas
     steps:
     - intent: explicar_sintomas
-    - action: utter_explicar_sintomas
+    - action: action_manda_imagen
 
   - rule: Di tipos
     steps:
@@ -94,29 +89,23 @@ rules:
   - rule: Di como se controla la diabetes
     steps:
     - intent: controlar_diabetes
-    - action: utter_controlar_diabetes
+    - action: action_manda_imagen
   
   - rule: Di la dieta general de la diabetes
     steps:
     - intent: dieta_diabetes
-    - action: utter_dieta_diabetes
+    - action: action_manda_imagen
 
-  - rule: Alimentos sanos
+  - rule: Alimentos 
     steps:
-    - intent: dar_alimentos_sanos
+    - intent: dar_alimentos
     - action: utter_buenos_alimentos
-    - action: utter_dieta_diabetes
-  
-  - rule: Malos alimentos
-    steps:
-    - intent: dar_alimentos_insanos
-    - action: utter_malos_alimentos
-    - action: utter_dieta_diabetes
+    - action: action_manda_imagen
 
   - rule: Cuidados
     steps:
     - intent: otros_cuidados
-    - action: utter_cuidados
+    - action: action_manda_imagen
   
   - rule: Prevencion de diabetes
     steps:
@@ -151,3 +140,39 @@ rules:
     steps:
     - intent: hiperglucemia
     - action: utter_hiperglucemia
+
+  - rule: Explica Tipo Diabetes
+    steps:
+    - intent: explica_tipo_diabetes
+    - action: action_explica_tipos
+
+  - rule: Explica otro Tipo
+    steps:
+    - intent: otro_tipo
+    - action: utter_preguntar_tipo
+  
+  - rule: Di fuente
+    steps:
+    - intent: fuentes
+    - action: utter_decir_algunas_fuentes
+  
+  - rule: Manda un video
+    steps:
+    - intent: obtener_videos
+    - action: utter_enviar_video
+
+  - rule: Explica glucosa
+    steps:
+    - intent: explica_glucosa
+    - action: utter_explica_glucosa
+
+  - rule: Explica Hipoglucemia
+    steps:
+    - intent: explica_hipoglucemia
+    - action: utter_explica_hipoglucemia
+
+  - rule: Da consejos para reducir la glucosa
+    steps:
+    - intent: bajar_azucar
+    - action: utter_di_fuente
+    - action: utter_como_reducir_azucar

@@ -1,10 +1,10 @@
 from owlready2 import *
 
-onto = get_ontology("OntologiaUAM.owx")
+onto = get_ontology("http://test.org/OntologiaUAM.owx")
 
 peso = 100
 estatura = 1.72
-edad = 25  # Asegúrate de proporcionar el valor correcto de edad
+edad = 25  
 genero = "masculino"
 nombre = "Luis"
 
@@ -53,7 +53,7 @@ with onto:
             add(?op4, ?op1, ?op3),
             multiply(?op5, ?a, 5),
             subtract(?tasa, ?op4, ?op5),
-            ubtract(?tasaMetabolica, ?tasa, 161) -> tieneIMC(?p, ?imc), tieneTasaMetabolica(?p, ?tasaMetabolica)
+            subtract(?tasaMetabolica, ?tasa, 161) -> tieneIMC(?p, ?imc), tieneTasaMetabolica(?p, ?tasaMetabolica)
         """)
             
 persona = Persona(tieneNombre = nombre, tieneGenero = genero, tienePeso = peso, tieneEstatura = estatura, tieneEdad = edad)
@@ -90,3 +90,5 @@ elif imcValue >= 50:
 print(persona.tieneIMC) 
 print(situacion) 
 print(recomendacion) 
+
+onto.save(file="test.owl", format="ntriples")
