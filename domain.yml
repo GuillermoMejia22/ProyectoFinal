@@ -44,6 +44,15 @@ intents:
 - explica_glucosa
 - bajar_azucar
 - explica_hipoglucemia
+- conocer_mi_tipo_diabetes
+- explica_insulina
+- conocer_estadisticas_diabetes
+- prediabetes
+- hipertension
+- checar_glucosa
+- dar_niveles_glucosa
+- usuario_da_sintoma_ajeno_diabetes
+- sospecha_diabetes
 entities:
 - tipo
 - nombre
@@ -51,6 +60,9 @@ entities:
 - estatura
 - genero
 - peso
+- glucosa_antes
+- glucosa_despues
+- dolor
 slots:
   nombre:
     type: text
@@ -109,8 +121,38 @@ slots:
     - type: from_entity
       entity: tipo
     - type: from_entity
-      entity: genero
+      entity: tipo
+  glucosa_antes:
+    type: float
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: glucosa_antes
+    - type: from_entity
+      entity: glucosa_antes
+  glucosa_despues:
+    type: float
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: glucosa_despues
+    - type: from_entity
+      entity: glucosa_despues
+  dolor:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: dolor
+    - type: from_entity
+      entity: dolor
 responses:
+  utter_explicar_animo:
+  - text: Yo me encuentro muy bien
+  - text: Me encuentro de maravilla
+  - text: Estoy muy bien el día de hoy
+  - text: Hoy estoy super bien
+  - text: Ando muy bien de hecho
   utter_en_que_puedo_ayudarte:
   - text: Dime ¿en qué puedo ayudarte?
   - text: Ahora dime ¿en qué puedo serte útil?
@@ -196,14 +238,14 @@ responses:
   - text: Perdón, me hace falta ese dato para terminar de calcular el IMC
   - text: Necesito el dato, pero si quieres puedes calcularlo más tarde.
   utter_que_es_la_diabetes:
-  - text: De acuerdo con información del IMSS (Instituto Mexicano del Seguro Social) La diabetes es una enfermedad que ocurre cuando el organismo es incapaz de generar insulina o utilizarla correctamente. El páncreas produce la insulina para regular el uso de la glucosa (azúcar) en el organismo.
-  - text: La información del Gobierno de México menciona que La diabetes es una enfermedad crónica caracterizada por mantener elevados los niveles de azúcar (glucosa) en sangre, esto, asociado a la deficiencia de insulina, afecta al corazón, ojos, riñones y sistema nervioso. Es una enfermedad que no respeta género, edad ni siquiera estatus social, muchas personas la padecen sin saberlo, incluso, ha llegado convertirse en una emergencia sanitaria.
-  - text: La diabetes es una enfermedad crónica, caracterizada por niveles elevados de glucosa en sangre y por alteraciones en la producción de insulina o cuando no puede utilizarse de manera adecuada.
-  - text: La Organización Panámericana de la Salud define que La diabetes es una enfermedad metabólica crónica caracterizada por niveles elevados de glucosa en sangre (o azúcar en sangre), que con el tiempo conduce a daños graves en el corazón, los vasos sanguíneos, los ojos, los riñones y los nervios. 
-  - text: De acuerdo con información de la Organización Panámericana de la Salud La diabetes es una enfermedad crónica que se produce cuando el páncreas no produce suficiente insulina o cuando el cuerpo no puede utilizar de forma eficaz la insulina que produce. La insulina es una hormona que regula el azúcar en sangre. La hiperglucemia, o aumento del nivel de azúcar en sangre, es un efecto común de la diabetes no controlada y, con el tiempo, conduce a daños graves en muchos de los sistemas del cuerpo, especialmente los nervios y los vasos sanguíneos.
-  - text: La Organización Mundial de la Salud (OMS) describe que La diabetes sacarina o diabetes mellitus (que aquí denominaremos, para simplificar, «diabetes») es una enfermedad crónica que se presenta cuando el páncreas no secreta suficiente insulina o cuando el organismo no utiliza eficazmente la insulina que produce. La insulina es una hormona que regula la concentración de glucosa en la sangre, es decir, la glucemia.
+  - text: 'La diabetes es una enfermedad que ocurre cuando el organismo es incapaz de generar insulina o utilizarla correctamente. El páncreas produce la insulina para regular el uso de la glucosa (azúcar) en el organismo. FUENTE: IMSS https://www.imss.gob.mx/preguntas-de-salud/preguntas-frecuentes-sobre-diabetes'
+  - text: 'La diabetes es una enfermedad crónica caracterizada por mantener elevados los niveles de azúcar (glucosa) en sangre, esto, asociado a la deficiencia de insulina, afecta al corazón, ojos, riñones y sistema nervioso. Es una enfermedad que no respeta género, edad ni siquiera estatus social, muchas personas la padecen sin saberlo, incluso, ha llegado convertirse en una emergencia sanitaria. FUENTE: https://www.gob.mx/promosalud/acciones-y-programas/diabetes-en-mexico-284509'
+  - text: 'La diabetes es una enfermedad crónica, caracterizada por niveles elevados de glucosa en sangre y por alteraciones en la producción de insulina o cuando no puede utilizarse de manera adecuada. FUENTE: Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado https://www.gob.mx/issste/articulos/diabetes-uno-de-los-principales-problemas-de-salud-en-mexico?idiom=es'
+  - text: 'La diabetes es una enfermedad metabólica crónica caracterizada por niveles elevados de glucosa en sangre (o azúcar en sangre), que con el tiempo conduce a daños graves en el corazón, los vasos sanguíneos, los ojos, los riñones y los nervios. FUENTE: Organización Panamericana de la Salud https://www.paho.org/es/temas/diabetes'
+  - text: 'La diabetes es una enfermedad crónica que se produce cuando el páncreas no produce suficiente insulina o cuando el cuerpo no puede utilizar de forma eficaz la insulina que produce. La insulina es una hormona que regula el azúcar en sangre. La hiperglucemia, o aumento del nivel de azúcar en sangre, es un efecto común de la diabetes no controlada y, con el tiempo, conduce a daños graves en muchos de los sistemas del cuerpo, especialmente los nervios y los vasos sanguíneos. FUENTE: Organización Panamericana de la Salud https://www.paho.org/es/temas/diabetes'
+  - text: 'La diabetes sacarina o diabetes mellitus (que aquí denominaremos, para simplificar, «diabetes») es una enfermedad crónica que se presenta cuando el páncreas no secreta suficiente insulina o cuando el organismo no utiliza eficazmente la insulina que produce. La insulina es una hormona que regula la concentración de glucosa en la sangre, es decir, la glucemia. FUENTE: Organización Mundial de la Salud https://www.who.int/es/news-room/fact-sheets/detail/diabetes'
   utter_casos_riesgo:
-  - text: 'De acuerdo con información del IMSS Algunos factores de riesgo son: antecedentes de familiares que padezcan o hayan padecido diabetes mellitus, sobrepeso y obesidad; enfermedad cardiovascular; grasas alteradas en sangre (dislipidemia); quistes en los ovarios; mujeres que haya tenido bebés con un peso mayor a 4 kilos y pacientes que, por enfermedad, tengan que usar tratamiento con esteroides o que tengan tratamiento de esquizofrenia.'
+  - text: 'Algunos factores de riesgo son: antecedentes de familiares que padezcan o hayan padecido diabetes mellitus, sobrepeso y obesidad; enfermedad cardiovascular; grasas alteradas en sangre (dislipidemia); quistes en los ovarios; mujeres que haya tenido bebés con un peso mayor a 4 kilos y pacientes que, por enfermedad, tengan que usar tratamiento con esteroides o que tengan tratamiento de esquizofrenia. FUENTE: IMSS https://www.imss.gob.mx/preguntas-de-salud/preguntas-frecuentes-sobre-diabetes'
   utter_persona_riesgo:
   - text: Lo que describes es un factor de riesgo de diabetes, recomienda al paciente que trate de mejorar sus habitos alimenticios y que lo acompañe con actividad física, llevando un monitoreo entre médico y paciente se puede llegar a prevenir
   - text: Eso que describes corresponde a los factores de riesgo de diabetes, es probable que el paciente deba hacer conciencia y tener ciertos cuidados para evitar caer en esta terrible enfermedad
@@ -217,9 +259,11 @@ responses:
   - text: Eso que describes entra en los síntomas de la diabetes, debes saber que si se cumplen más de tres, existen altas probabilidades de que el paciente tenga diabetes y debas comenzar con un plan médico de cuidados, análisis y chequeos continuos
   - text: Lo que me cuentas entra en los síntomas principales de la diabetes, recomiendo que realices un análisis de presión sanguinea y glucosa, asimismo no estaría de más que conozcas su IMC, si necesitas puedo ayudarte a obtenerlo
   utter_explicar_tipos:
-  - text: 'De acuerdo con información del IMSS (Instituto Mexicano del Seguro Social) Existen 3 tipos de diabetes, las cuales se denominan: Tipo I, Tipo II y Diabetes Gestacional (esta última ocurre durante el embarazo). Cualquier tipo de diabetes no controlada puede producir complicaciones en muchas partes del cuerpo y aumentar el riesgo de una muerte prematura. Si necesitas información sobre un sólo tipo puedes pedirmelo :)'
+  - text: 'Existen 3 tipos de diabetes, las cuales se denominan: Tipo I, Tipo II y Diabetes Gestacional (esta última ocurre durante el embarazo). Cualquier tipo de diabetes no controlada puede producir complicaciones en muchas partes del cuerpo y aumentar el riesgo de una muerte prematura. Si necesitas información sobre un sólo tipo puedes pedirmelo :) FUENTE: IMSS https://www.imss.gob.mx/preguntas-de-salud/preguntas-frecuentes-sobre-diabetes'
+  utter_di_fuente_cura:
+  - text: 'FUENTE: IMSS https://www.imss.gob.mx/preguntas-de-salud/preguntas-frecuentes-sobre-diabetes'
   utter_cura_diabetes:
-  - text: Lamentablemente no es curable, pero es posible controlarla con éxito y tener una buena calidad de vida si sigues el tratamiento que te indicó tu médico
+  - text: 'Lamentablemente no es curable, pero es posible controlarla con éxito y tener una buena calidad de vida si sigues el tratamiento que te indicó tu médico'
   - text: Lamento decirte que NO es curable, pero si se lleva una buena alimentación, cuidados y ejercicio es probable retrasar y controlar sus complicaciones
   - text: Actualmente no se cuenta con una cura pero se puede controlar con un buen plan médico que conlleve una buena alimentación, ejercitarse diariamente aunque sea por 30 minutos y constantes monitoreos y seguimientos sobre niveles de azúcar y presión arterial
   - text: En nuestros días aún NO existe una cura como tal :( pero se puede vivir con diabetes manteniendo una dieta y ejercicio 
@@ -231,15 +275,15 @@ responses:
   - text: Si bien NO existe una prohibición a ciertos alimentos, es bueno saber que las verduras, frutas, alimentos bajos en azúcar y en grasas, favoceren la dieta del paciente
   - text: Es importante recordar que los alimentos buenos serán aquellos asociados a un gran aporte nutrimental y que se debe evitar el consumo de grasas procesadas o comida chatarra
   utter_prevencion:
-  - text: De acuerdo con información del IMSS (Instituto Mexicano del Seguro Social) La diabetes puede prevenirse con una alimentación correcta, actividad física regular, mantener un peso corporal adecuado, evitar el cigarro y moderar el consumo de bebidas alcohólicas.
-  - text: Algunas recomendaciones para prevenir la diabetes son llevar una dieta equilibrada, realizar 30 minutos de ejercicio y beber dos litros de agua al día. Recuerda que tu salud está en tus manos, debes llevar hábitos saludables que te permitan mantener una calidad de vida sana para ti y tu familia. 
+  - text: 'La diabetes puede prevenirse con una alimentación correcta, actividad física regular, mantener un peso corporal adecuado, evitar el cigarro y moderar el consumo de bebidas alcohólicas. FUENTE: IMSS https://www.imss.gob.mx/preguntas-de-salud/preguntas-frecuentes-sobre-diabetes'
+  - text: 'Algunas recomendaciones para prevenir la diabetes son llevar una dieta equilibrada, realizar 30 minutos de ejercicio y beber dos litros de agua al día. Recuerda que tu salud está en tus manos, debes llevar hábitos saludables que te permitan mantener una calidad de vida sana para ti y tu familia. FUENTE https://www.gob.mx/promosalud/acciones-y-programas/diabetes-en-mexico-284509 ' 
   - text: 'Las personas con alto riesgo de desarrollar diabetes tipo 2, pueden disminuirlo significativamente, realizando cambios en su estilo de vida y mantenerlos a largo plazo, como:
           Adopción de una alimentación saludable, 
           Incremento de la actividad física moderada,  
           Mantener un peso saludable y 
-          Abandono del tabaquismo.'
-  - text: El diagnóstico precoz es importante para prevenir los peores efectos de la diabetes de tipo 2. La mejor manera de detectarla temprano es acudir a un proveedor de atención médica para hacerse exámenes regulares y análisis de sangre.
-  - text: Una dieta saludable, actividad física regular, mantener un peso corporal normal y evitar el consumo de tabaco son formas de prevenir o retrasar la aparición de la diabetes tipo 2.
+          Abandono del tabaquismo. FUENTE: Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado https://www.gob.mx/issste/articulos/diabetes-uno-de-los-principales-problemas-de-salud-en-mexico?idiom=es'
+  - text: 'El diagnóstico precoz es importante para prevenir los peores efectos de la diabetes de tipo 2. La mejor manera de detectarla temprano es acudir a un proveedor de atención médica para hacerse exámenes regulares y análisis de sangre. FUENTE: Organización Mundial de la Salud https://www.who.int/es/news-room/fact-sheets/detail/diabetes'
+  - text: 'Una dieta saludable, actividad física regular, mantener un peso corporal normal y evitar el consumo de tabaco son formas de prevenir o retrasar la aparición de la diabetes tipo 2. FUENTE: Organización Panamericana de la Salud https://www.paho.org/es/temas/diabetes'
   - text: 'Entre las estrategias que se pueden seguir individualmente para prevenir la aparición de diabetes se encuentran: Tener una alimentación alta en fibra, 
           Moderar el consumo de los alimentos con alto contenido calórico y de carbohidratos, 
           Realizar actividad física con regularidad, 
@@ -248,7 +292,7 @@ responses:
           Disminuir los alimentos altos en grasas saturadas y grasas trans, 
           Evitar las bebidas azucaradas y refrescos, 
           No fumar, 
-          y Levantarse unos minutos después de un periodo prolongado de estar sentado'
+          y Levantarse unos minutos después de un periodo prolongado de estar sentado. FUENTE: Instituto Nacional de Salud Pública https://www.insp.mx/avisos/3652-diabetes-en-mexico.html'
   utter_buenos_habitos:
   - text: Es importante tener buenos hábitos tanto físicos como alimenticios para evitar caer en una zona de riesgo.
   - text: Considero que es de suma importancia el tener buenos hábitos para no estar en posibilidad de contraer este padecimiento
@@ -257,29 +301,15 @@ responses:
   - text: Los buenos hhábitos son los aliados en la lucha contra la diabetes, pequeñas cosas como beber 2 litros de agua al día, comer más frutas y verduras, salir a caminar o ejercitarse pueden marcar la diferencia y mejoran la calidad de vida
   utter_malos_habitos:
   - text: Algunos de los malos hábitos conlleva el llevar una vida sedentaria, el consumir muchos alimentos procesados, muchos lácteos, carnes rojas, grasas saturadas, el abuso del azúcar, bebidas alcóholicas, el no hacer ejercicio, el no comer frutas y verduras.
-  utter_complicaciones:
-  - text: Con el paso del tiempo se pueden presentar problemas en órganos y ciertas partes del cuerpo (riñones, pies y ojos, entre otros). Tener diabetes también puede aumentar el riesgo de tener enfermedades cardíacas y trastornos en los huesos y articulaciones. Otras complicaciones a largo plazo incluyen problemas con la piel, problemas en el aparato digestivo, disfunción sexual, problemas con dientes y encías. Las personas diabéticas también pueden tener urgencias médicas debido a los niveles muy altos o muy bajos de azúcar en la sangre. La causa puede ser una infección o reacción a algún medicamento.
-  - text: Es una de las primeras causas de infarto, enfermedad vascular cerebral, muerte prematura y la principal responsable de ceguera y amputación no traumática
-  - text: La diabetes es una de las principales causas de ceguera, insuficiencia renal, ataques cardíacos, derrames cerebrales y amputación de miembros inferiores. La diabetes mal controlada aumenta las posibilidades de estas complicaciones y la mortalidad prematura. Además, las personas con diabetes tienen mayor riesgo de presentar enfermedades cardiovasculares y tuberculosis, especialmente aquellas con mal control glucémico.
-  - text: Con el tiempo, la diabetes puede dañar el corazón, los vasos sanguíneos, los ojos, los riñones y los nervios.
-  - text: Los adultos con diabetes tienen un riesgo dos o tres veces mayor de sufrir ataques cardíacos y accidentes cerebrovasculares
-  - text: Combinado con un flujo sanguíneo reducido, la neuropatía (daño a los nervios) en los pies aumenta la posibilidad de úlceras en el pie, infección y eventual necesidad de amputación de una extremidad.
-  - text: La retinopatía diabética es una causa importante de ceguera y se produce como resultado del daño acumulado a largo plazo en los pequeños vasos sanguíneos de la retina. Cerca de 1 millón de personas son ciegas debido a la diabetes
-  - text: La diabetes es una de las principales causas de insuficiencia renal.
-  - text: La diabetes es una causa importante de ceguera, insuficiencia renal, infarto de miocardio, accidente cerebrovascular y amputación de los miembros inferiores.
-  - text: Con el tiempo, la diabetes puede dañar los vasos sanguíneos del corazón, los ojos, los riñones y los nervios.
-  - text: Las personas con diabetes corren más riesgo de sufrir problemas de salud, como infartos de miocardio, derrames cerebrales e insuficiencia renal.
-  - text: La diabetes puede causar pérdida permanente de la visión por daño de los vasos sanguíneos de los ojos.
-  - text: Muchas personas con diabetes presentan problemas en los pies debido al daño causado a los nervios y al flujo sanguíneo insuficiente. Esto puede causar úlceras en los pies y llevar a la amputación.
   utter_causas:
-  - text: De acuerdo con el Gobierno de México La causa principal de la diabetes son los malos hábitos alimenticios llenos de azúcares refinadas, grasas saturadas y sodio, le sumamos a esto el sedentarismo, la obesidad y el factor genético. Sin duda alguna, nuestros malos hábitos nos están llevando lentamente a sufrir una enfermedad como esta.
-  - text: El sobrepeso / obesidad y la inactividad física son los principales factores de riesgo de diabetes tipo 2.
-  - text: La diabetes mellitus es una enfermedad que se origina debido a la combinación de diversos factores, entre los que se encuentran la edad, la obesidad, el sedentarismo, la alimentación inadecuada, los antecedentes familiares y algunos factores genéticos.
+  - text: 'La causa principal de la diabetes son los malos hábitos alimenticios llenos de azúcares refinadas, grasas saturadas y sodio, le sumamos a esto el sedentarismo, la obesidad y el factor genético. Sin duda alguna, nuestros malos hábitos nos están llevando lentamente a sufrir una enfermedad como esta. FUENTE: https://www.gob.mx/promosalud/acciones-y-programas/diabetes-en-mexico-284509'
+  - text: 'El sobrepeso / obesidad y la inactividad física son los principales factores de riesgo de diabetes tipo 2. FUENTE: Organización Panamericana de la Salud https://www.paho.org/es/temas/diabetes'
+  - text: 'La diabetes mellitus es una enfermedad que se origina debido a la combinación de diversos factores, entre los que se encuentran la edad, la obesidad, el sedentarismo, la alimentación inadecuada, los antecedentes familiares y algunos factores genéticos. FUENTE: Instituto Nacional de Salud Pública https://www.insp.mx/avisos/3652-diabetes-en-mexico.html'
   utter_causa_muerte:
-  - text: Actualmente en nuestro país, la diabetes es la tercera causa de muerte; es posible que más de cien mil personas mueran al año por esta enfermedad, dentro de estas cifras, las personas mayores de 65 años ocupan el primer lugar en muertes. Los niños no están exentos, e inclusive pueden nacer con esta enfermedad a causa de la famosa diabetes gestacional que suele darle a la madre durante el embarazo.
+  - text: 'Actualmente en nuestro país, la diabetes es la tercera causa de muerte; es posible que más de cien mil personas mueran al año por esta enfermedad, dentro de estas cifras, las personas mayores de 65 años ocupan el primer lugar en muertes. Los niños no están exentos, e inclusive pueden nacer con esta enfermedad a causa de la famosa diabetes gestacional que suele darle a la madre durante el embarazo. FUENTE: https://www.gob.mx/promosalud/acciones-y-programas/diabetes-en-mexico-284509'
   utter_hiperglucemia:
-  - text: Hiperglucemia significa glucosa en sangre alta. Afecta con más frecuencia a personas que tienen diabetes. Cuando tiene diabetes, el cuerpo no produce suficiente insulina, no puede usarla tan bien como debería. Demasiada glucosa permanece en la sangre y no llega a las células.
-  - text: 'La hiperglucemia es el término técnico para los niveles elevados de glucosa (azúcar) en sangre. Ocurre cuando el cuerpo tiene muy poca insulina o cuando el cuerpo no puede usar la insulina correctamente. Estas son algunas de las causas: Demasiada comida, como una comida o un refrigerio con más carbohidratos de lo habitual, Deshidratación, No estar activo, No hay suficiente insulina o medicamentos orales para la diabetes, Efectos secundarios de otros medicamentos, como los esteroides o los medicamentos antipsicóticos, Enfermedad, estrés, períodos menstruales o dolor a corto o largo plazo (todos hacen que tu cuerpo libere hormonas que pueden elevar los niveles de azúcar en la sangre)'
+  - text: 'Hiperglucemia significa glucosa en sangre alta. Afecta con más frecuencia a personas que tienen diabetes. Cuando tiene diabetes, el cuerpo no produce suficiente insulina, no puede usarla tan bien como debería. Demasiada glucosa permanece en la sangre y no llega a las células. FUENTE: Biblioteca Nacional de Medicina https://medlineplus.gov/spanish/hyperglycemia.html'
+  - text: 'La hiperglucemia es el término técnico para los niveles elevados de glucosa (azúcar) en sangre. Ocurre cuando el cuerpo tiene muy poca insulina o cuando el cuerpo no puede usar la insulina correctamente. Estas son algunas de las causas: Demasiada comida, como una comida o un refrigerio con más carbohidratos de lo habitual, Deshidratación, No estar activo, No hay suficiente insulina o medicamentos orales para la diabetes, Efectos secundarios de otros medicamentos, como los esteroides o los medicamentos antipsicóticos, Enfermedad, estrés, períodos menstruales o dolor a corto o largo plazo (todos hacen que tu cuerpo libere hormonas que pueden elevar los niveles de azúcar en la sangre). FUENTE: American Diabetes Association https://diabetes.org/espanol/la-glucosa-puede-marcar-una-gran-diferencia'
   utter_preguntar_tipo:
   - text: Claro, ¿qué tipo?
   - text: Por supuesto, ¿qué tipo?
@@ -299,11 +329,13 @@ responses:
   - text: Puedes ver este reportaje sobre la diabetes https://www.youtube.com/watch?v=4JfObbQr2VU
   - text: Este es un vídeo de la Secretaría de Salud de México https://www.youtube.com/watch?v=vLiaCfy3AYg
   utter_explica_glucosa:
-  - text: El azúcar en la sangre, o glucosa en la sangre, es un número importante cuando se trata del manejo de la diabetes. Muchos alimentos se convierten en glucosa (azúcar) en sangre, que se utiliza como energía para alimentar nuestro cerebro, corazón y músculos. La glucosa (azúcar) en la sangre proviene de los alimentos que comemos o es producida por el hígado, y se encuentra en el torrente sanguíneo (cuando se transporta a todos nuestros órganos y células) y dentro de las células (donde se transforma en energía).
-  utter_explica_hipoglucemia:
-  - text: 'La hipoglucemia es el término técnico para los niveles bajos de glucosa (azúcar) en la sangre. Es cuando tus niveles de glucosa (azúcar) en la sangre han bajado lo suficiente para que necesites tomar medidas para regresarlos a su rango objetivo. Estas son algunas de las causas: No hay suficiente comida, como una comida o un refrigerio con menos carbohidratos de lo habitual, u omitir una comida o un refrigerio, Alcohol, especialmente con el estómago vacío, Demasiada insulina o medicamentos orales para la diabetes, Efectos secundarios de otros medicamentos y Más actividades físicas o ejercicio de lo habitual'
+  - text: 'El azúcar en la sangre, o glucosa en la sangre, es un número importante cuando se trata del manejo de la diabetes. Muchos alimentos se convierten en glucosa (azúcar) en sangre, que se utiliza como energía para alimentar nuestro cerebro, corazón y músculos. La glucosa (azúcar) en la sangre proviene de los alimentos que comemos o es producida por el hígado, y se encuentra en el torrente sanguíneo (cuando se transporta a todos nuestros órganos y células) y dentro de las células (donde se transforma en energía). FUENTE: American Diabetes Association https://diabetes.org/espanol/la-glucosa-puede-marcar-una-gran-diferencia'
   utter_di_fuente:
-  - text: De acuerdo con Healthline
+  - text: De acuerdo con Healthline en https://www.healthline.com/health/es/como-bajar-el-azucar-en-la-sangre
+  utter_pregunta_niveles_glucosa:
+  - text: Claro, dime los niveles registrados de glucosa en ayuno y después de comer
+  utter_aclarar_niveles:
+  - text: Claro pero debo decirte que previamente ya debes tener los valores, puesto que no tengo la capacidad de medirte los niveles de glucosa en sangre, pero si puedo ayudarte diciendote si tus niveles estan bien o hay algo mal, ¿Quieres que te ayude con eso?
   utter_como_reducir_azucar:
   - text: El ejercicio regular puede ayudarte a perder peso e incrementar la sensibilidad a la insulina.
   - text: El ejercicio también ayuda a tus músculos a usar el azúcar en la sangre para tener energía y mejorar la contracción muscular.
@@ -349,6 +381,12 @@ responses:
   - text: Me disculpo, eso último no lo comprendí totalmente, me ayudas a entender ¿reformulando?
   - text: Perdoname :( no capté totalmente ese último mensaje, quizá se deba a que aún no tengo conocimiento sobre ese cuestionamiento o porque no entendí al 100% la intención
   - text: Perdón, es probable que aún no cuente con ese conocimiento o quizá si reformulas el cuestionamiento, pueda ser capaz de entenderte y ayudarte :D
+  utter_responde_sospecha:
+  - text: Si tienes sospechas de tener diabetes o tu paciente, será mejor que revises los síntomas más comúnes y que realices una medición de glucosa
+  - text: Si tienes sospechas de que tú o tú paciente tienen diabetes, mejor revisa los principales síntomas, y podrías calcular el IMC, yo puedo ayudarte tambien con eso
+  - text: Entiendo, para descartar sospechas mejor checa los principales síntomas de esta enfermedad.
+  - text: La primera forma de comprobarlo sería analizando si tú o tú paciente experimentan algunos de los síntomas de la diabetes
+  - text: Sería bueno repasar los síntomas de la diabetes por si acaso
 actions:
 - action_saludo
 - utter_explicar_tipos
@@ -368,6 +406,8 @@ actions:
 - utter_necesito_dato
 - utter_soy_un_bot
 - action_manda_imagen
+- action_checa_glucosa
+- action_recomienda_algo_dolor
 forms:
   datos_generales_form:
     required_slots:

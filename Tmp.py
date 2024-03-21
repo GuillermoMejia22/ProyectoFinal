@@ -26,3 +26,5 @@ def listadoIndividuos():
         raise
     print(individuals)
     
+#onto.save(file="test.owl", format="ntriples")
+listadoIndividuos()

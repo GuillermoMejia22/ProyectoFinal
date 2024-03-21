@@ -4,11 +4,6 @@ stories:
 
 - story: interactive_story_1
   steps:
-  - intent: saludar
-  - action: action_saludo
-  - intent: mood_feliz
-  - action: utter_feliz
-  - action: utter_en_que_puedo_ayudarte
   - intent: solicitar_imc
   - action: datos_generales_form
   - active_loop: datos_generales_form
@@ -63,13 +58,6 @@ stories:
 
 - story: interactive_story_2
   steps:
-  - intent: saludar
-  - action: action_saludo
-  - intent: mood_feliz
-  - action: utter_feliz
-  - action: utter_en_que_puedo_ayudarte
-  - intent: conocer_funcionalidades
-  - action: utter_explicar_objetivo
   - intent: solicitar_imc
   - action: datos_generales_form
   - active_loop: datos_generales_form
@@ -77,9 +65,9 @@ stories:
     - requested_slot: nombre
   - intent: dar_nombre
     entities:
-    - nombre: Itzel Castillo
+    - nombre: Itzel Alejandra Castillo Perez
   - slot_was_set:
-    - nombre: Itzel Castillo
+    - nombre: Itzel Alejandra Castillo Perez
   - action: datos_generales_form
   - slot_was_set:
     - requested_slot: edad
@@ -124,11 +112,6 @@ stories:
 
 - story: interactive_story_4
   steps:
-  - intent: saludar
-  - action: action_saludo
-  - intent: mood_feliz
-  - action: utter_feliz
-  - action: utter_en_que_puedo_ayudarte
   - intent: solicitar_imc
   - action: datos_generales_form
   - active_loop: datos_generales_form
@@ -136,9 +119,9 @@ stories:
     - requested_slot: nombre
   - intent: dar_nombre
     entities:
-    - nombre: Ximena Lobera
+    - nombre: Ximena Lobera Ordoñez
   - slot_was_set:
-    - nombre: Ximena Lobera
+    - nombre: Ximena Lobera Ordoñez
   - action: datos_generales_form
   - slot_was_set:
     - requested_slot: edad
@@ -183,17 +166,6 @@ stories:
 
 - story: interactive_story_5
   steps:
-  - intent: saludar
-  - action: action_saludo
-  - intent: mood_triste
-  - action: utter_manda_gif
-  - action: action_manda_imagen
-  - action: utter_eso_ayudo
-  - intent: afirmacion
-  - action: utter_feliz
-  - action: utter_en_que_puedo_ayudarte
-  - intent: conocer_funcionalidades
-  - action: utter_explicar_objetivo
   - intent: solicitar_imc
   - action: datos_generales_form
   - active_loop: datos_generales_form
@@ -201,9 +173,9 @@ stories:
     - requested_slot: nombre
   - intent: dar_nombre
     entities:
-    - nombre: Luis Hernandez
+    - nombre: Luis Hernandez Sanchez
   - slot_was_set:
-    - nombre: Luis Hernandez
+    - nombre: Luis Hernandez Sanchez
   - action: datos_generales_form
   - slot_was_set:
     - requested_slot: edad
@@ -246,3 +218,40 @@ stories:
   - intent: despedirse
   - action: action_despedida
 
+- story: Cuando el usuario esta triste 1 
+  steps:
+  - intent: mood_triste
+  - action: utter_manda_gif
+  - action: action_manda_imagen
+  - action: utter_eso_ayudo
+  - intent: afirmacion
+  - action: utter_feliz
+  - action: utter_explicar_animo
+  - action: utter_en_que_puedo_ayudarte
+
+- story: Cuando el usuario esta triste 2
+  steps:
+  - intent: mood_triste
+  - action: utter_manda_gif
+  - action: action_manda_imagen
+  - action: utter_eso_ayudo
+  - intent: negacion
+  - action: utter_animo
+  - action: utter_explicar_animo
+  - action: utter_en_que_puedo_ayudarte
+
+- story: checar glucosa Aceptando
+  steps:
+  - intent: checar_glucosa
+  - action: utter_aclarar_niveles
+  - intent: afirmacion
+  - action: utter_pregunta_niveles_glucosa
+  - intent: dar_niveles_glucosa
+  - action: action_checa_glucosa
+
+- story: checar glucosa Cancelando
+  steps:
+  - intent: checar_glucosa
+  - action: utter_aclarar_niveles
+  - intent: negacion
+  - action: utter_en_que_puedo_ayudarte

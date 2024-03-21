@@ -73,6 +73,8 @@ nlu:
     - si
     - es correcto
     - claro
+    - si jajaja
+    - si jaja xd
     - por supuesto
     - suena bien
     - correcto
@@ -190,6 +192,13 @@ nlu:
     - saltando de alegría
     - rebosante de felicidad
     - Muy bien
+    - Bien, gracias y tú qué tal?
+    - muy bien gracias y tú cómo estás?
+    - de maravilla y tú cómo te encuentras?
+    - todo bien gracias y tú?
+    - super bien y usted?
+    - estoy contento y usted?
+    - hasta eso estoy muy bien el día de hoy y tú cómo te encuentras?
 - intent: mood_triste
   examples: |
     - mal
@@ -231,8 +240,19 @@ nlu:
     - desgarrado
     - descontento
     - insatisfecho
+    - Mal, gracias por preguntar y tú qué tal?
+    - muy mal de hecho pero gracias y tú cómo estás?
+    - muy mal y tú cómo te encuentras?
+    - no me esta yendo bien y tú?
+    - super mal y usted?
+    - estoy triste y usted?
+    - pues maso
+    - mas o menos y tú?
+    - pues más o menos y tu cómo te encuentras hoy?
 - intent: bot_challenge
   examples: |
+    - quien te hizo?
+    - quién es tu creador?
     - ¿eres un bot?
     - eres un bot?
     - eres un bot
@@ -286,17 +306,17 @@ nlu:
     - ayudame a calcular el imc de un paciente
 - intent: dar_nombre
   examples: |
-    - mi nombre es [Guillermo Mejia](nombre)
-    - el nombre del paciente es [Pamela Daniela](nombre)
-    - [Carolina Sandoval](nombre)
-    - me llamo [Juan Peralta](nombre)
-    - soy [Blanca Anahi](nombre)
-    - su nombre es [Ana Luz](nombre)
-    - me llamo [Alejandra Becerril](nombre)
-    - se llama [Viridiana Rojas](nombre)
-    - el nombre de la paciente es [Liliana Flores](nombre)
-    - se llama [Ximena Lobera](nombre)
-    - Se llama [Luis Hernandez](nombre)
+    - mi nombre es [Guillermo Mejia Contreras](nombre)
+    - el nombre del paciente es [Pamela Daniela Angeles Garcia](nombre)
+    - [Carolina Sandoval Perez](nombre)
+    - me llamo [Juan Peralta Rodriguez](nombre)
+    - soy [Blanca Anahi Hernandez](nombre)
+    - su nombre es [Ana Luz Sanchez](nombre)
+    - me llamo [Alejandra Becerril Rojas](nombre)
+    - se llama [Viridiana Sandoval Betancourt](nombre)
+    - el nombre de la paciente es [Liliana Flores Martinez](nombre)
+    - se llama [Ximena Danae Lobera Ordoñez](nombre)
+    - Se llama [Luis Hernandez Beltran](nombre)
 - intent: dar_edad
   examples: |
     - mi edad es de [22](edad) años
@@ -450,6 +470,10 @@ nlu:
     - si la paciente tuvo un bebé con un peso mayor a 4 kilos es un caso de riesgo?
     - si el paciente recibe mediacion para la esquizofrenia es un factor de riesgo?
     - si tengo un paciente que consume mucha azucar es probable que desarrolle diabetes si continua con ese habito?
+    - es malo el sobrepeso?
+    - que pasa si tengo obesidad?
+    - que pasa si tengo un amigo con sobrepeso?
+    - tengo varios kilos de más
 - intent: explicar_sintomas
   examples: |
     - puedes decirme los prinicipales síntomas de la diabetes mellitus?
@@ -497,6 +521,25 @@ nlu:
     - cuantos tipos de diabetes hay?
     - que tipos de diabetes hay?
     - Puedes decirme que tipos de diabetes existen?
+- intent: conocer_mi_tipo_diabetes
+  examples: |
+    - y cómo se que tipo de diabetes tengo?
+    - cómo identifico que tipo de diabetes tengo?
+    - ayudame a identificar mi tipo de diabetes
+    - cómo se que tipo de diabetes tiene el paciente?
+    - cómo conozco que tipo de diabetes tengo?
+    - cómo puedo saber que tipo de diabetes tengo?
+    - cómo saber que tipo de diabetes tiene mi paciente?
+    - y cuál es la diferencia entre la diabetes tipo 1 y 2?
+    - en qué se diferencia la diabetes tipo I y II?
+    - que hace diferente a la diabetes tipo 1 de la 2?
+    - existe una diferencia entre la diabetes tipo I de la tipo II?
+    - que diferencia a los tipos de diabetes?
+    - cual es la diferencia entre los tipos de diabetes?
+    - dime las diferencias que tienen los tipos de diabetes
+    - que diferencia tiene la diabetes tipo I con la gestacional?
+    - que diferencia tiene la diabetes tipo 2 con la gestacional?
+    - qué diferencia la diabetes gestacional de las demás?
 - intent: conocer_cura
   examples: |
     - existe una cura para la diabetes?
@@ -547,6 +590,7 @@ nlu:
     - las personas con diabetes pueden comer pizza?
     - que pueden comer las personas con diabetes?
     - que alimentos consumen los diabeticos?
+    - crees que sea bueno comer tacos?
 - intent: otros_cuidados
   examples: |
     - hay algún especie de cuidado especial?
@@ -621,6 +665,10 @@ nlu:
     - tipo [1](tipo)
     - diabetes [gestacional](tipo)
     - la tipo [2](tipo)
+    - la tipo [3](tipo)
+    - existe la diabetes tipo [III](tipo)?
+    - explicame la diabetes tipo [3](tipo)
+    - hablame sobre la diabetes tipo [3](tipo)
 - intent: otro_tipo
   examples: |
     - puedes decirme otro tipo de diabetes?
@@ -648,6 +696,11 @@ nlu:
     - podrías darme una fuente para saber más
     - tienes algun enlace de interes?
     - podrías mandarme un enlace sobre la diabetes?
+    - tienes links que hablen más sobre la diabetes?
+    - tienes links de interes?
+    - dame un link
+    - propociona una liga de interes
+    - tienes ligas de interes?
 - intent: obtener_videos
   examples: |
     - podrías mandarme un vídeo sobre este tema?
@@ -655,6 +708,10 @@ nlu:
     - tienes algún vídeo de interés sobre la diabetes
     - quiero ver un vídeo sobre la diabetes
     - proporcioname un vídeo sobre la diabetes en México
+    - puedes mandarme un vídeo?
+    - mandame un vídeo
+    - ocupo un vídeo de diabetes
+    - y también un vídeo de la diabetes
 - intent: explica_glucosa
   examples: |
     - y qué es la glucosa?
@@ -671,6 +728,9 @@ nlu:
     - dime como se reduce el nivel de glucosa en sangre
     - y cómo se reduce el nivel de azucar en la sangre
     - hay algo para reducir la glucosa del cuerpo?
+    - tienes otra recomendación para bajar el azucar?
+    - dame otro consejo para reducir la azucar
+    - dame otro tip para bajar la azucar
 - intent: explica_hipoglucemia
   examples: |
     - qué es la hipoglucemia?
@@ -678,11 +738,79 @@ nlu:
     - explicame que es la hipoglucemia
     - cómo se le llama cuando el nivel de azucar es muy bajo?
     - como se le dice cuando se tiene el azucar baja?
+- intent: explica_insulina
+  examples: |
+    - qué es la insulina?
+    - me puedes explicar qué es la insulina?
+    - dime qué es la insulina?
+    - y qué es la insulina?
+    - explicame que es la insulina
+    - y a todo esto que es la insulina?
+    - por qué es importante la insulina?
+- intent: conocer_estadisticas_diabetes
+  examples: |
+    - tienes estadisticas sobre la diabetes?
+    - tienes datos estadísticos sobre la diabetes en México?
+    - conoces datos estadísticos sobre la diabetes?
+    - que estadisticas hay sobre la diabetes? 
+    - podrías darme estadisticas sobre la diabetes?
+- intent: prediabetes
+  examples: |
+    - existe la prediabetes?
+    - es cierto que existe la prediabetes?
+    - hay algo que de antes de que te dé diabetes?
+    - existe una enfermedad antes de la diabetes?
+    - que te da antes de la diabetes?
+    - explicame la prediabetes
+    - dime que es la prediabetes
+- intent: hipertension
+  examples: |
+    - la hipertensión está ligada a la diabetes?
+    - en qué se relacionan la diabetes con la hipertensión?
+    - qué relación tiene la diabetes con la hipertensión?
+    - define la hipertensión
+    - dime qué es la hipertensión
+    - explicame que es la hipertensión
+    - explicame los síntomas de la hipertensión
+    - cuáles son los síntomas de la hipertensión
+    - sabes cuales son los síntomas asociados a la hipertensión?
+- intent: checar_glucosa
+  examples: |
+    - quiero revisar mis niveles de glucosa
+    - quiero comprobar mis niveles de glucosa
+    - ayudame a comprobar los niveles de glucosa en el paciente
+    - me ayudas a checar los niveles de glucosa?
+    - quiero revisar los niveles de glucosa
+    - quiero checar mi glucosa
+    - quiero checar los niveles de glucosa de un paciente
+    - quiero revisar la glucosa de un paciente
+- intent: dar_niveles_glucosa
+  examples: |
+    - Claro, antes de comer era de [83.5](glucosa_antes) mg/dL y despues de [98.5](glucosa_despues) mg/dL
+    - si, en ayuno era de [105.7](glucosa_antes) y despues de comer era de [135.1](glucosa_despues)
+    - en ayuno el nivel era de [80](glucosa_antes) mg/dL y despues de ingerir alimentos pasó a [95](glucosa_despues) mg/dL
+    - antes de ingerir alimentos era de [120.5](glucosa_antes) y despues de comer pasó a [135](glucosa_despues)
+    - antes de comer era de [99.4](glucosa_antes) y despues de comer subió a [120.4](glucosa_despues)
+    - primero fue de [100](glucosa_antes) y despues [115.4](glucosa_despues)
+- intent: sospecha_diabetes
+  examples: |
+    - cómo sé si tengo diabetes?
+    - cómo saber si tengo diabetes?
+    - cómo podría saber si mi paciente tiene diabetes?
+    - tengo sospechas de tener diabetes
+    - tengo la sospecha de que mi paciente tiene diabetes
+    - cómo puedo saber si tengo diabetes?
+    - cómo saber si tengo esta enfermedad?
+    - cómo se si mi paciente cuenta con esta enfermedad?
 - intent: agradecer_ayuda
   examples: |
     - Muchas gracias
     - Me ha servido
     - Me fue util
+    - me gustó mucho la información
+    - me gustó mucho la infografía
+    - gracias por la infografía
+    - gracias por la imegen
     - Gracias
     - Agradezco tu ayuda
     - Te estoy muy agradecido
@@ -697,201 +825,22 @@ nlu:
     - Me has facilitado mucho las cosas
     - Te agradezco la orientación
     - Eres increíble, ¡gracias!
+- intent: usuario_da_sintoma_ajeno_diabetes
+    - me duele la [cabeza](dolor)
+    - me duele el [estomago](dolor)
+    - al paciente le duele el [estomago](dolor)
+    - a mi paciente le duele la [cabeza](dolor)
+    - me duele el [oído](dolor)
+    - me duele el [oido](dolor) 
+    - tengo un dolor punzante en la [cabeza](dolor)
+    - tengo un dolor que no se me quita en el [estomago](dolor)
+    - me duele la [panza](dolor)
+    - al paciente le duele la [cabeza](dolor)
 - synonym: masculino
   examples: |
     - Masculino
-- lookup: nombre
+    - Hombre
+- synonym: femenino
   examples: |
-    - Guillermo Mejia
-    - Juan Perez
-    - Itzel Castillo
-    - Ana Ramirez
-    - Carlos Gonzalez
-    - Beatriz Adriana
-    - Maricela Bravo
-    - Rodrigo Alexander
-    - Josue Figureoa
-    - Hugo Pablo
-    - Angeles Belem
-    - Ernesto Carrilo
-    - Pamela Angeles
-    - Daniela Garcia
-    - Guillermo Olmos
-    - Patricia Mejia
-    - Cristian Mejia
-    - Blanca Contreras
-    - Leonardo Sanchez
-    - Alonso Martinez
-    - Karen Pastrana
-    - Karen Romero
-    - Gloria Marin
-    - Edgar Suarez
-    - Raquel Murillo
-    - Carlos Gonzalez
-    - Maria Hernandez
-    - Jose Rodriguez
-    - Laura Martinez
-    - Ricardo Fernandez
-    - Sofia Lopez
-    - Alejandro Torres
-    - Valeria Garcia
-    - Luis Sanchez
-    - Natalia Morales
-    - Andres Jimenez
-    - Paola Castro
-    - Jorge Silva
-    - Gabriela Reyes
-    - Martin Ortega
-    - Daniela Paredes
-    - Ada Radanes
-    - Clara Hernandez
-    - Sofia Juarez
-    - Miguel Gutierrez
-    - Armando Fuentes
-    - Brenda Soto
-    - Carlos Mendoza
-    - Diana Flores
-    - Eduardo Vargas
-    - Fabiola Peralta
-    - Gerardo Castillo
-    - Helena Cervantes
-    - Ignacio Ruiz
-    - Jessica Guerrero
-    - Kevin Molina
-    - Leticia Ríos
-    - Miguel Navarro
-    - Norma Díaz
-    - Octavio Rangel
-    - Patricia León
-    - Quetzal Gómez
-    - Raúl Cisneros
-    - Silvia Salazar
-    - Tomás Vega
-    - Ubaldo Rojas
-    - Vanessa Pacheco
-    - Walter Cárdenas
-    - Ximena Ugalde
-    - Yahir Cortés
-    - Zaida Ramos
-    - Ximena Horan
-    - Areeli Ferrer
-    - Luis Angel
-    - Axel Jimenez
-    - Alan Gonzalez
-    - Antonio Mejia
-    - Arturo Mejia
-    - Adriana Hernández
-    - Bruno Sánchez
-    - Cecilia Cordero
-    - Diego Herrera
-    - Estela Montes
-    - Gabriela Martínez
-    - Héctor Varela
-    - Ingrid Castillo
-    - Juan Pablo Méndez
-    - Karla Núñez
-    - Luis Flores
-    - María del Carmen Torres
-    - Néstor Soto
-    - Olivia Díaz
-    - Pablo Ramírez
-    - Quetzalli Rojas
-    - Raúl Medina
-    - Sandra Jiménez
-    - Tomás Serrano
-    - Ursula Guzmán
-    - Víctor Mendoza
-    - Wendy Cervantes
-    - Xavier León
-    - Yolanda Vega
-    - Zenaida Paredes
-    - Carolina Herrera
-    - Coraline Estrada
-    - Mauricio Torres
-    - Andrea Silva
-    - David Villavicencio
-    - Alejandra Torres
-    - Denisse Torres
-    - Samantha Segundo
-    - Omar Ayala
-    - Alejandro Gómez
-    - Brenda Ortega
-    - Carlos Vargas
-    - Diana Ruiz
-    - Eduardo López
-    - Fabiola Soto
-    - Gerardo Morales
-    - Helena Reyes
-    - Iván Delgado
-    - Jessica Peralta
-    - Kevin Jiménez
-    - Laura González
-    - Manuel Herrera
-    - Norma Cisneros
-    - Óscar Salinas
-    - Patricia Mendoza
-    - Quirino Valdez
-    - Rosa Montiel
-    - Sergio Ramírez
-    - Teresa Sánchez
-    - Ulises Cervantes
-    - Verónica Navarro
-    - Walter Paredes
-    - Ximena Torres
-    - Yahir Núñez
-    - Zulema Ríos
-    - Paulina Ramos
-    - Mia Zavala
-    - Fernanda Saavedra
-    - Gustavo Huitzil
-    - Berelita Perez
-    - Yolanda Paredes
-    - Sebastian Castellanos
-    - Julia Aguilar
-    - Laura Saavedra
-    - Luisa Gomez
-    - Valentina Agudelo
-    - Constanza Belem
-    - Oscar Neria
-    - Jasmine Hernandez
-    - Gerardo Marcel
-    - Julio Aponte
-    - Adriana Martínez
-    - Benjamín Herrera
-    - Claudia Varela
-    - Diego Salgado
-    - Estela Robles
-    - Fernando Ríos
-    - Gabriela Cruz
-    - Héctor Ramírez
-    - Isabel Gutiérrez
-    - Jorge Mendoza
-    - Karla Sánchez
-    - Luis Torres
-    - Mariana Paredes
-    - Nicolás Vargas
-    - Olivia Díaz
-    - Pablo Delgado
-    - Quesia Gómez
-    - Ricardo Núñez
-    - Silvia Cervantes
-    - Tomás Valdez
-    - Ursula Montiel
-    - Víctor Ortega
-    - Wendy Jiménez
-    - Xavier Peralta
-    - Yolanda Reyes
-    - Zacarías Salinas
-    - Ángela Navarro
-    - Édgar Cisneros
-    - Úrsulo Soto
-    - Adriana Baranda
-    - Angel Emmanuel
-    - Itzel Castillo
-    - Cristopher Camporrojo
-    - Iziel Gonzalez
-    - Veronica Lopez
-    - Yamilet Montaño
-    - Ximena Lobera
-    - Pedro Alonso
-    - Rocio Ortega
+    - Femenina
+    - Mujer

@@ -4,6 +4,8 @@ rules:
     steps:
     - intent: saludar
     - action: action_saludo
+    - action: utter_explicar_animo
+    - action: utter_en_que_puedo_ayudarte
 
   - rule: Say goodbye anytime the user says goodbye
     steps:
@@ -69,7 +71,6 @@ rules:
     steps:
     - intent: decir_sintomas
     - action: utter_sintoma_detectado
-    - action: action_manda_imagen
 
   - rule: Explica sintomas
     steps:
@@ -84,6 +85,7 @@ rules:
   - rule: Di cura
     steps:
     - intent: conocer_cura
+    - action: utter_di_fuente_cura
     - action: utter_cura_diabetes
   
   - rule: Di como se controla la diabetes
@@ -127,7 +129,7 @@ rules:
   - rule: Di las complicaciones
     steps:
     - intent: complicaciones
-    - action: utter_complicaciones
+    - action: action_manda_imagen
     - action: utter_causa_muerte
 
   - rule: Di las causas
@@ -169,10 +171,57 @@ rules:
   - rule: Explica Hipoglucemia
     steps:
     - intent: explica_hipoglucemia
-    - action: utter_explica_hipoglucemia
+    - action: action_manda_imagen
 
   - rule: Da consejos para reducir la glucosa
     steps:
     - intent: bajar_azucar
     - action: utter_di_fuente
     - action: utter_como_reducir_azucar
+
+  - rule: Explica insulina
+    steps:
+    - intent: explica_insulina
+    - action: action_manda_imagen
+
+  - rule: Conocer Tipo De Diabetes
+    steps:
+    - intent: conocer_mi_tipo_diabetes
+    - action: action_manda_imagen
+
+  - rule: Di que sabes hacer
+    steps:
+    - intent: conocer_funcionalidades
+    - action: utter_explicar_objetivo
+  
+  - rule: Di estadisticas sobre la diabetes
+    steps:
+    - intent: conocer_estadisticas_diabetes
+    - action: action_manda_imagen
+
+  - rule: Di que es la prediabetes
+    steps:
+    - intent: prediabetes
+    - action: action_manda_imagen
+  
+  - rule: Di que es la hipertension
+    steps:
+    - intent: hipertension
+    - action: action_manda_imagen
+
+  - rule: Cuando el usuario esta feliz
+    steps:
+    - intent: mood_feliz
+    - action: utter_feliz
+    - action: utter_en_que_puedo_ayudarte
+
+  - rule: Checa niveles de glucosa
+    steps:
+    - intent: dar_niveles_glucosa
+    - action: action_checa_glucosa
+
+  - rule: Sospecha diabetes
+    steps:
+    - intent: sospecha_diabetes
+    - action: utter_responde_sospecha
+    - action: action_manda_imagen

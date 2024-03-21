@@ -1,0 +1,1356 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAMTemp"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAMTemp">
+    <Prefix name="" IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAMTemp/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Academico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Administrativo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Alumno"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#BajoPeso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#CondicionPeso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Coordinador"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Empleado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#JefeDepartamento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Materia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Normal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Obesidad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Profesor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Sobrepeso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Visitante"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#esProfesorTitularDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#estaInscritoEn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tomaClaseCon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneClave"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneCreditos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneEdad"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneEstatura"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneGenero"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneIMC"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneMatricula"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneNombreMateria"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneNombrePersona"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tienePeso"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#mat001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#mat002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#mat003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof003"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Academico"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Empleado"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Academico"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Administrativo"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Empleado"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Administrativo"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Alumno"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#BajoPeso"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#CondicionPeso"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Coordinador"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Academico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Coordinador"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Empleado"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Coordinador"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Empleado"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#JefeDepartamento"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Academico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#JefeDepartamento"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Empleado"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#JefeDepartamento"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Normal"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#CondicionPeso"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Obesidad"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#CondicionPeso"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Profesor"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Academico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Profesor"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Empleado"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Profesor"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Sobrepeso"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#CondicionPeso"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Visitante"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Alumno"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#CondicionPeso"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Sobrepeso"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Alumno"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#CondicionPeso"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Normal"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Alumno"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#CondicionPeso"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Normal"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Materia"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#mat001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Materia"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#mat002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Materia"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#mat003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Academico"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#CondicionPeso"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Empleado"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Profesor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Sobrepeso"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Academico"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#CondicionPeso"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Empleado"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Normal"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Profesor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Academico"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#CondicionPeso"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Empleado"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Normal"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Profesor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof003"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#estaInscritoEn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#mat001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tomaClaseCon"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#estaInscritoEn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu002"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#mat001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#estaInscritoEn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu002"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#mat002"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#estaInscritoEn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu002"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#mat003"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tomaClaseCon"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu002"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tomaClaseCon"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu002"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof002"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tomaClaseCon"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu002"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof003"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#estaInscritoEn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu003"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#mat001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#estaInscritoEn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu003"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#mat002"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#estaInscritoEn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu003"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#mat003"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tomaClaseCon"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu003"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tomaClaseCon"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu003"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof002"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tomaClaseCon"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu003"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof003"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#esProfesorTitularDe"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof001"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#mat001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#esProfesorTitularDe"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof002"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#mat003"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#esProfesorTitularDe"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof003"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#mat002"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneEdad"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneEstatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.73</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneGenero"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu001"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneIMC"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">26.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneMatricula"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu001"/>
+        <Literal>2193001028</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneNombrePersona"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu001"/>
+        <Literal>Guillermo Mejia Contreras</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tienePeso"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">78.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneEdad"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneEstatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.85</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneGenero"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu002"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneIMC"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">23.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneMatricula"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu002"/>
+        <Literal>162210309</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneNombrePersona"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu002"/>
+        <Literal>Juan Perez</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tienePeso"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">80.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneEdad"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneEstatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.64</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneGenero"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu003"/>
+        <Literal>Femenino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneIMC"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">18.88</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneMatricula"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu003"/>
+        <Literal>2193000496</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneNombrePersona"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu003"/>
+        <Literal>Karen Lizeth</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tienePeso"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#alu003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">50.78</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneClave"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#mat001"/>
+        <Literal>CBI001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneCreditos"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#mat001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneNombreMateria"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#mat001"/>
+        <Literal>Bases de Datos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneClave"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#mat002"/>
+        <Literal>CBI002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneCreditos"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#mat002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneNombreMateria"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#mat002"/>
+        <Literal>Programación Orientada a Servicios</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneClave"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#mat003"/>
+        <Literal>CBI003</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneCreditos"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#mat003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneNombreMateria"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#mat003"/>
+        <Literal>Algoritmos y Estructuras de Datos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneEdad"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneEstatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.72</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneGenero"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof001"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneIMC"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">25.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneNombrePersona"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof001"/>
+        <Literal>Rodrigo Alexander Castro Campos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tienePeso"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">75.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneEdad"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">42</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneEstatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.65</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneGenero"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof002"/>
+        <Literal>Femenino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneIMC"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">20.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneNombrePersona"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof002"/>
+        <Literal>Virginia Cuevas Mejia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tienePeso"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof002"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">55.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneEdad"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">35</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneEstatura"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.64</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneGenero"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof003"/>
+        <Literal>Femenino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneIMC"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">21.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneNombrePersona"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof003"/>
+        <Literal>Sandra Loera</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tienePeso"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#prof003"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">56.7</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#esProfesorTitularDe"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Academico"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#esProfesorTitularDe"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Empleado"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#esProfesorTitularDe"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#esProfesorTitularDe"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Profesor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#estaInscritoEn"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Alumno"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#estaInscritoEn"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tomaClaseCon"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Alumno"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tomaClaseCon"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#esProfesorTitularDe"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Materia"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#estaInscritoEn"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Materia"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tomaClaseCon"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Academico"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tomaClaseCon"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Empleado"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tomaClaseCon"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tomaClaseCon"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Profesor"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneClave"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Materia"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneCreditos"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Materia"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneEdad"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneEstatura"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneGenero"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneIMC"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneMatricula"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Alumno"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneMatricula"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneNombreMateria"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Materia"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneNombrePersona"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tienePeso"/>
+        <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneClave"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneCreditos"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneEdad"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneEstatura"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneGenero"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneIMC"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneMatricula"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneNombreMateria"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneNombrePersona"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tienePeso"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Listado de alumnos y los profesores con los que toman alguna materia</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>AlumnosTomanClaseCon</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Profesor"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Alumno"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/a"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Materia"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/materia"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneNombrePersona"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/nombreProf"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneNombrePersona"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/a"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/nombreAlu"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneNombreMateria"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/materia"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/nombreMat"/>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#esProfesorTitularDe"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/materia"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#estaInscritoEn"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/a"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/materia"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/nombreAlu"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/nombreProf"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/nombreMat"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Regla de inferencia para encontrar la relacion de tomaClaseCon</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>TomaClaseCon</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Profesor"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Alumno"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/a"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Materia"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/materia"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneNombrePersona"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/nombreProf"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneNombrePersona"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/a"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/nombreAlumno"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneNombreMateria"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/materia"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/nombreMat"/>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#esProfesorTitularDe"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/materia"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#estaInscritoEn"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/a"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/materia"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tomaClaseCon"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/a"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Lista de Materias por Alumno</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>MateriasPorAlumno</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Alumno"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/a"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneNombrePersona"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/nombre"/>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#estaInscritoEn"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/materia"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/nombre"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/materia"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Obtener peso y altura de las personas</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>DatosPesoYAltura</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tienePeso"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/w"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneEstatura"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/h"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/w"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/h"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Infiere el valor del IMC por cada Persona</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>CalculaIMC</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tienePeso"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/w"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneEstatura"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/h"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#multiply">
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/altura2"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/h"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/h"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#divide">
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/imc"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/w"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/altura2"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneIMC"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/imc"/>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Calculo del Indice de Masa Corporal</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>IMC</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tienePeso"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/w"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneEstatura"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/h"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#multiply">
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/altura2"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/h"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/h"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#divide">
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/imc"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/w"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/altura2"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/imc"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Regla que identifica a las personas con peso normal</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>InfiereNormal</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneIMC"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/imc"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/imc"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">18.5</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/imc"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">24.9</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Normal"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Regla para determinar la clase de individuos que estan en sobrepeso</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>InfiereSobrePeso</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneIMC"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/imc"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/imc"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">25.0</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/imc"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">29.9</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Sobrepeso"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Regla para determinar los individuos que pertenecen a la clase de Obesidad</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>InfiereObesidad</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneIMC"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/imc"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/imc"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30.0</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Obesidad"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Regla para identificar individuos que estan en bajo peso</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>InfiereBajoPeso</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Persona"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneIMC"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/imc"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/imc"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">18.5</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#BajoPeso"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Materias que imparte cada Profesor</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>MateriasProfesor</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Profesor"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneNombrePersona"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/nombre"/>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#esProfesorTitularDe"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/materia"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/nombre"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/materia"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Lista de profesores mayores de edad</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>ProfesoresMayores</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Profesor"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneNombrePersona"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/nombre"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneEdad"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/edad"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/edad"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/nombre"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/edad"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Listado de profesores del genero femenino</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>Profesoras</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#Profesor"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneGenero"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+                <Literal>Femenino</Literal>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM#tieneNombrePersona"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/p"/>
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/nombre"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="http://www.semanticweb.org/alone/ontologies/2024/0/OntologiaUAM/nombre"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
