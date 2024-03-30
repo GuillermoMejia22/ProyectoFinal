@@ -226,7 +226,6 @@ stories:
   - action: utter_eso_ayudo
   - intent: afirmacion
   - action: utter_feliz
-  - action: utter_explicar_animo
   - action: utter_en_que_puedo_ayudarte
 
 - story: Cuando el usuario esta triste 2
@@ -237,7 +236,6 @@ stories:
   - action: utter_eso_ayudo
   - intent: negacion
   - action: utter_animo
-  - action: utter_explicar_animo
   - action: utter_en_que_puedo_ayudarte
 
 - story: checar glucosa Aceptando

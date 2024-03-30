@@ -1,11 +1,9 @@
 version: "3.1"
 rules:
-  - rule: Di Hola
+  - rule: Di Hola Version 1
     steps:
     - intent: saludar
     - action: action_saludo
-    - action: utter_explicar_animo
-    - action: utter_en_que_puedo_ayudarte
 
   - rule: Say goodbye anytime the user says goodbye
     steps:
@@ -225,3 +223,324 @@ rules:
     - intent: sospecha_diabetes
     - action: utter_responde_sospecha
     - action: action_manda_imagen
+
+  - rule: Preguntar efectos
+    steps:
+    - intent: preguntar_efectos 
+    - action: action_manda_imagen
+
+  - rule: Tipo mas peligroso de diabetes
+    steps:
+    - intent: tipo_mas_peligroso
+    - action: utter_tipo_mas_peligroso
+
+  - rule: Di cifras muerte
+    steps:
+    - intent: numero_fallecidos
+    - action: action_manda_imagen
+
+  - rule: Di como es vivir con diabetes
+    steps: 
+    - intent: vivir_con_diabetes
+    - action: action_manda_imagen
+  
+  - rule: Explica la relación entre la diabetes y el corazon
+    steps:
+    - intent: relacion_diabetes_corazon 
+    - action: utter_relacion_diabetes_corazon
+    - action: utter_pre_cuidados_corazon
+    - action: utter_cuidados_corazon
+
+  - rule: Da cuidados para el corazon
+    steps:
+    - intent: cuidados_corazon
+    - action: utter_pre_cuidados_corazon
+    - action: utter_cuidados_corazon
+
+  - rule: Explica la relación entre la diabetes y los rinones
+    steps:
+    - intent: relacion_diabetes_rinones 
+    - action: utter_relacion_diabetes_rinones
+    - action: utter_pre_cuidados_rinones
+    - action: utter_cuidados_rinones
+
+  - rule: Da cuidados para los rinones
+    steps:
+    - intent: cuidados_rinones
+    - action: utter_pre_cuidados_rinones
+    - action: utter_cuidados_rinones
+  
+  - rule: Explica la relación entre la diabetes y los nervios
+    steps:
+    - intent: relacion_diabetes_nervios 
+    - action: utter_relacion_diabetes_nervios
+    - action: utter_pre_cuidados_nervios
+    - action: utter_cuidados_nervios
+
+  - rule: Da cuidados para los nervios
+    steps:
+    - intent: cuidados_nervios
+    - action: utter_pre_cuidados_nervios
+    - action: utter_cuidados_nervios
+  
+  - rule: Explica tipo de dano a nervio
+    steps:
+    - intent: conocer_tipo_dano_nervios
+    - action: action_tipo_nervios
+  
+  - rule: Explica la relación entre la diabetes y los pies
+    steps:
+    - intent: relacion_diabetes_pies 
+    - action: utter_relacion_diabetes_pies
+    - action: utter_pre_cuidados_pies
+    - action: utter_cuidados_pies
+
+  - rule: Da cuidados para los pies
+    steps:
+    - intent: cuidados_pies
+    - action: utter_pre_cuidados_pies
+    - action: utter_cuidados_pies
+
+  - rule: Detecta sintoma pie
+    steps:
+    - intent: sintomas_danos_pie
+    - action: utter_sintoma_pie
+  
+  - rule: Explica la relación entre la diabetes y los dientes
+    steps:
+    - intent: relacion_diabetes_dientes 
+    - action: utter_relacion_diabetes_dientes
+    - action: utter_pre_cuidados_dientes
+    - action: utter_cuidados_dientes
+
+  - rule: Da cuidados para los dientes
+    steps:
+    - intent: cuidados_dientes
+    - action: utter_pre_cuidados_dientes
+    - action: utter_cuidados_dientes
+
+  - rule: Di causas de prediabetes
+    steps:
+    - intent: causa_prediabetes
+    - action: utter_causas_prediabetes
+
+  - rule: Cuidados Diabetes Tipo I
+    steps:
+    - intent: cuidados_diabetes_tipo_1
+    - action: utter_cuidados_diabetes_tipo_1
+
+  - rule: Causas diabetes Por Tipo
+    steps:
+    - intent: causas_diabetes_por_tipo
+    - action: action_causas_diabetes
+
+  - rule: Diabetes mas comun
+    steps:
+    - intent: diabetes_mas_comun
+    - action: utter_diabetes_comun
+
+  - rule: Sintomas Diabetes Tipo Especifiaco
+    steps:
+    - intent: sintomas_diabetes_tipo
+    - action: action_sintomas_diabetes
+    - action: action_manda_imagen
+
+  - rule: Factores de Riesgo Diabetes Tipo 1
+    steps:
+    - intent: factores_de_riesgo_diabetes_tipo_1
+    - action: utter_factores_riesgo_diabetes_tipo_1
+
+  - rule: Explica cetoacidosis diabetica
+    steps:
+    - intent: explica_cetoacidosis_diabetica
+    - action: utter_explica_cetoacidosis_diabetica
+
+  - rule: Azucar Alta
+    steps:
+    - intent: azucar_alta
+    - action: utter_azucar_alta
+
+  - rule: Tipos de Insulina
+    steps:
+    - intent: tipos_insulina
+    - action: action_manda_imagen
+
+  - rule: Di las administraciones de insulina
+    steps:
+    - intent: formas_administrar_insulina
+    - action: utter_formas_administracion_insulina
+
+  - rule: Explica una forma de Administracion de Insulina
+    steps:
+    - intent: metodo_insulina
+    - action: action_administracion_insulina
+
+  - rule: Causas de la Azucar Baja
+    steps:
+    - intent: causas_azucar_baja
+    - action: action_manda_imagen
+
+  - rule: Sintomas Azucar Baja
+    steps:
+    - intent: sintomas_azucar_baja
+    - action: action_manda_imagen
+
+  - rule: Sintomas Cetoacidosis
+    steps:
+    - intent: sintomas_cetoacidosis
+    - action: action_manda_imagen
+  
+  - rule: Causas Cetoacidosis
+    steps:
+    - intent: causas_cetoacidosis
+    - action: action_manda_imagen
+
+  - rule: Tratamiento Cetoacidosis
+    steps:
+    - intent: tratamiento_cetoacidosis
+    - action: action_manda_imagen
+  
+  - rule: Prevencion Cetoacidosis
+    steps:
+    - intent: prevencion_cetoacidosis
+    - action: action_manda_imagen
+
+  - rule: Edad Diabetes Tipo Especificado
+    steps:
+    - intent: edad_diabetes_tipo
+    - action: action_edad_diabetes
+
+  - rule: Manejar Diabetes Tipo Especificado
+    steps:
+    - intent: manejar_diabetes_tipo
+    - action: action_manejar_diabetes
+
+  - rule: Cuidar Familia Diabetes
+    steps:
+    - intent: cuidar_familia
+    - action: utter_cuidar_diabetes_familia
+
+  - rule: Causas Diabetes Gestacional
+    steps:
+    - intent: causas_diabetes_gestacional
+    - action: utter_causas_diabetes_gestacional
+  
+  - rule: Sintomas y Factores de Riesgo Diabetes Gestacional
+    steps:
+    - intent: sintomas_y_factores_de_riesgo_diabetes_gestacional
+    - action: utter_sintomas_y_factores_riesgo_diabetes_gestacional
+
+  - rule: Complicaciones Diabetes Gestacional
+    steps:
+    - intent: complicaciones_gestacional
+    - action: action_manda_imagen
+
+  - rule: Deteccion Diabetes Gestacional
+    steps:
+    - intent: deteccion_gestacional
+    - action: utter_deteccion_diabetes_gestacional
+
+  - rule: Prevencion Diabetes Gestacional
+    steps:
+    - intent: prevencion_gestacional
+    - action: utter_prevencion_diabetes_gestacional
+  
+  - rule: Tratamiento Diabetes Gestacional
+    steps:
+    - intent: tratamiento_gestacional
+    - action: action_manda_imagen
+  
+  - rule: Metodos de Deteccion
+    steps:
+    - intent: conocer_metodos_deteccion
+    - action: utter_metodos_deteccion
+
+  - rule: Explica un Metodo de Deteccion
+    steps:
+    - intent: explica_metodo_deteccion
+    - action: action_metodo_deteccion
+  
+  - rule: Explica la relación entre la diabetes y los oidos
+    steps:
+    - intent: relacion_diabetes_oidos 
+    - action: utter_relacion_diabetes_oidos
+    - action: utter_pre_cuidados_oidos
+    - action: utter_cuidados_oidos
+
+  - rule: Da cuidados para los oidos
+    steps:
+    - intent: cuidados_oidos
+    - action: utter_pre_cuidados_oidos
+    - action: utter_cuidados_oidos
+
+  - rule: Explica el dano auditivo
+    steps:
+    - intent: perdida_auditiva
+    - action: utter_perdida_auditiva
+
+  - rule: Explica la relación entre la diabetes y los ojos
+    steps:
+    - intent: relacion_diabetes_ojos 
+    - action: utter_relacion_diabetes_ojos
+    - action: utter_pre_cuidados_ojos
+    - action: utter_cuidados_ojos
+
+  - rule: Da cuidados para los ojos
+    steps:
+    - intent: cuidados_ojos
+    - action: utter_pre_cuidados_ojos
+    - action: utter_cuidados_ojos
+
+  - rule: Define Cataratas
+    steps:
+    - intent: define_cataratas
+    - action: utter_define_cataratas
+    - action: utter_tratamiento_cataratas
+
+  - rule: Define glaucoma
+    steps:
+    - intent: define_glaucoma
+    - action: utter_define_glaucoma
+    - action: utter_prevencion_glaucoma
+
+  - rule: Define Retinopatia Diabetica
+    steps:
+    - intent: retinopatia
+    - action: utter_define_retinopatia
+  
+  - rule: Recomendacion Compras
+    steps:
+    - intent: recomendacion_compra_alimentos
+    - action: utter_pre_recomendacion_alimentos
+    - action: utter_recomendacion_alimentos
+
+  - rule: Define Carbohidratos
+    steps:
+    - intent: define_carbohidratos
+    - action: utter_define_carbohidratos
+
+  - rule: Diabetes Mas Comun
+    steps:
+    - intent: diabetes_mas_comun
+    - action: utter_diabetes_comun
+
+  - rule: Conocer tipos de danos a los nervios
+    steps:
+    - intent: conocer_tipos_dano_nervios
+    - action: utter_tipos_danos_nervios
+
+  - rule: Explica etiquetas
+    steps:
+    - intent: etiquetas_nutricionales
+    - action: action_manda_imagen
+
+  - rule: SIntoma Ajeno
+    steps:
+    - intent: usuario_da_sintoma_ajeno_diabetes
+    - action: action_recomienda_algo_dolor
+
+  - rule: Nuevo Dato de Entrenamiento
+    steps:
+    - intent: nlu_fallback
+    - action: utter_default
+    - action: action_dato_entrenamiento

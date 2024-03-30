@@ -474,6 +474,14 @@ nlu:
     - que pasa si tengo obesidad?
     - que pasa si tengo un amigo con sobrepeso?
     - tengo varios kilos de más
+    - tengo prediabetes
+    - estoy gordo
+    - estoy obeso
+    - Uno de mis padres y uno de mis hermanos tiene diabetes tipo 2
+    - no me gusta hacer ejercicio
+    - me da flojera hacer ejercicio
+    - Una vez llegué a tener diabetes gestacional
+    - en el pasado llegué a tener diabetes gestacional
 - intent: explicar_sintomas
   examples: |
     - puedes decirme los prinicipales síntomas de la diabetes mellitus?
@@ -483,6 +491,12 @@ nlu:
     - explicame los sintomas de la diabetes
     - dime en que consisten los sintomas de la diabetes
     - explica los sintomas de la diabetes mellitus
+    - Cuál es el primer signo de tener diabetes?
+    - cuales son los primeros indicios de la diabetes mellitus?
+    - que es lo primero que pasa cuando te va a dar diabetes?
+    - cúales son los indicadores de la diabetes?
+    - cuales son las primeras señales de la diabetes?
+    - que cosas te avisan que estas en riesgo de diabetes?
 - intent: decir_sintomas
   examples: |
     - si mi paciente presenta una sed excesiva es normal?
@@ -513,6 +527,9 @@ nlu:
     - es normal tener el cuello negro aunque me bañe todos los días?
     - por qué tengo los codos negros si me baño diario?
     - mi paciente describe que ultimamente tiene una hambre incontrolable
+    - la diabetes te hace mucho ir al baño?
+    - la diabetes te produce mucha hambre?
+    - la diabetes mellitus hace que te sientas muy cansado y sin ganas?
 - intent: tipos_diabetes
   examples: |
     - puedes decirme los tipos de diabetes?
@@ -557,7 +574,6 @@ nlu:
     - como se maneja la diabetes?
     - como lidiar con la diabetes
     - como se vive con la diabetes?
-    - cómo es vivir con diabetes?
     - con qué se controla la diabetes?
     - cómo tener la diabetes a raya?
 - intent: dieta_diabetes
@@ -687,6 +703,12 @@ nlu:
     - me puedes decir qué es la hiperglucemia?
     - cómo se le llama a eso que te da cuando tienes el azucar alta?
     - que es lo que pasa cuando se tiene alta la glucosa?
+    - que sería lo contrario a la hipoglucemia?
+    - que es lo contrario a la hipoglucemia?
+    - dime lo contrario a la hipoglucemia
+    - en qué consiste la hiperglucemia
+    - cómo se si tengo hiperglucemia?
+    - como saber si el paciente tiene hiperglucemia
 - intent: fuentes
   examples: |
     - puedes darme alguna de las fuentes que utilizas?
@@ -731,6 +753,8 @@ nlu:
     - tienes otra recomendación para bajar el azucar?
     - dame otro consejo para reducir la azucar
     - dame otro tip para bajar la azucar
+    - que hago para bajar el azucar
+    - dime como cuidarme del azucar alta
 - intent: explica_hipoglucemia
   examples: |
     - qué es la hipoglucemia?
@@ -738,6 +762,13 @@ nlu:
     - explicame que es la hipoglucemia
     - cómo se le llama cuando el nivel de azucar es muy bajo?
     - como se le dice cuando se tiene el azucar baja?
+    - que sería lo contrario a la hiperglucemia?
+    - que es lo contrario a la hiperglucemia?
+    - dime lo contrario a la hiperglucemia
+    - dime los sintomas de la hipoglucemia?
+    - en qué consiste la hipoglucemia
+    - cómo saber si tengo hipoglucemia?
+    - como se si mi paciente tiene hipoglucemia?
 - intent: explica_insulina
   examples: |
     - qué es la insulina?
@@ -802,6 +833,22 @@ nlu:
     - cómo puedo saber si tengo diabetes?
     - cómo saber si tengo esta enfermedad?
     - cómo se si mi paciente cuenta con esta enfermedad?
+- intent: preguntar_efectos
+  examples: |
+    - la diabetes puede dejarte calvo?
+    - la diabetes te puede generar otros padecimientos?
+    - qué otras cosas genera la diabetes?
+    - que padecimientos potencia la diabetes?
+    - la diabetes te puede dejar ciego?
+    - la diabetes te deja debil?
+    - la diabetes te deja vulnerable a otras enfermedades?
+    - la diabetes te mete en riesgo de enfermedades del corazon?
+    - la diabetes te sube la presión arterial?
+    - la diabetes te produce cansancio?
+    - la diabetes seca la piel?
+    - la diabetes daña a los pies?
+    - la diabetes daña a los organos?
+    - la diabetes tiende a dañar el higado?
 - intent: agradecer_ayuda
   examples: |
     - Muchas gracias
@@ -826,6 +873,7 @@ nlu:
     - Te agradezco la orientación
     - Eres increíble, ¡gracias!
 - intent: usuario_da_sintoma_ajeno_diabetes
+  examples: |
     - me duele la [cabeza](dolor)
     - me duele el [estomago](dolor)
     - al paciente le duele el [estomago](dolor)
@@ -836,6 +884,737 @@ nlu:
     - tengo un dolor que no se me quita en el [estomago](dolor)
     - me duele la [panza](dolor)
     - al paciente le duele la [cabeza](dolor)
+- intent: tipo_mas_peligroso
+  examples: |
+    - cuál es el tipo de diabetes más peligroso?
+    - cuál es el tipo de diabetes que más mata?
+    - que diabetes es la que mas vidas se cobra?
+    - que tipo de diabetes es más dificil de controlar?
+    - que diabetes es bastante peligrosa?
+    - cuál consideras es la diabetes más peligrosa?
+    - cuál crees que sea la diabetes más peligrosa?
+    - cuál es la que dicen que es la diabetes más peligrosa?
+    - qué diabetes te mata más rápido?
+    - que diabetes mata más rapidamente?
+- intent: numero_fallecidos
+  examples: |
+    - cuantas personas mueren de diabetes mellitus en México?
+    - cuantas personas mueren de diabetes?
+    - dime cuantas personas mueren por esta enfermedad
+    - cuantas personas fallecen por esta enfermedad?
+    - que tantas personas mueren por esta enfermedad?
+    - cual es el número de personas que mueren a causa de esta enfermedad?
+    - sabes cuantas personas mueren por la diabetes?
+    - tienes la cifra de cuantas personas fallecen por diabetes mellitus?
+    - tienes un estimado de cuantas personas fallecen?
+    - cuantas personas mueren al dia por diabetes?
+    - sabes cuantos mexicanos mueren por diabetes al mes?
+    - tienes las cifras de cuantas personas han fallecido en los útlimos años?
+    - sabes cuantas personas mueren al año?
+- intent: vivir_con_diabetes
+  examples: |
+    - las personas con diabetes viven felices?
+    - cómo es vivir con diabetes?
+    - cómo vive una persona con diabetes?
+    - dime como se vive con diabetes
+    - como puede vivir una persona con diabetes?
+    - cómo es el día a día de un paciente con diabetes?
+    - cómo aprender a vivir con diabetes?
+    - cómo se vive con esta enfermedad?
+    - cómo es el estilo de vida de una persona con diabetes?
+- intent: relacion_diabetes_corazon
+  examples: |
+    - existe una relación entre el corazón y la diabetes?
+    - que relación encuentras entre el corazón y la diabetes?
+    - dirías que existe un vínculo entre la diabetes y el corazón?
+    - las enfermedades cardiacas tienen relación con la diabetes?
+    - las enfermedades cardiacas se dan por culpa de la diabetes?
+    - la diabetes genera enfermedades cardiacas?
+    - la diabetes daña el corazon?
+- intent: cuidados_corazon
+  examples: |
+    - dime cómo cuidar el corazón
+    - y cómo se cuida al corazón?
+    - me podrías decir cómo cuidar mi corazón
+    - tienes consejos de como cuidar el corazón?
+    - dame consejos sobre como se cuida al corazón?
+    - que recomiendas para cuidar al corazón?
+    - que se recomienda para cuidar el corazón?
+    - cómo se cuida el corazón?
+    - quiero cuidar mi corazón
+    - sabes como se cuida el corazón?
+    - que es bueno para el corazón?
+    - que es bueno para el cuidado del corazón?
+- intent: relacion_diabetes_rinones
+  examples: |
+    - existe una relación entre los riñones y la diabetes?
+    - que relación encuentras entre los riñones y la diabetes?
+    - dirías que existe un vínculo entre la diabetes y los riñones?
+    - las enfermedades de los riñones tienen relación con la diabetes?
+    - las enfermedades de los riñones se dan por culpa de la diabetes?
+    - la diabetes genera enfermedades en los riñones?
+    - la diabetes daña a los riñones? 
+- intent: cuidados_rinones
+  examples: |
+    - dime cómo cuidar los riñones
+    - y cómo se cuidan los riñones?
+    - me podrías decir cómo cuidar mis riñones
+    - tienes consejos de como cuidar los riñones?
+    - dame consejos sobre como se cuida a los riñones?
+    - que recomiendas para cuidar los riñones?
+    - que se recomienda para cuidar los riñones?
+    - cómo se cuida los riñones?
+    - quiero cuidar mis riñones
+    - sabes como se cuida a los riñones?
+    - que es bueno para los riñones?
+    - que es bueno para el cuidado de los riñones?
+- intent: relacion_diabetes_nervios
+  examples: |
+    - existe una relación entre los nervios y la diabetes?
+    - que relación encuentras entre los nervios y la diabetes?
+    - dirías que existe un vínculo entre la diabetes y los nervios?
+    - las enfermedades de los nervios tienen relación con la diabetes?
+    - las enfermedades de los nervios se dan por culpa de la diabetes?
+    - la diabetes genera enfermedades en los nervios? 
+    - la diabetes daña a los nervios?
+- intent: cuidados_nervios
+  examples: |
+    - dime cómo cuidar los nervios
+    - y cómo se cuidan los nervios?
+    - me podrías decir cómo cuidar mis nervios
+    - tienes consejos de como cuidar los nervios?
+    - dame consejos sobre como se cuida a los nervios?
+    - que recomiendas para cuidar los nervios?
+    - que se recomienda para cuidar los nervios?
+    - cómo se cuida los nervios?
+    - quiero cuidar mis nervios
+    - sabes como se cuida a los nervios?
+    - que es bueno para los nervios?
+    - que es bueno para el cuidado de los nervios?
+    - cómo se retrasan los daños a los nervios?
+- intent: conocer_tipos_dano_nervios
+  examples: |
+    - que tipos de daños a los nervios existen?
+    - y cuales son los tipos de daños a los nervios?
+    - que tipos de daño de nervios hay?
+    - dime los tipos de daño a los nervios que existen
+    - que tipos de daño hay a los nervios?
+    - que tipos de daño a los nervios le dan a los diabeticos?
+    - que daños a los nervios se presentan en la diabetes?
+- intent: conocer_tipo_dano_nervios
+  examples: |
+    - en qué consiste el daño a los nervios [perifericos](nervios)?
+    - cuales son los sintomas de los daños a los nervios [perifericos](nervios)?
+    - hablame en que consiste el daño a los nervios [perifericos](nervios)
+    - en qué consiste el daño a los nervios [autonomos](nervios)?
+    - cómo se dañan los nervios [autonomos](nervios)?
+    - cómo la diabetes daña a los nervios [autonomos](nervios)?
+    - hablame sobre el daño a los nervios [proximales](nervios)
+    - explicame sobre el daño que la diabetes le hace a los nervios [focales](nervios)
+    - dime algo sobre el daño a los nervios [focales](nervios)
+    - cómo se dañan los nervios [focales](nervios)?
+- intent: relacion_diabetes_pies
+  examples: |
+    - existe una relación entre los pies y la diabetes?
+    - que relación encuentras entre los pies y la diabetes?
+    - dirías que existe un vínculo entre la diabetes y los pies?
+    - las enfermedades de los pies tienen relación con la diabetes?
+    - las enfermedades de los pies se dan por culpa de la diabetes?
+    - la diabetes genera enfermedades en los pies? 
+- intent: cuidados_pies
+  examples: |
+    - dime cómo cuidar los pies
+    - y cómo se cuidan los pies?
+    - me podrías decir cómo cuidar mis pies
+    - tienes consejos de como cuidar los pies?
+    - dame consejos sobre como se cuida a los pies?
+    - que recomiendas para cuidar los pies?
+    - que se recomienda para cuidar los pies?
+    - cómo se cuida los pies?
+    - quiero cuidar mis pies
+    - sabes como se cuida a los pies?
+    - que es bueno para los pies?
+    - que es bueno para el cuidado de los pies?
+    - cómo se retrasan los daños a los pies?
+- intent: relacion_diabetes_dientes
+  examples: |
+    - existe una relación entre los dientes y la diabetes?
+    - que relación encuentras entre los dientes y la diabetes?
+    - dirías que existe un vínculo entre la diabetes y los dientes?
+    - las enfermedades de los dientes tienen relación con la diabetes?
+    - las enfermedades de los dientes se dan por culpa de la diabetes?
+    - la diabetes genera enfermedades en los dientes? 
+    - la diabetes daña a los dientes?
+    - tiene algo que ver la boca con la diabetes?
+    - la diabetes afecta a la boca?
+    - cómo es la higiene vucal de las personas con diabetes?
+- intent: cuidados_dientes
+  examples: |
+    - dime cómo cuidar los dientes
+    - y cómo se cuidan los dientes?
+    - me podrías decir cómo cuidar mis dientes
+    - tienes consejos de como cuidar los dientes?
+    - dame consejos sobre como se cuida a los dientes?
+    - que recomiendas para cuidar los dientes?
+    - que se recomienda para cuidar los dientes?
+    - cómo se cuida los dientes?
+    - quiero cuidar mis dientes
+    - sabes como se cuida a los dientes?
+    - que es bueno para los dientes?
+    - que es bueno para el cuidado de los dientes?
+    - cómo se retrasan los daños a los dientes?
+    - cómo se cuida la salud bocal?
+    - cómo cuidar mi boca?
+    - cómo se cuida la boca?
+- intent: sintomas_danos_pie
+  examples: |
+    - es normal tener Dolor en las piernas o calambres en las nalgas, los muslos o las pantorrillas durante la actividad física?
+    - el paciente describe tener Hormigueo, ardor o dolor en los pies
+    - siento Pérdida de la sensación del tacto o de capacidad para sentir bien el frío o el calor
+    - consideras que es normal ver cambio en la forma de los pies a lo largo del tiempo?
+    - He tenido Caída del vello de los pies, los dedos de los pies y la parte inferior de las piernas
+    - Tengo la piel de los pies seca y resquebrajada
+    - Es normal observar un cambio en el color y la temperatura de los pies?
+    - El paciente describe tener engrosamiento o amarilleamiento de las uñas de los pies.
+    - Tengo infecciones por hongos, como pie de atleta entre los dedos de los pies.
+    - Tengo una ampolla, llaga, úlcera, callo infectado o uña encarnada.
+- intent: causa_prediabetes
+  examples: |
+    - y qué causa la prediabetes?
+    - cuáles son las causas de la prediabetes?
+    - dime las principales causas de la prediabetes
+    - cuales dirías que son las principales causas de la prediabetes?
+    - dime las causas de la prediabetes
+    - en qué consisten las causas de la diabetes?
+    - podrías decirme que genera la prediabetes?
+- intent: cuidados_diabetes_tipo_1
+  examples: |
+    - cómo se cuida a alguien que tiene diabetes de tipo 1?
+    - como cuido a alguien que tiene diabetes 1?
+    - como son los cuidados para las personas con diabetes tipo I?
+    - si tengo un hijo con diabetes tipo I que debo hacer?
+    - cómo es la dieta de una persona con diabetes tipo 1?
+    - cómo se debe cuidar a un paciente con diabetes tipo 1?
+    - cuales son los cuidados que deben tener las personas con diabetes tipo 1? 
+- intent: causas_diabetes_por_tipo
+  examples: |
+    - podrías decirme que causa la diabetes tipo [1](tipo)?
+    - y qué causa la diabetes tipo [I](tipo)?
+    - qué causa la diabetes tipo [1](tipo)?
+    - explicame las causas de la diabetes tipo [1](tipo)
+    - hablame sobre las causas de la diabetes tipo [1](tipo)
+    - dime algo sobre las causas de la diabetes tipo [I](tipo) 
+    - conoces las principales causas de la diabetes tipo [I](tipo)?
+    - cuales crees que sean las causas de la diabetes tipo [I](tipo)?
+    - cuales son las principales causas de la diabetes tipo [I](tipo)?
+    - dime las causas principales de la diabetes tipo [1](tipo)
+    - podrías decirme que causa la diabetes tipo [2](tipo)?
+    - y qué causa la diabetes tipo [II](tipo)?
+    - qué causa la diabetes tipo [2](tipo)?
+    - explicame las causas de la diabetes tipo [II](tipo)?
+    - hablame sobre las causas de la diabetes tipo [2](tipo)?
+    - dime algo sobre las causas de la diabetes tipo [2](tipo) 
+    - conoces las principales causas de la diabetes tipo [II](tipo)?
+    - cuales crees que sean las causas de la diabetes tipo [II](tipo)?
+- intent: diabetes_mas_comun
+  examples: |
+    - cuál es la diabetes más común en México?
+    - qué diabetes es más común?
+    - conoces cual es la diabetes más común?
+    - cuál es la diabetes que más le dá a la gente?
+    - que diabetes es más común?
+    - que diabetes es mas popular?
+    - que tipo de diabetes es la que más veces se repite en pacientes?
+    - dime cual es la diabetes que más se repite
+    - que tipo de diabetes es más común en la población?
+    - que diabetes es más comun de desarrollar?
+    - que diabetes es más probable de contraer?
+- intent: sintomas_diabetes_tipo
+  examples: |
+    - dime cuales son los principales sintomas de la diabetes tipo [1](tipo)
+    - dime los sintomas de la diabetes tipo [I](tipo)
+    - dame los sintomas de la diabetes tipo [1](tipo)
+    - sabes cuales son los sintomas de la diabetes tipo [1](tipo)
+    - explicame los sintomas de la diabetes tipo [I](tipo)
+    - dime algo sobre los sintomas de la diabetes de tipo [1](tipo)
+    - dime cuales son los principales sintomas de la diabetes tipo [2](tipo)
+    - dime los sintomas de la diabetes tipo [II](tipo)
+    - dame los sintomas de la diabetes tipo [2](tipo)
+    - sabes cuales son los sintomas de la diabetes tipo [2](tipo)
+    - explicame los sintomas de la diabetes tipo [2](tipo)
+    - dime algo sobre los sintomas de la diabetes de tipo [2](tipo)
+    - dime los factores de riesgo de la diabetes tipo [II](tipo)
+    - cuales son los factores de riesgo de la diabetes tipo [II](tipo?
+    - dime en qué consisten los factores de riesgo de la diabetes tipo [2](tipo)
+    - sabes algo sobre los factores de riesgo de la diabetes tipo [2](tipo)?
+    - podrías decirme los factores de riesgo de la diabetes tipo [II](tipo)?
+    - explicame los factores de riesgo de la diabetes tipo [2](tipo)
+    - existen factores de riesgo para la diabetes tipo [II](tipo)?
+    - hay factores de riesgo para la diabetes tipo [2](tipo)
+- intent: factores_de_riesgo_diabetes_tipo_1
+  examples: |
+    - dime los factores de riesgo de la diabetes tipo 1
+    - cuales son los factores de riesgo de la diabetes tipo I?
+    - dime en qué consisten los factores de riesgo de la diabetes tipo 1
+    - sabes algo sobre los factores de riesgo de la diabetes tipo 1?
+    - podrías decirme los factores de riesgo de la diabetes tipo I?
+    - explicame los factores de riesgo de la diabetes tipo 1
+    - existen factores de riesgo para la diabetes tipo I?
+    - hay factores de riesgo para la diabetes tipo 1
+- intent: explica_cetoacidosis_diabetica
+  examples: |
+    - y qué es la DKA?
+    - que es la cetoacidosis diabetica?
+    - explicame la cetoacidosis diabetica
+    - en qué consiste la cetoacidosis diabetica
+    - dime en qué consiste la cetoacidosis diabetica
+    - explicame lo que es la DKA
+    - cuales son las principales causas de la cetoacidosis diabetica?
+    - dime que es la cetoacidosis diabetica
+    - cómo se si tengo cetoacidosis diabetica
+- intent: manejar_diabetes_tipo
+  examples: |
+    - cómo se maneja la diabetes tipo [1](tipo)?
+    - cómo se controla la diabetes tipo [I](tipo)?
+    - cómo se trata la diabetes de tipo [1](tipo)?
+    - dime como se maneja a la diabetes de tipo [1](tipo)
+    - sabes cómo se maneja la diabetes de tipo [1](tipo)?
+    - dime como tratar la diabetes tipo [1](tipo)
+    - cómo se trata la diabetes tipo [I](tipo)
+    - cómo se maneja la diabetes tipo [2](tipo)?
+    - cómo se controla la diabetes tipo [II](tipo)?
+    - cómo se trata la diabetes de tipo [2](tipo)?
+    - dime como se maneja a la diabetes de tipo [2](tipo)
+    - sabes cómo se maneja la diabetes de tipo [2](tipo)?
+    - dime como tratar la diabetes tipo [2](tipo)
+    - cómo se trata la diabetes tipo [II](tipo)
+- intent: edad_diabetes_tipo
+  examples: |
+    - sabes a que edad puede dar la diabetes tipo [1](tipo)?
+    - y a que edad te puede dar diabetes tipo [I](tipo)?
+    - conoces la edad en la cual podría darte diabetes de tipo [1](tipo)?
+    - dime a que edad es más común que te de diabetes tipo [1](tipo)
+    - cual diría es la edad más peligrosa para contraer diabetes de tipo [1](tipo)?
+    - a que edad te puede dar diabetes de tipo [1](tipo)?
+    - cual es la edad promedio de los pacientes con diabetes de tipo [1](tipo)?
+    - a que edad con que frecuencia se dan mas casos de diabetes tipo [1](tipo)?
+    - conoces las edades más comunes donde da diabetes tipo [1](tipo)?
+    - sabes a que edad puede dar la diabetes tipo [2](tipo)?
+    - y a que edad te puede dar diabetes tipo [II](tipo)?
+    - conoces la edad en la cual podría darte diabetes de tipo [2](tipo)?
+    - dime a que edad es más común que te de diabetes tipo [2](tipo)
+    - cual diría es la edad más peligrosa para contraer diabetes de tipo [2](tipo)?
+    - a que edad te puede dar diabetes de tipo [II](tipo)?
+    - cual es la edad promedio de los pacientes con diabetes de tipo [2](tipo)?
+    - a que edad con que frecuencia se dan mas casos de diabetes tipo [2](tipo)?
+    - conoces las edades más comunes donde da diabetes tipo [II](tipo)?
+- intent: azucar_alta
+  examples: |
+    - es malo tener el azucar alta?
+    - es normal tener el azucar alta?
+    - dirías que es malo tener elevado el nivel de azucar?
+    - por qué es malo tener el azucar alta?
+    - explica el por qué es dañino para la salud el tener el azucar alta
+    - que podría pasarme si tengo alta el azucar?
+    - que riesgos corro si tengo alta el azucar?
+    - a que se atiene una persona que tiene alta el azucar?
+    - que enfermedades me pueden dar si tengo alta el azucar?
+    - que me puede pasar si tengo alta el azucar?
+- intent: tipos_insulina
+  examples: |
+    - existen distintos tipos de insulina?
+    - apoco existen diferentes tipos de insulina?
+    - hay varios tipos de insulina?
+    - dime los diferentes tipos de insulina
+    - en qué consisten los tipos de insulina?
+    - dime los tipos de insulina que existen
+    - cuantos tipos de insulina existen?
+    - como se clasifica a la insulina?
+    - cómo se que insulina tomar?
+    - que insulina debo aplicarme?
+    - que tipo de insulina debo aplicarme?
+    - cómo se que tipo de insulina usar?
+    - cuales son las diferencias entre los tipos de insulina?
+    - dime las características de los tipos de insulina
+- intent: formas_administrar_insulina
+  examples: |
+    - y cómo se administra la insulina?
+    - cómo se administra la insulina en el cuerpo?
+    - dime como administrar la insulina en mi cuerpo
+    - explicame como se administra la insulina en el cuerpo
+    - y cómo es que se debe administrar la insulina?
+    - en que formas se puede administrar la insulina?
+    - cuales son las formas en las que se administra la insulina?
+    - que métodos hay para la administración de la insulina?
+    - que formas hay de administrar la insulina?
+- intent: metodo_insulina
+  examples: |
+    - y cómo se aplica con la [jeringa](metodo)?
+    - dime como se administra usando una [jeringa](metodo) de insulina
+    - explicame como se administra usando una [jeringa](metodo) de insulina
+    - en qué consiste la aplicación de insulina por [jeringa](metodo)
+    - cómo se administra usando la [pluma](metodo) de insulina?
+    - en que consiste la aplicación usando una [pluma](metodo) de insulina?
+    - que ventajas lleva consigo el usar una [pluma](metodo) de insulina?
+    - que desventajas tiene usar la [pluma](metodo) de insulina?
+    - y cómo se usa la [bomba](metodo) de insulina?
+    - explicame cómo se aplica la [bomba](metodo) de insulina
+    - y cómo se aplica la insulina usando una [bomba](metodo)?
+    - dime las ventajas de usar una [bomba](metodo) de insulina
+    - que desventajas podría tener el administrar la insulina por [bomba](metodo)?
+    - cómo se administra usando el [inhalador](metodo)?
+    - explicame que ventajas tiene el usar [inhalador](metodo) de insulina
+    - que puntos malos tiene el administrar insulina usando [inhalador](metodo)?
+    - cómo se administra la insulina con el [inhalador](metodo)?
+- intent: causas_azucar_baja
+  examples: |
+    - por qué tengo baja el azucar?
+    - por qué se baja el azucar?
+    - que causa que se reduzcan los niveles de azucar?
+    - por que se reducen los niveles de azucar?
+    - el no comer reduce el azucar?
+    - es malo administrarse demasiada insulina?
+    - el alcohol puede reducir mis niveles de azucar?
+    - que es lo que genera que se reduzcan los niveles de azucar?
+- intent: sintomas_azucar_baja
+  examples: |
+    - cómo se si tengo baja el azucar?
+    - cómo me doy cuenta de que tengo el azucar baja?
+    - hay sintomas de la azucar baja?
+    - dime cuales son los sintomas del azucar baja
+    - en qué consisten los síntomas del azucar baja?
+    - cómo se si mi paciente tiene el azucar baja?
+    - existen indicadores para saber si se tiene el azucar baja?
+- intent: sintomas_cetoacidosis
+  examples: |
+    - cuales son los sintomas de la cetoacidosis?
+    - hay signos de tener cetoacidosis diabetica?
+    - en qué consisten los sintomas de la cetoacidosis diabetica?
+    - dime cuales son los sintomas de la cetoacidosis diabetica
+    - y cómo se si tengo cetoacidosis diabetica?
+    - como saber si se tiene cetoacidosis?
+    - y cómo me puedo dar cuenta de que tengo la cetoacidosis diabetica?
+    - cómo se si mi paciente tiene la cetoacidosis diabetica?
+    - que sintomas presenta una persona con cetoacidosis?
+    - que signos muestra una persona de tener cetoacidosis diabetica?
+- intent: causas_cetoacidosis
+  examples: |
+    - y que causa la cetoacidosis?
+    - dime las causas de la cetoacidosis diabetica
+    - en qué consisten las causas de la cetoacidosis diabetica?
+    - que provoca la cetoacidosis diabetica?
+    - por qué te da cetoacidosis diabetica?
+    - sabes las causas de la cetoacidosis?
+    - por qué me puede dar cetoacidosis diabetica?
+    - conoces las causas de la cetoacidosis diabetica?
+    - dime porque a la gente le da cetoacidosis diabetica
+    - que cosas hacen que te de cetoacidosis diabetica?
+- intent: tratamiento_cetoacidosis
+  examples: |
+    - y cual es el tratamiento contra la cetoacidosis?
+    - cómo se trata la cetoacidosis?
+    - cual es el tratamiento para la cetoacidosis diabetica?
+    - cómo se trata a los pacientes con cetoacidosis diabetica?
+    - y cómo se trata a las personas con cetoacidosis?
+    - cual es el tratamiento que se le da a un persona con cetoacidosis diabetica?
+    - dime cual es el tratamiento para las personas con cetoacidosis
+    - y en qué consiste el tratamiento para la cetoacidosis?
+    - conoces cual es el tratamiento para la cetoacidosis?
+    - podrías decirme como es el tratamiento para la cetoacidosis diabetica?
+- intent: prevencion_cetoacidosis
+  examples: |
+    - cómo se previene contra la cetoacidosis diabetica?
+    - cómo me puedo prevenir contra la cetoacidosis diabetica?
+    - cómo puedo prevenirme para la cetoacidosis diabetica?
+    - cómo se pueden prevenir las personas contra la cetoacidosis diabetica?
+    - dime como se deben cuidar las personas para que no les de cetoacidosis diabetica
+    - como puedo cuidarme para que no me de cetoacidosis diabetica?
+    - cómo tiene que ser mi estilo de vida para que no me de cetoacidosis diabetica?
+    - que cuidados debe tener mi paciente para que no le de cetoacidosis?
+- intent: cuidar_familia
+  examples: |
+    - como puedo cuidar a mi familia de la diabetes?
+    - cómo se cuida a la familia de la diabetes?
+    - como cuidar a mis hijos de la diabetes tipo 2?
+    - cómo puedocuidar a mi familia de la diabetes tipo 2?
+    - como cuidar a la familia de la diabetes?
+    - que debo hacer para que a mi familia no le de diabetes?
+    - que hacer para que a mi familia no le de diabetes?
+    - que recomiendas para cuidar a la familia contra la diabetes?
+    - que recomiendas para cuidar a mis hijos de la diabetes?
+    - cómo se cuida a los niños de la diabetes?
+    - cómo se previene a los niños de la diabetes?
+    - cómo puedo cuidar a mis hijos de la diabetes?
+- intent: causas_diabetes_gestacional
+  examples: |
+    - podrías decirme que causa la diabetes tipo gestacional?
+    - y qué causa la diabetes tipo gestacional?
+    - qué causa la diabetes tipo gestacional?
+    - explicame las causas de la diabetes tipo gestacional?
+    - hablame sobre las causas de la diabetes gestacional?
+    - dime algo sobre las causas de la diabetes gestacional 
+    - conoces las principales causas de la diabetes tipo gestacional?
+    - cuales crees que sean las causas de la diabetes gestacional?
+- intent: sintomas_y_factores_de_riesgo_diabetes_gestacional
+  examples: |
+    - dime cuales son los principales sintomas de la diabetes tipo gestacional
+    - dime los sintomas de la diabetes destacional
+    - dame los sintomas de la diabetes tipo gestacional
+    - sabes cuales son los sintomas de la diabetes gestacional
+    - explicame los sintomas de la diabetes tipo gestacional
+    - conoces los sintomas de la diabetes gestacional?
+    - dime algo sobre los sintomas de la diabetes de tipo gestacional
+    - dime los factores de riesgo de la diabetes tipo gestacional
+    - cuales son los factores de riesgo de la diabetes gestacional?
+    - dime en qué consisten los factores de riesgo de la diabetes gestacional
+    - sabes algo sobre los factores de riesgo de la diabetes gestacional?
+    - podrías decirme los factores de riesgo de la diabetes tipo gestacional?
+    - explicame los factores de riesgo de la diabetes tipo gestacional
+    - existen factores de riesgo para la diabetes gestacional?
+    - hay factores de riesgo para la diabetes tipo gestacional?
+- intent: complicaciones_gestacional
+  examples: |
+    - que posibles complicaciones trae consigo la diabetes gestacional?
+    - que problemas trae la diabetes tipo gestacional?
+    - que complicaciones trae la diabetes gestacional?
+    - que riesgos trae consigo la diabetes de tipo gestacional?
+    - que cosas trae la diabetes gestacional?
+    - que problemas acarrea la diabetes gestacional?
+    - dime las afectaciones por diabetes gestacional
+    - explicame las complicaciones de la diabetes gestacional
+    - la diabetes gestacional puede afectar a mi bebé?
+    - la diabetes gestacional daña al bebé?
+    - si tengo diabetes gestacional mi bebé está en riesgo de tener diabetes?
+    - mi bebé puede desarrollar diabetes si yo tengo la gestacional?
+    - que afectaciones podrá tener mi bebé si yo tengo diabetes gestacional?
+    - que problemas podría tener mi bebé si yo cuento con diabetes gestacional?
+    - si tengo diabetes gestacional es probable que mi hijo vaya a tener diabetes a futuro?
+    - que enfermedades le darán a mi bebé si yo tengo diabetes gestacional?
+    - que podría darle a mi bebé si yo tengo diabetes gestacional?
+- intent: deteccion_gestacional
+  examples: |
+    - qué debo hacer para detectar la diabetes gestacional?
+    - que haces para detectar la diabetes gestacional?
+    - cómo se detecta la diabetes gestacional?
+    - que se necesita para detectar la diabetes gestacional?
+    - dime cómo se detecta la diabetes de tipo gestacional
+    - y cómo es que es detectada la diabetes gestacional?
+    - cuando aparece la diabetes gestacional?
+    - dime como aparece la diabetes gestacional
+- intent: prevencion_gestacional
+  examples: |
+    - dime como se previene la diabetes gestacional
+    - cómo prevengo la diabetes gestacional
+    - y cómo prevengo la diabetes gestacional?
+    - dime como puedo prevenir la diabetes gestacional
+    - hay una forma de prevenir la diabetes gestacional?
+    - cómo se puede prevenir la diabetes gestacional?
+    - recomiendas algo para prevenir la diabetes gestacional?
+    - sabes como se puede prevenir la diabetes gestacional?
+    - hay formas de como prevenir la diabetes gestacional?
+    - haces ejercicio ayuda a prevenir la diabetes gestacional?
+- intent: tratamiento_gestacional
+  examples: |
+    - cuál es el tratamiento para una persona con diabetes gestacional?
+    - en qué consiste el tratamiento para la diabetes gestacional?
+    - dime como es el tratamiento para la diabetes gestacional
+    - en qué consiste el tratamiento para una persona que tiene diabetes gestacional?
+    - como sería el tratamiento para una persona con diabetes gestacional?
+    - explicame como es el tratamiento para un paciente con diabetes gestacional
+    - cómo es el tratamiento para las personas con diabetes gestacional
+- intent: conocer_metodos_deteccion
+  examples: |
+    - cómo se detecta la diabetes?
+    - cómo es detectable la diabetes?
+    - sabes cómo se detecta la diabetes en las personas?
+    - que pruebas se usan para detectar la diabetes en los pacientes?
+    - qué métodos existen para la detección de la diabetes?
+    - que metodos de utilizan para la detección de la diabetes?
+    - dime que se usa para la detección de la diabetes?
+- intent: explica_metodo_deteccion
+  examples: |
+    - explicame el método [a1c](metodo_deteccion) para la deteccion de diabetes
+    - en qué consiste el método [A1C](metodo_deteccion)?
+    - qué es la prueba [a1c](metodo_deteccion)?
+    - y cómo es una prueba [A1C](metodo_deteccion)?
+    - cómo se detecta la diabetes con la prueba [a1c](metodo_deteccion)?
+    - dime que es la prueba de azucar en la sangre en [ayunas](metodo_deteccion)
+    - en qué consiste la prueba de azucar en [ayunas](metodo_deteccion)?
+    - explicame la prueba de azucar en [ayunas](metodo_deteccion)
+    - como es la deteccion de diabetes mediante la prueba de azucar en [ayunas](metodo_deteccion)?
+    - dime como es la prueba de azucar en sangre en [ayunas](metodo_deteccion)
+    - cómo es la prueba de [tolerancia](metodo_deteccion) a la glucosa?
+    - en qué consiste la prueba de [tolerancia](metodo_deteccion) a la glucosa para la deteccion de diabetes?
+    - explicame la deteccion de diabetes usando la prueba de [tolerancia](metodo_deteccion)
+    - y que hace la prueba de [tolerancia](metodo_deteccion) a la glucosa?
+    - dime como es que se detecta la diabetes usando la prueba de [tolerancia](metodo_deteccion) a la glucosa
+    - que es la prueba de azucar en la sangre [no programada](metodo_deteccion)?
+    - y como se hace la prueba de azucar en la sangre [no programada](metodo_deteccion)?
+    - hablame sobre la prueba de azucar [no programada](metodo_deteccion) 
+    - explicame como se detecta la diabetes con la prueba de azucar [no programada](metodo_deteccion)
+    - como se hace la prueba de azucar en sangre [no programada](metodo_deteccion)?
+- intent: prueba_prediabetes
+  examples: |
+    - me gustaría hacerme la prueba de la prediabetes
+    - crees que pudiera hacerme la prueba de la prediabetes?
+    - me ayudarías a hacerme la prueba de la prediabetes?
+    - ayudame a hacer una prueba de prediabetes
+    - ocupo una prueba de prediabetes
+    - me haces una prueba de prediabetes por favor?
+    - sacame una prueba de prediabetes por favor
+    - necesito hacerme una prueba de prediabetes
+    - me ayudas a hacerme la prueba de la prediabetes?
+- intent: relacion_diabetes_oidos
+  examples: |
+    - existe una relación entre los oidos y la diabetes?
+    - la diabetes tiene algo que ver con la pérdida auditiva?
+    - que relación encuentras entre los oidos y la diabetes?
+    - dirías que existe un vínculo entre la diabetes y los oídos?
+    - las enfermedades auditivas tienen relación con la diabetes?
+    - las enfermedades auditivas se dan por culpa de la diabetes?
+    - la diabetes genera enfermedades auditivas? 
+    - la diabetes daña a los oídos?
+    - tiene algo que ver la salud auditiva con la diabetes?
+    - la diabetes afecta a la salud auditiva?
+    - cómo es la salud auditiva de las personas con diabetes?
+- intent: cuidados_oidos
+  examples: |
+    - dime cómo cuidar los oídos
+    - y cómo se cuidan los oídos?
+    - me podrías decir cómo cuidar mis oídos
+    - tienes consejos de como cuidar los oídos?
+    - dame consejos sobre como se cuida a los oídos?
+    - que recomiendas para cuidar los oídos?
+    - que se recomienda para cuidar los oídos?
+    - cómo se cuida los oídos?
+    - quiero cuidar mis oídos
+    - sabes como se cuida a los oídos?
+    - que es bueno para los oídos?
+    - que es bueno para el cuidado de los oídos?
+    - cómo se retrasan los daños a los oídos?
+    - cómo se cuida la salud auditiva?
+    - cómo cuidar mi salud auditiva?
+    - cómo se cuidan los oídos cuando se tiene diabetes?
+- intent: perdida_auditiva
+  examples: |
+    - cómo se si estoy teniendo una pérdida de capacidad auditiva?
+    - cómo saber si estoy perdiendo la capacidad auditiva?
+    - cómo me puedo dar cuenta de si estoy perdiendo mi audición?
+    - como se sabe si se tiene pérdida auditiva?
+    - que signos presenta la pérdida auditiva?
+    - que incluye la pérdida auditiva?
+    - que signos se presentan en la pérdida auditiva?
+    - es normal decirle a los demás que me repitan lo que dijeron porque no escuché?
+    - es malo subirle el volumen a la tele porque no escucho bien?
+    - tengo que pedirle a las personas que hablen fuerte porque si no, no escucho bien
+- intent: relacion_diabetes_ojos
+  examples: |
+    - existe una relación entre los ojos y la diabetes?
+    - la diabetes tiene algo que ver con la pérdida de la visión?
+    - que relación encuentras entre los ojos y la diabetes?
+    - dirías que existe un vínculo entre la diabetes y los ojos?
+    - las enfermedades visuales tienen relación con la diabetes?
+    - las enfermedades visuales se dan por culpa de la diabetes?
+    - la diabetes genera enfermedades visuales? 
+    - la diabetes daña la vista?
+    - tiene algo que ver la salud visual con la diabetes?
+    - la diabetes afecta a la salud visual?
+    - cómo es la salud visual de las personas con diabetes?
+- intent: cuidados_ojos
+  examples: |
+    - dime cómo cuidar los ojos
+    - y cómo se cuidan los ojos?
+    - me podrías decir cómo cuidar mis ojos
+    - tienes consejos de como cuidar los ojos?
+    - dame consejos sobre como se cuida a los ojos?
+    - que recomiendas para cuidar los ojos?
+    - que se recomienda para cuidar los ojos?
+    - cómo se cuida la vista?
+    - quiero cuidar mis ojos
+    - sabes como se cuida a los ojos?
+    - que es bueno para los ojos?
+    - que es bueno para el cuidado de los ojos?
+    - cómo se retrasan los daños a los ojos?
+    - cómo se cuida la salud visual?
+    - cómo cuidar mi salud visual?
+    - cómo se cuida la vista cuando se tiene diabetes?
+- intent: define_cataratas
+  examples: |
+    - explicame que son las cataratas en los ojos
+    - qué son las cataratas?
+    - que son las cataratas en los ojos?
+    - en qué consisten las cataratas?
+    - define que son las cataratas
+    - sabes que son las cataratas?
+    - podrías explicarme que son las catararas?
+- intent: define_glaucoma
+  examples: |
+    - que es el glaucoma?
+    - define el glaucoma
+    - explicame por favor que es el glaucoma
+    - en qué consiste el glaucoma?
+    - que sabes sobre el glaucoma?
+    - dime que entiendes por glaucoma
+    - ayudame a definir glaucoma
+    - que me puedes decir sobre el glaucoma?
+    - la diabetes causa glaucoma?
+    - la diabetes genera el glaucoma?
+    - la diabetes propicia el desarrollo del glaucoma?
+- intent: retinopatia
+  examples: |
+    - que es la retinopatía diabetica?
+    - me puedes dcir que es la retinopatía diabética?
+    - que enfermedad en los ojos les da a los diabeticos?
+    - que sabes sobre la retinopatía diabética?
+    - explicame lo que sepas sobre la retinopatía diabetica
+    - cual es la enfermedad que le da en los ojos a las personas diabeticas?
+    - que afección les da en los ojos a las personas que tienen diabetes?
+    - que les pasa a las personas en los ojos cuando tienen diabetes?
+    - podrías decirme en qué consiste la retinopatía diabética?
+    - explicame que es la retinopatía diabética
+    - ayudame a definir que es la retinopatía
+- intent: recomendacion_compra_alimentos
+  examples: |
+    - tienes alguna recomendación para la compra de alimentos?
+    - recomiendas una forma de como hacer la despensa?
+    - que recomiendas para cuando voy a comprar la despensa?
+    - sabes como debo hacer mi despensa?
+    - recomiendas algo para cuando vaya al super?
+    - que recomiendas que compre para cuidarme?
+    - como puedo comprar cosas nutritivas en el super?
+    - cómo se deben hacer las compras en el supermercado?
+    - tienes algunos consejos para cuando se compra la despensa?
+    - dame otro consejo para hacer mi despensa
+    - dime como hacer mi despensa
+    - dime que comprar en el supermercado
+    - que podría comprar en el supermercado?
+    - que recomiendas comprar para la despensa del hogar?
+- intent: etiquetas_nutricionales
+  examples: |
+    - ayudame a entender las etiquetas nutricionales
+    - ayudame a entender las etiquetas que vienen atras de los chettos
+    - ayudame a entender la etiqueta que viene en las galletas
+    - explicame las etiquetas que vienen en los productos enlatados
+    - explicame las etiquetas que vienen detras de los alimentos
+    - me ayudarías a entender las etiquetas que vienen en algunos productos?
+    - que debo prestar atención cuando compre algo?
+    - a que debo prestar atención cuando compro algo en la tienda?
+    - a que cosa debo estar muy atento para cuando voy a comprar algo en el super?
+    - en qué debo fijarme cuando compro productos?
+    - que es lo que dicen las etiquetas de los productos?
+    - que es lo que muestran las estampas que tienen atras los productos?
+    - explicame las estampas que tienen los productos
+- intent: define_carbohidratos
+  examples: |
+    - dime que son los carbohidratos
+    - en qué consisten los carbohidratos?
+    - y a todo esto qué son los carbohidratos?
+    - podrías decirme que son los carbohidratos?
+    - explicame que son los carbohidratos
+    - dime en qué consisten los carbohidratos
+    - los carbohidratos son nutrientes?
+    - podrías decirme algo sobre los carbohidratos?
+    - y que son los carbohidratos?
 - synonym: masculino
   examples: |
     - Masculino
@@ -844,3 +1623,11 @@ nlu:
   examples: |
     - Femenina
     - Mujer
+- synonym: diabetes
+  examples: |
+    - diabolica
+- synonym: pies
+  examples: |
+    - pie
+    - patas
+    - patrullas

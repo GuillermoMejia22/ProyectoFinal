@@ -1,195 +1,60 @@
-- lookup: nombre
+- intent: cantidad_carbohidratos
   examples: |
-    - Guillermo Mejia
-    - Juan Perez
-    - Itzel Castillo
-    - Ana Ramirez
-    - Carlos Gonzalez
-    - Beatriz Adriana
-    - Maricela Bravo
-    - Rodrigo Alexander
-    - Josue Figureoa
-    - Hugo Pablo
-    - Angeles Belem
-    - Ernesto Carrilo
-    - Pamela Angeles
-    - Daniela Garcia
-    - Guillermo Olmos
-    - Patricia Mejia
-    - Cristian Mejia
-    - Blanca Contreras
-    - Leonardo Sanchez
-    - Alonso Martinez
-    - Karen Pastrana
-    - Karen Romero
-    - Gloria Marin
-    - Edgar Suarez
-    - Raquel Murillo
-    - Carlos Gonzalez
-    - Maria Hernandez
-    - Jose Rodriguez
-    - Laura Martinez
-    - Ricardo Fernandez
-    - Sofia Lopez
-    - Alejandro Torres
-    - Valeria Garcia
-    - Luis Sanchez
-    - Natalia Morales
-    - Andres Jimenez
-    - Paola Castro
-    - Jorge Silva
-    - Gabriela Reyes
-    - Martin Ortega
-    - Daniela Paredes
-    - Ada Radanes
-    - Clara Hernandez
-    - Sofia Juarez
-    - Miguel Gutierrez
-    - Armando Fuentes
-    - Brenda Soto
-    - Carlos Mendoza
-    - Diana Flores
-    - Eduardo Vargas
-    - Fabiola Peralta
-    - Gerardo Castillo
-    - Helena Cervantes
-    - Ignacio Ruiz
-    - Jessica Guerrero
-    - Kevin Molina
-    - Leticia Ríos
-    - Miguel Navarro
-    - Norma Díaz
-    - Octavio Rangel
-    - Patricia León
-    - Quetzal Gómez
-    - Raúl Cisneros
-    - Silvia Salazar
-    - Tomás Vega
-    - Ubaldo Rojas
-    - Vanessa Pacheco
-    - Walter Cárdenas
-    - Ximena Ugalde
-    - Yahir Cortés
-    - Zaida Ramos
-    - Ximena Horan
-    - Areeli Ferrer
-    - Luis Angel
-    - Axel Jimenez
-    - Alan Gonzalez
-    - Antonio Mejia
-    - Arturo Mejia
-    - Adriana Hernández
-    - Bruno Sánchez
-    - Cecilia Cordero
-    - Diego Herrera
-    - Estela Montes
-    - Gabriela Martínez
-    - Héctor Varela
-    - Ingrid Castillo
-    - Juan Pablo Méndez
-    - Karla Núñez
-    - Luis Flores
-    - María del Carmen Torres
-    - Néstor Soto
-    - Olivia Díaz
-    - Pablo Ramírez
-    - Quetzalli Rojas
-    - Raúl Medina
-    - Sandra Jiménez
-    - Tomás Serrano
-    - Ursula Guzmán
-    - Víctor Mendoza
-    - Wendy Cervantes
-    - Xavier León
-    - Yolanda Vega
-    - Zenaida Paredes
-    - Carolina Herrera
-    - Coraline Estrada
-    - Mauricio Torres
-    - Andrea Silva
-    - David Villavicencio
-    - Alejandra Torres
-    - Denisse Torres
-    - Samantha Segundo
-    - Omar Ayala
-    - Alejandro Gómez
-    - Brenda Ortega
-    - Carlos Vargas
-    - Diana Ruiz
-    - Eduardo López
-    - Fabiola Soto
-    - Gerardo Morales
-    - Helena Reyes
-    - Iván Delgado
-    - Jessica Peralta
-    - Kevin Jiménez
-    - Laura González
-    - Manuel Herrera
-    - Norma Cisneros
-    - Óscar Salinas
-    - Patricia Mendoza
-    - Quirino Valdez
-    - Rosa Montiel
-    - Sergio Ramírez
-    - Teresa Sánchez
-    - Ulises Cervantes
-    - Verónica Navarro
-    - Walter Paredes
-    - Ximena Torres
-    - Yahir Núñez
-    - Zulema Ríos
-    - Paulina Ramos
-    - Mia Zavala
-    - Fernanda Saavedra
-    - Gustavo Huitzil
-    - Berelita Perez
-    - Yolanda Paredes
-    - Sebastian Castellanos
-    - Julia Aguilar
-    - Laura Saavedra
-    - Luisa Gomez
-    - Valentina Agudelo
-    - Constanza Belem
-    - Oscar Neria
-    - Jasmine Hernandez
-    - Gerardo Marcel
-    - Julio Aponte
-    - Adriana Martínez
-    - Benjamín Herrera
-    - Claudia Varela
-    - Diego Salgado
-    - Estela Robles
-    - Fernando Ríos
-    - Gabriela Cruz
-    - Héctor Ramírez
-    - Isabel Gutiérrez
-    - Jorge Mendoza
-    - Karla Sánchez
-    - Luis Torres
-    - Mariana Paredes
-    - Nicolás Vargas
-    - Olivia Díaz
-    - Pablo Delgado
-    - Quesia Gómez
-    - Ricardo Núñez
-    - Silvia Cervantes
-    - Tomás Valdez
-    - Ursula Montiel
-    - Víctor Ortega
-    - Wendy Jiménez
-    - Xavier Peralta
-    - Yolanda Reyes
-    - Zacarías Salinas
-    - Ángela Navarro
-    - Édgar Cisneros
-    - Úrsulo Soto
-    - Adriana Baranda
-    - Angel Emmanuel
-    - Itzel Castillo
-    - Cristopher Camporrojo
-    - Iziel Gonzalez
-    - Veronica Lopez
-    - Yamilet Montaño
-    - Ximena Lobera
-    - Pedro Alonso
-    - Rocio Ortega
+    - cuantos carbohidratos debo comer al dia?
+    - cuantos carbohidratos deben comer los diabeticos?
+    - cuantos carbohidratos deben consumir las personas con diabetes?
+- intent: por_que_cuidar_carbohidratos
+  examples: |
+    -
+- intent: alimentos_con_carbohidratos
+  examples: |
+    - 
+- 
+- intent: bajar_presion
+  examples: |
+    - 
+- intent: alimentos_sodio
+  examples: |
+    - 
+- intent: explicar_colesterol
+  examples: |
+    - puedes decirme que es el colesterol?
+    - dime que es el colesterol
+    - explicame lo que es el colesterol
+    - define colesterol
+    - sabes qué es el colesterol?
+    - qué es el colesterol?
+    - ayudame a definir lo que es el colesterol
+- intent: colesterol_alto
+  examples: |
+    -
+- intent: explicar_trigliceridos
+  examples: |
+    -
+- intent: trigliceridos_altos
+  examples: |
+    - 
+- intent: por_que_cuidarse
+  examples: |
+    - 
+- intent: sintomas_ataque_corazon
+  examples: |
+    -
+- intent: sintomas_derrame_cerebral
+  examples: |
+    -
+- intent: explica_infarto
+  examples: |
+    - 
+- intent: factores_riesgo_retinopatia
+  examples: |
+    - 
+- intent: etapas_retinopatia
+  examples: |
+    -
+- intent: diagnostico_retinopatia
+  examples: |
+    -
+- intent: tratamiento_retinopatia
+  examples: |
+    - 

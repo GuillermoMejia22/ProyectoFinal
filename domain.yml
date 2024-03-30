@@ -53,6 +53,63 @@ intents:
 - dar_niveles_glucosa
 - usuario_da_sintoma_ajeno_diabetes
 - sospecha_diabetes
+- tipo_mas_peligroso
+- numero_fallecidos
+- vivir_con_diabetes
+- relacion_diabetes_corazon
+- cuidados_corazon
+- relacion_diabetes_rinones
+- cuidados_rinones
+- relacion_diabetes_nervios
+- cuidados_nervios
+- conocer_tipos_dano_nervios
+- conocer_tipo_dano_nervios
+- relacion_diabetes_pies
+- cuidados_pies
+- relacion_diabetes_dientes
+- cuidados_dientes
+- sintomas_danos_pie
+- causa_prediabetes
+- cuidados_diabetes_tipo_1
+- diabetes_mas_comun
+- sintomas_diabetes_tipo
+- factores_de_riesgo_diabetes_tipo_1
+- explica_cetoacidosis_diabetica
+- edad_diabetes_tipo
+- azucar_alta
+- tipos_insulina
+- formas_administrar_insulina
+- metodo_insulina
+- causas_azucar_baja
+- sintomas_azucar_baja
+- sintomas_cetoacidosis
+- causas_cetoacidosis
+- tratamiento_cetoacidosis
+- prevencion_cetoacidosis
+- cuidar_familia
+- causas_diabetes_gestacional
+- sintomas_y_factores_de_riesgo_diabetes_gestacional
+- complicaciones_gestacional
+- deteccion_gestacional
+- prevencion_gestacional
+- tratamiento_gestacional
+- conocer_metodos_deteccion
+- explica_metodo_deteccion
+- prueba_prediabetes
+- relacion_diabetes_oidos
+- cuidados_oidos
+- perdida_auditiva
+- relacion_diabetes_ojos
+- cuidados_ojos
+- define_cataratas
+- define_glaucoma
+- retinopatia
+- recomendacion_compra_alimentos
+- etiquetas_nutricionales
+- define_carbohidratos
+- preguntar_efectos
+- causas_diabetes_por_tipo
+- manejar_diabetes_tipo
 entities:
 - tipo
 - nombre
@@ -63,6 +120,9 @@ entities:
 - glucosa_antes
 - glucosa_despues
 - dolor
+- nervios
+- metodo
+- metodo_deteccion
 slots:
   nombre:
     type: text
@@ -146,19 +206,37 @@ slots:
       entity: dolor
     - type: from_entity
       entity: dolor
+  nervios:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: nervios
+    - type: from_entity
+      entity: nervios
+  metodo:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: metodo
+    - type: from_entity
+      entity: metodo    
+  metodo_deteccion:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: metodo_deteccion
+    - type: from_entity
+      entity: metodo_deteccion
 responses:
-  utter_explicar_animo:
-  - text: Yo me encuentro muy bien
-  - text: Me encuentro de maravilla
-  - text: Estoy muy bien el día de hoy
-  - text: Hoy estoy super bien
-  - text: Ando muy bien de hecho
   utter_en_que_puedo_ayudarte:
-  - text: Dime ¿en qué puedo ayudarte?
-  - text: Ahora dime ¿en qué puedo serte útil?
-  - text: ¿En qué puedo ayudarte el día de hoy?
-  - text: ¿Necesitas algo en lo que pueda ayudarte?
-  - text: ¿Te puedo ayudar con algo?
+  - text: Yo me encuentro muy bien Dime ¿en qué puedo ayudarte?
+  - text: Yo ando super bien. Ahora dime ¿en qué puedo serte útil?
+  - text: El día de hoy me encuentro de maravilla ¿En qué puedo ayudarte el día de hoy?
+  - text: Hoy ando genial ¿Necesitas algo en lo que pueda ayudarte?
+  - text: Yo estoy feliz ¿Te puedo ayudar con algo?
   utter_de_nada:
   - text: No hay de qué, ¿hay algo más en lo qué pueda ayudarte?
   - text: Me alegro mucho que haya sido de utilidad :D si necesitas otra cosa aquí estoy
@@ -244,6 +322,8 @@ responses:
   - text: 'La diabetes es una enfermedad metabólica crónica caracterizada por niveles elevados de glucosa en sangre (o azúcar en sangre), que con el tiempo conduce a daños graves en el corazón, los vasos sanguíneos, los ojos, los riñones y los nervios. FUENTE: Organización Panamericana de la Salud https://www.paho.org/es/temas/diabetes'
   - text: 'La diabetes es una enfermedad crónica que se produce cuando el páncreas no produce suficiente insulina o cuando el cuerpo no puede utilizar de forma eficaz la insulina que produce. La insulina es una hormona que regula el azúcar en sangre. La hiperglucemia, o aumento del nivel de azúcar en sangre, es un efecto común de la diabetes no controlada y, con el tiempo, conduce a daños graves en muchos de los sistemas del cuerpo, especialmente los nervios y los vasos sanguíneos. FUENTE: Organización Panamericana de la Salud https://www.paho.org/es/temas/diabetes'
   - text: 'La diabetes sacarina o diabetes mellitus (que aquí denominaremos, para simplificar, «diabetes») es una enfermedad crónica que se presenta cuando el páncreas no secreta suficiente insulina o cuando el organismo no utiliza eficazmente la insulina que produce. La insulina es una hormona que regula la concentración de glucosa en la sangre, es decir, la glucemia. FUENTE: Organización Mundial de la Salud https://www.who.int/es/news-room/fact-sheets/detail/diabetes'
+  - text: "La diabetes es una enfermedad crónica (de larga duración) que afecta la forma en que el cuerpo convierte los alimentos en energía. Su cuerpo descompone la mayor parte de los alimentos que come en azúcar (también llamada glucosa) y los libera en el torrente sanguíneo. El páncreas produce una hormona llamada insulina, que actúa como una llave que permite que el azúcar en la sangre entre a las células del cuerpo para que estas la usen como energía. Con diabetes, su cuerpo no produce una cantidad suficiente de insulina o no puede usar adecuadamente la insulina que produce. Cuando no hay suficiente insulina o las células dejan de responder a la insulina, queda demasiada azúcar en el torrente sanguíneo y, con el tiempo, esto puede causar problemas de salud graves, como enfermedad del corazón, pérdida de la visión y enfermedad de los riñones. FUENTE: https://www.cdc.gov/diabetes/spanish/basics/diabetes.html"
+  - text: "Este video de los Centros para el Control y la Prevención de Enfermedades explica lo qué es la diabetes, quizá te sea útil https://www.youtube.com/watch?v=ZMo_Xi85KNE"
   utter_casos_riesgo:
   - text: 'Algunos factores de riesgo son: antecedentes de familiares que padezcan o hayan padecido diabetes mellitus, sobrepeso y obesidad; enfermedad cardiovascular; grasas alteradas en sangre (dislipidemia); quistes en los ovarios; mujeres que haya tenido bebés con un peso mayor a 4 kilos y pacientes que, por enfermedad, tengan que usar tratamiento con esteroides o que tengan tratamiento de esquizofrenia. FUENTE: IMSS https://www.imss.gob.mx/preguntas-de-salud/preguntas-frecuentes-sobre-diabetes'
   utter_persona_riesgo:
@@ -260,6 +340,7 @@ responses:
   - text: Lo que me cuentas entra en los síntomas principales de la diabetes, recomiendo que realices un análisis de presión sanguinea y glucosa, asimismo no estaría de más que conozcas su IMC, si necesitas puedo ayudarte a obtenerlo
   utter_explicar_tipos:
   - text: 'Existen 3 tipos de diabetes, las cuales se denominan: Tipo I, Tipo II y Diabetes Gestacional (esta última ocurre durante el embarazo). Cualquier tipo de diabetes no controlada puede producir complicaciones en muchas partes del cuerpo y aumentar el riesgo de una muerte prematura. Si necesitas información sobre un sólo tipo puedes pedirmelo :) FUENTE: IMSS https://www.imss.gob.mx/preguntas-de-salud/preguntas-frecuentes-sobre-diabetes'
+  - text: "La diabetes es una enfermedad crónica (de larga duración) que afecta la forma en que el cuerpo convierte los alimentos en energía. Existen tres tipos principales de diabetes: diabetes tipo 1, diabetes tipo 2 y diabetes gestacional (durante el embarazo). Más de 133 millones de personas en los Estados Unidos tienen diabetes (37.3 millones) o prediabetes (96 millones). FUENTE: Centros para el Control y la Prevención de Enfermedades https://www.cdc.gov/diabetes/spanish/basics/index.html"
   utter_di_fuente_cura:
   - text: 'FUENTE: IMSS https://www.imss.gob.mx/preguntas-de-salud/preguntas-frecuentes-sobre-diabetes'
   utter_cura_diabetes:
@@ -268,12 +349,15 @@ responses:
   - text: Actualmente no se cuenta con una cura pero se puede controlar con un buen plan médico que conlleve una buena alimentación, ejercitarse diariamente aunque sea por 30 minutos y constantes monitoreos y seguimientos sobre niveles de azúcar y presión arterial
   - text: En nuestros días aún NO existe una cura como tal :( pero se puede vivir con diabetes manteniendo una dieta y ejercicio 
   - text: Lamento decirte que actualmente NO es curable, pero la diabetes es controlable mediante medicamentos, dieta y actividad física constante.
+  - text: "Todavía no existe una cura para la diabetes, pero perder peso, comer alimentos saludables y estar activo realmente puede ayudar. Otras cosas que puede hacer es: Tomar el medicamento según lo prescrito. Obtener educación y apoyo para el autocontrol de la diabetes y Hacer y asistir a citas de atención médica."
   utter_buenos_alimentos:
   - text: Sí bien NO esta prohibido de manera extricta el consumo de cierto alimento lo que es MALO es el exceso :(  es bueno saber que existen ciertas dietas recomendadas para personas con este padecimiento.
   - text: Como tal NO esta prohibido un cierto tipo de alimento, es cierto que cualquier exceso o abuso de ello causa daño, entonces recomiendo que se debe tener cuidado a la hora de consumir cierto tipo de alimentos tales como carnes o láctoes, siendo que esto debe ser en pequeñas cantidades y priorizar el consumo de frutas y verduras
   - text: Como tal NO se prohibe a los alimentos, simplemente con que exista un equilibrio de nutrientes, carbohidratos y proteínas en la dieta del paciente
   - text: Si bien NO existe una prohibición a ciertos alimentos, es bueno saber que las verduras, frutas, alimentos bajos en azúcar y en grasas, favoceren la dieta del paciente
   - text: Es importante recordar que los alimentos buenos serán aquellos asociados a un gran aporte nutrimental y que se debe evitar el consumo de grasas procesadas o comida chatarra
+  - text: "Si bien, NO existe una prohibición de alimentos quizá deberías escoger estos alimentos y bebidas con más frecuencia: Verduras sin almidón como pimientos, hongos, espárragos, brócoli y espinaca. Frutas. Proteína sin grasa como pescado, pollo, pavo, tofu, huevos y yogur. Cereales integrales como quinua, arroz integral y avena cortada en acero. Grasas saludables, en alimentos como el aceite de oliva y los aguacates, que remplacen a las grasas no saludables. Agua y bebidas sin endulzar. FUENTE: https://www.cdc.gov/diabetes/spanish/prevent-type-2/guia-prevenir-diabetes-tipo-2.html"
+  - text: "Si bien NO existe una prohibición a cierto tipo de alimentos, quizá deberías evitar estos alimentos y bebidas: Alimentos procesados como refrigerios envasados, carne envasada, chips, barras de granola, dulces y comidas rápidas. Grasas trans, que se encuentran en cosas como margarina, refrigerios, productos horneados envasados y muchos alimentos fritos. Bebidas azucaradas como jugo de frutas, bebidas deportivas, gaseosas y alcohol. FUENTE: https://www.cdc.gov/diabetes/spanish/prevent-type-2/guia-prevenir-diabetes-tipo-2.html"
   utter_prevencion:
   - text: 'La diabetes puede prevenirse con una alimentación correcta, actividad física regular, mantener un peso corporal adecuado, evitar el cigarro y moderar el consumo de bebidas alcohólicas. FUENTE: IMSS https://www.imss.gob.mx/preguntas-de-salud/preguntas-frecuentes-sobre-diabetes'
   - text: 'Algunas recomendaciones para prevenir la diabetes son llevar una dieta equilibrada, realizar 30 minutos de ejercicio y beber dos litros de agua al día. Recuerda que tu salud está en tus manos, debes llevar hábitos saludables que te permitan mantener una calidad de vida sana para ti y tu familia. FUENTE https://www.gob.mx/promosalud/acciones-y-programas/diabetes-en-mexico-284509 ' 
@@ -293,6 +377,7 @@ responses:
           Evitar las bebidas azucaradas y refrescos, 
           No fumar, 
           y Levantarse unos minutos después de un periodo prolongado de estar sentado. FUENTE: Instituto Nacional de Salud Pública https://www.insp.mx/avisos/3652-diabetes-en-mexico.html'
+  - text: "Hacer actividad física disminuye el riesgo de presentar la diabetes tipo 2 porque ayuda al cuerpo a usar mejor la insulina, lo cual disminuye la resistencia hacia ella. La actividad física mejora la salud de muchas otras formas también, que van desde controlar la presión hasta estimular la salud mental. FUENTE: https://www.cdc.gov/diabetes/spanish/prevent-type-2/type-2-kids.html"
   utter_buenos_habitos:
   - text: Es importante tener buenos hábitos tanto físicos como alimenticios para evitar caer en una zona de riesgo.
   - text: Considero que es de suma importancia el tener buenos hábitos para no estar en posibilidad de contraer este padecimiento
@@ -387,27 +472,164 @@ responses:
   - text: Entiendo, para descartar sospechas mejor checa los principales síntomas de esta enfermedad.
   - text: La primera forma de comprobarlo sería analizando si tú o tú paciente experimentan algunos de los síntomas de la diabetes
   - text: Sería bueno repasar los síntomas de la diabetes por si acaso
+  utter_tipo_mas_peligroso:
+  - text: "Las personas con diabetes tipo 2 están en mayor riesgo de tener problemas de salud, como ataques al corazón, derrames cerebrales, fallo de los riñones, ceguera y amputación de las extremidades inferiores (extracción de un pie, dedo del pie o pierna mediante una operación). Los adultos con diabetes tipo 2 tienen un 50 por ciento más de riesgo de muerte temprana que los que no la tienen. FUENTE: https://doihaveprediabetes.org/es/preguntas-frecuentes/informacion-basica-sobre-la-diabetes#:~:text=Las%20personas%20con%20diabetes%20tipo%202%20est%C3%A1n%20en%20mayor%20riesgo,o%20pierna%20mediante%20una%20operaci%C3%B3n)."
+  - text: "Los médicos indican que la diabetes tipo 2 presenta muchas más complicaciones a corto y largo plazo en órganos vitales.Las complicaciones que se pueden presentar cuando se tiene diabetes tipo 2 son: Enfermedades del Corazón, Neuropatía de las extremidades, Ritmos cardiacos irregulares debido al deterioro de los nervios, Enfermedades renales y daño en los ojos. FUENTE: https://www.elfinanciero.com.mx/salud/2022/11/10/diabetes-cuantos-tipos-hay-y-cual-es-mas-peligrosa/"
+  - text: "Si bien la diabetes tipo 1 avanza con rapidez y no puede prevenirse, como sí ocurre con la diabetes tipo 2; los especialistas sugieren que es mayor el riesgo que tienen las personas diabéticas del subgrupo 2, ya que se estima que aumenta la probabilidad de tener problemas de salud como: Ataques al corazón, Derrames cerebrales, Fallas renales, Ceguera y Amputación de las extremidades inferiores. ¿Por qué razón? Se considera que hay 2 problemas principales: por un lado, el páncreas produce insuficiente insulina (hormona que controla el movimiento del azúcar en las células); y, por otro lado, las células no responden de forma correcta a la insulina e ingieren menos azúcar. FUENTE: https://www.mundodeportivo.com/vidae/salud/20240116/1002168774/cuales-son-5-tipos-diabetes-cual-mas-peligrosa.html"
+  utter_relacion_diabetes_corazon:
+  - text: La diabetes y la enfermedad cardiaca a menudo se acompañan. Pero usted puede proteger su corazón con simples cambios de estilo de vida que también lo pueden ayudar a manejar la diabetes.
+  utter_pre_cuidados_corazon:
+  - text: "FUENTE: Centros para el Control y Prevención de Enfermedades https://www.cdc.gov/diabetes/spanish/resources/features/diabetes-and-heart.html Cuidar el corazón es muy importante es por ello que siempre es buen momento para cambiar los estilos de vida los cuales pueden ayudar a reducir el riesgo de tener enfermedad cardiaca o prevenir que empeore, y también a manejar la diabetes:"
+  utter_cuidados_corazon:
+  - text: "Lleve una alimentación saludable. Coma más frutas y verduras frescas, proteínas magras y granos integrales. Coma menos alimentos procesados (como chips, dulces y comida rápida) y evite las grasas trans. Beba más agua, menos bebidas azucaradas y menos alcohol."
+  - text: "Intente tener un peso saludable. Si tiene sobrepeso, puede reducir sus niveles de triglicéridos y de azúcar en la sangre con solo bajar una moderada cantidad de peso. Una moderada cantidad de peso significa bajar entre el 5 y 7 % del peso corporal, lo que equivale a unas 4.54 a 6.35 kilogramos en una persona que pesa 90.72 kilogramos."
+  - text: Haga actividad física. Ser físicamente activo hace que su cuerpo sea más sensible a la insulina (la hormona que permite que las células del cuerpo usen el azúcar en la sangre para producir energía), lo cual lo ayuda a manejar la diabetes. La actividad física también ayuda a controlar los niveles de azúcar en la sangre y reduce el riesgo de enfermedad cardiaca. Intente hacer al menos 150 minutos de actividad física a la semana que sea entre moderada e intensa, como caminatas rápidas.
+  - text: "Maneje los factores clave de la diabetes: Hágase una prueba de A1c regularmente para medir el promedio de los niveles de azúcar que tuvo durante 2 a 3 meses; trate de mantenerse dentro del margen objetivo lo más que pueda. Trate de mantener la presión arterial por debajo de 140/90 mm Hg (o el objetivo que establezca su médico). Maneje sus niveles de colesterol y Deje de fumar o no comience."
+  - text: Maneje el estrés. El estrés puede aumentar la presión arterial y también puede provocar comportamientos que no son saludables, como beber demasiado alcohol o comer demasiado. En lugar de eso, vaya a ver a un consejero de salud mental, intente hacer meditación o ejercicios de respiración profunda, haga actividad física o busque el apoyo de amigos y familiares.
+  utter_relacion_diabetes_rinones:
+  - text: "Si usted tiene diabetes, hágase revisar los riñones regularmente. Esto lo hace su médico con unas pruebas simples de sangre y orina. Si usted tuviera enfermedad crónica de los riñones, hacerse pruebas regularmente le brinda la mejor probabilidad de detectarla temprano. El tratamiento temprano es más eficaz y puede ayudar a prevenir otros problemas de salud. La enfermedad crónica de los riñones es común entre las personas con diabetes. Aproximadamente 1 de cada 3 adultos con diabetes tiene esta enfermedad. Tanto la diabetes tipo 1 como la diabetes tipo 2 pueden causar enfermedad de los riñones. FUENTE: Centros para el Control y Prevención de Enfermedades https://www.cdc.gov/diabetes/spanish/living/diabetes-kidney-disease.html"
+  - text: "Cada riñón está formado por millones de filtros pequeños llamados nefronas. Con el tiempo, los niveles altos de azúcar en la sangre causados por la diabetes pueden dañar los vasos sanguíneos de los riñones y las nefronas, y hacerlos dejar de funcionar como deberían. Muchas personas con diabetes, además, tienen presión arterial alta, lo cual también puede dañar los riñones. La enfermedad crónica de los riñones se va produciendo a lo largo de mucho tiempo y, por lo general, no provoca signos ni síntomas en sus etapas iniciales. A menos que su médico haga pruebas para detectarla, usted no se enterará de que la tiene. FUENTE: Centros para el Control y Prevención de Enfermedades https://www.cdc.gov/diabetes/spanish/living/diabetes-kidney-disease.html"
+  utter_pre_cuidados_rinones:
+  - text: "FUENTE: Centros para el Control y Prevención de Enfermedades https://www.cdc.gov/diabetes/spanish/living/diabetes-kidney-disease.html Algunos consejos para ayudar a que sus riñones se mantengan sanos al manejar sus niveles de azúcar en la sangre, presión arterial y colesterol. Esto también es muy importante para el corazón y los vasos sanguíneos:"
+  utter_cuidados_rinones:
+  - text: Mantenga sus niveles de azúcar en la sangre dentro de sus niveles meta lo más posible.
+  - text: Hágase una prueba de A1c al menos dos veces al año, o más seguido si cambian sus medicamentos o si usted tiene otras afecciones. Pregúntele a su médico qué frecuencia es lo adecuado para usted.
+  - text: Revísese la presión arterial regularmente y manténgala por debajo de 140/90 mm / Hg (o el objetivo que le fije su médico). Pregúntele a su médico sobre los medicamentos y otras formas de bajar la presión arterial o si gustas yo puedo ayudarte con consejos para reducir tu presión arterial.
+  - text: Mantenga el nivel de colesterol dentro de su nivel meta.
+  - text: Coma alimentos que sean más bajos en sodio.
+  - text: Coma más frutas y vegetales y Tome sus medicamentos según las indicaciones.
+  - text: La actividad física puede ayudar a prevenir la enfermedad de los riñones.
+  utter_relacion_diabetes_nervios:
+  - text: "Los niveles altos de azúcar en la sangre pueden causar daños en los nervios, lo que se llama neuropatía diabética. Usted puede prevenir o desacelerar el avance de la enfermedad al mantener el nivel de azúcar en la sangre tan cerca de sus valores deseados como sea posible, y al mantener un estilo de vida saludable. FUENTE: Centros para el Control y la Prevención de Enfermedades https://www.cdc.gov/diabetes/spanish/resources/features/diabetes-nerve-damage.html"
+  - text: "Los daños en los nervios son una complicación posible de tener niveles altos de azúcar en la sangre durante mucho tiempo. Los niveles altos de azúcar en la sangre causan daños en los nervios y estos podrían dejar de enviar mensajes a diferentes partes del cuerpo. Los daños en los nervios pueden causar problemas de salud, desde adormecimiento leve a dolor que dificulta las actividades normales. FUENTE: Centros para el Control y la Prevención de Enfermedades https://www.cdc.gov/diabetes/spanish/resources/features/diabetes-nerve-damage.html"
+  - text: "La mitad de las personas con diabetes tienen daños en los nervios. La buena noticia es que usted puede ayudar a prevenirlos o retrasarlos al mantener los niveles de azúcar en la sangre tan cerca de sus valores deseados como sea posible. Cuando lo haga, ¡también tendrá más energía y se sentirá mejor! Los síntomas de daños en los nervios por lo general se presentan lentamente, por lo que es importante que note sus síntomas de manera temprana para poder tomar medidas y así evitar que empeoren. FUENTE: Centros para el Control y la Prevención de Enfermedades https://www.cdc.gov/diabetes/spanish/resources/features/diabetes-nerve-damage.html"
+  - text: "Cualquier persona con diabetes puede presentar daños en los nervios, pero estos factores aumentan su riesgo: Niveles de azúcar en la sangre que son difíciles de manejar. Tener diabetes por mucho tiempo, en especial si el nivel de azúcar en la sangre es a menudo más alto que sus valores deseados. Tener sobrepeso. Tener más de 40 años. Tener presión arterial alta. Tener colesterol alto."
+  utter_pre_cuidados_nervios:
+  - text: "FUENTE: Centros para el Control y la Prevención de Enfermedades https://www.cdc.gov/diabetes/spanish/resources/features/diabetes-nerve-damage.html Mantener el nivel de azúcar en la sangre tan cerca de sus valores deseados como sea posible es la mejor manera de ayudar a prevenir o retrasar daños en los nervios. Otras cosas que puede hacer:"
+  utter_cuidados_nervios:
+  - text: Mantenga su presión arterial por debajo de 140/90 mm Hg (o el valor que establezca su médico).
+  - text: Haga actividad física de manera regular y baje de peso si tiene sobrepeso.
+  - text: Limite o evite el consumo de alcohol y deje de fumar o no empiece.
+  - text: Siga un plan de alimentación saludable y tome sus medicamentos según las indicaciones del médico.
+  utter_tipos_danos_nervios:
+  - text: "Hay cuatro tipos principales de daños en los nervios. Usted puede tener más de un tipo. Los síntomas dependen del tipo de daños en los nervios que tenga y cuáles nervios son afectados. Los tipos son: Daños en los nervios periféricos, Daños en los nervios autónomos, Daños en los nervios proximales y Daños en los nervios focales"
+  utter_relacion_diabetes_pies:
+  - text: "Si usted tiene diabetes, esta es una manera de seguir en buen pie: revísese los pies todos los días—aunque sienta que estén bien—y vea a su médico si tienen algún corte o ampolla que no cicatrice. Aproximadamente la mitad de las personas con diabetes tienen algún tipo de neuropatía diabética (daño a los nervios). El daño a los nervios puede ocurrir en cualquier parte del cuerpo, pero los nervios de los pies y las piernas son los que más frecuentemente se ven afectados. El daño a los nervios puede causar la pérdida de sensación en los pies. El daño a los nervios, junto con la mala circulación de la sangre —otra complicación de la diabetes— lo pone en riesgo de que se le hagan úlceras (llagas o heridas) en los pies que pueden infectarse o no cicatrizar bien. Si una infección no mejora con tratamiento, es posible que se le deba amputar (quitar mediante una operación) ese pie, dedo del pie o parte de la pierna para evitar que la infección se extienda y salvarle la vida. FUENTE: Centros para el Control y la Prevención de Enfermedades https://www.cdc.gov/diabetes/spanish/living/healthy-feet.html"
+  utter_pre_cuidados_pies:
+  - text: "Cuando se revisa los pies todos los días, puede descubrir los problemas temprano y hacérselos tratar de inmediato. El tratamiento temprano reduce inmensamente el riesgo de amputación. A continuación te proporciono unos consejos para mantener tus pies sanos. FUENTE: Centros para el Control y la Prevención de Enfermedades https://www.cdc.gov/diabetes/spanish/living/healthy-feet.html"
+  utter_cuidados_pies:
+  - text: Revísese los pies todos los días en busca de cortes, enrojecimiento, hinchazón, llagas, ampollas, callos, durezas o algún otro cambio en la piel o las uñas. Use un espejo si no se puede ver la planta de los pies o pídale a un familiar que lo ayude.
+  - text: Lávese los pies todos los días con agua tibia (no caliente). No los deje remojar. Séqueselos completamente y aplíquese loción en la parte de arriba y abajo de los pies, pero no entre los dedos porque esto puede llevar a infecciones.
+  - text: No camine nunca descalzo. Póngase siempre zapatos y medias o zapatillas, incluso cuando esté adentro, para evitar las lesiones. Revise que no haya piedritas u otros objetos dentro de los zapatos y que la parte de adentro esté lisa y suave.
+  - text: Utilice zapatos que le queden bien. Cuando vaya a comprar zapatos nuevos, la mejor forma de ver si le quedan bien es probándoselos al final del día cuando los pies tienden a estar más grandes. Acostúmbrese a los zapatos nuevos de a poco, usándolos inicialmente una o dos horas al día hasta que sean del todo cómodos. Siempre use medias con los zapatos.
+  - text: Córtese las uñas de los pies en línea recta y luego límese suavemente las asperezas. Pídale a su especialista de los pies (podólogo) que le corte las uñas si usted no puede verse o llegar a sus pies.
+  - text: No se quite usted mismo los callos o durezas y, especialmente, no use productos de venta sin receta para quitárselos porque podrían quemarle la piel.
+  - text: Hágase revisar los pies en cada visita de atención médica. También visite al especialista de los pies cada año (más seguido si tiene daño a los nervios) para que le haga un examen completo, lo cual incluirá revisar la sensación y la circulación de sangre en los pies.
+  - text: Mantenga la sangre circulando. Levante los pies cuando esté sentado y mueva los dedos de los pies durante unos minutos varias veces a lo largo del día.
+  - text: Elija actividades no riesgosas para los pies, como caminar, andar en bicicleta o nadar. Pregúntele al médico cuáles actividades son mejores para usted y cuáles debe evitar.
+  utter_sintoma_pie:
+  - text: "Eso que describes corresponde a afectaciones que la diabetes le hace a los pies, es mejor que NO esperes hasta la próxima cita y veas a tu médico o especialista de los pies habitual de inmediato. La mayoría de las personas con diabetes pueden prevenir las complicaciones graves en los pies. Cuidarse regularmente los pies e ir a todas las citas médicas son lo mejor que puede hacer para prevenir los problemas en los pies (y prevenir que los problemas pequeños se conviertan en problemas graves). FUENTE: Centros para el Control y la Prevención de Enfermedades https://www.cdc.gov/diabetes/spanish/living/healthy-feet.html"
+  utter_relacion_diabetes_dientes:
+  - text: "La buena salud de la boca es importante para todos, pero los niveles altos de azúcar en la sangre pueden hacer que sea más difícil mantener la boca sana. Si usted tiene diabetes, cuidarse los dientes es aún más importante. Los niveles altos de azúcar en la sangre pueden debilitar los glóbulos blancos. Estos son el modo principal que tiene su cuerpo para luchar contra las infecciones que se pueden producir en la boca. Pero ¡siga con una sonrisa en la cara! Al manejar la diabetes, puede manejar más que los niveles de azúcar en la sangre, de hecho, lo ayuda a prevenir la enfermedad de las encías y otras infecciones en la boca. FUENTE: https://www.cdc.gov/diabetes/spanish/living/diabetes-oral-health.html"
+  - text: "Si los niveles de azúcar están altos en la sangre, también lo están en la saliva. Las bacterias que hay en la placa dental (una sustancia pegajosa) se alimentan del azúcar. Algunas de estas bacterias pueden causar caries dentales y enfermedad de las encías. Si las caries dentales no se tratan, pueden causar la caída de los dientes. Si usted tiene diabetes, la enfermedad de las encías puede ser más grave y tomar más tiempo para sanar. Y si usted tiene enfermedad de las encías, la diabetes puede ser más difícil de manejar. Este es un panorama general de cómo la diabetes puede causar estragos en la salud oral: Usted podría tener menos saliva, lo cual causa la sensación de tener la boca seca. (Algunos medicamentos también causan sequedad en la boca.) Se le podrían inflamar las encías, y sangrar frecuentemente (signos de enfermedad de las encías). Las infecciones en la boca podrían tomar más tiempo en sanar. https://www.cdc.gov/diabetes/spanish/living/diabetes-oral-health.html"
+  utter_pre_cuidados_dientes:
+  - text: "Es importante visitar regularmente al dentista para prevenir los problemas. Siga su calendario para el cuidado de la diabetes. Mantenga sus citas dentales periódicas de limpieza profesional, radiografías y chequeos. Pregúntele al dentista con qué frecuencia debería hacerse un chequeo de los dientes. FUENTE: https://www.cdc.gov/diabetes/spanish/living/diabetes-oral-health.html"
+  utter_cuidados_dientes:
+  - text: Lávese los dientes al menos dos veces al día con una pasta dental que contenga fluoruro.
+  - text: Use hilo dental al menos una vez al día.
+  - text: Si sus encías están enrojecidas, inflamadas o sangran fácilmente, vea a su dentista. Estos podrían ser signos de enfermedad de las encías. Otros signos incluyen sequedad de la boca, dientes sueltos o dolor en la boca.
+  - text: Si fuma, deje de hacerlo. El consumo de cigarrillos aumenta el riesgo de tener enfermedad de las encías y puede empeorar la diabetes.
+  utter_causas_prediabetes:
+  - text: "El páncreas produce una hormona llamada insulina que actúa como una llave que permite que el azúcar en la sangre entre a las células del cuerpo para que estas la usen como energía.\n Si usted tiene prediabetes, las células de su cuerpo no responden a la insulina de manera normal.\n Para tratar de hacer que respondan, el páncreas produce más insulina, pero no podrá mantener el ritmo y los niveles de azúcar en la sangre subirán, lo cual crea las condiciones propicias para la prediabetes y para que tenga diabetes tipo 2 en el futuro. FUENTE: https://www.cdc.gov/diabetes/spanish/basics/prediabetes.html"
+  utter_cuidados_diabetes_tipo_1:
+  - text: "Si su hijo tiene diabetes tipo 1, en especial si es un niño pequeño, usted participará en el cuidado de la diabetes a diario: desde servirle alimentos saludables y ponerle las inyecciones de insulina, hasta estar atento a la aparición de hipoglucemia (niveles bajos de azúcar en la sangre) y tratarla. También deberá mantenerse en contacto cercano con el equipo de atención médica de su hijo; ellos lo ayudarán a entender el plan de tratamiento y a saber cómo ayudar al niño a mantenerse sano. FUENTE: https://www.cdc.gov/diabetes/spanish/basics/what-is-type-1-diabetes.html"
+  - text: "Tú necesitas insulina para vivir; por lo tanto, tendrás que administrártela todos los días, inyectándotela o usando una bomba de insulina. También te chequearás los niveles de azúcar en la sangre a lo largo del día para asegurarte de que estés manteniendo los valores deseados lo más posible. Tu equipo de atención médica te ayudará a entender cuáles son tus valores deseados y cómo mantenerte dentro de ellos. FUENTE: https://www.cdc.gov/diabetes/spanish/basics/diabetes-type-1-diagnosis.html"
+  utter_factores_riesgo_diabetes_tipo_1:
+  - text: "Los factores de riesgo de la diabetes tipo 1 no son tan claros como los de la prediabetes y los de la diabetes tipo 2; sin embargo, se sabe que los antecedentes familiares tienen algo que ver. FUENTE: https://www.cdc.gov/diabetes/spanish/basics/what-is-type-1-diabetes.html"
+  utter_explica_cetoacidosis_diabetica:
+  - text: "La cetoacidosis diabética (DKA, por sus siglas en inglés) es una complicación grave de la diabetes que puede ser mortal. La cetoacidosis diabética ocurre cuando el cuerpo no tiene suficiente insulina para permitir que el azúcar en la sangre ingrese a las células para usarla como energía. Los niveles muy altos de azúcar en la sangre y los niveles bajos de insulina provocan la cetoacidosis diabética. Las dos causas más frecuentes son enfermarse y saltarse inyecciones de insulina. Habla con tu médico y asegúrate de comprender cómo puedes prevenir la cetoacidosis diabética y cómo tratarla si es necesario. FUENTE: https://www.cdc.gov/diabetes/spanish/basics/what-is-type-1-diabetes.html"
+  - text: "La cetoacidosis diabética (DKA, por sus siglas en inglés) es una complicación grave de la diabetes, que puede ser mortal. La cetoacidosis diabética es más frecuente en las personas que tienen diabetes tipo 1. Las personas que tienen diabetes tipo 2 también la pueden presentar. La cetoacidosis diabética ocurre cuando el cuerpo no tiene suficiente insulina para permitir que el azúcar en la sangre ingrese a las células para usarlo como energía. En su lugar, el hígado descompone grasa para obtener energía, un proceso que produce ácidos llamados cetonas. Cuando demasiadas cetonas se producen excesivamente rápido, pueden acumularse hasta llegar a niveles peligrosos en el cuerpo. El nivel elevado de cetonas es un signo de la cetoacidosis diabética, una emergencia médica que debe tratarse inmediatamente. FUENTE: https://www.cdc.gov/diabetes/spanish/basics/diabetic-ketoacidosis.html"
+  utter_azucar_alta:
+  - text: "Con el tiempo, los niveles altos de azúcar en la sangre pueden causar problemas de salud graves, como enfermedad cardiaca, pérdida de la visión e insuficiencia renal. Pero tú puedes reducir tu riesgo de presentar estas y otras complicaciones de la salud. Tendrás que comprender cómo los alimentos, la actividad y otros factores en tu vida afectan tus niveles de azúcar en la sangre, y necesitarás hacer cambios para mejorar esos niveles. FUENTE: https://www.cdc.gov/diabetes/spanish/basics/diabetes-type-1-diagnosis.html"
+  - text: "Mantener los niveles de azúcar en la sangre dentro de los valores deseados puede ayudarte a evitar que en el futuro presentes problemas de salud graves, como enfermedades cardiacas y daños en los nervios. Pero ¿sabías que evitar los altibajos en los niveles de azúcar en la sangre puede ayudar a que te sientas mejor de inmediato? Los niveles estables de azúcar en la sangre pueden ayudarte a tener más energía, dormir mejor, manejar más fácil el apetito, mejorar la concentración y mantener estable los estados de ánimo. Si te está resultando difícil cumplir con tu meta, habla con tu médico o educador sobre la diabetes acerca de cambiar tu plan de tratamiento para que puedas mantenerse dentro de los valores deseados por más tiempo y sentirte mejor. FUENTE: https://www.cdc.gov/diabetes/spanish/basics/diabetes-type-1-diagnosis.html"
+  utter_formas_administracion_insulina:
+  - text: "Las formas en las que se puede administrar son: Jeringa, Pluma de Insulina, Bomba de Insulina e Inhalador de Insulina. FUENTE: https://www.cdc.gov/diabetes/spanish/basics/type-1-4-ways-to-take-insulin.html Si gustas puedo hablarte un poco más sobre alguna de las distintas formas de administración :)"
+  utter_cuidar_diabetes_familia:
+  - text: "Las tasas de obesidad infantil están aumentando, y también están aumentando las tasas de diabetes tipo 2 en los jóvenes. Más del 75 % de los niños con diabetes tipo 2 tienen un pariente cercano que también la tiene. Pero no siempre es solo por la relación familiar, a veces puede también ser porque comparten ciertas costumbres que pueden aumentar el riesgo. Los padres pueden ayudar a prevenir o retrasar la diabetes tipo 2 si hacen un plan para toda la familia, que incluya: Beber más agua y menos bebidas azucaradas. Comer más frutas y verduras. Preparar sus alimentos preferidos de manera más saludable. Hacer que la actividad física sea más divertida. FUENTE: https://www.cdc.gov/diabetes/spanish/basics/type2.html"
+  - text: "Algunas recomendaciones son: Beban más agua y menos bebidas azucaradas. Coman más frutas y verduras. Preparen los alimentos preferidos de manera más saludable. Incluyan a los niños en la preparación de comidas más saludables. Coman más despacio; lleva al menos 20 minutos comenzar a sentirse satisfecho. Coman únicamente en la mesa; no lo hagan en frente del televisor o de la computadora. Vayan juntos a comprar los alimentos. FUENTE: https://www.cdc.gov/diabetes/spanish/prevent-type-2/type-2-kids.html"
+  - text: "Algunas recomendaciones son: Vayan de compras con el estómago lleno para no tentarse y comprar comida que no sea saludable. Enséñenles a sus hijos a leer las etiquetas de los alimentos para comprender cuáles son los más saludables. Coman juntos, en familia, con la mayor frecuencia posible. No les insistan a los niños que dejen el plato vacío. No pongan en la mesa la fuente con la comida. Sirvan porciones pequeñas; dejen que los niños pidan repetir. Recompensen a los niños con elogios en lugar de alimentos. FUENTE: https://www.cdc.gov/diabetes/spanish/prevent-type-2/type-2-kids.html"
+  - text: "Te puedo dar estas recomendaciones: Pónganse como objetivo que sus hijos hagan 60 minutos de actividad física por día, en varias sesiones de 10 o 15 minutos o todo a la vez. Empiecen despacio y vayan progresando. Mantengan una actitud positiva: concéntrense en el progreso. Hagan clases de gimnasia para padres e hijos juntos. Hagan que la actividad física sea más divertida: prueben cosas nuevas. Pregúntenles a sus hijos qué actividades les gustan más. Todos son diferentes. FUENTE: https://www.cdc.gov/diabetes/spanish/prevent-type-2/type-2-kids.html"
+  - text: "Te puedo dar estas recomendaciones: Alienten a los niños para que participen en un equipo deportivo. Tengan disponible un “kit para ponerse en forma” (una cuerda para saltar, pesas, bandas de resistencia). Limiten el tiempo que pasen en frente de una pantalla a 2 horas diarias. Planeen salidas activas, como senderismo o andar en bicicleta. Vayan a caminar juntos. Muévanse más dentro y fuera de la casa: pasen la aspiradora, rastrillen las hojas que caen de los árboles, hagan trabajos de jardinería. Conviertan a las tareas hogareñas en juegos, como competir para ver cuán rápido limpian la casa. FUENTE: https://www.cdc.gov/diabetes/spanish/prevent-type-2/type-2-kids.html"
+  utter_causas_diabetes_gestacional:
+  - text: "La diabetes gestacional se da cuando el cuerpo no puede producir suficiente insulina durante el embarazo. El páncreas produce una hormona llamada insulina, que actúa como una llave que permite que el azúcar en la sangre entre a las células del cuerpo para que estas la usen como energía. Durante el embarazo el cuerpo produce más hormonas y además tiene otros cambios, como aumento de peso. Estos cambios hacen que las células del cuerpo usen la insulina de una manera menos eficaz. Esta afección se llama resistencia a la insulina. La resistencia a la insulina aumenta la necesidad que el cuerpo tiene de insulina. Todas las mujeres tienen algo de resistencia a la insulina durante los últimos meses del embarazo. Sin embargo, algunas tienen esta afección incluso antes de quedar embarazadas. Comienzan el embarazo con una necesidad mayor de insulina y, por lo tanto, serán más propensas a tener diabetes gestacional. FUENTE: https://www.cdc.gov/diabetes/spanish/basics/gestational.html"
+  utter_sintomas_y_factores_riesgo_diabetes_gestacional:
+  - text: "La diabetes gestacional generalmente no provoca síntomas. Sus antecedentes médicos y los factores de riesgo que tenga pueden indicarle al médico si usted podría tener diabetes gestacional, pero deberá hacerle una prueba para saberlo con certeza. FUENTE: https://www.cdc.gov/diabetes/spanish/basics/gestational.html"
+  utter_deteccion_diabetes_gestacional:
+  - text: "Es importante que le hagan pruebas de sangre para detectar la diabetes gestacional, así puede comenzar el tratamiento para proteger su salud y la del bebé. La diabetes gestacional generalmente aparece alrededor de la semana 24 del embarazo; por lo tanto, es probable que le hagan la prueba entre la semana 24 y la 28. Si usted está en mayor riesgo de presentar diabetes gestacional, el médico podría hacerle la prueba antes. Si sus niveles de azúcar en la sangre son más altos que lo normal al principio del embarazo, esto podría indicar que usted tiene diabetes tipo 1 o diabetes tipo 2 y no diabetes gestacional. FUENTE: https://www.cdc.gov/diabetes/spanish/basics/gestational.html"
+  - text: "La diabetes gestacional se diagnostica con análisis de sangre. Probablemente le harán la prueba entre la semana 24 y la 28 del embarazo. Si usted tiene mayor riesgo de presentar diabetes gestacional (por tener más factores de riesgo), su médico podría hacerle la prueba antes. Si sus niveles de azúcar en la sangre son más altos que lo normal al principio del embarazo, esto podría indicar que usted tiene diabetes tipo 1 o diabetes tipo 2 y no diabetes gestacional. FUENTE: https://www.cdc.gov/diabetes/spanish/basics/getting-tested.html"
+  - text: "En ocasiones se usa la Prueba de la glucosa: Esta prueba mide su nivel de azúcar en la sangre en el momento en que se hace la prueba. Deberá beber un líquido que contiene glucosa, y luego le extraerán sangre después de 1 hora para medirle el nivel de azúcar en la sangre. Un resultado de 140 mg/dl o menor es normal. Si su nivel es superior a 140 mg/dl, necesitará hacerse una prueba de tolerancia a la glucosa. FUENTE: https://www.cdc.gov/diabetes/spanish/basics/getting-tested.html"
+  - text: "A veces se usa la Prueba de tolerancia a la glucosa: Esta prueba mide sus niveles de azúcar en la sangre antes y después de beber un líquido que contiene glucosa. Tendrá que ayunar (no comer) la noche anterior a la prueba y le extraerán sangre para determinar sus niveles de azúcar en la sangre en ayunas. Luego tendrá que beber el líquido y le revisarán los niveles de azúcar en la sangre 1 hora, 2 horas y posiblemente 3 horas después. Los resultados pueden variar según el tamaño de la bebida con glucosa que tome y la frecuencia con que le midan los niveles de azúcar en la sangre. Pregúntele al médico qué significan sus resultados. FUENTE: https://www.cdc.gov/diabetes/spanish/basics/gestational.html"
+  utter_prevencion_diabetes_gestacional:
+  - text: "Es posible que pueda prevenir la diabetes gestacional antes de quedar embarazada si baja de peso (en caso de que tenga sobrepeso) y hace actividad física regularmente. No intente bajar de peso si ya está embarazada. Necesitará subir algo de peso —pero no demasiado rápido— para que el bebé sea sano. Pregúntele al médico cuánto peso debe subir para tener un embarazo saludable. FUENTE: https://www.cdc.gov/diabetes/spanish/basics/gestational.html"
+  utter_metodos_deteccion:
+  - text: "Su médico le indicará uno o más de los siguientes análisis de sangre para confirmar el diagnostico: A1C, Azúcar en la sangre en ayunas, Prueba de tolerancia a la glucosa y Prueba de azúcar en la sangre no programada"
+  utter_relacion_diabetes_oidos:
+  - text: "A lo largo del tiempo, los niveles altos de azúcar en la sangre pueden dañar los vasos sanguíneos pequeños y los nervios del oído interno, y los niveles bajos pueden dañar la forma en que las señales que envían los nervios del oído interno llegan al cerebro. Ambos tipos de daño a los nervios pueden causar pérdida auditiva. La pérdida auditiva es dos veces más común en las personas que tienen diabetes que en las personas de la misma edad que no la tienen. Incluso en las personas con prediabetes (niveles de azúcar en la sangre más altos de lo normal, pero no lo suficientemente altos todavía para tener diabetes tipo 2) las tasas de pérdida auditiva son 30 % más altas que en las personas con niveles de azúcar normales. FUENTE: https://www.cdc.gov/diabetes/spanish/living/diabetes-hearing-loss.html"
+  utter_pre_cuidados_oidos:
+  - text: "FUENTE: https://www.cdc.gov/diabetes/spanish/living/diabetes-hearing-loss.html No se puede revertir la pérdida auditiva, pero usted puede seguir estos consejos para ayudar a protegerse los oídos:"
+  utter_cuidados_oidos:
+  - text: Mantenga sus niveles de azúcar en la sangre lo más cerca posible de sus valores objetivo.
+  - text: Hágase revisar la audición todos los años.
+  - text: Evite las otras causas de pérdida auditiva, incluidos los ruidos fuertes.
+  - text: Pregúntele al médico si alguno de los medicamentos que está tomando pueden dañar la audición y qué otras opciones hay disponibles.
+  utter_perdida_auditiva:
+  - text: "La pérdida auditiva puede suceder lentamente, por lo que puede ser difícil de notar. A menudo, sus amigos y familiares notarán su pérdida auditiva antes que usted. Los signos de pérdida auditiva incluyen: Pedirles a menudo a los demás que repitan lo que dijeron. Dificultad para seguir las conversaciones con más de una persona. Pensar que los demás no están articulando bien las palabras. FUENTE: https://www.cdc.gov/diabetes/spanish/living/diabetes-hearing-loss.html"
+  - text: "La pérdida auditiva puede suceder lentamente, por lo que puede ser difícil de notar. A menudo, sus amigos y familiares notarán su pérdida auditiva antes que usted. Los signos de pérdida auditiva incluyen: Dificultad para escuchar la voz de los niños pequeños y de otras personas que hablan bajito. Problemas para escuchar en lugares ruidosos, como en un restaurante bullicioso. Subir el volumen de la televisión o de la radio a un nivel demasiado alto para los que estén cerca. Los problemas con el oído interno pueden también afectar el equilibrio. FUENTE: https://www.cdc.gov/diabetes/spanish/living/diabetes-hearing-loss.html"
+  utter_relacion_diabetes_ojos:
+  - text: "Las enfermedades de los ojos que pueden afectar a las personas con diabetes incluyen retinopatía diabética, edema macular (que generalmente aparece junto a la retinopatía diabética), cataratas y glaucoma. Todas estas pueden causar pérdida de la visión, pero el diagnóstico y tratamiento temprano puede ayudar significativamente a protegerle la vista. Los problemas de los ojos son comunes entre las personas con diabetes; no obstante, los tratamientos pueden ser muy eficaces. Solamente un médico de los ojos puede diagnosticar las enfermedades de los ojos, por esa razón, asegúrese de hacerse un examen de los ojos con dilatación al menos una vez al año. Mientras más pronto se detectan y tratan los problemas de los ojos, mejor es para su vista. FUENTE: https://www.cdc.gov/diabetes/spanish/living/diabetes-vision-loss.html"
+  utter_pre_cuidados_ojos:
+  - text: "FUENTE: https://www.cdc.gov/diabetes/spanish/living/diabetes-vision-loss.html Usted puede proteger su visión y reducir las probabilidades de pérdida de visión tomando estas medidas:"
+  utter_cuidados_ojos:
+  - text: "Hágase un examen de los ojos con dilatación al menos una vez al año para que su médico de los ojos pueda detectar los problemas temprano cuando son más tratables."
+  - text: "Mantenga sus niveles de azúcar en la sangre dentro de su rango objetivo lo más posible. Con el tiempo, los niveles altos de azúcar en la sangre no solo dañan los vasos sanguíneos de los ojos, sino que también pueden afectar la forma del cristalino y hacer borrosa la visión."
+  - text: "Mantenga sus niveles de presión arterial y colesterol dentro de sus rangos objetivo para reducir el riesgo de tener enfermedades de los ojos y pérdida de visión. ¡Todas estas son buenas medidas para su salud en general!"
+  - text: "Deje de fumar. Dejar de fumar reduce el riesgo de tener enfermedades de los ojos relacionadas con la diabetes y también mejora la salud de muchas formas."
+  - text: Haga actividad física. La actividad física le protege los ojos y lo ayuda a manejar la diabetes.
+  utter_define_glaucoma:
+  - text: "Glaucoma es un grupo de enfermedades de los ojos que dañan el nervio óptico debido, generalmente, a demasiada presión en el ojo. Muchos tipos de glaucoma no provocan síntomas, y la pérdida de la visión puede suceder tan lentamente que no se nota. Las personas con diabetes tienen probabilidades dos veces mayores de tener glaucoma de ángulo abierto que del tipo más común. Otros factores de riesgo incluyen tener antecedentes familiares de glaucoma, tener más de 60 años de edad y ser afroamericano, asiático, o hispano o latino. La diabetes también puede causar glaucoma neovascular. Esto ocurre a veces con la retinopatía diabética, cuando crecen vasos sanguíneos nuevos y anormales en el iris (la parte del ojo con color). Estos vasos sanguíneos nuevos pueden bloquear el flujo de líquido que sale del ojo, lo cual eleva la presión en el ojo."
+  utter_prevencion_glaucoma:
+  - text: "No hay forma de prevenir el glaucoma, pero el tratamiento puede ayudar a evitar que empeore. Por eso es tan importante detectar el glaucoma temprano. Las opciones de tratamiento incluyen medicamentos, tratamiento con láser y una operación. Hable con su médico de los ojos sobre qué opciones son mejores para usted. FUENTE: https://www.cdc.gov/diabetes/spanish/living/diabetes-vision-loss.html"
+  utter_define_cataratas:
+  - text: "Las cataratas ocurren cuando se opaca el cristalino del ojo, que normalmente es transparente. Aunque el cristalino del ojo de todos tiende a nublarse con la edad, las personas con diabetes tienen más probabilidades de presentar cataratas, y a menor edad. Una de las razones es que los niveles altos de azúcar en la sangre pueden hacer que se acumulen depósitos en el cristalino del ojo y nublarlos. Otros de los factores de riesgo incluyen presión arterial alta, obesidad, exceso de exposición al sol a lo largo del tiempo y tabaquismo."
+  utter_tratamiento_cataratas:
+  - text: "La única forma de tratar las cataratas es a través de una operación, pero, por lo general, no es necesario operarse inmediatamente. Usar luces más fuertes en su casa y anteojos antirreflejantes afuera puede ayudar al principio. Si sus cataratas interfieren en sus actividades diarias, quizás sea tiempo de operarse. La buena noticia es que la operación es muy segura, ¡y la mayoría de las personas tienen mejor visión después! FUENTE: https://www.cdc.gov/diabetes/spanish/living/diabetes-vision-loss.html"
+  utter_define_retinopatia:
+  - text: "Esta enfermedad común de los ojos es la principal causa de ceguera en adultos en edad laboral. Se produce la retinopatía diabética cuando los niveles altos de azúcar en la sangre dañan los vasos sanguíneos de la retina (una capa de células sensible a la luz en la parte de atrás del ojo). Cuando los vasos sanguíneos se dañan, pueden hincharse y dejar que salga la sangre, lo cual causa visión borrosa o impide la circulación de la sangre. A veces crecen vasos sanguíneos nuevos, pero no son normales y pueden causar más problemas de visión. La retinopatía diabética suele afectar a los dos ojos. FUENTE: https://www.cdc.gov/diabetes/spanish/living/diabetes-vision-loss.html"
+  utter_pre_recomendacion_alimentos:
+  - text: "La alimentación saludable comienza en la tienda de alimentos. Pero hacer una compra acertada no siempre es tan fácil como parece. ¿Su meta? Conseguir la mejor oferta en los alimentos más saludables y sabrosos. Use una lista de compras que lo ayude a mantener su atención en la compra de alimentos que se ajusten a su plan de comidas y presupuesto. FUENTE: https://www.cdc.gov/diabetes/spanish/living/grocery-shopping.html"
+  utter_recomendacion_alimentos:
+  - text: "Haga un plan de comidas para toda la semana antes de ir a comprar los alimentos. Vea qué es lo que ya tiene para no comprar cosas que no necesite. Haga una lista de compras basándose en su plan de comidas semanal. Organice su lista por sección en la tienda para que su compra sea fácil y rápida. Usted ya lo sabe: no compre cuando tenga hambre para que no sienta tentación de comprar alimentos que no estén en su lista de compras."
+  - text: "Recorra los pasillos que se encuentran en los extremos de la tienda para comprar fruta y verdura frescas, productos lácteos o productos alternativos a los lácteos, carne, pescado, aves y huevos. Recorra los pasillos internos para comprar opciones saludables como frijoles, lentejas, vinagres saborizados, especias, atún, aceite de oliva, y frutas y verduras congelados (sin salsa). Sea cauteloso cuando vea etiquetas que digan “menor contenido de grasas” o “menos azúcar”; es posible que aún no sean opciones saludables. Lea las etiquetas con la información nutricional para saber qué contiene el alimento."
+  utter_define_carbohidratos:
+  - text: "Junto con las proteínas y las grasas, los carbohidratos son uno de los tres nutrientes principales que tienen los alimentos y las bebidas. Los carbohidratos que usted come tienen un efecto directo en el nivel de azúcar en la sangre. FUENTE: https://www.cdc.gov/diabetes/spanish/living/eat-well/diabetes-and-carbohydrates.html"
+  utter_diabetes_comun:
+  - text: "La diabetes mellitus o diabetes tipo II es la más común en personas mayores de 60 años; sin embargo, puede presentarse a cualquier edad. FUENTE: https://www.gob.mx/salud/prensa/547-en-mexico-12-4-millones-de-personas-viven-con-diabetes?idiom=es#:~:text=La%20diabetes%20mellitus%20o%20diabetes,puede%20presentarse%20a%20cualquier%20edad."
 actions:
 - action_saludo
-- utter_explicar_tipos
 - action_explica_tipos
-- utter_en_que_puedo_ayudarte
-- utter_feliz
 - action_despedida
-- utter_casos_riesgo
-- utter_sintoma_detectado
-- utter_persona_riesgo
-- utter_que_es_la_diabetes
-- utter_de_nada
-- utter_explicar_objetivo
-- utter_manda_gif
-- utter_eso_ayudo
 - action_calcular_imc
-- utter_necesito_dato
-- utter_soy_un_bot
 - action_manda_imagen
 - action_checa_glucosa
 - action_recomienda_algo_dolor
+- action_tipo_nervios
+- action_administracion_insulina
+- action_metodo_deteccion
+- action_dato_entrenamiento
+- action_causas_diabetes
+- action_sintomas_diabetes
+- action_edad_diabetes
+- action_manejar_diabetes
 forms:
   datos_generales_form:
     required_slots:

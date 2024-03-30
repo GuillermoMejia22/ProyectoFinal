@@ -1,13 +1,13 @@
 from typing import Any, Text, Dict, List
-from rasa_sdk import Action, Tracker, FormValidationAction
+from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
 import datetime
 import random
-import asyncio
 from owlready2 import *
 from rdflib import Graph
 from rdflib.plugins.sparql import prepareQuery
+import mysql.connector
     
 class ActionSaludo(Action):
     
@@ -17,7 +17,8 @@ class ActionSaludo(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-                
+              
+        estado = "EXITO"  
         try:
             saludo = ""
             hora_actual = datetime.datetime.now().hour
@@ -29,11 +30,13 @@ class ActionSaludo(Action):
                 saludo = "Hola buenas noches me llamo Diabot ¿cómo estás?"
             
             dispatcher.utter_message(saludo)
-        
         except Exception as e:
+            estado = "FALLO"
             error = "El servidor de acciones está experimentando un problema. Intenta de nuevo más tarde."
             dispatcher.utter_message(error)
-              
+        
+        bitacoraBD("action_saludo", estado)
+        
         return []
 
 class ActionExplicaTipos(Action):
@@ -46,6 +49,7 @@ class ActionExplicaTipos(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
         try:
+            estado = "EXITO"
             tipo = tracker.get_slot("tipo")
             tipo = tipo.upper()
             
@@ -65,7 +69,10 @@ class ActionExplicaTipos(Action):
                     Los síntomas incluyen:\n- Excreción excesiva de orina (poliuria).\n- Sed (polidipsia).\n- Hambre constante.\n- Pérdida de peso.\n- Cambios en la visión y fatiga.\n
                     Estos síntomas pueden ocurrir repentinamente.
                     """,
-                    "Este tipo de diabetes es la más frecuente en los niños, y en los adultos es la tipo 2, aunque esta última ya se está presentando en la población infantil. Niños desde 8 años de edad han sido diagnosticados con este tipo de diabetes. Afortunadamente es prevenible si se evita el sobrepeso o la obesidad, lo cual es posible lograr a través de una alimentación sana, actividad física y otros hábitos saludables como el dormir correctamente. Fuente: UNAM https://ciencia.unam.mx/leer/1074/diabetes-infantil-diferente-a-la-de-los-adultos-"
+                    "Este tipo de diabetes es la más frecuente en los niños, y en los adultos es la tipo 2, aunque esta última ya se está presentando en la población infantil. Niños desde 8 años de edad han sido diagnosticados con este tipo de diabetes. Afortunadamente es prevenible si se evita el sobrepeso o la obesidad, lo cual es posible lograr a través de una alimentación sana, actividad física y otros hábitos saludables como el dormir correctamente. Fuente: UNAM https://ciencia.unam.mx/leer/1074/diabetes-infantil-diferente-a-la-de-los-adultos-",
+                    "Con este tipo de diabetes, el cuerpo no produce insulina. Esto es un problema porque el cuerpo necesita insulina para sacar el azúcar (glucosa) de los alimentos que la persona consume para convertirla en energía. Las personas que tienen diabetes tipo 1 deben tomar insulina todos los días para vivir.\nFUENTE: National Institute of Diabetes and Digestive and Kidney Diseases https://www.niddk.nih.gov/health-information/informacion-de-la-salud/diabetes/informacion-general/control/4-pasos-controlar-vida",
+                    "La diabetes tipo 1 es causada por una reacción autoinmunitaria (el cuerpo se ataca a sí mismo por error). Esta reacción impide que su cuerpo produzca insulina. Aproximadamente del 5 al 10% de las personas que tienen diabetes tienen el tipo 1. Por lo general, los síntomas de esta diabetes aparecen rápidamente. Generalmente se diagnostica en niños, adolescentes y adultos jóvenes. Las personas que tienen diabetes tipo 1, deben recibir insulina todos los días para sobrevivir. En la actualidad, nadie sabe cómo prevenir la diabetes tipo 1. FUENTE: https://www.cdc.gov/diabetes/spanish/basics/diabetes.html",
+                    "Si tienes diabetes tipo 1, tu páncreas no produce insulina o produce muy poca.\n La insulina es una hormona que ayuda a que el azúcar en la sangre entre a las células del cuerpo, donde se puede usar como fuente de energía.\n Sin insulina, el azúcar en la sangre no puede entrar a las células y se acumula en el torrente sanguíneo.\n Tener niveles altos de azúcar en la sangre es dañino para el cuerpo y causa muchos de los síntomas y las complicaciones de la diabetes.\nLa diabetes tipo 1 (que antes se llamaba diabetes insulinodependiente o diabetes juvenil) generalmente se diagnostica en los niños, los adolescentes y los adultos jóvenes, pero puede presentarse en personas de cualquier edad.\nLa diabetes tipo 1 es menos común que la diabetes tipo 2; la tienen aproximadamente entre el 5 y el 10 % de las personas con diabetes.\n En la actualidad, nadie sabe cómo prevenir la diabetes tipo 1; sin embargo, esta enfermedad se puede manejar al seguir las recomendaciones del médico para llevar un estilo de vida saludable, manejar los niveles de azúcar en la sangre, hacerse chequeos regularmente y conseguir educación y apoyo para el automanejo de la diabetes.\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/what-is-type-1-diabetes.html"
                 ],
                 "II": [
                     """
@@ -73,9 +80,10 @@ class ActionExplicaTipos(Action):
                     """,
                     """
                     La diabetes tipo 2 (antes llamada no insulinodependiente o de inicio en la edad adulta) es el resultado del uso ineficaz de la insulina por parte del cuerpo. Más del 95% de las personas con diabetes tienen diabetes tipo 2.\nEste tipo de diabetes es en gran parte el resultado del exceso de peso corporal y la inactividad física.\n
-                    Los síntomas pueden ser similares a los de la diabetes tipo 1, pero a menudo son menos marcados. Como resultado, la enfermedad puede diagnosticarse varios años después del inicio, después de que ya hayan surgido complicaciones. \n
-                    Hasta hace poco, este tipo de diabetes solo se observaba en adultos, pero ahora también se presenta cada vez con mayor frecuencia en niños.
-                    """
+                    Los síntomas pueden ser similares a los de la diabetes tipo 1, pero a menudo son menos marcados. Como resultado, la enfermedad puede diagnosticarse varios años después del inicio, después de que ya hayan surgido complicaciones.\nHasta hace poco, este tipo de diabetes solo se observaba en adultos, pero ahora también se presenta cada vez con mayor frecuencia en niños.
+                    """,
+                    "Con este tipo de diabetes, el cuerpo no produce o no usa bien la insulina. Las personas con este tipo de diabetes tal vez necesiten tomar pastillas o insulina para ayudar a controlar la diabetes. La diabetes tipo 2 es la forma más común de diabetes.\nFUENTE: National Institute of Diabetes and Digestive and Kidney Diseases https://www.niddk.nih.gov/health-information/informacion-de-la-salud/diabetes/informacion-general/control/4-pasos-controlar-vida",
+                    "Con la diabetes tipo 2, el cuerpo no usa la insulina adecuadamente y no puede mantener el azúcar en la sangre a niveles normales.\n Aproximadamente del 90 al 95% de las personas con diabetes tiene la diabetes tipo 2.\n Es un proceso que evoluciona a lo largo de muchos años y generalmente se diagnostica en los adultos (si bien se está presentando cada vez más en los niños, los adolescentes y los adultos jóvenes).\n Es posible que no sienta ningún síntoma; por lo tanto, es importante que se haga un análisis de sus niveles de azúcar en la sangre si está en riesgo.\n La diabetes tipo 2 se puede prevenir o retrasar con cambios de estilo de vida saludables, como:\n- Bajar de peso si tiene sobrepeso.\n- Tener una alimentación saludable.\n- Hacer actividad física regularmente.\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/diabetes.html"
                 ],
                 "III": [
                     "De acuerdo con investigaciones de la UNAM pocos saben de la existencia de una forma de la enfermedad que se relaciona con el Alzheimer. Se le conoce coloquialmente como la diabetes tipo 3, un término que ha sido utilizado en tiempos recientes por miembros de la comunidad científica para describir esta relación.\nEl origen de esta propuesta son los estudios que han mostrado que las personas con diabetes tienen un mayor riesgo de desarrollar la enfermedad de Alzheimer en comparación con las personas no diabéticas. De hecho, se estima que las personas con diabetes tienen un riesgo dos veces mayor de desarrollar Alzheimer.\nEl Alzheimer es una enfermedad neurodegenerativa que se caracteriza por la pérdida progresiva de las funciones cognitivas, incluyendo la memoria, el juicio, el razonamiento y el lenguaje. Aunque la causa exacta sigue siendo desconocida, se cree que es el resultado de una compleja interacción entre factores genéticos y ambientales"
@@ -86,7 +94,10 @@ class ActionExplicaTipos(Action):
                     La diabetes gestacional es una hiperglucemia con valores de glucosa en sangre por encima de lo normal pero por debajo de los diagnósticos de diabetes. La diabetes gestacional ocurre durante el embarazo\n
                     Las mujeres con diabetes gestacional tienen un mayor riesgo de complicaciones durante el embarazo y el parto. Estas mujeres y posiblemente sus hijos también corren un mayor riesgo de padecer diabetes tipo 2 en el futuro.\n
                     La diabetes gestacional se diagnostica mediante pruebas de detección prenatales, en lugar de a través de los síntomas informados.
-                    """
+                    """,
+                    " Este tipo de diabetes ocurre en algunas mujeres cuando están embarazadas. La mayoría de las veces, desaparece después de que nace el bebé. Sin embargo, aun si desaparece, estas mujeres y sus hijos corren un mayor riesgo de desarrollar diabetes más adelante.\nFUENTE: National Institute of Diabetes and Digestive and Kidney Diseases https://www.niddk.nih.gov/health-information/informacion-de-la-salud/diabetes/informacion-general/control/4-pasos-controlar-vida",
+                    "La diabetes gestacional aparece en mujeres embarazadas que nunca han tenido diabetes. Si usted tiene diabetes gestacional, su bebé podría estar en mayor riesgo de presentar complicaciones de salud. La diabetes gestacional generalmente desaparece después de que nace el bebé. Sin embargo, aumenta el riesgo de que usted tenga diabetes tipo 2 más adelante en la vida. Es más probable que su bebé tenga obesidad cuando sea niño o adolescente y que presente diabetes tipo 2 más adelante en la vida. FUENTE: https://www.cdc.gov/diabetes/spanish/basics/diabetes.html",
+                    "La diabetes gestacional es un tipo de diabetes que puede aparecer durante el embarazo en las mujeres que no tengan ya diabetes.\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/gestational.html"
                 ]
             }
             
@@ -94,23 +105,34 @@ class ActionExplicaTipos(Action):
             if tipo in explicaciones:
                 explicacion = random.choice(explicaciones[tipo])
             
-            dispatcher.utter_message("FUENTE: Organización Panamericana de la Salud https://www.paho.org/es/temas/diabetes")
+            dispatcher.utter_message("FUENTE ADICIONAL: Organización Panamericana de la Salud https://www.paho.org/es/temas/diabetes")
             dispatcher.utter_message(explicacion)
+            
             if tipo == 'I':
                 dispatcher.utter_message(image="https://scontent.fmex23-1.fna.fbcdn.net/v/t1.6435-9/67525929_2300921739943741_6832015507223216128_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=u9YQsKDbw8cAX-eyv_b&_nc_ht=scontent.fmex23-1.fna&oh=00_AfAVjjgawzAWTny4nmF92d2ZoE4ftM096hwTKocMHxJclg&oe=661EB67F")
-            
+                dispatcher.utter_message("Las personas que tienen diabetes tipo 1 también pueden tener náuseas, vómitos y dolor de estómago.\n Los síntomas de la diabetes tipo 1 pueden aparecer en apenas unas semanas o meses y pueden ser intensos.\n Este tipo de diabetes generalmente aparece en los niños, los adolescentes o los adultos jóvenes, pero puede presentarse en personas de cualquier edad.\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/symptoms.html")
+                
             elif tipo == "GESTACIONAL":
                 dispatcher.utter_message("Esta infografía disponible en este enlace de la UNAM https://ciencia.unam.mx/contenido/infografia/245/diabetes-en-el-embarazo te puede ser bastante útil")
                 dispatcher.utter_message(image="https://ciencia.unam.mx/uploads/infografias/if_embarazo_diabetes_19012022.jpg")
-            
+                dispatcher.utter_message("La diabetes gestacional (diabetes durante el embarazo) generalmente aparece en la mitad del embarazo y no suele producir síntomas. Si está embarazada, debe hacerse una prueba para detectar la diabetes gestacional entre las semanas 24 y 28 del embarazo. De esa manera podrá hacer los cambios necesarios para proteger su salud y la del bebé.\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/symptoms.html")
+                dispatcher.utter_message("Aproximadamente el 50 % de las mujeres con diabetes gestacional presentarán diabetes tipo 2 después")
+                
+            elif tipo == "II":
+                dispatcher.utter_message("Los síntomas de la diabetes tipo 2 generalmente van apareciendo a lo largo de varios años y pueden estar presentes por mucho tiempo sin que se noten (a veces no habrá ningún síntoma notorio). Esta enfermedad generalmente aparece en los adultos, aunque cada vez más se ve en los niños, los adolescentes y los adultos jóvenes. Y, debido a que los síntomas son difíciles de identificar, es importante saber cuáles son los factores de riesgo y que consulte con su médico si tiene alguno.\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/symptoms.html")
+                
             elif tipo == "III":
                 dispatcher.utter_message("En la diabetes tipo 3 —aventuran algunos investigadores—el cerebro se vuelve resistente a la insulina, que básicamente es el regulador de las concentraciones de azúcar en el cuerpo, lo que significa que no puede utilizarla efectivamente para llevar glucosa a las células cerebrales.\nEsta deficiencia se ha relacionado con la acumulación anormal de unas proteínas llamadas beta-amiloides en el cerebro, que son un rasgo característico de la enfermedad de Alzheimer.\nEn otras palabras, si pensamos en nuestro cuerpo como una máquina, la diabetes tipo 3 sería  como un cortocircuito en nuestro cerebro.\nLa insulina es una hormona que ayuda a nuestros cuerpos a usar la glucosa, que es como el combustible que necesitamos para funcionar correctamente. Sin embargo, en la diabetes tipo 3, nuestros cerebros tienen problemas para utilizar la insulina, lo que significa que las células cerebrales no obtienen suficiente energía. Como resultado, este órgano  comienza a funcionar mal y esto puede aumentar el riesgo de desarrollar la enfermedad de Alzheimer. FUENTE: UNAM https://ciencia.unam.mx/leer/1467/-que-sabes-de-la-diabetes-tipo-3-")
                 dispatcher.utter_message(image="https://ciencia.unam.mx/uploads/textos/imagenes/ar_diabetes_tipo3_02_20102023.jpg")
             
+            dispatcher.utter_message("Este video se me hizo muy interesante, es de los Centros para el Control y la Prevención de Enfermedades, explica un poco acerca de los tipos de diabetes https://www.youtube.com/watch?v=Q7f-UT-cJu8")
+            
         except Exception as e:
+            estado = "FALLO"
             error = "El servidor de acciones está experimentando un problema. Intenta de nuevo más tarde."
             dispatcher.utter_message(error)
               
+        bitacoraBD("action_explica_tipos", estado)
         return [SlotSet("tipo", None)]
 
 
@@ -124,6 +146,7 @@ class ActionDespedida(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
         try:
+            estado = "EXITO"
             despedida = ""
             hora_actual = datetime.datetime.now().hour
             if 5 <= hora_actual < 12:
@@ -136,9 +159,11 @@ class ActionDespedida(Action):
             dispatcher.utter_message(despedida)
         
         except Exception as e:
+            estado = "FALLO"
             error = "El servidor de acciones está experimentando un problema. Intenta de nuevo más tarde."
             dispatcher.utter_message(error)
         
+        bitacoraBD("action_despedida", estado)
         return []
         
 class ActionCalcularIMC(Action):
@@ -151,6 +176,7 @@ class ActionCalcularIMC(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
         try:
+            estado = "EXITO"
             nombre = tracker.get_slot("nombre")
             edad = int(tracker.get_slot("edad"))
             genero = tracker.get_slot("genero")
@@ -255,9 +281,11 @@ class ActionCalcularIMC(Action):
             dispatcher.utter_message(recomendacion)
         
         except Exception as e:
+            estado = "FALLO"
             error = "El servidor de acciones está experimentando un problema. Intenta de nuevo más tarde."
             dispatcher.utter_message(error)
         
+        bitacoraBD("action_calcular_imc", estado)
         return []
     
 class ActionMandaImagen(Action):
@@ -270,8 +298,9 @@ class ActionMandaImagen(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
         try:
+            estado = "EXITO"
             ultima_intencion = tracker.latest_message['intent']['name']
-            if ultima_intencion == "sospecha_diabetes":
+            if ultima_intencion == "sospecha_diabetes" or ultima_intencion == "sintomas_diabetes_tipo":
                 ultima_intencion = "explicar_sintomas"
             
             respuestas = {
@@ -285,6 +314,7 @@ class ActionMandaImagen(Action):
                         "Puedes revisar los síntomas en esta infografía, espero te sea de ayuda",
                         "Esta inforgrafía puede ayudarte a comprender un poco más acerca de la diabetes",
                         "Los síntomas más comunes de la diabetes es la polidipsia, es decir, sentir mucha sed; poliuria, que significa orinar con mucha frecuencia, y polifagia, que es una sensación incontenible de hambre todo el tiempo. Quienes tienen este síntoma, a pesar de comer mucho no suben de peso, por el contrario, va disminuyendo. FUENTE: UNAM https://ciencia.unam.mx/leer/1074/diabetes-infantil-diferente-a-la-de-los-adultos-"
+                        "Si tiene alguno de los siguientes síntomas de diabetes, vea a su médico para que le haga un análisis del nivel de azúcar en la sangre:\n* Necesidad de orinar (hacer pis) con mucha frecuencia, y también durante la noche.\n* Mucha sed.\n* Pérdida de peso sin intentarlo.\n* Mucha hambre.\n* La visión borrosa.\n* Hormigueo o entumecimiento en las manos o los pies.\n* Mucho cansancio.\n* La piel muy seca.\n* Llagas que cicatrizan muy lentamente.\n* Más infecciones de lo habitualFUENTE: https://www.cdc.gov/diabetes/spanish/basics/symptoms.html"
                     ],
                     "imagenes": [
                         "https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/Sintomas.png",
@@ -322,13 +352,19 @@ class ActionMandaImagen(Action):
                         "De acuerdo con información del IMSS en este enlace https://www.imss.gob.mx/preguntas-de-salud/preguntas-frecuentes-sobre-diabetes Debes tener una alimentación que ayude a mantener un nivel adecuado de azúcar en la sangre, puedes acudir con un experto en nutrición para que te recomiende un plan alimenticio. Sobre todo debes:",
                         "Esta infografía muestra información útil sobre la alimentación con diabetes, espero te sea de ayuda :)",
                         "Te paso esta infografía que explica de forma más detallada aspectos relacionados con la alimentación, espero te sea útil :D",
-                        "Mira, esta información quiza sea de utilidad para ti"
+                        "Mira, esta información quiza sea de utilidad para ti",
+                        "En general, coma más alimentos que sean ricos en vitaminas y minerales (como calcio y hierro), y fibra. Coma menos alimentos que contengan una mayor cantidad de azúcares agregados, grasas saturadas  y sodio  (sal), y evite las grasas trans. Tenga en cuenta que el % del valor diario de cada nutriente, como la grasa total de 10 % en el ejemplo de abajo, se basa en el consumo de 2000 calorías al día. Usted puede comer menos o más calorías al día dependiendo de su edad, género, nivel de actividad, peso actual y de si está tratando de adelgazar o mantener su peso.\nFUENTE: https://www.cdc.gov/diabetes/spanish/living/eat-well/food-labels.html",
+                        "Estos consejos quizá te sean útiles:\n* Elija verduras frescas o cocidas al vapor que tengan muy poco aderezo de ensalada, queso o crema. Si puede, prepare su propio aderezo para ensaladas con un poquito de aceite de oliva y vinagre.\n* Elija granos que tengan mucha fibra, como el arroz integral cocido al vapor y los panes de granos enteros, como los de trigo integral y el pan de maíz.\n* Evite usar mantequilla o margarina en el pan, el arroz y en otros granos y almidones.\n* Elija las frutas frescas, como peras, manzanas, fresas o melones, o una ensalada de frutas sin agregado de azúcar o crema batida. La fruta es una excelente fuente de fibras, vitaminas y minerales.\n* Tome agua, café o té sin endulzar, u otras bebidas sin azúcar.\n* Si toma bebidas alcohólicas, no beba más de un trago al día si es mujer, o más de dos tragos al día si es hombre.\nFUENTE: https://www.cdc.gov/diabetes/spanish/living/buffet-tips-for-diabetes.html"
                     ],
-                    "imagenes": ["https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/Dieta.png", "https://dimequecomes.com/wp-content/uploads/2019/04/DQC-Infografia-tratamiento-nutricional-diabetes-tipo-II.jpg", "https://alimentacionysalud.unam.mx/wp-content/uploads/2021/02/VIVIR-bien-con-diabetes.jpg", "https://static.wixstatic.com/media/57cfd2_23532047185c4584a6c990bd0dbfb59f~mv2.jpg/v1/fill/w_640,h_556,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/57cfd2_23532047185c4584a6c990bd0dbfb59f~mv2.jpg"]
+                    "imagenes": ["https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/Dieta.png", "https://dimequecomes.com/wp-content/uploads/2019/04/DQC-Infografia-tratamiento-nutricional-diabetes-tipo-II.jpg", "https://alimentacionysalud.unam.mx/wp-content/uploads/2021/02/VIVIR-bien-con-diabetes.jpg", "https://static.wixstatic.com/media/57cfd2_23532047185c4584a6c990bd0dbfb59f~mv2.jpg/v1/fill/w_640,h_556,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/57cfd2_23532047185c4584a6c990bd0dbfb59f~mv2.jpg", None, None]
                 },
                 "dar_alimentos": {
-                    "mensajes": ["Esta infografía puede ayudarte a medir las raciones y porciones"],
-                    "imagenes": ["https://www.imss.gob.mx/sites/all/statics/salud/infografias/infografia_porcionesyraciones3.jpg"],                    
+                    "mensajes": [
+                        "Esta infografía puede ayudarte a medir las raciones y porciones", 
+                        "Esto puede ayudarte a saber que puedes consumir", 
+                        "La mayoría de nosotros simplemente no sabemos cuánto estamos comiendo. Una manera de ayudar a controlar el tamaño de la porción es usar el método del plato.\n* Llene la mitad del plato con alimentos de origen vegetal sin almidón, como lechuga, tomates, ejotes (green beans), zanahorias o brócoli, y frutas como manzanas, toronjas o pomelos, o peras.\n* Llene un cuarto del plato con una proteína sin grasa como pollo, pavo, frijoles, frutos secos, tofu o huevos.\n* Llene un cuarto del plato con cereales y alimentos con almidón como avena y papas. O deje fuera el almidón y sírvase el doble de alimentos de origen vegetal sin almidón. Puede comer todos los alimentos de origen vegetal sin almidón que quiera, siempre y cuando no estén cubiertos con salsa, mantequilla o queso.\nNo siempre comemos de un plato, ¿cierto? Comemos de tazones, paquetes de comida rápida o cajas y envases de comida para llevar. Sin embargo, es realmente la misma idea. Tiene que asegurarse de que su comida tenga una buena proporción de verduras, que no tenga demasiada grasa y que tampoco tenga muchos alimentos con almidón"
+                    ],
+                    "imagenes": ["https://www.imss.gob.mx/sites/all/statics/salud/infografias/infografia_porcionesyraciones3.jpg", "https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/Comidas.png", "https://www.cdc.gov/diabetes/images/basics/plate_method_esp.png?_=80584"],                    
                 },
                 "otros_cuidados": {
                     "mensajes": [
@@ -343,9 +379,10 @@ class ActionMandaImagen(Action):
                         "La hipoglucemia es el término técnico para los niveles bajos de glucosa (azúcar) en la sangre. Es cuando tus niveles de glucosa (azúcar) en la sangre han bajado lo suficiente para que necesites tomar medidas para regresarlos a su rango objetivo. Estas son algunas de las causas: No hay suficiente comida, como una comida o un refrigerio con menos carbohidratos de lo habitual, u omitir una comida o un refrigerio, Alcohol, especialmente con el estómago vacío, Demasiada insulina o medicamentos orales para la diabetes, Efectos secundarios de otros medicamentos y Más actividades físicas o ejercicio de lo habitual FUENTE: American Diabetes Association https://diabetes.org/espanol/la-glucosa-puede-marcar-una-gran-diferencia",
                         "Esta infografía detalla información importante sobre la Hipoglucemia",
                         "Me parece que esta infografía puede ayudarte a comprender la Hipoglucemia",
-                        "Esta infografía se me hizo interesante, de hecho explica eso que me dices"
+                        "Esta infografía se me hizo interesante, de hecho explica eso que me dices",
+                        "La hipoglucemia (nivel bajo de azúcar en la sangre) puede ocurrir rápido y debe ser tratada de inmediato. En la mayoría de los casos es causada por tener demasiada insulina, esperar demasiado antes de comer, no comer lo suficiente o hacer más actividad física de lo normal.\nLos síntomas de hipoglucemia varían de persona a persona. Asegúrate de saber qué síntomas específicos te provocan a ti. Estos pueden incluir:\n- Temblores\n- Nerviosismo o ansiedad\n- Sudoración, escalofríos o tener la piel fría y húmeda\n- Irritabilidad o impaciencia\n- Mareos y dificultad para concentrarse\n- Hambre o náuseas\n- Visión borrosa\n- Debilidad o fatiga\n- Enojo, terquedad o tristeza\n- Si tienes hipoglucemia varias veces a la semana, habla con tu médico para ver si necesitas un cambio en tu tratamiento.\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/what-is-type-1-diabetes.html."
                     ],
-                    "imagenes": [None, "https://www.medicable.com.mx/AdminMedicable/Pagina/Infografia/Index/Img/406/1.webp", "https://pbs.twimg.com/media/Dvu1YUiXQAEX9wM.jpg", "https://fmdiabetes.org/wp-content/uploads/2023/02/-1-scaled.jpg"]
+                    "imagenes": [None, "https://www.medicable.com.mx/AdminMedicable/Pagina/Infografia/Index/Img/406/1.webp", "https://pbs.twimg.com/media/Dvu1YUiXQAEX9wM.jpg", "https://fmdiabetes.org/wp-content/uploads/2023/02/-1-scaled.jpg", None]
                 },
                 "explica_insulina": {
                     "mensajes": [
@@ -356,7 +393,7 @@ class ActionMandaImagen(Action):
                     ],
                     "imagenes": ["https://www.uaeh.edu.mx/gaceta/3/numero32/octubre/images/luciernaga/3.jpg", "https://i0.wp.com/mimisqui.mx/wp-content/uploads/2020/11/Insulina.png?fit=1200%2C1200&ssl=1", "https://www.medicable.com.mx/AdminMedicable/Pagina/Infografia/Index/Img/156/1.webp", "https://ciencia.unam.mx/uploads/infografias/if_insulina_tus_ideas_final_07062023.png"]
                 },
-                "conocer_mi_tipo_diabetes": {
+                "conocer_mi_tipo_diabetes": {   
                     "mensajes": [
                         "Mira, quizá esto pueda ayudarte a investigar un poco más al respecto, espero te ayude",
                         "Esta infografía explica de una manera interesante las diferencias entre los tipos de diabetes para ayudar a identificar el detectado, espero te ayude :)",
@@ -381,9 +418,11 @@ class ActionMandaImagen(Action):
                         "Mira, aquí puedes ver en qué consiste la prediabetes y el qué se puede hacer",
                         "Este vídeo del Dr. Alberto Sanagustín explica en qué consiste y cómo se diagnostica https://www.youtube.com/watch?v=0d0p3-yahT4",
                         "En este vídeo de Centers for Disease Control and Prevention se explica qué es la prediabetes, el vídeo originalmente está en inglés pero en Youtube puedes activar los subtitulos al español https://www.youtube.com/watch?v=MrzbFpzt_4s",
-                        "La prediabetes es una afección grave en la que los niveles de azúcar en la sangre son más altos que lo normal, pero todavía no han llegado a niveles lo suficientemente altos para que se diagnostique diabetes tipo 2. Fuente: Centros para el Control y la Prevención de Enfermedades https://www.cdc.gov/diabetes/spanish/basics/prediabetes.html"
+                        "La prediabetes es una afección grave en la que los niveles de azúcar en la sangre son más altos que lo normal, pero todavía no han llegado a niveles lo suficientemente altos para que se diagnostique diabetes tipo 2. Fuente: Centros para el Control y la Prevención de Enfermedades https://www.cdc.gov/diabetes/spanish/basics/prediabetes.html",
+                        "Con la prediabetes, los niveles de azúcar en la sangre son más altos que lo normal, pero aún no lo suficientemente altos como para un diagnóstico de diabetes tipo 2. La prediabetes aumenta el riesgo de diabetes tipo 2, enfermedad del corazón y derrame cerebral. Pero hay buenas noticias.",
+                        "Este video de los Centros para el Control y la Prevención de Enfermedades explica qué es la Prediabetes, pensé que quizá te gustaría verlo :D https://www.youtube.com/watch?v=7zcN5OeG5o4"
                     ],
-                    "imagenes": ["https://www.cdc.gov/diabetes/spanish/images/resources/Prediabetes_1.png", "https://fmdiabetes.org/wp-content/uploads/2017/11/me-acaban-de-diagnosticar-predabietes.jpg", None, None, None]
+                    "imagenes": ["https://www.cdc.gov/diabetes/spanish/images/resources/Prediabetes_1.png", "https://fmdiabetes.org/wp-content/uploads/2017/11/me-acaban-de-diagnosticar-predabietes.jpg", None, None, None, None, None]
                 },
                 "hipertension": {
                     "mensajes": [
@@ -412,9 +451,103 @@ class ActionMandaImagen(Action):
                         "De hecho hay un padecimiento que se puede llegar a generar denominado como Retinopatía Diabética, esta infografía de la UNAM te puede ser útil para entender qué es este padecimiento",
                         "Esta infografía de la UNAM explica las complicaciones y secuelas asociadas a la diabetes, espero te sea de ayuda",
                         "De acuerdo con este enlace de la UNAM https://ciencia.unam.mx/leer/1312/la-diabetes-pone-en-peligro-al-cerebro La diabetes es una de las enfermedades más comunes en la población mexicana. Este padecimiento implica altas concentraciones de azúcar en la sangre, lo que causa una serie de desequilibrios. Recientemente, se ha estudiado cómo el cerebro se ve afectado.\nLos procesos cognitivos abarcan los procesos de aprendizaje y memoria que nos permiten adquirir información y tomar acciones a través de los sentidos y experiencias. Aprender una nueva habilidad, recordar sucesos o incluso sentir emociones, son procesos cognitivos.\nLa Dra. Edith Arnold especifica que los estudios clínicos han evidenciado tres tipos de deterioro de estas capacidades en los enfermos: “La pérdida de la memoria; la disminución en la velocidad del procesamiento de la información; y un déficit de atención y una dificultad para concentrarse y aprender”. se han determinado tres características comunes: la toxicidad por las altas concentraciones de glucosa en la sangre; los daños en la microvasculatura en el cerebro; y una mayor propensión a desarrollar lesiones de arteriosclerosis. Las tres conspiran contra el órgano regente. La toxicidad ocasionada por los altos niveles de glucosa en la sangre se deriva de la peculiaridad de que las células del cerebro, las neuronas, no necesitan la insulina para dar entrada a la glucosa. Es innegociable que tengan energía para poder mantener las comunicaciones y hacer la transmisión de los impulsos nerviosos.",
-                        "Las complicaciones crónicas se dividen, a su vez, en las macrovasculares y las microvasculares. Las macrovasculares están asociadas con problemas cardiosvaculares, y las microvasculares son las que dañan la vascularidad de órganos como los riñones, por lo que puede presentarse insuficiencia renal.\nPor otro lado, puede haber daño en la retina y en consecuencia, perder la vista. Igualmente, los pacientes con diabetes es posible que padezcan afectaciones en las vías nerviosas, provocando úlceras en los pies, evolucionando de esta manera al pie diabético que en muchas ocasiones termina en amputación. Fuente: UNAM https://ciencia.unam.mx/leer/1074/diabetes-infantil-diferente-a-la-de-los-adultos-"
+                        "Las complicaciones crónicas se dividen, a su vez, en las macrovasculares y las microvasculares. Las macrovasculares están asociadas con problemas cardiosvaculares, y las microvasculares son las que dañan la vascularidad de órganos como los riñones, por lo que puede presentarse insuficiencia renal.\nPor otro lado, puede haber daño en la retina y en consecuencia, perder la vista. Igualmente, los pacientes con diabetes es posible que padezcan afectaciones en las vías nerviosas, provocando úlceras en los pies, evolucionando de esta manera al pie diabético que en muchas ocasiones termina en amputación. Fuente: UNAM https://ciencia.unam.mx/leer/1074/diabetes-infantil-diferente-a-la-de-los-adultos-",
+                        "Las personas con diabetes tienen probabilidades dos veces mayores de tener enfermedad del corazón o un derrame cerebral que las personas que no tienen diabetes, y de tener estas afecciones a una edad más temprana.\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/quick-facts.html",
+                        "La diabetes es la principal causa de insuficiencia renal, amputación de las extremidades inferiores y ceguera en los adultos.\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/quick-facts.html",
+                        "Las personas que tienen diabetes y fuman tienen más probabilidades de presentar problemas graves de salud, como enfermedad del corazón y enfermedad de los riñones.\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/quick-facts.html"
                     ],
-                    "imagenes": [None, None, None, None, None, None, None, None, None, None, None, None, None, "https://ciencia.unam.mx/uploads/infografias/if_retinopatia_21022022.jpg", "https://ciencia.unam.mx/uploads/infografias/if_diabetes_25032021.jpg", "https://ciencia.unam.mx/uploads/textos/imagenes/ar_cerebro_02_150882022.jpg"]
+                    "imagenes": [None, None, None, None, None, None, None, None, None, None, None, None, None, "https://ciencia.unam.mx/uploads/infografias/if_retinopatia_21022022.jpg", "https://ciencia.unam.mx/uploads/infografias/if_diabetes_25032021.jpg", "https://ciencia.unam.mx/uploads/textos/imagenes/ar_cerebro_02_150882022.jpg", None, None, None]
+                },
+                "preguntar_efectos": {
+                    "mensajes": [
+                        "La diabetes causa ciertas afectaciones al cuerpo, entre ellas están las siguientes, si gustas puedes preguntarme por más complicaciones de la diabetes",
+                        "Las complicaciones más conocidas son la ceguera, amputaciones, infartos y enfermedad renal crónica, sin embargo, cualquier órgano de nuestro cuerpo puede enfermarse si está expuesto a niveles elevados de glucosa por mucho tiempo.\nEstas se dividen en micro y macrovasculares:\n\n*Microvasculares*\n- Retinopatía (complicaciones en los ojos).\n- Neuropatía (complicaciones en los nervios).\n - Nefropatía (complicaciones en los riñones).\n\n*Macrovasculares*\n - Enfermedad vascular periférica (se presenta en el corazón y arterias).\n\nEl principal factor que determina el desarrollo de estas son la exposición crónica a niveles altos de glucosa, que poco a poco daña los vasos arteriales, compromete el flujo adecuado de sangre y daña los tejidos.\nFUENTE: Centro Médico ABC https://centromedicoabc.com/revista-digital/la-diabetes-y-sus-complicaciones-como-llevar-una-vida-sana/"
+                    ],
+                    "imagenes": ["https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/07/effects-of-diabetes-spanish_1296x1727.jpg?w=1155&h=3626", None]
+                },
+                "numero_fallecidos": {
+                    "mensajes": [
+                        "Este gráfico muestra la tasa de defunciones por diabetes mellitus en nuestro país, espero te sea de utilidad",
+                        "En México, la mortalidad por diabetes se estima en 89.4 defunciones por cada 100 mil habitantes, siendo la segunda causa de muerte entre la población mexicana, sólo por debajo de las enfermedades del corazón. De acuerdo con las cifras de mortalidad de INEGI, la diabetes fue la causa de 115,681 muertes de mexicanos en el año 2022.",
+                        "A nivel entidad, se estima que el estado con la mayor mortalidad por diabetes es Veracruz, con una tasa de 127.4 defunciones por cada 100,000 habitantes, mientras Baja California Sur es la entidad con la menor tasa, con 45.8."
+                    ],
+                    "imagenes": ["https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/DefuncionesDiabetesMellitus.png", "https://mexicocomovamos.mx/wp-content/uploads/2023/11/Copia-de-Figura1_BlogMCV-5.png", "https://mexicocomovamos.mx/wp-content/uploads/2023/11/Mortalidad-por-diabetes-2022.jpeg"]
+                },
+                "vivir_con_diabetes": {
+                    "mensajes": [
+                        "No se vuelve realmente bueno para lidiar con la diabetes de la noche a la mañana. Pero con el tiempo, se aprende a cómo pasar de hacerlo con dificultad a hacerlo en un minuto, para vivir plenamente con diabetes se recomienda lo siguiente:\n- Prepare y coma alimentos saludables.\n- Haga actividad física la mayoría de los días.\n- Mídase el nivel de azúcar en la sangre con frecuencia.\n- Tome los medicamentos como se los recetaron, aunque se sienta bien.\n- Aprenda maneras de manejar el estrés.\n- Sobrelleve los efectos emocionales de la diabetes.\n- Vaya a los chequeos médicos.\nFUENTE: Centros para el Control y la Prevención de Enfermedades https://www.cdc.gov/diabetes/spanish/resources/features/living-well-with-diabetes.html",
+                        "Las personas con este padecimiento pueden vivir plenamente cuidandose, la mejor forma de cuidarse es manteniendose activo:\n1.- El ejercicio es todavía una de las mejores herramientas para manejar la diabetes, ¡y es gratis!\n2.- Esfuércese con regularidad, pero también encuentre maneras de ser activo durante el día, como subir escaleras y caminar.\n3.- Haga actividad física con un amigo. Es más probable que siga haciéndola porque no le quiere fallar.\n4.- Intente usar un monitor de actividad (muchas aplicaciones son gratis). Es muy motivador ver como se acumulan sus pasos.\n5.- Vea todos los videos de ejercicios en línea. Hay algo para todos, en cada nivel de actividad física.\nFUENTE: Centros para el Control y la Prevención de Enfermedades https://www.cdc.gov/diabetes/spanish/resources/features/living-well-with-diabetes.html",
+                        "Es normal sentirse agobiado, triste o enojado cuando se tiene diabetes. Tal vez usted sepa las medidas que tiene que tomar para mantenerse sano pero se le hace difícil seguir el plan por mucho tiempo.\nPero la clave se basa en:\na) Escojer alimentos bajos en calorías, grasas saturadas, grasas trans, azúcar y sal.\nb) Consumir alimentos con más fibra, como cereales, panes, galletas, arroz o pasta integrales.\nc) Escojer alimentos como frutas, vegetales, granos, panes y cereales integrales, y leche y quesos sin grasa o bajos en grasa.\nd) Tomar agua en lugar de jugos o sodas regulares.\ne) Cuando se sirva, llene la mitad del plato con frutas y vegetales, una cuarta parte del plato con un proteína baja en grasa como frijoles, o pollo o pavo sin el pellejo, y la otra cuarta parte del plato con un cereal integral, como arroz o pasta integral.\nFUENTE: National Institute of Diabetes and Digestive and Kidney Diseases https://www.niddk.nih.gov/health-information/informacion-de-la-salud/diabetes/informacion-general/control/4-pasos-controlar-vida",
+                        "La vida con diabetes en ocasiones parece ser bastante complicada pero con una buena alimentación y una actividad física constante se puede vivir bastante bien, quizá estos consejos te sirvan:\ni) Póngase la meta de ser más activo la mayoría de los días de la semana. Empiece despacio caminando por 10 minutos, 3 veces al día.\nii) Dos veces a la semana, trabaje para aumentar su fuerza muscular. Use bandas para ejercicios de resistencia, haga yoga, trabaje duro en el jardín (haciendo huecos y sembrando con herramientas) o haga flexiones de pecho.\niii) Mantenga o logre un peso saludable usando su plan de alimentación y haciendo más ejercicio.\nFUENTE: Centros para el Control y la Prevención de Enfermedades https://www.cdc.gov/diabetes/spanish/resources/features/living-well-with-diabetes.html",
+                        "Este video del Centro Médico ABC te habla sobre unos tips para una mejor vida con diabetes https://www.youtube.com/watch?v=QhBCeEdwEVc espero te ayude :)"
+                    ],
+                    "imagenes": [None, None, None, None, None]
+                },
+                "manejar_diabetes_tipo_I": {
+                    "mensajes": [
+                        "Si tienes diabetes tipo 1, deberás ponerte inyecciones de insulina (o usar una bomba de insulina) todos los días para manejar los niveles de azúcar en la sangre y darle a tu cuerpo la energía que necesita. La insulina no se puede tomar en forma de pastilla porque el ácido del estómago la destruiría antes de llegar al torrente sanguíneo. Tu médico trabajará contigo para determinar el tipo y la dosis de insulina más eficaces para ti.\nTambién necesitarás medirte el nivel de azúcar en la sangre con regularidad. Pregúntale a tu médico con qué frecuencia deberás chequearlo y cuál es el nivel de azúcar en la sangre que deberías tener. Mantener los niveles de azúcar en la sangre lo más cerca posible de los valores deseados te ayudará a prevenir o retrasar las complicaciones relacionadas con la diabetes.\nEl estrés es parte de la vida, pero puede hacer que el manejo de la diabetes sea más difícil, lo cual incluye manejar los niveles de azúcar en la sangre y ocuparse de los cuidados diarios de la diabetes. Hacer actividad física regularmente, dormir lo suficiente y hacer ejercicios de relajación pueden ayudar. Habla con tu médico y educador sobre la diabetes acerca de estas y otras maneras de manejar el estrés.\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/what-is-type-1-diabetes.html"
+                    ],
+                    "imagenes": [None]
+                },
+                "tipos_insulina": {
+                    "mensajes": [
+                        "La insulina se clasifica según cuán rápido y por cuánto tiempo actúa en el cuerpo.\nSu médico le recetará la mejor insulina o insulinas para usted, con base en varios factores:\n* Su nivel de actividad.\n* Los alimentos que coma.\n* Cuán bien puede manejar sus niveles de azúcar en la sangre.\n* Su edad.\n* Cuánto tiempo le lleva a su cuerpo absorber la insulina y por cuánto tiempo se mantiene activa. (Esto es diferente para distintas personas.)\nSi tiene diabetes tipo 1, probablemente se administrará una combinación de insulinas. Algunas personas con diabetes tipo 2 también necesitarán administrarse insulina.\nEsta tabla comparativa puede ayudarte a comprender los distintos tipos de insulina y características\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/type-1-types-of-insulin.html"
+                    ],
+                    "imagenes": ["https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/TiposInsulina.png"]
+                },
+                "causas_azucar_baja": {
+                    "mensajes": [
+                        "Los niveles de azúcar en la sangre cambian a menudo durante el día. Cuando descienden por debajo de los 70 mg/dL, se considera que el azúcar está bajo. En ese nivel, tiene que tomar medidas para aumentarlo. El azúcar bajo en la sangre es especialmente frecuente en las personas con diabetes tipo 1.\nSaber cómo identificar el azúcar bajo en la sangre es importante porque puede ser peligroso si no se lo trata.\nEntre las causas se encuentran:\n- Administrarse demasiada insulina.\n- No comer suficientes carbohidratos para la cantidad de insulina que se administra.\n- Los momentos en que se administra la insulina.\n- La cantidad de actividad física que hace y cuándo la realiza.\n- Tomar alcohol.\n- La cantidad de grasa, proteínas y fibra en su comida.\n- Tiempo caluroso y húmedo.\n- Cambios inesperados en su horario.\n- Pasar tiempo en altitudes altas.\n- Estar pasando por la pubertad.\n- Menstruación\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/low-blood-sugar.html"
+                    ],
+                    "imagenes": [None]
+                },
+                "sintomas_azucar_baja": {
+                    "mensajes": [
+                        "Cómo usted reacciona a los niveles bajos de azúcar en la sangre quizás no sea igual a cómo reacciona otra persona. Es importante que conozca sus síntomas. Los síntomas frecuentes pueden incluir:* Latidos rápidos\n* Temblores\n* Sudor\n* Nerviosismo o ansiedad\n* Irritabilidad o confusión\n* Mareos\n* Hambre\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/low-blood-sugar.html"                        
+                    ],
+                    "imagenes": [None]
+                },
+                "sintomas_cetoacidosis": {
+                    "mensajes": [
+                        "La cetoacidosis diabética por lo general se produce lentamente. Los primeros síntomas incluyen:\n- Tener mucha sed.\n- Orinar mucho más que lo habitual.\nSi no se la trata, pueden aparecer rápidamente más síntomas intensos, como:\n- Respiración rápida, profunda.\n- Piel y boca secas.\n- Cara enrojecida.\n- Aliento que huele a fruta.\n- Dolor de cabeza.\n- Rigidez o dolores musculares.\n- Mucho cansancio.\n- Náuseas y vómitos.\n- Dolor estomacal.\nA veces, la cetoacidosis diabética es el primer signo de diabetes en las personas a las que todavía no se la han diagnosticado.\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/diabetic-ketoacidosis.html"
+                    ],
+                    "imagenes": [None]
+                },
+                "causas_cetoacidosis": {
+                    "mensajes": [
+                        "La cetoacidosis diabética es provocada por niveles muy altos de azúcar en la sangre y niveles bajos de insulina. Las dos causas más frecuentes son:\n* nfermedad. Cuando se enferma, quizás no pueda comer o beber tanto como lo hace habitualmente, lo cual puede dificultarle el manejo del azúcar en la sangre.\n* No inyectarse la insulina cuando le correspondía, tener una obstrucción en la bomba de insulina, o aplicarse la dosis de insulina equivocada.\nOtras causas de la cetoacidosis diabética incluyen:\n* Ataque cardiaco o derrame cerebral.\n* Lesiones físicas, como las producidas en un accidente automovilístico.\n* Consumo de alcohol o drogas.\n* Ciertos medicamentos, como algunos diuréticos (pastillas para orinar) y corticosteroides (usados para tratar la inflamación en el cuerpo).\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/diabetic-ketoacidosis.html"
+                    ],
+                    "imagenes": [None]
+                },
+                "tratamiento_cetoacidosis": {
+                    "mensajes": [
+                        "Si tiene cetoacidosis diabética, lo tratarán en la sala de emergencias o lo hospitalizarán. Su tratamiento probablemente incluirá:\n1.- Reponer el líquido perdido al orinar frecuentemente y para ayudar a diluir el exceso de azúcar en su sangre.\n2.- Reponer los electrolitos (minerales en el cuerpo que ayudan a los nervios, músculos, corazón y cerebro a funcionar de la manera debida). Un nivel demasiado bajo de insulina puede reducir sus niveles de electrolitos.\n3.- Recibir insulina. La insulina revierte las condiciones que causan la cetoacidosis diabética.\n4.- Tomar medicamentos para cualquier enfermedad subyacente que causó la cetoacidosis diabética, como antibióticos por una infección.\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/diabetic-ketoacidosis.html"
+                    ],
+                    "imagenes": [None]
+                },
+                "prevencion_cetoacidosis": {
+                    "mensajes": [
+                        "La cetoacidosis diabética es una afección grave, pero usted puede tomar medidas para ayudar a prevenirla:\n* Chequéese el nivel de azúcar en la sangre con frecuencia, especialmente si está enfermo.\n* Mantenga sus niveles de azúcar en la sangre lo más cerca posible de los valores deseados.\n* Tome todos los medicamentos según se los recetaron, aunque se sienta bien.\n* Hable con su médico sobre cómo ajustar su insulina según lo que coma, cuánta actividad física hace, o si está enfermo.\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/diabetic-ketoacidosis.html"
+                    ],
+                    "imagenes": [None]
+                },
+                "complicaciones_gestacional": {
+                    "mensajes": [
+                        "La diabetes gestacional puede aumentar el riesgo de tener presión arterial alta durante el embarazo. También puede aumentar el riesgo de que tenga un bebé grande y que le deban hacer una cesárea\nSi usted tiene diabetes gestacional, su bebé estará en mayor riesgo de lo siguiente:\n- Ser muy grande (4.08233 Kg o más), lo cual puede dificultar el parto.\n- Nacer antes de tiempo, lo cual puede causar problemas respiratorios y otros problemas.\n- Tener niveles bajos de azúcar en la sangre.\n- Tener diabetes tipo 2 más adelante en la vida.\nLa diabetes gestacional, por lo general, desaparece después de que nace el bebé. Sin embargo, alrededor del 50 % de las mujeres con diabetes gestacional tendrán diabetes tipo 2 más adelante. Usted puede reducir su riesgo si alcanza un peso corporal saludable después de dar a luz. Visite al médico para que le revise los niveles de azúcar en la sangre de 6 a 12 semanas después de que haya nacido el bebé y luego cada 1 a 3 años para asegurarse de que estén dentro de los valores objetivo.\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/gestational.html"
+                    ],
+                    "imagenes": [None]
+                },
+                "tratamiento_gestacional": {
+                    "mensajes": [
+                        "Hay muchas cosas que puede hacer para manejar la diabetes gestacional. Vaya a todas sus citas médicas prenatales y siga su plan de tratamiento, incluidas las siguientes medidas:\n* Revisarse los niveles de azúcar en la sangre para asegurarse de que se mantengan dentro de un rango saludable.\n* Comer alimentos saludables en las cantidades correctas a la hora correspondiente. Seguir un plan de alimentación saludable creado por su médico o dietista.\n* Mantenerse activa. Hacer con regularidad actividad física que sea moderadamente intensa (como caminar rápido) reduce los niveles de azúcar en la sangre y aumenta la sensibilidad de su cuerpo a la insulina, de modo que no necesitará tanta. Asegúrese de preguntarle al médico qué tipo de actividad física puede hacer y si hay algún tipo que deba evitar.\n* Monitorear al bebé. El médico revisará el crecimiento y desarrollo del bebé.\nSi con la alimentación saludable y la actividad física no logra mantener los niveles de azúcar en la sangre bajo control, es posible que el médico le recete insulina, metformina u otro medicamento.\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/gestational.html"
+                    ],
+                    "imagenes": [None]
+                },
+                "etiquetas_nutricionales": {
+                    "mensajes": [
+                        "1.- Revise primero el tamaño de la ración. En esta etiqueta, todos los números son para una ración de 2/3 de taza.\n2.- Este paquete tiene 8 raciones. Si usted come el paquete entero, estará consumiendo 8 veces la cantidad de calorías, carbohidratos, grasas, etc. que aparecen en la etiqueta.\n3.- Carbohidratos totales muestra los tipos de carbohidratos que hay en el alimento, incluidos el azúcar y la fibra.\n4.- Elija alimentos con más fibra, vitaminas y minerales.\n5.- Elija alimentos con menos calorías, grasas saturadas, sodio y azúcares agregados. Evite las grasas trans.\nFUENTE: https://www.cdc.gov/diabetes/spanish/living/eat-well/food-labels.html"
+                    ],
+                    "imagenes": ["https://www.cdc.gov/diabetes/images/managing/food-label.png?_=42561"]
                 }
             }
             
@@ -428,10 +561,11 @@ class ActionMandaImagen(Action):
                 dispatcher.utter_message(image=image_url)
         
         except Exception as e:
+            estado = "FALLO"            
             error = "El servidor de acciones está experimentando un problema. Intenta de nuevo más tarde."
-            print(e)
             dispatcher.utter_message(text=error)
-              
+
+        bitacoraBD("action_manda_imagen", estado)
         return []
     
 class ActionChecaGlucosa(Action):
@@ -444,6 +578,7 @@ class ActionChecaGlucosa(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
                 
         try:
+            estado = "EXITO"
             glucosa_antes = float(tracker.get_slot("glucosa_antes")) if tracker.get_slot("glucosa_antes") else None
             glucosa_despues = float(tracker.get_slot("glucosa_despues")) if tracker.get_slot("glucosa_despues") else None
             
@@ -458,10 +593,10 @@ class ActionChecaGlucosa(Action):
             msg2 = "\nResultado del análisis de glucosa después de comer\n"
             if 70 <= glucosa_despues <= 140:
                 diagnostico1 = "Esos niveles son normales en una persona que NO tiene diabetes, la glucosa en una persona NO diabética después de comer se debe mantener menor a un valor de 140 mg/dL"
-            elif 140 < glucosa_antes <= 180:
+            elif 140 < glucosa_despues <= 180:
                 diagnostico1 = "Esos niveles son normales en una persona que TIENE diabetes, la glucosa en una persona diabética después de comer se debe mantener menor a un valor de 180 mg/dL"     
-            elif glucosa_antes > 180:
-                diagnostico1 = "El nivel de glucosa es bastante alto, lo máximo incluso para una persona diabética después de comer es de 180 mg/dL"
+            elif glucosa_despues > 180:
+                diagnostico1 = "El nivel de glucosa es bastante alto, lo máximo incluso para una persona diabética después de comer es de 180 mg/dL\nToda vez que usted esté enfermo o su nivel de azúcar en la sangre sea de 240mg/dL o más, use una prueba de cetonas (que se compra sin receta) para chequear su orina o un medidor para analizar su sangre cada 4 a 6 horas a fin de detectar las cetonas. También debe hacerse una prueba de cetonas si tiene alguno de los síntomas de cetoacidosis diabética."
             
             diagnosticoFinal = msg1 + diagnostico + msg2 + diagnostico1
             
@@ -470,9 +605,11 @@ class ActionChecaGlucosa(Action):
             dispatcher.utter_message(image="https://fmdiabetes.org/wp-content/uploads/2015/06/ADA.png")
         
         except Exception as e:
+            estado = "FALLO"
             error = "El servidor de acciones está experimentando un problema. Intenta de nuevo más tarde."
             dispatcher.utter_message(error)
-              
+        
+        bitacoraBD("action_checa_glucosa", estado)
         return [SlotSet("glucosa_antes", None), SlotSet("glucosa_despues", None)]
     
 class ActionRecomiendaAlgoDolor(Action):
@@ -485,11 +622,12 @@ class ActionRecomiendaAlgoDolor(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
                 
         try:
+            estado = "EXITO"
             dolor = tracker.get_slot("dolor")
-            dolor.upper()
+            dolor = dolor.upper()
             if dolor == "PANZA":
                 dolor = "ESTOMAGO"
-            elif dolor == "OÍDO":
+            elif dolor == "OÍDO" or dolor == "OIDOS":
                 dolor = "OIDO"
             
             explicaciones = {
@@ -548,7 +686,384 @@ class ActionRecomiendaAlgoDolor(Action):
                 dispatcher.utter_message("El tratamiento para reducir el dolor de cabeza. Entre ellos, se incluyen la aspirina, el ibuprofeno (Advil, Motrin IB, otros) y el naproxeno sódico (Aleve).\nFUENTE: https://www.mayoclinic.org/es/diseases-conditions/tension-headache/diagnosis-treatment/drc-20353982#:~:text=Analg%C3%A9sicos.,Medicamentos%20combinados.")    
     
         except Exception as e:
+            estado = "FALLO"
             error = "El servidor de acciones está experimentando un problema. Intenta de nuevo más tarde."
             dispatcher.utter_message(error)
               
+        bitacoraBD("action_recomienda_algo_dolor", estado)
+        return [SlotSet("dolor", None)]
+
+class ActionTipoNervios(Action):
+    
+    def name(self) -> Text:
+        return "action_tipo_nervios"
+    
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+                
+        try:
+            estado = "EXITO"
+            nervios = tracker.get_slot("nervios")
+            nervios = nervios.upper()
+            
+            if nervios == "PERIFÉRICOS":
+                nervios = "PERIFERICOS"
+            elif nervios == "AUTÓNOMOS":
+                nervios = "AUTONOMOS"
+            
+            explicaciones = {
+                "PERIFERICOS": [
+                    "¿Ha tenido la sensación de “pinchazos” u hormigueo en los pies? Quizás sienta como si tuviera medias o guantes puestos, aunque no los tenga.\n Los pies podrían ser muy sensibles al tacto, hasta una sábana puede hacer que duelan.\n Estos son todos síntomas de daños en los nervios periféricos.\nLos daños en los nervios periféricos afectan las manos, los pies, las piernas y los brazos, y son el tipo más común de daños en los nervios en las personas con diabetes.\n Por lo general comienzan en los pies, comúnmente en ambos pies a la vez.\nOtros síntomas pueden incluir:\n- Dolor o mayor sensibilidad, en especial por la noche.\n- Adormecimiento o debilidad.\n- Problemas graves en los pies, como úlceras, infecciones y dolor en los huesos y las articulaciones.\nUsted podría no notar presión o lesiones que causen ampollas o llagas, lo cual puede provocar infecciones, llagas que no se curan o úlceras.\n A veces es necesario amputar (quitar la parte por medio de una operación).\nEncontrar y tratar los problemas de los pies puede reducir sus probabilidades de que presente una infección grave.\nFUENTE: https://www.cdc.gov/diabetes/spanish/resources/features/diabetes-nerve-damage.html"
+                ],
+                "AUTONOMOS": [
+                    "Los daños en los nervios autónomos afectan el corazón, la vejiga, el estómago, los intestinos, los órganos sexuales o los ojos.\n Los síntomas pueden incluir:\n- Problemas en la vejiga o los intestinos que podrían causar pérdida de orina, estreñimiento o diarrea.\n- Náuseas, pérdida del apetito y vómitos.\n- Cambios en cómo los ojos se ajustan de la luz a la oscuridad.\n- Respuesta sexual reducida, incluso problemas para tener erecciones en los hombres o sequedad vaginal en las mujeres.\nFUENTE: https://www.cdc.gov/diabetes/spanish/resources/features/diabetes-nerve-damage.html"
+                ],
+                "PROXIMALES": [
+                    "Los daños en los nervios proximales afectan los nervios de los muslos, las caderas, las nalgas o las piernas.\n También pueden afectar el estómago y el área del pecho.\n Los síntomas pueden incluir:\n- Dolor intenso en una cadera y un muslo o una nalga.\n- Problemas para ponerse de pie desde una posición de sentado.\n- Dolor de estómago intenso.\nFUENTE: https://www.cdc.gov/diabetes/spanish/resources/features/diabetes-nerve-damage.html"
+                ],
+                "FOCALES": [
+                    "Los daños en los nervios focales afectan nervios individuales, más a menudo en una mano, la cabeza, el torso o una pierna.\nLos síntomas pueden incluir:\n- Problemas para enfocar la vista o tener visión doble.\n- Dolores detrás de un ojo.\n- No poder mover un lado de la cara (parálisis de Bell).\n- Adormecimiento u hormigueo en las manos o los dedos.\n- Debilidad en la mano que podría hacer que se le caigan las cosas.\nFUENTE: https://www.cdc.gov/diabetes/spanish/resources/features/diabetes-nerve-damage.html"
+                ]
+            }
+            
+            explicacion = "Lo siento, ese tipo de daño a nervios NO existe o NO se encuentra asociado a la diabetes"
+            if nervios in explicaciones:
+                explicacion = random.choice(explicaciones[nervios])
+            
+            dispatcher.utter_message(explicacion)
+                
+        except Exception as e:
+            estado = "FALLO"
+            error = "El servidor de acciones está experimentando un problema. Intenta de nuevo más tarde."
+            dispatcher.utter_message(error)
+        
+        bitacoraBD("action_tipo_nervios", estado)
+        return [SlotSet("nervios", None)]
+    
+class ActionAdministracionInsulina(Action):
+    
+    def name(self) -> Text:
+        return "action_administracion_insulina"
+    
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+                
+        try:
+            estado = "EXITO"
+            metodo = tracker.get_slot("metodo")
+            metodo = metodo.upper()
+            
+            explicaciones = {
+                "JERINGA": [
+                    "Las jeringas y las plumas de insulina administran la insulina a través de una aguja. Las plumas podrían ser más convenientes y puede que a los niños les resulten más cómodas que las jeringas.\nSu médico le dirá cuánta insulina necesita por dosis. Las jeringas de menor capacidad son más fáciles de usar y más precisas.\n- Si su dosis más grande llega casi a la capacidad máxima de la jeringa, compre el próximo tamaño por si esa dosis cambia.\n- Si necesita dosis en medias unidades, escoja una jeringa que las tenga marcadas."
+                ],
+                "PLUMA": [
+                    "Algunas plumas usan cartuchos que se insertan en ellas. Otras se compran ya cargadas y se desechan después de haber usado toda la insulina. La dosis de insulina se marca en la pluma y la insulina se inyecta a través de una aguja.\n* Los cartuchos y las plumas que ya vienen cargadas con insulina contienen solamente un tipo de insulina.\n* Si le recetan dos tipos de insulina, necesitará usar dos plumas.\n\nVentajas de las jeringas y de las plumas\n1.- Las inyecciones requieren menos capacitación que una bomba de insulina para poder usarse.\n2.- Las inyecciones podrían costar menos.\n3.- Las plumas son más fáciles de usar que las jeringas.\n4.- Las plumas son portátiles y discretas.\n5.- Las agujas de las plumas son pequeñas y finas: menos dolor.\n\nDesventajas de las jeringas y de las plumas\n1.- Tanto las jeringas como las plumas son menos privadas que una bomba de insulina.\n2.- No todos los tipos de insulina pueden usarse con una pluma.\n3.- Con una jeringa se pueden mezclar dos tipos de insulina, pero con una pluma no se puede hacer lo mismo."
+                ],
+                "BOMBA": [
+                    "El tamaño de una bomba de insulina es similar al de un teléfono celular pequeño. Le provee una dosis basal de insulina de acción breve o de acción rápida por hora. Cuando usted come o cuando el azúcar en la sangre es alto, usted decide la dosis de insulina y la bomba se la administra.\nLa bomba provee la insulina a través de un tubo plástico delgado, ubicado de manera semipermanente en la capa grasa que se encuentra debajo de su piel, por lo general en el área del estómago o en la parte de atrás de su brazo.\n\nVentajas de las bombas de insulina\n1.- Han demostrado mejorar el nivel de A1c.\n2.- Administran la insulina de manera más precisa.\n3.- Administran la insulina de bolo de manera más fácil.\n4.- Eliminan los efectos impredecibles de la insulina de acción intermedia o de acción prolongada.\n\nDesventajas de las bombas de insulina\n1.- Pueden causar aumento de peso.\n2.- Pueden ser caras.\n3.- Riesgo de infección.\n4.- Pueden ser un recordatorio físico constante de que se tiene diabetes."
+                ],
+                "INHALADOR": [
+                    "La insulina inhalada se administra por medio de un inhalador oral que suministra insulina de acción ultrarrápida al comienzo de las comidas. La insulina inhalada se usa con una insulina inyectable de acción prolongada.\n\nVentajas de la insulina inhalada\n1.- No es una inyección.\n2.- Actúa muy rápido y es tan eficaz como las insulinas inyectables de acción rápida.\n3.- Se puede administrar al principio de las comidas.\n4.- Potencialmente, hay un menor riesgo de presentar un nivel bajo de azúcar en la sangre.\n5.- Menos aumento de peso.\n6.- El dispositivo para inhalar es pequeño.\n\nDesventajas de la insulina inhalada\n1.- Podría causar tos leve o intensa.\n2.- Puede que sea más cara.\n3.- Aún requiere inyecciones o una bomba para la insulina basal.\n4.- La administración de la dosis no es tan precisa."
+                ]
+            }
+            
+            explicacion = "Lo siento, ese método de aplicación de insulina no me es familiar :( o tal vez si lo reformulas podría comprenderlo"
+            if metodo in explicaciones:
+                explicacion = random.choice(explicaciones[metodo])
+            
+            dispatcher.utter_message(explicacion)
+            dispatcher.utter_message("\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/type-1-4-ways-to-take-insulin.html")
+                
+        except Exception as e:
+            estado = "FALLO"
+            error = "El servidor de acciones está experimentando un problema. Intenta de nuevo más tarde."
+            dispatcher.utter_message(error)
+              
+        bitacoraBD("action_administracion_insulina", estado)
+        return [SlotSet("metodo", None)]
+    
+class ActionMetodoDeteccion(Action):
+    
+    def name(self) -> Text:
+        return "action_metodo_deteccion"
+    
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+                
+        try:
+            estado = "EXITO"
+            metodo = tracker.get_slot("metodo_deteccion")
+            metodo = metodo.upper()
+            
+            explicaciones = {
+                "A1C": [
+                    "Esta prueba mide el nivel promedio de azúcar en la sangre de los 2 o 3 meses anteriores. Los valores de A1C inferiores a 5.7 % son normales, los valores entre 5.7 y 6.4 % indican que tiene prediabetes y los valores de 6.5 % o mayores indican que tiene diabetes."
+                ],
+                "AYUNAS": [
+                    "Esta prueba mide el nivel de azúcar en la sangre después de ayunar (no comer) toda la noche. Los valores de azúcar en la sangre en ayunas de 99 mg/dl o menores son normales, los de 100 a 125 mg/dl indican que tiene prediabetes y los de 126 mg/dl o mayores indican que tiene diabetes."
+                ],
+                "TOLERANCIA": [
+                    "Esta prueba mide sus niveles de azúcar en la sangre antes y después de beber un líquido que contiene glucosa. Tendrá que ayunar (no comer) la noche anterior a la prueba y le extraerán sangre para determinar sus niveles de azúcar en la sangre en ayunas. Luego tendrá que beber el líquido y le revisarán los niveles de azúcar en la sangre 1 hora, 2 horas y posiblemente 3 horas después. Los valores de azúcar en la sangre de 140 mg/dl o menores a las 2 horas se consideran normales, los valores de 140 a 199 mg/dl indican que tiene prediabetes y los de 200 mg/dl o mayores indican que tiene diabetes."
+                ],
+                "NO PROGRAMADA": [
+                    "Esta prueba mide su nivel de azúcar en la sangre en el momento en que se hace la prueba. Puede hacerse esta prueba en cualquier momento y no es necesario que esté en ayunas (sin comer) antes de hacérsela. Los valores de azúcar en la sangre de 200 mg/dl o mayores indican que tiene diabetes."
+                ]
+            }
+            
+            explicacion = "Lo siento, ese método de detección de diabetes no me es familiar :( o tal vez si lo reformulas podría comprenderlo"
+            if metodo in explicaciones:
+                explicacion = random.choice(explicaciones[metodo])
+            
+            dispatcher.utter_message(explicacion)
+            dispatcher.utter_message("\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/getting-tested.html")
+            
+            if metodo == "NO PROGRAMADA":
+                dispatcher.utter_message(image="https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/PruebaNOprogramada.png")
+                dispatcher.utter_message("Si su médico cree que usted tiene diabetes tipo 1, es posible que también le haga un análisis de autoanticuerpos (sustancias que indican si su cuerpo se está atacando a sí mismo) que frecuentemente están presentes en la diabetes tipo 1, pero no en la tipo 2. También le puede hacer un análisis de cetonas en la orina, el cual sirve para indicar que se trata de diabetes tipo 1 y no de diabetes tipo 2. Las cetonas se producen cuando su cuerpo quema grasas como fuente de energía.")
+                
+        except Exception as e:
+            estado = "FALLO"
+            error = "El servidor de acciones está experimentando un problema. Intenta de nuevo más tarde."
+            dispatcher.utter_message(error)
+        
+        bitacoraBD("action_administracion_insulina", estado)
+        return [SlotSet("metodo_deteccion", None)]
+
+class ActionDatoEntrenamiento(Action):
+    
+    def name(self) -> Text:
+        return "action_dato_entrenamiento"
+    
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+              
+        ultimo_mensaje = tracker.latest_message.get("text")
+        estado = "EXITO"
+        try:
+            conexion = mysql.connector.connect(
+                host="localhost",
+                user="root",
+                password="root",
+                database="ServidorRasa"
+            )
+
+            cursor = conexion.cursor()
+
+            fecha_hora = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+            sql = "INSERT INTO Entrenamiento_IA (fecha_hora, pregunta) VALUES (%s, %s)"
+            valores = (fecha_hora, ultimo_mensaje)
+
+            cursor.execute(sql, valores)
+
+            conexion.commit()
+
+            cursor.close()
+            conexion.close()
+        
+        except Exception as e:
+            estado = "FALLO"
+            print("Error: ", e)    
+            
+        bitacoraBD("action_dato_entrenamiento", estado)
         return []
+    
+class ActionCausasDiabetes(Action):
+    
+    def name(self) -> Text:
+        return "action_causas_diabetes"
+    
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+                
+        try:
+            estado = "EXITO"
+            tipo = tracker.get_slot("tipo")
+            tipo = tipo.upper()
+            
+            if tipo == "1":
+                tipo = "I"
+            elif tipo == "2":
+                tipo = "II"
+            
+            explicaciones = {
+                "I": [
+                    "Se piensa que la diabetes tipo 1 es causada por una reacción autoinmunitaria (el cuerpo se ataca a sí mismo por error) que destruye las células del páncreas que producen la insulina. Estas células se llaman células beta. Este proceso puede suceder durante meses o años antes de que aparezca algún síntoma. Algunas personas tienen ciertos genes (rasgos que se pasan de padres a hijos) que hacen que sea más probable que presenten diabetes tipo 1; sin embargo, muchas no la tendrán aunque tengan los genes. También se cree que la exposición a un desencadenante en el ambiente, como un virus, podría tener algo que ver con la diabetes tipo 1. La alimentación y los hábitos de estilo de vida no causan la diabetes tipo 1.\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/what-is-type-1-diabetes.html",
+                    "No está del todo claro qué causa la diabetes tipo 1, pero sabemos que la alimentación y los hábitos relacionados con el estilo de vida no la provocan. Se cree que el tipo 1 es el resultado de una respuesta autoinmunitaria, en la que el cuerpo ataca las células del páncreas que producen insulina. La insulina es una hormona que funciona como una llave que le permite al azúcar en la sangre entrar a las células del cuerpo para ser usado como energía. Algunas veces las infecciones causadas por un virus parecen desencadenar la respuesta autoinmunitaria. Muchas personas con diabetes tipo 1 tienen familiares con este tipo de diabetes, pero la mayoría no. FUENTE: https://www.cdc.gov/diabetes/spanish/basics/diabetes-type-1-diagnosis.html"
+                ],
+                "II": [
+                    "El páncreas produce una hormona llamada insulina, que actúa como una llave que permite que el azúcar en la sangre entre a las células del cuerpo para que estas la usen como energía. Si usted tiene diabetes tipo 2, las células no responden de manera normal a la insulina; a esto se lo llama resistencia a la insulina. Para tratar de hacer que las células respondan, el páncreas produce más insulina, pero no podrá mantener el ritmo y los niveles de azúcar en su sangre subirán, lo cual crea las condiciones propicias para la prediabetes y la diabetes tipo 2. Tener niveles altos de azúcar en la sangre es dañino para el cuerpo y puede causar otros problemas de salud graves, como enfermedad del corazón, pérdida de la visión y enfermedad de los riñones.\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/type2.html"
+                ]
+            }
+            
+            explicacion = "Lo siento, proporcionaste un tipo de diabetes NO valido"
+            if tipo in explicaciones:
+                explicacion = random.choice(explicaciones[tipo])
+            
+            dispatcher.utter_message(explicacion)
+                            
+        except Exception as e:
+            estado = "FALLO"
+            error = "El servidor de acciones está experimentando un problema. Intenta de nuevo más tarde."
+            dispatcher.utter_message(error)
+        
+        bitacoraBD("action_causas_diabetes", estado)
+        return [SlotSet("tipo", None)]
+    
+class ActionSintomasDiabetes(Action):
+    
+    def name(self) -> Text:
+        return "action_sintomas_diabetes"
+    
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+                
+        try:
+            estado = "EXITO"
+            tipo = tracker.get_slot("tipo")
+            tipo = tipo.upper()
+            
+            if tipo == "1":
+                tipo = "I"
+            elif tipo == "2":
+                tipo = "II"
+            
+            explicaciones = {
+                "I": [
+                    "Pueden pasar varios meses o años antes de que se destruyan suficientes células beta y se noten los síntomas de la diabetes tipo 1. Estos síntomas pueden aparecer en apenas unas semanas o unos meses. Una vez que aparecen, pueden ser intensos. Algunos síntomas de la diabetes tipo 1 son similares a los de otras afecciones. No adivines: si crees que podrías tener diabetes tipo 1, ve a tu médico de inmediato para que te haga una prueba del nivel de azúcar en la sangre. La diabetes que no se trata puede llevar a problemas de salud muy graves, incluso mortales.\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/what-is-type-1-diabetes.html"
+                ],
+                "II": [
+                    "Los síntomas de la diabetes tipo 2 generalmente van apareciendo a lo largo de varios años y pueden estar presentes durante mucho tiempo sin que se noten (a veces no habrá ningún síntoma notorio). Y debido a que los síntomas pueden ser difíciles de identificar, es importante saber cuáles son los factores de riesgo y que vea a su médico para que le haga un análisis de sangre si tiene alguno."
+                ]
+            }
+            
+            explicacion = "Lo siento, proporcionaste un tipo de diabetes NO valido"
+            if tipo in explicaciones:
+                explicacion = random.choice(explicaciones[tipo])
+            
+            dispatcher.utter_message(explicacion)
+                            
+        except Exception as e:
+            estado = "FALLO"
+            error = "El servidor de acciones está experimentando un problema. Intenta de nuevo más tarde."
+            dispatcher.utter_message(error)
+        
+        bitacoraBD("action_sintomas_diabetes", estado)
+        return [SlotSet("tipo", None)]
+    
+class ActionEdadDiabetes(Action):
+    
+    def name(self) -> Text:
+        return "action_edad_diabetes"
+    
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+                
+        try:
+            estado = "EXITO"
+            tipo = tracker.get_slot("tipo")
+            tipo = tipo.upper()
+            
+            if tipo == "1":
+                tipo = "I"
+            elif tipo == "2":
+                tipo = "II"
+            
+            explicaciones = {
+                "I": [
+                    "La edad en que con mayor frecuencia se diagnostica la diabetes tipo 1 es alrededor de los 13 o 14 años, pero hay personas que pueden recibir el diagnóstico cuando tienen una edad mucho menor (incluso bebés) o mayor (incluso más de 40 años).\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/diabetes-type-1-diagnosis.html"
+                ],
+                "II": [
+                    "La diabetes tipo 2 generalmente aparece en personas de más de 45 años, pero está apareciendo cada vez más en los niños, los adolescentes y los adultos jóvenes.\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/type2.html"
+                ]
+            }
+            
+            explicacion = "Lo siento, proporcionaste un tipo de diabetes NO valido"
+            if tipo in explicaciones:
+                explicacion = random.choice(explicaciones[tipo])
+            
+            dispatcher.utter_message(explicacion)
+                            
+        except Exception as e:
+            estado = "FALLO"
+            error = "El servidor de acciones está experimentando un problema. Intenta de nuevo más tarde."
+            dispatcher.utter_message(error)
+        
+        bitacoraBD("action_edad_diabetes", estado)
+        return [SlotSet("tipo", None)]
+
+class ActionManejarDiabetes(Action):
+    
+    def name(self) -> Text:
+        return "action_manejar_diabetes"
+    
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+                
+        try:
+            estado = "EXITO"
+            tipo = tracker.get_slot("tipo")
+            tipo = tipo.upper()
+            
+            if tipo == "1":
+                tipo = "I"
+            elif tipo == "2":
+                tipo = "II"
+            
+            explicaciones = {
+                "I": [
+                    "Si tienes diabetes tipo 1, deberás ponerte inyecciones de insulina (o usar una bomba de insulina) todos los días para manejar los niveles de azúcar en la sangre y darle a tu cuerpo la energía que necesita. La insulina no se puede tomar en forma de pastilla porque el ácido del estómago la destruiría antes de llegar al torrente sanguíneo. Tu médico trabajará contigo para determinar el tipo y la dosis de insulina más eficaces para ti. También necesitarás medirte el nivel de azúcar en la sangre con regularidad. Pregúntale a tu médico con qué frecuencia deberás chequearlo y cuál es el nivel de azúcar en la sangre que deberías tener. Mantener los niveles de azúcar en la sangre lo más cerca posible de los valores deseados te ayudará a prevenir o retrasar las complicaciones relacionadas con la diabetes. El estrés es parte de la vida, pero puede hacer que el manejo de la diabetes sea más difícil, lo cual incluye manejar los niveles de azúcar en la sangre y ocuparse de los cuidados diarios de la diabetes. Hacer actividad física regularmente, dormir lo suficiente y hacer ejercicios de relajación pueden ayudar.\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/what-is-type-1-diabetes.html"
+                ],
+                "II": [
+                    "Es posible que pueda manejar la diabetes tipo 2 con una alimentación saludable y con actividad física o que su médico le recete insulina, otro medicamento inyectable o medicamentos orales para la diabetes para ayudarlo a controlar los niveles de azúcar en la sangre y evitar las complicaciones. Si se inyecta insulina o toma otros medicamentos, aún necesitará alimentarse de manera saludable y hacer actividad física. También es importante que mantenga la presión arterial y el colesterol bajo control y que se haga las pruebas necesarias de detección. Deberá revisarse el nivel de azúcar en la sangre regularmente. Pregúntele al médico con qué frecuencia se los debe revisar y cuáles son los valores en los que deben estar. Mantener los niveles de azúcar en la sangre lo más cercanos posible a los valores objetivo lo ayudará a prevenir o retrasar las complicaciones relacionadas con la diabetes. El estrés es parte de la vida, pero puede hacer que sea más difícil manejar la diabetes, por ejemplo, controlar los niveles de azúcar en la sangre y ocuparse de los cuidados diarios que requiere la diabetes. Hacer actividad física regularmente, dormir lo suficiente y hacer ejercicios de relajación puede ayudar.\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/type2.html"
+                ]
+            }
+            
+            explicacion = "Lo siento, proporcionaste un tipo de diabetes NO valido"
+            if tipo in explicaciones:
+                explicacion = random.choice(explicaciones[tipo])
+            
+            dispatcher.utter_message(explicacion)
+                            
+        except Exception as e:
+            estado = "FALLO"
+            error = "El servidor de acciones está experimentando un problema. Intenta de nuevo más tarde."
+            dispatcher.utter_message(error)
+        
+        bitacoraBD("action_edad_diabetes", estado)
+        return [SlotSet("tipo", None)]
+
+def bitacoraBD(operacion, estado):
+    try:
+        conexion = mysql.connector.connect(
+            host="localhost",
+            user="root",
+            password="root",
+            database="ServidorRasa"
+        )
+
+        cursor = conexion.cursor()
+
+        fecha_hora = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+        sql = "INSERT INTO Operaciones (nombre_operacion, fecha_hora, estado) VALUES (%s, %s, %s)"
+        valores = (operacion, fecha_hora, estado)
+
+        cursor.execute(sql, valores)
+
+        conexion.commit()
+
+        cursor.close()
+        conexion.close()
+        
+    except Exception as e:
+        print("Error: ", e)        
