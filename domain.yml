@@ -12,7 +12,6 @@ intents:
 - conocer_cura
 - conocer_funcionalidades
 - controlar_diabetes
-- dar_alimentos
 - dar_edad
 - dar_estatura
 - dar_genero
@@ -110,6 +109,57 @@ intents:
 - preguntar_efectos
 - causas_diabetes_por_tipo
 - manejar_diabetes_tipo
+- cantidad_carbohidratos
+- por_que_cuidar_carbohidratos
+- alimentos_con_carbohidratos
+- dar_buenos_habitos
+- recomendar_ejercicio
+- comenzar_ejercicio
+- excusas_ejercicio
+- recomendacion_ejercicio_diabetes
+- como_mido_azucar
+- explicacion_sube_baja_azucar
+- explica_cetonas
+- explica_cetosis
+- impacto_carbohidratos
+- uso_glucometro
+- quienes_deben_hacer_prueba_a1c
+- interpretar_resultado_prueba_a1c
+- factores_influyen_prueba_a1c
+- factores_riesgo_retinopatia
+- etapas_retinopatia
+- diagnostico_retinopatia
+- tratamiento_retinopatia
+- define_presion_arterial
+- diagnostico_presion_arterial
+- tipos_presion_alta
+- preocuparse_presion_alta
+- tratamiento_hipertension
+- presion_baja
+- riesgo_hipertension
+- dieta_dash
+- explicar_colesterol
+- tipos_colesterol
+- causas_colesterol_alto
+- riesgo_colesterol_alto
+- problemas_causados_colesterol_alto
+- saber_colesterol_alto
+- bajar_colesterol
+- medicamentos_colesterol
+- tipos_medicamentos_colesterol
+- nivel_colesterol_HDL_saludable
+- elevar_nivel_colesterol_HDL
+- afectar_nivel_colesterol_HDL
+- afectar_nivel_colesterol_LDL
+- nivel_colesterol_LDL
+- reducir_colesterol_LDL
+- significado_niveles_colesterol
+- ataque_corazon_sintomas
+- sintomas_ataque_corazon
+- causas_ataque_corazon
+- factores_riesgo_ataque_cardiaco
+- complicaciones_ataque_cardiaco
+- prevencion_ataque_cardiaco
 entities:
 - tipo
 - nombre
@@ -378,6 +428,7 @@ responses:
           No fumar, 
           y Levantarse unos minutos después de un periodo prolongado de estar sentado. FUENTE: Instituto Nacional de Salud Pública https://www.insp.mx/avisos/3652-diabetes-en-mexico.html'
   - text: "Hacer actividad física disminuye el riesgo de presentar la diabetes tipo 2 porque ayuda al cuerpo a usar mejor la insulina, lo cual disminuye la resistencia hacia ella. La actividad física mejora la salud de muchas otras formas también, que van desde controlar la presión hasta estimular la salud mental. FUENTE: https://www.cdc.gov/diabetes/spanish/prevent-type-2/type-2-kids.html"
+  - text: "En este PDF se muestra un plan de prevención de diabetes, espero te sirva https://www.cdc.gov/diabetes/spanish/pdfs/Preventing-Diabetes-ES-508.pdf"
   utter_buenos_habitos:
   - text: Es importante tener buenos hábitos tanto físicos como alimenticios para evitar caer en una zona de riesgo.
   - text: Considero que es de suma importancia el tener buenos hábitos para no estar en posibilidad de contraer este padecimiento
@@ -454,6 +505,15 @@ responses:
   - text: Considera probar las semillas de fenogreco. Son fáciles de agregar a tu dieta y pueden ayudar a regular los niveles de glucosa en la sangre.
   - text: Es simple, mantener un peso saludable mejorará tu salud y te evitará futuras complicaciones. El control de peso también promueve niveles saludables de azúcar en la sangre y ha demostrado reducir tu riesgo de desarrollar diabetes. Incluso una reducción del 7% en el peso corporal puede disminuir tu riesgo de desarrollar diabetes hasta en 58%, y parece funcionar aún mejor que el medicamento. Es más, esta reducción en los riesgos se puede mantener con los años. También debes estar consciente de tu cintura, ya que posiblemente es el factor más importante relacionado con el peso para calcular tu riesgo de diabetes. Una medición de 35 pulgadas (88.9 cm) o más para las mujeres y 40 pulgadas (101.6 cm) o más para los hombres se relaciona con un riesgo incrementado de desarrollar resistencia a la insulina, niveles altos de azúcar en la sangre y diabetes tipo 2. Tener una medida saludable de la cintura puede incluso ser más importante que tu peso general.
   - text: Mantener un peso y una cintura saludables te ayudará a controlar los niveles de azúcar en la sangre y disminuir tu riesgo de desarrollar diabetes.
+  - text: "La actividad física también ayuda a controlar los niveles de azúcar en la sangre y reduce el riesgo de tener enfermedad cardiaca y daño en los nervios. Algunos beneficios adicionales incluyen: Mantener un peso saludable. Bajar de peso, si lo necesita. Sentirse más feliz. Dormir mejor. Mejorar la memoria. Controlar la presión arterial. Reducir el colesterol LDL (“malo”) y aumentar el colesterol HDL (“bueno”). FUENTE: https://www.cdc.gov/diabetes/spanish/living/beactive.html"
+  - text: "Las decisiones que tome sobre su estilo de vida a menudo pueden ayudarlo a manejar los niveles de azúcar en la sangre. Tener una alimentación saludable con muchas frutas y verduras, mantener un peso saludable y hacer ejercicio con regularidad puede ayudar. FUENTE: https://www.cdc.gov/diabetes/spanish/living/manage-blood-sugar.html"
+  - text: "Comer en horarios regulares y no saltarse comidas."
+  - text: Escoger alimentos bajos en calorías, grasas saturadas, grasas trans, azúcar y sal.
+  - text: Mantener un registro de lo que coma y beba y del ejercicio que haga (para manejar el peso y controlar el nivel de azúcar en la sangre).
+  - text: Beber agua en lugar de jugo o gaseosas.
+  - text: Limitar el consumo de alcohol; beber demasiado alcohol puede causar niveles bajos de azúcar en la sangre.
+  - text: Para darse un gusto con algo dulce, escoger fruta en lugar de golosinas.
+  - text: Usar el control de las porciones (por ejemplo, servirse un cuarto del plato con carne u otras proteínas, un cuarto con alimentos con almidón y la mitad con verduras sin almidón.
   utter_default:
   - text: Lo siento, no comprendí eso último, ¿podrías reformularlo por favor?
   - text: Lo siento :/ no capté bien eso último que escribiste, ¿podrías reformularlo por favor?
@@ -499,6 +559,9 @@ responses:
   - text: Coma alimentos que sean más bajos en sodio.
   - text: Coma más frutas y vegetales y Tome sus medicamentos según las indicaciones.
   - text: La actividad física puede ayudar a prevenir la enfermedad de los riñones.
+  - text: "Reduzca el consumo de sal/sodio. Esta es una buena medida para la diabetes y es muy importante para la enfermedad crónica de los riñones. Con el tiempo, los riñones pierden la capacidad de controlar el equilibrio de sodio y agua. Consumir menos sodio en la alimentación ayudará a reducir la presión arterial y la acumulación de líquido en el cuerpo, lo cual es común en las personas con enfermedad de los riñones. FUENTE: https://www.cdc.gov/diabetes/spanish/living/what-to-eat.html"
+  - text: "Concéntrese en comer alimentos frescos, hechos en casa y coma solo cantidades pequeñas de comida de restaurante o envasada, que generalmente contiene mucho sodio. Fíjese que en las etiquetas nutricionales diga bajo en sodio (5 % o menos). FUENTE: https://www.cdc.gov/diabetes/spanish/living/what-to-eat.html"
+  - text: "A continuación, le ofrecemos solo algunos ejemplos de alimentos que son buenos tanto para la diabetes como para la enfermedad crónica de los riñones. Su dietista le puede dar muchas más sugerencias y ayudarlo a encontrar recetas de comidas sabrosas: Frutas: bayas, uvas, cerezas, manzanas, ciruelas. Verduras: coliflor, cebolla, berenjena, nabo. Proteínas: carnes magras (ave, pescado), huevos, mariscos sin sal. Carbohidratos: pan blanco, bagels, panecillos para sándwich, galletas tipo cracker sin sal, pasta. Bebidas: agua, gaseosas de dieta claras, té sin endulzar. Este es un ejemplo de cómo la alimentación para la diabetes y la alimentación para la enfermedad crónica de los riñones pueden funcionar bien juntas: Si bebe jugo de naranja para tratar los niveles bajos de azúcar en la sangre, cámbielo por jugo de manzana o uva, que no dañan los riñones. Obtendrá el mismo efecto en su nivel de azúcar en la sangre, pero con mucho menos potasio. FUENTE: https://www.cdc.gov/diabetes/spanish/living/what-to-eat.html"
   utter_relacion_diabetes_nervios:
   - text: "Los niveles altos de azúcar en la sangre pueden causar daños en los nervios, lo que se llama neuropatía diabética. Usted puede prevenir o desacelerar el avance de la enfermedad al mantener el nivel de azúcar en la sangre tan cerca de sus valores deseados como sea posible, y al mantener un estilo de vida saludable. FUENTE: Centros para el Control y la Prevención de Enfermedades https://www.cdc.gov/diabetes/spanish/resources/features/diabetes-nerve-damage.html"
   - text: "Los daños en los nervios son una complicación posible de tener niveles altos de azúcar en la sangre durante mucho tiempo. Los niveles altos de azúcar en la sangre causan daños en los nervios y estos podrían dejar de enviar mensajes a diferentes partes del cuerpo. Los daños en los nervios pueden causar problemas de salud, desde adormecimiento leve a dolor que dificulta las actividades normales. FUENTE: Centros para el Control y la Prevención de Enfermedades https://www.cdc.gov/diabetes/spanish/resources/features/diabetes-nerve-damage.html"
@@ -515,6 +578,7 @@ responses:
   - text: "Hay cuatro tipos principales de daños en los nervios. Usted puede tener más de un tipo. Los síntomas dependen del tipo de daños en los nervios que tenga y cuáles nervios son afectados. Los tipos son: Daños en los nervios periféricos, Daños en los nervios autónomos, Daños en los nervios proximales y Daños en los nervios focales"
   utter_relacion_diabetes_pies:
   - text: "Si usted tiene diabetes, esta es una manera de seguir en buen pie: revísese los pies todos los días—aunque sienta que estén bien—y vea a su médico si tienen algún corte o ampolla que no cicatrice. Aproximadamente la mitad de las personas con diabetes tienen algún tipo de neuropatía diabética (daño a los nervios). El daño a los nervios puede ocurrir en cualquier parte del cuerpo, pero los nervios de los pies y las piernas son los que más frecuentemente se ven afectados. El daño a los nervios puede causar la pérdida de sensación en los pies. El daño a los nervios, junto con la mala circulación de la sangre —otra complicación de la diabetes— lo pone en riesgo de que se le hagan úlceras (llagas o heridas) en los pies que pueden infectarse o no cicatrizar bien. Si una infección no mejora con tratamiento, es posible que se le deba amputar (quitar mediante una operación) ese pie, dedo del pie o parte de la pierna para evitar que la infección se extienda y salvarle la vida. FUENTE: Centros para el Control y la Prevención de Enfermedades https://www.cdc.gov/diabetes/spanish/living/healthy-feet.html"
+  - text: "La diabetes es una de las grandes causas de amputación de los dedos de los pies, los pies y las piernas. Muchas de estas amputaciones podrían prevenirse con el cuidado diario de los pies. Si usted tiene diabetes, puede perder la sensibilidad en los pies. Cuando pasa eso, puede ser difícil darse cuenta si tiene problemas en los pies, como callos, cortes, llagas o ampollas. La diabetes puede reducir la cantidad de sangre que llega los pies. La falta de sensibilidad y la menor circulación sanguínea pueden hacer que las llagas tomen más tiempo en sanar y llevar a problemas en los pies. FUENTE: https://www.cdc.gov/diabetes/spanish/resources/factsheets/diabetes-and-healthy-feet.html"
   utter_pre_cuidados_pies:
   - text: "Cuando se revisa los pies todos los días, puede descubrir los problemas temprano y hacérselos tratar de inmediato. El tratamiento temprano reduce inmensamente el riesgo de amputación. A continuación te proporciono unos consejos para mantener tus pies sanos. FUENTE: Centros para el Control y la Prevención de Enfermedades https://www.cdc.gov/diabetes/spanish/living/healthy-feet.html"
   utter_cuidados_pies:
@@ -532,6 +596,7 @@ responses:
   utter_relacion_diabetes_dientes:
   - text: "La buena salud de la boca es importante para todos, pero los niveles altos de azúcar en la sangre pueden hacer que sea más difícil mantener la boca sana. Si usted tiene diabetes, cuidarse los dientes es aún más importante. Los niveles altos de azúcar en la sangre pueden debilitar los glóbulos blancos. Estos son el modo principal que tiene su cuerpo para luchar contra las infecciones que se pueden producir en la boca. Pero ¡siga con una sonrisa en la cara! Al manejar la diabetes, puede manejar más que los niveles de azúcar en la sangre, de hecho, lo ayuda a prevenir la enfermedad de las encías y otras infecciones en la boca. FUENTE: https://www.cdc.gov/diabetes/spanish/living/diabetes-oral-health.html"
   - text: "Si los niveles de azúcar están altos en la sangre, también lo están en la saliva. Las bacterias que hay en la placa dental (una sustancia pegajosa) se alimentan del azúcar. Algunas de estas bacterias pueden causar caries dentales y enfermedad de las encías. Si las caries dentales no se tratan, pueden causar la caída de los dientes. Si usted tiene diabetes, la enfermedad de las encías puede ser más grave y tomar más tiempo para sanar. Y si usted tiene enfermedad de las encías, la diabetes puede ser más difícil de manejar. Este es un panorama general de cómo la diabetes puede causar estragos en la salud oral: Usted podría tener menos saliva, lo cual causa la sensación de tener la boca seca. (Algunos medicamentos también causan sequedad en la boca.) Se le podrían inflamar las encías, y sangrar frecuentemente (signos de enfermedad de las encías). Las infecciones en la boca podrían tomar más tiempo en sanar. https://www.cdc.gov/diabetes/spanish/living/diabetes-oral-health.html"
+  - text: "La diabetes está vinculada a la enfermedad de las encías, también llamada enfermedad periodontal. La enfermedad de las encías puede llevar a la pérdida de dientes. Si las personas que no tienen la diabetes controlada reciben tratamiento por enfermedad de las encías, su nivel de azúcar en la sangre bajará con el tiempo. FUENTE: https://www.cdc.gov/diabetes/spanish/resources/factsheets/diabetes-and-healthy-teeth.html"
   utter_pre_cuidados_dientes:
   - text: "Es importante visitar regularmente al dentista para prevenir los problemas. Siga su calendario para el cuidado de la diabetes. Mantenga sus citas dentales periódicas de limpieza profesional, radiografías y chequeos. Pregúntele al dentista con qué frecuencia debería hacerse un chequeo de los dientes. FUENTE: https://www.cdc.gov/diabetes/spanish/living/diabetes-oral-health.html"
   utter_cuidados_dientes:
@@ -575,6 +640,7 @@ responses:
   - text: "Su médico le indicará uno o más de los siguientes análisis de sangre para confirmar el diagnostico: A1C, Azúcar en la sangre en ayunas, Prueba de tolerancia a la glucosa y Prueba de azúcar en la sangre no programada"
   utter_relacion_diabetes_oidos:
   - text: "A lo largo del tiempo, los niveles altos de azúcar en la sangre pueden dañar los vasos sanguíneos pequeños y los nervios del oído interno, y los niveles bajos pueden dañar la forma en que las señales que envían los nervios del oído interno llegan al cerebro. Ambos tipos de daño a los nervios pueden causar pérdida auditiva. La pérdida auditiva es dos veces más común en las personas que tienen diabetes que en las personas de la misma edad que no la tienen. Incluso en las personas con prediabetes (niveles de azúcar en la sangre más altos de lo normal, pero no lo suficientemente altos todavía para tener diabetes tipo 2) las tasas de pérdida auditiva son 30 % más altas que en las personas con niveles de azúcar normales. FUENTE: https://www.cdc.gov/diabetes/spanish/living/diabetes-hearing-loss.html"
+  - text: "La diabetes daña los pequeños vasos sanguíneos del oído interno y el sistema vestibular, que es la parte del oído interno que ayuda al equilibrio. La diabetes puede hacer más difícil la llegada al cerebro de las señales relacionadas con la audición y el equilibrio. La pérdida auditiva es más frecuente en las personas con diabetes. Si tiene diabetes, aumentan sus probabilidades de tener una caída debido a daño en el sistema vestibular. FUENTE: https://www.cdc.gov/diabetes/spanish/resources/factsheets/healthy-ears.html"
   utter_pre_cuidados_oidos:
   - text: "FUENTE: https://www.cdc.gov/diabetes/spanish/living/diabetes-hearing-loss.html No se puede revertir la pérdida auditiva, pero usted puede seguir estos consejos para ayudar a protegerse los oídos:"
   utter_cuidados_oidos:
@@ -587,6 +653,7 @@ responses:
   - text: "La pérdida auditiva puede suceder lentamente, por lo que puede ser difícil de notar. A menudo, sus amigos y familiares notarán su pérdida auditiva antes que usted. Los signos de pérdida auditiva incluyen: Dificultad para escuchar la voz de los niños pequeños y de otras personas que hablan bajito. Problemas para escuchar en lugares ruidosos, como en un restaurante bullicioso. Subir el volumen de la televisión o de la radio a un nivel demasiado alto para los que estén cerca. Los problemas con el oído interno pueden también afectar el equilibrio. FUENTE: https://www.cdc.gov/diabetes/spanish/living/diabetes-hearing-loss.html"
   utter_relacion_diabetes_ojos:
   - text: "Las enfermedades de los ojos que pueden afectar a las personas con diabetes incluyen retinopatía diabética, edema macular (que generalmente aparece junto a la retinopatía diabética), cataratas y glaucoma. Todas estas pueden causar pérdida de la visión, pero el diagnóstico y tratamiento temprano puede ayudar significativamente a protegerle la vista. Los problemas de los ojos son comunes entre las personas con diabetes; no obstante, los tratamientos pueden ser muy eficaces. Solamente un médico de los ojos puede diagnosticar las enfermedades de los ojos, por esa razón, asegúrese de hacerse un examen de los ojos con dilatación al menos una vez al año. Mientras más pronto se detectan y tratan los problemas de los ojos, mejor es para su vista. FUENTE: https://www.cdc.gov/diabetes/spanish/living/diabetes-vision-loss.html"
+  - text: "La diabetes es la principal causa de ceguera en los adultos de 20 a 74 años. También es una significativa causa de ceguera en aquellos de 75 o mayores. Los problemas graves en los ojos son más frecuentes en las personas con diabetes. Los exámenes regulares de los ojos ayudan a que el especialista encuentre y trate los problemas de manera temprana para protegerle la vista. FUENTE: https://www.cdc.gov/diabetes/spanish/resources/factsheets/diabetes-and-healthy-eyes.html"
   utter_pre_cuidados_ojos:
   - text: "FUENTE: https://www.cdc.gov/diabetes/spanish/living/diabetes-vision-loss.html Usted puede proteger su visión y reducir las probabilidades de pérdida de visión tomando estas medidas:"
   utter_cuidados_ojos:
@@ -614,6 +681,38 @@ responses:
   - text: "Junto con las proteínas y las grasas, los carbohidratos son uno de los tres nutrientes principales que tienen los alimentos y las bebidas. Los carbohidratos que usted come tienen un efecto directo en el nivel de azúcar en la sangre. FUENTE: https://www.cdc.gov/diabetes/spanish/living/eat-well/diabetes-and-carbohydrates.html"
   utter_diabetes_comun:
   - text: "La diabetes mellitus o diabetes tipo II es la más común en personas mayores de 60 años; sin embargo, puede presentarse a cualquier edad. FUENTE: https://www.gob.mx/salud/prensa/547-en-mexico-12-4-millones-de-personas-viven-con-diabetes?idiom=es#:~:text=La%20diabetes%20mellitus%20o%20diabetes,puede%20presentarse%20a%20cualquier%20edad."
+  utter_cantidad_carbohidratos:
+  - text: "No hay una respuesta única que sea válida para todos: cada cuerpo es diferente. En promedio, alrededor del 45 % de las calorías que consumen las personas con diabetes deben provenir de carbohidratos. Una ración de carbohidratos es equivalente a 15 gramos por ración. Eso significa que la mayoría de las mujeres necesitan 3 a 4 raciones de carbohidratos (45 a 60 gramos) por comida, mientras que la mayoría de los hombres necesitan alrededor de 4 a 5 raciones de carbohidratos (60 a 75 gramos). Sin embargo, estas cantidades dependen de su edad, peso, nivel de actividad y medicamentos para la diabetes. Asegúrese de trabajar con un nutricionista para establecer su propia meta de carbohidratos. Si usted usa insulina, pregunte sobre opciones para ajustar su dosis de insulina a la cantidad de alimentos que coma en las comidas y refrigerios. FUENTE: https://www.cdc.gov/diabetes/spanish/living/eat-well/diabetes-and-carbohydrates.html"
+  utter_conteo_carbohidratos:
+  - text: "El conteo de los carbohidratos puede ayudar a mantener el nivel de azúcar en la sangre dentro de su margen objetivo, lo cual lo puede ayudar a: Mantenerse sano por más tiempo. Sentirse mejor y mejorar su calidad de vida. Prevenir o demorar las complicaciones de la diabetes, como enfermedades cardiacas, accidentes cerebrovasculares, enfermedad de los riñones, ceguera, daño en los nervios y amputación de un miembro inferior (operación para retirar una parte del cuerpo). FUENTE: https://www.cdc.gov/diabetes/spanish/living/eat-well/diabetes-and-carbohydrates.html"
+  utter_explica_cetonas:
+  - text: "Cuando no hay suficiente azúcar en el cuerpo para realizar actividades, el hígado libera suficiente azúcar para que partes del cuerpo como el cerebro, los glóbulos rojos y partes de los riñones puedan usarla. Para el resto del cuerpo, el hígado produce un ácido llamado cetonas que procesa la grasa corporal para obtener energía. FUENTE: https://www.cdc.gov/diabetes/spanish/living/manage-blood-sugar.html"
+  utter_explica_cetosis:
+  - text: "Si el azúcar en la sangre está en el rango normal, las cetonas generalmente no son dañinas. La cetosis ocurre cuando el nivel de cetonas en su sangre u orina es alto, pero no suficientemente alto para causar cetoacidosis. Usted puede tener cetosis si está haciendo una dieta baja en carbohidratos o está haciendo un ayuno. FUENTE: https://www.cdc.gov/diabetes/spanish/living/manage-blood-sugar.html"
+  utter_importancia_carbohidratos:
+  - text: "Los carbohidratos tienen un efecto directo en sus niveles de azúcar en la sangre. Junto con las proteínas y las grasas, los carbohidratos son uno de los tres nutrientes principales que tienen los alimentos y las bebidas. Si usted tiene diabetes, planificar lo que va a comer es muy importante. Hacer un recuento de los carbohidratos —sumar todos los carbohidratos en todo lo que coma o beba— es una herramienta que puede usar para manejar sus niveles de azúcar en la sangre. FUENTE: https://www.cdc.gov/diabetes/spanish/living/manage-blood-sugar.html"
+  utter_diagnostico_retinopatia:
+  - text: "Durante su examen de los ojos, el médico revisará qué tan bien puede ver detalles en letras o símbolos desde una distancia. El médico también se fijará en la retina y la parte de adentro de los ojos, y podría usar una tintura que le permite ver los vasos sanguíneos con filtraciones. Si resulta que usted tiene retinopatía diabética, es posible que el médico de los ojos quiera revisarle la vista más seguido que una vez al año. Si le diagnostican diabetes tipo 2, debería hacerse un examen de los ojos inmediatamente para ver si tiene retinopatía diabética. Si tiene diabetes tipo 1, debería hacerse este examen de los ojos dentro de los 5 años de su diagnóstico y con más regularidad después de eso, típicamente todos los años. Mientras antes reciba tratamiento para la retinopatía diabética, mejor funcionará ese tratamiento. FUENTE: https://www.cdc.gov/diabetes/spanish/living/diabetes-vision-loss.html"
+  utter_explica_presion_arterial:
+  - text: "La presión arterial es la fuerza de su sangre al empujar contra las paredes de sus arterias. Cada vez que su corazón late, bombea sangre hacia las arterias. Su presión arterial es más alta cuando su corazón late, bombeando la sangre. Esto se llama presión sistólica. Cuando su corazón está en reposo, entre latidos, su presión arterial baja. Esto se llama presión diastólica. La lectura de su presión arterial usa estos dos números. Por lo general, el número sistólico se coloca antes o por encima de la cifra diastólica. Por ejemplo, 120/80 significa una presión sistólica de 120 y una diastólica de 80. FUENTE: https://medlineplus.gov/spanish/highbloodpressure.html"
+  utter_cuidarse_hipertension:
+  - text: "Cuando su presión arterial se mantiene mucho tiempo alta, hace que el corazón bombee con más fuerza y trabaje demasiado, lo que puede ocasionar serios problemas de salud, como ataque cardiaco, accidente cerebrovascular, insuficiencia cardiaca, e insuficiencia renal. FUENTE: https://medlineplus.gov/spanish/highbloodpressure.html"
+  utter_presion_baja:
+  - text: "La presión arterial es la fuerza que ejerce la sangre contra las paredes de las arterias. Cada vez que el corazón late, bombea sangre hacia las arterias. Su presión arterial estará al nivel más elevado cuando el corazón late para bombear la sangre. A ésto se le llama presión sistólica. Cuando el corazón está en reposo, entre un latido y otro, la presión sanguínea disminuye. A ésto se le llama presión diastólica. La medición de su presión arterial utiliza estos dos valores. Ambos son importantes. Por lo general, se escriben uno arriba o antes del otro, como 120/80. Si su presión arterial es de 90/60 o menos, usted tiene presión arterial baja o hipotensión arterial. Algunas personas tienen la presión arterial baja en todo momento. No tienen síntomas y sus lecturas de presión bajas son normales para ellas. En otras, la presión cae por debajo de los valores normales por algún evento o cuadro clínico. Algunas personas pueden experimentar síntomas de baja presión cuando se ponen de pie demasiado rápidamente. La presión arterial baja es un problema sólo cuando causa mareos, desmayos o, en casos extremos, shock. FUENTE: https://medlineplus.gov/spanish/lowbloodpressure.html"
+  utter_define_colesterol:
+  - text: "El colesterol es una sustancia cerosa y parecida a la grasa que se encuentra en todas las células de su cuerpo. Su cuerpo necesita algo de colesterol para producir hormonas, vitamina D y sustancias que le ayuden a digerir los alimentos. Su cuerpo produce todo el colesterol que necesita. El colesterol también se encuentra en alimentos de origen animal, como yemas de huevo, carne y queso. Si tiene demasiado colesterol en la sangre, puede combinarse con otras sustancias en la sangre para formar placa. La placa se pega a las paredes de sus vasos sanguíneos. Esta acumulación se llama arterioesclerosis. Puede provocar enfermedad de las arterias coronarias, la que puede estrecharlas o incluso bloquearlas. FUENTE: https://medlineplus.gov/spanish/cholesterol.html"
+  utter_problemas_colesterol:
+  - text: "Si tiene grandes depósitos de placa en sus arterias, un trozo de placa puede romperse. Esto puede causar que se forme un coágulo de sangre. Si el coágulo es lo suficientemente grande, puede bloquear un poco o completamente el flujo de sangre en una arteria coronaria. Si el flujo de sangre rica en oxígeno al músculo cardíaco se reduce o se bloquea, puede causar angina (dolor de pecho) o un ataque al corazón. La placa también puede acumularse en otras arterias de su cuerpo, incluidas las arterias que llevan sangre rica en oxígeno a su cerebro y extremidades. Esto puede conducir a problemas como enfermedades de las arterias carótidas, accidente cerebrovascular y enfermedad arterial periférica. FUENTE: https://medlineplus.gov/spanish/cholesterol.html"
+  - text: "Si tiene un nivel alto de colesterol LDL, esto significa que tiene demasiado colesterol LDL en la sangre. Este LDL adicional, junto con otras sustancias, forma placa. La placa se acumula en sus arterias; lo que se conoce como arterioesclerosis. La enfermedad de las arterias coronarias ocurre cuando la acumulación de placa se encuentra en las arterias de su corazón. Hace que las arterias se endurezcan y se estrechen, lo que disminuye o bloquea el flujo de sangre a su corazón. Dado que su sangre transporta oxígeno a su corazón, esto significa que su corazón no podrá obtener suficiente oxígeno. Esto puede causar angina (dolor de pecho) o, si el flujo de sangre está completamente bloqueado, un ataque al corazón. FUENTE: https://medlineplus.gov/spanish/ldlthebadcholesterol.html"
+  utter_bajar_colesterol:
+  - text: "Puede bajar su colesterol mediante cambios en el estilo de vida saludables para el corazón. Estos incluyen un plan de alimentación saludable, control del peso y ejercicio regular. Si estos cambios en el estilo de vida no son suficientes, es posible que también deba tomar medicamentos. Hay varios tipos de medicamentos disponibles para reducir el colesterol, incluyendo estatinas. Si toma medicamentos para reducir el colesterol, aún debe continuar con los cambios en el estilo de vida. Algunas personas con hipercolesterolemia familiar pueden recibir un tratamiento llamado aféresis de lipoproteínas. Este tratamiento utiliza una máquina de filtrado para eliminar el colesterol malo (LDL) de la sangre. Luego, la máquina devuelve el resto de la sangre a la persona. FUENTE: https://medlineplus.gov/spanish/cholesterol.html"
+  utter_define_ataque_corazon:
+  - text: "Un ataque al corazón ocurre cuando el flujo de sangre al corazón se bloquea repentinamente. Sin la sangre que entra, el corazón no puede obtener oxígeno. Si no se trata rápidamente, el músculo cardíaco comienza a morir. Pero si recibe un tratamiento rápido, es posible que pueda prevenir o limitar el daño al músculo cardíaco. Es por eso que es importante conocer los síntomas y llamar al 911 si usted u otra persona los presenta. Debe llamar incluso si no está seguro de que sea un ataque al corazón. FUENTE: https://medlineplus.gov/spanish/heartattack.html"
+  - text: "El ataque cardíaco ocurre cuando se obstruye una arteria que lleva sangre y oxígeno al corazón. Los depósitos de grasa, que contienen colesterol, se acumulan con el tiempo y forman placas en las arterias del corazón. Si una placa se deteriora, puede formarse un coágulo de sangre. Los coágulos pueden obstruir las arterias y provocar un ataque cardíaco. Durante un ataque cardíaco, el tejido del músculo del corazón muere por la falta de flujo sanguíneo. El ataque cardíaco también se conoce como infarto de miocardio. Si se produce un ataque cardíaco, es necesario recibir tratamiento de inmediato a fin de evitar la muerte. Llama al 911 o busca atención médica de emergencia si crees que estás teniendo un ataque cardíaco. FUENTE: https://www.mayoclinic.org/es/diseases-conditions/heart-attack/symptoms-causes/syc-20373106"
+  utter_causas_ataque_corazon:
+  - text: "La enfermedad de las arterias coronarias causa la mayoría de los ataques cardíacos. En la enfermedad de las arterias coronarias, una o más de las arterias del corazón (coronarias) están obstruidas. Esto usualmente se debe a los depósitos de colesterol llamados placas. Las placas estrechan las arterias y disminuyen el flujo sanguíneo al corazón. Si se rompe una placa puede ocasionar un coágulo sanguíneo en el corazón. Se puede producir un ataque cardíaco por una obstrucción total o parcial de una arteria del corazón (coronaria). Una forma de clasificar los ataques cardíacos es si un electrocardiograma (o electrocardiografía) muestra algún cambio específico (elevación del segmento ST) que requiera un tratamiento invasivo de emergencia. El proveedor de atención médica puede usar los resultados del electrocardiograma para describir estos tipos de ataque cardíaco."
+  utter_prueba_prediabetes:
+  - text: "Claro, la prueba de la prediabetes la encuentras de manera online e interactiva en el siguiente enlace https://www.cdc.gov/prediabetes/spanish/risktest/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fdiabetes%2Fspanish%2Frisktest%2Findex.html"
 actions:
 - action_saludo
 - action_explica_tipos
@@ -638,4 +737,3 @@ forms:
     - peso
     - estatura
     - genero
-  

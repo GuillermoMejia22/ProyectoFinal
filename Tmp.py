@@ -1,6 +1,6 @@
 from owlready2 import *
 
-onto = get_ontology("OntologiaUAM.owx").load()
+onto = get_ontology("OntologiaPersonas.owl").load()
 
 # Listado de Clases
 def listadoClases():

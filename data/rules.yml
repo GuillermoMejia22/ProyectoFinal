@@ -94,11 +94,6 @@ rules:
   - rule: Di la dieta general de la diabetes
     steps:
     - intent: dieta_diabetes
-    - action: action_manda_imagen
-
-  - rule: Alimentos 
-    steps:
-    - intent: dar_alimentos
     - action: utter_buenos_alimentos
     - action: action_manda_imagen
 
@@ -538,6 +533,267 @@ rules:
     steps:
     - intent: usuario_da_sintoma_ajeno_diabetes
     - action: action_recomienda_algo_dolor
+
+  - rule: Cantidad de Carbohidratos
+    steps:
+    - intent: cantidad_carbohidratos
+    - action: utter_cantidad_carbohidratos
+
+  - rule: Cuidar Carbohidratos
+    steps:
+    - intent: por_que_cuidar_carbohidratos
+    - action: utter_conteo_carbohidratos
+
+  - rule: Alimentos con Carbohidratos
+    steps:
+    - intent: alimentos_con_carbohidratos
+    - action: action_manda_imagen
+
+  - rule: Dar Algunos Buenos Habitos
+    steps:
+    - intent: dar_buenos_habitos
+    - action: action_manda_imagen
+
+  - rule: Ejercicios Fisicos
+    steps:
+    - intent: recomendar_ejercicio
+    - action: action_manda_imagen
+
+  - rule: Comenzar Ejercicio
+    steps:
+    - intent: comenzar_ejercicio
+    - action: action_manda_imagen
+
+  - rule: Excusas Ejercicio
+    steps:
+    - intent: excusas_ejercicio
+    - action: action_manda_imagen
+  
+  - rule: Consideracion Ejercicio Diabetes
+    steps:
+    - intent: recomendacion_ejercicio_diabetes
+    - action: action_manda_imagen
+
+  - rule: Explica como se Mide el Azucar
+    steps:
+    - intent: como_mido_azucar 
+    - action: action_manda_imagen
+
+  - rule: Explica el Sube y Baja de Azucar
+    steps:
+    - intent: explicacion_sube_baja_azucar
+    - action: action_manda_imagen
+  
+  - rule: Explica que son las Cetonas 
+    steps:
+    - intent: explica_cetonas
+    - action: utter_explica_cetonas
+
+  - rule: Explica que es la Cetosis
+    steps:
+    - intent: explica_cetosis
+    - action: utter_explica_cetosis
+
+  - rule: Importancia Carbohidratos
+    steps:
+    - intent: impacto_carbohidratos
+    - action: utter_importancia_carbohidratos
+
+  - rule: Uso Glucometro
+    steps:
+    - intent: uso_glucometro
+    - action: action_manda_imagen
+
+  - rule: Di quienes se hacen la Prueba A1C
+    steps:
+    - intent: quienes_deben_hacer_prueba_a1c
+    - action: action_manda_imagen
+
+  - rule: Interpretar Resultados Prueba A1c
+    steps: 
+    - intent: interpretar_resultado_prueba_a1c
+    - action: action_manda_imagen
+
+  - rule: Di que influye los Resultados de la Prueba A1C
+    steps:
+    - intent: factores_influyen_prueba_a1c
+    - action: action_manda_imagen
+
+  - rule: Explica los factores de riesgo de la Retinopatia
+    steps:
+    - intent: factores_riesgo_retinopatia
+    - action: action_manda_imagen
+
+  - rule: Etapas Retinopatia
+    steps:
+    - intent: etapas_retinopatia
+    - action: action_manda_imagen
+
+  - rule: Diagnostico Retinopatia
+    steps:
+    - intent: diagnostico_retinopatia
+    - action: utter_diagnostico_retinopatia
+
+  - rule: Tratamiento Retinopatia
+    steps:
+    - intent: tratamiento_retinopatia
+    - action: action_manda_imagen
+
+  - rule: Define Presion Arterial
+    steps:
+    - intent: define_presion_arterial
+    - action: utter_explica_presion_arterial
+
+  - rule: Diagnostico Presion Arterial Alta
+    steps:
+    - intent: diagnostico_presion_arterial
+    - action: action_manda_imagen
+
+  - rule: Tipos Presion Arterial Alta
+    steps:
+    - intent: tipos_presion_alta
+    - action: action_manda_imagen
+
+  - rule: Complicaciones Hipertension
+    steps:
+    - intent: preocuparse_presion_alta
+    - action: action_manda_imagen
+
+  - rule: Tratamiento Hipertension
+    steps:
+    - intent: tratamiento_hipertension
+    - action: action_manda_imagen
+
+  - rule: Explica Presion Baja
+    steps:
+    - intent: presion_baja
+    - action: utter_presion_baja
+
+  - rule: Riesgo Hipertension
+    steps:
+    - intent: riesgo_hipertension
+    - action: action_manda_imagen
+
+  - rule: Dieta DASH
+    steps:
+    - intent: dieta_dash
+    - action: action_manda_imagen
+
+  - rule: Define Colesterol
+    steps:
+    - intent: explicar_colesterol
+    - action: utter_define_colesterol
+
+  - rule: Tipos Colesterol
+    steps: 
+    - intent: tipos_colesterol
+    - action: action_manda_imagen
+
+  - rule: Causas Colesterol Alto
+    steps:
+    - intent: causas_colesterol_alto
+    - action: action_manda_imagen
+
+  - rule: Riesgo Colesterol Alto
+    steps:
+    - intent: riesgo_colesterol_alto
+    - action: action_manda_imagen
+
+  - rule: Problemas Colesterol Alto
+    steps:
+    - intent: problemas_causados_colesterol_alto
+    - action: utter_problemas_colesterol
+
+  - rule: Estudio Colesterol
+    steps:
+    - intent: saber_colesterol_alto
+    - action: action_manda_imagen
+
+  - rule: Bajar Colesterol
+    steps:
+    - intent: bajar_colesterol
+    - action: utter_bajar_colesterol
+
+  - rule: Quienes pueden Medicarse Colesterol
+    steps:
+    - intent: medicamentos_colesterol
+    - action: action_manda_imagen
+
+  - rule: Niveles HDL Saludables
+    steps:
+    - intent: nivel_colesterol_HDL_saludable
+    - action: action_manda_imagen
+
+  - rule: Elevar Niveles HDL
+    steps:
+    - intent: elevar_nivel_colesterol_HDL
+    - action: action_manda_imagen
+  
+  - rule: Afectar Niveles HDL
+    steps:
+    - intent: afectar_nivel_colesterol_HDL
+    - action: action_manda_imagen
+
+  - rule: Afectaciones Niveles LDL
+    steps:
+    - intent: afectar_nivel_colesterol_LDL
+    - action: action_manda_imagen
+
+  - rule: Niveles Colesterol LDL
+    steps:
+    - intent: nivel_colesterol_LDL
+    - action: action_manda_imagen
+
+  - rule: Reducir Colesterol LDL
+    steps:
+    - intent: reducir_colesterol_LDL
+    - action: action_manda_imagen
+
+  - rule: Interpretar Niveles Colesterol
+    steps:
+    - intent: significado_niveles_colesterol
+    - action: action_manda_imagen
+
+  - rule: Ataque al Corazon
+    steps:
+    - intent: ataque_corazon_sintomas
+    - action: utter_define_ataque_corazon
+
+  - rule: Sintomas Ataque al Corazon
+    steps:
+    - intent: sintomas_ataque_corazon
+    - action: action_manda_imagen
+
+  - rule: Causas Ataque al Corazon
+    steps:
+    - intent: causas_ataque_corazon
+    - action: utter_causas_ataque_corazon
+    - action: action_manda_imagen
+
+  - rule: Factores de riesgo Ataque al Corazon
+    steps:
+    - intent: factores_riesgo_ataque_cardiaco
+    - action: action_manda_imagen
+
+  - rule: Complicaciones Ataque Cardiaco
+    steps:
+    - intent: complicaciones_ataque_cardiaco
+    - action: action_manda_imagen
+
+  - rule: Prevencion Ataque Cardiaco
+    steps:
+    - intent: prevencion_ataque_cardiaco
+    - action: action_manda_imagen
+
+  - rule: Medicamentos Colesterol
+    steps:
+    - intent: tipos_medicamentos_colesterol
+    - action: action_manda_imagen
+
+  - rule: Prueba Prediabetes
+    steps:
+    - intent: prueba_prediabetes
+    - action: utter_prueba_prediabetes
 
   - rule: Nuevo Dato de Entrenamiento
     steps:
