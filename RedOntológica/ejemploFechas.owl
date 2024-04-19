@@ -1,0 +1,485 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#"
+     xml:base="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-15="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15">
+        <owl:imports rdf:resource="http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#tieneNota -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#tieneNota">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Persona"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Nota"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Edad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Edad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Nota"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Fecha -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Fecha">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Nota"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#FechaNacimiento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#FechaNacimiento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Persona"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Nota -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Nota"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Persona -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Persona"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Nota"/>
+        <Fecha rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-01-10</Fecha>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Nota"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Nota"/>
+        <Fecha rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-03-03</Fecha>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Nota"/>
+        <Fecha rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-11-25</Fecha>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Nota"/>
+        <Fecha rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-02-25</Fecha>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Nota"/>
+        <Fecha rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-04-19</Fecha>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Nota"/>
+        <Fecha rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-08-17</Fecha>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Nota"/>
+        <Fecha rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1998-05-06</Fecha>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Nota"/>
+        <Fecha rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2004-09-22</Fecha>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Nota"/>
+        <Fecha rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-10-10</Fecha>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#p1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#p1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Persona"/>
+        <tieneNota rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n1"/>
+        <tieneNota rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n2"/>
+        <tieneNota rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n3"/>
+        <FechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1907-10-10</FechaNacimiento>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#p2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#p2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Persona"/>
+        <tieneNota rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n4"/>
+        <tieneNota rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n5"/>
+        <tieneNota rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n6"/>
+        <FechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1922-12-12</FechaNacimiento>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#p3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#p3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Persona"/>
+        <tieneNota rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n7"/>
+        <tieneNota rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n8"/>
+        <tieneNota rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n9"/>
+        <FechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1900-03-24</FechaNacimiento>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/fn">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/n">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/f">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/e">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#fn">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#f">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#e">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#FechaNacimiento"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/fn"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#tieneNota"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/n"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Fecha"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/n"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/f"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl#duration"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/e"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/f"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/fn"/>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Years</rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Edad"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/n"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/e"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#FechaNacimiento"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#fn"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#tieneNota"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#Fecha"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#n"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#f"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#subtractDates"/>
+                                                <swrl:arguments rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#e"/>
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#f"/>
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#fn"/>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ceci/ontologies/2021/1/untitled-ontology-15#e"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

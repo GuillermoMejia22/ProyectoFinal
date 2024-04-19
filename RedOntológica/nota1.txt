@@ -1,0 +1,377 @@
+	
+SPACE 
+Instituto Mexicano del Seguro Social
+PROPN PROPN ADP PROPN PROPN 
+IMSS-Próspera
+PROPN 
+Unidad Médico Rural
+PROPN PROPN PROPN 
+# 168 Portezuelo
+SYM NUM PROPN 
+Fecha: 21/12/2016
+NOUN PUNCT NUM 
+Hora: 09:25
+PROPN PUNCT NUM 
+Peso: 46.5  Kg
+NOUN PUNCT NUM SPACE PROPN 
+Talla: 141  cm
+NOUN PUNCT NUM SPACE NOUN 
+Frecuencia Cardiaca: 82
+NOUN PROPN PUNCT NUM 
+Frecuencia  Respiratoria: 24
+NOUN SPACE PROPN PUNCT NUM 
+Temperatura  36 °C
+NOUN SPACE NUM NUM 
+Indice Masa Corporal: 22.9
+PROPN PROPN PROPN PUNCT NUM 
+Tensión Arterial : 110/80    mmHg
+PROPN PROPN SPACE PUNCT NUM SPACE NOUN 
+Perímetro abdominal : 84 cm
+PROPN ADJ SPACE PUNCT NUM NUM 
+Glucosa : 158
+PROPN SPACE PUNCT NUM 
+Colesterol 155
+PROPN NUM 
+Trigliceridos 392
+ADJ NUM 
+Hb : 15.7
+PRON SPACE PUNCT NUM 
+Hto : 46
+VERB SPACE PUNCT NUM 
+
+
+NOTA MÉDICA 
+NOUN ADJ 
+
+
+Paciente sexo femenino de 64 años, el cual acude a control de enfermedad crónico degenerativa, de larga evolución en Tratamiento en esta unidad, niega nicturia, poliuria, polifagia, pérdida de peso, polidipsia, pérdida de la agudeza visual o auditiva, no refiere disminución de la sensibilidad de extremidades, Niega sintomatología urinaria. Niega datos de infección de transmisión sexual y prácticas de riesgo.  Niega alérgicos. Niega datos de vasoespasmo: acufenos, fosfenos, cefalea.
+PROPN NOUN ADJ ADP NUM NOUN PUNCT DET PRON VERB ADP NOUN ADP NOUN ADJ ADJ PUNCT ADP ADJ NOUN ADP PROPN ADP DET NOUN PUNCT VERB ADJ PUNCT NOUN PUNCT NOUN PUNCT NOUN ADP NOUN PUNCT NOUN PUNCT NOUN ADP DET NOUN ADJ CCONJ ADJ PUNCT ADV VERB NOUN ADP DET NOUN ADP NOUN PUNCT VERB NOUN ADJ PUNCT VERB NOUN ADP NOUN ADP NOUN ADJ CCONJ NOUN ADP NOUN PUNCT SPACE VERB ADJ PUNCT VERB NOUN ADP NOUN PUNCT NOUN PUNCT NOUN PUNCT VERB PUNCT 
+
+
+Exploración Física: Paciente de sexo Femenino, consiente, bien orientada en las tres esferas neurológicas, edad aparente igual a la cronológica, buena coloración tegumentaria, estado hídrico conservado, facie normal, posición y actitud libremente escogida. Cabeza: Normocéfalo, pupilas isocoricas normoreflecticas, Nariz sin alteraciones, mucosa oral bien hidratada, oídos simétricos permeables. Cuello: cilíndrico, tráquea central, sin adenopatías. Tórax: movimientos de amplexion y amplexación normales, frecuencia respiratoria normal, sin ruidos agregados, bien ventilados, frecuencia cardiaca rítmica, de buena intensidad y frecuencia, sin ruidos agregados. Abdomen: globoso por panículo adiposo, blando, depresible, peristalsis presente, normal, sin tumoraciones(megalias), sin puntos dolorosos y con sensibilidad normal, sin datos o signos de irritación peritoneal, Giordano negativo.  Extremidades: superiores simétricas movimientos normales, pulsos normales, reflejos osteotendinosos normales, Extremidades inferiores simétricas sin alteraciones en los movimientos, con marcha normal, pulsos normales y presentes, reflejos normales,  buen llenado capilar, sin edema.  
+PROPN PROPN PUNCT PROPN ADP NOUN PROPN PUNCT ADJ PUNCT ADV ADJ ADP DET NUM NOUN ADJ PUNCT NOUN ADJ ADV ADP DET ADJ PUNCT ADJ NOUN ADJ PUNCT NOUN ADJ ADJ PUNCT NOUN ADJ PUNCT NOUN CCONJ NOUN ADV ADJ PUNCT NOUN PUNCT PROPN PUNCT NOUN ADJ ADJ PUNCT PROPN ADP NOUN PUNCT NOUN ADJ ADV ADJ PUNCT NOUN ADJ ADJ PUNCT NOUN PUNCT ADJ PUNCT NOUN ADJ PUNCT ADP NOUN PUNCT NOUN PUNCT NOUN ADP NOUN CCONJ NOUN ADJ PUNCT NOUN ADJ ADJ PUNCT ADP NOUN ADJ PUNCT ADV ADJ PUNCT NOUN ADJ ADJ PUNCT ADP ADJ NOUN CCONJ NOUN PUNCT ADP NOUN ADJ PUNCT NOUN PUNCT NOUN ADP NOUN ADJ PUNCT ADJ PUNCT ADJ PUNCT NOUN ADJ PUNCT ADJ PUNCT ADP NOUN PUNCT PUNCT ADP NOUN ADJ CCONJ ADP NOUN ADJ PUNCT ADP NOUN CCONJ NOUN ADP NOUN ADJ PUNCT PROPN ADJ PUNCT SPACE NOUN PUNCT ADJ ADJ NOUN ADJ PUNCT NOUN ADJ PUNCT NOUN ADJ ADJ PUNCT NOUN ADJ ADJ ADP NOUN ADP DET NOUN PUNCT ADP NOUN ADJ PUNCT NOUN ADJ CCONJ ADJ PUNCT NOUN ADJ PUNCT SPACE ADJ NOUN ADJ PUNCT ADP NOUN PUNCT SPACE 
+
+
+Análisis: Paciente femenino en la séptima década de la vida, quien la acude para valoración de enfermedad crónica degenerativa, cifras tensiónales normales para su padecimiento, glicemia capilar normal, BH normal, con dislipidemia secundaria a hipertrigliceridemia, se continua tratamiento, se informa sobre importancia de apego a tratamiento, Manejo del paciente con base en las Guías de Práctica Clínica y en  las Acciones del Paquete Garantizado de servicios de promoción y prevención para una mejor Salud. Tratamiento con base en la Norma Oficial Mexicana. NOM-015-SSA2-1994, Para la prevención, tratamiento y control de la diabetes página 19 y 20. Tratamiento antihipertensivo de la Paciente establecido con base Guía de Diagnóstico y Tratamiento de la Hipertensión Arterial sistémica en el primer nivel de atención en la Página 19 y 37.
+NOUN PUNCT PROPN ADJ ADP DET ADJ NOUN ADP DET NOUN PUNCT PRON PRON VERB ADP NOUN ADP NOUN ADJ ADJ PUNCT NOUN ADJ ADJ ADP DET NOUN PUNCT NOUN ADJ ADJ PUNCT PROPN ADJ PUNCT ADP NOUN ADJ ADP NOUN PUNCT PRON ADJ NOUN PUNCT PRON VERB ADP NOUN ADP NOUN ADP NOUN PUNCT PROPN ADP NOUN ADP NOUN ADP DET PROPN ADP PROPN PROPN CCONJ ADP SPACE DET NOUN ADP PROPN PROPN ADP NOUN ADP NOUN CCONJ NOUN ADP DET ADJ PROPN PUNCT PROPN ADP NOUN ADP DET PROPN PROPN PROPN PUNCT PROPN PUNCT ADP DET NOUN PUNCT NOUN CCONJ NOUN ADP DET NOUN PROPN NUM CCONJ NUM PUNCT PROPN ADJ ADP DET PROPN ADJ ADP NOUN PROPN ADP PROPN CCONJ PROPN ADP DET PROPN PROPN ADJ ADP DET ADJ NOUN ADP NOUN ADP DET PROPN NUM CCONJ NUM PUNCT 
+
+
+Pronostico: Reservado a evolución de Padecimiento crónico Degenerativo.
+PROPN PUNCT ADJ ADP NOUN ADP PROPN ADJ PROPN PUNCT 
+
+
+Diagnóstico:
+PROPN PUNCT 
+Hipertensión Arterial Sistema controlada 
+PROPN PROPN PROPN ADJ 
+Diabetes Mellitus controlada
+PROPN PROPN ADJ 
+Dislipidemia (Hipertrigliceridemia)
+PROPN PUNCT PROPN PUNCT 
+Peso normal
+VERB ADJ 
+
+
+Plan: 
+PROPN PUNCT 
+Medidas  higiénicos dietéticas, incrementar consumo de fibra
+NOUN SPACE ADJ ADJ PUNCT VERB NOUN ADP NOUN 
+Dieta baja en carbohidratos y grasas.
+NOUN VERB ADP NOUN CCONJ NOUN PUNCT 
+Dieta hiposódica
+NOUN ADJ 
+Cepillado dental tres veces por día. 
+VERB ADJ NUM NOUN ADP NOUN PUNCT 
+Se promueve plan de actividad física y la prevención de accidentes.
+PRON VERB NOUN ADP NOUN ADJ CCONJ DET NOUN ADP NOUN PUNCT 
+Se informa sobre riesgos de  consumo de alcohol y tabaco
+PRON VERB ADP NOUN ADP SPACE NOUN ADP NOUN CCONJ NOUN 
+Se aplica vacuna de influenza
+PRON VERB NOUN ADP NOUN 
+Aseo adecuado de ambos pies y revisión de los mismos a diario
+NOUN ADJ ADP NUM NOUN CCONJ NOUN ADP DET PRON ADP NOUN 
+
+
+Próxima Cita: 18 de Enero de 2017
+PROPN PROPN PUNCT NUM ADP NOUN ADP NUM 
+
+
+Tratamiento:
+PROPN PUNCT 
+Metformina 850mg tabletas tomar 1 cada 12 horas sin suspender vía oral
+NOUN NUM NOUN NOUN VERB NUM DET NUM NOUN ADP VERB NOUN ADJ 
+Glibenclamida 5mg tabletas tomar 1 cada 12 horas sin suspender vía oral
+PROPN NUM NOUN NOUN VERB NUM DET NUM NOUN ADP VERB NOUN ADJ 
+Captopril 25 mg tabletas tomar 1 cada 12 horas vía oral sin suspender
+PROPN NUM NOUN NOUN VERB NUM DET NUM NOUN NOUN ADJ ADP VERB 
+Ácido Acetil salicílico 300mg tabletas efervescentes tomar 1/2 tableta disuelta en agua cada 24 horas vía oral por 1 mes
+PROPN PROPN ADJ NUM NOUN NOUN ADJ VERB NUM ADJ ADJ ADP NOUN DET NUM NOUN NOUN ADJ ADP NUM NOUN 
+Bezafibrato 200mg tabletas tomar 1 vía oral cada 24 horas 30 min después de desayuno sin suspender
+PROPN NUM NOUN NOUN VERB NUM NOUN ADJ DET NUM NOUN NUM NOUN ADV ADP NOUN ADP VERB 
+
+
+Médico Pasante de Servicio Social 
+PROPN PROPN ADP PROPN PROPN 
+Rodríguez Pineda Alma Rosa
+PROPN PROPN PROPN PROPN 
+Matrícula 99139509
+PROPN NUM 
+Cédula en Trámite 
+PROPN ADP PROPN 
+
+
+SPACE 
+	
+SPACE 
+Instituto Mexicano del Seguro Social
+PROPN PROPN ADP PROPN PROPN 
+IMSS-Próspera
+PROPN 
+Unidad Médico Rural
+PROPN PROPN PROPN 
+# 168 Portezuelo
+SYM NUM PROPN 
+Fecha: 15/02/2017
+NOUN PUNCT NUM 
+Hora: 10:00
+PROPN PUNCT NUM 
+Peso: 45 kg
+VERB PUNCT NUM NUM 
+Talla: 141  cm
+NOUN PUNCT NUM SPACE NOUN 
+Frecuencia Cardiaca: 72
+NOUN PROPN PUNCT NUM 
+Frecuencia  Respiratoria: 20
+NOUN SPACE PROPN PUNCT NUM 
+Temperatura  36 °C
+NOUN SPACE NUM NUM 
+Indice Masa Corporal: 22.9
+PROPN PROPN PROPN PUNCT NUM 
+Tensión Arterial : 110/70    mmHg
+PROPN PROPN SPACE PUNCT NUM SPACE NOUN 
+Perímetro abdominal : 83 cm
+PROPN ADJ SPACE PUNCT NUM NOUN 
+Glucosa : 
+PROPN SPACE PUNCT 
+Colesterol 
+PROPN 
+Trigliceridos 
+ADJ 
+Hb : 
+PRON SPACE PUNCT 
+Hto :
+VERB SPACE PUNCT 
+
+
+NOTA MÉDICA 
+NOUN ADJ 
+
+
+Paciente sexo femenino de 64 años, el cual acude a control de enfermedad crónico degenerativa, de larga evolución en Tratamiento en esta unidad, niega nicturia, poliuria, polifagia, pérdida de peso, polidipsia, pérdida de la agudeza visual o auditiva, no refiere disminución de la sensibilidad de extremidades, Niega sintomatología urinaria. Niega datos de vasoespasmo: acufenos, fosfenos, cefalea. Refiere parestesias desde hace una semana en miembros pélvicos, niega edema. 
+PROPN NOUN ADJ ADP NUM NOUN PUNCT DET PRON VERB ADP NOUN ADP NOUN ADJ ADJ PUNCT ADP ADJ NOUN ADP PROPN ADP DET NOUN PUNCT VERB ADJ PUNCT NOUN PUNCT NOUN PUNCT NOUN ADP NOUN PUNCT NOUN PUNCT NOUN ADP DET NOUN ADJ CCONJ ADJ PUNCT ADV VERB NOUN ADP DET NOUN ADP NOUN PUNCT VERB NOUN ADJ PUNCT VERB NOUN ADP NOUN PUNCT NOUN PUNCT NOUN PUNCT VERB PUNCT VERB NOUN ADP VERB DET NOUN ADP NOUN ADJ PUNCT VERB ADJ PUNCT 
+
+
+Exploración Física: Femenino, consiente, bien orientada en las tres esferas neurológicas, edad aparente igual a la cronológica, buena coloración tegumentaria, estado hídrico conservado, facie normal, posición y actitud libremente escogida. Cabeza: Normocéfalo, pupilas isocoricas normoreflecticas, Nariz sin alteraciones, mucosa oral bien hidratada, oídos simétricos permeables. Cuello: cilíndrico, tráquea central, sin adenopatías. Tórax: movimientos de amplexion y amplexación normales, frecuencia respiratoria normal, sin ruidos agregados, bien ventilados, frecuencia cardiaca rítmica, de buena intensidad y frecuencia, sin ruidos agregados. Abdomen: blando, depresible, peristalsis presente, normal, sin megalias, sin puntos dolorosos y con sensibilidad normal, sin datos o signos de irritación peritoneal, Giordano negativo.  Extremidades: superiores simétricas movimientos normales, pulsos normales, reflejos osteotendinosos normales, Extremidades inferiores simétricas sin alteraciones en los movimientos, con marcha normal, pulsos normales y presentes, reflejos normales,  buen llenado capilar, sin edema, sensibilidad normal.   
+PROPN PROPN PUNCT PROPN PUNCT ADJ PUNCT ADV ADJ ADP DET NUM NOUN ADJ PUNCT NOUN ADJ ADV ADP DET ADJ PUNCT ADJ NOUN ADJ PUNCT NOUN ADJ ADJ PUNCT NOUN ADJ PUNCT NOUN CCONJ NOUN ADV ADJ PUNCT NOUN PUNCT PROPN PUNCT NOUN ADJ ADJ PUNCT PROPN ADP NOUN PUNCT NOUN ADJ ADV ADJ PUNCT NOUN ADJ ADJ PUNCT NOUN PUNCT ADJ PUNCT NOUN ADJ PUNCT ADP NOUN PUNCT NOUN PUNCT NOUN ADP NOUN CCONJ NOUN ADJ PUNCT NOUN ADJ ADJ PUNCT ADP NOUN ADJ PUNCT ADV ADJ PUNCT NOUN ADJ ADJ PUNCT ADP ADJ NOUN CCONJ NOUN PUNCT ADP NOUN ADJ PUNCT NOUN PUNCT ADJ PUNCT ADJ PUNCT NOUN ADJ PUNCT ADJ PUNCT ADP NOUN PUNCT ADP NOUN ADJ CCONJ ADP NOUN ADJ PUNCT ADP NOUN CCONJ NOUN ADP NOUN ADJ PUNCT PROPN ADJ PUNCT SPACE NOUN PUNCT ADJ ADJ NOUN ADJ PUNCT NOUN ADJ PUNCT NOUN ADJ ADJ PUNCT NOUN ADJ ADJ ADP NOUN ADP DET NOUN PUNCT ADP NOUN ADJ PUNCT NOUN ADJ CCONJ ADJ PUNCT NOUN ADJ PUNCT SPACE ADJ NOUN ADJ PUNCT ADP NOUN PUNCT NOUN ADJ PUNCT SPACE 
+
+
+Análisis: Paciente femenino en la séptima década de la vida, la cual acude para valoración de enfermedad crónica degenerativa, cifras tensiónales normales, glicemia capilar no valorada por falta de material. Se le realiza detección de pérdida de la sensibilidad por medio de la técnica de Semmes Weinstein, encontrándose sensibilidad normal. 
+NOUN PUNCT PROPN ADJ ADP DET ADJ NOUN ADP DET NOUN PUNCT DET PRON VERB ADP NOUN ADP NOUN ADJ ADJ PUNCT NOUN ADJ ADJ PUNCT NOUN ADJ ADV ADJ ADP NOUN ADP NOUN PUNCT PRON PRON VERB NOUN ADP NOUN ADP DET NOUN ADP NOUN ADP DET NOUN ADP PROPN PROPN PUNCT VERB NOUN ADJ PUNCT 
+Se informa sobre importancia de apego a tratamiento, Manejo del paciente con base en las Guías de Práctica Clínica y en  las Acciones del Paquete Garantizado de servicios de promoción y prevención para una mejor Salud. Tratamiento con base en la Norma Oficial Mexicana. NOM-015-SSA2-1994, Para la prevención, tratamiento y control de la diabetes página 19 y 20. Tratamiento antihipertensivo de la Paciente establecido con base Guía de Diagnóstico y Tratamiento de la Hipertensión Arterial sistémica en el primer nivel de atención en la Página 19 y 37.
+PRON VERB ADP NOUN ADP NOUN ADP NOUN PUNCT PROPN ADP NOUN ADP NOUN ADP DET PROPN ADP PROPN PROPN CCONJ ADP SPACE DET NOUN ADP PROPN PROPN ADP NOUN ADP NOUN CCONJ NOUN ADP DET ADJ PROPN PUNCT PROPN ADP NOUN ADP DET PROPN PROPN PROPN PUNCT PROPN PUNCT ADP DET NOUN PUNCT NOUN CCONJ NOUN ADP DET NOUN PROPN NUM CCONJ NUM PUNCT PROPN ADJ ADP DET PROPN ADJ ADP NOUN PROPN ADP PROPN CCONJ PROPN ADP DET PROPN PROPN ADJ ADP DET ADJ NOUN ADP NOUN ADP DET PROPN NUM CCONJ NUM PUNCT 
+
+
+Pronostico: Reservado a evolución de Padecimiento crónico Degenerativo.
+PROPN PUNCT ADJ ADP NOUN ADP PROPN ADJ PROPN PUNCT 
+
+
+Diagnóstico:
+PROPN PUNCT 
+Hipertensión Arterial Sistema controlada 
+PROPN PROPN PROPN ADJ 
+Diabetes Mellitus controlada
+PROPN PROPN ADJ 
+Hipertrigliceridemia en tratamiento 
+PROPN ADP NOUN 
+Peso normal
+VERB ADJ 
+
+
+Plan: 
+PROPN PUNCT 
+Medidas  higiénicos dietéticas, incrementar consumo de fibra
+NOUN SPACE ADJ ADJ PUNCT VERB NOUN ADP NOUN 
+Dieta baja en carbohidratos y grasas.
+NOUN VERB ADP NOUN CCONJ NOUN PUNCT 
+Dieta hiposódica
+NOUN ADJ 
+Cepillado dental tres veces por día. 
+VERB ADJ NUM NOUN ADP NOUN PUNCT 
+Se promueve plan de actividad física y la prevención de accidentes.
+PRON VERB NOUN ADP NOUN ADJ CCONJ DET NOUN ADP NOUN PUNCT 
+Se informa sobre riesgos de  consumo de alcohol y tabaco
+PRON VERB ADP NOUN ADP SPACE NOUN ADP NOUN CCONJ NOUN 
+Se aplica vacuna de influenza
+PRON VERB NOUN ADP NOUN 
+Aseo adecuado de ambos pies y revisión de los mismos a diario
+NOUN ADJ ADP NUM NOUN CCONJ NOUN ADP DET PRON ADP NOUN 
+
+
+Próxima Cita: 15 de marzo de 2017
+PROPN PROPN PUNCT NUM ADP NOUN ADP NUM 
+
+
+Tratamiento:
+PROPN PUNCT 
+Metformina 850mg tabletas tomar 1 cada 12 horas sin suspender vía oral
+NOUN NUM NOUN NOUN VERB NUM DET NUM NOUN ADP VERB NOUN ADJ 
+Glibenclamida 5mg tabletas tomar 1 cada 12 horas sin suspender vía oral
+PROPN NUM NOUN NOUN VERB NUM DET NUM NOUN ADP VERB NOUN ADJ 
+Captopril 25 mg tabletas tomar 1 cada 12 horas vía oral sin suspender
+PROPN NUM NOUN NOUN VERB NUM DET NUM NOUN NOUN ADJ ADP VERB 
+Ácido Acetil salicílico 300mg tabletas efervescentes tomar 1/2 tableta disuelta en agua cada 24 horas vía oral por 1 mes
+PROPN PROPN ADJ NUM NOUN NOUN ADJ VERB NUM ADJ ADJ ADP NOUN DET NUM NOUN NOUN ADJ ADP NUM NOUN 
+Bezafibrato 200mg tabletas tomar 1 vía oral cada 24 horas 30 min después de desayuno sin suspender
+PROPN NUM NOUN NOUN VERB NUM NOUN ADJ DET NUM NOUN NUM NOUN ADV ADP NOUN ADP VERB 
+Complejo B tabletas tomar 1 tableta cada 24 horas durante 30 días. 
+PROPN PROPN NOUN VERB NUM VERB DET NUM NOUN ADP NUM NOUN PUNCT 
+
+
+Médico Pasante de Servicio Social 
+PROPN PROPN ADP PROPN PROPN 
+Elvia Osorio Dávila
+PROPN PROPN PROPN 
+Matrícula em Tramite
+PROPN AUX PROPN 
+Cédula en Tramite 
+PROPN ADP PROPN 
+
+
+Instituto Mexicano del Seguro Social
+PROPN PROPN ADP PROPN PROPN 
+IMSS-Próspera
+PROPN 
+Unidad Médico Rural
+PROPN PROPN PROPN 
+# 168 Portezuelo
+SYM NUM PROPN 
+Fecha: 15/03/2017
+NOUN PUNCT NUM 
+Hora: 09:30
+PROPN PUNCT NUM 
+Peso: 45 kg
+VERB PUNCT NUM NUM 
+Talla: 141  cm
+NOUN PUNCT NUM SPACE NOUN 
+Frecuencia Cardiaca: 70
+NOUN PROPN PUNCT NUM 
+Frecuencia  Respiratoria: 20
+NOUN SPACE PROPN PUNCT NUM 
+Temperatura  36 °C
+NOUN SPACE NUM NUM 
+Indice Masa Corporal: 22.9
+PROPN PROPN PROPN PUNCT NUM 
+Tensión Arterial : 120/80    mmHg
+PROPN PROPN SPACE PUNCT NUM SPACE NOUN 
+Perímetro abdominal : 83 cm
+PROPN ADJ SPACE PUNCT NUM NOUN 
+Glucosa : 
+PROPN SPACE PUNCT 
+Colesterol 
+PROPN 
+Trigliceridos 
+ADJ 
+Hb : 
+PRON SPACE PUNCT 
+Hto :
+VERB SPACE PUNCT 
+
+
+NOTA MÉDICA 
+NOUN ADJ 
+Padecimiento Actual
+PROPN PROPN 
+Paciente sexo femenino de 65 años, que acude a control de enfermedad crónico degenerativa, de larga evolución en tratamiento en esta unidad, niega nicturia, poliuria, polifagia, pérdida de peso, polidipsia, pérdida de la agudeza visual o auditiva, no refiere disminución de la sensibilidad de extremidades, Niega sintomatología urinaria. Niega datos de vasoespasmo: acufenos, fosfenos, cefalea. Refiere dolor en epigastrio tipo urente el cual se exacerba con la ingesta de irritantes.
+PROPN NOUN ADJ ADP NUM NOUN PUNCT PRON VERB ADP NOUN ADP NOUN ADJ ADJ PUNCT ADP ADJ NOUN ADP NOUN ADP DET NOUN PUNCT VERB ADJ PUNCT NOUN PUNCT NOUN PUNCT NOUN ADP NOUN PUNCT NOUN PUNCT NOUN ADP DET NOUN ADJ CCONJ ADJ PUNCT ADV VERB NOUN ADP DET NOUN ADP NOUN PUNCT VERB NOUN ADJ PUNCT VERB NOUN ADP NOUN PUNCT NOUN PUNCT NOUN PUNCT VERB PUNCT VERB NOUN ADP NOUN NOUN NOUN DET PRON PRON VERB ADP DET NOUN ADP ADJ PUNCT 
+
+
+Exploración Física
+PROPN PROPN 
+Alerta,  bien orientada en las tres esferas neurológicas, edad aparente igual a la cronológica, buena coloración tegumentaria, estado hídrico conservado, facie normal, posición y actitud libremente escogida. Cabeza: Normocéfalo, pupilas isocoricas normoreflecticas, Nariz sin alteraciones, mucosa oral bien hidratada, oídos simétricos permeables. Cuello: cilíndrico, tráquea central, sin adenopatías. Tórax: movimientos de amplexion y amplexación normales, frecuencia respiratoria normal, sin ruidos agregados, bien ventilados, frecuencia cardiaca rítmica, de buena intensidad y frecuencia, sin ruidos agregados. Abdomen: blando, depresible, peristalsis presente, normal, sin megalias, doloroso a la palpación profunda en epigastrio sin irradiarse y con sensibilidad normal, sin datos o signos de irritación peritoneal, Giordano negativo.  Extremidades: superiores simétricas movimientos normales, pulsos normales, reflejos osteotendinosos normales, Extremidades inferiores simétricas sin alteraciones en los movimientos, con marcha normal, pulsos normales y presentes, reflejos normales,  buen llenado capilar, sin edema, sensibilidad normal.   
+NOUN PUNCT SPACE ADV ADJ ADP DET NUM NOUN ADJ PUNCT NOUN ADJ ADV ADP DET ADJ PUNCT ADJ NOUN ADJ PUNCT NOUN ADJ ADJ PUNCT NOUN ADJ PUNCT NOUN CCONJ NOUN ADV ADJ PUNCT NOUN PUNCT PROPN PUNCT NOUN ADJ ADJ PUNCT PROPN ADP NOUN PUNCT NOUN ADJ ADV ADJ PUNCT NOUN ADJ ADJ PUNCT NOUN PUNCT ADJ PUNCT NOUN ADJ PUNCT ADP NOUN PUNCT NOUN PUNCT NOUN ADP NOUN CCONJ NOUN ADJ PUNCT NOUN ADJ ADJ PUNCT ADP NOUN ADJ PUNCT ADV ADJ PUNCT NOUN ADJ ADJ PUNCT ADP ADJ NOUN CCONJ NOUN PUNCT ADP NOUN ADJ PUNCT NOUN PUNCT ADJ PUNCT ADJ PUNCT NOUN ADJ PUNCT ADJ PUNCT ADP NOUN PUNCT ADJ ADP DET NOUN ADJ ADP NOUN ADP VERB CCONJ ADP NOUN ADJ PUNCT ADP NOUN CCONJ NOUN ADP NOUN ADJ PUNCT PROPN ADJ PUNCT SPACE NOUN PUNCT ADJ ADJ NOUN ADJ PUNCT NOUN ADJ PUNCT NOUN ADJ ADJ PUNCT NOUN ADJ ADJ ADP NOUN ADP DET NOUN PUNCT ADP NOUN ADJ PUNCT NOUN ADJ CCONJ ADJ PUNCT NOUN ADJ PUNCT SPACE ADJ NOUN ADJ PUNCT ADP NOUN PUNCT NOUN ADJ PUNCT SPACE 
+
+
+Análisis
+NOUN 
+Paciente femenino en la séptima década de la vida, la cual acude para valoración de enfermedad crónica degenerativa, cifras tensiónales normales, glicemia capilar no valorada por falta de material. Se informa sobre importancia de apego a tratamiento. Manejo del paciente con base en las Guías de Práctica Clínica y en  las Acciones del Paquete Garantizado de servicios de promoción y prevención para una mejor Salud. Tratamiento con base en la Norma Oficial Mexicana. NOM-015-SSA2-1994, Para la prevención, tratamiento y control de la diabetes página 19 y 20. Tratamiento antihipertensivo de la Paciente establecido con base Guía de Diagnóstico y Tratamiento de la Hipertensión Arterial sistémica en el primer nivel de atención en la Página 19 y 37.
+PROPN ADJ ADP DET ADJ NOUN ADP DET NOUN PUNCT DET PRON VERB ADP NOUN ADP NOUN ADJ ADJ PUNCT NOUN ADJ ADJ PUNCT NOUN ADJ ADV ADJ ADP NOUN ADP NOUN PUNCT PRON VERB ADP NOUN ADP NOUN ADP NOUN PUNCT NOUN ADP NOUN ADP NOUN ADP DET PROPN ADP PROPN PROPN CCONJ ADP SPACE DET NOUN ADP PROPN PROPN ADP NOUN ADP NOUN CCONJ NOUN ADP DET ADJ PROPN PUNCT PROPN ADP NOUN ADP DET PROPN PROPN PROPN PUNCT PROPN PUNCT ADP DET NOUN PUNCT NOUN CCONJ NOUN ADP DET NOUN PROPN NUM CCONJ NUM PUNCT PROPN ADJ ADP DET PROPN ADJ ADP NOUN PROPN ADP PROPN CCONJ PROPN ADP DET PROPN PROPN ADJ ADP DET ADJ NOUN ADP NOUN ADP DET PROPN NUM CCONJ NUM PUNCT 
+
+
+Pronostico: Reservado a evolución de Padecimiento crónico Degenerativo.
+PROPN PUNCT ADJ ADP NOUN ADP PROPN ADJ PROPN PUNCT 
+
+
+Diagnóstico:
+PROPN PUNCT 
+Hipertensión Arterial Sistema
+PROPN PROPN PROPN 
+Diabetes Mellitus tipo 2 
+PROPN PROPN PROPN NUM 
+Hipertrigliceridemia en tratamiento 
+PROPN ADP NOUN 
+Enfermedad ácido péptica 
+NOUN ADJ ADJ 
+Peso normal
+VERB ADJ 
+
+
+Plan: 
+PROPN PUNCT 
+Medidas  higiénicos dietéticas, incrementar consumo de fibra
+NOUN SPACE ADJ ADJ PUNCT VERB NOUN ADP NOUN 
+Dieta baja en carbohidratos y grasas.
+NOUN VERB ADP NOUN CCONJ NOUN PUNCT 
+Dieta hiposódica
+NOUN ADJ 
+Cepillado dental tres veces por día. 
+VERB ADJ NUM NOUN ADP NOUN PUNCT 
+Se promueve plan de actividad física y la prevención de accidentes.
+PRON VERB NOUN ADP NOUN ADJ CCONJ DET NOUN ADP NOUN PUNCT 
+Se informa sobre riesgos de  consumo de alcohol y tabaco
+PRON VERB ADP NOUN ADP SPACE NOUN ADP NOUN CCONJ NOUN 
+Se aplica vacuna de influenza
+PRON VERB NOUN ADP NOUN 
+Aseo adecuado de ambos pies y revisión de los mismos a diario
+NOUN ADJ ADP NUM NOUN CCONJ NOUN ADP DET PRON ADP NOUN 
+
+
+Próxima Cita: 17 de mayo, 2017
+PROPN PROPN PUNCT NUM ADP NOUN PUNCT NUM 
+
+
+Tratamiento:
+PROPN PUNCT 
+Metformina 850mg tabletas tomar 1 cada 12 horas sin suspender vía oral
+NOUN NUM NOUN NOUN VERB NUM DET NUM NOUN ADP VERB NOUN ADJ 
+Glibenclamida 5mg tabletas tomar 1 cada 12 horas sin suspender vía oral
+PROPN NUM NOUN NOUN VERB NUM DET NUM NOUN ADP VERB NOUN ADJ 
+Captopril 25 mg tabletas tomar 1 cada 12 horas vía oral sin suspender
+PROPN NUM NOUN NOUN VERB NUM DET NUM NOUN NOUN ADJ ADP VERB 
+Ácido Acetil salicílico 300mg tabletas efervescentes tomar 1/2 tableta disuelta en agua cada 24 horas vía oral por 1 mes
+PROPN PROPN ADJ NUM NOUN NOUN ADJ VERB NUM ADJ ADJ ADP NOUN DET NUM NOUN NOUN ADJ ADP NUM NOUN 
+Bezafibrato 200mg tabletas tomar 1 vía oral cada 24 horas 30 min después de desayuno sin suspender
+PROPN NUM NOUN NOUN VERB NUM NOUN ADJ DET NUM NOUN NUM NOUN ADV ADP NOUN ADP VERB 
+Ranitidina 150mg tabletas tomar 1 tableta cada 24 horas en ayunas durante 30 días 
+PROPN NUM NOUN NOUN VERB NUM VERB DET NUM NOUN ADP NOUN ADP NUM NOUN 
+Hidróxido de aluminio y magnesio solución tomar 10 ml cada 12 horas 
+PROPN ADP NOUN CCONJ NOUN NOUN VERB NUM NUM DET NUM NOUN 
+
+
+
+
+Médico Pasante de Servicio Social 
+PROPN PROPN ADP PROPN PROPN 
+Elvia Osorio Dávila
+PROPN PROPN PROPN 
+Matrícula em Tramite
+PROPN AUX PROPN 

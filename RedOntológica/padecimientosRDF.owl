@@ -1,0 +1,2230 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://www.padecimientos-mexico.org/enfermedad"
+         xmlns="http://www.padecimientos-mexico.org/enfermedad#">
+
+<owl:Ontology rdf:about="http://www.padecimientos-mexico.org/enfermedad"/>
+
+<owl:ObjectProperty rdf:about="#esSintomaDe">
+  <rdfs:domain rdf:resource="#Padecimiento"/>
+  <rdfs:range rdf:resource="#Padecimiento"/>
+  <rdfs:label xml:lang="es">esSintomaDe</rdfs:label>
+  <rdfs:label xml:lang="en">isSymptomOf</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#puedeCausar">
+  <rdfs:domain rdf:resource="#Padecimiento"/>
+  <rdfs:range rdf:resource="#Padecimiento"/>
+  <rdfs:label xml:lang="en">mayCause</rdfs:label>
+  <rdfs:label xml:lang="es">puedeCausar</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#Padecimiento">
+  <rdfs:label xml:lang="es">Padecimiento</rdfs:label>
+  <rdfs:label xml:lang="en">Pathological Condition</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#COVID-19">
+  <rdfs:subClassOf rdf:resource="#Comorbilidad"/>
+  <rdfs:label xml:lang="en">Covid 19</rdfs:label>
+  <rdfs:label xml:lang="es">Covid 19</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Comorbilidad">
+  <rdfs:subClassOf rdf:resource="#Enfermedad"/>
+  <rdfs:comment>La "comorbilidad", también conocida como "morbilidad asociada", es un término utilizado para describir dos o más trastornos o enfermedades que ocurren en la misma persona. Pueden ocurrir al mismo tiempo o uno después del otro.</rdfs:comment>
+  <rdfs:label xml:lang="en">Comorbidity</rdfs:label>
+  <rdfs:label xml:lang="es">Comorbilidad</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Enfermedad">
+  <rdfs:subClassOf rdf:resource="#Padecimiento"/>
+  <rdfs:label xml:lang="en">Disease</rdfs:label>
+  <rdfs:label xml:lang="es">Enfermedad</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Cancer">
+  <rdfs:subClassOf rdf:resource="#Comorbilidad"/>
+  <rdfs:label xml:lang="en">Cancer</rdfs:label>
+  <rdfs:label xml:lang="es">Cancer</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Cardiopatia">
+  <rdfs:subClassOf rdf:resource="#Comorbilidad"/>
+  <rdfs:label xml:lang="es">Cardiopatia</rdfs:label>
+  <rdfs:label xml:lang="en">Heart Disease</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Cardiopatia_Congenita">
+  <rdfs:subClassOf rdf:resource="#Cardiopatia"/>
+  <rdfs:label xml:lang="es">Cardiopatia_Congenita</rdfs:label>
+  <rdfs:label xml:lang="en">Congenital Heart Disease</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Cardiopatia_Isquemica">
+  <rdfs:subClassOf rdf:resource="#Cardiopatia"/>
+  <rdfs:label xml:lang="es">Cardiopatia Isquemica</rdfs:label>
+  <rdfs:label xml:lang="en">Ischemic Heart Disease</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Depresion">
+  <rdfs:subClassOf rdf:resource="#Comorbilidad"/>
+  <rdfs:label xml:lang="es">Depresion</rdfs:label>
+  <rdfs:label xml:lang="en">Depression</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Diabetes_Mellitus">
+  <rdfs:subClassOf rdf:resource="#Comorbilidad"/>
+  <rdfs:label xml:lang="en">Diabetes Mellitus</rdfs:label>
+  <rdfs:label xml:lang="es">Diabetes Mellitus</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Discapacidad">
+  <rdfs:subClassOf rdf:resource="#Padecimiento"/>
+  <rdfs:label xml:lang="en">Disability</rdfs:label>
+  <rdfs:label xml:lang="es">Discapacidad</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Discapacidad_Aprendizaje">
+  <rdfs:subClassOf rdf:resource="#Discapacidad"/>
+  <rdfs:label xml:lang="es">Discapacidad Aprendizaje</rdfs:label>
+  <rdfs:label xml:lang="en">Learning Disability</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Discapacidad_Auditiva">
+  <rdfs:subClassOf rdf:resource="#Discapacidad"/>
+  <rdfs:label xml:lang="es">Discapacidad Auditiva</rdfs:label>
+  <rdfs:label xml:lang="en">Hearing Impairment</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Discapacidad_Autocuidado">
+  <rdfs:subClassOf rdf:resource="#Discapacidad"/>
+  <rdfs:label xml:lang="es">Discapacidad Autocuidado</rdfs:label>
+  <rdfs:label xml:lang="en">Self-Care Disability</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Discapacidad_Comunicacion">
+  <rdfs:subClassOf rdf:resource="#Discapacidad"/>
+  <rdfs:label xml:lang="en">Communication Disorder</rdfs:label>
+  <rdfs:label xml:lang="es">Discapacidad Comunicacion</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Discapacidad_Mental">
+  <rdfs:subClassOf rdf:resource="#Discapacidad"/>
+  <rdfs:label xml:lang="es">Discapacidad Mental</rdfs:label>
+  <rdfs:label xml:lang="en">Mental Impairment</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Discapacidad_Motora">
+  <rdfs:subClassOf rdf:resource="#Discapacidad"/>
+  <rdfs:label xml:lang="es">Discapacidad Motora</rdfs:label>
+  <rdfs:label xml:lang="en">Physical Disability</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Discapacidad_Odontologica">
+  <rdfs:subClassOf rdf:resource="#Discapacidad"/>
+  <rdfs:label xml:lang="en">Dental Disability</rdfs:label>
+  <rdfs:label xml:lang="es">Discapacidad Odontologica</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Discapacidad_Visual">
+  <rdfs:subClassOf rdf:resource="#Discapacidad"/>
+  <rdfs:label xml:lang="es">Discapacidad Visual</rdfs:label>
+  <rdfs:label xml:lang="en">Visual Impairment</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Dislipidemia">
+  <rdfs:subClassOf rdf:resource="#Comorbilidad"/>
+  <rdfs:label xml:lang="es">Dislipidemia</rdfs:label>
+  <rdfs:label xml:lang="en">Dyslipidemia</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Evento_Cerebrovascular">
+  <rdfs:subClassOf rdf:resource="#Enfermedad"/>
+  <rdfs:label xml:lang="en">Cerebrovascular Event</rdfs:label>
+  <rdfs:label xml:lang="es">Evento Cerebrovascular</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Hepatitis">
+  <rdfs:subClassOf rdf:resource="#Comorbilidad"/>
+  <rdfs:label xml:lang="en">Hepatitis</rdfs:label>
+  <rdfs:label xml:lang="es">Hepatitis</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Hipertensión">
+  <rdfs:subClassOf rdf:resource="#Comorbilidad"/>
+  <rdfs:label xml:lang="es">Hipertension</rdfs:label>
+  <rdfs:label xml:lang="en">Hypertension</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Insuficiencia_Renal">
+  <rdfs:subClassOf rdf:resource="#Enfermedad"/>
+  <rdfs:label xml:lang="es">Insuficiencia Renal</rdfs:label>
+  <rdfs:label xml:lang="en">Renal Insufficiency</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Necrobiosis">
+  <rdfs:subClassOf rdf:resource="#Enfermedad"/>
+  <rdfs:label xml:lang="en">Necrobiosis</rdfs:label>
+  <rdfs:label xml:lang="es">Necrobiosis</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Neuropatia">
+  <rdfs:subClassOf rdf:resource="#Enfermedad"/>
+  <rdfs:label xml:lang="en">Neuropathy</rdfs:label>
+  <rdfs:label xml:lang="es">Neuropatia</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Obesidad">
+  <rdfs:subClassOf rdf:resource="#Comorbilidad"/>
+  <rdfs:label xml:lang="es">Obesidad</rdfs:label>
+  <rdfs:label xml:lang="en">Obesity</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Otras_Comorbilidades">
+  <rdfs:subClassOf rdf:resource="#Comorbilidad"/>
+  <rdfs:label xml:lang="en">Other Comorbidities</rdfs:label>
+  <rdfs:label xml:lang="es">Otras Comorbilidad</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Otras_Enfermedades">
+  <rdfs:subClassOf rdf:resource="#Enfermedad"/>
+  <rdfs:label xml:lang="en">Other Diseases</rdfs:label>
+  <rdfs:label xml:lang="es">Otras Enfermedades</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Otros_Padecimientos">
+  <rdfs:subClassOf rdf:resource="#Padecimiento"/>
+  <rdfs:label xml:lang="en">Other Pathological Conditions</rdfs:label>
+  <rdfs:label xml:lang="es">Otros_Padecimientos</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Proceso_Infeccioso">
+  <rdfs:subClassOf rdf:resource="#Enfermedad"/>
+  <rdfs:label xml:lang="en">Infective process</rdfs:label>
+  <rdfs:label xml:lang="es">Proceso Infeccioso</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Retinopatia">
+  <rdfs:subClassOf rdf:resource="#Enfermedad"/>
+  <rdfs:label xml:lang="en">Retinopathy</rdfs:label>
+  <rdfs:label xml:lang="es">Retinopatia</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Sintoma">
+  <rdfs:subClassOf rdf:resource="#Padecimiento"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Tuberculosis">
+  <rdfs:subClassOf rdf:resource="#Comorbilidad"/>
+  <rdfs:label xml:lang="en">Tuberculosis</rdfs:label>
+  <rdfs:label xml:lang="es">Tuberculosis</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Uropatia">
+  <rdfs:subClassOf rdf:resource="#Comorbilidad"/>
+  <rdfs:label xml:lang="en">Uropathy</rdfs:label>
+  <rdfs:label xml:lang="es">Uropatia</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#VIH-SIDA">
+  <rdfs:subClassOf rdf:resource="#Comorbilidad"/>
+  <rdfs:label xml:lang="en">HIV AIDS</rdfs:label>
+  <rdfs:label xml:lang="es">VIH Sida</rdfs:label>
+</owl:Class>
+
+<Padecimiento rdf:about="#AMPUTACION_TRAUMATICA_EN_ALGUN_NIVEL_ENTRE_LA_CADERA_Y_LA_RODILLA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ANEMIAS_POR_DEFICIENCIA_DE_HIERRO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ANEMIA_HEMOLITICA_ADQUIRIDA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ANORMALIDADES_EN_LA_PRUEBA_DE_TOLERANCIA_A_LA_GLUCOSA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ARTRITIS_REUMATOIDE_SEROPOSITIVA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ASTIGMATISMO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ATENCION_MEDICA_NO_ESPECIFICADA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ArtritisReumatoideSeropositiva">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#B351_TIÑA_DE_LAS_Uñas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#BLEFAROCONJUNTIVITIS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#BRONQUITIS_CRONICA_NO_ESPECIFICA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#BRONQUITIS_CRONICA_SIMPLE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#CARIES_CON_EXPOSICION_PULPAR">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#CARIES_DEL_CEMENTO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#CARIES_DENTAL">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#CARIES_DE_LA_DENTINA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#CATARATA_SENIL">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#CA_BASOCELULAR_EN_CONCHA_DE_PABELLON_AURICULAR_CURADO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#CISTITIS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#CISTITIS_AGUDA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#CISTOCELE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#CLOASMA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#COLITIS_DE_ETIOLOGIA_INDETERMINADA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#COLITIS_DE_ETIOLOGIA_INDETERMINDAD">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#COLITS_DE_ETIOLOGIA_INDETERMINADA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#CONJUNTIVITIS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#CONSULTA_PARA_REPETICION_DE_RECETA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#CONTROL_GENERAL_DE_SALUD_DE_RUTINA_DE_RESIDENTES_DE_INSTITUCIONES">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#CONTROL_GENERAL_DE_SALUD_DE_RUTINA_DE_RESIDENTES_DE_INSTITUCIONES_">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#CORDIOMIOPATIA_ISQUEMICA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Retinopatia rdf:about="#Catarata">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Retinopatia>
+
+<Otros_Padecimientos rdf:about="#CetoacidosisDiabetica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otros_Padecimientos>
+
+<Padecimiento rdf:about="#Cistitis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#D291_TUMOR_BENIGNO_DE_LA_PROSTATA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DEMENCIA_VASCULAR">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DERMATITIS_ATOPICA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DERMATITIS_ATOPICA_NO_ESPECIFICADA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DERMATITIS_DE_CONTACTO_POR_IRRITANTES">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DERMATITIS_NO_ESPECIFICADA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DESCONTROL_METABOLICO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DIABETES">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DIABETES_MELLITUS_INSULINODEPENDIENTE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DIABETES_MELLITUS_NO_ESPECIFICADA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DIABETES_MELLITUS_NO_INSULINODEPENDIENTE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DIARREAY_GASTROENTERITIS_DE_PRESUNTO_ORIGEN_INFECCIOSO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DISPLASIA_CERVICAL_LEVE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DM2_DESCONTROLADA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DM_INSULINODEPENDINETE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DM_INSULINODPENDIENTE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DM_INSULINODPENDIENTE_SIN_MENCION_DE_COMPLICACION">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DM_NI_INSULINODEPENDIENTE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DM_NO_INSULINODEPENDINETE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DM_NO_INSULINODEPNDIENTE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DM_NO_INSULINODPEENDIENTE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DM_SECUNDARIA_A_PANCREATECTOMIA_SUBTOTAL">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Otros_Padecimientos rdf:about="#Deshidratacion">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otros_Padecimientos>
+
+<Diabetes_Mellitus rdf:about="#DiabetesMellitusTipo1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Padecimiento"/>
+</Diabetes_Mellitus>
+
+<Padecimiento rdf:about="#DiabetesMellitusTipo1SinMencionDeComplicacion">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DiabetesMellitusTipo1_">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DiabetesMellitusTipo1_CON_COMPLICACIONES_CIRCULATORIAS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DiabetesMellitusTipo1_CON_COMPLICACIONES_NEUROLOGICAS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DiabetesMellitusTipo1_CON_COMPLICACIONES_NO_ESPECIFICADAS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DiabetesMellitusTipo1_CON_COMPLICACIONES_RENALES">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DiabetesMellitusTipo1_CON_COMPLICAICONES_MULTIPLES">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DiabetesMellitusTipo1_SIN_MENCION_DE_COMPLICACION">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Diabetes_Mellitus rdf:about="#DiabetesMellitusTipo2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Padecimiento"/>
+  <puedeCausar rdf:resource="#EstadoHiperosmolarHiperglucemico"/>
+  <puedeCausar rdf:resource="#NefropatiaDiabetica"/>
+  <puedeCausar rdf:resource="#NeuropatiaDiabetica"/>
+  <puedeCausar rdf:resource="#RetinopatiaDiabetica"/>
+</Diabetes_Mellitus>
+
+<Otros_Padecimientos rdf:about="#EstadoHiperosmolarHiperglucemico">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otros_Padecimientos>
+
+<Insuficiencia_Renal rdf:about="#NefropatiaDiabetica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Insuficiencia_Renal>
+
+<Neuropatia rdf:about="#NeuropatiaDiabetica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Neuropatia>
+
+<Retinopatia rdf:about="#RetinopatiaDiabetica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Retinopatia>
+
+<Padecimiento rdf:about="#DiabetesMellitusTipo2_CON_COMPLICACIONES_RENALES">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#E108_DM_CON_COMPLICACIONES_NO_ESPECIFICADAS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#E10_DiabetesMellitusTipo1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#E119_DM_NO_INSULINODEPNEDINETE_SIN_MENCION_DE_LA_COMPLICACION">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#E11_DiabetesMellitusTipo2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#EDEMA_NO_ESPECIFICADO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#EFECTOS_ADVERSOS_DE_EXCIPIENTES_FARMACEUTICOS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ENFERMEDAD_CARDIACA_HIPERTENSIVA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ENFERMEDAD_DIVERTICULAR_DEL_INTESTINO_GRUESO_SIN_PERFORACION_NI_ABSCESO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ENFERMEDAD_ISQUEMICA_CRONICA_DEL_CORAZON">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ENFERMEDAD_PULMONAR_OBSTRUCTIVA_CRONICA_NO_ESPECIFICADA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ENFERMEDAD_RENAL_CRONICO_ETAPA5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#EPICONDILITIS_LATERAL">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#EPISODIO_DEPRESIVO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ESTADOS_MENOPAUSICOS_Y_CLIMATERICOS_FEMENINOS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ESTREÑIMIENTO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#EXAMEN_DE_PESQUISA_ESPECIAL_PARA_TUMORES">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#EXAMEN_GINECOLOGICO_DE_RUTINA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#EXAMEN_GINECOLOGICO_GENERAL">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#EXAMEN_GINECOLOGICO_GENERAL_DE_RUTINA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#EXAMEN_GINOCOLOGICO_GENERAL_DE_RUTINA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Otras_Enfermedades rdf:about="#EnfermedadAcidoPeptica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otras_Enfermedades>
+
+<Padecimiento rdf:about="#EnfermedadRenalCronicaEtapa3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Otros_Padecimientos rdf:about="#Estreñimiento">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otros_Padecimientos>
+
+<Padecimiento rdf:about="#FARINGITIS_AGUDA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#FARINJITIS_AGUDA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#FISTULA_ANAL">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#FLEBITIS_Y_TROMBOFLEBITIS_DE_OTROS_VASOS_PROFUNDOS_DE_LOS_MIEMBROS_INFERIORES">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#FRACTURA_DEL_CUELLO_DE_FEMUR">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#FRACTURA_DEL_HOMBRO_Y_BRAZO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#FRACTURA_DEL_HOMBRO_Y_DEL_BRAZO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#FRACTURA_DE_LA_EPIFISIS_SUPERIOR_DEL_HUMERO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#GASTRITIS_CRONICA_NO_ESPECIFICA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#GASTRITIS_NO_ESPECIFICADA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#GASTROENTERITIS_Y_COLITIS_DE_ORIGEN_NO_ESPECIFICADO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#GINGIVITIS_CRONICA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#GLAUCOMA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#GONARTROSIS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#GONARTROSIS_PRIMARIA_BILATERAL">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#GRANULOMATOSIS_DE_WEGENER">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#H522_ASTIGMATISMO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#H911_PRESBIACUSIA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HAS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HAS_">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HEMORROIDES_DE_SEGUNDO_GRADO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HIPERLIPIDEMIA_MIXTA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HIPERMETROPIA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HIPERPLASIA_DE_LA_PROSTATA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HIPERPLASIA_PROSTATICA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HIPERTENSION_ESENCIAL_PRIMARIA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HIPERTENSION_SECUNDARIA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HIPERTESION_ESENCIAL_PRIMARIA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HIPOACUSIA_BILATERAL">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HIPOGLUCEMIA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HIPOTIRODISMO_NO_ESPECIFICADO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HIPOTIROIDISMO_SUBCLINICO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HIPOTIROIDISMO_SUBCLINICO_POR_DEFICIENCIA_DE_YODO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HiperplasiaDeLaProstata">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Hipertensión rdf:about="#HipertensionArterialSistemica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Hipertensión>
+
+<Padecimiento rdf:about="#HipertensionEsencialPrimaria">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Otras_Comorbilidades rdf:about="#Hiperuricemia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otras_Comorbilidades>
+
+<Otros_Padecimientos rdf:about="#Hipoglucemia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otros_Padecimientos>
+
+<Otros_Padecimientos rdf:about="#HipotiroidismoSubclinicoPorDeficienciaDeYodo">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otros_Padecimientos>
+
+<Padecimiento rdf:about="#I10X_HIPERTENSION_ESENCIAL_PRIMARIA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#I84_HEMORROIDES">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#INFECCION_AGUDA_NO_ESPECIFICADA_DE_LAS_VIAS_RESPIRATORIAS_INFERIORES">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#INSOMNIO_NO_ORGANICO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#INSUFICIENCIA_CARDIACA_NO_ESPECIFICADA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#IVCP">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#IVP">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Cardiopatia rdf:about="#InsuficienciaCardiacaNoEspecifica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Cardiopatia>
+
+<Padecimiento rdf:about="#InsuficienciaRenalCronica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#J02_FARINGITIS_AGUDA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#J_32_SINUSITIS_CRONICA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#K02_CARIES_DENTAL">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#K432_HERNIA_INCISIONAL_SIN_OBSTRUCCION_O_GANGRENA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#K58_SINDROME_DEL_COLON_IRRITABLE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#LARINGOFARINGITIS_AGUDA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#LEIOMIOMA_INTRAMURAL_DEL_UTERO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#LESIONES_DEL_HOMBRO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#LESION_DE_SITIOS_CONTIGUOS_DEL_OJO_Y_SIS_ANEXOS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#LUMBAGO_CON_CIATICA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#LUMBAGO_NO_ESPECIFICADO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#LUMBAGO_NO_ESPECIFICO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#M65_SINOVITIS_Y_TENOSINOVITIS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#MALFORMACION_CONGENITA_DEL_TABIQUE_NO_ESPECIFICADA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#MAREO_Y_DESVANECIMIENTO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#MENSTRUACION_EXCESIVA_Y_FRECUENTE_CON_CICLO_IRREGULAR">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#MIGRANA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#MIOPIA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Otros_Padecimientos rdf:about="#MalformacionCongenitaDelTabiqueCardiacoNoEspecificada">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otros_Padecimientos>
+
+<Otros_Padecimientos rdf:about="#MalformacionCongenitaDelTabiqueNoEspecificada">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otros_Padecimientos>
+
+<Padecimiento rdf:about="#N423_DISPLASIA_DE_LA_PROSTATA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#NIVEL_ELEVADO_DE_GLUCOSA_EN_SANGRE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#None">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#OBESIDAD_GRADO_2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#OBESIDAD_NO_ESPECIFICA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ONSERVACION_Y_EVALUACION_MEDICAS_POR_SOSPECHA_DE_ENFERMEDADES_Y_AFECCIONES">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#OTRAS_ARRITMIAS_CARDIACAS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#OTRAS_ATRESIAS_Y_ESTENOSIS_DE_LA_URETRA_Y_DEL_CUELLO_DE_LA_VEJIGA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#OTRAS_DERMATITIS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#OTRAS_DERMATITIS_SEBORREICAS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#OTRAS_DM_ESPECIFICADAS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#OTRAS_GASTRITIS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#OTRAS_GASTROENTERITIS_Y_COLITIS_DE_ORIGEN_INFECCIOSO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#OTRAS_GASTROENTERITIS_Y_COLITIS_DE_ORIGEN_INFECCIOSO_Y_NO_ESPECIFICADO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#OTRAS_HIPOACUSIAS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#OTRAS_POLIARTROSIS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#OTRA_RINITIS_ALERGICA_ESTACIONAL">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#OTROS_HIPOTIRIODISMOS_ESPECIFICADOS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#OTROS_HIPOTIROIDISMOS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#OTROS_HIPOTIROIDISMOS_ESPECIFICADOS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#OTROS_TRASTORNOS_DEL_SISTEMA_URINARIO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#OTROS_TRASTORNOS_ESPECIFICADOS_DEL_SISTEMA_URINARIO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#OTROS_TRASTORNOS_ESPECIFICOS_DE_LA_RETINA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#OTROS_TRASTORNOS_MENOPAUSICOS_Y_PERIMENOPAUSICOS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#OTROS_TRASTORNOS_MENOPAUSICOS_Y_PERIMENOPAUSICOS_ESPECIFICADOS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#OTRO_DOLOR_CRONICO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Obesidad rdf:about="#ObesidadGrado1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Obesidad>
+
+<Obesidad rdf:about="#ObesidadGrado2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Obesidad>
+
+<Obesidad rdf:about="#ObesidadGrado3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Obesidad>
+
+<Obesidad rdf:about="#ObesidadNoEspecifica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Obesidad>
+
+<Uropatia rdf:about="#OtrosTrastornosDelSistemaUrinario">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Uropatia>
+
+<Padecimiento rdf:about="#PERIODONTITIS_AGUDA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#PRESBICIA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#PRESENCIA_DE_LENTES_INTRAOCULARES">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#PROSTATITIS_CRONICA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Otras_Enfermedades rdf:about="#Parkinson">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otras_Enfermedades>
+
+<Padecimiento rdf:about="#QUERATOSIS_SEBORREICA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#QUISTE_EPIDERMICO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#QUISTE_RENAL_SOLITARIO_CONGENITO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Otros_Padecimientos rdf:about="#QuisteEpidermico">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otros_Padecimientos>
+
+<Padecimiento rdf:about="#REACCION_LIQUINOIDE_DEBIDO_A_DROGAS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#RESISTENCIA_A_LA_INSULINA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#RESISTENCIA_A_LA_INSULNA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#RESTAURACION_CON_AMALGAMA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#RETINOPATIAS_DEL_FONDO_Y_CAMBIOS_VASCULARES_RETINIANOS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#RETINOPATIA_DIABETICA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#RINOFARINGITIS_AGUDA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#RINOFARINGITIS_AGUDA_">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Otras_Enfermedades rdf:about="#RetinopatiasDelFondoYCambiosVascularesRetinianos">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otras_Enfermedades>
+
+<Padecimiento rdf:about="#SE_ELIMINA_CARIES">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#SINDROME_DEL_COLON_IRRITABLE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#SINDROME_DEL_COLON_IRRITABLE_CON_DIARREA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#SINDROME_DEL_COLON_IRRITABLE_SIN_DIARREA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#SINDROME_DEL_COLON_IRRITABLE_SIN_DIARRREA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#SINDROME_REACCIONAL_DE_PIEL_PROBABLEMENTE_SECUNDARIO_A_INGESTA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#SINTOMAS_Y_SIGNOS_QUE_INVOLUCRAN_EL_ESTADO_EMOCIONAL">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#SOSPECHA_DE_GLAUCOMA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Otros_Padecimientos rdf:about="#Senilidad">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otros_Padecimientos>
+
+<Otros_Padecimientos rdf:about="#SindromeDelColonIrritableSinDiarrea">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otros_Padecimientos>
+
+<Padecimiento rdf:about="#TIÑA_DEL_CUERPO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#TIÑA_DE_LAS_UÑAS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#TIÑA_DE_LA_UÑAS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#TIÑA_DE_UÑAS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#TIÑA_INGUINAL">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#TRASTORNOS_DEL_INICIO_Y_DEL_MANTENIMIENTO_DEL_SUEÑO_INSOMNIOS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#TRASTORNOS_MENOPAUSICOS_Y_PERIMENOPAUSICOS_ESPECIFICADOS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#TRASTORNO_DEPRESIVO_RECURRENTE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#TRASTORNO_DE_ATICULACION_TEMPOROMAXILAR">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#TRASTORNO_MIXTO_DE_ANSIEDAD_Y_DEPRESION">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#TRASTOSNOS_DE_LA_ARTICULACION_TEMPOROMAXILAR">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#TUMOR_BENIGNO_DE_LA_PROSTATA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#TUMOR_MALIGNO_DE_LA_MAMA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#TUMOR_MALIGNO_DE_LA_PIEL_DE_OTRAS_PARTES_Y_DE_LAS_NO_ESPECIFICADAS_DE_LA_CARA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#TUMOS_BENIGNO_DEL_PERITONEO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#TerapiaCognitiva">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#TrombocitopeniaNoEspecificada">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#URTICARIA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#UÑA_ENCARNADA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#VAGINITIS_ATROFICA_POSTMENOPAUSICA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Z000_EXAMEN_MEDICO_GENERAL">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#bronquitis_cronica_simple">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#dm_no_insulinodependiente">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#hipertension_esencial_primaria">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ivcp">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#padecimiento1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#AMPUTACION_TRAUMATICA_DE_LA_PIERNA,_NIVEL_NO_ESPECIFICADO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#AMPUTACION_TRAUMATICA_DE_MIEMBRO_INFERIOR,_NIVEL_NO_ESPECIFICADO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DM_NO_ESPECIFICADA,_CON_COMPLICACIONES_NEUROLOGICAS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DiabetesMellitusTipo1,_SIN_MECION_COMPLICACION">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DiabetesMellitusTipo1,_SIN_MENCION_DE_COMPLICACION">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DiabetesMellitusTipo2,_SIN_MECION_DE_COMPLICACION">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DiabetesMellitusTipo2,_SIN_MENCION_DE_COMPLICACION">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Dislipidemia rdf:about="#Dislipidemia(Hipertrigliceridemia)">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Dislipidemia>
+
+<Padecimiento rdf:about="#E109_DiabetesMellitusTipo1,_SIN_MENCION_DE_COMPLICACION">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#E119_DiabetesMellitusTipo2,_SIN_MECION_DE_COMPLICACION">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ENFERMEDAD_PULMONAR_OBSTRUCTIVA_CRONICA,_NO_ESPECIFICA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ENFERMEDAD_PULMONAR_OBSTRUCTIVA_CRONICA,_NO_ESPECIFICADA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ESCHERIA_COLI_(E._COLI)_COMO_CAUSA_DE_ENFERMEDADES_">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#GONARTROSIS(ARTROSIS_DE_LA_RODILLA)">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HIPERTENSION_ESENCIAL_(PRIMARIA)">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HIPOACUSIA_NEUROSENSORIAL,_BILATERAL">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HISTORIA_PERSONAL_DE_ENFERMEDADES_ENDOCRINAS,_NUTRICIONALES_Y_METABOLICAS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#I209_ANGINA_DE_PECHO,_NO_ESPECIFICADA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#INFECCION_DE_LAS_VIAS_URINARIAS,_SITIO_NO_ESPECIFICADO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#INFECCION_DE_VIAS_URINARIAS,_SITIO_NO_ESPECIFICADO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#J00X_RINOFARINGITIS_AGUDA_(RESFRIADO_COMUN)">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#LITIASUS_URINARIA_EN_ESQUITOSOMIASIS_(BILHARZIASIS)">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#MALFORMACION_CONGENITA_DEL_TABIQUE_CARDIACO,_NO_ESPECIFICADA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#OTROS_TRANSTORNOS_DEL_OJO_Y_SUS_ANEXOS,_CONSECUTIVOS_A_PROCEDIMIENTO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#PARASITOSIS_INTESTINAL,_SIN_OTRA_ESPECIFICACION">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#RASTORNO_DE_LA_RETINA,_NO_ESPECIFICADO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#RINITIS,_RINOFARINGITIS_CRONICA_Y_FARINGITIS_CRONICA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#RINITIS,_RINOFARINGITIS_Y_FARINGITIS_CRONICAS">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#RINITIS_ALERGICA,_NO_ESPECIFICADA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#RINOFARINGITIS_AGUDA_(RESFRIADO_COMUN)">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#TRASTORNO_DE_LA_MAMA,_NO_ESPECIFICADO">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#VAGINITIS,_VULVITIS_Y_VULVOVAGINITIS_EN_ENFERMEDADES_INFECCIOSAS_Y_PARASITARIAS_CLASIFICADAS_EN_OTRA_PARTE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#infeccion_de_vias_urinarias,_sitio_no_especificado">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DiabetesMellitusTipo1ConComplicacionesCirculatoriasPerifericas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HipertensionSecundaria">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DolorEnPie">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HipercolesterolemiaPura">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#SindromeDelTunelDel">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Gastritis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DolorEn">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DiabetesMellitusTipo2En">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HipergliceridemiaPura">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HiperlipidemiaMixta">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#InsuficienciaVenosaCronica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DisplasiaDeLaProstata">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DermatitisAtopicaNoEspecificada">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HipertensionEsencial">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#TumorBenignoDeLaProstata">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DiabetesMellitusTipo1Otras">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Micosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#RinitisAlergicaYVasomotora">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#InsuficienciaRenal">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#FaringitisAguda">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#SindromeDelColonIrritable">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#EpisodioDepresivo">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#GonartrosisArtrosisDeLa">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#GastroenteritisYColitisDeOrigenInfecciosoYNoEspecificado">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#AnormalidadesEnLaPruebaDeToleranciaALaGlucosa">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#EnfermedadRenalCronica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ProstatitisCronica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Prostatitis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Hipotension">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Hipercarotinemia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DiabetesMellitusTipo1ConComplicacionesNeurologicas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#LumbagoNoEspecificado">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HipertensionArterial">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ProblemasRelacionadosConLaDietaYHabitosAlimentariosInapropiados">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#GranulomatosisDeWegener">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#LupusEritematosoSistemico">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Fractura">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Hipotiroidismos">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#BronquitisCronicaSimple">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Hemorragia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#AnemiasPorDeficienciaDeHierro">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Incontinencia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Diabetes">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#GonartrosisArtrosisDeLaRodilla">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#LumbagoConCiatica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HerniaIncisionalSinObstruccionOGangrena">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DiabetesMellitus">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#AmenorreaSecundaria">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#MenstruacionExcesivaYFrecuenteConCicloIrregular">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#EdemaNoEspecificado">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DiabetesMellitusTipo2SinMencionDeComplicacion">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#GastritisCronica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#FracturaDelCuelloDeFemur">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Poliartrosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HiperuricemiaSinSignosDeArtritisInflamatoriaYEnfermedadTofacea">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ObesidadDebidaAExcesoDeCalorias">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#EstadosMenopausicosYClimatericosFemeninos">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HistoriaPersonalDeIncumplimientoDelRegimenOTratamientoMedico">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#TrastornosEspecificosDeLaRetina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HemorroidesDeSegundoGrado">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#EnfermedadRenal">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Colecistitis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HipotiroidismosEspecificados">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#TrastornosDeLaArticulacionTemporomaxilar">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#RinitisAlergicaEstacional">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#SindromeRespiratorio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#MononeuropatiaDiabetica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#QueratosisSeborreica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DislipidemiaMixta">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#NeuropatiaMetabolica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ReflujoGastroesofagicoConEsofagitis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#LitiasisUrinaria">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Adinamia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#SinovitisYTenosinovitis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DiarreaYGastroenteritisDePresuntoOrigenInfeccioso">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#TrastornosDeAnsiedad">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#SindromeDelColonIrritableConDiarrea">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Urticaria">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#VaginitisAtrofica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Rinitis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Dorsalgia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#RinofaringitisAguda">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#SindromeColon">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#BronquitisCronica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Sindrome">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DermatitisSeborreicas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Seborrea">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DermatitisAtopica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Cloasma">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DiabetesMellitusTipo2ConComplicacionesMultiples">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#InsuficienciaCardiacaNoEspecificada">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HipotiroidismoNoEspecificado">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HipoacusiaBilateral">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Dolor">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#SinusitisCronica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DefectoDelTabiqueVentricular">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#EnfermedadDiverticularDelIntestinoGruesoSinPerforacionNiAbsceso">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#PresenciaDeLentesIntraoculares">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#VulvitisYVulvovaginitisEnEnfermedadesInfecciosasYParasitariasClasificadasEnOtraParte">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#VaginitisAtroficaPostmenopausica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Epilepsia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Cefalea">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#PolineuropatiaDiabetica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DermatitisNoEspecificada">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#CambiosVascularesRetinianos">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#GastritisActivas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Hipoprotrombinemia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#AsmaBronquial">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#EnfermedadMixtaDelTejidoConectivo">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#TrastornosHematopoyeticos">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#A">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Neutropenia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Pancitopenia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#NecrosisHepatica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ErupcionCutanea">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HipersensibilidadAlFarmaco">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Disfuncion">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DisfuncionHepatica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HipertensionIntracraneal">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DañoHepatico">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DañoRenal">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DepresionDelSistemaNerviosoCentral">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Eritema">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ArdorEnElSitioDeAplicacion">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HipersensibilidadAl">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Lactancia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#UlceraPeptica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Hipertension">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Bradicardia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Nausea">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Hipoxia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#InsuficienciaHepatica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HipertrofiaProstatica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Vertigo">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Vomito">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Marea">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Cansancio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Disuria">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Epigastralgia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#AlteracionesEnLaCoagulacion">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#AlteracionesEnLaHematopoyesis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#UlceraGastrica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#UlceraDuodenal">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#InsuficienciaCardiaca">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DepresionRespiratoria">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Sedacion">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#RigidezMuscular">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Euforia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Broncoconstriccion">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HipotensionArterialOrtostatica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Constipacion">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Confusion">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Alucinaciones">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Miosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Convulsiones">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Prurito">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HipersensibilidadAOpioides">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Mareos">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Ansiedad">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#SomnolenciaY">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HipersensibilidadAOtrosAnalgesicos">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#EnfermedadDeAdison">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#EnfermedadPulmonar">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#AlteracionesDeLaFuncionRenal">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#AlteracionesDeLaFuncionHepatica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#RetencionUrinaria">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#SequedadDeLaBoca">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Fatiga">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Debilidad">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Diarrea">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HepatitisReactiva">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#AnemiaHemolitica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HipersensibilidadADerivadosDeLasSulfonamidas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#EnfermedadHepaticaActiva">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Colecistopatia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DolorAbdominal">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Artralgia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DolorDeEspalda">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Tos">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#EnfermedadHepatica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Erupciones">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Salpullido">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Lipodistrofia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Edema">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HipersensibilidadAlBiologico">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#SudoracionFria">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#PalidezDeTegumentos">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#SensacionDeFatiga">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Nerviosismo">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Temblor">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#HipersensibilidadALaInsulinaGlargina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Taquicardia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#ArritmiasCardiacas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#AnginaDePecho">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Insomnio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#PerdidaDePeso">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#InsuficienciaSuprarrenal">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Hipertiroidismo">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Eutiroidismo">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#InfartoAgudoAlMiocardio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#EnfermedadCardiovascular">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DiabetesInsipida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#TrastornosGastrointestinales">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Nauseas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Vomitos">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Dispepsia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Mialgia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Astenia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DolorMuscular">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Flatulencia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#DisfuncionRenal">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Septicemia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#AcidosisMetabolica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#Angiodema">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#EdemaPeriferico">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+<Padecimiento rdf:about="#PerdidaDelApetito">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Padecimiento>
+
+
+</rdf:RDF>

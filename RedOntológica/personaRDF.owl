@@ -1,0 +1,1101 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://www.personas-mexico.org/persona"
+         xmlns="http://www.personas-mexico.org/persona#">
+
+<owl:Ontology rdf:about="http://www.personas-mexico.org/persona"/>
+
+<owl:DatatypeProperty rdf:about="#tieneCedulaProfesional">
+  <rdfs:domain rdf:resource="#Medico"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#tieneFechaNacimiento">
+  <rdfs:domain rdf:resource="#Paciente"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#tieneNombre">
+  <rdfs:domain rdf:resource="#Persona"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#tienePrimerApellido">
+  <rdfs:domain rdf:resource="#Persona"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#tieneSegundoApellido">
+  <rdfs:domain rdf:resource="#Persona"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#tieneSexo">
+  <rdfs:domain rdf:resource="#Persona"/>
+  <rdfs:range>
+    <rdfs:Datatype>
+      <owl:oneOf>
+        <rdf:Description>
+      <rdf:first>Femenino</rdf:first>
+        <rdf:rest>
+        <rdf:Description>
+      <rdf:first>Masculino</rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        </rdf:Description>
+        </rdf:rest>
+        </rdf:Description>
+      </owl:oneOf>
+    </rdfs:Datatype>
+  </rdfs:range>
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="#Medico">
+  <rdfs:subClassOf rdf:resource="#Persona"/>
+  <rdfs:label xml:lang="en">Doctor</rdfs:label>
+  <rdfs:label xml:lang="es">Medico</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Paciente">
+  <rdfs:subClassOf rdf:resource="#Persona"/>
+  <rdfs:label xml:lang="es">Paciente</rdfs:label>
+  <rdfs:label xml:lang="en">Patient</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Persona">
+  <rdfs:label xml:lang="en">Person</rdfs:label>
+  <rdfs:label xml:lang="es">Persona</rdfs:label>
+</owl:Class>
+
+<rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+
+<Paciente rdf:about="#paciente1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1961-06-12</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1929-05-25</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1946-09-18</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-03-14</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-11-28</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1941-10-16</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1957-11-18</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-23</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-05-15</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1966-04-03</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1928-08-20</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1950-09-27</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1960-05-25</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente14">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1946-10-27</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-11-14</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente16">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-11-11</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente17">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1943-06-24</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente18">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1939-11-15</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente19">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1965-10-04</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente20">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1972-01-13</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente21">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1936-12-12</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente22">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-11-04</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente23">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-11-12</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente24">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-01-25</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente25">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-02-23</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente26">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1950-04-04</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente27">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1960-03-21</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente28">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1956-02-04</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente29">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1958-10-28</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente30">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1965-06-04</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente31">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1940-12-07</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente32">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1949-07-16</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente33">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1953-10-22</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente34">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1942-05-04</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente35">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1962-09-17</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente36">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1930-02-28</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente37">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1963-12-08</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente38">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1951-06-06</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente39">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1939-12-11</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente40">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1951-10-22</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente41">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1973-12-01</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente42">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1942-03-13</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente43">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1934-09-05</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente44">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1953-01-27</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente45">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1961-11-20</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente46">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-04-15</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente47">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-05-23</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente48">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1953-01-27</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente49">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1975-07-10</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente50">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-09-23</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente51">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1932-01-16</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente52">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1940-09-29</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente53">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-12-25</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente54">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1942-02-11</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente55">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1951-06-09</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente56">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-12-10</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente57">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2011-11-11</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente58">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1951-03-23</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente59">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-10-16</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente60">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1932-03-08</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente61">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1944-12-14</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente62">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-01-13</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente63">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1958-08-12</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente64">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1929-05-25</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente65">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1957-09-03</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente66">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1977-11-23</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente67">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-06-09</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente68">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1961-11-20</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente69">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-18</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente70">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1951-01-22</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente71">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1931-04-21</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente72">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1970-09-27</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente73">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1948-07-04</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente74">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1980-12-06</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente75">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-07-05</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente76">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-07-26</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente77">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1946-02-25</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente78">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1945-11-23</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente79">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-10-10</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente80">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1943-07-08</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente81">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1976-11-26</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente82">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1931-11-17</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente83">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1943-10-16</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente84">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1942-11-20</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente85">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1959-01-06</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente86">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1953-12-14</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente87">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1942-12-27</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente88">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1954-10-27</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente89">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1946-03-06</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente90">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1948-03-02</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente91">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1988-05-02</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente92">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1953-07-25</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente93">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1962-01-09</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente94">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1944-01-03</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente95">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1951-07-16</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente96">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1965-11-01</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente97">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-09-06</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente98">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1944-09-30</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente99">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1958-04-10</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente100">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1939-08-10</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente101">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1962-08-28</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente102">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1967-11-09</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente103">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1951-09-21</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente104">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-02-28</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente105">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1980-08-12</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente106">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1948-11-22</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente107">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1946-03-23</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente108">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1963-07-02</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente109">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1951-09-28</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente110">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1963-05-06</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente111">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1933-12-18</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente112">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1956-04-11</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente113">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1934-11-06</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente114">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1942-03-24</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente115">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1941-06-05</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente116">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1948-11-22</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente117">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1944-07-15</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente118">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1956-02-19</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente119">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1956-06-14</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente120">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1930-02-04</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente121">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1952-08-05</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente122">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1962-10-15</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente123">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1955-11-12</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente124">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1962-11-09</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente125">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1939-09-04</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente126">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1971-09-02</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente127">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1949-08-07</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente128">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1955-07-29</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente129">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1936-02-03</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente130">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1977-05-29</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente131">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1986-06-21</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente132">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1933-02-07</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente133">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1937-05-01</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente134">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1958-12-04</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente135">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1971-05-08</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente136">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1943-01-30</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente137">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1946-09-18</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente138">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1961-12-06</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente139">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1955-10-16</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente140">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1936-02-10</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente141">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1940-05-04</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente142">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1973-11-16</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente143">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1958-11-11</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente144">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1948-06-16</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente145">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1940-11-16</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente146">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1950-03-01</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente147">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1944-04-23</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente148">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1989-02-23</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente149">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1939-07-23</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente150">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1941-04-22</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente151">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1957-05-25</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente152">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1969-02-14</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente153">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1933-04-22</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente154">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1958-06-11</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente155">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1957-09-02</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente156">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1957-09-28</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente157">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1973-09-04</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente158">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1946-06-03</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente159">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1950-09-20</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente160">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1944-07-25</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente161">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1934-02-22</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente162">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1947-09-17</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente163">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1940-05-28</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente164">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1936-10-10</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente165">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1954-10-21</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente166">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1948-05-05</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente167">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1961-12-22</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente168">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1941-05-05</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente169">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1948-02-05</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente170">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1943-05-24</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masculino</tieneSexo>
+</Paciente>
+
+<Paciente rdf:about="#paciente171">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <tieneFechaNacimiento rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1955-01-14</tieneFechaNacimiento>
+  <tieneSexo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Femenino</tieneSexo>
+</Paciente>
+
+
+</rdf:RDF>

@@ -1,0 +1,323 @@
+http://www.modelo.org/datos#Nota702	mellitus	tipo
+http://www.modelo.org/datos#Nota210	mellitus	tipo
+http://www.modelo.org/datos#Nota585	mellitus	tipo
+http://www.modelo.org/datos#Nota444	mellitus	tipo
+http://www.modelo.org/datos#Nota444	cardiopulmonaSin	compromiso
+http://www.modelo.org/datos#Nota103	mellitus	tipo
+http://www.modelo.org/datos#Nota358	mellitus	tipo
+http://www.modelo.org/datos#Nota119	mellitus	tipo
+http://www.modelo.org/datos#Nota119	seSuspende	tratamiento
+http://www.modelo.org/datos#Nota629	mellitus	tipo
+http://www.modelo.org/datos#Nota354	cardiopulmonaSin	compromiso aparente
+http://www.modelo.org/datos#Nota95	refiere	incontinencia urinaria
+http://www.modelo.org/datos#Nota383	mellitus	tipo
+http://www.modelo.org/datos#Nota383	propone	hemodialisis
+http://www.modelo.org/datos#Nota41	mellitus	tipo
+http://www.modelo.org/datos#Nota511	sePalpa	adenomegalias
+http://www.modelo.org/datos#Nota555	mellitus	tipo
+http://www.modelo.org/datos#Nota314	mellitus	tipo
+http://www.modelo.org/datos#Nota704	mellitus	tipo
+http://www.modelo.org/datos#Nota203	queAfecto	oreja derecha
+http://www.modelo.org/datos#Nota45	seEncuentra	alerta
+http://www.modelo.org/datos#Nota625	seEncuentra	alerta
+http://www.modelo.org/datos#Nota625	acudeA	valoracion
+http://www.modelo.org/datos#Nota562	mellitus	tipo
+http://www.modelo.org/datos#Nota562	cardiopulmonaSin	compromiso
+http://www.modelo.org/datos#Nota562	seRefiereCon	debilidad
+http://www.modelo.org/datos#Nota237	mellitus	tipo
+http://www.modelo.org/datos#Nota523	mellitus	tipo
+http://www.modelo.org/datos#Nota523	queAcudeA	cita de control po colocacion de marcapasos
+http://www.modelo.org/datos#Nota491	mellitus	tipo
+http://www.modelo.org/datos#Nota217	presenta	onicocriptosis estadio
+http://www.modelo.org/datos#Nota565	mellitus	tipo
+http://www.modelo.org/datos#Nota565	cardiopulmonaSin	compromiso
+http://www.modelo.org/datos#Nota5	mellitus	tipo
+http://www.modelo.org/datos#Nota179	mellitus	tipo
+http://www.modelo.org/datos#Nota179	acudeCon	reporte de estudios app
+http://www.modelo.org/datos#Nota695	cardiopulmonaSin	compromiso
+http://www.modelo.org/datos#Nota91	mellitus	tipo
+http://www.modelo.org/datos#Nota91	ivpcEn	tratamiento por angiologia
+http://www.modelo.org/datos#Nota666	mellitus	tipo
+http://www.modelo.org/datos#Nota666	laDespiertoEn	noches
+http://www.modelo.org/datos#Nota46	mellitus	tipo
+http://www.modelo.org/datos#Nota689	mellitus	tipo
+http://www.modelo.org/datos#Nota132	mellitus	tipo
+http://www.modelo.org/datos#Nota718	viste	ropa adecuada a edad
+http://www.modelo.org/datos#Nota718	afirma	tristeza
+http://www.modelo.org/datos#Nota437	mellitus	tipo
+http://www.modelo.org/datos#Nota460	mellitus	tipo
+http://www.modelo.org/datos#Nota631	presenta	onicocriptosis estadio
+http://www.modelo.org/datos#Nota346	queAcudePor	pareja con persistencia de nic
+http://www.modelo.org/datos#Nota24	traeA	consulta por su hija
+http://www.modelo.org/datos#Nota145	mellitus	tipo
+http://www.modelo.org/datos#Nota216	mellitus	tipo
+http://www.modelo.org/datos#Nota163	mellitus	tipo
+http://www.modelo.org/datos#Nota151	queRefiere	ademas trastornos sexuales
+http://www.modelo.org/datos#Nota703	mellitus	tipo
+http://www.modelo.org/datos#Nota255	mellitus	tipo
+http://www.modelo.org/datos#Nota101	mellitus	tipo
+http://www.modelo.org/datos#Nota467	mellitus	tipo
+http://www.modelo.org/datos#Nota176	mellitus	tipo
+http://www.modelo.org/datos#Nota31	mellitus	tipo
+http://www.modelo.org/datos#Nota615	mellitus	tipo
+http://www.modelo.org/datos#Nota215	mellitus	tipo
+http://www.modelo.org/datos#Nota396	mellitus	tipo
+http://www.modelo.org/datos#Nota469	mellitus	tipo
+http://www.modelo.org/datos#Nota485	mellitus	tipo
+http://www.modelo.org/datos#Nota86	periférico	otras hipertensiones pulmonares secundarias hipertension esencial primaria
+http://www.modelo.org/datos#Nota522	mellitus	tipo
+http://www.modelo.org/datos#Nota644	mellitus	tipo
+http://www.modelo.org/datos#Nota644	seEncuentra	alerta
+http://www.modelo.org/datos#Nota332	mellitus	tipo
+http://www.modelo.org/datos#Nota494	mellitus	tipo
+http://www.modelo.org/datos#Nota595	mellitus	tipo
+http://www.modelo.org/datos#Nota707	mellitus	tipo
+http://www.modelo.org/datos#Nota707	seRefiereCon	rinorrea verdosa
+http://www.modelo.org/datos#Nota323	mellitus	tipo
+http://www.modelo.org/datos#Nota323	seRefiereCon	prurito
+http://www.modelo.org/datos#Nota273	mellitus	tipo
+http://www.modelo.org/datos#Nota62	mellitus	tipo
+http://www.modelo.org/datos#Nota139	sePalpa	adenomegalias
+http://www.modelo.org/datos#Nota139	acudeA	consulta por control de hipertension
+http://www.modelo.org/datos#Nota304	mellitus	tipo
+http://www.modelo.org/datos#Nota304	mellitus	tipo
+http://www.modelo.org/datos#Nota552	seObservaEn	radiografias
+http://www.modelo.org/datos#Nota552	cardiopulmonaSin	compromiso
+http://www.modelo.org/datos#Nota275	seRealiza	espiculotomia
+http://www.modelo.org/datos#Nota594	mellitus	tipo
+http://www.modelo.org/datos#Nota439	mellitus	tipo
+http://www.modelo.org/datos#Nota240	mellitus	tipo
+http://www.modelo.org/datos#Nota240	presenta	mialgia
+http://www.modelo.org/datos#Nota665	mellitus	tipo
+http://www.modelo.org/datos#Nota146	mellitus	tipo
+http://www.modelo.org/datos#Nota177	presenta	disuria poliaquiuria disminucion calibre
+http://www.modelo.org/datos#Nota618	mellitus	tipo
+http://www.modelo.org/datos#Nota221	presenta	onicocriptosis estadio
+http://www.modelo.org/datos#Nota221	mellitus	tipo
+http://www.modelo.org/datos#Nota337	conservaEn	miembros pelvicos
+http://www.modelo.org/datos#Nota458	mellitus	tipo
+http://www.modelo.org/datos#Nota553	mellitus	tipo
+http://www.modelo.org/datos#Nota351	mellitus	tipo
+http://www.modelo.org/datos#Nota135	mellitus	tipo
+http://www.modelo.org/datos#Nota434	mellitus	tipo
+http://www.modelo.org/datos#Nota29	mellitus	tipo
+http://www.modelo.org/datos#Nota329	mellitus	tipo
+http://www.modelo.org/datos#Nota329	seRefiereCon	edema
+http://www.modelo.org/datos#Nota250	mellitus	tipo
+http://www.modelo.org/datos#Nota250	mellitus	tipo
+http://www.modelo.org/datos#Nota393	mellitus	tipo
+http://www.modelo.org/datos#Nota77	funcionalmenteCuentaCon	dependencia moderada para las actividades basicas de la vida diaria katz c
+http://www.modelo.org/datos#Nota453	cardiopulmona	ritmico abdomen
+http://www.modelo.org/datos#Nota487	mellitus	tipo
+http://www.modelo.org/datos#Nota414	consiente	orientado cooperador
+http://www.modelo.org/datos#Nota25	traeA	consulta por su hija
+http://www.modelo.org/datos#Nota42	mellitus	tipo
+http://www.modelo.org/datos#Nota624	seEncuentra	alerta
+http://www.modelo.org/datos#Nota447	egoCon	proteinuria
+http://www.modelo.org/datos#Nota23	laAcudePara	valoracion de enfermedad cronica degenerativa
+http://www.modelo.org/datos#Nota23	cualAcudeA	control subsecuente de enfermedad cronico degenerativa
+http://www.modelo.org/datos#Nota429	mellitus	tipo
+http://www.modelo.org/datos#Nota356	mellitus	tipo
+http://www.modelo.org/datos#Nota710	presenta	onicocriptosis estadio
+http://www.modelo.org/datos#Nota710	mellitus	tipo
+http://www.modelo.org/datos#Nota691	mellitus	tipo
+http://www.modelo.org/datos#Nota560	refiere	consumo de duloxetina
+http://www.modelo.org/datos#Nota403	presenta	narina sdp garganta sdp campos pulmonares con agregados basales resto
+http://www.modelo.org/datos#Nota251	mellitus	tipo
+http://www.modelo.org/datos#Nota251	cardiopulmonaSin	compromiso
+http://www.modelo.org/datos#Nota251	mellitus	tipo
+http://www.modelo.org/datos#Nota451	mellitus	tipo
+http://www.modelo.org/datos#Nota451	cardiopulmonaSin	compromiso
+http://www.modelo.org/datos#Nota324	mellitus	tipo
+http://www.modelo.org/datos#Nota229	acudeA	revision de lesion en antebrazo
+http://www.modelo.org/datos#Nota298	muslo	resto negativo diabetes
+http://www.modelo.org/datos#Nota516	mellitus	tipo
+http://www.modelo.org/datos#Nota272	mellitus	tipo
+http://www.modelo.org/datos#Nota739	presenta	sdp radiografias artrosis
+http://www.modelo.org/datos#Nota456	mellitus	tipo
+http://www.modelo.org/datos#Nota288	mellitus	tipo
+http://www.modelo.org/datos#Nota452	mellitus	tipo
+http://www.modelo.org/datos#Nota452	presenta	infeccion respiratoria
+http://www.modelo.org/datos#Nota389	mellitus	tipo
+http://www.modelo.org/datos#Nota90	mellitus	tipo
+http://www.modelo.org/datos#Nota155	mellitus	tipo
+http://www.modelo.org/datos#Nota248	mellitus	tipo
+http://www.modelo.org/datos#Nota630	mellitus	tipo
+http://www.modelo.org/datos#Nota497	dias	gastroenteritis
+http://www.modelo.org/datos#Nota398	seEncuentra	hernia incisional subicostal derecha saco
+http://www.modelo.org/datos#Nota575	mellitus	hipertension arterial sistémica
+http://www.modelo.org/datos#Nota182	seEncuentra	alerta
+http://www.modelo.org/datos#Nota182	acudeA	valoracion medica para control
+http://www.modelo.org/datos#Nota150	mellitus	tipo
+http://www.modelo.org/datos#Nota150	refiere	dolor en dedo
+http://www.modelo.org/datos#Nota150	mellitus	tipo
+http://www.modelo.org/datos#Nota320	seEntregaEn	breve
+http://www.modelo.org/datos#Nota526	mellitus	tipo
+http://www.modelo.org/datos#Nota526	seRefiere	asintomatico
+http://www.modelo.org/datos#Nota424	seObserva	zona de transformacion
+http://www.modelo.org/datos#Nota521	mellitus	tipo
+http://www.modelo.org/datos#Nota334	mellitus	tipo
+http://www.modelo.org/datos#Nota701	mellitus	tipo
+http://www.modelo.org/datos#Nota600	mellitus	tipo
+http://www.modelo.org/datos#Nota600	cardiopulmona	estable colesterol total
+http://www.modelo.org/datos#Nota228	cardiopulmonaSin	compromiso
+http://www.modelo.org/datos#Nota730	presenta	onicomicosis subungueal distal
+http://www.modelo.org/datos#Nota313	mellitus	tipo
+http://www.modelo.org/datos#Nota357	mellitus	tipo
+http://www.modelo.org/datos#Nota160	seAusculta	soplos
+http://www.modelo.org/datos#Nota455	mellitus	tipo
+http://www.modelo.org/datos#Nota551	mellitus	tipo
+http://www.modelo.org/datos#Nota627	quePresenta	cuadro gripal de inicio sin datos de complicacion aguda rinofaringitis aguda diabetes
+http://www.modelo.org/datos#Nota634	presenta	onicocriptosis estadio
+http://www.modelo.org/datos#Nota305	mellitus	tipo
+http://www.modelo.org/datos#Nota249	mellitus	tipo
+http://www.modelo.org/datos#Nota528	mellitus	tipo
+http://www.modelo.org/datos#Nota459	mellitus	tipo
+http://www.modelo.org/datos#Nota20	laAcudePara	valoracion de enfermedad cronica degenerativa
+http://www.modelo.org/datos#Nota20	cualAcudeA	control de enfermedad cronico degenerativa
+http://www.modelo.org/datos#Nota264	mellitus	tipo
+http://www.modelo.org/datos#Nota50	seAusculta	soplos
+http://www.modelo.org/datos#Nota50	acudePor	dolor en gargantta
+http://www.modelo.org/datos#Nota366	mellitus	tipo
+http://www.modelo.org/datos#Nota430	mellitus	tipo
+http://www.modelo.org/datos#Nota584	mellitus	tipo
+http://www.modelo.org/datos#Nota19	mellitus	tipo
+http://www.modelo.org/datos#Nota711	mellitus	tipo
+http://www.modelo.org/datos#Nota673	mellitus	tipo
+http://www.modelo.org/datos#Nota144	mellitus	tipo
+http://www.modelo.org/datos#Nota492	mellitus	tipo
+http://www.modelo.org/datos#Nota318	mellitus	tipo
+http://www.modelo.org/datos#Nota450	mellitus	tipo
+http://www.modelo.org/datos#Nota83	mellitus	tipo
+http://www.modelo.org/datos#Nota184	acudePor	receta app
+http://www.modelo.org/datos#Nota577	presenta	onicocriptosis estadio
+http://www.modelo.org/datos#Nota660	presenta	onicocriptosis estadio
+http://www.modelo.org/datos#Nota643	mellitus	tipo
+http://www.modelo.org/datos#Nota643	seEncuentra	alerta
+http://www.modelo.org/datos#Nota183	seEncuentra	alerta
+http://www.modelo.org/datos#Nota183	previamenteTrataPor	hipotiroidismo subclinico
+http://www.modelo.org/datos#Nota721	noLogra	relajarse
+http://www.modelo.org/datos#Nota554	mellitus	tipo
+http://www.modelo.org/datos#Nota554	seRefiereCon	rinorrea
+http://www.modelo.org/datos#Nota449	mellitus	tipo
+http://www.modelo.org/datos#Nota667	mellitus	tipo
+http://www.modelo.org/datos#Nota667	mellitus	tipo
+http://www.modelo.org/datos#Nota476	mellitus	tipo
+http://www.modelo.org/datos#Nota612	mellitus	tipo
+http://www.modelo.org/datos#Nota506	mellitus	tipo
+http://www.modelo.org/datos#Nota267	mellitus	tipo
+http://www.modelo.org/datos#Nota44	acudePor	cambio de coloracion en uñas
+http://www.modelo.org/datos#Nota6	mellitus	tipo
+http://www.modelo.org/datos#Nota531	mellitus	tipo
+http://www.modelo.org/datos#Nota212	mellitus	tipo
+http://www.modelo.org/datos#Nota712	presenta	onicocriptosis estadio
+http://www.modelo.org/datos#Nota574	presenta	onicocriptosis estadio
+http://www.modelo.org/datos#Nota76	mellitus	tipo
+http://www.modelo.org/datos#Nota579	mellitus	tipo
+http://www.modelo.org/datos#Nota563	seEncuentra	alerta
+http://www.modelo.org/datos#Nota428	mellitus	tipo
+http://www.modelo.org/datos#Nota116	presenta	dolor colico renal resuelto en urgencias
+http://www.modelo.org/datos#Nota692	mellitus	tipo
+http://www.modelo.org/datos#Nota348	mellitus	tipo
+http://www.modelo.org/datos#Nota412	consiente	orientado cooperador
+http://www.modelo.org/datos#Nota670	mellitus	tipo
+http://www.modelo.org/datos#Nota559	mantiene	tratamiento
+http://www.modelo.org/datos#Nota530	mellitus	tipo
+http://www.modelo.org/datos#Nota601	mellitus	tipo
+http://www.modelo.org/datos#Nota495	mellitus	tipo
+http://www.modelo.org/datos#Nota482	hernia	hiatal incompetencia del esfintes esofagio inf gastritis moderada erosiva
+http://www.modelo.org/datos#Nota482	seIrradiaA	h. izquierdo
+http://www.modelo.org/datos#Nota181	mellitus	tipo
+http://www.modelo.org/datos#Nota181	seEncuentra	alerta
+http://www.modelo.org/datos#Nota181	queAcudeA	consulta por dolor
+http://www.modelo.org/datos#Nota224	presenta	onicocriptosis estadio
+http://www.modelo.org/datos#Nota636	presenta	onicocriptosis estadio
+http://www.modelo.org/datos#Nota52	mellitus	tipo
+http://www.modelo.org/datos#Nota426	presenta	onicocriptosis estadio
+http://www.modelo.org/datos#Nota426	acudeA	consulta
+http://www.modelo.org/datos#Nota47	mellitus	tipo
+http://www.modelo.org/datos#Nota47	refiere	problemas gastricos de tipo pirosis
+http://www.modelo.org/datos#Nota80	mellitus	tipo
+http://www.modelo.org/datos#Nota124	cardiopulmonaSin	compromiso
+http://www.modelo.org/datos#Nota626	seEncuentra	alerta
+http://www.modelo.org/datos#Nota668	mellitus	tipo
+http://www.modelo.org/datos#Nota483	mellitus	tipo
+http://www.modelo.org/datos#Nota645	mellitus	tipo
+http://www.modelo.org/datos#Nota645	seEncuentra	alerta
+http://www.modelo.org/datos#Nota59	mellitus	tipo
+http://www.modelo.org/datos#Nota34	mellitus	tipo
+http://www.modelo.org/datos#Nota34	queAcudeDe	manera subsecuente
+http://www.modelo.org/datos#Nota527	mellitus	tipo
+http://www.modelo.org/datos#Nota415	consiente	orientado cooperador
+http://www.modelo.org/datos#Nota658	presenta	onicocriptosis estadio
+http://www.modelo.org/datos#Nota21	cualAcudePara	valoracion de enfermedad cronica degenerativa
+http://www.modelo.org/datos#Nota21	cualAcudeA	control de enfermedad cronico degenerativa
+http://www.modelo.org/datos#Nota431	mellitus	tipo
+http://www.modelo.org/datos#Nota157	queAfecto	piel cabelluda
+http://www.modelo.org/datos#Nota37	mellitus	tipo
+http://www.modelo.org/datos#Nota37	tiene	cuadro de chicungunya
+http://www.modelo.org/datos#Nota652	mellitus	tipo
+http://www.modelo.org/datos#Nota652	niega	descontrol metabolico
+http://www.modelo.org/datos#Nota652	niega	paciente
+http://www.modelo.org/datos#Nota441	mellitus	tipo
+http://www.modelo.org/datos#Nota100	presenta	onicocriptosis estadio
+http://www.modelo.org/datos#Nota100	acudeA	consulta
+http://www.modelo.org/datos#Nota566	mellitus	tipo
+http://www.modelo.org/datos#Nota268	mellitus	tipo
+http://www.modelo.org/datos#Nota302	mellitus	tipo
+http://www.modelo.org/datos#Nota363	mellitus	tipo
+http://www.modelo.org/datos#Nota311	mellitus	tipo
+http://www.modelo.org/datos#Nota297	mellitus	tipo
+http://www.modelo.org/datos#Nota440	mellitus	tipo
+http://www.modelo.org/datos#Nota394	mellitus	tipo
+http://www.modelo.org/datos#Nota698	seRefiereCon	artrilagias
+http://www.modelo.org/datos#Nota319	mellitus	tipo
+http://www.modelo.org/datos#Nota341	alertaA	la ra mucosa eucromica
+http://www.modelo.org/datos#Nota235	mellitus	tipo
+http://www.modelo.org/datos#Nota604	mellitus	tipo
+http://www.modelo.org/datos#Nota505	mellitus	tipo
+http://www.modelo.org/datos#Nota39	mellitus	diabetes mellitus tipo
+http://www.modelo.org/datos#Nota720	caminaCon	apoyo de andadera
+http://www.modelo.org/datos#Nota312	mellitus	tipo
+http://www.modelo.org/datos#Nota317	mellitus	tipo
+http://www.modelo.org/datos#Nota339	quePresenta	cuadro gripal inicial sin datos de complicacion
+http://www.modelo.org/datos#Nota339	queInicia	dia
+http://www.modelo.org/datos#Nota27	evalúa	su estado de control actual diabetes mellitus tipo
+http://www.modelo.org/datos#Nota664	seRefiereCon	distension abdominal
+http://www.modelo.org/datos#Nota342	mellitus	tipo
+http://www.modelo.org/datos#Nota463	mellitus	tipo
+http://www.modelo.org/datos#Nota647	mellitus	tipo
+http://www.modelo.org/datos#Nota647	seEncuentra	alerta
+http://www.modelo.org/datos#Nota193	operaDe	columna lumbar
+http://www.modelo.org/datos#Nota338	mellitus	tipo
+http://www.modelo.org/datos#Nota420	mellitus	tipo
+http://www.modelo.org/datos#Nota48	seIrradiaA	todo el abdomen exploracion física abdomen blando depresible
+http://www.modelo.org/datos#Nota343	seExplica	la importancia del apego al tratamiento
+http://www.modelo.org/datos#Nota343	orofaringeSin	alteraciones
+http://www.modelo.org/datos#Nota343	queAcude	dia
+http://www.modelo.org/datos#Nota737	presenta	alteracion en tamaño
+http://www.modelo.org/datos#Nota168	mellitus	tipo
+http://www.modelo.org/datos#Nota238	mellitus	tipo
+http://www.modelo.org/datos#Nota611	mellitus	osteoporosis de columna
+http://www.modelo.org/datos#Nota693	mellitus	tipo
+http://www.modelo.org/datos#Nota227	queCuentaCon	antecedente de alteraciones del ciclo tipo opsomenorrea asintomatica
+http://www.modelo.org/datos#Nota325	mellitus	tipo
+http://www.modelo.org/datos#Nota564	mellitus	tipo
+http://www.modelo.org/datos#Nota570	mellitus	tipo
+http://www.modelo.org/datos#Nota123	tiene	litos
+http://www.modelo.org/datos#Nota578	mellitus	tipo
+http://www.modelo.org/datos#Nota578	toraxSin	datos positivos colesterol total
+http://www.modelo.org/datos#Nota164	mellitus	tipo
+http://www.modelo.org/datos#Nota417	consiente	orientado cooperador
+http://www.modelo.org/datos#Nota66	mellitus	tipo
+http://www.modelo.org/datos#Nota580	periféricoSin	edema
+http://www.modelo.org/datos#Nota580	acudeA	consulta secundario a descontrol de hipertension arterial sistémica
+http://www.modelo.org/datos#Nota623	mellitus	tipo
+http://www.modelo.org/datos#Nota669	refiere	micciones frecuentes con ardor
+http://www.modelo.org/datos#Nota112	tolera	la via oral
+http://www.modelo.org/datos#Nota112	acudeA	consulta
+http://www.modelo.org/datos#Nota714	quePresenta	hematoma
+http://www.modelo.org/datos#Nota646	mellitus	tipo
+http://www.modelo.org/datos#Nota646	seEncuentra	alerta
+http://www.modelo.org/datos#Nota22	cualAcudePara	valoracion de enfermedad cronica degenerativa
+http://www.modelo.org/datos#Nota22	queAcudeA	control de enfermedad cronico degenerativa

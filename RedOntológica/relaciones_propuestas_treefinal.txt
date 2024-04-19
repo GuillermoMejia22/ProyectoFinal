@@ -1,0 +1,507 @@
+http://www.modelo.org/datos#Nota429	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota429	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota429	presenta	Http://www.padecimientos-mexico.org/enfermedad#hiperlipidemiamixta
+http://www.modelo.org/datos#Nota429	presenta	Http://www.padecimientos-mexico.org/enfermedad#problemasrelacionadosconladietayhabitosalimentariosinapropiados
+http://www.modelo.org/datos#Nota429	tieneGlucosa	86
+http://www.modelo.org/datos#Nota429	tieneColesterol	164
+http://www.modelo.org/datos#Nota355	presenta	Http://www.padecimientos-mexico.org/enfermedad#granulomatosisdewegener
+http://www.modelo.org/datos#Nota356	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota356	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota356	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipotiroidismosubclinicopordeficienciadeyodo
+http://www.modelo.org/datos#Nota356	presenta	Http://www.padecimientos-mexico.org/enfermedad#lupuseritematososistemico
+http://www.modelo.org/datos#Nota356	tieneGlucosa	76
+http://www.modelo.org/datos#Nota356	tieneColesterol	125
+http://www.modelo.org/datos#Nota710	presenta	 onicocriptosis estadio
+http://www.modelo.org/datos#Nota691	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota691	tieneGlucosa	169
+http://www.modelo.org/datos#Nota691	tieneColesterol total	169
+http://www.modelo.org/datos#Nota691	presenta	Http://www.padecimientos-mexico.org/enfermedad#fractura
+http://www.modelo.org/datos#Nota560	tieneGlucosa	107
+http://www.modelo.org/datos#Nota560	tieneColesterol	176
+http://www.modelo.org/datos#Nota560	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipotiroidismos
+http://www.modelo.org/datos#Nota560	refiere	 consumo
+http://www.modelo.org/datos#Nota384	presenta	Http://www.padecimientos-mexico.org/enfermedad#artritisreumatoideseropositiva
+http://www.modelo.org/datos#Nota384	tieneGlucosa	90
+http://www.modelo.org/datos#Nota403	presenta	Http://www.padecimientos-mexico.org/enfermedad#bronquitiscronicasimple
+http://www.modelo.org/datos#Nota488	presenta	Http://www.padecimientos-mexico.org/enfermedad#gastritis
+http://www.modelo.org/datos#Nota488	tieneColesterol total	220
+http://www.modelo.org/datos#Nota488	tieneGlucosa	110
+http://www.modelo.org/datos#Nota488	presenta	Http://www.padecimientos-mexico.org/enfermedad#hemorragia
+http://www.modelo.org/datos#Nota251	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota324	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota324	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipercolesterolemiapura
+http://www.modelo.org/datos#Nota324	presenta	Http://www.padecimientos-mexico.org/enfermedad#sindromedelcolonirritable
+http://www.modelo.org/datos#Nota324	tieneColesterol total	161
+http://www.modelo.org/datos#Nota324	tieneGlucosa	260
+http://www.modelo.org/datos#Nota385	presenta	Http://www.padecimientos-mexico.org/enfermedad#sindromedelcolonirritable
+http://www.modelo.org/datos#Nota385	presenta	doloroso a
+http://www.modelo.org/datos#Nota73	presenta	Http://www.padecimientos-mexico.org/enfermedad#anemiaspordeficienciadehierro
+http://www.modelo.org/datos#Nota40	presenta	Http://www.padecimientos-mexico.org/enfermedad#examenginecologicogeneralde
+http://www.modelo.org/datos#Nota40	presenta	Http://www.padecimientos-mexico.org/enfermedad#incontinencia
+http://www.modelo.org/datos#Nota504	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetes
+http://www.modelo.org/datos#Nota504	tieneGlucosa	80
+http://www.modelo.org/datos#Nota516	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota516	presenta	Http://www.padecimientos-mexico.org/enfermedad#obesidad
+http://www.modelo.org/datos#Nota516	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota516	presenta	Http://www.padecimientos-mexico.org/enfermedad#hiperlipidemiamixta
+http://www.modelo.org/datos#Nota516	presenta	Http://www.padecimientos-mexico.org/enfermedad#problemasrelacionadosconladietayhabitosalimentariosinapropiados
+http://www.modelo.org/datos#Nota516	tieneGlucosa	93
+http://www.modelo.org/datos#Nota272	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota272	tieneGlucosa	99
+http://www.modelo.org/datos#Nota272	tieneColesterol total	119
+http://www.modelo.org/datos#Nota93	tieneGlucosa	129
+http://www.modelo.org/datos#Nota93	tieneColesterol	237
+http://www.modelo.org/datos#Nota739	presenta	Http://www.padecimientos-mexico.org/enfermedad#gonartrosisartrosisdela
+http://www.modelo.org/datos#Nota78	tieneColesterol total	130
+http://www.modelo.org/datos#Nota78	tieneGlucosa	156
+http://www.modelo.org/datos#Nota456	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota456	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota288	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipotiroidismos
+http://www.modelo.org/datos#Nota452	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota452	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencial
+http://www.modelo.org/datos#Nota389	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota155	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota155	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota155	presenta	Http://www.padecimientos-mexico.org/enfermedad#obesidad
+http://www.modelo.org/datos#Nota155	presenta	Http://www.padecimientos-mexico.org/enfermedad#problemasrelacionadosconladietayhabitosalimentariosinapropiados
+http://www.modelo.org/datos#Nota248	tieneColesterol total	194
+http://www.modelo.org/datos#Nota248	tieneGlucosa	149
+http://www.modelo.org/datos#Nota222	tieneGlucosa	86
+http://www.modelo.org/datos#Nota194	presenta	Http://www.padecimientos-mexico.org/enfermedad#lumbagoconciatica
+http://www.modelo.org/datos#Nota497	presenta	Http://www.padecimientos-mexico.org/enfermedad#sindromedelcolonirritable
+http://www.modelo.org/datos#Nota497	presenta	depresible no
+http://www.modelo.org/datos#Nota497	presenta	irritable ,
+http://www.modelo.org/datos#Nota406	presenta	Http://www.padecimientos-mexico.org/enfermedad#faringitisaguda
+http://www.modelo.org/datos#Nota398	presenta	Http://www.padecimientos-mexico.org/enfermedad#herniaincisionalsinobstruccionogangrena
+http://www.modelo.org/datos#Nota147	presenta	Http://www.padecimientos-mexico.org/enfermedad#faringitisaguda
+http://www.modelo.org/datos#Nota575	controla	diabetes mellitus
+http://www.modelo.org/datos#Nota575	controla	hipertension arterial
+http://www.modelo.org/datos#Nota575	tieneGlucosa	86
+http://www.modelo.org/datos#Nota575	tieneInsulina	24.5
+http://www.modelo.org/datos#Nota182	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitus
+http://www.modelo.org/datos#Nota87	tieneGlucosa	138
+http://www.modelo.org/datos#Nota87	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota87	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota543	tieneGlucosa	87
+http://www.modelo.org/datos#Nota705	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota150	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1sinmenciondecomplicacion
+http://www.modelo.org/datos#Nota150	tieneGlucosa	73
+http://www.modelo.org/datos#Nota150	tieneColesterol	160
+http://www.modelo.org/datos#Nota150	refiere	dolor en
+http://www.modelo.org/datos#Nota320	fierza	 musculae global
+http://www.modelo.org/datos#Nota526	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipotiroidismos
+http://www.modelo.org/datos#Nota526	tieneGlucosa	48
+http://www.modelo.org/datos#Nota424	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitus
+http://www.modelo.org/datos#Nota424	presenta	Http://www.padecimientos-mexico.org/enfermedad#amenorreasecundaria
+http://www.modelo.org/datos#Nota521	presenta	Http://www.padecimientos-mexico.org/enfermedad#lumbagoconciatica
+http://www.modelo.org/datos#Nota334	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota334	tieneGlucosa	107
+http://www.modelo.org/datos#Nota701	complicacion	hiperlipidemia mixta
+http://www.modelo.org/datos#Nota701	complicacion	 hematuria
+http://www.modelo.org/datos#Nota228	presenta	Http://www.padecimientos-mexico.org/enfermedad#menstruacionexcesivayfrecuenteconcicloirregular
+http://www.modelo.org/datos#Nota207	presenta	Http://www.padecimientos-mexico.org/enfermedad#edemanoespecificado
+http://www.modelo.org/datos#Nota730	presenta	 onicomicosis subungueal distal
+http://www.modelo.org/datos#Nota313	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2sinmenciondecomplicacion
+http://www.modelo.org/datos#Nota313	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipercolesterolemiapura
+http://www.modelo.org/datos#Nota313	presenta	depresible no
+http://www.modelo.org/datos#Nota357	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota357	tieneGlucosa	99
+http://www.modelo.org/datos#Nota357	tieneInsulina	11.3
+http://www.modelo.org/datos#Nota160	presenta	Http://www.padecimientos-mexico.org/enfermedad#faringitisaguda
+http://www.modelo.org/datos#Nota160	presenta	Http://www.padecimientos-mexico.org/enfermedad#rinitisalergicayvasomotora
+http://www.modelo.org/datos#Nota109	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota109	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota109	tieneResistencia de la insulina	3.3
+http://www.modelo.org/datos#Nota109	tieneGlucosa	84
+http://www.modelo.org/datos#Nota455	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota455	tieneGlucosa	136
+http://www.modelo.org/datos#Nota455	tieneColesterol total	147
+http://www.modelo.org/datos#Nota551	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota551	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota551	tieneGlucosa	129
+http://www.modelo.org/datos#Nota551	tieneColesterol total	159
+http://www.modelo.org/datos#Nota230	presenta	Http://www.padecimientos-mexico.org/enfermedad#dermatitisatopicanoespecificada
+http://www.modelo.org/datos#Nota627	presenta	 cuadro gripal
+http://www.modelo.org/datos#Nota635	presenta	semigloboso a
+http://www.modelo.org/datos#Nota634	presenta	 onicocriptosis estadio
+http://www.modelo.org/datos#Nota305	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota305	tieneGlucosa	59
+http://www.modelo.org/datos#Nota305	tieneColesterol total	182
+http://www.modelo.org/datos#Nota142	presenta	Http://www.padecimientos-mexico.org/enfermedad#gastritiscronica
+http://www.modelo.org/datos#Nota503	presenta	Http://www.padecimientos-mexico.org/enfermedad#fracturadelcuellodefemur
+http://www.modelo.org/datos#Nota60	presenta	Http://www.padecimientos-mexico.org/enfermedad#poliartrosis
+http://www.modelo.org/datos#Nota249	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota249	tieneGlucosa	117
+http://www.modelo.org/datos#Nota249	tieneColesterol total	179
+http://www.modelo.org/datos#Nota528	presenta	Http://www.padecimientos-mexico.org/enfermedad#obesidad
+http://www.modelo.org/datos#Nota528	tieneGlucosa	216
+http://www.modelo.org/datos#Nota528	tieneColesterol total	182
+http://www.modelo.org/datos#Nota459	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota459	tieneColesterol	143
+http://www.modelo.org/datos#Nota459	tieneInsulina	19.4
+http://www.modelo.org/datos#Nota459	tieneGlucosa	103
+http://www.modelo.org/datos#Nota264	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota264	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota264	presenta	Http://www.padecimientos-mexico.org/enfermedad#hiperlipidemiamixta
+http://www.modelo.org/datos#Nota264	presenta	Http://www.padecimientos-mexico.org/enfermedad#hiperuricemiasinsignosdeartritisinflamatoriayenfermedadtofacea
+http://www.modelo.org/datos#Nota264	presenta	Http://www.padecimientos-mexico.org/enfermedad#obesidaddebidaaexcesodecalorias
+http://www.modelo.org/datos#Nota264	tieneGlucosa	108
+http://www.modelo.org/datos#Nota602	presenta	izquierdo de
+http://www.modelo.org/datos#Nota602	3x3	 resto
+http://www.modelo.org/datos#Nota622	presenta	Http://www.padecimientos-mexico.org/enfermedad#estadosmenopausicosyclimatericosfemeninos
+http://www.modelo.org/datos#Nota622	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota622	tieneHba1c	7.8%
+http://www.modelo.org/datos#Nota366	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota366	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota366	presenta	Http://www.padecimientos-mexico.org/enfermedad#problemasrelacionadosconladietayhabitosalimentariosinapropiados
+http://www.modelo.org/datos#Nota366	presenta	Http://www.padecimientos-mexico.org/enfermedad#historiapersonaldeincumplimientodelregimenotratamientomedico
+http://www.modelo.org/datos#Nota366	tieneGlucosa	182
+http://www.modelo.org/datos#Nota366	tieneColesterol total	148
+http://www.modelo.org/datos#Nota430	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota430	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota430	presenta	Http://www.padecimientos-mexico.org/enfermedad#hiperlipidemiamixta
+http://www.modelo.org/datos#Nota584	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota584	tieneGlucosa	119
+http://www.modelo.org/datos#Nota584	tieneColesterol total	133
+http://www.modelo.org/datos#Nota711	presenta	Http://www.padecimientos-mexico.org/enfermedad#trastornosespecificosdelaretina
+http://www.modelo.org/datos#Nota711	oi	 cd
+http://www.modelo.org/datos#Nota633	presenta	Http://www.padecimientos-mexico.org/enfermedad#hemorroidesdesegundogrado
+http://www.modelo.org/datos#Nota673	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota144	presenta	Http://www.padecimientos-mexico.org/enfermedad#retinopatiadiabetica
+http://www.modelo.org/datos#Nota492	tieneGlucosa	76
+http://www.modelo.org/datos#Nota492	presenta	Http://www.padecimientos-mexico.org/enfermedad#enfermedadrenal
+http://www.modelo.org/datos#Nota318	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota318	tieneGlucosa	68
+http://www.modelo.org/datos#Nota318	tieneInsulina	13.6
+http://www.modelo.org/datos#Nota450	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota450	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota364	presenta	Http://www.padecimientos-mexico.org/enfermedad#colecistitis
+http://www.modelo.org/datos#Nota364	presenta	globoso a
+http://www.modelo.org/datos#Nota83	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1sinmenciondecomplicacion
+http://www.modelo.org/datos#Nota83	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipercolesterolemiapura
+http://www.modelo.org/datos#Nota83	tieneGlucosa	199
+http://www.modelo.org/datos#Nota83	tieneColesterol	220
+http://www.modelo.org/datos#Nota184	presenta	Http://www.padecimientos-mexico.org/enfermedad#consultapararepeticiondereceta
+http://www.modelo.org/datos#Nota577	presenta	 onicocriptosis estadio
+http://www.modelo.org/datos#Nota660	presenta	 onicocriptosis estadio
+http://www.modelo.org/datos#Nota289	tieneGlucosa	90
+http://www.modelo.org/datos#Nota289	tieneColesterol total	162
+http://www.modelo.org/datos#Nota643	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota643	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota643	presenta	Http://www.padecimientos-mexico.org/enfermedad#rinitisalergicayvasomotora
+http://www.modelo.org/datos#Nota643	presenta	Http://www.padecimientos-mexico.org/enfermedad#pb
+http://www.modelo.org/datos#Nota643	presenta	Http://www.padecimientos-mexico.org/enfermedad#insuficienciarenal
+http://www.modelo.org/datos#Nota183	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipotiroidismosespecificados
+http://www.modelo.org/datos#Nota183	conoce	 lumbociatlagia cronica
+http://www.modelo.org/datos#Nota369	presenta	Http://www.padecimientos-mexico.org/enfermedad#trastornosdelaarticulaciontemporomaxilar
+http://www.modelo.org/datos#Nota413	presenta	Http://www.padecimientos-mexico.org/enfermedad#rinitisalergicaestacional
+http://www.modelo.org/datos#Nota413	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencial
+http://www.modelo.org/datos#Nota413	presenta	Http://www.padecimientos-mexico.org/enfermedad#sindromerespiratorio
+http://www.modelo.org/datos#Nota554	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionsecundaria
+http://www.modelo.org/datos#Nota554	presenta	Http://www.padecimientos-mexico.org/enfermedad#mononeuropatiadiabetica
+http://www.modelo.org/datos#Nota554	tieneGlucosa	97
+http://www.modelo.org/datos#Nota554	tieneColesterol total	165
+http://www.modelo.org/datos#Nota449	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota449	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitus
+http://www.modelo.org/datos#Nota667	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota667	tieneGlucosa	262
+http://www.modelo.org/datos#Nota667	tieneColesterol total	295
+http://www.modelo.org/datos#Nota667	controla	hipertension arterial
+http://www.modelo.org/datos#Nota476	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota476	tieneGlucosa	220
+http://www.modelo.org/datos#Nota476	tieneColesterol	190
+http://www.modelo.org/datos#Nota148	presenta	Http://www.padecimientos-mexico.org/enfermedad#regionlumbar
+http://www.modelo.org/datos#Nota148	presenta	izquierdo sin
+http://www.modelo.org/datos#Nota333	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionarterial
+http://www.modelo.org/datos#Nota333	tieneGlucosa	51
+http://www.modelo.org/datos#Nota612	tieneColesterol total	122
+http://www.modelo.org/datos#Nota612	tieneGlucosa	115
+http://www.modelo.org/datos#Nota709	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota709	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota506	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota267	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota267	presenta	Http://www.padecimientos-mexico.org/enfermedad#hiperlipidemiamixta
+http://www.modelo.org/datos#Nota267	presenta	Http://www.padecimientos-mexico.org/enfermedad#problemasrelacionadosconladietayhabitosalimentariosinapropiados
+http://www.modelo.org/datos#Nota267	tieneGlucosa	139
+http://www.modelo.org/datos#Nota267	tieneColesterol	231
+http://www.modelo.org/datos#Nota732	tieneGlucosa	89
+http://www.modelo.org/datos#Nota531	tieneGlucosa	274
+http://www.modelo.org/datos#Nota531	tieneColesterol total	196
+http://www.modelo.org/datos#Nota212	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota212	presenta	diabetico con
+http://www.modelo.org/datos#Nota740	presenta	Http://www.padecimientos-mexico.org/enfermedad#gonartrosisartrosisdela
+http://www.modelo.org/datos#Nota371	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipotiroidismosespecificados
+http://www.modelo.org/datos#Nota371	presenta	Http://www.padecimientos-mexico.org/enfermedad#insuficienciavenosacronica
+http://www.modelo.org/datos#Nota712	presenta	 onicocriptosis estadio
+http://www.modelo.org/datos#Nota574	presenta	 onicocriptosis estadio
+http://www.modelo.org/datos#Nota76	presenta	Http://www.padecimientos-mexico.org/enfermedad#queratosisseborreica
+http://www.modelo.org/datos#Nota579	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitus
+http://www.modelo.org/datos#Nota579	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionarterial
+http://www.modelo.org/datos#Nota579	presenta	Http://www.padecimientos-mexico.org/enfermedad#sistémicaosteopeniadislipidemiamixta
+http://www.modelo.org/datos#Nota579	presenta	Http://www.padecimientos-mexico.org/enfermedad#neuropatiametabolica
+http://www.modelo.org/datos#Nota579	tieneGlucosa	93
+http://www.modelo.org/datos#Nota579	tieneInsulina	28.1
+http://www.modelo.org/datos#Nota563	presenta	Http://www.padecimientos-mexico.org/enfermedad#reflujogastroesofagicoconesofagitis
+http://www.modelo.org/datos#Nota428	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota428	presenta	Http://www.padecimientos-mexico.org/enfermedad#obesidad
+http://www.modelo.org/datos#Nota428	presenta	Http://www.padecimientos-mexico.org/enfermedad#problemasrelacionadosconladietayhabitosalimentariosinapropiados
+http://www.modelo.org/datos#Nota428	tieneGlucosa	226
+http://www.modelo.org/datos#Nota116	tieneGlucosa	159
+http://www.modelo.org/datos#Nota116	presenta	Http://www.padecimientos-mexico.org/enfermedad#litiasisurinariaen
+http://www.modelo.org/datos#Nota692	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota692	tieneGlucosa	151
+http://www.modelo.org/datos#Nota546	presentaSintoma	Http://www.padecimientos-mexico.org/enfermedad#adinamia
+http://www.modelo.org/datos#Nota348	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota348	tieneGlucosa	141
+http://www.modelo.org/datos#Nota412	presenta	Http://www.padecimientos-mexico.org/enfermedad#sindromerespiratorio
+http://www.modelo.org/datos#Nota670	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota670	presenta	Http://www.padecimientos-mexico.org/enfermedad#enfermedadrenalcronicaetapa3
+http://www.modelo.org/datos#Nota670	tieneGlucosa	139
+http://www.modelo.org/datos#Nota559	mantiene	 adecuado patron
+http://www.modelo.org/datos#Nota530	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionsecundaria
+http://www.modelo.org/datos#Nota530	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota530	presenta	Http://www.padecimientos-mexico.org/enfermedad#obesidad
+http://www.modelo.org/datos#Nota530	tieneGlucosa	197
+http://www.modelo.org/datos#Nota530	tieneColesterol total	200
+http://www.modelo.org/datos#Nota699	presenta	Http://www.padecimientos-mexico.org/enfermedad#sinovitisytenosinovitis
+http://www.modelo.org/datos#Nota407	presentaSintoma	Http://www.padecimientos-mexico.org/enfermedad#diarreaygastroenteritisdepresuntoorigeninfeccioso
+http://www.modelo.org/datos#Nota495	presenta	Http://www.padecimientos-mexico.org/enfermedad#trastornosdeansiedad
+http://www.modelo.org/datos#Nota495	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipercolesterolemiapura
+http://www.modelo.org/datos#Nota495	tieneHba1c	10.9%
+http://www.modelo.org/datos#Nota482	presenta	Http://www.padecimientos-mexico.org/enfermedad#gastritis
+http://www.modelo.org/datos#Nota482	conpenzada	dolor en
+http://www.modelo.org/datos#Nota482	conpenzada	 epigastro
+http://www.modelo.org/datos#Nota181	presenta	izquierdo :
+http://www.modelo.org/datos#Nota181	presenta	paciente que
+http://www.modelo.org/datos#Nota224	presenta	 onicocriptosis estadio
+http://www.modelo.org/datos#Nota636	presenta	 onicocriptosis estadio
+http://www.modelo.org/datos#Nota52	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota52	tieneGlucosa	126
+http://www.modelo.org/datos#Nota426	presenta	 onicocriptosis estadio
+http://www.modelo.org/datos#Nota47	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota47	presenta	oral hidrata
+http://www.modelo.org/datos#Nota662	presenta	Http://www.padecimientos-mexico.org/enfermedad#sindromedelcolonirritablecondiarrea
+http://www.modelo.org/datos#Nota80	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1sinmenciondecomplicacion
+http://www.modelo.org/datos#Nota80	tieneGlucosa	218
+http://www.modelo.org/datos#Nota80	tieneColesterol	165
+http://www.modelo.org/datos#Nota124	presenta	Http://www.padecimientos-mexico.org/enfermedad#urticaria
+http://www.modelo.org/datos#Nota124	presenta	rosada ,
+http://www.modelo.org/datos#Nota124	presenta	granular sin
+http://www.modelo.org/datos#Nota606	presenta	Http://www.padecimientos-mexico.org/enfermedad#vaginitisatrofica
+http://www.modelo.org/datos#Nota626	presenta	Http://www.padecimientos-mexico.org/enfermedad#rinitis
+http://www.modelo.org/datos#Nota626	presenta	Http://www.padecimientos-mexico.org/enfermedad#dorsalgia
+http://www.modelo.org/datos#Nota668	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota668	presenta	Http://www.padecimientos-mexico.org/enfermedad#enfermedadrenalcronicaetapa3
+http://www.modelo.org/datos#Nota668	tieneGlucosa	288
+http://www.modelo.org/datos#Nota483	complicacion	hipertension esencial primaria
+http://www.modelo.org/datos#Nota483	complicacion	hipercolesterolemia pura
+http://www.modelo.org/datos#Nota483	presenta	doloroso a
+http://www.modelo.org/datos#Nota576	presenta	Http://www.padecimientos-mexico.org/enfermedad#sindromedelcolonirritable
+http://www.modelo.org/datos#Nota576	flatulencia	dolor en
+http://www.modelo.org/datos#Nota59	tieneGlucosa	96
+http://www.modelo.org/datos#Nota59	tieneColesterol total	174
+http://www.modelo.org/datos#Nota34	presenta	Http://www.padecimientos-mexico.org/enfermedad#sindromedelcolonirritable
+http://www.modelo.org/datos#Nota34	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota34	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota34	presenta	Http://www.padecimientos-mexico.org/enfermedad#obesidad
+http://www.modelo.org/datos#Nota34	presenta	Http://www.padecimientos-mexico.org/enfermedad#rinofaringitisaguda
+http://www.modelo.org/datos#Nota34	presenta	depresible ,
+http://www.modelo.org/datos#Nota416	presenta	Http://www.padecimientos-mexico.org/enfermedad#sindromecolon
+http://www.modelo.org/datos#Nota141	presenta	Http://www.padecimientos-mexico.org/enfermedad#bronquitiscronica
+http://www.modelo.org/datos#Nota527	presenta	Http://www.padecimientos-mexico.org/enfermedad#obesidad
+http://www.modelo.org/datos#Nota527	tieneColesterol	224
+http://www.modelo.org/datos#Nota527	tieneGlucosa	186
+http://www.modelo.org/datos#Nota415	presenta	Http://www.padecimientos-mexico.org/enfermedad#sindrome
+http://www.modelo.org/datos#Nota271	tieneGlucosa	70.4
+http://www.modelo.org/datos#Nota658	presenta	 onicocriptosis estadio
+http://www.modelo.org/datos#Nota431	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota431	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota431	presenta	Http://www.padecimientos-mexico.org/enfermedad#hiperlipidemiamixta
+http://www.modelo.org/datos#Nota431	presenta	Http://www.padecimientos-mexico.org/enfermedad#problemasrelacionadosconladietayhabitosalimentariosinapropiados
+http://www.modelo.org/datos#Nota431	exploracion	 fisica fms
+http://www.modelo.org/datos#Nota556	presenta	Http://www.padecimientos-mexico.org/enfermedad#dermatitisseborreicas
+http://www.modelo.org/datos#Nota556	presenta	Http://www.padecimientos-mexico.org/enfermedad#seborrea
+http://www.modelo.org/datos#Nota542	presenta	Http://www.padecimientos-mexico.org/enfermedad#dermatitisatopica
+http://www.modelo.org/datos#Nota542	presenta	Http://www.padecimientos-mexico.org/enfermedad#cloasma
+http://www.modelo.org/datos#Nota37	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota37	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota37	presenta	Http://www.padecimientos-mexico.org/enfermedad#hiperlipidemiamixta
+http://www.modelo.org/datos#Nota37	presenta	Http://www.padecimientos-mexico.org/enfermedad#problemasrelacionadosconladietayhabitosalimentariosinapropiados
+http://www.modelo.org/datos#Nota37	tieneGlucosa	194
+http://www.modelo.org/datos#Nota37	tieneColesterol total	214
+http://www.modelo.org/datos#Nota37	tiene	 cuadro chicungunya
+http://www.modelo.org/datos#Nota652	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2concomplicacionesmultiples
+http://www.modelo.org/datos#Nota652	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionsecundaria
+http://www.modelo.org/datos#Nota652	presenta	Http://www.padecimientos-mexico.org/enfermedad#insuficienciacardiacanoespecificada
+http://www.modelo.org/datos#Nota652	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipotiroidismonoespecificado
+http://www.modelo.org/datos#Nota652	presenta	Http://www.padecimientos-mexico.org/enfermedad#obesidad
+http://www.modelo.org/datos#Nota652	tieneGlucosa	126
+http://www.modelo.org/datos#Nota652	tieneInsulina	41.4
+http://www.modelo.org/datos#Nota652	tieneColesterol	102
+http://www.modelo.org/datos#Nota652	niega	 descontrol metabolico
+http://www.modelo.org/datos#Nota726	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipotiroidismosubclinicopordeficienciadeyodo
+http://www.modelo.org/datos#Nota726	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota726	presenta	Http://www.padecimientos-mexico.org/enfermedad#anormalidadesenlapruebadetoleranciaalaglucosa
+http://www.modelo.org/datos#Nota726	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipoacusiabilateral
+http://www.modelo.org/datos#Nota441	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota441	tieneGlucosa	144
+http://www.modelo.org/datos#Nota441	tieneColesterol total	151
+http://www.modelo.org/datos#Nota441	tieneInsulina	21.8
+http://www.modelo.org/datos#Nota100	presenta	 onicocriptosis estadio
+http://www.modelo.org/datos#Nota566	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota566	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipercolesterolemiapura
+http://www.modelo.org/datos#Nota566	tieneGlucosa	211
+http://www.modelo.org/datos#Nota566	tieneColesterol total	133
+http://www.modelo.org/datos#Nota28	presenta	Http://www.padecimientos-mexico.org/enfermedad#faringitisaguda
+http://www.modelo.org/datos#Nota28	presenta	hiperemica ,
+http://www.modelo.org/datos#Nota268	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota268	presenta	Http://www.padecimientos-mexico.org/enfermedad#hiperlipidemiamixta
+http://www.modelo.org/datos#Nota268	presenta	Http://www.padecimientos-mexico.org/enfermedad#problemasrelacionadosconladietayhabitosalimentariosinapropiados
+http://www.modelo.org/datos#Nota268	presenta	Http://www.padecimientos-mexico.org/enfermedad#historiapersonaldeincumplimientodelregimenotratamientomedico
+http://www.modelo.org/datos#Nota268	tieneInsulina	21.9
+http://www.modelo.org/datos#Nota268	tieneGlucosa	275
+http://www.modelo.org/datos#Nota268	tieneColesterol total	275
+http://www.modelo.org/datos#Nota232	presenta	Http://www.padecimientos-mexico.org/enfermedad#edemanoespecificado
+http://www.modelo.org/datos#Nota363	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota363	tieneGlucosa	91
+http://www.modelo.org/datos#Nota363	tieneColesterol total	170
+http://www.modelo.org/datos#Nota311	tieneGlucosa	81
+http://www.modelo.org/datos#Nota311	tieneColesterol total	168
+http://www.modelo.org/datos#Nota88	tieneGlucosa	127
+http://www.modelo.org/datos#Nota88	tieneColesterol total	143
+http://www.modelo.org/datos#Nota88	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipotiroidismos
+http://www.modelo.org/datos#Nota297	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota297	presenta	Http://www.padecimientos-mexico.org/enfermedad#dolor
+http://www.modelo.org/datos#Nota440	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota440	tieneGlucosa	148
+http://www.modelo.org/datos#Nota440	tieneInsulina	18.5
+http://www.modelo.org/datos#Nota440	tieneColesterol total	135
+http://www.modelo.org/datos#Nota394	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota394	presenta	Http://www.padecimientos-mexico.org/enfermedad#estadode
+http://www.modelo.org/datos#Nota708	tieneColesterol	192
+http://www.modelo.org/datos#Nota708	tieneGlucosa	59
+http://www.modelo.org/datos#Nota698	tieneGlucosa	116
+http://www.modelo.org/datos#Nota698	tieneColesterol	168
+http://www.modelo.org/datos#Nota319	tieneGlucosa	68
+http://www.modelo.org/datos#Nota319	tieneInsulina	13.6
+http://www.modelo.org/datos#Nota341	presenta	Http://www.padecimientos-mexico.org/enfermedad#sinusitiscronica
+http://www.modelo.org/datos#Nota191	presenta	Http://www.padecimientos-mexico.org/enfermedad#lumbagonoespecificado
+http://www.modelo.org/datos#Nota235	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota235	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota235	presenta	Http://www.padecimientos-mexico.org/enfermedad#enfermedadrenalcronicaetapa3
+http://www.modelo.org/datos#Nota604	presenta	Http://www.padecimientos-mexico.org/enfermedad#defectodeltabiqueventricular
+http://www.modelo.org/datos#Nota604	tieneGlucosa	151
+http://www.modelo.org/datos#Nota505	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota505	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitus
+http://www.modelo.org/datos#Nota505	tieneGlucosa	130
+http://www.modelo.org/datos#Nota723	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota723	presenta	Http://www.padecimientos-mexico.org/enfermedad#anormalidadesenlapruebadetoleranciaalaglucosa
+http://www.modelo.org/datos#Nota723	tieneColesterol	217
+http://www.modelo.org/datos#Nota723	tieneGlucosa	84
+http://www.modelo.org/datos#Nota632	presenta	Http://www.padecimientos-mexico.org/enfermedad#enfermedaddiverticulardelintestinogruesosinperforacionniabsceso
+http://www.modelo.org/datos#Nota632	presenta	depresible ,
+http://www.modelo.org/datos#Nota632	realiza	 colonoscopia con diverticulos
+http://www.modelo.org/datos#Nota39	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipercolesterolemiapura
+http://www.modelo.org/datos#Nota39	presenta	Http://www.padecimientos-mexico.org/enfermedad#obesidaddebidaaexcesodecalorias
+http://www.modelo.org/datos#Nota39	tieneGlucosa	196
+http://www.modelo.org/datos#Nota130	presenta	Http://www.padecimientos-mexico.org/enfermedad#bronquitiscronicasimple
+http://www.modelo.org/datos#Nota306	tieneGlucosa	57
+http://www.modelo.org/datos#Nota306	tieneColesterol total	167
+http://www.modelo.org/datos#Nota720	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipotiroidismosubclinicopordeficienciadeyodo
+http://www.modelo.org/datos#Nota720	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota720	presenta	Http://www.padecimientos-mexico.org/enfermedad#anormalidadesenlapruebadetoleranciaalaglucosa
+http://www.modelo.org/datos#Nota720	presenta	Http://www.padecimientos-mexico.org/enfermedad#obesidad
+http://www.modelo.org/datos#Nota743	presenta	Http://www.padecimientos-mexico.org/enfermedad#queratosisseborreica
+http://www.modelo.org/datos#Nota206	presenta	derecho en
+http://www.modelo.org/datos#Nota312	complicacion	hipercolesterolemia pura
+http://www.modelo.org/datos#Nota312	tieneGlucosa	100
+http://www.modelo.org/datos#Nota312	tieneColesterol total	173
+http://www.modelo.org/datos#Nota317	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota317	tieneGlucosa	68
+http://www.modelo.org/datos#Nota317	tieneInsulina	13.6
+http://www.modelo.org/datos#Nota339	presenta	 cuadro gripal inicial sin datos
+http://www.modelo.org/datos#Nota339	inicia	 el dia
+http://www.modelo.org/datos#Nota664	presenta	semigloboso por
+http://www.modelo.org/datos#Nota342	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota342	tieneGlucosa	160
+http://www.modelo.org/datos#Nota342	tieneColesterol	143
+http://www.modelo.org/datos#Nota342	tieneInsulina	11.7
+http://www.modelo.org/datos#Nota463	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota463	presenta	Http://www.padecimientos-mexico.org/enfermedad#gonartrosisartrosisdela
+http://www.modelo.org/datos#Nota193	evolucion	diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota193	evolucion	hipertension esencial primaria
+http://www.modelo.org/datos#Nota338	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota338	tieneGlucosa	268
+http://www.modelo.org/datos#Nota338	tieneInsulina	3
+http://www.modelo.org/datos#Nota338	tieneColesterol	192
+http://www.modelo.org/datos#Nota140	presenta	Http://www.padecimientos-mexico.org/enfermedad#presenciadelentesintraoculares
+http://www.modelo.org/datos#Nota140	dilatacion	 conjuntiva clara caf celulas
+http://www.modelo.org/datos#Nota420	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota420	tieneGlucosa	89
+http://www.modelo.org/datos#Nota420	presenta	Http://www.padecimientos-mexico.org/enfermedad#atencionpor
+http://www.modelo.org/datos#Nota352	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipotiroidismosubclinicopordeficienciadeyodo
+http://www.modelo.org/datos#Nota352	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota352	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota352	tieneGlucosa	78
+http://www.modelo.org/datos#Nota352	tieneColesterol total	142
+http://www.modelo.org/datos#Nota48	presenta	Http://www.padecimientos-mexico.org/enfermedad#sindromedelcolonirritable
+http://www.modelo.org/datos#Nota48	presenta	derecho se
+http://www.modelo.org/datos#Nota343	acude	 el dia
+http://www.modelo.org/datos#Nota168	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota168	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipercolesterolemiapura
+http://www.modelo.org/datos#Nota168	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota168	tieneGlucosa	214
+http://www.modelo.org/datos#Nota168	tieneInsulina	36.0
+http://www.modelo.org/datos#Nota238	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota238	tieneGlucosa	119
+http://www.modelo.org/datos#Nota238	tieneColesterol total	156
+http://www.modelo.org/datos#Nota611	presenta	Http://www.padecimientos-mexico.org/enfermedad#vulvitisyvulvovaginitisenenfermedadesinfecciosasyparasitariasclasificadasenotraparte
+http://www.modelo.org/datos#Nota611	presenta	Http://www.padecimientos-mexico.org/enfermedad#vaginitisatroficapostmenopausica
+http://www.modelo.org/datos#Nota693	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota693	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipercolesterolemiapura
+http://www.modelo.org/datos#Nota693	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionsecundaria
+http://www.modelo.org/datos#Nota693	tieneGlucosa	135
+http://www.modelo.org/datos#Nota92	presenta	Http://www.padecimientos-mexico.org/enfermedad#epilepsia
+http://www.modelo.org/datos#Nota325	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota325	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipercolesterolemiapura
+http://www.modelo.org/datos#Nota325	presenta	Http://www.padecimientos-mexico.org/enfermedad#sindromedelcolonirritable
+http://www.modelo.org/datos#Nota325	tieneGlucosa	136
+http://www.modelo.org/datos#Nota325	tieneColesterol total	155
+http://www.modelo.org/datos#Nota336	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipotiroidismos
+http://www.modelo.org/datos#Nota336	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota336	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota336	tieneGlucosa	107
+http://www.modelo.org/datos#Nota336	presenta	Http://www.padecimientos-mexico.org/enfermedad#cefalea
+http://www.modelo.org/datos#Nota432	presenta	Http://www.padecimientos-mexico.org/enfermedad#atencionmedicanoespecificada
+http://www.modelo.org/datos#Nota564	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipercolesterolemiapura
+http://www.modelo.org/datos#Nota564	tieneGlucosa	140
+http://www.modelo.org/datos#Nota564	tieneColesterol total	150
+http://www.modelo.org/datos#Nota570	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo1
+http://www.modelo.org/datos#Nota570	tieneGlucosa	249
+http://www.modelo.org/datos#Nota578	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitus
+http://www.modelo.org/datos#Nota578	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionarterial
+http://www.modelo.org/datos#Nota578	presenta	Http://www.padecimientos-mexico.org/enfermedad#sistémicaosteopeniadislipidemiamixta
+http://www.modelo.org/datos#Nota578	presenta	Http://www.padecimientos-mexico.org/enfermedad#neuropatiametabolica
+http://www.modelo.org/datos#Nota578	tieneColesterol total	224
+http://www.modelo.org/datos#Nota578	tieneGlucosa	85
+http://www.modelo.org/datos#Nota164	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota164	tieneGlucosa	107
+http://www.modelo.org/datos#Nota164	tieneInsulina	16.3
+http://www.modelo.org/datos#Nota417	presenta	Http://www.padecimientos-mexico.org/enfermedad#sindrome
+http://www.modelo.org/datos#Nota580	tieneColesterol	224
+http://www.modelo.org/datos#Nota580	presenta	Http://www.padecimientos-mexico.org/enfermedad#hipertensionesencialprimaria
+http://www.modelo.org/datos#Nota580	presenta	Http://www.padecimientos-mexico.org/enfermedad#insuficienciavenosacronica
+http://www.modelo.org/datos#Nota623	presenta	Http://www.padecimientos-mexico.org/enfermedad#diabetesmellitustipo2
+http://www.modelo.org/datos#Nota623	presenta	Http://www.padecimientos-mexico.org/enfermedad#polineuropatiadiabetica
+http://www.modelo.org/datos#Nota623	presenta	doloroso a
+http://www.modelo.org/datos#Nota669	tieneColesterol total	158
+http://www.modelo.org/datos#Nota669	palido	 astenico
+http://www.modelo.org/datos#Nota669	refiere	 micciones frecuentes con ardor
+http://www.modelo.org/datos#Nota112	presenta	Http://www.padecimientos-mexico.org/enfermedad#dermatitisnoespecificada
+http://www.modelo.org/datos#Nota638	tieneGlucosa	89
+http://www.modelo.org/datos#Nota646	presenta	Http://www.padecimientos-mexico.org/enfermedad#rinitisalergicayvasomotora
+http://www.modelo.org/datos#Nota646	presenta	Http://www.padecimientos-mexico.org/enfermedad#insuficienciavenosacronica
+http://www.modelo.org/datos#Nota442	presenta	Http://www.padecimientos-mexico.org/enfermedad#fondoycambiosvascularesretinianos
+http://www.modelo.org/datos#Nota442	tieneColesterol	155
+http://www.modelo.org/datos#Nota442	tieneGlucosa	272
+http://www.modelo.org/datos#Nota442	tieneInsulina	21.4

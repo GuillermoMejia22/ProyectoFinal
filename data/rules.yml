@@ -795,6 +795,11 @@ rules:
     - intent: prueba_prediabetes
     - action: utter_prueba_prediabetes
 
+  - rule: Conocer Peso Diabeticos
+    steps:
+    - intent: conocer_peso_diabeticos
+    - action: action_manda_imagen
+
   - rule: Nuevo Dato de Entrenamiento
     steps:
     - intent: nlu_fallback

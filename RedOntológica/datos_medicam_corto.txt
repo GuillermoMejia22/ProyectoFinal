@@ -1,0 +1,56 @@
+SIMVASTATINA
+http://www.medicamentos-mexico.org/medicamento#010.000.4124.00
+http://www.medicamentos-mexico.org/medicamento#010.000.4124.01
+CONTRAINDICACIONES Y PRECAUCIONES
+Contraindicaciones : Hipersensibilidad al fármaco , embarazo , lactancia y enfermedad hepática activa .
+Precauciones : Terapéutica con fibratos y niacina .
+INTERACCIONES
+Cimetidina , ranitidina y omeprazol aumentan su biodisponibilidad .  Rifampicina la disminuye .
+SITAGLIPTINA
+http://www.medicamentos-mexico.org/medicamento#010.000.4152.00
+http://www.medicamentos-mexico.org/medicamento#010.000.4152.01
+http://www.medicamentos-mexico.org/medicamento#010.000.4153.00
+http://www.medicamentos-mexico.org/medicamento#010.000.4153.01
+GENERALIDADES
+Es un miembro de una clase de agentes antihiperglucémicos llamados inhibidores de la dipeptidilpeptidasa 4 (DPP-4) , que mejoran el control de la glucemia en los pacientes con diabetes de tipo 2 , aumentando las concentraciones de las hormonas incretinas .
+RIESGO EN EL EMBARAZO
+D
+EFECTOS ADVERSOS
+Dolor abdominal , náusea , vómito y diarrea .
+CONTRAINDICACIONES Y PRECAUCIONES
+Contraindicaciones : Hipersensibilidad al fármaco .
+Precauciones : Se recomienda ajustar la dosificación en los pacientes con insuficiencia renal moderada o intensa y en los pacientes con nefropatía terminal que requieren hemodiálisis .
+INTERACCIONES
+El área bajo la curva y la concentración máxima en plasma (ABC y la Cmáx) aumentaron ligeramente en 11% y 18% respectivamente , al coadministrar sitagliptina y digoxina . Por otra parte; el ABC y la Cmáx de sitagliptina aumentaron aproximadamente en 29% y 68% , respectivamente , al coadministrar dosis orales únicas de sitagliptina  y ciclosporina 600 mg .
+SITAGLIPTINA , METFORMINA
+http://www.medicamentos-mexico.org/medicamento#010.000.5705.00
+http://www.medicamentos-mexico.org/medicamento#010.000.5705.01
+http://www.medicamentos-mexico.org/medicamento#010.000.5703.00
+http://www.medicamentos-mexico.org/medicamento#010.000.5703.01
+http://www.medicamentos-mexico.org/medicamento#010.000.5704.00
+GENERALIDADES
+El mecanismo de acción de la combinación de sitagliptina y metformina en un mismo comprimido se caracteriza porque actúa en los tres defectos principales que se asocian a la diabetes tipo 2 : el déficit de producción de insulina por las células beta , la resistencia a la insulina y el exceso de producción de glucosa por el hígado . El componente de sitagliptina del comprimido aumenta la concentración de las formas activas de las incretinas , con lo que potencia un proceso natural del organismo que aumenta la síntesis y la liberación de insulina por las células pancreáticas , y disminuye la secreción de glucagón por las células alfa del páncreas , con lo que se reduce la producción de glucosa por el hígado . Metformina , el otro de los componentes del comprimido , es uno de los pilares del tratamiento de la diabetes , actúa sobre la resistencia a la insulina , aumentando la captación y utilización de la glucosa . Metformina también reduce la producción de glucosa por el hígado , de forma complementaria a sitagliptina .
+RIESGO EN EL EMBARAZO
+C
+EFECTOS ADVERSOS
+Diarrea , náusea , dispepsia , flatulencia , vómito , cefalea , hipoglucemia .
+CONTRAINDICACIONES Y PRECAUCIONES
+Contraindicaciones : Hipersensibilidad a los fármacos . Nefropatía o disfunción renal , infarto agudo del miocardio o septicemia , acidosis metabólica aguda o crónica .
+Precauciones : No se debe de usar sitagliptina/metformina en pacientes con DM tipo 1 ni para tratar la cetoacidosis diabética . Vigilar la función renal . La metformina no debe utilizarse en pacientes con insuficiencia renal moderada a severa por el riesgo de acidosis láctica .
+INTERACCIONES
+No se han hecho estudios de interacción farmacocinética con Sitagliptina , metformina , pero sí con sus componentes individuales , la sitagliptina y la metformina . Sitagliptina : En los estudios de interacciones farmacológicas , la sitagliptina no tuvo efectos de importancia clínica sobre la farmacocinética de los siguientes medicamentos : metformina , rosiglitazona , gliburida , simvastatina , warfarina y anticonceptivos orales . Según esos datos , la sitagliptina no inhibe las isoenzimas CYP3A4 , 2C8 y 2C9 del citocromo P-450. Furosemida : Un estudio sobre la interacción de dosis únicas de metformina y furosemina en personas sanas demostró que la coadministración afectó los parámetros farmacocinéticos de ambos compuestos . La furosemida aumentó 22% la Cmáx plasmática y sanguínea y 15% el ABC sanguínea de la metformina , sin ningún cambio significativo en su depuración renal . Cuando se coadministró con metformina , la Cmáx y el ABC de la furosemida fueron 31 y 12% menores , respectivamente , que cuando se administró sola , y su semivida terminal disminuyó 32% , sin ningún cambio significativo en su depuración renal . No hay información disponible acerca de la interacción de la metformina y la furosemida cuando se coadministran por tiempo prolongado . Nifedipina : Un estudio sobre la interacción de dosis únicas de metformina y nifedipina en personas sanas demostró que la coadministración de nifedipina aumentó 20% la Cmáx y 9% el ABC de la metformina , así como la cantidad de metformina excretada con la orina . SuTmáx y su semivida no se modificaron . La nifedipina aumenta la absorción de metformina , y ésta tuvo efectos mínimos sobre la nifedipina . Medicamentos catiónicos : Los medicamentos catiónicos (como amilorida , digoxina , morfina , procainamida , quinidina , quinina , ranitidina , triamtereno , trimetoprim o vancomicina) que son eliminados por secreción tubular renal teóricamente pueden interactuar con la metformina compitiendo con ella por los sistemas de transporte tubular renal comunes . Ciertos medicamentos tienden a producir hiperglucemia y pueden impedir el control de la glucemia . Esos medicamentos incluyen las tiazidas y otros diuréticos , los corticosteroides , las fenotiacinas , productos tiroideos , los estrógenos , los anticonceptivos orales , la fenitoína , el ácido nicotínico , los simpaticomiméticos , los bloqueadores del canal del calcio y la isoniacida . Cuando se administra alguno de esos medicamentos a un paciente que está tomando Sitagliptina , metformina , se le debe vigilar estrechamente para controlar bien su glucemia .
+VILDAGLIPTINA , METFORMINA
+http://www.medicamentos-mexico.org/medicamento#010.000.5700.00
+http://www.medicamentos-mexico.org/medicamento#010.000.5701.00
+http://www.medicamentos-mexico.org/medicamento#010.000.5702.00
+GENERALIDADES
+Vildagliptina actúa inhibiendo la acción de la enzima dipeptidil-peptidasa 4 (DPP-4) , lo que aumenta los niveles de hormonas incretinas -GLP-1 (péptido 1 similar al glucagón) y GIP (péptido insulinotrópico dependiente de la glucosa)- estimulando la secreción de insulina y regulando la de glucagón , de forma dependiente de las concentraciones de glucosa . Por su parte , Metformina inhibe la gluconeogénesis y la glucogenolisis , reduce la producción hepática de glucosa , aumenta la sensibilidad a la insulina , mejora la captación y la utilización de glucosa periférica y retrasa la absorción de la glucosa intestinal .
+RIESGO EN EL EMBARAZO
+C
+EFECTOS ADVERSOS
+Angioedema , disfunción hepática , mareos , cefaleas , estreñimiento y edema periférico , nausea , vómitos , diarrea , dolor abdominal , pérdida de apetito , disminución de la absorción de vitamina B12 , acidosis láctica , hepatitis , reacciones cutáneas , como eritema , prurito y urticaria , temblor .
+CONTRAINDICACIONES Y PRECAUCIONES
+Contraindicaciones : Hipersensibilidad a los fármacos .
+Precauciones : Insuficiencia renal o nefropatía , insuficiencia cardiaca congestiva , acidosis metabólica aguda o crónica , como cetoacidosis diabética con o sin coma; se debe interrumpir temporalmente el tratamiento en los pacientes que se someten a estudios radiológicos en los que se administran medios de contraste yodados por vía intramuscular .
+INTERACCIONES
+Intteracciones con Vildagliptina : capacidad reducida de interacción farmacológica; ninguna interacción clínicamente significativa con otros antidiabéticos orales (glibenclamida , pioglitazona , metformina) , amlodipino , digoxina , ramipril , simvastatina , valsartán o warfarina , cuando estos fármacos se coadministran con vildagliptina .INTERACCIONES con clorhidrato de metfomrina : furosemida , nifedipino , sustancias catiónicas; sustancias que tienden a producir hiperglucemia , alcohol .

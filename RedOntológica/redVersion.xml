@@ -1,0 +1,357 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="C:/Users/user/Google Drive/Doctorado/RedRDFPoblada/red_nodos_RDF.owl"
+         xmlns="C:/Users/user/Google Drive/Doctorado/RedRDFPoblada/red_nodos_RDF.owl#">
+
+<owl:Ontology rdf:about="C:/Users/user/Google Drive/Doctorado/RedRDFPoblada/red_nodos_RDF.owl"/>
+
+<owl:ObjectProperty rdf:about="#tieneContraindicacion"/>
+
+<owl:ObjectProperty rdf:about="#tienePrecaucion"/>
+
+<owl:ObjectProperty rdf:about="#tieneEfectoAdverso"/>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.4156.00">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#HipersensibilidadAlFarmaco"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Hipoglucemia"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.4162.00">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#HipersensibilidadAlFarmaco"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Hipoglucemia"/>
+  <tienePrecaucion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#InsuficienciaRenal"/>
+  <tienePrecaucion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#InsuficienciaHepatica"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.4165.00">
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#SudoracionFria"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#PalidezDeTegumentos"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#SensacionDeFatiga"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Nerviosismo"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Temblor"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Confusion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.4165.01">
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#SudoracionFria"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#PalidezDeTegumentos"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#SensacionDeFatiga"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Nerviosismo"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Temblor"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Confusion"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.4168.00">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#HipersensibilidadALaInsulinaGlargina"/>
+  <tienePrecaucion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#InsuficienciaRenal"/>
+  <tienePrecaucion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#InsuficienciaHepatica"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.4024.00">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#HipersensibilidadAlFarmaco"/>
+  <tienePrecaucion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#EnfermedadHepatica"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.4024.01">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#HipersensibilidadAlFarmaco"/>
+  <tienePrecaucion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#EnfermedadHepatica"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.4024.02">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#HipersensibilidadAlFarmaco"/>
+  <tienePrecaucion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#EnfermedadHepatica"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.4024.03">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#HipersensibilidadAlFarmaco"/>
+  <tienePrecaucion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#EnfermedadHepatica"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.4024.04">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#HipersensibilidadAlFarmaco"/>
+  <tienePrecaucion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#EnfermedadHepatica"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.4024.05">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#HipersensibilidadAlFarmaco"/>
+  <tienePrecaucion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#EnfermedadHepatica"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.4025.00">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#EnfermedadHepaticaActiva"/>
+  <tienePrecaucion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#InsuficienciaHepatica"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#DolorAbdominal"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Diarrea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Fatiga"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.4025.01">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#EnfermedadHepaticaActiva"/>
+  <tienePrecaucion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#InsuficienciaHepatica"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#DolorAbdominal"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Diarrea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Fatiga"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.6117.00">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#HipersensibilidadAlBiologico"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Urticaria"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Erupciones"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Salpullido"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#RetinopatiaDiabetica"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Lipodistrofia"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Edema"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.6117.01">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#HipersensibilidadAlBiologico"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Urticaria"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Erupciones"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Salpullido"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#RetinopatiaDiabetica"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Lipodistrofia"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Edema"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.4148.00">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#HipersensibilidadAlFarmaco"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Hipoglucemia"/>
+  <tienePrecaucion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#InsuficienciaRenal"/>
+  <tienePrecaucion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#InsuficienciaHepatica"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.4148.01">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#HipersensibilidadAlFarmaco"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Hipoglucemia"/>
+  <tienePrecaucion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#InsuficienciaRenal"/>
+  <tienePrecaucion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#InsuficienciaHepatica"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.1007.00">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#InsuficienciaSuprarrenal"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Hipertiroidismo"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Eutiroidismo"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#InfartoAgudoAlMiocardio"/>
+  <tienePrecaucion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#EnfermedadCardiovascular"/>
+  <tienePrecaucion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#DiabetesMellitus"/>
+  <tienePrecaucion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#DiabetesInsipida"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Taquicardia"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#ArritmiasCardiacas"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#AnginaDePecho"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Nerviosismo"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Insomnio"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Temblor"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#PerdidaDePeso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.5621.00">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#HipersensibilidadAlFarmaco"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.5743.00">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#HipersensibilidadAlFarmaco"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#TrastornosGastrointestinales"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Nauseas"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Diarrea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Vomitos"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Estreñimiento"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#DolorAbdominal"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Dispepsia"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.4149.00">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Lactancia"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#InsuficienciaHepatica"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.4023.00">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#HipersensibilidadAlFarmaco"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Cefalea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Mialgia"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Astenia"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Estreñimiento"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Marea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Nausea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#DolorAbdominal"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Prurito"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#ErupcionCutanea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Urticaria"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.4124.00">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#HipersensibilidadAlFarmaco"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Lactancia"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#EnfermedadHepaticaActiva"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#DolorMuscular"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Nausea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Vomito"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Diarrea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Constipacion"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#DolorAbdominal"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Cefalea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Marea"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.4124.01">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#HipersensibilidadAlFarmaco"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Lactancia"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#EnfermedadHepaticaActiva"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#DolorMuscular"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Nausea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Vomito"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Diarrea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Constipacion"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#DolorAbdominal"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Cefalea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Marea"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.4152.00">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#HipersensibilidadAlFarmaco"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#DolorAbdominal"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Nausea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Vomito"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Diarrea"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.4152.01">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#HipersensibilidadAlFarmaco"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#DolorAbdominal"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Nausea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Vomito"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Diarrea"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.4153.00">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#HipersensibilidadAlFarmaco"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#DolorAbdominal"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Nausea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Vomito"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Diarrea"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.4153.01">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#HipersensibilidadAlFarmaco"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#DolorAbdominal"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Nausea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Vomito"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Diarrea"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.5705.00">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#DisfuncionRenal"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#InfartoAgudoAlMiocardio"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Septicemia"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#AcidosisMetabolica"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Diarrea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Nausea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Dispepsia"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Flatulencia"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Vomito"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Cefalea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Hipoglucemia"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.5705.01">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#DisfuncionRenal"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#InfartoAgudoAlMiocardio"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Septicemia"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#AcidosisMetabolica"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Diarrea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Nausea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Dispepsia"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Flatulencia"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Vomito"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Cefalea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Hipoglucemia"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.5703.00">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#DisfuncionRenal"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#InfartoAgudoAlMiocardio"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Septicemia"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#AcidosisMetabolica"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Diarrea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Nausea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Dispepsia"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Flatulencia"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Vomito"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Cefalea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Hipoglucemia"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.5703.01">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#DisfuncionRenal"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#InfartoAgudoAlMiocardio"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Septicemia"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#AcidosisMetabolica"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Diarrea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Nausea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Dispepsia"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Flatulencia"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Vomito"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Cefalea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Hipoglucemia"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.5704.00">
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#DisfuncionRenal"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#InfartoAgudoAlMiocardio"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Septicemia"/>
+  <tieneContraindicacion rdf:resource="http://www.padecimientos-mexico.org/enfermedad#AcidosisMetabolica"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Diarrea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Nausea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Dispepsia"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Flatulencia"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Vomito"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Cefalea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Hipoglucemia"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.5700.00">
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#DisfuncionHepatica"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Angiodema"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Mareos"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Cefalea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Estreñimiento"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#EdemaPeriferico"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Nausea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Vomitos"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Diarrea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#DolorAbdominal"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#PerdidaDelApetito"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.5701.00">
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#DisfuncionHepatica"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Angiodema"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Mareos"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Cefalea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Estreñimiento"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#EdemaPeriferico"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Nausea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Vomitos"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Diarrea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#DolorAbdominal"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#PerdidaDelApetito"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.medicamentos-mexico.org/medicamento#010.000.5702.00">
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#DisfuncionHepatica"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Angiodema"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Mareos"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Cefalea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Estreñimiento"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#EdemaPeriferico"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Nausea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Vomitos"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#Diarrea"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#DolorAbdominal"/>
+  <tieneEfectoAdverso rdf:resource="http://www.padecimientos-mexico.org/enfermedad#PerdidaDelApetito"/>
+</rdf:Description>
+
+
+</rdf:RDF>

@@ -1,0 +1,25 @@
+Biotipo 
+Panículo adiposo
+Facie 
+Postura 
+Deambulacion 
+Marcha 
+Pigmentación
+Mucosa normocoloreadas
+Mucosa normhídricas
+Implantación capilar
+Tiempo de llenado capilar
+Tejido celular subcutáneo
+Coloración
+Reflejos pupilares
+Reflejo luminoso retiniano
+Simetría de los ojos
+Movimientos oculares
+Presión intraocular
+Glucosa
+Colesterol
+Insulina
+HbA1c
+Colesterol total
+Resistencia a la insulina
+Trigliceridos

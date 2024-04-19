@@ -160,6 +160,7 @@ intents:
 - factores_riesgo_ataque_cardiaco
 - complicaciones_ataque_cardiaco
 - prevencion_ataque_cardiaco
+- conocer_peso_diabeticos
 entities:
 - tipo
 - nombre

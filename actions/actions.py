@@ -800,6 +800,12 @@ class ActionMandaImagen(Action):
                         "La presión arterial elevada puede empeorar y convertirse en una afección crónica llamada “hipertensión arterial”. La hipertensión daña los órganos del cuerpo. Además, aumenta el riesgo de sufrir ataques cardíacos, insuficiencia cardíaca, accidentes cerebrovasculares, aneurismas e insuficiencia renal.\n\nFUENTE: https://www.mayoclinic.org/es/diseases-conditions/prehypertension/symptoms-causes/syc-20376703"
                     ],
                     "imagenes": [None]
+                },
+                "conocer_peso_diabeticos": {
+                    "mensajes": [
+                        "De acuerdo con los datos de pacientes almacenados en una Red Ontológica de expedientes de diabetes, estas son las edades más frecuentes:"
+                    ],
+                    "imagenes": ["https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/pesos_pacientes.png"]
                 }
             }
             

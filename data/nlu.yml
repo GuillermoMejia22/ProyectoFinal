@@ -2406,6 +2406,15 @@ nlu:
     - ¿Cómo me puedo cuidar de un ataque al corazón?
     - ¿Cómo prevengo un infarto?
     - ¿Cómo se previenen los ataques cardíacos?
+- intent: conocer_peso_diabeticos
+  examples: |
+    - ¿Cuál es el peso de las personas con diabétes?
+    - Dime el peso de las personas que tienen diabetes
+    - ¿Cuánto pesan las personas con diabetes?
+    - Dime ¿cuál es el peso de las personas con diabetes?
+    - ¿Normalmente, cuánto pesan las personas con diabetes?
+    - ¿Conoces el peso de las personas diabéticas?
+    - ¿Cómo es el peso de los pacientes que tienen diabetes?
 - synonym: masculino
   examples: |
     - Masculino

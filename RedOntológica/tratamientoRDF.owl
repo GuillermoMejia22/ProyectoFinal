@@ -1,0 +1,2381 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://www.medida-control.com/tratamiento"
+         xmlns="http://www.medida-control.com/tratamiento#">
+
+<owl:Ontology rdf:about="http://www.medida-control.com/tratamiento"/>
+
+<owl:Class rdf:about="#Dieta">
+  <rdfs:subClassOf rdf:resource="#Medida_Control"/>
+  <rdfs:label xml:lang="en">Diet</rdfs:label>
+  <rdfs:label xml:lang="es">Dieta</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Medida_Control">
+  <rdfs:label xml:lang="en">Control Plan</rdfs:label>
+  <rdfs:label xml:lang="es">Medida de Control</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Ejercicio">
+  <rdfs:subClassOf rdf:resource="#Medida_Control"/>
+  <rdfs:label xml:lang="es">Ejercicio</rdfs:label>
+  <rdfs:label xml:lang="en">Exercise</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Hipoglucemiante_Oral">
+  <rdfs:subClassOf rdf:resource="#Tratamiento_Farmacologico"/>
+  <rdfs:label xml:lang="es">Hipoglucemiante Oral</rdfs:label>
+  <rdfs:label xml:lang="en">Oral Hypoglycemic Agent</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Tratamiento_Farmacologico">
+  <rdfs:subClassOf rdf:resource="#Medida_Control"/>
+  <rdfs:label xml:lang="en">Pharmaceutical Treatment</rdfs:label>
+  <rdfs:label xml:lang="es">Tratamiento Farmacologico</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Insulina">
+  <rdfs:subClassOf rdf:resource="#Tratamiento_Farmacologico"/>
+  <rdfs:label xml:lang="en">Insulin</rdfs:label>
+  <rdfs:label xml:lang="es">Insulina</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Otros_Farmacos">
+  <rdfs:subClassOf rdf:resource="#Tratamiento_Farmacologico"/>
+  <rdfs:label xml:lang="en">Other Pharmaceutical Treatment</rdfs:label>
+  <rdfs:label xml:lang="es">Otros Farmacos</rdfs:label>
+</owl:Class>
+
+<Otros_Farmacos rdf:about="#AcidoAcetilsalicilico">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otros_Farmacos>
+
+<Otros_Farmacos rdf:about="#Bezafibrato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otros_Farmacos>
+
+<Otros_Farmacos rdf:about="#Captopril">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otros_Farmacos>
+
+<Otros_Farmacos rdf:about="#ComplejoB">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otros_Farmacos>
+
+<Otros_Farmacos rdf:about="#FumaratoFerroso">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otros_Farmacos>
+
+<Otros_Farmacos rdf:about="#Furosemida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otros_Farmacos>
+
+<Hipoglucemiante_Oral rdf:about="#Glibenclamida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Hipoglucemiante_Oral>
+
+<Otros_Farmacos rdf:about="#HidroxidoDeAluminioYMagnesio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otros_Farmacos>
+
+<Otros_Farmacos rdf:about="#Ibuprofeno">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otros_Farmacos>
+
+<Insulina rdf:about="#InsulinaAspart">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Insulina>
+
+<Insulina rdf:about="#InsulinaDetemir">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Insulina>
+
+<Insulina rdf:about="#InsulinaGlargina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Insulina>
+
+<Insulina rdf:about="#InsulinaGlusina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Insulina>
+
+<Insulina rdf:about="#InsulinaLispro">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Insulina>
+
+<Insulina rdf:about="#InsulinaRegular">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Insulina>
+
+<Otros_Farmacos rdf:about="#Levodopa-Cardiodopa">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otros_Farmacos>
+
+<Hipoglucemiante_Oral rdf:about="#Metformina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Hipoglucemiante_Oral>
+
+<Hipoglucemiante_Oral rdf:about="#Metformina-Glibenclamida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Hipoglucemiante_Oral>
+
+<Otros_Farmacos rdf:about="#Nifedipino">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otros_Farmacos>
+
+<Otros_Farmacos rdf:about="#PolovitaminasYMinerales">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otros_Farmacos>
+
+<Otros_Farmacos rdf:about="#Propanolol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otros_Farmacos>
+
+<Otros_Farmacos rdf:about="#Ranitidina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Otros_Farmacos>
+
+<Insulina rdf:about="#InsulinaHumana(NPH)">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Insulina>
+
+<Tratamiento_Farmacologico rdf:about="#Sitagliptina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Atorvastatina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#FenofibratoDeColina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Olmesartan/amlodipino/hidroclorotiazida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Valsartan/amlodipino/hidroclorotiazida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Amantadina,Clorfenamina,Paracetamol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Glimepirida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Diosmina/hesperidina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#PlantagoOvata">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Amlodipino/ibesartan">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Pioglitazona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Esomeprazol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Liraglitude">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Policresuleno/cinocaina,Clorhidrato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Norfloxacino/fenazopiridina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AcidoAscorbico">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Amoxicilina/acidoClavulanico">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Pidotimod">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Fexofenadina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Acetilcisteina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Trimebutina/simeticona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AceiteDePescado">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Amantadina/clorfenamina/paracetamol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ambroxol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#InsulinaGlulisina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Empagliflozina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Metformina,Clorhidrato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Linagliptina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Candesartan">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#DietaLiquidaPacientesDiabeticos">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Rosuvastatina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Pregabalina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Celecoxib">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AcidoDocosahexaenoico(dha),acidoAsco">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#HialuronatoDeSodio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Nitrofurantoina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#CarbonatoDeCalcio/vitaminaD">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#InsulinaLispro-LisproProtamina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#CarbonatoDeCalcio/vitamiaD">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Colecalciferol(vitaminaD3)">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Fosfomicina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#NitrofurantoinaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#MemantinaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Diosmina/hesperidinaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#ColagenoHidrolizadoDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#DonepeciloDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#InsulinaGlarginaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Losartan/hidroclorotiazidaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Metformina,ClorhidratoDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#FenofibratoDeColina(acidoFenofibrico)Dosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#FluconazolCapsulas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#DietaLiquidaParaPacientesDiabeticos">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#SulfatoFerroso">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#RamiprilDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Levofloxacino">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Sertralina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#PolietilenglicoPolvo">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#MebeverinaCapusala">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#CinitapridaSobre">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AdemetionionaTableta">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#L-ornitinaLAsparatoSobre">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Sucralfato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Mebendazol-Quinfamida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#LactobacilosRhjamosus">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Duloxetina,Clorhidrato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Telmisartan">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Levotiroxina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Cefuroxima">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Meloxicam/carisoprodol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Almagato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Hidroxocobalamina/tiamina/piridoxina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Diclofenaco">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#BromuroDePinaverio/dimeticona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Cetriaxona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Asa">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Metoprolo">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ezetimiba/sinvastatina10/20Mg">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Glimepirida/metformina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Omeprazol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Espironolactona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Pentoxifilina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Desvenlafaxina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Piracetam">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#BetahistinaClorhidrato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Alprazolam">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Diosmina/herperidinaGrageas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#EspironolactonaTabletas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#PentoxifilinaTabletas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AcidoAcetilsalicilicoTabletas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Terbinafina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#MetforminaClorhidrato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Metoprolol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Levofloxacina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#EnzimasPancreaticas/dimeticona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Memantina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#DuloxetinaClorhidrato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#SenosidosA-b">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#ColagenoHidrolizado">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#PolivitaminasYMinerales">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AcidoTioctico">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AcidoFolico/hierro">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Amlodipino">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Amlodipino/valsartan">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Rivastigmina,Tartrato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#InsulinaDegludec">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Escitalopram">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Glimepirida/metformina4/1000">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ciprofibrato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Glimepirida/metformina4/10001mg">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ezetimiba/Simvastatina10/20Mg">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ezetimiba/Simvastatina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Hidroclorotiazida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ketanserina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Sildenafil">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Trimetropin/sulfametoxazol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Amlodipino/irbesartan">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Vildagliptina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#ValproatoDeMagnesio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#BacillusClaussi,EsporasDe">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Enalapril">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AcidoNalidixico/fenazopiridina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Meclozina/piridoxina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#ClonixinatoDeLisina/pargeverina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Rifaximina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Fluocinolona/nistatina/metronidazol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ketoconazol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#ElectrolitosOrales">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Diosmectita">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#OxidoDeZinc(lassae)">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ciprofloxacino">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Dapagliflozina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Felodipino">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Losartan">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#MetforminaClorhidrato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Fluconazol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Azitromicina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ciclopirox/Olamina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Amlodipino/Losartan">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Metformina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Mebendazol/quinfamida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Loratadina/Betametasona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Nistatina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Clindamicina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AcidoFusidico/Betametasona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Hidroxizina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Tiamina/piridoxina/cianocobalamina/dexam">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#BacillusClaussiEsporasDe">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Alopurinol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Tamsulosina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Cefixima">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#GentamicinaSulfato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Dexametasona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Telmisartan/hidroclorotiazida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Benzonatato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Cefalexina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ceftriaxona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Netilmicina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#CarboximetilcelulosaSodica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AcidoDocosahexaenoicoDha,AcidoAsco">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Estriol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AcidoAcetilsalicilicoDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#ClopidogrelDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Olmesartan/amlodipino/hidroclorotiazidaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#PregabalinaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AceiteDePescadoDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Hidroxocobalamina/tiamina/piridoxinaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#PolietilenglicolPolvoSobre">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#EsomeprazolTabletaDe">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#CinitapridaGranulado">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Realizar">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#LavadoDeDientes">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#MebeverinaCapsula">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#EnzimasPancreaticas/dimeticonaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AlmagatoSuspension">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Polietilenglicol(macrogol)PolvoCadaSobreContieneMacrogol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#PancreatinaCapsula">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Timolol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Latanoprost">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#InsulinaLispro-LisproProtaminaCosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#VildagliptinaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#LevofloxacinoDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#IbuprofenoDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#DesloratadinaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Budesonida/FormoterolDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AcidoFolico/hierroPolimaltosado">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Glucosamina,Sulfato/condroitin,Sulfato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ciprofloxaxino">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#BacillusClaussi,EsporarDe">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Fexofenadian">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Butilhioscina/metamizol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#DexketoprofenoTrometamol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Tamsulosina0.4Mg">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#InsulinaDegludec/insulinaAspartica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ramipril">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Amlodipino/valsartan/hidroclorotiazida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#EnizmasPancreaticas/dimeticona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ademetionina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Mebeverina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Mosaprida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Clobetasol0.5%CremaAplicaPorLaMananaYNochePor">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#FluorouraciloCremaAplicarEnCaraYPielCabelludaPorLaNocheDurante">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#SeEliminaCariesYDentinaDelOd.">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Tamsulosina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Oxolamina,Citrato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#ExtractoLiofilizadoDeEscherichiaColi">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Certolizumab">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Metotrexato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AcidoFolico">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Hidroxicloroquina,Sulfato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Deflazacort">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Desloratadina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#SolucionAguaDeMarHipertonica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Liraglutide">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Mebendazol-quinfamida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Pantoprazol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Cinitaprida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#PlantagoOvata340g">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Tramadol-paracetamol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Pancreatina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Tinidazol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Rhamnosus">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Guaiazulene-Dimeticona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Meloxicam">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Telmmisartan">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#InsulinaGlagina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#DietaLiquidaPacienteDiabeticos">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#TriticumVulgare/fenoxietanol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#SulfadiazinaDePlataMicronizada">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#ReposoRelativo">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#CitaEn">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#ColocacionDeFerulaPinzaDeAzucar./">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AnalgesiaConParacetamol/tramadolTab325/">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#SeRecomienda">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#IncrementarAporteDeLiquidos">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#LosartanDosis:">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#DapagliflozinaDosis:">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#MetforminaDosis:">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Diosmina/hesperidina(concentradoRutace)Dosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#ColagenoHidrolizadoDosis:">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#CinarizinaDosis:">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#RosuvastatinaDosis:">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#ComplejoBDosis:">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Meloxicam/carisoprodolDosis:">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AlmagatoDosis:">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#ColagenoHidrolizadoQSobre">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Cinarizina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#PlantagoOvataDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#MebeverinaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#PancreatinaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Mebendazol/quinfamidaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#InsulinaDegludecDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#InsulinaLisproDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#BacillusClaussi,EsporasDeDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AceiteDePescadoCapsulas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Diosmina/hesperidinaGrageas500mg">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#InsulinaLisproSolucionInyectableOrigenAndRecombinante100uiAplicar">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#InsulinaDegludecSolucionInyectable">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#PioglitazonaTabletas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#MetforminaTableta">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#LinagliptinaTableta">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#InsulianGlargina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Fenazopiridina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Doxiciclina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AcidoFusidico">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Mometasona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Dicloxacilina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Mupirocina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#FenofibratoDeColina(acidoFenofibrico)">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Montelukast">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#ErgotaminaYCafeina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Plantago">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#MesalazinaGrag1x2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Cefuroxina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Glimepirida/metformina1/500Mg">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Potasio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Glimepirid/metformina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Gabapentina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Hipromelosa">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Rivaroxaban">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Metoclopramida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Amiodarona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#FenofibrtoDeColina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#LisadosBacterianos">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#CloruroDeSodioYGlicerol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Terbinafina1Aplicacion">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Otilonio,BromuroDe">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#CarboximeticelulosaSodica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Glimepirida/metformina4/1000Mg">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#InsulinaDegludec/InsulinaAspartica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#ComlejoB">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#CaseinatoDeCalcio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Valsartan/hidroclorotiazida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Triazolam">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Cewfixima">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Polietilenglicol(macrogol)">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Tobramicina/dexametasona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#InsulinaGlargina30ui">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Neomicina,PolimixinaBYGramicidina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#GlimepiridaMetformina4/1000">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#PinaverioDimeticona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AlfaCetoanalogosDeAminoacidos">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Valsartan/hidroclorotiazida160/12.5Mg">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Calcitrol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Telmisartan/hidroclorotizida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Telmisartan/hidroclorotizida80/12.5Mg">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#LiraglutideDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#MetforminaClorhidrao">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#TrimetoprimaYSulfametoxazol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Butilhioscina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Itraconazol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Claritromicina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#ExtractoLioflizadoDeEscherichiaColi">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#PlantagoPsyllum">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#MetforminaClorhhidrato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Diosmina/herperidina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Azatioprina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Telmisartanr">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#VitaminaE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ciprofloxacinao">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Dexketoprofeno">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ramipil">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Cloranfenicol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#ClonixinatatoDeLisina/pargeverina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Risperidona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Paracetamol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Candesartan/hidroclorotiazida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Budesonida/formoterol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Sulfasalazina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Prednisona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Carbamazepina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Metildopa(l-alfametildopa)">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#BromuroDePinverio/dimeticona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Amantadina,Clorfenamida,Paracetamol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Cinrizina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#ValproatoSemisodicoDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#BromuroDePinaverio/DimeticonaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#PantoprazolDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#TelmisartanDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#LevotiroxinaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Glucosamina,Sulfato/condroitin,SulfatoDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ezetimiba/SimvastatinaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#CarbonatoDeCalcio/VitaminaD">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Clonazepam">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#MontelukastDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#PidotimodDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AcetilcisteinaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#FexofenadinaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#CafelexinaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#FenoxinaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Oxolamina,CitratoDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AcidoFusidico/BetametasonaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#RifaximinaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#ElectrolitosOralesDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Butihiosina/metamizolDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#DiosmectitaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#BacilussClaussi,EsporasDeDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Loratadina/BetametasonaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#MometasonaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#PantropazolDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#BromuroDePinaverio/dimeticonaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Diosmina/hesperidina(concentradoRutaceDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#CarbonatoDeCalcio/vitamianDDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AmlodipinoDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#OmeprazolDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Diosmina/hesperina(concentradoRutaceDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Glucosamina,Sulfato/Condroitin,SulfatoDois">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ezetimiba/simvastinaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#CarbonatoDeCalcio/VitaminaDDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#LosartanDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#CefalexinaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AcerilcisteinaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#SolucionDeAguaDeMarHipertonicaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#LisadoBacterianosDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Amoxicilina-AcidoClavulanicoDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AmbroxolDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AcidoAscorbicoDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#CloranfenicolDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Propafenona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Fluocinolona/metronidazol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Progesterona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Trimebutina/simetiona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Clindamicina/ketoconazol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#InsistoEnRegimenDietetico,BajarDePeso,Caminar">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#InsistoEnDieta,Caminar">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#MetforminaClorhidratos">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Liraglutida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Metformina,Clorhidrato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Isosorbida5-mononitrato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#TamsulosinaCapsulaDeLiberacionProlongada">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#DutasteridaCapsula">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Sitagliptina1Tableta">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Terbinaina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Neomicina,polimixina,FluocinolonaYLi">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Piogliptina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Furosemide">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#DigoxinaElixir">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#InsulinaDetermir">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#VitaminaD">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#VitaminasA,C,DDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Digoxina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#InsulinaLispro8ui">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Metformina,ClorhidratoDosis:">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#DiclofenacoDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#SertralinaDosis:">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#MetforminaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#CitaSubsecuenteEn">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Valsartan/amlopidino/hidroclorotiazidaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#SertralinaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#CarboximetilcelulosaSodicaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#CimicifugaRacemosa">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#ExtractoLiofilizadoDeEscheriaColi">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#ExtractoLioflilizadoDeEscheriaColi">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Tramadol/paracetamol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Flunarizina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Cilostazol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#BacillusClaussi">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Bismuto">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Mesalazina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AcidoUrodexoxicolico">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#BacillussClaussiEsporasDe">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#CloxinatoDeLisina/pargeverina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Norfloxacino/Fenazopiridina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Levofloxaxino">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#SeOfreceNuevamenteTxSustitutivoDeLaFuncionRenalPorCursarConDatosClinicosSugestivosDeFallaCardiaca,SinEmbargoLaPacienteNoAceotaTx,RefiereContarConTxFurosemide">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Fluoxetina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AcidoAcetalsalicilico">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#EnzimasPancreaticas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#LactobacilosRhamosus">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Tobbramicina/dexametasona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AcidoDocosahexaenoico(dha),AcidoAsco">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Losasrtan/hidroclorotiazida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#CelecoxibDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AceiteDePescado(acidosGrasosOmega3)Dosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Prazosina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Glimepirida/metformina4//1000">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Aas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#InicioDeEsquemaDeInsulinaCon">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#CitaDeRevaloracionYAjusteDeDosisInsulinicaEn">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#TomaDeDxtx">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Gentamicina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#ColagenoClorhidrato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Guaiazulene/dimeticona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Tibolona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Lactulosa">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#LactobacillusRhamnosusGg">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#FosfatoYCitratoDeSodio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Mebendazol/quifamida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Paracetamol/clorzoxazona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#DuloxetinaCapsula">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Verapamilo">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Nitrofuranttoina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ezetimiba/Simvastatina10/20">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Dapaglifozina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#EzetimibaSimvastatina10/20Mg">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Lactobacilos">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#CalcitriolICapsula">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Betahistina,Clorhidrato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#EnzimasPancreatina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ciprofloxacina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Glimepirina/metformina4/1000Mg">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Candesartan-hidroclorotiazida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Isosorbida,5-mononitrato">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Diltiazem">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ampicilina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Moxifloxacino/dexametasona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Brimonidina,Tartrado">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Luteina/astaxantina/zeaxantina/vitaminas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ketoroloaco,Trometamiena">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AcidoZoledronico">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#EstrogenosConjugados">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Propranolol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ezetimiba/Simvastatina10/10Mg">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Loratadina/Betametasonadosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AzitromicinaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Meloxicam/carisoprodolDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#CeftriaxonaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Amantadina,Clorfenamina,ParacetalDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#LisadosBacterianosDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AlmagatoDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Amantadina,Clorfenamina,ParacetamolDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#CefuroximaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ejercicio4-5VecesPorSemana">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#BenzonatatoDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#MetforminaTabletaDeLiberacionProlongada">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#InsulinaGlarginaSolucionInyectable">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#DiclofenacoGelAplicar">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Hidroxicobalamina/tiamina/piridoxina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AtorvastatinaIsosrbdie">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Isosrbdie">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Telmisartan/hidroclorotiazida80/12.5Mg">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#InsulinaDegludecSolucionInyectableAplicar">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Calcipotriol/BetametasonaGelAplicar">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#DietaLiquidaParaDiabeticosTomar">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Calcipotriol/betametosonaCremaAplicar">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#SitagliptinaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Losertan/hidroclorotiazidaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#MetoprololDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AcidoTiocticoDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#DietaLiquidaPacientesDiabeticosDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#TrimetoprimaYSulfametoxazolDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Trimebutina/simeticonaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#ComplejoBDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Albendazol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#InsulinaLispro-lisproProtamina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Eritropoyetina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#DietaLiquidaParaPacientesRenales/programa">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#MesalazinaGrageaDe">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Liraglutide(solucionInyectable">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AtorvastatinaTableta">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Metformina,ClorhidratoTabletasDeLiberacionProlongada">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#LosartanGrageaOComprimidoRecubierto">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#MetoprololTableta">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#ExtractoLiofilizadoDeEscherichiaColiCapsula">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#RanitidinaTabletaOGragea">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#FenofibratoDeColinaCapsula">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#ExtractoLiofilizadoDeEscherichia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Butilhiosina/metamizol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AcidoAcetilsalicilicoTableta">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Paroxetina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Insulinaglargina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ambroxol/amoxicilina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Amoxicilina/clavulanatoTabletas875/125Mg">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Valsartan/hidroclorotiazida160/25Mg">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#BetametasonaDipriop/BetametasonaFosfa">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#SolucionAguaMarHipertonica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Oximetazolina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ipratropio-salbutamol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#ValsartanAmlodipinoHidroclorotiazida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#FenazopiridinaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AmoxicilianDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#FenazopirinaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#FenofibratoDeColian">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Betametasona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ipratropio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Paracetamol/clorzoxazonaa">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Amoxicilina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#KetorolacoTrometamina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Losartan/hidroclorotiazida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Ciclopirox/OlaminaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Amlodipino/irbesartanDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#FurosemidaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Paracetamol/clorzoxazonaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#DexametasonaDosis">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Isosorbide">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#AcidoAlendronico">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Vortioxetina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#SalmeterolYFluticasona">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Duloxetina">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Metocloporamida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Senosidos">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Colageno">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Tramadol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#SenosidosAb">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Metoclopramida">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#DiclofenacoGel">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Dextrometorfanos">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#BencilpenicilinaProcainicaConBencilpe">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Metronidazol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+<Tratamiento_Farmacologico rdf:about="#Difenidol">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Tratamiento_Farmacologico>
+
+
+</rdf:RDF>

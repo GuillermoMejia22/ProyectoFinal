@@ -1,0 +1,22 @@
+['Fecha:']	1
+['Peso:']	1
+['Talla:']	1
+['Frecuencia']	2
+['Temperatura']	1
+['mmHg']	1
+['NOTA', 'MÉDICA']	1
+['sexo', 'femenino', 'de', 'años,']	1
+['Femenino,']	1
+['Análisis:']	1
+['Medidas', 'higiénicos', 'dietéticas,']	1
+['Dieta', 'en', 'carbohidratos']	1
+['Dieta', 'hiposódica']	1
+['dental', 'veces', 'por', 'día.']	1
+['plan', 'de', 'actividad', 'física']	1
+['riesgos', 'de', 'consumo', 'de', 'alcohol']	1
+['vacuna', 'de', 'influenza']	1
+['Aseo', 'adecuado', 'de', 'pies']	1
+['Metformina']	1
+['tabletas']	2
+['mg']	1
+['salicílico', 'tabletas', 'tomar']	1

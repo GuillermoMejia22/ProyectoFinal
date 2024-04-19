@@ -1,0 +1,2369 @@
+hipertensión arterial sistema
+NOUN ADJ NOUN 
+nota médica paciente
+NOUN ADJ ADJ 
+unidad médico rural
+NOUN ADJ ADJ 
+hipertensión arterial
+NOUN ADJ 
+indice masa corporal
+PROPN NOUN ADJ 
+norma oficial mexicana
+NOUN ADJ ADJ 
+frecuencia respiratoria normal
+NOUN ADJ ADJ 
+manejo del paciente
+NOUN ADP NOUN 
+del seguro social
+ADP NOUN ADJ 
+médica paciente sexo
+ADJ ADJ NOUN 
+frecuencia cardiaca
+NOUN ADJ 
+frecuencia respiratoria
+NOUN ADJ 
+arterial sistema diabetes
+ADJ PROPN ADJ 
+del paciente con
+ADP NOUN ADP 
+horas sin suspender
+NOUN ADP VERB 
+acciones del paquete
+NOUN ADP NOUN 
+del paquete garantizado
+ADP NOUN ADJ 
+paciente con base
+ADJ ADP NOUN 
+mexicano del seguro
+NOUN ADP NOUN 
+instituto mexicano del
+PROPN ADJ ADP 
+############################################################
+tres esferas neurológicas
+NUM NOUN ADJ 
+actitud libremente escogida
+NOUN ADV ADJ 
+enfermedades crónico degenerativas
+NOUN ADJ ADJ 
+rinorrea hialina disfagia
+PROPN ADJ NOUN 
+múltiples piezas dentales
+ADJ NOUN ADJ 
+fisuras y/o grietas
+NOUN CONJ PUNCT CONJ NOUN 
+ausculta murmullo vesicular
+VERB NOUN ADJ 
+posible medir niveles
+ADJ VERB NOUN 
+insuficiencia venosa crónica
+NOUN ADJ ADJ 
+vesículas agrupadas subescapulares
+NOUN ADJ ADJ 
+piezas dentales faltantes
+NOUN ADJ ADJ 
+fibra dieta baja
+NOUN ADJ ADJ 
+enfermedad crónico degenerativa
+NOUN ADJ ADJ 
+enfermedad crónica degenerativa
+NOUN ADJ ADJ 
+edad aparente igual
+NOUN ADJ ADV 
+edad igual aparente
+NOUN ADV ADJ 
+medidas higiénicos dietéticas
+NOUN ADJ ADJ 
+pupilas isocoricas normoreflecticas
+NOUN ADJ ADJ 
+tramite instituto mexicano
+VERB PROPN ADJ 
+trámite instituto mexicano
+NOUN ADJ ADJ 
+programada aseo adecuado
+ADJ NOUN ADJ 
+orina próxima cita
+NOUN ADJ NOUN 
+próxima cita 12/01/2017
+ADJ NOUN NUM 
+oídos simétricos permeables
+NOUN ADJ ADJ 
+programada próxima cita
+ADJ ADJ NOUN 
+ingerir alimentos posterior
+VERB NOUN ADJ 
+línea axilar posterior
+NOUN ADJ ADJ 
+cifras tensiónales elevadas
+NOUN ADJ ADJ 
+cifras tensiónales altas
+NOUN ADJ ADJ 
+mantener periodos prolongados
+VERB NOUN ADJ 
+solicita tomografía contrastada
+VERB NOUN ADJ 
+fosa renal derecha
+ADJ ADJ ADJ 
+influenza aseo adecuado
+PROPN NOUN ADJ 
+hipertensión arterial sistémica
+NOUN ADJ ADJ 
+hipertension arterial sistémica
+PROPN PROPN ADJ 
+fosa renal izquierda
+ADJ ADJ ADJ 
+hidronefrosis izquierda leve
+NOUN ADJ ADJ 
+diario aseo diario
+NOUN ADJ ADJ 
+diario próxima cita
+NOUN ADJ NOUN 
+llenado capilar tardío
+ADJ ADJ NOUN 
+buen llenado capilar
+ADJ NOUN ADJ 
+padecimiento crónico degenerativo
+NOUN ADJ ADJ 
+eda´s cita abierta
+PROPN NOUN ADJ 
+próstata cita abierta
+NOUN NOUN ADJ 
+cifras tensionales elevadas
+NOUN ADJ ADJ 
+adecuado llenado capilar
+ADJ ADJ ADJ 
+120/80 mmhg glucosa
+NUM PROPN PROPN 
+130/80 mmhg glucosa
+PROPN PROPN PROPN 
+110/70 mmhg glucosa
+NUM PROPN PROPN 
+140/80 mmhg glucosa
+PROPN PROPN PROPN 
+140/100 mmhg glucosa
+NUM PROPN PROPN 
+130/90 mmhg glucosa
+NUM PROPN PROPN 
+110/80 mmhg glucosa
+NUM PROPN PROPN 
+140/70 mmhg glucosa
+NUM PROPN PROPN 
+160/110 mmhg glucosa
+NUM PROPN PROPN 
+160/100 mmhg glucosa
+NUM PROPN PROPN 
+buena coloración tegumentaria
+ADJ NOUN ADJ 
+maléolo interno ulcera
+PROPN ADJ PROPN 
+frecuencia cardiaca rítmica
+NOUN ADJ ADJ 
+influenza cita abierta
+PROPN VERB ADJ 
+vías urinarias plan
+NOUN ADJ NOUN 
+infectada sobrepeso plan
+ADJ NOUN NOUN 
+glándula tiroides normal
+VERB NOUN ADJ 
+craqueo laríngeo normal
+NOUN ADJ ADJ 
+140/60mmhg glucosa capilar
+NOUN PROPN PROPN 
+120/80mmhg glucosa capilar
+NUM ADJ PROPN 
+minerales tabletas tomar
+NOUN NOUN VERB 
+sulfametoxazol tabletas tomar
+PROPN NOUN VERB 
+epigastrio tipo urente
+PROPN NOUN PROPN 
+plano profundo aparentemente
+NOUN ADJ ADV 
+mama aseo adecuado
+NOUN NOUN ADJ 
+movimiento produciendo dolor
+NOUN VERB NOUN 
+cifras tensiónales normales
+NOUN ADJ ADJ 
+cita subsecuente acompañada
+NOUN ADJ ADJ 
+glicemia capilar dento
+NOUN ADJ PROPN 
+glicemia capilar pospandrial
+NOUN ADJ ADJ 
+padecimientos crónico degenerativos
+NOUN ADJ ADJ 
+reflejos osteotendinosos normales
+NOUN NOUN ADJ 
+refiere urgencia miccional
+VERB NOUN ADJ 
+niega sintomatología urinaria
+VERB NOUN ADJ 
+lesiono tobillo izquierdo
+PROPN NOUN ADJ 
+muestra adecuada tolerancia
+VERB ADJ NOUN 
+extremidades inferiores simétricas
+NOUN ADJ ADJ 
+detectar neuropatía diabética
+VERB NOUN ADJ 
+continúa terapéutico empleada
+VERB ADJ ADJ 
+diario solicito estudios
+NOUN VERB NOUN 
+extremidad inferior derecha
+NOUN ADJ ADJ 
+mama cita abierta
+NOUN VERB ADJ 
+pulso carotideo presente
+NOUN ADJ ADJ 
+noches médico pasante
+NOUN ADJ ADJ 
+cavidad oral seca
+NOUN ADJ ADJ 
+cavidad oral húmeda
+NOUN ADJ ADJ 
+cavidad oral humeda
+NOUN ADJ ADJ 
+herida próxima cita
+NOUN ADJ NOUN 
+posteriormente refiere aparición
+ADV VERB NOUN 
+pácietne refiere únicamente
+PROPN VERB ADV 
+ira´s cita abierta
+PROPN NOUN ADJ 
+solicita antígeno prostático
+VERB NOUN ADJ 
+glucosa capilar elevada
+PROPN PROPN ADJ 
+días 09/04/18 secundaria
+NOUN NUM NOUN 
+nota médica femenina
+NOUN ADJ ADJ 
+traumatología próxima cita
+NOUN ADJ NOUN 
+glicemia capilar postprandial
+NOUN ADJ ADJ 
+glicemia capilar debido
+NOUN ADJ ADJ 
+manera irregular aunque
+NOUN ADJ SCONJ 
+baar negativo usg
+PROPN ADJ PROPN 
+material purulento escaso
+PROPN ADJ ADJ 
+norma oficial mexicana
+NOUN ADJ ADJ 
+glicemia capilar elevada
+NOUN ADJ ADJ 
+giordano bilateral positivo
+PROPN ADJ ADJ 
+da tratamiento sintomático
+VERB NOUN ADJ 
+suspender captipril tabletas
+VERB PROPN ADJ 
+ivu exploración física
+PROPN NOUN ADJ 
+extremidades superiores disminuidas
+NOUN ADJ ADJ 
+control próxima cita
+NOUN ADJ NOUN 
+suspender captopril tabletas
+VERB NOUN NOUN 
+paciente refiera sintomatología
+ADJ VERB NOUN 
+refiere adecuado apego
+VERB ADJ NOUN 
+vías urinarias manejo
+NOUN ADJ NOUN 
+refiere dolor crónico
+VERB NOUN ADJ 
+laboratorio próxima cita
+NOUN ADJ NOUN 
+glicemia capilar normal
+NOUN ADJ ADJ 
+giordano bilateral negativo
+PROPN ADJ ADJ 
+día 09/04/18 secundaria
+NOUN NUM NOUN 
+reajusta tratamiento hipoglucemiante
+VERB NOUN ADJ 
+valoración aseo adecuado
+NOUN NOUN ADJ 
+adecuado control glicémico
+ADJ NOUN ADJ 
+frecuencia respiratoria normal
+NOUN ADJ ADJ 
+presenta herida interdigital
+VERB ADJ ADJ 
+tabaco cita abierta
+NOUN VERB ADJ 
+solicita tome medicamento
+VERB VERB NOUN 
+servicio social dra
+PROPN PROPN PROPN 
+edema duro +
+NOUN ADJ PROPN 
+encontrándose sensibilidad normal
+ADJ NOUN ADJ 
+sensibilidad aparentemente normal
+NOUN ADV ADJ 
+oral médico pasante
+PROPN NOUN ADJ 
+tratamiento sobrepeso plan
+NOUN ADJ NOUN 
+paciente refiere renuencia
+NOUN VERB NOUN 
+rodilla izquierda plan
+NOUN ADJ NOUN 
+da tratamiento médico
+VERB NOUN ADJ 
+refiere suspendió tratamiento
+VERB VERB NOUN 
+suspender médico pasante
+VERB NOUN ADJ 
+refiere únicamente síntomas
+VERB ADV NOUN 
+reajusta tratamiento antihipertensivo
+VERB NOUN ADJ 
+retoma tratamiento antihipertensivo
+VERB NOUN ADJ 
+refiere cefalea frontal
+VERB NOUN ADJ 
+tiras reactivas per
+NOUN ADJ NOUN 
+pies médico pasante
+NOUN ADJ ADJ 
+pies sobrepeso plan
+PROPN VERB NOUN 
+refiere mal apego
+VERB ADV NOUN 
+agua médico pasante
+NOUN ADJ ADJ 
+colesterol trigliceridos hb
+PROPN PROPN PROPN 
+metas exploración física
+ADJ NOUN ADJ 
+mal control glicémico
+ADJ NOUN ADJ 
+refiere tomar medicamentos
+VERB VERB NOUN 
+refiere diabetes mellitus
+VERB NOUN ADJ 
+asintomática niega nicturia
+ADJ VERB ADJ 
+extremidades torácicas presentes
+NOUN ADJ ADJ 
+extremidades pélvicas presentes
+NOUN ADJ ADJ 
+pupilas isocoricas
+NOUN ADJ 
+instituto mexicano
+NOUN ADJ 
+extremidades exploración física
+ADJ NOUN ADJ 
+aseo adecuado
+NOUN ADJ 
+recuerda tratamiento administrado
+VERB NOUN ADJ 
+refiere familiar amputación
+VERB ADJ NOUN 
+sensibilidad conservada normal
+NOUN VERB ADJ 
+consulta niega nicturia
+NOUN VERB ADJ 
+cifras tensiónales
+NOUN ADJ 
+insulina exploración física
+ADJ NOUN ADJ 
+lipoma solicitar cita
+PROPN VERB NOUN 
+urgencia miccional
+NOUN ADJ 
+refiere mal control
+VERB ADV NOUN 
+sintomatología urinaria
+NOUN ADJ 
+llenado capilar
+ADJ PROPN 
+reflejos osteotendinosos
+NOUN ADJ 
+cita abierta
+NOUN ADJ 
+cifras tensionales
+NOUN ADJ 
+ayuno exploración física
+DET NOUN ADJ 
+acufenos fosfenos tinitus
+PROPN PROPN PROPN 
+exploración física alerta
+NOUN ADJ NOUN 
+peso normal plan
+NOUN ADJ NOUN 
+médico pasante
+ADJ ADJ 
+adecuada coloración
+ADJ NOUN 
+tomar 2 tabletas
+VERB NUM NOUN 
+buen apego
+ADJ NOUN 
+dieta hipercalórica
+NOUN ADJ 
+compromiso aparente
+NOUN ADJ 
+dicha enfermedad
+ADJ NOUN 
+pupilas anacoricas
+NOUN ADJ 
+programada tele
+ADJ NOUN 
+cita subsecuente
+NOUN ADJ 
+glicemia capilar
+NOUN ADJ 
+indican medidas
+VERB NOUN 
+medidas higienico-dieteticas
+NOUN ADJ PUNCT NOUN 
+captopril 25 mg
+PROPN NUM NOUN 
+antígeno prostático
+NOUN ADJ 
+diario iniciar
+NOUN VERB 
+consulta refiere presencia
+NOUN VERB NOUN 
+reflejos normales
+NOUN ADJ 
+65 frecuencia respiratoria
+NUM NOUN ADJ 
+71 frecuencia respiratoria
+NUM NOUN ADJ 
+82 frecuencia respiratoria
+NUM NOUN ADJ 
+72 frecuencia respiratoria
+NUM NOUN ADJ 
+70 frecuencia respiratoria
+NUM NOUN ADJ 
+00 frecuencia respiratoria
+NUM NOUN ADJ 
+76 frecuencia respiratoria
+NUM NOUN ADJ 
+68 frecuencia respiratoria
+NUM NOUN ADJ 
+74 frecuencia respiratoria
+NUM NOUN ADJ 
+80 frecuencia respiratoria
+NUM NOUN ADJ 
+84 frecuencia respiratoria
+NUM NOUN ADJ 
+glucosa elevada
+PROPN ADJ 
+cita anterior
+NOUN ADJ 
+ojos simétricos
+NOUN ADJ 
+presenta sintomatología
+VERB NOUN 
+tobillo izquierdo
+NOUN ADJ 
+diario laboratorios
+NOUN NOUN 
+extremidades inferiores
+NOUN ADJ 
+neuropatía diabética
+NOUN ADJ 
+cérvix posterior
+NOUN ADJ 
+sintomatología urinario
+VERB ADJ 
+acude control subsecuente
+VERB NOUN ADJ 
+onicomicosis bilateral
+NOUN ADJ 
+giordano positivo
+PROPN ADJ 
+extremidad izquierda
+NOUN ADJ 
+solicita ultrasonido
+VERB PROPN 
+pierna derecha
+NOUN ADJ 
+3 tensión arterial
+NUM NOUN ADJ 
+5 tensión arterial
+NUM NOUN ADJ 
+9 tensión arterial
+NUM NOUN ADJ 
+7 tensión arterial
+NUM NOUN ADJ 
+00 tensión arterial
+NUM NOUN ADJ 
+4 tension arterial
+NUM NOUN ADJ 
+tensión arterial
+NOUN ADJ 
+2 tensión arterial
+NUM NOUN ADJ 
+8 tensión arterial
+NUM NOUN ADJ 
+06 tensión arterial
+NUM NOUN ADJ 
+1 tensión arterial
+NUM NOUN ADJ 
+41 tensión arterial
+NUM NOUN ADJ 
+48 tensión arterial
+NUM NOUN ADJ 
+6 tensión arterial
+NUM NOUN ADJ 
+93 tensión arterial
+NUM NOUN ADJ 
+37 tensión arterial
+NUM NOUN ADJ 
+20 tensión arterial
+NUM NOUN ADJ 
+4 tensión arterial
+NUM NOUN ADJ 
+actualmente niega poliuria
+ADV VERB ADJ 
+cita nuevamente
+VERB ADV 
+186 postprandial colesterol
+NUM ADJ PROPN 
+pulso yugular
+NOUN ADJ 
+hb glucosilada
+PROPN PROPN 
+accesibles debido
+ADJ ADJ 
+evaluar tolerancia
+VERB NOUN 
+glucosa normal
+PROPN ADJ 
+análisis paciente femenino
+NOUN ADJ ADJ 
+buena hidratación
+ADJ NOUN 
+trámite fecha
+NOUN NOUN 
+riesgos complicaciones agudas
+NOUN NOUN ADJ 
+herida abierta
+NOUN ADJ 
+buena intensidad
+ADJ NOUN 
+rodilla derecha
+NOUN ADJ 
+140/80mmhg glucosa
+NUM ADJ 
+adecuado tono
+ADJ NOUN 
+rodilla izquierda
+NOUN ADJ 
+tiras reactivas
+NOUN ADJ 
+giordano negativo
+PROPN ADJ 
+glicemia normal
+NOUN ADJ 
+médico internista
+NOUN ADJ 
+médico particular
+NOUN ADJ 
+baar negativo
+PROPN ADJ 
+buen control
+ADJ NOUN 
+frecuencia cardíaca
+NOUN ADJ 
+adecuado proceso
+ADJ NOUN 
+amplexación normales
+PROPN ADJ 
+pulsos normales
+NOUN ADJ 
+parámetros normales
+NOUN ADJ 
+amígdalas normales
+NOUN ADJ 
+amplexacion normales
+PROPN ADJ 
+forma irregular
+NOUN ADJ 
+da tratamiento
+VERB NOUN 
+niega polidipsia polifagia
+VERB PROPN NOUN 
+110 cm glucosa
+NUM NOUN ADJ 
+84 cm glucosa
+NUM NOUN ADJ 
+83 cm glucosa
+NUM NOUN ADJ 
+premolar izquierdo
+NOUN ADJ 
+padecimientos prostático
+NOUN ADJ 
+promueve plan
+VERB NOUN 
+mal apego
+ADV NOUN 
+niega nicturia
+VERB PROPN 
+manera ocasional
+NOUN ADJ 
+refiere nicturia
+VERB ADJ 
+exploración física
+NOUN ADJ 
+25 miligramos tomar
+NUM NOUN VERB 
+10 miligramos tomar
+NUM NOUN VERB 
+diario resultado
+NOUN ADJ 
+niega alérgicos
+VERB NOUN 
+niega fiebre
+VERB NOUN 
+refiere parestesias
+VERB NOUN 
+refiere termino
+VERB ADJ 
+refiere deceso
+VERB NOUN 
+mismo refiere
+PRON VERB 
+refiere persistencia
+VERB NOUN 
+extremidades superiores
+NOUN ADJ 
+glicémico 2 semanas
+PROPN NUM NOUN 
+violencia negativo
+NOUN ADJ 
+alcoholismo negativo
+NOUN ADJ 
+niega disminución
+VERB NOUN 
+refiere disminución
+VERB NOUN 
+amputación supracondiliea
+NOUN PROPN 
+amputación suprancondilea
+NOUN ADJ 
+facie normal
+NOUN ADJ 
+marcha normal
+NOUN ADJ 
+bh normal
+NOUN ADJ 
+fascie normal
+PROPN ADJ 
+lengua normal
+NOUN ADJ 
+peristalsis normal
+NOUN ADJ 
+apego estricto
+NOUN ADJ 
+mejor apego
+ADJ NOUN 
+pésimo apego
+ADJ NOUN 
+refiere dolor
+VERB NOUN 
+actividad física
+NOUN ADJ 
+peristalsis presente
+NOUN ADJ 
+17/10/2017 hora
+NUM NOUN 
+hídrico conservado
+ADJ ADJ 
+tráquea central
+PROPN ADJ 
+ruidos agregados
+NOUN ADJ 
+puntos dolorosos
+NOUN ADJ 
+irritación peritoneal
+NOUN PROPN 
+octava década
+ADJ ADJ 
+hábitos higiénico-dietéticos
+NOUN ADJ PUNCT NOUN 
+práctica clínica
+NOUN NOUN 
+paquete garantizado
+NOUN ADJ 
+mejor salud
+ADJ NOUN 
+proporciona información
+VERB NOUN 
+salud sexual
+NOUN ADJ 
+16/05/2017 hora
+NUM NOUN 
+tacto rectal
+NOUN ADJ 
+impactación coprostatica
+PROPN ADJ 
+29/11/2016 hora
+SYM NOUN 
+sexta década
+ADJ NOUN 
+21/12/2016 hora
+NUM NOUN 
+agudeza visual
+NOUN ADJ 
+transmisión sexual
+NOUN ADJ 
+séptima década
+ADJ NOUN 
+aplica vacuna
+VERB NOUN 
+15/02/2017 hora
+NUM NOUN 
+miembros pélvicos
+NOUN ADJ 
+semmes weinstein
+PROPN PROPN 
+15/03/2017 hora
+NUM NOUN 
+palpación profunda
+NOUN ADJ 
+16-11-2016 hora
+NUM PUNCT NUM PUNCT NOUN NOUN 
+20-febrero-2017 hora
+NUM NOUN 
+cuarto dedo
+ADJ NOUN 
+cara simétrica
+NOUN ADJ 
+estímulos externos
+NOUN ADJ 
+mandíbula inmóvil
+VERB ADJ 
+ventilación pulmonar
+NOUN ADJ 
+27/12/2016 hora
+NUM NOUN 
+demás familia
+DET NOUN 
+valorar cambio
+VERB NOUN 
+aplica dosis
+VERB NOUN 
+11-01-2016 hora
+NUM PUNCT NUM PUNCT NOUN NOUN 
+quinta década
+ADJ NOUN 
+11/12/2018 hora
+SYM NOUN 
+metas terapéuticas
+NOUN ADJ 
+23/10/2018 hora
+NUM NOUN 
+hospital general
+PROPN PROPN 
+ácido fólico
+NOUN VERB 
+15/08/2018 hora
+NUM NOUN 
+18/07/2018 hora
+SYM NOUN 
+09/05/2018 hora
+NUM NOUN 
+ayer acudió
+ADV VERB 
+27/03/2018 hora
+NUM NOUN 
+09/03/2018 hora
+NUM NOUN 
+tos productiva
+NOUN ADJ 
+22-02-2017 hora
+NUM PUNCT NUM PUNCT NOUN NOUN 
+23-03-2017 hora
+NUM PUNCT NUM PUNCT NOUN NOUN 
+06/10/2017 hora
+NUM NOUN 
+agrega antiplaquetario
+VERB PROPN 
+21-12-2016 hora
+NUM PUNCT NUM PUNCT NOUN NOUN 
+09/02/2017 hora
+NUM NOUN 
+13/03/2017 hora
+NUM NOUN 
+doble esquema
+ADJ NOUN 
+19/10/2016 hora
+NUM NOUN 
+realiza cuestionario
+VERB NOUN 
+24 hrs disuelta
+NUM PROPN ADJ 
+facie característica
+NOUN ADJ 
+guante explorador
+NOUN ADJ 
+química sanguínea
+ADJ NOUN 
+examen general
+NOUN ADJ 
+12/10/2018 hora
+NUM NOUN 
+goteo terminal
+PROPN ADJ 
+órgano blanco
+NOUN ADJ 
+evitar hipoglucemias
+VERB NOUN 
+24/05/2018 hora
+NUM NOUN 
+13/04/2018 hora
+NUM NOUN 
+metas terapeuticas
+NOUN ADJ 
+15/03/2018 hora
+SYM NOUN 
+15/02/2018 hora
+NUM NOUN 
+19-01-2017 hora
+NUM PUNCT NUM PUNCT NOUN NOUN 
+cirugía general
+NOUN ADJ 
+16/02/2017 hora
+NUM NOUN 
+mismo sitio
+DET NOUN 
+constitución endomorfica
+PROPN PROPN 
+marcha claudicante
+NOUN ADJ 
+lengua saburral
+NOUN PROPN 
+ruidos cardiacos
+NOUN ADJ 
+consistencia dura
+NOUN ADJ 
+varices severas
+NOUN ADJ 
+ambas piernas
+NUM NOUN 
+realizó ultrasonido
+VERB NOUN 
+reporta aumento
+VERB NOUN 
+líquido sinovial
+NOUN NOUN 
+bolsa subcuadricipital
+PROPN PROPN 
+envía referencia
+VERB NOUN 
+24/01/2020 hora
+NUM NOUN 
+medicina interna
+NOUN ADJ 
+medico particular
+ADJ ADJ 
+lado derecho
+NOUN ADJ 
+25/01/2019 hora
+NUM NOUN 
+7 perímetro abdominal
+NUM NOUN ADJ 
+via orla
+PROPN PROPN 
+30/08/2018 hora
+NUM NOUN 
+34 perímetro abdominal
+NUM NOUN ADJ 
+16/07/2018 hora
+SYM NOUN 
+15/06/2018 hora
+NUM NOUN 
+20/04/2018 hora
+NUM NOUN 
+2 perímetro abdominal
+NUM NOUN ADJ 
+20/03/2018 hora
+NUM NOUN 
+2 perimetro abdominal
+NUM NOUN PROPN 
+primer ortejo
+ADJ NOUN 
+10/03/2017 hora
+NUM NOUN 
+agrega metformina
+VERB ADJ 
+dosis bajas
+NOUN ADJ 
+04/05/-2017 hora
+NUM NOUN 
+explica ampliamente
+VERB ADV 
+disminuye dosis
+VERB NOUN 
+haciéndole énfasis
+AUX NOUN 
+15-11-2016 hora
+NUM PUNCT NUM PUNCT NOUN NOUN 
+solicitado previamente
+ADJ ADV 
+30/11/2018/ hora
+NUM NOUN 
+03/08/20018 hora
+NUM NOUN 
+hemangioma hepático
+PROPN ADJ 
+26/06/20018 hora
+NUM NOUN 
+hipocondrio derecho
+PROPN ADJ 
+saciedad temprana
+NOUN ADJ 
+22/03/2018 hora
+NUM NOUN 
+lesión ovalada
+NOUN ADJ 
+circunscrita ecogenica
+PROPN ADJ 
+vascularidaden segmento 5
+PROPN NOUN NUM 
+16x9x14 mm
+NUM NOUN 
+20/02/2018 hora
+SYM NOUN 
+distención abdominal
+NOUN ADJ 
+17-01-2018 hora
+NUM PUNCT NUM PUNCT NOUN NOUN 
+21/10/2016 hora
+NUM NOUN 
+211 pp per
+NUM PROPN NOUN 
+08/04/2019 hora
+NUM NOUN 
+257 pp per
+NUM PROPN NOUN 
+13/05/2019 hora
+SYM NOUN 
+193 pp per
+NUM PROPN NOUN 
+17/06/2019 hora
+SYM NOUN 
+222 pp per
+NUM PROPN NOUN 
+20/09/2019 hora
+NUM NOUN 
+sexo femenino
+NOUN ADJ 
+sexo masculino
+NOUN ADJ 
+refiere asintomático
+VERB ADJ 
+refiere asintomática
+VERB ADJ 
+descontrol glicémico
+NOUN ADJ 
+referir dolor
+VERB NOUN 
+dolor ligero
+NOUN ADJ 
+dolor abdominal
+NOUN ADJ 
+panículo adiposo
+NOUN PROPN 
+dislipidemia secundaria
+NOUN ADJ 
+5kg talla
+NUM NOUN NOUN 
+106kg talla
+NUM NOUN NOUN 
+103kg talla
+NUM NOUN NOUN 
+68kg talla
+NUM PROPN NOUN 
+44kg talla
+NUM NOUN NOUN 
+43kg talla
+NUM PROPN NOUN 
+42kg talla
+NUM PROPN NOUN 
+tratamiento hipoglucemiante
+NOUN ADJ 
+primer nivel
+ADJ NOUN 
+nivel escapular
+NOUN ADJ 
+diabetes mellitus
+NOUN ADJ 
+5 kg talla
+NUM NOUN NOUN 
+43 kg talla
+NUM PROPN NOUN 
+77 kg talla
+NUM NOUN NOUN 
+45 kg talla
+NUM PROPN NOUN 
+61 kg talla
+NUM PROPN NOUN 
+64 kg talla
+NUM NOUN NOUN 
+60 kg talla
+NUM PROPN NOUN 
+kg talla
+PROPN NOUN 
+54 kg talla
+NUM NOUN NOUN 
+55 kg talla
+NUM NOUN NOUN 
+57 kg talla
+NUM NOUN NOUN 
+97 kg talla
+NUM NOUN NOUN 
+111 kg talla
+NUM NOUN NOUN 
+112 kg talla
+NUM NOUN NOUN 
+100 kg talla
+NUM NOUN NOUN 
+69 kg talla
+NUM NOUN NOUN 
+62 kg talla
+NUM NOUN NOUN 
+74 kg talla
+NUM PROPN NOUN 
+65 kg talla
+NUM PROPN NOUN 
+solicitan laboratorios
+VERB NOUN 
+cráneo normocefalo
+PROPN PROPN 
+refiere disuria
+VERB ADJ 
+refiere mejoría
+VERB NOUN 
+faringe normal
+NOUN ADJ 
+solicitan estudios
+VERB NOUN 
+realiza estudios
+VERB NOUN 
+5 días dra
+NUM NOUN PROPN 
+realiza detección
+VERB NOUN 
+faringe hiperemica
+NOUN ADJ 
+aproximadamente 2 centímetros
+ADV NUM NOUN 
+refiere olvido
+VERB ADJ 
+refiere acudir
+VERB VERB 
+caries dental
+PROPN ADJ 
+referir disuria
+VERB ADJ 
+edema +
+PROPN PROPN 
+herida quirúrgica
+NOUN ADJ 
+refiere consumo
+VERB NOUN 
+extremidades íntegras
+NOUN ADJ 
+24 horas posterior
+NUM NOUN ADJ 
+tratamiento médico
+NOUN ADJ 
+consulta subsecuente
+NOUN ADJ 
+sensibilidad normal
+NOUN ADJ 
+presente receta
+ADJ NOUN 
+olvido constante
+NOUN ADJ 
+subescapular así
+PROPN ADV 
+mostrar receta
+VERB NOUN 
+así mismo
+ADV PRON 
+sensibilidad conservada
+NOUN ADJ 
+refiere familiar
+VERB ADJ 
+refiere leucorrea
+VERB NOUN 
+refiere prurito
+VERB NOUN 
+incrementar consumo
+VERB NOUN 
+cefalea acufenos fosfenos
+VERB NOUN ADJ 
+presenta soluciones
+VERB NOUN 
+presenta salida
+VERB NOUN 
+30 días hidróxido
+NUM NOUN PROPN 
+últimos 10 días
+ADJ NUM NOUN 
+días 09/04/18secundaria
+NOUN NUM 
+paciente refiere
+NOUN VERB 
+refiere paciente
+VERB ADJ 
+ayunas normal
+NOUN ADJ 
+suspender dra
+VERB PROPN 
+adecuada ingesta
+ADJ NOUN 
+consulta saturada
+NOUN ADJ 
+control subsecuente
+NOUN ADJ 
+niega datos
+VERB NOUN 
+temperatura normales
+NOUN ADJ 
+pie izquierdo
+NOUN ADJ 
+insulina rápida
+NOUN ADJ 
+hemoglobina glucosilada
+PROPN PROPN 
+mantiendola limpia
+PROPN PROPN 
+mucosa oral
+ADJ NOUN 
+oral enalapril
+NOUN VERB 
+oral tartrato
+PROPN NOUN 
+presenta datos
+VERB NOUN 
+medicamentos antihipertensivos
+NOUN ADJ 
+mal control
+ADJ NOUN 
+paciente establecido
+NOUN ADJ 
+paciente renuente
+ADJ ADV 
+paciente conserva
+NOUN VERB 
+paciente femenino
+NOUN ADJ 
+tratamiento antihipertensivo
+NOUN ADJ 
+paciente masculino
+NOUN ADJ 
+complicaciones agudas
+NOUN ADJ 
+toma baar
+VERB PROPN 
+tratamiento establecido
+NOUN ADJ 
+modifica tratamiento
+VERB NOUN 
+09/01/2019 tratamiento
+NUM NOUN 
+26/11/2018 tratamiento
+SYM NOUN 
+24/09/2018 tratamiento
+NOUN NOUN 
+15/08/2018 tratamiento
+NUM NOUN 
+11/07/2018 tratamiento
+NUM NOUN 
+13/06/18 tratamiento
+NUM NOUN 
+10/04/2018 tratamiento
+NUM NOUN 
+15/11/2018 tratamiento
+SYM NOUN 
+21/06/2018 tratamiento
+NUM NOUN 
+17/05/2018 tratamiento
+NUM NOUN 
+13/04/2018 tratamiento
+SYM NOUN 
+15/03/2018 tratamiento
+SYM NOUN 
+tratamiento analgésico
+NOUN ADJ 
+27/02/2020 tratamiento
+NUM NOUN 
+19/02/2019 tratamiento
+ADP NOUN 
+01/10/2018 tratamiento
+NUM NOUN 
+13/08/2018 tratamiento
+SYM NOUN 
+18/07/2018 tratamiento
+SYM NOUN 
+11/06/2018 tratamiento
+NUM NOUN 
+15/05/2018 tratamiento
+NUM NOUN 
+20/04/2018 tratamiento
+NOUN NOUN 
+20/03/2018 tratamiento
+NUM NOUN 
+administra tratamiento
+VERB NOUN 
+valorar tratamiento
+VERB NOUN 
+prescribe tratamiento
+VERB NOUN 
+05/06/2017 tratamiento
+NUM NOUN 
+26/02/2019 tratamiento
+PROPN NOUN 
+24/12/2018 tratamiento
+NUM NOUN 
+07/09/2018 tratamiento
+SYM NOUN 
+tratamiento medico
+NOUN ADJ 
+31/07/2018 tratamiento
+NOUN NOUN 
+20/06/2018 tratamiento
+SYM NOUN 
+23/05/2018 tratamiento
+NUM NOUN 
+18/04/2018 tratamiento
+NUM NOUN 
+22/03/2018 tratamiento
+NUM NOUN 
+09/05/2019 tratamiento
+NUM NOUN 
+17/06/2019 tratamiento
+NUM NOUN 
+15/07/2019 tratamiento
+SYM NOUN 
+cáncer cérvico-uterino
+NOUN NOUN PUNCT ADJ 
+encuentran datos
+VERB NOUN 
+datos francos
+NOUN ADJ 
+niega acufenos
+VERB NOUN 
+niega cefalea
+VERB NOUN 
+niega edema
+VERB NOUN 
+control qs
+PROPN PROPN 
+manejo médico
+NOUN ADJ 
+tacto vaginal
+NOUN ADJ 
+cuanto tumoración
+NOUN NOUN 
+adoncia superior
+PROPN PROPN 
+glucómetro per
+PROPN PROPN 
+niega poliuria
+VERB ADJ 
+pie derecho
+NOUN ADJ 
+24 horas dra
+NUM NOUN PROPN 
+paciente riesgo
+ADJ NOUN 
+niega presencia
+VERB NOUN 
+refiere presencia
+VERB NOUN 
+1 mes polivitaminas
+NUM NOUN NOUN 
+diagnóstica herpes
+ADJ PROPN 
+pulsos presentes
+NOUN ADJ 
+rems presentes
+PROPN ADJ 
+edema ++
+PROPN PROPN PROPN 
+larga evolución
+ADJ NOUN 
+refiere acude
+VERB VERB 
+extremidades hipotroficas
+NOUN ADJ 
+niega pérdida
+VERB NOUN 
+niega polidipsia
+VERB PROPN 
+niega polifagia
+VERB NOUN 
+tenesmo vesical
+NOUN ADJ 
+informa ampliamente
+VERB ADV 
+pp 174 cintura
+PROPN NUM NOUN 
+pp 240 cintura
+PROPN NUM NOUN 
+pp cintura
+PROPN NOUN 
+tratamiento herida
+NOUN ADJ 
+control nuevamente
+NOUN ADV 
+acude regularmente
+VERB ADV 
+piel fría
+NOUN NOUN 
+complicaciones aguda
+NOUN ADJ 
+día 19/02/2017
+NOUN NUM 
+día 20/09/2018
+NOUN NOUN 
+día 21/09/2018
+NOUN NOUN 
+día 8-13
+NOUN NUM PUNCT NUM 
+día 21/03/2018
+NOUN NUM 
+realiza modificación
+VERB NOUN 
+unidad llevando
+NOUN VERB 
+00hrs peso
+NUM NOUN 
+24 horas disuelta
+NUM NOUN ADJ 
+24 horas trimetroprima
+NUM NOUN ADJ 
+cuello corto
+NOUN ADJ 
+tórax normolíneo
+PROPN PROPN 
+tórax simétrico
+NOUN ADJ 
+encuentra mejoría
+AUX NOUN 
+control acudir
+PROPN VERB 
+posición supina
+NOUN ADJ 
+movimientos peristálticos
+NOUN ADJ 
+enfermedad
+NOUN 
+extremidades presentes
+NOUN ADJ 
+programada
+ADJ 
+cráneo normocéfalo
+PROPN PROPN 
+aseo
+NOUN 
+informa nuevamente
+VERB ADV 
+normoreflecticas
+ADJ 
+edad
+NOUN 
+diciembre 2017 tratamiento
+NOUN NUM NOUN 
+indica tratamiento
+VERB NOUN 
+coloración
+NOUN 
+30 horas aproximadamente
+NUM NOUN ADV 
+aproximadamente 15 años
+ADV NUM NOUN 
+base guía
+NOUN NOUN 
+glucómetro paciente
+NOUN PROPN 
+cifras
+NOUN 
+influenza
+NOUN 
+cita
+NOUN 
+trigliceridos pronostico
+NOUN ADJ 
+acude consulta
+VERB NOUN 
+sintomatología
+NOUN 
+periodos
+NOUN 
+continua tratamiento
+ADJ NOUN 
+cefalea acufenos
+VERB NOUN 
+acude control
+VERB NOUN 
+padecimiento
+NOUN 
+glucosa
+PROPN 
+posteriormente
+ADV 
+únicamente
+ADV 
+noches
+NOUN 
+ulcera
+NOUN 
+diabetes página 19
+NOUN NOUN NUM 
+evolución diagnóstico
+NOUN ADJ 
+médico
+ADJ 
+frecuencia
+NOUN 
+normales
+ADJ 
+glicemia 92
+NOUN NUM 
+momento continua
+NOUN ADJ 
+abdomen globoso
+NOUN ADJ 
+tomar
+VERB 
+niega
+VERB 
+mama
+NOUN 
+refiere
+VERB 
+tiras
+NOUN 
+15 horas peso
+NUM NOUN NOUN 
+45 horas peso
+NUM NOUN NOUN 
+normal
+ADJ 
+apego
+NOUN 
+extremidad
+NOUN 
+cuello cilíndrico
+NOUN ADJ 
+nicturia
+ADJ 
+antihipertensivo
+ADJ 
+epigastrio
+ADJ 
+plano
+NOUN 
+ira´s
+PROPN 
+metas
+NOUN 
+síntomas
+NOUN 
+colesterol
+PROPN 
+conservada
+VERB 
+124 per
+NUM NOUN 
+101 per
+NUM NOUN 
+femenino
+ADJ 
+5 kg
+NUM NOUN 
+masculino
+ADJ 
+intensidad
+NOUN 
+disminución
+NOUN 
+dolor
+NOUN 
+panículo
+PROPN 
+66 talla
+NUM NOUN 
+67 talla
+NUM NOUN 
+5 talla
+NUM NOUN 
+nivel
+NOUN 
+laboratorios
+NOUN 
+cráneo
+NOUN 
+estudios
+NOUN 
+asintomático
+ADJ 
+padecimientos
+NOUN 
+riesgo
+NOUN 
+asintomática
+ADJ 
+rodilla
+NOUN 
+faringe
+NOUN 
+aproximadamente 0
+ADV NUM 
+5 cm
+NUM NOUN 
+detección
+NOUN 
+medicamentos
+NOUN 
+nuevamente
+ADV 
+caries
+PROPN 
+mejoría
+NOUN 
+disuria
+ADJ 
+herida
+NOUN 
+extremidades
+NOUN 
+trigliceridos
+NOUN 
+continúa
+VERB 
+solicitar
+VERB 
+antihipertensivos
+NOUN 
+traumatología
+NOUN 
+acudir
+VERB 
+receta
+NOUN 
+olvido
+ADJ 
+así
+ADV 
+sensibilidad
+NOUN 
+consumo
+NOUN 
+guía
+NOUN 
+30 días
+NUM NOUN 
+2 días
+NUM NOUN 
+5 días
+NUM NOUN 
+consulta
+NOUN 
+ayunas
+NOUN 
+2 semanas
+NUM NOUN 
+diciembre
+NOUN 
+familiar
+ADJ 
+insulina
+NOUN 
+soluciones
+NOUN 
+servicio
+NOUN 
+hemoglobina 11
+PROPN NUM 
+salida
+NOUN 
+leucorrea
+NOUN 
+tono
+NOUN 
+prurito
+NOUN 
+indica
+VERB 
+limpia
+ADJ 
+fecha
+NOUN 
+hipotroficas
+PROPN 
+oral
+NOUN 
+oral 1
+PROPN NUM 
+paciente
+ADJ 
+tratamiento
+NOUN 
+2017 tratamiento
+NOUN NOUN 
+2016 tratamiento
+NOUN NOUN 
+2018 tratamiento
+NOUN NOUN 
+cáncer
+NOUN 
+datos
+NOUN 
+femenina
+ADJ 
+recuerda
+VERB 
+tabaco
+NOUN 
+control
+NOUN 
+proceso
+NOUN 
+adoncia
+PROPN 
+ingesta
+NOUN 
+descontrol
+NOUN 
+glucómetro
+PROPN 
+vaginal
+ADJ 
+resultado
+NOUN 
+tumoración
+NOUN 
+suspender
+VERB 
+pie
+NOUN 
+material
+NOUN 
+ayuno
+NOUN 
+encuentra
+VERB 
+norma
+PROPN 
+acufenos
+NOUN 
+18 temperatura 35
+NUM NOUN NUM 
+16 temperatura 36
+NUM NOUN NUM 
+18 temperatura 36
+NUM NOUN NUM 
+24 temperatura 36
+NUM NOUN NUM 
+26 temperatura 36
+NUM NOUN NUM 
+temperatura
+NOUN 
+20 temperatura 36
+NUM NOUN NUM 
+23 temperatura 36
+NUM NOUN NUM 
+22 temperatura 36
+NUM NOUN NUM 
+21 temperatura 36
+NUM NOUN NUM 
+1 mes
+NUM NOUN 
+cefalea
+NOUN 
+laboratorio
+NOUN 
+mes
+NOUN 
+herpes
+NOUN 
+presentes
+ADJ 
+edema
+NOUN 
+evolución
+NOUN 
+diabetes
+NOUN 
+toma
+VERB 
+lipoma
+PROPN 
+actualmente
+ADV 
+base
+NOUN 
+poliuria
+ADJ 
+alerta
+NOUN 
+continua
+ADJ 
+tenesmo
+NOUN 
+informa
+VERB 
+128 cintura
+NUM NOUN 
+9 cintura
+NUM NOUN 
+cintura
+NOUN 
+medicamento
+NOUN 
+pies
+NOUN 
+presencia
+NOUN 
+acude
+VERB 
+agua
+NOUN 
+complicaciones
+NOUN 
+piel
+NOUN 
+dislipidemia
+NOUN 
+página 19
+NOUN NUM 
+página 37
+NOUN NUM 
+día
+NOUN 
+globoso
+ADJ 
+fosfenos
+NOUN 
+pérdida
+NOUN 
+abdomen
+NOUN 
+diagnóstico
+NOUN 
+modificación
+NOUN 
+manejo
+NOUN 
+normocéfalo
+PROPN 
+unidad
+NOUN 
+polidipsia
+PROPN 
+polifagia
+PROPN 
+22 peso
+NUM NOUN 
+30 peso
+NUM NOUN 
+05 peso
+NUM NOUN 
+25 peso
+NUM NOUN 
+peso
+NOUN 
+00 peso
+NUM NOUN 
+10 peso
+NUM NOUN 
+50 peso
+NUM NOUN 
+45 peso
+NUM NOUN 
+15 peso
+NUM NOUN 
+20 peso
+NUM NOUN 
+40 peso
+NUM NOUN 
+35 peso
+NUM NOUN 
+21 peso
+NUM NOUN 
+24 peso
+NUM NOUN 
+42 peso
+NUM NOUN 
+07 peso
+NUM NOUN 
+24 horas
+NUM NOUN 
+12 horas
+NUM NOUN 
+6 horas
+NUM NOUN 
+8 horas
+NUM NOUN 
+cuello
+NOUN 
+tórax
+NOUN 
+análisis
+NOUN 
+momento
+NOUN 
+valoración
+NOUN 
+riesgos
+NOUN 
+posición
+NOUN 
+cilíndrico
+ADJ 
+pronostico
+ADJ 
+76 años
+NUM NOUN 
+75 años
+NUM NOUN 
+57 años
+NUM NOUN 
+64 años
+NUM NOUN 
+65 años
+NUM NOUN 
+72 años
+NUM NOUN 
+77 años
+NUM NOUN 
+46 años
+NUM NOUN 
+59 años
+NUM NOUN 
+58 años
+NUM NOUN 
+74 años
+NUM NOUN 
+51 años
+NUM NOUN 
+54 años
+NUM NOUN 
+60 años
+NUM NOUN 
+2 años
+NUM NOUN 
+61 años
+NUM NOUN 
+42 años
+NUM NOUN 
+50 años
+NUM NOUN 
+10 años
+NUM NOUN 
+5 años
+NUM NOUN 
+48 años
+NUM NOUN 
+67 años
+NUM NOUN 
+53 años
+NUM NOUN 
+movimientos
+NOUN 
+consiente
+VERB 
+orientada
+ADJ 
+cronológica
+NOUN 
+cabeza
+NOUN 
+hidratada
+NOUN 
+adenopatías
+NOUN 
+amplexion
+PROPN 
+ventilados
+ADJ 
+blando
+NOUN 
+depresible
+ADJ 
+tumoraciones
+NOUN 
+megalias
+NOUN 
+signos
+NOUN 
+alteraciones
+NOUN 
+vida
+NOUN 
+orienta
+VERB 
+guías
+NOUN 
+acciones
+NOUN 
+servicios
+NOUN 
+promoción
+NOUN 
+prevención
+NOUN 
+atención
+NOUN 
+reservado
+ADJ 
+parkinson
+PROPN 
+carbohidratos
+NOUN 
+grasas
+NOUN 
+accidentes
+NOUN 
+alcohol
+NOUN 
+reproductiva
+ADJ 
+revisión
+NOUN 
+mismos
+PRON 
+desayuno
+NOUN 
+traída
+ADJ 
+hija
+NOUN 
+tegumentos
+NOUN 
+comentados
+ADJ 
+consultas
+NOUN 
+mayo
+NOUN 
+vasoespasmo
+NOUN 
+gasto
+NOUN 
+nariz
+NOUN 
+normolineo
+PROPN 
+mejora
+NOUN 
+importancia
+NOUN 
+indicado
+ADJ 
+mejorar
+VERB 
+nom-015-ssa2-1994
+PROPN PUNCT NOUN 
+enero
+NOUN 
+7 hto
+NUM PROPN 
+auditiva
+NOUN 
+infección
+NOUN 
+prácticas
+NOUN 
+hipertrigliceridemia
+NOUN 
+hto
+PROPN 
+semana
+NOUN 
+valorada
+ADJ 
+falta
+NOUN 
+medio
+ADV 
+técnica
+NOUN 
+marzo
+NOUN 
+exacerba
+NOUN 
+irritantes
+NOUN 
+doloroso
+ADJ 
+irradiarse
+PROPN 
+aluminio
+NOUN 
+tomo
+VERB 
+hipertrofias
+NOUN 
+exudados
+NOUN 
+llevaba
+VERB 
+alta
+ADJ 
+domicilio
+NOUN 
+palidez
+NOUN 
+hundimientos
+NOUN 
+exostosis
+PROPN 
+respuesta
+NOUN 
+narinas
+NOUN 
+tapón
+PROPN 
+algodón
+NOUN 
+precordio
+PROPN 
+distendido
+ADJ 
+tercer
+ADJ 
+cadáver
+NOUN 
+opciones
+NOUN 
+hablara
+VERB 
+hbac1
+PROPN 
+ego
+INTJ 
+hiperglicemia
+NOUN 
+febrero
+NOUN 
+cuenta
+VERB 
+antecedente
+ADJ 
+continuidad
+NOUN 
+cicatrización
+NOUN 
+3 seg
+NUM PROPN 
+dia
+NOUN 
+hoy
+ADV 
+aplicación
+NOUN 
+insiste
+VERB 
+crónicas
+NOUN 
+hba1c
+PROPN 
+condición
+NOUN 
+contó
+VERB 
+nefrología
+NOUN 
+pachuca
+PROPN 
+vigilancia
+NOUN 
+mac
+PROPN 
+contar
+VERB 
+glucometro
+PROPN 
+hospitalizada
+ADJ 
+julio
+NOUN 
+modificaciones
+NOUN 
+higiene
+NOUN 
+pilar
+PROPN 
+conto
+INTJ 
+losartan
+PROPN 
+furosemide
+PROPN 
+urgencias
+NOUN 
+hr-30
+PROPN 
+pujo
+NOUN 
+polaquiuria
+ADJ 
+heridas
+NOUN 
+pirosis
+NOUN 
+5 ml
+NUM NOUN 
+orofaringe
+NOUN 
+valorad
+INTJ 
+acuerdo
+NOUN 
+prueba
+NOUN 
+monofilamento
+PROPN 
+cédula
+NOUN 
+vuelve
+VERB 
+abril
+NOUN 
+04/10/17
+NUM 
+1 vaso
+NUM NOUN 
+matrícula
+NOUN 
+citas
+NOUN 
+hiperqueratosis
+NOUN 
+color
+NOUN 
+aún
+ADV 
+noviembre
+NOUN 
+persona
+NOUN 
+espacio
+NOUN 
+cooperadora
+NOUN 
+cardiopulmonar
+VERB 
+expensas
+NOUN 
+normoperistalsis
+PROPN 
+fétida
+PROPN 
+trata
+VERB 
+asiste
+VERB 
+farmacológico
+ADJ 
+5 meses
+NUM NOUN 
+presce3ncia
+PROPN 
+daño
+NOUN 
+descartar
+VERB 
+ajuste
+NOUN 
+mantenerse
+PROPN 
+pilas
+NOUN 
+210 icc 1
+NUM PROPN NUM 
+8horas
+NOUN 
+1 semana
+NUM NOUN 
+lumbalgia
+NOUN 
+2cm
+NUM NOUN 
+embargo
+NOUN 
+deambulación
+NOUN 
+flexión
+NOUN 
+extensión
+NOUN 
+misma
+DET 
+orientado
+ADJ 
+rubicundez
+PROPN 
+segundos
+NOUN 
+diámetro
+NOUN 
+bordes
+NOUN 
+definidos
+ADJ 
+cambios
+NOUN 
+crepita
+ADJ 
+irradia
+VERB 
+observa
+VERB 
+región
+NOUN 
+residuos
+NOUN 
+tierra
+NOUN 
+monofilamenteo
+PROPN 
+estilo
+NOUN 
+saludable
+ADJ 
+horarios
+NOUN 
+extiende
+VERB 
+relación
+NOUN 
+sinovitis
+NOUN 
+pinzamiento
+NOUN 
+menisco
+PROPN 
+bioflavonoides
+PROPN 
+tendencia
+NOUN 
+normocéfala
+PROPN 
+agosto
+NOUN 
+perdida
+ADJ 
+normocefala
+PROPN 
+amjplexión
+NOUN 
+hoja
+PROPN 
+higo
+NOUN 
+sustitución
+NOUN 
+ortejos
+PROPN 
+3 dias
+NUM PROPN 
+predominio
+NOUN 
+horario
+NOUN 
+espalda
+NOUN 
+sensación
+NOUN 
+ardor
+NOUN 
+asistió
+VERB 
+facultativo
+ADJ 
+pesar
+NOUN 
+trae
+VERB 
+comienza
+VERB 
+biguanida
+PROPN 
+razón
+NOUN 
+3 veces
+NUM NOUN 
+noche
+NOUN 
+atorarse
+ADV 
+lazo
+NOUN 
+vaca
+NOUN 
+sábila
+PROPN 
+enrojecimientos
+NOUN 
+acudido
+ADJ 
+leer
+VERB 
+instrucciones
+NOUN 
+nuera
+NOUN 
+ocasión
+NOUN 
+acompaño
+VERB 
+dificultad
+NOUN 
+movilización
+NOUN 
+endostosis
+PROPN 
+muletas
+NOUN 
+cuales
+PRON 
+caso
+NOUN 
+intenso
+ADJ 
+diarrea
+NOUN 
+estreñimiento
+NOUN 
+210 mg/dl
+NUM NOUN PUNCT NOUN 
+refieren
+VERB 
+fechas
+NOUN 
+reprogramadas
+NOUN 
+nutrición
+NOUN 
+2017
+NOUN 
+233
+NUM 
+105
+NUM 
+111
+NUM 
+141
+NUM 

@@ -1,2 +1,5 @@
 myenv
 models
+.rasa
+.vscode
+_pycache_

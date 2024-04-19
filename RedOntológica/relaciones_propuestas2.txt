@@ -1,0 +1,926 @@
+http://www.modelo.org/datos#Nota702	tieneGlucosa	257
+http://www.modelo.org/datos#Nota702	tieneColesterol total	183
+http://www.modelo.org/datos#Nota210	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota210	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota210	presenta	Enfermedad renal cronica etapa 3
+http://www.modelo.org/datos#Nota210	tieneGlucosa	46
+http://www.modelo.org/datos#Nota585	presenta	Diabetes mellitus tipo 1 sin mencion de complicacion
+http://www.modelo.org/datos#Nota585	tieneGlucosa	167
+http://www.modelo.org/datos#Nota585	tieneColesterol total	140
+http://www.modelo.org/datos#Nota444	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota165	presenta	Artritis reumatoide seropositiva
+http://www.modelo.org/datos#Nota165	presenta	derecho_y
+http://www.modelo.org/datos#Nota103	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota103	tieneGlucosa	249
+http://www.modelo.org/datos#Nota388	descamacion	secundaria a
+http://www.modelo.org/datos#Nota388	descamacion	edema y
+http://www.modelo.org/datos#Nota119	trastornaDe	ansiedad generalizada trastornos
+http://www.modelo.org/datos#Nota119	trastornaDe	renales tubulointersticiales en enfermedades clasificadas en otra parte
+http://www.modelo.org/datos#Nota629	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota629	tieneGlucosa	103
+http://www.modelo.org/datos#Nota629	tieneInsulina	15.4
+http://www.modelo.org/datos#Nota629	tieneColesterol total	208
+http://www.modelo.org/datos#Nota354	afectacion	a organo mayor
+http://www.modelo.org/datos#Nota354	afectacion	 pulmon/riñon)
+http://www.modelo.org/datos#Nota95	presenta	Cistitis
+http://www.modelo.org/datos#Nota95	refiere	incontinencia urinaria
+http://www.modelo.org/datos#Nota74	presenta	Hiperplasia de la prostata
+http://www.modelo.org/datos#Nota383	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota383	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota383	presenta	Trombocitopenia no especificada
+http://www.modelo.org/datos#Nota383	presenta	Insuficiencia renal cronica
+http://www.modelo.org/datos#Nota383	tieneGlucosa	98
+http://www.modelo.org/datos#Nota383	tieneColesterol total	271
+http://www.modelo.org/datos#Nota41	presenta	izquierdo_con
+http://www.modelo.org/datos#Nota41	presenta	Simple
+http://www.modelo.org/datos#Nota511	tieneGlucosa	562
+http://www.modelo.org/datos#Nota555	presenta	Diabetes mellitus tipo 1 con complicaciones circulatorias perifericas
+http://www.modelo.org/datos#Nota555	presenta	Hipertension secundaria
+http://www.modelo.org/datos#Nota555	presenta	 mononueropatia
+http://www.modelo.org/datos#Nota555	presenta	Diabetica
+http://www.modelo.org/datos#Nota555	palpacion	a nivel de region gemelar derecha glucosa
+http://www.modelo.org/datos#Nota555	presenta	Dolor en pie
+http://www.modelo.org/datos#Nota314	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota314	presenta	depresible_no
+http://www.modelo.org/datos#Nota314	tieneColesterol total	175
+http://www.modelo.org/datos#Nota704	tieneGlucosa	103
+http://www.modelo.org/datos#Nota203	presenta	derecha_,
+http://www.modelo.org/datos#Nota316	tieneGlucosa	214
+http://www.modelo.org/datos#Nota316	tieneColesterol total	258
+http://www.modelo.org/datos#Nota316	tieneInsulina	17.9
+http://www.modelo.org/datos#Nota45	tieneGlucosa	131
+http://www.modelo.org/datos#Nota625	acude	a
+http://www.modelo.org/datos#Nota562	tieneColesterol total	130
+http://www.modelo.org/datos#Nota562	tieneGlucosa	106
+http://www.modelo.org/datos#Nota562	refiereCon	 debilidad
+http://www.modelo.org/datos#Nota237	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota610	tieneGlucosa	107
+http://www.modelo.org/datos#Nota523	presenta	Bloqueo derecho de rama derecha
+http://www.modelo.org/datos#Nota523	presenta	 hh
+http://www.modelo.org/datos#Nota523	presenta	Portador de
+http://www.modelo.org/datos#Nota523	acude	a
+http://www.modelo.org/datos#Nota491	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota491	tieneGlucosa	169
+http://www.modelo.org/datos#Nota491	tieneColesterol total	178
+http://www.modelo.org/datos#Nota217	presenta	 onicocriptosis estadio
+http://www.modelo.org/datos#Nota565	presenta	Diabetes mellitus tipo 1 con complicaciones circulatorias perifericas
+http://www.modelo.org/datos#Nota565	presenta	Hipercolesterolemia pura
+http://www.modelo.org/datos#Nota565	tieneColesterol total	146
+http://www.modelo.org/datos#Nota565	tieneGlucosa	133
+http://www.modelo.org/datos#Nota367	tieneGlucosa	195
+http://www.modelo.org/datos#Nota367	tieneColesterol total	223
+http://www.modelo.org/datos#Nota367	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota367	tieneGlucosa	202
+http://www.modelo.org/datos#Nota179	tieneHba1c	7.4%
+http://www.modelo.org/datos#Nota91	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota91	tieneGlucosa	130
+http://www.modelo.org/datos#Nota91	tieneColesterol	240
+http://www.modelo.org/datos#Nota91	refiere	asintomatica
+http://www.modelo.org/datos#Nota666	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota666	presenta	Sindrome del tunel del
+http://www.modelo.org/datos#Nota174	presenta	Gastritis
+http://www.modelo.org/datos#Nota174	tieneGlucosa	87
+http://www.modelo.org/datos#Nota174	tieneColesterol total	176
+http://www.modelo.org/datos#Nota174	presenta	Dolor en
+http://www.modelo.org/datos#Nota46	presenta	Diabetes mellitus tipo 2 en
+http://www.modelo.org/datos#Nota46	tieneColesterol	190
+http://www.modelo.org/datos#Nota46	tieneGlucosa	120
+http://www.modelo.org/datos#Nota689	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota689	tieneGlucosa	148
+http://www.modelo.org/datos#Nota689	tieneColesterol total	192
+http://www.modelo.org/datos#Nota132	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota132	presenta	Hipergliceridemia pura
+http://www.modelo.org/datos#Nota132	tieneGlucosa	231
+http://www.modelo.org/datos#Nota132	tieneInsulina	36.9
+http://www.modelo.org/datos#Nota718	afirma	 tristeza
+http://www.modelo.org/datos#Nota437	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota437	presenta	Hiperlipidemia mixta
+http://www.modelo.org/datos#Nota437	tieneGlucosa	77
+http://www.modelo.org/datos#Nota437	tieneColesterol total	170
+http://www.modelo.org/datos#Nota734	tieneGlucosa	92
+http://www.modelo.org/datos#Nota734	tieneColesterol	129
+http://www.modelo.org/datos#Nota734	presenta	Insuficiencia venosa cronica
+http://www.modelo.org/datos#Nota460	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota460	tieneGlucosa	87
+http://www.modelo.org/datos#Nota460	tieneInsulina	27.2
+http://www.modelo.org/datos#Nota460	tieneResistencia de la insulina	5.8
+http://www.modelo.org/datos#Nota631	presenta	 onicocriptosis estadio
+http://www.modelo.org/datos#Nota346	presenta	Displasia de la prostata
+http://www.modelo.org/datos#Nota346	tomaDe	 doc
+http://www.modelo.org/datos#Nota346	queAcudePor	pareja
+http://www.modelo.org/datos#Nota205	presenta	Dermatitis atopica no especificada
+http://www.modelo.org/datos#Nota205	aproximadamente7x7	cm
+http://www.modelo.org/datos#Nota145	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota145	presenta	Hipertension esencial
+http://www.modelo.org/datos#Nota145	refiereCon	 ardor
+http://www.modelo.org/datos#Nota145	refiereCon	faringeo
+http://www.modelo.org/datos#Nota216	tieneGlucosa	148
+http://www.modelo.org/datos#Nota216	tieneColesterol	179
+http://www.modelo.org/datos#Nota163	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota163	tieneGlucosa	107
+http://www.modelo.org/datos#Nota163	tieneInsulina	16.3
+http://www.modelo.org/datos#Nota151	presenta	Tumor benigno de la prostata
+http://www.modelo.org/datos#Nota151	queRefiere	 ademas
+http://www.modelo.org/datos#Nota151	queRefiere	trastornos sexuales no
+http://www.modelo.org/datos#Nota703	tieneGlucosa	119
+http://www.modelo.org/datos#Nota703	tieneColesterol total	170
+http://www.modelo.org/datos#Nota7	presenta	izquierdo_3x3
+http://www.modelo.org/datos#Nota7	3x3	resto
+http://www.modelo.org/datos#Nota101	presenta	Diabetes mellitus tipo 1 otras
+http://www.modelo.org/datos#Nota101	presenta	Micosis
+http://www.modelo.org/datos#Nota467	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota467	tieneGlucosa	83
+http://www.modelo.org/datos#Nota467	tieneInsulina	14.9
+http://www.modelo.org/datos#Nota176	presenta	derecho_entre
+http://www.modelo.org/datos#Nota31	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota31	tieneInsulina	153.9
+http://www.modelo.org/datos#Nota31	tieneColesterol	152
+http://www.modelo.org/datos#Nota31	tieneGlucosa	78
+http://www.modelo.org/datos#Nota31	tieneResistencia de la insulina	29.3
+http://www.modelo.org/datos#Nota31	asocia	a
+http://www.modelo.org/datos#Nota615	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota615	presenta	Hipercolesterolemia pura
+http://www.modelo.org/datos#Nota615	tieneGlucosa	95
+http://www.modelo.org/datos#Nota615	tieneColesterol total	107
+http://www.modelo.org/datos#Nota215	tieneGlucosa	108
+http://www.modelo.org/datos#Nota215	tieneColesterol	169
+http://www.modelo.org/datos#Nota396	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota396	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota396	presenta	Hiperlipidemia mixta
+http://www.modelo.org/datos#Nota396	tieneGlucosa	107
+http://www.modelo.org/datos#Nota469	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota469	tieneGlucosa	83
+http://www.modelo.org/datos#Nota469	tieneInsulina	14.9
+http://www.modelo.org/datos#Nota485	tieneGlucosa	67
+http://www.modelo.org/datos#Nota485	tieneColesterol total	144
+http://www.modelo.org/datos#Nota86	tieneGlucosa	96
+http://www.modelo.org/datos#Nota86	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota522	presenta	Bloqueo derecho de rama derecha
+http://www.modelo.org/datos#Nota522	presenta	 hh
+http://www.modelo.org/datos#Nota522	presenta	Portador de
+http://www.modelo.org/datos#Nota522	acude	a
+http://www.modelo.org/datos#Nota644	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota644	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota644	presenta	Rinitis alergica y vasomotora
+http://www.modelo.org/datos#Nota644	presenta	 pb
+http://www.modelo.org/datos#Nota644	presenta	Insuficiencia renal
+http://www.modelo.org/datos#Nota332	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota332	tieneGlucosa	54
+http://www.modelo.org/datos#Nota494	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota494	tieneGlucosa	118
+http://www.modelo.org/datos#Nota494	presenta	Sexual
+http://www.modelo.org/datos#Nota595	infarta	antiguo del miocardio
+http://www.modelo.org/datos#Nota595	infarta	historia personal de incumplimiento del regimen o tratamiento medico
+http://www.modelo.org/datos#Nota595	infarta	problemas relacionados con la dieta y habitos alimentarios inapropiados
+http://www.modelo.org/datos#Nota595	infarta	hipotiroidismo subclinico por deficiencia de yodo
+http://www.modelo.org/datos#Nota595	tieneColesterol total	179
+http://www.modelo.org/datos#Nota595	tieneGlucosa	474
+http://www.modelo.org/datos#Nota26	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota26	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota26	presenta	Hiperlipidemia mixta
+http://www.modelo.org/datos#Nota26	tieneGlucosa	166
+http://www.modelo.org/datos#Nota707	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota707	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota707	presenta	Faringitis aguda
+http://www.modelo.org/datos#Nota707	refiereCon	 rinorrea verdosa
+http://www.modelo.org/datos#Nota323	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota323	presenta	Hipercolesterolemia pura
+http://www.modelo.org/datos#Nota323	presenta	Sindrome del colon irritable
+http://www.modelo.org/datos#Nota323	tieneGlucosa	142
+http://www.modelo.org/datos#Nota323	tieneColesterol total	144
+http://www.modelo.org/datos#Nota323	refiereCon	prurito
+http://www.modelo.org/datos#Nota273	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota62	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota62	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota62	presenta	Episodio depresivo
+http://www.modelo.org/datos#Nota62	presenta	Gonartrosis artrosis de la
+http://www.modelo.org/datos#Nota62	tieneGlucosa	96
+http://www.modelo.org/datos#Nota62	tieneColesterol total	123
+http://www.modelo.org/datos#Nota139	acude	a consulta por control de hipertension , insuficiencia
+http://www.modelo.org/datos#Nota594	tieneGlucosa	146
+http://www.modelo.org/datos#Nota594	tieneColesterol total	126
+http://www.modelo.org/datos#Nota671	presenta	Gastroenteritis y colitis de origen infeccioso y no especificado
+http://www.modelo.org/datos#Nota671	evolucionDe	 evacuaciones diarreicas
+http://www.modelo.org/datos#Nota439	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota439	presenta	Hiperlipidemia mixta
+http://www.modelo.org/datos#Nota439	presenta	Obesidad
+http://www.modelo.org/datos#Nota439	tieneGlucosa	107
+http://www.modelo.org/datos#Nota439	tieneColesterol total	209
+http://www.modelo.org/datos#Nota240	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota240	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota240	presenta	mialgia
+http://www.modelo.org/datos#Nota725	presenta	Hipotiroidismo subclinico por deficiencia de yodo
+http://www.modelo.org/datos#Nota725	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota725	presenta	Anormalidades en la prueba de tolerancia a la glucosa
+http://www.modelo.org/datos#Nota725	presenta	Hiperlipidemia mixta
+http://www.modelo.org/datos#Nota665	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota665	tieneGlucosa	262
+http://www.modelo.org/datos#Nota665	tieneColesterol total	295
+http://www.modelo.org/datos#Nota448	presenta	Enfermedad renal cronica
+http://www.modelo.org/datos#Nota448	presenta	 nefropatia
+http://www.modelo.org/datos#Nota448	presenta	Diabetica
+http://www.modelo.org/datos#Nota448	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota448	tieneGlucosa	130
+http://www.modelo.org/datos#Nota146	noEspecifica	sindrome del colon irritable
+http://www.modelo.org/datos#Nota146	tieneGlucosa	97
+http://www.modelo.org/datos#Nota146	tieneColesterol	122
+http://www.modelo.org/datos#Nota177	presenta	Prostatitis cronica
+http://www.modelo.org/datos#Nota177	presenta	Prostatitis
+http://www.modelo.org/datos#Nota177	presenta	disuria
+http://www.modelo.org/datos#Nota177	presenta	 poliaquiuria
+http://www.modelo.org/datos#Nota618	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota618	presenta	Hipercolesterolemia pura
+http://www.modelo.org/datos#Nota618	tieneGlucosa	65
+http://www.modelo.org/datos#Nota618	tieneColesterol total	102
+http://www.modelo.org/datos#Nota221	presenta	 onicocriptosis estadio
+http://www.modelo.org/datos#Nota458	tieneGlucosa	107
+http://www.modelo.org/datos#Nota458	tieneInsulina	23.7
+http://www.modelo.org/datos#Nota458	tieneColesterol	140
+http://www.modelo.org/datos#Nota490	presenta	Sindrome del colon irritable
+http://www.modelo.org/datos#Nota553	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota553	tieneGlucosa	116
+http://www.modelo.org/datos#Nota553	tieneColesterol total	161
+http://www.modelo.org/datos#Nota105	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota105	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota105	tieneGlucosa	69
+http://www.modelo.org/datos#Nota105	tieneInsulina	16.4
+http://www.modelo.org/datos#Nota351	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota351	tieneGlucosa	141
+http://www.modelo.org/datos#Nota135	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota135	tieneGlucosa	231
+http://www.modelo.org/datos#Nota135	tieneInsulina	36.9
+http://www.modelo.org/datos#Nota434	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota434	tieneGlucosa	371
+http://www.modelo.org/datos#Nota29	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota29	tieneGlucosa	197
+http://www.modelo.org/datos#Nota29	tieneInsulina	50.5
+http://www.modelo.org/datos#Nota29	tieneResistencia de la insulina	24.3
+http://www.modelo.org/datos#Nota29	tieneColesterol	140
+http://www.modelo.org/datos#Nota29	asocia	a
+http://www.modelo.org/datos#Nota75	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota75	presenta	Asintomatica
+http://www.modelo.org/datos#Nota329	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota329	refiereCon	edema y
+http://www.modelo.org/datos#Nota329	refiereCon	dolor en
+http://www.modelo.org/datos#Nota372	presenta	Hiperlipidemia mixta
+http://www.modelo.org/datos#Nota372	refiere	asintomatica
+http://www.modelo.org/datos#Nota111	presenta	Examen medico general
+http://www.modelo.org/datos#Nota111	tieneGlucosa	389
+http://www.modelo.org/datos#Nota250	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota250	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota250	tieneGlucosa	117
+http://www.modelo.org/datos#Nota250	tieneColesterol total	179
+http://www.modelo.org/datos#Nota250	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota738	conservaCon	dolor
+http://www.modelo.org/datos#Nota738	conservaCon	a los
+http://www.modelo.org/datos#Nota393	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota393	presenta	Hipotension
+http://www.modelo.org/datos#Nota77	tieneHba1c	6.4
+http://www.modelo.org/datos#Nota77	tieneGlucosa	48
+http://www.modelo.org/datos#Nota77	moderaPara	 las actividades basicas de la vida diaria katz c instrumentales lb
+http://www.modelo.org/datos#Nota453	derrama	 lado
+http://www.modelo.org/datos#Nota453	derrama	nasal
+http://www.modelo.org/datos#Nota453	derrama	reflejos
+http://www.modelo.org/datos#Nota487	tieneGlucosa	201
+http://www.modelo.org/datos#Nota487	tieneColesterol total	94
+http://www.modelo.org/datos#Nota487	presenta	Asintomatica
+http://www.modelo.org/datos#Nota496	presenta	Hiperplasia de la prostata
+http://www.modelo.org/datos#Nota496	tieneGlucosa	109
+http://www.modelo.org/datos#Nota496	tieneColesterol	152
+http://www.modelo.org/datos#Nota425	presenta	Etiologia indeterminada
+http://www.modelo.org/datos#Nota425	presenta	globoso_a
+http://www.modelo.org/datos#Nota42	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota42	presenta	Hipercarotinemia
+http://www.modelo.org/datos#Nota42	presenta	Diabetes mellitus tipo 1 con complicaciones neurologicas
+http://www.modelo.org/datos#Nota42	presenta	Hipercolesterolemia pura
+http://www.modelo.org/datos#Nota42	tieneGlucosa	206
+http://www.modelo.org/datos#Nota42	presenta	Asintomatica
+http://www.modelo.org/datos#Nota447	tieneGlucosa	200
+http://www.modelo.org/datos#Nota447	tieneColesterol	239
+http://www.modelo.org/datos#Nota243	suma	a
+http://www.modelo.org/datos#Nota175	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota175	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota175	tieneGlucosa	108
+http://www.modelo.org/datos#Nota175	presenta	Ulcera
+http://www.modelo.org/datos#Nota697	tenesmo	vesical
+http://www.modelo.org/datos#Nota697	tenermo	vesical de
+http://www.modelo.org/datos#Nota697	tenermo	 un dia
+http://www.modelo.org/datos#Nota173	presenta	Lumbago no especificado
+http://www.modelo.org/datos#Nota23	cualAcude	a control subsecuente de enfermedad cronico degenerativa , en tratamiento en esta
+http://www.modelo.org/datos#Nota23	cualAcude	 unidad
+http://www.modelo.org/datos#Nota715	presenta	Hipertension arterial
+http://www.modelo.org/datos#Nota429	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota429	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota429	presenta	Hiperlipidemia mixta
+http://www.modelo.org/datos#Nota429	presenta	Problemas relacionados con la dieta y habitos alimentarios inapropiados
+http://www.modelo.org/datos#Nota429	tieneGlucosa	86
+http://www.modelo.org/datos#Nota429	tieneColesterol	164
+http://www.modelo.org/datos#Nota355	presenta	Granulomatosis de wegener
+http://www.modelo.org/datos#Nota356	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota356	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota356	presenta	Hipotiroidismo subclinico por deficiencia de yodo
+http://www.modelo.org/datos#Nota356	presenta	Lupus eritematoso sistemico
+http://www.modelo.org/datos#Nota356	tieneGlucosa	76
+http://www.modelo.org/datos#Nota356	tieneColesterol	125
+http://www.modelo.org/datos#Nota710	presenta	 onicocriptosis estadio
+http://www.modelo.org/datos#Nota710	acude	a consulta para
+http://www.modelo.org/datos#Nota691	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota691	tieneGlucosa	169
+http://www.modelo.org/datos#Nota691	tieneColesterol total	169
+http://www.modelo.org/datos#Nota691	presenta	Fractura
+http://www.modelo.org/datos#Nota560	tieneGlucosa	107
+http://www.modelo.org/datos#Nota560	tieneColesterol	176
+http://www.modelo.org/datos#Nota560	presenta	Hipotiroidismos
+http://www.modelo.org/datos#Nota560	refiere	consumo
+http://www.modelo.org/datos#Nota384	presenta	Artritis reumatoide seropositiva
+http://www.modelo.org/datos#Nota384	tieneGlucosa	90
+http://www.modelo.org/datos#Nota403	presenta	Bronquitis cronica simple
+http://www.modelo.org/datos#Nota488	presenta	Gastritis
+http://www.modelo.org/datos#Nota488	tieneColesterol total	220
+http://www.modelo.org/datos#Nota488	tieneGlucosa	110
+http://www.modelo.org/datos#Nota488	presenta	Dolor en
+http://www.modelo.org/datos#Nota251	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota324	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota324	presenta	Hipercolesterolemia pura
+http://www.modelo.org/datos#Nota324	presenta	Sindrome del colon irritable
+http://www.modelo.org/datos#Nota324	tieneColesterol total	161
+http://www.modelo.org/datos#Nota324	tieneGlucosa	260
+http://www.modelo.org/datos#Nota385	presenta	Sindrome del colon irritable
+http://www.modelo.org/datos#Nota385	presenta	doloroso_a la
+http://www.modelo.org/datos#Nota73	presenta	Anemias por deficiencia de hierro
+http://www.modelo.org/datos#Nota40	presenta	Examen ginecologico general de
+http://www.modelo.org/datos#Nota40	presenta	Incontinencia
+http://www.modelo.org/datos#Nota229	acude	a
+http://www.modelo.org/datos#Nota229	acude	 revision de lesion
+http://www.modelo.org/datos#Nota504	presenta	Diabetes
+http://www.modelo.org/datos#Nota504	tieneGlucosa	80
+http://www.modelo.org/datos#Nota516	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota516	presenta	Obesidad
+http://www.modelo.org/datos#Nota516	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota516	presenta	Hiperlipidemia mixta
+http://www.modelo.org/datos#Nota516	presenta	Problemas relacionados con la dieta y habitos alimentarios inapropiados
+http://www.modelo.org/datos#Nota516	tieneGlucosa	93
+http://www.modelo.org/datos#Nota272	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota272	tieneGlucosa	99
+http://www.modelo.org/datos#Nota272	tieneColesterol total	119
+http://www.modelo.org/datos#Nota93	presenta	Primaria
+http://www.modelo.org/datos#Nota93	tieneGlucosa	129
+http://www.modelo.org/datos#Nota93	tieneColesterol	237
+http://www.modelo.org/datos#Nota739	presenta	Gonartrosis artrosis de la
+http://www.modelo.org/datos#Nota78	tieneColesterol total	130
+http://www.modelo.org/datos#Nota78	tieneGlucosa	156
+http://www.modelo.org/datos#Nota456	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota456	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota288	presenta	Hipotiroidismos
+http://www.modelo.org/datos#Nota452	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota452	presenta	Hipertension esencial
+http://www.modelo.org/datos#Nota389	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota408	presenta	Intestinal
+http://www.modelo.org/datos#Nota155	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota155	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota155	presenta	Obesidad
+http://www.modelo.org/datos#Nota155	presenta	Problemas relacionados con la dieta y habitos alimentarios inapropiados
+http://www.modelo.org/datos#Nota155	pesaEn	 febrero
+http://www.modelo.org/datos#Nota248	tieneColesterol total	194
+http://www.modelo.org/datos#Nota248	tieneGlucosa	149
+http://www.modelo.org/datos#Nota222	tieneGlucosa	86
+http://www.modelo.org/datos#Nota222	bienOrientaEn	 tiempo
+http://www.modelo.org/datos#Nota194	presenta	Lumbago con ciatica
+http://www.modelo.org/datos#Nota497	presenta	Sindrome del colon irritable
+http://www.modelo.org/datos#Nota497	presenta	depresible_no
+http://www.modelo.org/datos#Nota497	presenta	irritable_,
+http://www.modelo.org/datos#Nota406	presenta	Faringitis aguda
+http://www.modelo.org/datos#Nota398	presenta	Hernia incisional sin obstruccion o gangrena
+http://www.modelo.org/datos#Nota398	exploracion	fisica
+http://www.modelo.org/datos#Nota147	especifica	faringitis aguda
+http://www.modelo.org/datos#Nota575	controla	diabetes mellitus
+http://www.modelo.org/datos#Nota575	controla	hipertension arterial
+http://www.modelo.org/datos#Nota575	tieneGlucosa	86
+http://www.modelo.org/datos#Nota575	tieneInsulina	24.5
+http://www.modelo.org/datos#Nota182	presenta	Diabetes mellitus
+http://www.modelo.org/datos#Nota182	acude	a
+http://www.modelo.org/datos#Nota87	tieneGlucosa	138
+http://www.modelo.org/datos#Nota87	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota87	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota543	tieneGlucosa	87
+http://www.modelo.org/datos#Nota705	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota150	presenta	Diabetes mellitus tipo 1 sin mencion de complicacion
+http://www.modelo.org/datos#Nota150	tieneGlucosa	73
+http://www.modelo.org/datos#Nota150	tieneColesterol	160
+http://www.modelo.org/datos#Nota150	refiere	dolor en
+http://www.modelo.org/datos#Nota526	presenta	Hipotiroidismos
+http://www.modelo.org/datos#Nota526	tieneGlucosa	48
+http://www.modelo.org/datos#Nota424	presenta	Diabetes mellitus
+http://www.modelo.org/datos#Nota424	presenta	Amenorrea secundaria
+http://www.modelo.org/datos#Nota521	presenta	Lumbago con ciatica
+http://www.modelo.org/datos#Nota521	palpacionEn	 procesos espinosos lumbares
+http://www.modelo.org/datos#Nota334	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota334	tieneGlucosa	107
+http://www.modelo.org/datos#Nota334	presenta	Asintomatica
+http://www.modelo.org/datos#Nota701	narinasCon	 rinorrea hialina
+http://www.modelo.org/datos#Nota228	presenta	Menstruacion excesiva y frecuente con ciclo irregular
+http://www.modelo.org/datos#Nota207	presenta	Edema no especificado
+http://www.modelo.org/datos#Nota207	acude	secundario a
+http://www.modelo.org/datos#Nota207	acude	edema en
+http://www.modelo.org/datos#Nota730	presenta	 onicomicosis subungueal distal
+http://www.modelo.org/datos#Nota313	presenta	Diabetes mellitus tipo 2 sin mencion de complicacion
+http://www.modelo.org/datos#Nota313	presenta	Hipercolesterolemia pura
+http://www.modelo.org/datos#Nota313	presenta	depresible_no
+http://www.modelo.org/datos#Nota313	presenta	Edema
+http://www.modelo.org/datos#Nota357	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota357	tieneGlucosa	99
+http://www.modelo.org/datos#Nota357	tieneInsulina	11.3
+http://www.modelo.org/datos#Nota357	presenta	Asintomatica
+http://www.modelo.org/datos#Nota160	presenta	Faringitis aguda
+http://www.modelo.org/datos#Nota160	presenta	Rinitis alergica y vasomotora
+http://www.modelo.org/datos#Nota109	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota109	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota109	tieneResistencia de la insulina	3.3
+http://www.modelo.org/datos#Nota109	tieneGlucosa	84
+http://www.modelo.org/datos#Nota455	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota455	tieneGlucosa	136
+http://www.modelo.org/datos#Nota455	tieneColesterol total	147
+http://www.modelo.org/datos#Nota551	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota551	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota551	tieneGlucosa	129
+http://www.modelo.org/datos#Nota551	tieneColesterol total	159
+http://www.modelo.org/datos#Nota230	presenta	Dermatitis atopica no especificada
+http://www.modelo.org/datos#Nota230	forma	 circular supuracion escasa
+http://www.modelo.org/datos#Nota627	quePresenta	cuadro
+http://www.modelo.org/datos#Nota635	presenta	semigloboso_a
+http://www.modelo.org/datos#Nota634	presenta	 onicocriptosis estadio
+http://www.modelo.org/datos#Nota305	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota305	tieneGlucosa	59
+http://www.modelo.org/datos#Nota305	tieneColesterol total	182
+http://www.modelo.org/datos#Nota142	presenta	Colitis
+http://www.modelo.org/datos#Nota142	presenta	Cronica gastritis
+http://www.modelo.org/datos#Nota142	presenta	Cronica
+http://www.modelo.org/datos#Nota503	presenta	Fractura del cuello de femur
+http://www.modelo.org/datos#Nota60	presenta	Poliartrosis
+http://www.modelo.org/datos#Nota249	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota249	tieneGlucosa	117
+http://www.modelo.org/datos#Nota249	tieneColesterol total	179
+http://www.modelo.org/datos#Nota528	presenta	Obesidad
+http://www.modelo.org/datos#Nota528	tieneGlucosa	216
+http://www.modelo.org/datos#Nota528	tieneColesterol total	182
+http://www.modelo.org/datos#Nota459	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota459	tieneColesterol	143
+http://www.modelo.org/datos#Nota459	tieneInsulina	19.4
+http://www.modelo.org/datos#Nota459	tieneGlucosa	103
+http://www.modelo.org/datos#Nota20	cualAcude	a control de enfermedad cronico degenerativa , de larga
+http://www.modelo.org/datos#Nota264	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota264	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota264	presenta	Hiperlipidemia mixta
+http://www.modelo.org/datos#Nota264	presenta	Hiperuricemia sin signos de artritis inflamatoria y enfermedad tofacea
+http://www.modelo.org/datos#Nota264	presenta	Obesidad debida a exceso de calorias
+http://www.modelo.org/datos#Nota264	tieneGlucosa	108
+http://www.modelo.org/datos#Nota602	presenta	izquierdo_3x3
+http://www.modelo.org/datos#Nota602	3x3	resto
+http://www.modelo.org/datos#Nota722	presenta	Primaria bilateral
+http://www.modelo.org/datos#Nota50	acudePor	dolor en
+http://www.modelo.org/datos#Nota50	acudePor	 gargantta
+http://www.modelo.org/datos#Nota622	presenta	Estados menopausicos y climatericos femeninos
+http://www.modelo.org/datos#Nota622	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota622	tieneHba1c	7.8%
+http://www.modelo.org/datos#Nota366	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota366	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota366	presenta	Problemas relacionados con la dieta y habitos alimentarios inapropiados
+http://www.modelo.org/datos#Nota366	presenta	Historia personal de incumplimiento del regimen o tratamiento medico
+http://www.modelo.org/datos#Nota366	tieneGlucosa	182
+http://www.modelo.org/datos#Nota366	tieneColesterol total	148
+http://www.modelo.org/datos#Nota430	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota430	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota430	presenta	Hiperlipidemia mixta
+http://www.modelo.org/datos#Nota584	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota584	tieneGlucosa	119
+http://www.modelo.org/datos#Nota584	tieneColesterol total	133
+http://www.modelo.org/datos#Nota19	infarta	antiguo del miocardio
+http://www.modelo.org/datos#Nota19	infarta	historia personal de incumplimiento del regimen o tratamiento medico
+http://www.modelo.org/datos#Nota19	infarta	problemas relacionados con la dieta y habitos alimentarios inapropiados
+http://www.modelo.org/datos#Nota19	infarta	hipotiroidismo subclinico por deficiencia de yodo
+http://www.modelo.org/datos#Nota711	presenta	Trastornos especificos de la retina
+http://www.modelo.org/datos#Nota711	oi	 cd
+http://www.modelo.org/datos#Nota633	presenta	Hemorroides de segundo grado
+http://www.modelo.org/datos#Nota633	masa	anal y
+http://www.modelo.org/datos#Nota673	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota144	presenta	Retinopatia diabetica
+http://www.modelo.org/datos#Nota492	tieneGlucosa	76
+http://www.modelo.org/datos#Nota492	presenta	Enfermedad renal
+http://www.modelo.org/datos#Nota492	integraCon	edema
+http://www.modelo.org/datos#Nota318	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota318	tieneGlucosa	68
+http://www.modelo.org/datos#Nota318	tieneInsulina	13.6
+http://www.modelo.org/datos#Nota318	asocia	a celulitis , actualmente con
+http://www.modelo.org/datos#Nota318	asocia	 manejo por angiologo privado trasgresor
+http://www.modelo.org/datos#Nota318	asocia	nutricional
+http://www.modelo.org/datos#Nota450	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota450	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota450	presenta	Severa de
+http://www.modelo.org/datos#Nota364	presenta	Colecistitis
+http://www.modelo.org/datos#Nota364	presenta	globoso_a
+http://www.modelo.org/datos#Nota83	presenta	Diabetes mellitus tipo 1 sin mencion de complicacion
+http://www.modelo.org/datos#Nota83	presenta	Hipercolesterolemia pura
+http://www.modelo.org/datos#Nota83	tieneGlucosa	199
+http://www.modelo.org/datos#Nota83	tieneColesterol	220
+http://www.modelo.org/datos#Nota184	presenta	Consulta para repeticion de receta
+http://www.modelo.org/datos#Nota577	presenta	 onicocriptosis estadio
+http://www.modelo.org/datos#Nota299	presenta	Uso de
+http://www.modelo.org/datos#Nota660	presenta	 onicocriptosis estadio
+http://www.modelo.org/datos#Nota289	tieneGlucosa	90
+http://www.modelo.org/datos#Nota289	tieneColesterol total	162
+http://www.modelo.org/datos#Nota643	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota643	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota643	presenta	Rinitis alergica y vasomotora
+http://www.modelo.org/datos#Nota643	presenta	 pb
+http://www.modelo.org/datos#Nota643	presenta	Insuficiencia renal
+http://www.modelo.org/datos#Nota183	presenta	Hipotiroidismos especificados
+http://www.modelo.org/datos#Nota183	conoce	 lumbociatlagia
+http://www.modelo.org/datos#Nota183	conoce	cronica
+http://www.modelo.org/datos#Nota721	presenta	Primaria bilateral
+http://www.modelo.org/datos#Nota369	presenta	Trastornos de la articulacion temporomaxilar
+http://www.modelo.org/datos#Nota369	presenta	Femenino en
+http://www.modelo.org/datos#Nota413	presenta	Rinitis alergica estacional
+http://www.modelo.org/datos#Nota413	presenta	Hipertension esencial
+http://www.modelo.org/datos#Nota413	presenta	Sindrome respiratorio
+http://www.modelo.org/datos#Nota554	presenta	Hipertension secundaria
+http://www.modelo.org/datos#Nota554	presenta	Mononeuropatia diabetica
+http://www.modelo.org/datos#Nota554	tieneGlucosa	97
+http://www.modelo.org/datos#Nota554	tieneColesterol total	165
+http://www.modelo.org/datos#Nota554	refiereCon	 rinorrea
+http://www.modelo.org/datos#Nota449	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota449	presenta	Diabetes mellitus
+http://www.modelo.org/datos#Nota667	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota667	tieneGlucosa	262
+http://www.modelo.org/datos#Nota667	tieneColesterol total	295
+http://www.modelo.org/datos#Nota667	noControla	 dislipidemia
+http://www.modelo.org/datos#Nota667	noControla	mixta
+http://www.modelo.org/datos#Nota476	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota476	tieneGlucosa	220
+http://www.modelo.org/datos#Nota476	tieneColesterol	190
+http://www.modelo.org/datos#Nota148	noPresenta	 alteraciones
+http://www.modelo.org/datos#Nota148	noPresenta	region lumbar
+http://www.modelo.org/datos#Nota148	presenta	izquierdo_sin
+http://www.modelo.org/datos#Nota333	presenta	Diabetes mellitus
+http://www.modelo.org/datos#Nota333	presenta	Secundaria a
+http://www.modelo.org/datos#Nota333	presenta	 pancreatectomia subtotal
+http://www.modelo.org/datos#Nota333	presenta	Hipertension arterial
+http://www.modelo.org/datos#Nota333	tieneGlucosa	51
+http://www.modelo.org/datos#Nota612	tieneColesterol total	122
+http://www.modelo.org/datos#Nota612	tieneGlucosa	115
+http://www.modelo.org/datos#Nota612	presenta	Asintomatica
+http://www.modelo.org/datos#Nota709	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota709	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota506	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota267	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota267	presenta	Hiperlipidemia mixta
+http://www.modelo.org/datos#Nota267	presenta	Problemas relacionados con la dieta y habitos alimentarios inapropiados
+http://www.modelo.org/datos#Nota267	tieneGlucosa	139
+http://www.modelo.org/datos#Nota267	tieneColesterol	231
+http://www.modelo.org/datos#Nota44	uñeCon	 cambio
+http://www.modelo.org/datos#Nota44	acudePor	 cambio
+http://www.modelo.org/datos#Nota732	tieneGlucosa	89
+http://www.modelo.org/datos#Nota6	presenta	Congenita
+http://www.modelo.org/datos#Nota531	tieneGlucosa	274
+http://www.modelo.org/datos#Nota531	tieneColesterol total	196
+http://www.modelo.org/datos#Nota531	refiereCon	cefalea
+http://www.modelo.org/datos#Nota212	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota212	presenta	diabetico_con
+http://www.modelo.org/datos#Nota740	presenta	Gonartrosis artrosis de la
+http://www.modelo.org/datos#Nota371	presenta	Hipotiroidismos especificados
+http://www.modelo.org/datos#Nota371	presenta	Insuficiencia venosa cronica
+http://www.modelo.org/datos#Nota712	presenta	 onicocriptosis estadio
+http://www.modelo.org/datos#Nota574	presenta	 onicocriptosis estadio
+http://www.modelo.org/datos#Nota76	presenta	Queratosis seborreica
+http://www.modelo.org/datos#Nota579	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota579	presenta	Artropatia
+http://www.modelo.org/datos#Nota579	presenta	Degenerativa
+http://www.modelo.org/datos#Nota579	presenta	Diabetes mellitus
+http://www.modelo.org/datos#Nota579	presenta	Hipertension arterial
+http://www.modelo.org/datos#Nota579	presenta	 sistémica osteopenia dislipidemia
+http://www.modelo.org/datos#Nota579	presenta	Mixta
+http://www.modelo.org/datos#Nota579	presenta	Neuropatia metabolica
+http://www.modelo.org/datos#Nota579	tieneGlucosa	93
+http://www.modelo.org/datos#Nota579	tieneInsulina	28.1
+http://www.modelo.org/datos#Nota563	presenta	Reflujo gastroesofagico con esofagitis
+http://www.modelo.org/datos#Nota428	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota428	presenta	Obesidad
+http://www.modelo.org/datos#Nota428	presenta	Problemas relacionados con la dieta y habitos alimentarios inapropiados
+http://www.modelo.org/datos#Nota428	tieneGlucosa	226
+http://www.modelo.org/datos#Nota116	tieneGlucosa	159
+http://www.modelo.org/datos#Nota116	presenta	Litiasis urinaria en
+http://www.modelo.org/datos#Nota116	presenta	dolor
+http://www.modelo.org/datos#Nota692	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota692	tieneGlucosa	151
+http://www.modelo.org/datos#Nota692	presenta	Asintomatica
+http://www.modelo.org/datos#Nota546	presenta	Adinamia
+http://www.modelo.org/datos#Nota348	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota348	tieneGlucosa	141
+http://www.modelo.org/datos#Nota348	presenta	Sintomatica
+http://www.modelo.org/datos#Nota412	presenta	Sindrome respiratorio
+http://www.modelo.org/datos#Nota670	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota670	presenta	Enfermedad renal cronica etapa 3
+http://www.modelo.org/datos#Nota670	tieneGlucosa	139
+http://www.modelo.org/datos#Nota559	mantiene	 mismo tratamiento
+http://www.modelo.org/datos#Nota559	mantiene	 adecuado patron
+http://www.modelo.org/datos#Nota530	presenta	Hipertension secundaria
+http://www.modelo.org/datos#Nota530	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota530	presenta	Obesidad
+http://www.modelo.org/datos#Nota530	tieneGlucosa	197
+http://www.modelo.org/datos#Nota530	tieneColesterol total	200
+http://www.modelo.org/datos#Nota699	presenta	Sinovitis y tenosinovitis
+http://www.modelo.org/datos#Nota407	presenta	Diarrea y gastroenteritis de presunto origen infeccioso
+http://www.modelo.org/datos#Nota601	presenta	Congenita
+http://www.modelo.org/datos#Nota495	presenta	Trastornos de ansiedad
+http://www.modelo.org/datos#Nota495	presenta	Hipercolesterolemia pura
+http://www.modelo.org/datos#Nota495	tieneHba1c	10.9%
+http://www.modelo.org/datos#Nota482	presenta	Gastritis
+http://www.modelo.org/datos#Nota482	modera	erosiva
+http://www.modelo.org/datos#Nota482	conpenzada	dolor en
+http://www.modelo.org/datos#Nota482	conpenzada	 epigastro
+http://www.modelo.org/datos#Nota181	presenta	izquierdo_:
+http://www.modelo.org/datos#Nota181	presenta	paciente_que
+http://www.modelo.org/datos#Nota181	queAcude	a consulta por dolor e inmovilidad de brazo izquierdo posterior a contusion en
+http://www.modelo.org/datos#Nota181	queAcude	 extremidad toracica izquierda ocurrida
+http://www.modelo.org/datos#Nota224	presenta	 onicocriptosis estadio
+http://www.modelo.org/datos#Nota636	presenta	 onicocriptosis estadio
+http://www.modelo.org/datos#Nota52	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota52	tieneGlucosa	126
+http://www.modelo.org/datos#Nota426	presenta	 onicocriptosis estadio
+http://www.modelo.org/datos#Nota426	acude	a consulta para
+http://www.modelo.org/datos#Nota47	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota662	presenta	Sindrome del colon irritable con diarrea
+http://www.modelo.org/datos#Nota80	presenta	Diabetes mellitus tipo 1 sin mencion de complicacion
+http://www.modelo.org/datos#Nota80	tieneGlucosa	218
+http://www.modelo.org/datos#Nota80	tieneColesterol	165
+http://www.modelo.org/datos#Nota124	presenta	Urticaria
+http://www.modelo.org/datos#Nota124	presenta	Aguda
+http://www.modelo.org/datos#Nota124	presenta	granular_sin
+http://www.modelo.org/datos#Nota606	desusaCon	fractura
+http://www.modelo.org/datos#Nota606	presenta	Vaginitis atrofica
+http://www.modelo.org/datos#Nota626	presenta	Rinitis
+http://www.modelo.org/datos#Nota626	presenta	Respiratoria aguda
+http://www.modelo.org/datos#Nota626	presenta	Dorsalgia
+http://www.modelo.org/datos#Nota668	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota668	presenta	Enfermedad renal cronica etapa 3
+http://www.modelo.org/datos#Nota668	tieneGlucosa	288
+http://www.modelo.org/datos#Nota483	presenta	doloroso_a
+http://www.modelo.org/datos#Nota576	presenta	Sindrome del colon irritable
+http://www.modelo.org/datos#Nota576	flatulencia	dolor en
+http://www.modelo.org/datos#Nota59	vertigo	paroxistico benigno
+http://www.modelo.org/datos#Nota59	tieneGlucosa	96
+http://www.modelo.org/datos#Nota59	tieneColesterol total	174
+http://www.modelo.org/datos#Nota34	presenta	Sindrome del colon irritable
+http://www.modelo.org/datos#Nota34	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota34	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota34	presenta	Obesidad
+http://www.modelo.org/datos#Nota34	presenta	Rinofaringitis aguda
+http://www.modelo.org/datos#Nota34	presenta	depresible_,
+http://www.modelo.org/datos#Nota34	queAcudeDe	 manera subsecuente
+http://www.modelo.org/datos#Nota416	presenta	Sindrome colon
+http://www.modelo.org/datos#Nota141	presenta	Bronquitis cronica
+http://www.modelo.org/datos#Nota527	presenta	Obesidad
+http://www.modelo.org/datos#Nota527	tieneColesterol	224
+http://www.modelo.org/datos#Nota527	tieneGlucosa	186
+http://www.modelo.org/datos#Nota415	presenta	Sindrome
+http://www.modelo.org/datos#Nota271	tieneGlucosa	70.4
+http://www.modelo.org/datos#Nota658	presenta	 onicocriptosis estadio
+http://www.modelo.org/datos#Nota658	acude	a
+http://www.modelo.org/datos#Nota21	cualAcude	a control de enfermedad cronico degenerativa , de larga
+http://www.modelo.org/datos#Nota431	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota431	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota431	presenta	Hiperlipidemia mixta
+http://www.modelo.org/datos#Nota431	presenta	Problemas relacionados con la dieta y habitos alimentarios inapropiados
+http://www.modelo.org/datos#Nota431	exploracion	fisica
+http://www.modelo.org/datos#Nota431	exploracion	 fms
+http://www.modelo.org/datos#Nota157	constituyePor	 placas eritematosas
+http://www.modelo.org/datos#Nota556	presenta	Dermatitis seborreicas
+http://www.modelo.org/datos#Nota556	presenta	Seborrea
+http://www.modelo.org/datos#Nota542	presenta	Dermatitis atopica
+http://www.modelo.org/datos#Nota542	presenta	Cloasma
+http://www.modelo.org/datos#Nota542	liqueniificacionEn	parpados
+http://www.modelo.org/datos#Nota37	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota37	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota37	presenta	Hiperlipidemia mixta
+http://www.modelo.org/datos#Nota37	presenta	Problemas relacionados con la dieta y habitos alimentarios inapropiados
+http://www.modelo.org/datos#Nota37	tieneGlucosa	194
+http://www.modelo.org/datos#Nota37	tieneColesterol total	214
+http://www.modelo.org/datos#Nota37	tiene	 cuadro chicungunya
+http://www.modelo.org/datos#Nota652	noEspecifica	diabetes mellitus tipo 2 con complicaciones multiples
+http://www.modelo.org/datos#Nota652	noEspecifica	hipertension secundaria
+http://www.modelo.org/datos#Nota652	noEspecifica	insuficiencia cardiaca no especificada
+http://www.modelo.org/datos#Nota652	noEspecifica	hipotiroidismo no especificado
+http://www.modelo.org/datos#Nota652	noEspecifica	obesidad
+http://www.modelo.org/datos#Nota652	tieneGlucosa	126
+http://www.modelo.org/datos#Nota652	tieneInsulina	41.4
+http://www.modelo.org/datos#Nota652	tieneColesterol	102
+http://www.modelo.org/datos#Nota652	niega	 descontrol metabolico
+http://www.modelo.org/datos#Nota726	presenta	Hipotiroidismo subclinico por deficiencia de yodo
+http://www.modelo.org/datos#Nota726	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota726	presenta	Anormalidades en la prueba de tolerancia a la glucosa
+http://www.modelo.org/datos#Nota726	presenta	Hipoacusia bilateral
+http://www.modelo.org/datos#Nota441	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota441	tieneGlucosa	144
+http://www.modelo.org/datos#Nota441	tieneColesterol total	151
+http://www.modelo.org/datos#Nota441	tieneInsulina	21.8
+http://www.modelo.org/datos#Nota100	presenta	 onicocriptosis estadio
+http://www.modelo.org/datos#Nota100	acude	a consulta para
+http://www.modelo.org/datos#Nota566	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota566	presenta	Hipercolesterolemia pura
+http://www.modelo.org/datos#Nota566	tieneGlucosa	211
+http://www.modelo.org/datos#Nota566	tieneColesterol total	133
+http://www.modelo.org/datos#Nota28	presenta	Faringitis aguda
+http://www.modelo.org/datos#Nota28	presenta	hiperemica_,
+http://www.modelo.org/datos#Nota268	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota268	presenta	Hiperlipidemia mixta
+http://www.modelo.org/datos#Nota268	presenta	Problemas relacionados con la dieta y habitos alimentarios inapropiados
+http://www.modelo.org/datos#Nota268	presenta	Historia personal de incumplimiento del regimen o tratamiento medico
+http://www.modelo.org/datos#Nota268	tieneInsulina	21.9
+http://www.modelo.org/datos#Nota268	tieneGlucosa	275
+http://www.modelo.org/datos#Nota268	tieneColesterol total	275
+http://www.modelo.org/datos#Nota232	presenta	Edema no especificado
+http://www.modelo.org/datos#Nota232	acude	secundario a
+http://www.modelo.org/datos#Nota232	acude	edema en
+http://www.modelo.org/datos#Nota363	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota363	tieneGlucosa	91
+http://www.modelo.org/datos#Nota363	tieneColesterol total	170
+http://www.modelo.org/datos#Nota363	presenta	Asintomatica
+http://www.modelo.org/datos#Nota311	tieneGlucosa	81
+http://www.modelo.org/datos#Nota311	tieneColesterol total	168
+http://www.modelo.org/datos#Nota88	tieneGlucosa	127
+http://www.modelo.org/datos#Nota88	tieneColesterol total	143
+http://www.modelo.org/datos#Nota88	presenta	Hipotiroidismos
+http://www.modelo.org/datos#Nota297	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota297	presenta	Dolor
+http://www.modelo.org/datos#Nota440	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota440	tieneGlucosa	148
+http://www.modelo.org/datos#Nota440	tieneInsulina	18.5
+http://www.modelo.org/datos#Nota440	tieneColesterol total	135
+http://www.modelo.org/datos#Nota394	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota394	presenta	Estado de
+http://www.modelo.org/datos#Nota708	tieneColesterol	192
+http://www.modelo.org/datos#Nota708	tieneGlucosa	59
+http://www.modelo.org/datos#Nota708	integraCon	edema
+http://www.modelo.org/datos#Nota698	tieneGlucosa	116
+http://www.modelo.org/datos#Nota698	tieneColesterol	168
+http://www.modelo.org/datos#Nota698	presenta	Diabetes mellitus tipo 1 con complicaciones no especificadas
+http://www.modelo.org/datos#Nota698	presenta	Hiperlipidemia mixta
+http://www.modelo.org/datos#Nota698	presenta	Faringitis aguda
+http://www.modelo.org/datos#Nota698	refiereCon	 artrilagias
+http://www.modelo.org/datos#Nota319	tieneGlucosa	68
+http://www.modelo.org/datos#Nota319	tieneInsulina	13.6
+http://www.modelo.org/datos#Nota341	presenta	Sinusitis cronica
+http://www.modelo.org/datos#Nota191	presenta	Lumbago no especificado
+http://www.modelo.org/datos#Nota235	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota235	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota235	presenta	Enfermedad renal cronica etapa 3
+http://www.modelo.org/datos#Nota604	noEspecifica	defecto del tabique ventricular
+http://www.modelo.org/datos#Nota604	tieneGlucosa	151
+http://www.modelo.org/datos#Nota505	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota505	presenta	Diabetes mellitus
+http://www.modelo.org/datos#Nota505	tieneGlucosa	130
+http://www.modelo.org/datos#Nota723	noEspecifica	hipertension esencial primaria
+http://www.modelo.org/datos#Nota723	noEspecifica	anormalidades en la prueba de tolerancia a la glucosa
+http://www.modelo.org/datos#Nota723	tieneColesterol	217
+http://www.modelo.org/datos#Nota723	tieneGlucosa	84
+http://www.modelo.org/datos#Nota632	presenta	Enfermedad diverticular del intestino grueso sin perforacion ni absceso
+http://www.modelo.org/datos#Nota632	presenta	depresible_,
+http://www.modelo.org/datos#Nota632	realiza	 colonoscopia con diverticulos de base ancha paquetes hemorroidales medianos
+http://www.modelo.org/datos#Nota39	presenta	Hipercolesterolemia pura
+http://www.modelo.org/datos#Nota39	presenta	Obesidad debida a exceso de calorias
+http://www.modelo.org/datos#Nota39	tieneGlucosa	196
+http://www.modelo.org/datos#Nota130	presenta	Bronquitis cronica simple
+http://www.modelo.org/datos#Nota130	presenta	Respiratorio
+http://www.modelo.org/datos#Nota306	tieneGlucosa	57
+http://www.modelo.org/datos#Nota306	tieneColesterol total	167
+http://www.modelo.org/datos#Nota306	presenta	Uretral
+http://www.modelo.org/datos#Nota720	presenta	Hipotiroidismo subclinico por deficiencia de yodo
+http://www.modelo.org/datos#Nota720	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota720	presenta	Anormalidades en la prueba de tolerancia a la glucosa
+http://www.modelo.org/datos#Nota720	presenta	Obesidad
+http://www.modelo.org/datos#Nota743	presenta	Queratosis seborreica
+http://www.modelo.org/datos#Nota206	presenta	mejoria_descarta
+http://www.modelo.org/datos#Nota312	tieneGlucosa	100
+http://www.modelo.org/datos#Nota312	tieneColesterol total	173
+http://www.modelo.org/datos#Nota312	presenta	Intermitente
+http://www.modelo.org/datos#Nota317	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota317	tieneGlucosa	68
+http://www.modelo.org/datos#Nota317	tieneInsulina	13.6
+http://www.modelo.org/datos#Nota339	quePresenta	cuadro
+http://www.modelo.org/datos#Nota339	queInicia	 el dia
+http://www.modelo.org/datos#Nota664	presenta	semigloboso_por
+http://www.modelo.org/datos#Nota664	refiereCon	distension
+http://www.modelo.org/datos#Nota664	refiereCon	abdominal
+http://www.modelo.org/datos#Nota342	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota342	tieneGlucosa	160
+http://www.modelo.org/datos#Nota342	tieneColesterol	143
+http://www.modelo.org/datos#Nota342	tieneInsulina	11.7
+http://www.modelo.org/datos#Nota463	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota463	presenta	Gonartrosis artrosis de la
+http://www.modelo.org/datos#Nota463	bienOrientaEn	 tiempo
+http://www.modelo.org/datos#Nota193	evolucion	diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota193	evolucion	hipertension esencial primaria
+http://www.modelo.org/datos#Nota338	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota338	tieneGlucosa	268
+http://www.modelo.org/datos#Nota338	tieneInsulina	3
+http://www.modelo.org/datos#Nota338	tieneColesterol	192
+http://www.modelo.org/datos#Nota140	presenta	Presencia de lentes intraoculares
+http://www.modelo.org/datos#Nota140	dilatacion	 conjuntiva clara caf celulas
+http://www.modelo.org/datos#Nota420	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota420	tieneGlucosa	89
+http://www.modelo.org/datos#Nota420	presenta	Atencion por
+http://www.modelo.org/datos#Nota352	presenta	Hipotiroidismo subclinico por deficiencia de yodo
+http://www.modelo.org/datos#Nota352	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota352	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota352	tieneGlucosa	78
+http://www.modelo.org/datos#Nota352	tieneColesterol total	142
+http://www.modelo.org/datos#Nota352	presenta	Asintomatica
+http://www.modelo.org/datos#Nota48	presenta	Sindrome del colon irritable
+http://www.modelo.org/datos#Nota48	presenta	Gastritis cronica
+http://www.modelo.org/datos#Nota48	presenta	 esteatosis
+http://www.modelo.org/datos#Nota48	presenta	Hepatica
+http://www.modelo.org/datos#Nota48	presenta	 periodos de estreñimiento
+http://www.modelo.org/datos#Nota48	presenta	derecho_se
+http://www.modelo.org/datos#Nota48	irradia	a todo el abdomen
+http://www.modelo.org/datos#Nota343	explica	importancia
+http://www.modelo.org/datos#Nota343	queAcude	 el dia
+http://www.modelo.org/datos#Nota168	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota168	presenta	Hipercolesterolemia pura
+http://www.modelo.org/datos#Nota168	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota168	tieneGlucosa	214
+http://www.modelo.org/datos#Nota168	tieneInsulina	36.0
+http://www.modelo.org/datos#Nota238	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota238	tieneGlucosa	119
+http://www.modelo.org/datos#Nota238	tieneColesterol total	156
+http://www.modelo.org/datos#Nota611	presenta	Vaginitis
+http://www.modelo.org/datos#Nota611	presenta	Vulvitis y vulvovaginitis en enfermedades infecciosas y parasitarias clasificadas en otra parte
+http://www.modelo.org/datos#Nota611	presenta	Vaginitis atrofica postmenopausica
+http://www.modelo.org/datos#Nota611	vulvodiniaPor	diabetes mellitus
+http://www.modelo.org/datos#Nota611	vulvodiniaPor	osteoporosis
+http://www.modelo.org/datos#Nota693	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota693	presenta	Hipercolesterolemia pura
+http://www.modelo.org/datos#Nota693	presenta	Hipertension secundaria
+http://www.modelo.org/datos#Nota693	tieneGlucosa	135
+http://www.modelo.org/datos#Nota693	presenta	Asintomatica
+http://www.modelo.org/datos#Nota92	presenta	Epilepsia
+http://www.modelo.org/datos#Nota325	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota325	presenta	Hipercolesterolemia pura
+http://www.modelo.org/datos#Nota325	presenta	Sindrome del colon irritable
+http://www.modelo.org/datos#Nota325	presenta	 gonartrosis
+http://www.modelo.org/datos#Nota325	presenta	Primaria bilateral
+http://www.modelo.org/datos#Nota325	tieneGlucosa	136
+http://www.modelo.org/datos#Nota325	tieneColesterol total	155
+http://www.modelo.org/datos#Nota336	presenta	Hipotiroidismos
+http://www.modelo.org/datos#Nota336	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota336	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota336	tieneGlucosa	107
+http://www.modelo.org/datos#Nota336	presenta	Cefalea
+http://www.modelo.org/datos#Nota432	presenta	Atencion medica no especificada
+http://www.modelo.org/datos#Nota564	presenta	Hipercolesterolemia pura
+http://www.modelo.org/datos#Nota564	tieneGlucosa	140
+http://www.modelo.org/datos#Nota564	tieneColesterol total	150
+http://www.modelo.org/datos#Nota570	presenta	Diabetes mellitus tipo 1
+http://www.modelo.org/datos#Nota570	tieneGlucosa	249
+http://www.modelo.org/datos#Nota578	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota578	presenta	Artropatia
+http://www.modelo.org/datos#Nota578	presenta	Degenerativa
+http://www.modelo.org/datos#Nota578	presenta	Diabetes mellitus
+http://www.modelo.org/datos#Nota578	presenta	Hipertension arterial
+http://www.modelo.org/datos#Nota578	presenta	 sistémica osteopenia dislipidemia
+http://www.modelo.org/datos#Nota578	presenta	Mixta
+http://www.modelo.org/datos#Nota578	presenta	Neuropatia metabolica
+http://www.modelo.org/datos#Nota578	tieneColesterol total	224
+http://www.modelo.org/datos#Nota578	tieneGlucosa	85
+http://www.modelo.org/datos#Nota164	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota164	tieneGlucosa	107
+http://www.modelo.org/datos#Nota164	tieneInsulina	16.3
+http://www.modelo.org/datos#Nota417	presenta	Sindrome
+http://www.modelo.org/datos#Nota417	presenta	Intestinal
+http://www.modelo.org/datos#Nota402	presenta	Primaria
+http://www.modelo.org/datos#Nota402	presenta	 hipocolesterolemia
+http://www.modelo.org/datos#Nota402	presenta	Pura
+http://www.modelo.org/datos#Nota402	presenta	Asintomatica
+http://www.modelo.org/datos#Nota66	refiereCon	episodios
+http://www.modelo.org/datos#Nota580	tieneColesterol	224
+http://www.modelo.org/datos#Nota580	presenta	Hipertension esencial primaria
+http://www.modelo.org/datos#Nota580	presenta	Insuficiencia venosa cronica
+http://www.modelo.org/datos#Nota580	acude	a consulta secundario a
+http://www.modelo.org/datos#Nota580	acude	descontrol
+http://www.modelo.org/datos#Nota623	presenta	Diabetes mellitus tipo 2
+http://www.modelo.org/datos#Nota623	presenta	Polineuropatia diabetica
+http://www.modelo.org/datos#Nota623	presenta	doloroso_a la
+http://www.modelo.org/datos#Nota623	palpacionEn	 hemiabdomen inferior
+http://www.modelo.org/datos#Nota669	tieneColesterol total	158
+http://www.modelo.org/datos#Nota669	palido	 astenico
+http://www.modelo.org/datos#Nota112	presenta	Dermatitis no especificada
+http://www.modelo.org/datos#Nota112	orientaEn	 tiempo
+http://www.modelo.org/datos#Nota112	acude	a consulta por
+http://www.modelo.org/datos#Nota696	tenesmo	vesical
+http://www.modelo.org/datos#Nota714	envio	a
+http://www.modelo.org/datos#Nota638	tieneGlucosa	89
+http://www.modelo.org/datos#Nota646	presenta	Rinitis alergica y vasomotora
+http://www.modelo.org/datos#Nota646	presenta	Insuficiencia venosa cronica
+http://www.modelo.org/datos#Nota442	presenta	Retinopatias del fondo y cambios vasculares retinianos
+http://www.modelo.org/datos#Nota442	tieneColesterol	155
+http://www.modelo.org/datos#Nota442	tieneGlucosa	272
+http://www.modelo.org/datos#Nota442	tieneInsulina	21.4
+http://www.modelo.org/datos#Nota22	queAcude	a control de enfermedad cronico degenerativa , de larga
