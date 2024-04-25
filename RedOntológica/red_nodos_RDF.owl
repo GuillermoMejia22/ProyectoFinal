@@ -4269,7 +4269,7 @@
 
 <rdf:Description rdf:nodeID="genid328">
 	<rdf:type rdf:resource="http://www.diabetes-mexico.org/red#Dosis_En_Receta"/>
-	<tieneActivoEnReceta rdf:resource="http://www.medida-control.com/tratamiento#Clobetasol0.5%CremaAplicaPorLaMananaYNochePor"/>
+	<!--<tieneActivoEnReceta rdf:resource="http://www.medida-control.com/tratamiento#Clobetasol0.5%CremaAplicaPorLaMananaYNochePor"/> -->
 	<tieneMedidaIndicadaEnReceta>SEMANAS</tieneMedidaIndicadaEnReceta>
 	<tieneCantidadIndicada rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</tieneCantidadIndicada>
 </rdf:Description>

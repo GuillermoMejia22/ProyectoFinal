@@ -15,6 +15,9 @@ onto2.parse("RedOntológica\\personaRDF.owl", format="xml")
 onto3 = Graph()
 onto3.parse("RedOntológica\\med_atc_rdf.owl", format="xml")
 
+onto4 = Graph()
+onto4.parse("Red\\red_nodos_RDF.owl.xml", format="xml")
+
 # Definir los prefijos
 prefijo = """
     PREFIX paciente: <http://www.modelo.org/datos#>
@@ -28,6 +31,11 @@ prefijo2 = """
 
 prefijo3 = """
     PREFIX medicamento: <http://www.medicamentos-mexico.org/medicamento#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+"""
+
+prefijo4 = """
+    PREFIX paciente: <http://www.diabetes-mexico.org/red#>
     PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 """
 
@@ -425,7 +433,7 @@ def frecuenciaCardiacaPacientesDiabeticos(prefijo, onto):
     plt.savefig('ImagenesGeneradas\\frecuencias_cardiacas_pacientes.png')
     plt.show()
 
-def glucosaPacientesDiabeticos(prefijo, onto):
+def colesterolPacientesDiabeticos(prefijo, onto):
     sparql_query = prefijo + """
     SELECT ?nota ?analisis ?colesterol
     WHERE {
@@ -547,21 +555,15 @@ def generoPacientesDiabeticos(prefijo2, onto2):
     df = pd.DataFrame({'generos': generos})
 
     fig, ax = plt.subplots(figsize=(12, 6))
-    n, bins, patches = plt.hist(df['generos'], bins=3, alpha=0.7)
+    labels = df['generos'].value_counts().index.tolist()
+    sizes = df['generos'].value_counts().tolist()
 
-    for i, patch in enumerate(patches):
-        color = plt.cm.plasma(i / len(patches)) 
-        patch.set_facecolor(color)
+    colors = ['skyblue' if label.lower() == 'masculino' else 'pink' for label in labels]
 
-    plt.xlabel('Sexo')
-    plt.ylabel('Número de Casos')
+    ax.pie(sizes, labels=labels, autopct='%1.1f%%', startangle=140, colors=colors)
+    ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+
     plt.title(f'SEXO DE PACIENTES DE DIABETES')
-    
-    for i in range(len(patches)):
-        if n[i] > 0:
-            ax.text(patches[i].get_x() + patches[i].get_width() / 2, patches[i].get_height() + 5, str(int(n[i])), ha='center')
-    
-    plt.grid(axis='y', linestyle='--', alpha=0.7)
     
     plt.savefig('ImagenesGeneradas\\sexo_pacientes.png')
     plt.show()
@@ -642,8 +644,22 @@ def medicamentosAltPacientesDiabeticos(prefijo3, onto3):
     
     if estado == False:
         print("Lo siento, no se tiene registros de medicamentos para la busqueda especificada")
+
+# La red NO tiene registros pare responder a esta pregunta
+def residenciaPacientesDiabeticos(prefijo4, onto4):
+    sparql_query = prefijo4 + """
+    SELECT ?paciente ?place
+    WHERE {
+            ?paciente paciente:resideEn ?place .
+            ?paciente a paciente:Nota_Medica .
+        }
+    """
+    query = prepareQuery(sparql_query)
         
-    
+    for row in onto4.query(query):
+        print("Paciente: ", row.paciente)
+        print("Reside en: ", row.place)
+          
 #pesosPacientesDiabeticos(prefijo, onto)
 #antecedentesDiabeticos(prefijo, onto)
 #imcPacientesDiabeticos(prefijo, onto)
@@ -657,6 +673,7 @@ def medicamentosAltPacientesDiabeticos(prefijo3, onto3):
 #colesterolPacientesDiabeticos(prefijo, onto)
 #glucosaPacientesDiabeticos(prefijo, onto)
 #insulinaPacientesDiabeticos(prefijo, onto)
-#generoPacientesDiabeticos(prefijo2, onto2)
+generoPacientesDiabeticos(prefijo2, onto2)
 #medicamentosPacientesDiabeticos(prefijo3, onto3)
 #medicamentosAltPacientesDiabeticos(prefijo3, onto3)
+#residenciaPacientesDiabeticos(prefijo4, onto4)

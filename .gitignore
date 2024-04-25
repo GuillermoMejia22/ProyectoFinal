@@ -3,3 +3,7 @@ models
 .rasa
 .vscode
 _pycache_
+.rasa/cache
+.vscode
+Credenciales Cuenta Messenger.txt
+TOKEN_MESSENGER.txt

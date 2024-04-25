@@ -798,7 +798,92 @@ rules:
   - rule: Conocer Peso Diabeticos
     steps:
     - intent: conocer_peso_diabeticos
-    - action: action_manda_imagen
+    - action: action_consultas_red
+
+  - rule: Conocer Antecedentes Diabeticos
+    steps:
+    - intent: antecedentes_diabeticos
+    - action: action_consultas_red
+
+  - rule: IMC Diabeticos
+    steps:
+    - intent: imc_diabeticos
+    - action: action_consultas_red
+
+  - rule: Edades Diabeticos
+    steps:
+    - intent: edades_diabeticos
+    - action: action_consultas_red
+
+  - rule: Biotipo Diabeticos
+    steps:
+    - intent: condicion_pacientes_diabeticos
+    - action: action_consultas_red
+  
+  - rule: Temperatura Corporal Diabeticos
+    steps:
+    - intent: temperaturas_pacientes_diabeticos
+    - action: action_consultas_red
+
+  - rule: Estaturas Diabeticos
+    steps:
+    - intent: estaturas_pacientes_diabeticos
+    - action: action_consultas_red
+
+  - rule: Presiones Diabeticos
+    steps:
+    - intent: presiones_pacientes_diabeticos
+    - action: action_consultas_red
+
+  - rule: Frecuencia Respiratoria Diabeticos
+    steps:
+    - intent: frecuencia_respiratoria_pacientes_diabeticos
+    - action: action_consultas_red
+
+  - rule: Frecuencia Cardiaca Diabeticos
+    steps:
+    - intent: frecuencia_cardiaca_pacientes_diabeticos
+    - action: action_consultas_red
+
+  - rule: Colesterol Diabeticos
+    steps:
+    - intent: colesterol_pacientes_diabeticos
+    - action: action_consultas_red
+
+  - rule: Glucosa Diabeticos
+    steps:
+    - intent: glucosa_pacientes_diabeticos
+    - action: action_consultas_red
+
+  - rule: Insulina Diabeticos
+    steps:
+    - intent: insulina_pacientes_diabeticos
+    - action: action_consultas_red
+
+  - rule: Generos Diabeticos
+    steps:
+    - intent: generos_pacientes_diabeticos
+    - action: action_consultas_red
+  
+  - rule: Medicamentos Diabeticos
+    steps:
+    - intent: medicamentos_pacientes_diabeticos
+    - action: action_consultas_red
+
+  - rule: IMC Peligroso
+    steps:
+    - intent: imc_peligroso
+    - action: utter_imc_peligroso
+
+  - rule: Costo Tratamiento
+    steps:
+    - intent: costo_tratamiento
+    - action: utter_costo_tratamiento
+
+  - rule: Perdida Peso Diabetes
+    steps:
+    - intent: perdida_peso
+    - action: utter_perdida_peso
 
   - rule: Nuevo Dato de Entrenamiento
     steps:

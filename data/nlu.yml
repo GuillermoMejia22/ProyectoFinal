@@ -495,9 +495,13 @@ nlu:
     - ¿Cuáles son los indicadores de la diabetes?
     - ¿Cuáles son las primeras señales de la diabetes?
     - ¿Qué cosas te avisan que estás en riesgo de diabetes?
+    - Dime 3 características de la diabetes
+    - y cuáles son los síntomas asociados a la diabetes?
+    - cuáles son los síntomas de la diabetes?
 - intent: decir_sintomas
   examples: |
     - ¿Si mi paciente presenta una sed excesiva, es normal?
+    - ¿Tener cuello negro es signo de diabetes?
     - ¿Es normal que el paciente presente una sed insaciable?
     - Tengo una sed incontrolable.
     - El paciente orina mucho.
@@ -514,6 +518,7 @@ nlu:
     - El paciente dice tener comezón frecuente en su zona íntima.
     - La paciente describe que le da comezón en sus genitales.
     - ¿Es normal tener visión borrosa de repente?
+    - entonces si una persona va mucho al baño y toma mucha agua es un síntoma de diabetes?
     - El paciente dice que de pronto, mientras camina, se le nubla la vista.
     - Últimamente he estado con muchas náuseas y vómito.
     - La paciente describe que no está embarazada, pero que ha tenido muchas náuseas, vómitos y visión borrosa.
@@ -554,6 +559,7 @@ nlu:
     - Dime las diferencias que tienen los tipos de diabetes.
     - ¿Qué diferencia tiene la diabetes tipo I con la gestacional?
     - ¿Qué diferencia tiene la diabetes tipo 2 con la gestacional?
+    - ¿En qué se diferencia la diabetes tipo uno de la tipo dos?
     - ¿Qué diferencia la diabetes gestacional de las demás?
 - intent: conocer_cura
   examples: |
@@ -565,6 +571,8 @@ nlu:
     - ¿La diabetes se cura?
     - ¿La diabetes es curable?
     - ¿Actualmente hay cura para curar la diabetes?
+    - hay cura para la diabetes?
+    - existe una cura para la diabetes?
 - intent: controlar_diabetes
   examples: |
     - ¿Cómo se controla la diabetes?
@@ -582,9 +590,14 @@ nlu:
     - ¿Se pueden comer verduras?
     - Si se come verduras.
     - ¿Puedo comer verduras?
+    - ¿Puedo comer mucha azúcar?
+    - ¿Qué hábito alimenticio debo mejorar si padezco diabetes?
+    - ¿Puedo tomar coca si soy diabético?
+    - ¿Puedo comer carnes rojas si tengo diabetes?
     - El paciente consume verduras.
     - ¿Se pueden comer frutas?
     - ¿Puedo comer frutas?
+    - ¿Debería dejar de comer carne si tengo diabetes?
     - El paciente come frutas.
     - ¿Es válido comer alimentos integrales?
     - ¿Es válido comer frutas?
@@ -622,6 +635,9 @@ nlu:
     - ¿Qué cuidados debería tener una persona con diabetes?
     - ¿Qué cuidados especiales debe tener una persona diabética?
     - ¿Qué cuidados deben tener las personas diabéticas?
+    - que cuidados debe tener un diabetico?
+    - ¿Cuáles son los cuidados de un diabético?
+    - ¿Qué cuidados debe tener una persona con diabetes?
 - intent: prevencion
   examples: |
     - ¿Cómo la prevengo?
@@ -644,6 +660,9 @@ nlu:
     - ¿Por qué debo tener buenos hábitos?
     - ¿Por qué debería tener buenos hábitos?
     - ¿Por qué consideras que es bueno tener hábitos buenos?
+    - ¿Por qué es bueno hacer ejercicio?
+    - ¿Por qué debo hacer ejercicio?
+    - ¿Por qué ejercitarme?
 - intent: complicaciones
   examples: |
     - ¿Qué complicaciones trae la diabetes?
@@ -666,6 +685,8 @@ nlu:
     - ¿Y cuáles consideras son malos hábitos?
     - Dame ejemplos de malos hábitos.
     - ¿Qué hábitos no debe tener el paciente?
+    - Dime malos habitos
+    - ¿Cuáles consideras que son malos habitos?
 - intent: decir_causas
   examples: |
     - ¿Puedes decirme las causas de la diabetes?
@@ -675,6 +696,7 @@ nlu:
     - Explícame las causas de la diabetes.
     - ¿Cuáles son las principales causas de la diabetes?
     - ¿Qué genera la diabetes?
+    - ¿Qué causa la diabetes en las personas?
 - intent: explica_tipo_diabetes
   examples: |
     - Qué es la diabetes tipo [1](tipo)?
@@ -682,6 +704,10 @@ nlu:
     - En qué consiste la diabetes tipo [2](tipo)?
     - En qué consiste la diabetes tipo [II](tipo)?
     - Define la diabetes [gestacional](tipo)
+    - ¿Me puedes dar más información de la diabetes tipo [1](tipo)?
+    - ¿Qué es la diabetes tipo [uno](tipo)?
+    - Dime en ¿qué consiste la diabetes tipo [dos](tipo)?
+    - ¿Cómo es la diabetes tipo [tres](tipo)?
     - Explicame la diabetes [gestacional](tipo)
     - Diabetes tipo [1](tipo)
     - Diabetes tipo [2](tipo)
@@ -711,9 +737,6 @@ nlu:
     - ¿Me puedes decir qué es la hiperglucemia?
     - ¿Cómo se le llama a eso que te da cuando tienes el azúcar alta?
     - ¿Qué es lo que pasa cuando se tiene alta la glucosa?
-    - ¿Qué sería lo contrario a la hipoglucemia?
-    - ¿Qué es lo contrario a la hipoglucemia?
-    - Dime lo contrario a la hipoglucemia.
     - ¿En qué consiste la hiperglucemia?
     - ¿Cómo sé si tengo hiperglucemia?
     - ¿Cómo saber si el paciente tiene hiperglucemia?
@@ -732,6 +755,7 @@ nlu:
     - Proporciona una liga de interés.
     - ¿Tienes ligas de interés?
     - Dame alguna de las fuentes de información que usas.
+    - tienes alguna fuente que me compartas?
 - intent: obtener_videos
   examples: |
     - ¿Podrías mandarme un vídeo sobre este tema?
@@ -772,10 +796,6 @@ nlu:
     - Explícame qué es la hipoglucemia.
     - ¿Cómo se le llama cuando el nivel de azúcar es muy bajo?
     - ¿Cómo se le dice cuando se tiene el azúcar baja?
-    - ¿Qué sería lo contrario a la hiperglucemia?
-    - ¿Qué es lo contrario a la hiperglucemia?
-    - Dime lo contrario a la hiperglucemia.
-    - Dime los síntomas de la hipoglucemia.
     - ¿En qué consiste la hipoglucemia?
     - ¿Cómo saber si tengo hipoglucemia?
     - ¿Cómo sé si mi paciente tiene hipoglucemia?
@@ -833,6 +853,7 @@ nlu:
     - Antes de ingerir alimentos era de [120.5](glucosa_antes) y después de comer pasó a [135](glucosa_despues)
     - Antes de comer era de [99.4](glucosa_antes) y después de comer subió a [120.4](glucosa_despues)
     - Primero fue de [100](glucosa_antes) y después [115.4](glucosa_despues)
+    - Antes de comer era de [85](glucosa_antes) y despues de comer pasó a [100](glucosa_despues)
 - intent: sospecha_diabetes
   examples: |
     - ¿Cómo sé si tengo diabetes?
@@ -894,6 +915,7 @@ nlu:
     - Tengo un dolor punzante en la [cabeza](dolor)
     - Tengo un dolor que no se me quita en el [estomago](dolor)
     - Me duele la [panza](dolor)
+    - Me duelen los [oídos](dolor)
     - Al paciente le duele la [cabeza](dolor)
 - intent: tipo_mas_peligroso
   examples: |
@@ -993,6 +1015,7 @@ nlu:
   examples: |
     - ¿Dime cómo cuidar los nervios?
     - ¿Y cómo se cuidan los nervios?
+    - ¿Cómo puedo cuidarme del daño y afectaciones a los nervios?
     - ¿Me podrías decir cómo cuidar mis nervios?
     - ¿Tienes consejos de cómo cuidar los nervios?
     - ¿Dame consejos sobre cómo se cuida a los nervios?
@@ -1015,6 +1038,7 @@ nlu:
     - ¿Qué daños a los nervios se presentan en la diabetes?
     - ¿Qué nervios son afectados por la diabetes?
     - ¿Qué tipo de nervios son afectados por la diabetes?
+    - ¿Qué nervios son afectados por la diabetes?
 - intent: conocer_tipo_dano_nervios
   examples: |
     - En qué consiste el daño a los nervios [perifericos](nervios)?
@@ -1037,6 +1061,7 @@ nlu:
     - ¿La diabetes genera enfermedades en los pies?
     - La diabetes afecta a los pies ¿verdad?
     - ¿La diabetes afecta a los pies?
+    - ¿Cómo daña la diabetes a los pies?
 - intent: cuidados_pies
   examples: |
     - ¿Cómo cuidar los pies?
@@ -1114,6 +1139,9 @@ nlu:
     - ¿Cómo es la dieta de una persona con diabetes tipo 1?
     - ¿Cómo se debe cuidar a un paciente con diabetes tipo 1?
     - ¿Cuáles son los cuidados que deben tener las personas con diabetes tipo 1?
+    - ¿Cuáles son los cuidados de la diabetes tipo uno?
+    - ¿Cómo se cuida a alguien que tiene diabetes tipo uno?
+    - ¿Cómo me cuido de la diabetes tipo 1
 - intent: causas_diabetes_por_tipo
   examples: |
     - ¿Podrías decirme qué causa la diabetes tipo [1](tipo)?
@@ -1134,6 +1162,8 @@ nlu:
     - Dime algo sobre las causas de la diabetes tipo [2](tipo) 
     - ¿Conoces las principales causas de la diabetes tipo [II](tipo)?
     - ¿Cuales crees que sean las causas de la diabetes tipo [II](tipo)?
+    - Dime las causas de la diabetes tipo [uno](tipo)
+    - ¿Cuáles son las causas de la diabetes tipo [dos](tipo)?
 - intent: diabetes_mas_comun
   examples: |
     - ¿Cuál es la diabetes más común en México?
@@ -1169,6 +1199,8 @@ nlu:
     - Explicame los factores de riesgo de la diabetes tipo [2](tipo)
     - ¿Existen factores de riesgo para la diabetes tipo [II](tipo)?
     - Hay factores de riesgo para la diabetes tipo [2](tipo)
+    - En qué consisten los sintomas de la diabetes tipo [uno](tipo)
+    - Dime los síntomas de la diabetes tipo [dos](tipo)
 - intent: factores_de_riesgo_diabetes_tipo_1
   examples: |
     - Dime los factores de riesgo de la diabetes tipo 1
@@ -1179,8 +1211,11 @@ nlu:
     - Explicame los factores de riesgo de la diabetes tipo 1
     - ¿Existen factores de riesgo para la diabetes tipo I?
     - Hay factores de riesgo para la diabetes tipo 1
+    - Dime los factores de riesgo de la diabetes tipo 1
+    - Cuáles son los factores de riesgo de la diabetes tipo 1?
     - ¿Quiénes están en riesgo de tener diabetes tipo 1?
     - ¿Quiénes están en riesgo de padecer diabetes tipo 1?
+    - ¿Cuáles son los factores de riesgo de la diabetes tipo uno
 - intent: explica_cetoacidosis_diabetica
   examples: |
     - ¿Y qué es la DKA?
@@ -1212,6 +1247,8 @@ nlu:
     - ¿Sabes cómo se maneja la diabetes de tipo [2](tipo)?
     - Dime como tratar la diabetes tipo [2](tipo)
     - Cómo se trata la diabetes tipo [II](tipo)
+    - ¿Cómo se maneja la diabetes tipo [uno](tipo)?
+    - ¿Cómo se controla la diabetes tipo [dos](tipo)?
 - intent: edad_diabetes_tipo
   examples: |
     - ¿Sabes a qué edad puede dar la diabetes tipo [1](tipo)?
@@ -1232,6 +1269,8 @@ nlu:
     - ¿Cuál es la edad promedio de los pacientes con diabetes de tipo [2](tipo)?
     - ¿A qué edad con que frecuencia se dan mas casos de diabetes tipo [2](tipo)?
     - ¿Conoces las edades más comunes donde da diabetes tipo [II](tipo)?
+    - A ¿qué edad es más común desarrollar diabetes tipo [uno](tipo)?
+    - ¿A qué edad te da diabetes tipo [dos](tipo)?
 - intent: azucar_alta
   examples: |
     - ¿Es malo tener el azúcar alta?
@@ -1325,6 +1364,7 @@ nlu:
     - ¿Cómo saber si se tiene cetoacidosis?
     - ¿Y cómo me puedo dar cuenta de que tengo la cetoacidosis diabética?
     - ¿Cómo sé si mi paciente tiene cetoacidosis diabética?
+    - Cuales son los sintomas de la cetoacidosis diabética?
     - ¿Qué síntomas presenta una persona con cetoacidosis?
     - ¿Qué signos muestra una persona de tener cetoacidosis diabética?
 - intent: causas_cetoacidosis
@@ -1455,6 +1495,7 @@ nlu:
     - ¿Cómo sería el tratamiento para una persona con diabetes gestacional?
     - Explícame cómo es el tratamiento para un paciente con diabetes gestacional.
     - ¿Cómo es el tratamiento para las personas con diabetes gestacional?
+    - Qué tratamiento se hace con la diabetes gestacional?
 - intent: conocer_metodos_deteccion
   examples: |
     - ¿Cómo se detecta la diabetes?
@@ -2265,6 +2306,7 @@ nlu:
     - ¿Si tengo 139mg/DL de colesterol es malo?
     - ¿Si tengo 150 de colesterol consideras que es malo?
     - ¿Es bueno tener el colesterol a 90?
+    - ¿Cuándo se considera que el nivel de colesterol en pacientes diabéticos es elevado?
 - intent: reducir_colesterol_LDL
   examples: |
     - ¿Cómo puedo reducir mi nivel de LDL?
@@ -2391,6 +2433,7 @@ nlu:
     - Dime las complicaciones de los infartos
     - ¿Existen complicaciones ocasionadas por los ataques al corazón?
     - ¿Qué complicaciones tienen los ataques cardiacos?
+    - ¿Me puedo morir de un paro cardíaco si tengo diabetes?
 - intent: prevencion_ataque_cardiaco
   examples: |
     - ¿Cómo puedo prevenir un ataque al corazón?
@@ -2415,6 +2458,254 @@ nlu:
     - ¿Normalmente, cuánto pesan las personas con diabetes?
     - ¿Conoces el peso de las personas diabéticas?
     - ¿Cómo es el peso de los pacientes que tienen diabetes?
+    - ¿Cuál es el promedio de peso de las personas que tienen diabetes?
+    - ¿Entre cuántos kilos andan las personas con diabetes?
+    - ¿Cuánto llegan a pesar las personas con diabetes?
+    - ¿Cuál es la media del peso de las personas con diabetes?
+- intent: antecedentes_diabeticos
+  examples: |
+    - ¿Qué características tienen los familiares de las personas diabéticas?
+    - ¿Cuál es el perfil familiar de las personas con diabetes?
+    - ¿Qué padecimientos tienen los familiares de las personas diabéticas?
+    - ¿Qué antecedentes familiares tienen las personas con diabetes??
+    - ¿Qué enfermedades suelen tener los familiares cercanos a los pacientes de diabetes?
+    - ¿Qué padecimientos tienen los papás de los diabéticos?
+    - ¿Qué características tienen los familiares de los pacientes con diabetes?
+- intent: imc_diabeticos
+  examples: |
+    - ¿Conoces el promedio de IMC de las personas con diabetes?
+    - ¿Sabes cuál es la media del índice de masa corporal de las personas con diabetes?
+    - Dime cuál es el imc de las personas con diabetes
+    - Necesito saber más o menos en qué rango se encuentra el índice de masa corporal de los pacientes diabéticos
+    - ¿Hay alguna estadística sobre el IMC de los pacientes diabéticos?
+    - ¿Qué tan alto es el IMC de los pacientes con diabetes?
+    - ¿Podrías decirme el IMC medio de las personas diagnosticadas con diabetes?
+    - ¿Cuál es el IMC promedio de los pacientes que tienen diabetes?
+    - ¿Cuál es el IMC típico de las personas que tienen diabetes?
+    - ¿Puedes proporcionar información sobre el IMC de los pacientes diabéticos?
+    - ¿Cuál es el rango de IMC común entre las personas con diabetes?
+    - ¿Qué tan alto suele ser el IMC de los pacientes diagnosticados con diabetes?
+    - ¿Con qué frecuencia los pacientes diabéticos tienen un IMC elevado?
+    - ¿Cuál es la distribución del IMC en la población diabética?
+    - ¿Hay alguna tendencia en el IMC de las personas que sufren de diabetes?
+    - ¿Cómo varía el IMC entre los pacientes con diferentes tipos de diabetes? 
+    - ¿Qué tan común es que las personas con diabetes tengan un IMC alto?
+- intent: edades_diabeticos
+  examples: |
+    - ¿Cuál es la edad común de los pacientes de diabetes?
+    - ¿Cuál es la edad promedio de diagnóstico de la diabetes?
+    - ¿A qué edad suelen desarrollar diabetes las personas?
+    - ¿Hay una edad específica en la que las personas son más propensas a desarrollar diabetes?
+    - ¿Cuál es la edad promedio de inicio de la diabetes en la población?
+    - ¿A qué edad es más común que las personas sean diagnosticadas con diabetes?
+    - ¿Existe una edad específica en la que las personas son más susceptibles a desarrollar diabetes?
+    - ¿Cuál es la edad mínima y máxima en la que se diagnostica la diabetes comúnmente?
+    - ¿Cuál es la tendencia de edad en el diagnóstico de diabetes en los últimos años?
+    - ¿Cuál es la edad promedio de los pacientes de diabetes?
+- intent: condicion_pacientes_diabeticos
+  examples: |
+    - ¿Cuáles son los diferentes biotipos de los pacientes con diabetes?
+    - ¿Qué tipos de biotipo se observan con mayor frecuencia en pacientes diabéticos?
+    - ¿Cuáles son las diferentes condiciones de los pacientes con diabetes?
+    - ¿Qué tipos de condiciones se observan en los pacientes de diabetes?
+    - ¿Hay algún patrón o tendencia en los biotipos de los pacientes diagnosticados con diabetes?
+    - ¿Cuál es la distribución de biotipos entre los pacientes que tienen diabetes?
+    - ¿Existen biotipos específicos que se asocien con un mayor riesgo de desarrollar diabetes?
+    - ¿Cuál es la frecuencia de cada biotipo en la población diabética?
+    - ¿Qué tipos de biotipos son más comunes en los pacientes diabéticos?
+    - ¿Cuál es la distribución de biotipos en una muestra representativa de pacientes diabéticos?
+    - ¿Cuál es la condición física de los pacientes con diabetes?
+    - ¿Qué condición física tienen las personas con diabetes?
+- intent: temperaturas_pacientes_diabeticos
+  examples: |
+    - ¿Cuál es la temperatura corporal promedio de los pacientes diabéticos?
+    - ¿Sabes cuál es la temperatura corporal más alta registrada en pacientes con diabetes?
+    - Dime la temperatura corporal de los pacientes diabéticos
+    - ¿Se ha observado algún patrón en las temperaturas corporales de los pacientes diabéticos?
+    - ¿Se ha encontrado alguna correlación entre las temperaturas corporales de los pacientes diabéticos y otros parámetros clínicos?
+    - ¿Cuánto suelen variar las temperaturas corporales de los pacientes diabéticos?
+    - ¿Cuál es la temperatura corporal más baja registrada en pacientes diabéticos?
+    - ¿Cuál es el rango normal de temperatura corporal para los pacientes diabéticos?
+    - Normalmente ¿cuál es la temperatura corporal de las personas con diabetes?
+    - Dime ¿Cuál es la media de la temperatura corporal de las personas con diabetes?
+- intent: estaturas_pacientes_diabeticos
+  examples: |
+    - ¿Cuál es el rango de estaturas común entre los pacientes diabéticos?
+    - ¿Existen diferencias significativas en la estatura de los pacientes diabéticos en comparación con la población general?
+    - ¿Se ha investigado si hay una relación entre la estatura y el tipo de diabetes en los pacientes diagnosticados?
+    - ¿Cuáles son las tendencias en las estaturas de los pacientes diabéticos en diferentes grupos de edad?
+    - Normalmente ¿cuál es la estatura de un paciente de diabetes?
+    - Dime ¿cuál es la estatura promedio de un paciente diabético?
+    - ¿Cuál es el promedio de estatura de los pacientes de diabetes?
+    - ¿Cuál es la media de estatura de pacientes diabéticos?
+    - ¿Cuál es la estatura promedio de los pacientes con diabetes?
+    - ¿Qué tan variada es la estatura entre los pacientes diabéticos?
+    - ¿Las personas más altas tienen un mayor riesgo de desarrollar diabetes tipo 2?
+    - ¿Cómo se compara la estatura de los pacientes diabéticos con la de la población general?
+    - ¿Cuánta variabilidad existe en la estatura de los pacientes con diabetes?
+    - ¿Cuál es la distribución de estaturas entre los pacientes diabéticos?
+    - ¿Cuánto mide un paciente con diabetes?
+    - ¿Cuánto mide un diabético?
+    - ¿Cuánto mide una persona con diabetes?
+- intent: presiones_pacientes_diabeticos
+  examples: |
+    - ¿Cómo varían las presiones arteriales entre los pacientes con diabetes?
+    - ¿Cuál es el rango de presión arterial común en los pacientes diabéticos?
+    - ¿Qué tan comunes son las presiones arteriales elevadas en pacientes con diabetes?
+    - ¿Hay algún patrón en las presiones arteriales de los pacientes diabéticos a lo largo del tiempo?
+    - ¿Cuáles son los valores normales de presión arterial para los pacientes con diabetes?
+    - Normalmente ¿Cuáles son los valores regulares de presión de un paciente con diabetes?
+    - ¿Cuáles son los valores de la presión sistólica y diastólica de pacientes con diabetes?
+    - ¿Cuál es el valor de presión sistólica de los pacientes diabéticos?
+    - ¿Cuál es el valor de presión diastólica de pacientes con diabetes?
+    - ¿Cuál dirías que es el promedio de presiones en los pacientes con diabetes?
+    - ¿Qué valores de presión son recurrentes en los pacientes con diabetes?
+    - ¿Cómo son los valores de presión en las personas diabéticas?
+- intent: frecuencia_respiratoria_pacientes_diabeticos
+  examples: |
+    - ¿Cuál es el rango normal de frecuencia respiratoria en pacientes diabéticos?
+    - ¿Cómo se mide la frecuencia respiratoria en pacientes con diabetes?
+    - ¿Existen diferencias en la frecuencia respiratoria entre pacientes diabéticos tipo 1 y tipo 2?
+    - ¿Cuál es el promedio de frecuencia respiratoria en pacientes diabéticos?
+    - ¿Qué se considera una frecuencia respiratoria anormal en pacientes diabéticos?
+    - Normalmente ¿cuál es la frecuencia respiratoria de un paciente con diabetes?
+    - ¿Cuál dirías que es la frecuencia respiratoria común en pacientes de diabetes?
+    - ¿Cuál es la media de frecuencias respiratorias presentadas en pacientes de diabetes?
+    - ¿Cuál es el valor normal de frecuencia respiratoria en una persona con diabetes?
+    - Dime más o menos ¿dónde recae el valor de la frecuencia respiratoria de las personas con diabetes?
+    - ¿Podrías decirme cómo es la frecuencia respiratoria de los pacientes de diabetes?
+    - ¿Cómo es la frecuencia respiratoria de las personas con diabetes?
+- intent: frecuencia_cardiaca_pacientes_diabeticos
+  examples: |
+    - ¿Cuál es el rango normal de frecuencia cardiaca en los pacientes de diabetes?
+    - ¿Cuál es el rango normal de frecuencia cardiaca en pacientes diabéticos?
+    - ¿Cómo se mide la frecuencia cardiaca en pacientes con diabetes?
+    - ¿Cómo se mide la frecuencia cardiaca en los pacientes diabéticos?
+    - ¿Cuál es el promedio de frecuencia cardiaca registrada en pacientes de diabetes?
+    - ¿Qué se considera una frecuencia cardiaca anormal en una persona con diabetes?
+    - Normalmente ¿cuál es la frecuencia cardiaca de un paciente con diabetes?
+    - ¿Cuál dirías qué es la frecuencia cardiaca común en pacientes diabéticos?
+    - ¿Cuál es la media de frecuencias cardiacas presentadas en pacientes de diabetes?  
+    - ¿Cuál es el valor normal de frecuencia cardiaca en una persona con diabetes?
+    - Dime más o menos ¿dónde recae el valor de la frecuencia cardiaca de las personas con diabetes?
+    - ¿Podróas decirme cómo es la frecuencia cardiaca de los pacientes de diabetes?
+    - ¿Cómo es la frecuencia cardiaca de las personas con diabetes?
+- intent: colesterol_pacientes_diabeticos
+  examples: |
+    - ¿Cuál es el nivel promedio de colesterol total en pacientes diabéticos?
+    - ¿Existen diferencias en los niveles de colesterol entre pacientes diabéticos y no diabéticos?
+    - ¿Cuáles son los riesgos asociados con niveles elevados de colesterol en pacientes diabéticos?
+    - ¿Cuál es el rango considerado como normal para el colesterol total en pacientes diabéticos?
+    - ¿Cómo es el nivel de colesterol en una persona con diabetes?
+    - ¿Cómo son los niveles de colesterol en los pacientes con diabetes?
+    - ¿Podrías decirme cómo son los niveles de colesterol en las personas con diabetes?
+    - ¿Cuál es el nivel de colesterol normal en un paciente de diabetes?
+    - ¿Cuál es el promedio de colesterol total en las personas diabéticas?
+    - ¿Sabes cuál es la media de colesterol registrado en pacientes con diabetes?
+    - ¿Conoces el valor promedio de colesterol en los pacientes con diabetes?
+    - ¿Qué niveles de colesterol tienen los diabéticos?
+    - ¿Qué niveles de colesterol tienen las personas con diabetes?
+    - ¿Cómo es el colesterol de las personas con diabetes?
+- intent: glucosa_pacientes_diabeticos
+  examples: |
+    - ¿Cómo son los niveles de glucosa en los pacientes diabéticos?
+    - ¿Cómo son los niveles de azúcar en los pacientes con diabetes?
+    - ¿Cómo se cuando tengo la glucosa alta?
+    - ¿Qué nivel de glucosa es el estable para un paciente de diabetes?
+    - ¿Cómo es el nivel de azúcar en una persona con diabetes?
+    - ¿Cómo es el nivel de glucosa en una persona que tiene diabetes?
+    - ¿Sabes cómo son los niveles de glucosa en un diabético?
+    - ¿Cuál es la variabilidad de los niveles de glucosa en los pacientes diabéticos?
+    - ¿Cuál es el rango normal de glucosa en sangre para una persona con diabetes?
+    - ¿Cuál es el promedio de glucosa registrado en pacientes de diabetes?
+    - ¿Conoces cuál es la media de glucosa registrado en paciente diabéticos?
+    - Dime ¿cuál es medida de glucosa de las personas con diabetes?
+    - ¿Cuál es el valor típido de glucosa en las personas con diabetes?
+    - Normalmente ¿cuál es el valor de glucosa constante en personas con diabetes?
+    - ¿Cuál es el promedio de glucosa en las personas con diabetes?
+    - Dime ¿cómo son los niveles de glucosa en los pacientes que tienen diabetes?
+    - ¿Qué nivel de azúcar tiene una persona con diabetes?  
+- intent: insulina_pacientes_diabeticos
+  examples: |
+    - ¿Cómo son los niveles de insulina en los pacientes diabéticos?
+    - ¿Cómo son los niveles de insulina en los pacientes con diabetes?
+    - ¿Cómo es el nivel de insulina en una persona con diabetes?
+    - ¿Cómo es el nivel de insulina en una persona que tiene diabetes?
+    - ¿Sabes cómo son los niveles de insulina en un diabético?
+    - ¿Cuál es la variabilidad de los niveles de insulina en los pacientes diabéticos?
+    - ¿Cuál es el rango normal de insulina en sangre para una persona con diabetes?
+    - ¿Cuál es el promedio de insulina registrado en pacientes de diabetes?
+    - ¿Conoces cuál es la media de insulina registrado en paciente diabéticos?
+    - Dime ¿cuál es medida de insulina de las personas con diabetes?
+    - ¿Cuál es el valor típido de insulina en las personas con diabetes?
+    - Normalmente ¿cuál es el valor de insulina constante en personas con diabetes?
+    - ¿Cuál es el promedio de insulina en las personas con diabetes?
+    - Dime ¿cómo son los niveles de insulina en los pacientes que tienen diabetes?  
+- intent: generos_pacientes_diabeticos
+  examples: |
+    - ¿Cuál es la distribución por género de los pacientes con diabetes en México?
+    - ¿Hay diferencias en la prevalencia de la diabetes entre hombres y mujeres?
+    - ¿Cómo afecta el género al riesgo de desarrollar complicaciones relacionadas con la diabetes?
+    - ¿Cuál es la influencia del género en la respuesta al tratamiento para la diabetes?
+    - ¿Cuál es la proporción de hombres y mujeres entre los pacientes diabéticos?
+    - ¿Cómo se distribuyen los casos de diabetes según el género en nuestra población?
+    - ¿Existe alguna diferencia en la incidencia de la diabetes entre hombres y mujeres?
+    - ¿Qué porcentaje de hombres tienen diabetes?
+    - ¿Qué porcentaje masculino tiene diabetes?
+    - ¿Qué porcentaje femenino padece diabetes?
+    - ¿Cuántas mujeres tienen diabetes en México?
+    - ¿Cuántos hombres tienen diabetes en México?
+    - ¿Los hombres son más propensos a desarrollar diabetes?
+    - ¿Las mujeres son propensas a tener diabetes?
+    - ¿Es cierto que hay más hombres diabéticos que mujeres?
+    - ¿Hay más hombres con diabetes que mujeres?
+    - ¿Qué género predomina en la diabetes?
+    - ¿Qué sexo es más común en la diabetes?
+    - ¿Qué genero predomina en los pacientes de diabetes?
+- intent: medicamentos_pacientes_diabeticos
+  examples: |
+    - ¿Qué medicamento recomiendas para la [diabetes](padecimiento)?
+    - ¿Qué medicina es buena para la [diabetes](padecimiento)?
+    - ¿Qué recomiendas para la [diabetes](padecimiento)?
+    - ¿Qué medicamento es bueno para tratar la [diabetes](padecimiento)?
+    - ¿Qué debo tomar para la [diabetes](padecimiento)?
+    - ¿Conoces algún medicamento para la [glucosa](padecimiento)?
+    - Quiero medicamento para tratar la [glucosa](padecimiento)
+    - ¿Conoces alguna medicina para la [glucosa](padecimiento)?
+    - Requiero medicamento para la [glucosa](padecimiento)
+    - ¿Qué medicina para la [glucosa](padecimiento) debe tomar un paciente de diabetes? 
+    - ¿Qué [insulina](padecimiento) se recomienda a los pacientes?
+    - ¿Qué clase de [insulina](padecimiento) debo consumir?
+    - ¿Qué se debe tomar para controlar la [insulina](padecimiento)?
+    - ¿Qué medicamentos toman los diabéticos para la [insulina](padecimiento)?
+    - ¿Qué tratamiento siguen los pacientes de diabetes para la [insulina](padecimiento)?
+- intent: imc_peligroso
+  examples: |
+    - ¿Qué IMC es peligroso?
+    - ¿Qué índice de masa corporal es peligroso?
+    - ¿Qué imc se considera riesgoso?
+    - ¿Qué índice de masa corporal es malo?
+    - ¿Crees que con ese IMC pueda desarrollar diabetes?
+- intent: costo_tratamiento
+  examples: |
+    - ¿Qué tan costoso es el tratamiento de diabetes?
+    - ¿Es caro el tratamiento de la diabetes?
+    - ¿Qué tan caro es en México el tratamiento de la diabetes?
+    - ¿Cuánto gasta una persona con diabetes por su tratamiento?
+    - ¿Cuánto se gasta al mes por el tratamiento de diabetes?
+    - ¿Qué tanto se gasta por la diabetes?
+    - ¿Se gasta mucho dinero en el tratamiento de la diabetes?
+    - ¿Qué tanto se gasta una persona al mes por su tratamiento de diabetes?
+    - ¿Es caro el medicamento de la diabetes?
+    - ¿Es costosa la medicina de la diabetes?
+- intent: perdida_peso
+  examples: |
+    - ¿La diabetes solo te provoca pérdida de peso o también puedes aumentar de peso?
+    - ¿Por qué la diabetes provoca pérdida de peso?
+    - ¿Por qué se baja de peso cuando se tiene diabetes?
+    - ¿Por qué la gente baja de peso cuando tiene diabetes?
+    - ¿Qué hace que bajes de peso con la diabetes?
+    - ¿Por qué los pacientes de diabetes bajan mucho de peso?
 - synonym: masculino
   examples: |
     - Masculino
@@ -2426,6 +2717,9 @@ nlu:
 - synonym: diabetes
   examples: |
     - diabolica
+- synonym: promedio
+  examples: |
+    - media
 - synonym: pies
   examples: |
     - pie

@@ -53,11 +53,11 @@ class ActionExplicaTipos(Action):
             tipo = tracker.get_slot("tipo")
             tipo = tipo.upper()
             
-            if tipo == "1":
+            if tipo == "1" or tipo == "UNO":
                 tipo = "I"
-            elif tipo == "2":
+            elif tipo == "2" or tipo == "DOS":
                 tipo = "II"
-            elif tipo == "3":
+            elif tipo == "3" or tipo == "TRES":
                 tipo = "III"
             
             explicaciones = {
@@ -183,7 +183,7 @@ class ActionCalcularIMC(Action):
             peso = float(tracker.get_slot("peso")) if tracker.get_slot("peso") else None
             estatura = float(tracker.get_slot("estatura")) if tracker.get_slot("estatura") else None
 
-            onto = get_ontology("OntologiaUAM.owx")
+            onto = get_ontology("RedOntológica/datosRFD.owl")
 
             with onto:
                 class Persona(Thing): pass
@@ -800,12 +800,6 @@ class ActionMandaImagen(Action):
                         "La presión arterial elevada puede empeorar y convertirse en una afección crónica llamada “hipertensión arterial”. La hipertensión daña los órganos del cuerpo. Además, aumenta el riesgo de sufrir ataques cardíacos, insuficiencia cardíaca, accidentes cerebrovasculares, aneurismas e insuficiencia renal.\n\nFUENTE: https://www.mayoclinic.org/es/diseases-conditions/prehypertension/symptoms-causes/syc-20376703"
                     ],
                     "imagenes": [None]
-                },
-                "conocer_peso_diabeticos": {
-                    "mensajes": [
-                        "De acuerdo con los datos de pacientes almacenados en una Red Ontológica de expedientes de diabetes, estas son las edades más frecuentes:"
-                    ],
-                    "imagenes": ["https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/pesos_pacientes.png"]
                 }
             }
             
@@ -1150,9 +1144,9 @@ class ActionCausasDiabetes(Action):
             tipo = tracker.get_slot("tipo")
             tipo = tipo.upper()
             
-            if tipo == "1":
+            if tipo == "1" or tipo == "UNO":
                 tipo = "I"
-            elif tipo == "2":
+            elif tipo == "2" or tipo == "DOS":
                 tipo = "II"
             
             explicaciones = {
@@ -1193,9 +1187,9 @@ class ActionSintomasDiabetes(Action):
             tipo = tracker.get_slot("tipo")
             tipo = tipo.upper()
             
-            if tipo == "1":
+            if tipo == "1" or tipo == "UNO":
                 tipo = "I"
-            elif tipo == "2":
+            elif tipo == "2" or tipo == "DOS":
                 tipo = "II"
             
             explicaciones = {
@@ -1235,9 +1229,9 @@ class ActionEdadDiabetes(Action):
             tipo = tracker.get_slot("tipo")
             tipo = tipo.upper()
             
-            if tipo == "1":
+            if tipo == "1" or tipo == "UNO":
                 tipo = "I"
-            elif tipo == "2":
+            elif tipo == "2" or tipo == "DOS":
                 tipo = "II"
             
             explicaciones = {
@@ -1277,9 +1271,9 @@ class ActionManejarDiabetes(Action):
             tipo = tracker.get_slot("tipo")
             tipo = tipo.upper()
             
-            if tipo == "1":
+            if tipo == "1" or tipo == "UNO":
                 tipo = "I"
-            elif tipo == "2":
+            elif tipo == "2" or tipo == "DOS":
                 tipo = "II"
             
             explicaciones = {
@@ -1304,6 +1298,418 @@ class ActionManejarDiabetes(Action):
         
         bitacoraBD("action_edad_diabetes", estado)
         return [SlotSet("tipo", None)]
+
+class ActionConsultasRed(Action):
+    
+    def name(self) -> Text:
+        return "action_consultas_red"
+    
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+                
+        try:
+            # Cargar las ontologías RDF/XML
+            onto = Graph()
+            onto.parse(".\\RedOntológica\\datosRDF.owl", format="xml")
+
+            onto2 = Graph()
+            onto2.parse(".\\RedOntológica\\personaRDF.owl", format="xml")
+
+            onto3 = Graph()
+            onto3.parse(".\\RedOntológica\\med_atc_rdf.owl", format="xml")
+
+            onto4 = Graph()
+            onto4.parse(".\\Red\\red_nodos_RDF.owl.xml", format="xml")
+
+            # Definir los prefijos
+            prefijo = """
+                PREFIX paciente: <http://www.modelo.org/datos#>
+                PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            """
+
+            prefijo2 = """
+                PREFIX paciente: <http://www.personas-mexico.org/persona#>
+                PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            """
+
+            prefijo3 = """
+                PREFIX medicamento: <http://www.medicamentos-mexico.org/medicamento#>
+                PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            """
+            
+            ultima_intencion = tracker.latest_message['intent']['name']
+            estado = "EXITO"
+            
+            if ultima_intencion == "conocer_peso_diabeticos":
+                sparql_query = prefijo + """
+                    SELECT ?nota ?peso ?analisis
+                    WHERE {
+                        ?nota paciente:tienePeso ?peso .
+                        ?nota paciente:tieneAnalisis ?analisis .
+                        ?nota a paciente:Nota_Medica .
+                    }
+                """
+                query = prepareQuery(sparql_query)
+
+                pesos = []
+                padecimiento_buscar = "DIABETES"
+
+                for row in onto.query(query):
+                    if padecimiento_buscar in row.analisis.upper() and float(row.peso) > 0:
+                        pesos.append(float(row.peso))
+            
+                prom = sum(pesos) / len(pesos)
+                mensaje = "De acuerdo con registros de pacientes de Diabetes el promedio de los pesos es de " + str(prom) + " kg. Mientras que el peso más bajo registrado es de " + str(min(pesos)) + " kg. Y el peso más alto es de " + str(max(pesos)) + " kg."
+                dispatcher.utter_message(mensaje)
+                dispatcher.utter_message("Te he generado una gráfica con los datos recopilados de pacientes de diabetes en relación a su peso, espero te sirva")
+                dispatcher.utter_message(image="https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/pesos_pacientes.png")
+            
+            elif ultima_intencion == "antecedentes_diabeticos":
+                sparql_query = prefijo + """
+                    SELECT ?historia ?antecedentes
+                    WHERE {
+                        ?historia paciente:tieneAntecedentesHeredoFamiliares ?antecedentes .
+                        ?historia a paciente:Historia_Clinica .
+                    }
+                """
+                query = prepareQuery(sparql_query)
+
+                dispatcher.utter_message("No tengo mucha información al respecto pero hay pacientes que cuentan con familiares con los siguientes antecedentes:")
+                for row in onto.query(query):
+                    dispatcher.utter_message(row.antecedentes)
+            
+            elif ultima_intencion == "imc_diabeticos":
+                sparql_query = prefijo + """
+                    SELECT ?nota ?imc ?analisis
+                    WHERE {
+                        ?nota paciente:tieneIMC ?imc .
+                        ?nota paciente:tieneAnalisis ?analisis .
+                        ?nota a paciente:Nota_Medica .
+                    }
+                """
+                query = prepareQuery(sparql_query)
+
+                padecimiento_buscar = "DIABETES"
+                imcs = []
+    
+                for row in onto.query(query):
+                    if float(row.imc) != 0.0:
+                        if padecimiento_buscar in row.analisis.upper():
+                            imcs.append(float(row.imc))
+            
+                prom = sum(imcs) / len(imcs)
+                
+                mensaje = "De acuerdo con registros de pacientes de Diabetes en México el promedio del Índice de Masa Corporal se encuentra en " + str(prom) + "Mientras que el IMC más bajo registrado es de " + str(min(imcs)) + " Y el IMC más alto es de " + str(max(imcs))
+                dispatcher.utter_message(mensaje)
+                dispatcher.utter_message("Lo cual como puedes ver recae en la categoría del Sobrepeso, es por ello que no se debe bajar la guardia incluso si no se tiene obsesidad")
+                dispatcher.utter_message("Te generé una gráfica con la clasificación de los IMC de pacientes de diabetes en México, espero te sirva")
+                dispatcher.utter_message(image="https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/imc_pacientes.png")   
+                
+            elif ultima_intencion == "edades_diabeticos":
+                sparql_query = prefijo + """
+                    SELECT ?nota ?edad ?analisis
+                    WHERE {
+                        ?nota paciente:tieneEdad ?edad .
+                        ?nota paciente:tieneAnalisis ?analisis .
+                        ?nota a paciente:Nota_Medica .
+                    }
+                """
+                query = prepareQuery(sparql_query)
+
+                edades = []
+                padecimiento_buscar = "DIABETES"
+
+                for row in onto.query(query):
+                    if padecimiento_buscar in row.analisis.upper() and int(row.edad) > 0 and float(row.edad) < 1000:
+                        edades.append(float(row.edad))
+        
+                prom = sum(edades) / len(edades)
+                mensaje = "Con datos que consulté de pacientes de Diabetes en México encontré que el promedio de edad recae en " + str(prom) + " años. Mientras que el paciente más joven registrado es de " + str(min(edades)) + " años. Y el paciente mayor registrado es de " + str(max(edades)) + " años."
+                dispatcher.utter_message(mensaje)
+                dispatcher.utter_message("Si te das cuenta, la diabetes es más presente en personas de la tercera edad, también te generé una gráfica a partir de los datos, espero te sea de ayuda")
+                dispatcher.utter_message(image="https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/edades_pacientes.png")
+            
+            elif ultima_intencion == "condicion_pacientes_diabeticos":
+                dispatcher.utter_message("Me tomé la molestía de hacerte un gráfico donde se plasman los biotipos de pacientes de diabetes que consulté de una red ontológica, espero te sirva.")
+                dispatcher.utter_message(image="https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/biotipos_pacientes.png")
+            
+            elif ultima_intencion == "temperaturas_pacientes_diabeticos":
+                sparql_query = prefijo + """
+                    SELECT ?nota ?analisis ?temperatura
+                    WHERE {
+                        ?nota paciente:tieneAnalisis ?analisis .
+                        ?nota paciente:tieneTemperaturaCorporal ?temperatura .
+                        ?nota a paciente:Nota_Medica .
+                    }
+                """
+                query = prepareQuery(sparql_query)
+                padecimiento_buscar = "DIABETES"
+                temperaturas = []
+
+                for row in onto.query(query):
+                    if padecimiento_buscar in row.analisis.upper() and float(row.temperatura) > 0:
+                        temperaturas.append(float(row.temperatura))
+    
+                prom = sum(temperaturas) / len(temperaturas)
+                mensaje = "Acabo de hacer una consulta a una red ontológica con datos de pacientes de diabetes en México y me encontré que el promedio de las temperaturas corporales registradas es de " + str(prom) + " grados centígrados. Mientras que el temperatura más baja registrado es de " + str(min(temperaturas)) + " grados centígrados. Y la temperatura más alta fue de " + str(max(temperaturas)) + " grados centígrados."
+                dispatcher.utter_message(mensaje)
+                dispatcher.utter_message("También te hice una gráfica de dispersión donde puedes ver con mayor detalle las temperaturas registradas en pacientes de diabetes en México, espero te sirva")
+                dispatcher.utter_message(image="https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/temperaturas_pacientes.png")
+            
+            elif ultima_intencion == "estaturas_pacientes_diabeticos":
+                sparql_query = prefijo + """
+                    SELECT ?nota ?analisis ?talla
+                    WHERE {
+                        ?nota paciente:tieneAnalisis ?analisis .
+                        ?nota paciente:tieneTalla ?talla .
+                        ?nota a paciente:Nota_Medica .
+                    }
+                """
+                query = prepareQuery(sparql_query)
+                padecimiento_buscar = "DIABETES"
+                estaturas = []
+
+                for row in onto.query(query):
+                    if padecimiento_buscar in row.analisis.upper() and float(row.talla) > 0:
+                        estaturas.append(float(row.talla))
+    
+                prom = sum(estaturas) / len(estaturas)
+                mensaje = "Estuve consultando datos de pacientes de diabetes en México y pude encontrar que el promedio de estaturas era de " + str(prom) + " metros. Mientras que la estatura más baja registrada es de " + str(min(estaturas)) + " metros. Y la estatura más alta registrada es de " + str(max(estaturas)) + " metros."
+                dispatcher.utter_message(mensaje)
+                dispatcher.utter_message("Me tomé la libertad de generarte este diagrama de dispersión en el que puedes ver la tendencia de estaturas de los pacientes de diabetes, espero te sea de utilidad")
+                dispatcher.utter_message(image="https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/estaturas_pacientes.png")
+            
+            elif ultima_intencion == "presiones_pacientes_diabeticos":
+                sparql_query = prefijo + """
+                    SELECT ?nota ?analisis ?presionDistolica ?presionSistolica
+                    WHERE {
+                        ?nota paciente:tieneAnalisis ?analisis .
+                        ?nota paciente:tienePresionArterialDistolica ?presionDistolica .
+                        ?nota paciente:tienePresionArterialSistolica ?presionSistolica .
+                        ?nota a paciente:Nota_Medica .
+                    }
+                """
+                query = prepareQuery(sparql_query)
+                padecimiento_buscar = "DIABETES"
+                presionesDistolicas = []
+                presionesSistolicas = []
+
+                for row in onto.query(query):
+                    if padecimiento_buscar in row.analisis.upper() and int(row.presionDistolica) > 0 and int(row.presionSistolica) > 0 and int(row.presionDistolica) < 1000 and int(row.presionSistolica) < 1000:
+                        presionesDistolicas.append(int(row.presionDistolica))
+                        presionesSistolicas.append(int(row.presionSistolica))
+    
+                prom = sum(presionesDistolicas) / len(presionesDistolicas)
+                prom2 = sum(presionesSistolicas) / len(presionesSistolicas)
+                mensaje = "Acabo de consultar datos de pacientes de diabetes en México y encontré que el promedio de sus presiones diastólicas era de " + str(prom) + " mientras que las presiones sistólicas rondaban en " + str(prom2)
+                dispatcher.utter_message(mensaje)
+                dispatcher.utter_message("También aproveché los datos y te hice una gráfica de dispersión sobre los niveles de presión sistólica y diastólica de pacientes con diabetes, quizá te sea útil")
+                dispatcher.utter_message(image="https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/presiones_sanguineas_pacientes.png")
+            
+            elif ultima_intencion == "frecuencia_respiratoria_pacientes_diabeticos":
+                sparql_query = prefijo + """
+                    SELECT ?nota ?analisis ?frecuencia
+                    WHERE {
+                        ?nota paciente:tieneAnalisis ?analisis .
+                        ?nota paciente:tieneFrecuenciaRespiratoria ?frecuencia .
+                        ?nota a paciente:Nota_Medica .
+                    }
+                """
+                query = prepareQuery(sparql_query)
+                padecimiento_buscar = "DIABETES"
+                frecuencias = []
+    
+                for row in onto.query(query):
+                    if padecimiento_buscar in row.analisis.upper() and int(row.frecuencia) > 0:
+                        frecuencias.append(int(row.frecuencia))
+
+                prom = sum(frecuencias) / len(frecuencias)
+                mensaje = "Hice una consulta a datos de pacientes con diabetes en México y encontré que el promedio de las frecuencias respiratorias registradas era de " + str(prom) + " respiraciones por minuto, mientras que el valor de la frecuencia más baja fue de " + str(min(frecuencias)) + " respiraciones por minuto, y la frecuencia más alta fue de " + str(max(frecuencias)) + " respiraciones por minuto"
+                dispatcher.utter_message(mensaje)
+                dispatcher.utter_message("Asímismo te acabo de generar una gráfica donde puedes ver como se distribuyen las frecuencias respiratorias en los pacientes de diabetes, quizá te resulte útil")
+                dispatcher.utter_message(image="https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/frecuencias_respiratorias_pacientes.png")
+            
+            elif ultima_intencion == "frecuencia_cardiaca_pacientes_diabeticos":
+                sparql_query = prefijo + """
+                    SELECT ?nota ?analisis ?frecuencia
+                    WHERE {
+                        ?nota paciente:tieneAnalisis ?analisis .
+                        ?nota paciente:tieneFrecuenciaCardiaca ?frecuencia .
+                        ?nota a paciente:Nota_Medica .
+                    }
+                """
+                query = prepareQuery(sparql_query)
+                padecimiento_buscar = "DIABETES"
+                frecuencias = []
+    
+                for row in onto.query(query):
+                    if padecimiento_buscar in row.analisis.upper() and int(row.frecuencia) > 0:
+                        frecuencias.append(int(row.frecuencia))
+
+                prom = sum(frecuencias) / len(frecuencias)
+                mensaje = "Checando expedientes de pacientes con diabetes en México pude ver que el promedio de las frecuencias cardiacas era de " + str(prom) + " pulsaciones por minuto. Mientras qué el valor más bajo registrado cayó en " + str(min(frecuencias)) + " pulsaciones por minuto y el ritmo cardiaco más alto cayó en " + str(max(frecuencias)) + " pulsaciones por minuto."
+                dispatcher.utter_message(mensaje)
+                dispatcher.utter_message("Te hice una gráfica para que observes claramente cómo se distribuyen las frecuencias cardiacas en pacientes de diabetes, espero te sea de utilidad")
+                dispatcher.utter_message(image="https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/frecuencias_cardiacas_pacientes.png")
+            
+            elif ultima_intencion == "colesterol_pacientes_diabeticos":
+                sparql_query = prefijo + """
+                    SELECT ?nota ?analisis ?colesterol
+                    WHERE {
+                        ?nota paciente:tieneAnalisis ?analisis .
+                        ?nota paciente:tieneColesterolTotal ?colesterol .
+                        ?nota a paciente:Nota_Medica .
+                    }
+                """
+                query = prepareQuery(sparql_query)
+                padecimiento_buscar = "DIABETES"
+                niveles_colesterol = []
+    
+                for row in onto.query(query):
+                    if padecimiento_buscar in row.analisis.upper():
+                        niveles_colesterol.append(float(row.colesterol))
+            
+                prom = sum(niveles_colesterol) / len(niveles_colesterol)
+                mensaje = "Estuve revisando datos que se encuentran en una red ontológica de diabetes y encontré que los niveles de colesterol total promedio cayó en " + str(prom) + " mg/dl, mientras que el valor más bajo cayó en " + str(min(niveles_colesterol)) + " mg/dl, y el colesterol más alto registrado fue de " + str(max(niveles_colesterol)) + " mg/dl."
+                dispatcher.utter_message(mensaje)
+                dispatcher.utter_message("Como se observa es un promedio bastante bueno puesto que En general, se recomienda un nivel de colesterol inferior a los 200 mg/dl. Entre los 200 mg/dl y los 239 mg/dl, el nivel de colesterol se considera elevado o limítrofe y es aconsejable reducirlo. Un nivel de 240 mg/dl o más de colesterol se considera elevado y es necesario tomar medidas para reducirlo. Algunas maneras de reducir el nivel de colesterol son cambiar la alimentación, iniciar un programa de ejercicio físico y tomar medicamentos reductores del colesterol.\n\nFUENTE: https://www.texasheart.org/heart-health/heart-information-center/topics/colesterol/#:~:text=En%20general%2C%20se%20recomienda%20un,necesario%20tomar%20medidas%20para%20reducirlo.")
+                dispatcher.utter_message("Te hice una gráfica de dispersión con los datos registrados de colesterol total en pacientes con diabetes, espero te sea de utilidad")
+                dispatcher.utter_message(image="https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/colesterol_pacientes.png")
+            
+            elif ultima_intencion == "glucosa_pacientes_diabeticos":
+                sparql_query = prefijo + """
+                    SELECT ?nota ?analisis ?glucosa
+                    WHERE {
+                        ?nota paciente:tieneAnalisis ?analisis .
+                        ?nota paciente:tieneGlucosa ?glucosa .
+                        ?nota a paciente:Nota_Medica .
+                    }
+                """
+                query = prepareQuery(sparql_query)
+                padecimiento_buscar = "DIABETES"
+                niveles_glucosa = []
+    
+                for row in onto.query(query):
+                    if padecimiento_buscar in row.analisis.upper():
+                        niveles_glucosa.append(float(row.glucosa))
+    
+                prom = sum(niveles_glucosa) / len(niveles_glucosa)
+                mensaje = "De acuerdo con registros de pacientes de Diabetes se encontró que el promedio de glucosa era de " + str(prom) + " mg/dl. mientras que el nivel más bajo registrado fue de " + str(min(niveles_glucosa)) + " mg/dl y el valor de glucosa más alto llegó a " + str(max(niveles_glucosa)) + " mg/dl."
+                dispatcher.utter_message(mensaje)
+                dispatcher.utter_message("Como se observa el promedio de glucosa es bastante elevado, normalmente el nivel de glucosa en una persona con diabetes es de 126 mg/dl.\n\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/getting-tested.html#:~:text=Los%20valores%20de%20az%C3%BAcar%20en,mayores%20indican%20que%20tiene%20diabetes.&text=Esta%20prueba%20mide%20sus%20niveles,un%20l%C3%ADquido%20que%20contiene%20glucosa.")
+                dispatcher.utter_message("Me tomé la libertad de hacerte esta gráfica para que observes el cómo se dispersan los valores de glucosa en los pacientes de diabetes de México")
+                dispatcher.utter_message(image="https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/glucosa_pacientes.png")
+            
+            elif ultima_intencion == "insulina_pacientes_diabeticos":
+                sparql_query = prefijo + """
+                    SELECT ?nota ?analisis ?insulina
+                    WHERE {
+                        ?nota paciente:tieneAnalisis ?analisis .
+                        ?nota paciente:tieneInsulina ?insulina .
+                        ?nota a paciente:Nota_Medica .
+                    }
+                """
+                query = prepareQuery(sparql_query)
+                padecimiento_buscar = "DIABETES"
+                niveles_insulina = []
+    
+                for row in onto.query(query):
+                    if padecimiento_buscar in row.analisis.upper():
+                        niveles_insulina.append(float(row.insulina))
+    
+                prom = sum(niveles_insulina) / len(niveles_insulina)
+                mensaje = "Consulté registros de pacientes de diabetes y encontré que el promedio de insulina estaba en " + str(prom) + " mg/dl, mientras que el valor de insulina más bajo fue de " + str(min(niveles_insulina)) + " mg/dl y el valor más alto registrado fue de " + str(max(niveles_insulina)) + " mg/dl."
+                dispatcher.utter_message(mensaje)
+                dispatcher.utter_message("Como se observa el promedio de insulina es demasiado bajo. Los niveles normales, no diabéticos oscilan entre 60-100mg/dl y 140 mg/dl o menos después de las comidas y aperitivos..\n\nFUENTE: https://dtc.ucsf.edu/es/tipos-de-diabetes/diabetes-tipo-2/tratamiento-de-la-diabetes-tipo-2/medicamentos-y-terapias-2/prescripcion-de-insulina-para-diabetes-tipo-2/informacion-basica-sobre-la-insulina/")
+                dispatcher.utter_message("También te hice esta gráfica para que puedas ver la tendencia de insulina en diferentes pacientes, espero te ayude")
+                dispatcher.utter_message(image="https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/insulina_pacientes.png")
+                
+            elif ultima_intencion == "generos_pacientes_diabeticos":
+                sparql_query = prefijo2 + """
+                    SELECT ?paciente ?sexo
+                    WHERE {
+                        ?paciente paciente:tieneSexo ?sexo .
+                        ?paciente a paciente:Paciente .
+                    }
+                """
+                query = prepareQuery(sparql_query)
+        
+                masculino = 0
+                femenino = 0
+                for row in onto2.query(query):
+                    if row.sexo.upper() == "MASCULINO":
+                        masculino = masculino + 1
+                    else:
+                        femenino = femenino + 1
+                
+                mensaje = "De pacientes registrados en una red ontológica pude encontrar que " + str(masculino) + " casos eran de Hombres y " + str(femenino) + " eran casos de Mujeres"
+                dispatcher.utter_message(mensaje)
+                dispatcher.utter_message("Te hice este gráfico donde se ve el porcentaje de casos en Hombres y Mujeres, como puedes ver hay una ligera tendencia en el caso de los hombres pero no es mucha, por lo que hombres y mujeres deben cuidarse por igual")
+                dispatcher.utter_message(image="https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/sexo_pacientes.png")
+
+            elif ultima_intencion == "medicamentos_pacientes_diabeticos":
+                estadoConsulta = False
+                sparql_query = prefijo3 + """
+                    SELECT ?medicamento ?generalidad ?nombre ?administracion ?forma ?dosis
+                    WHERE {
+                        ?medicamento medicamento:tieneNombre ?nombre .
+                        ?medicamento medicamento:tieneGeneralidad ?generalidad .
+                        ?medicamento medicamento:tieneViaDeAdministracion ?administracion .
+                        ?medicamento medicamento:tieneFormaFarmaceutica ?forma .
+                        ?medicamento medicamento:tieneDosisIndicada ?dosis .
+                        ?medicamento a medicamento:Medicamento_De_Cuadro_Basico .
+                    }
+                """
+                query = prepareQuery(sparql_query)
+
+                padecimiento_buscar = tracker.get_slot("padecimiento").upper()
+
+                for row in onto3.query(query):
+                    if padecimiento_buscar in row.generalidad.upper():
+                        medicamento = "NOMBRE: " + row.nombre + "\n"
+                        medicamento = medicamento + "GENERALIDADES: " + row.generalidad + "\n"
+                        via = row.administracion.split("#")        
+                        medicamento = medicamento + "VÍA DE ADMINISTRACIÓN: " + via[1] + "\n"
+                        forma = row.forma.split("#")
+                        medicamento = medicamento + "FORMA FARMACEUTICA: " + forma[1] + "\n"
+                        dosis = row.dosis.split("#")
+                        dispatcher.utter_message(medicamento)
+
+                        # Esta subconsulta servirá una vez que existan registros en la ontologia
+                        sparql_query2 = prefijo3 + """
+                            SELECT ?medicamento ?cantidadMaxima ?cantidadMinima ?indicacion
+                            WHERE {
+                                ?medicamento medicamento:tieneCantidadMaxima ?cantidadMaxima .
+                                ?medicamento medicamento:tieneCantidadMinima ?cantidadMinima .
+                                ?medicamento medicamento:tieneIndicacionAdicional ?indicacion .
+                                ?medicamento a medicamento:Dosis_Indicada_Para_Adultos .
+                            }
+                        """
+                        query2 = prepareQuery(sparql_query2)
+
+                        for col in onto3.query(query2):
+                            dosisTemp = col.medicamento.split("#")
+                            if dosis[1].strip() == dosisTemp[1].strip():
+                                msgDosis = "CANTIDAD MÁXIMA: " + col.cantidadMaxima + "\n"
+                                msgDosis = msgDosis + "CANTIDAD MÍNIMA: " + col.cantidadMinima + "\n"
+                                msgDosis = msgDosis + "INDICACIÓN ADICIONAL: " + col.indicacion
+                                dispatcher.utter_message(msgDosis)
+                                                                
+                        estadoConsulta = True
+
+                if not estadoConsulta:
+                    dispatcher.utter_message("Lo siento, no se tienen registros de medicamentos para la búsqueda especificada")
+                
+        except Exception as e:
+            estado = "FALLO"
+            error = "El servidor de acciones está experimentando un problema. Intenta de nuevo más tarde."
+            dispatcher.utter_message(error)
+            print(e)
+        
+        dbMsg = "action_consulta_red con la intención " + ultima_intencion
+        bitacoraBD(dbMsg, estado)
+        return [SlotSet("padecimiento", None)]
 
 def bitacoraBD(operacion, estado):
     try:

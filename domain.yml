@@ -161,6 +161,23 @@ intents:
 - complicaciones_ataque_cardiaco
 - prevencion_ataque_cardiaco
 - conocer_peso_diabeticos
+- antecedentes_diabeticos
+- imc_diabeticos
+- edades_diabeticos
+- condicion_pacientes_diabeticos
+- temperaturas_pacientes_diabeticos
+- estaturas_pacientes_diabeticos
+- presiones_pacientes_diabeticos
+- frecuencia_respiratoria_pacientes_diabeticos
+- frecuencia_cardiaca_pacientes_diabeticos
+- colesterol_pacientes_diabeticos
+- glucosa_pacientes_diabeticos
+- insulina_pacientes_diabeticos
+- generos_pacientes_diabeticos
+- medicamentos_pacientes_diabeticos
+- imc_peligroso
+- costo_tratamiento
+- perdida_peso
 entities:
 - tipo
 - nombre
@@ -174,6 +191,7 @@ entities:
 - nervios
 - metodo
 - metodo_deteccion
+- padecimiento
 slots:
   nombre:
     type: text
@@ -281,6 +299,14 @@ slots:
       entity: metodo_deteccion
     - type: from_entity
       entity: metodo_deteccion
+  padecimiento:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: padecimiento
+    - type: from_entity
+      entity: padecimiento
 responses:
   utter_en_que_puedo_ayudarte:
   - text: Yo me encuentro muy bien Dime ¿en qué puedo ayudarte?
@@ -356,10 +382,10 @@ responses:
   - text: Gracias, ahora necesito la estatura del paciente por favor
   utter_explicar_objetivo:
   - text: Soy DiaBot y puedo ayudarte con mucho gusto a responder preguntas relacionadas a la Diabetes Mellitus en México Intenta algo como pedirme que calcule el IMC de un paciente
-  - text: Mi nombre es Diabot y puedo ayudarte a responder cuestionamientos comúnes sobre la Diabetes Mellitus en México
-  - text: Soy Diabot y puedo responder a preguntas sobre la diabetes en nuestro país
-  - text: Me presento, soy Diabot y mi objetivo es ayudarte a responder dudas comúnes que tengan tus pacientes sobre la Diabetes Mellitus
-  - text: Mi nombre es Diabot y puedo ayudarte a diagnosticar a pacientes de Diabetes Mellitus y también a resolver dudas frecuentes
+  - text: Mi nombre es Diabot y puedo ayudarte a responder cuestionamientos comúnes sobre la Diabetes Mellitus en México asi también como con datos estadísticos y pruebas como la prediabetes o puedo enseñarte a usar un glucómetro
+  - text: Soy Diabot y puedo responder a preguntas sobre la diabetes en nuestro país asímismo puedo darte recomendaciones sobre cuidados y mejora de vida
+  - text: Me presento, soy Diabot y mi objetivo es ayudarte a responder dudas comúnes que tengan tus pacientes sobre la Diabetes Mellitus y también puedo ayudarte a entender las enfermedades asociadas y las complicaciones
+  - text: Mi nombre es Diabot y puedo ayudarte a diagnosticar a pacientes de Diabetes Mellitus y también a resolver dudas frecuentes, también sé explicarte los conceptos que se asocian a ella como glucosa, insulina, complicaciones y tipos de diabetes
   utter_necesito_dato:
   - text: Lo siento, necesito ese dato para poder ayudarte a calcular el IMC de tu paciente
   - text: Perdón, realmente necesito ese dato para calcular el Índice de Masa Corporal
@@ -714,6 +740,12 @@ responses:
   - text: "La enfermedad de las arterias coronarias causa la mayoría de los ataques cardíacos. En la enfermedad de las arterias coronarias, una o más de las arterias del corazón (coronarias) están obstruidas. Esto usualmente se debe a los depósitos de colesterol llamados placas. Las placas estrechan las arterias y disminuyen el flujo sanguíneo al corazón. Si se rompe una placa puede ocasionar un coágulo sanguíneo en el corazón. Se puede producir un ataque cardíaco por una obstrucción total o parcial de una arteria del corazón (coronaria). Una forma de clasificar los ataques cardíacos es si un electrocardiograma (o electrocardiografía) muestra algún cambio específico (elevación del segmento ST) que requiera un tratamiento invasivo de emergencia. El proveedor de atención médica puede usar los resultados del electrocardiograma para describir estos tipos de ataque cardíaco."
   utter_prueba_prediabetes:
   - text: "Claro, la prueba de la prediabetes la encuentras de manera online e interactiva en el siguiente enlace https://www.cdc.gov/prediabetes/spanish/risktest/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fdiabetes%2Fspanish%2Frisktest%2Findex.html"
+  utter_imc_peligroso:
+  - text: "Los pacientes con IMC alto corren un mayor riesgo de padecer una serie de afecciones graves, como enfermedad de la arteria coronaria, hipertensión y accidente cerebrovascular; mientras que las personas con IMC bajo pueden padecer desnutrición o un desorden alimentario. Aunque debes considerar que el IMC no distingue grasa de músculo por lo que no es al 100% confiable. FUENTE: https://www.topdoctors.es/diccionario-medico/indice-de-masa-corporal-imc"
+  utter_costo_tratamiento:
+  - text: "De acuerdo con esta página https://blog.planseguro.com.mx/cuanto-cuesta-tratar-la-diabetes-en-mexico/ En caso de contar con servicios de seguridad social y de Salud el costo al mes para el tratamiento de diabetes es de $2,000 mientras que en caso de no contar con un servicio de seguridad social y de Salud ronda mensualmente por los $7,500. Normalmente la mayoría de los medicamentos los encuentras en los centros de salud o clínicas del país."
+  utter_perdida_peso:
+  - text: "Cuando pierdes glucosa a través de la micción frecuente, también pierdes calorías. Además de deshidratación, puede causar una rápida pérdida de peso. Esto ocurre sobre todo en personas con diabetes tipo 1, pero también puede darse en algunas personas con diabetes tipo 2. Las personas recién diagnosticadas con diabetes pueden subir algo de peso de inmediato como resultado de una mejor hidratación. Con el tiempo, al perder menos azúcar por la orina, el aumento de peso puede continuar, a no ser que se tomen medidas para evitarlo. FUENTE: https://www.mayoclinic.org/es/diseases-conditions/diabetes/in-depth/diabetes-symptoms/art-20044248#:~:text=Cuando%20pierdes%20glucosa%20a%20trav%C3%A9s,personas%20con%20diabetes%20tipo%202."
 actions:
 - action_saludo
 - action_explica_tipos
@@ -730,6 +762,7 @@ actions:
 - action_sintomas_diabetes
 - action_edad_diabetes
 - action_manejar_diabetes
+- action_consultas_red
 forms:
   datos_generales_form:
     required_slots:

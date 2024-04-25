@@ -1,9 +1,0 @@
-viridis: Una paleta de colores perceptualmente uniforme que va desde el azul oscuro hasta el amarillo claro. Es útil para representar datos continuos.
-
-plasma: Similar a viridis pero con un rango de colores más amplio y más saturado.
-
-inferno: Una paleta similar a viridis pero con tonos más cálidos, que van desde el morado oscuro hasta el amarillo.
-
-magma: Similar a inferno pero con más contraste y una gama más amplia de colores.
-
-cividis: Una paleta diseñada para ser accesible para personas con deficiencias en la percepción del color.
