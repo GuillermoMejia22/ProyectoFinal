@@ -8,7 +8,8 @@ from owlready2 import *
 from rdflib import Graph
 from rdflib.plugins.sparql import prepareQuery
 import mysql.connector
-    
+
+# Esta clase saluda al usuario    
 class ActionSaludo(Action):
     
     def name(self) -> Text:
@@ -134,7 +135,6 @@ class ActionExplicaTipos(Action):
               
         bitacoraBD("action_explica_tipos", estado)
         return [SlotSet("tipo", None)]
-
 
 class ActionDespedida(Action):
     
@@ -264,7 +264,9 @@ class ActionCalcularIMC(Action):
                 situacion = "Obesidad tipo IV o extrema" 
                 recomendacion = "El paciente es casi 100 por ciento seguro que ya tenga diabetes, sin embargo es necesario cambiar su rutina para llevar el tratamiento de la diabetes" 
             
-            imcStr = str(persona.tieneIMC)
+            imc = persona.tieneIMC
+            imcStr = "{:.2f}".format(imc)
+            #imcStr = str(persona.tieneIMC)
             pesoStr = str(peso) + " kg"
             estaturaStr = str(estatura) + " metros"
             edadStr = str(edad) + " años"
@@ -1360,7 +1362,7 @@ class ActionConsultasRed(Action):
                         pesos.append(float(row.peso))
             
                 prom = sum(pesos) / len(pesos)
-                mensaje = "De acuerdo con registros de pacientes de Diabetes el promedio de los pesos es de " + str(prom) + " kg. Mientras que el peso más bajo registrado es de " + str(min(pesos)) + " kg. Y el peso más alto es de " + str(max(pesos)) + " kg."
+                mensaje = "De acuerdo con registros de pacientes de Diabetes el promedio de los pesos es de {:.2f} kg. Mientras que el peso más bajo registrado es de {:.2f} kg. Y el peso más alto es de {:.2f} kg.".format(prom, min(pesos), max(pesos))
                 dispatcher.utter_message(mensaje)
                 dispatcher.utter_message("Te he generado una gráfica con los datos recopilados de pacientes de diabetes en relación a su peso, espero te sirva")
                 dispatcher.utter_message(image="https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/pesos_pacientes.png")
@@ -1400,7 +1402,7 @@ class ActionConsultasRed(Action):
             
                 prom = sum(imcs) / len(imcs)
                 
-                mensaje = "De acuerdo con registros de pacientes de Diabetes en México el promedio del Índice de Masa Corporal se encuentra en " + str(prom) + "Mientras que el IMC más bajo registrado es de " + str(min(imcs)) + " Y el IMC más alto es de " + str(max(imcs))
+                mensaje = "De acuerdo con registros de pacientes de Diabetes en México el promedio del Índice de Masa Corporal se encuentra en {:.2f}. Mientras que el IMC más bajo registrado es de {:.2f} y el IMC más alto es de {:.2f}.".format(prom, min(imcs), max(imcs))
                 dispatcher.utter_message(mensaje)
                 dispatcher.utter_message("Lo cual como puedes ver recae en la categoría del Sobrepeso, es por ello que no se debe bajar la guardia incluso si no se tiene obsesidad")
                 dispatcher.utter_message("Te generé una gráfica con la clasificación de los IMC de pacientes de diabetes en México, espero te sirva")
@@ -1425,7 +1427,7 @@ class ActionConsultasRed(Action):
                         edades.append(float(row.edad))
         
                 prom = sum(edades) / len(edades)
-                mensaje = "Con datos que consulté de pacientes de Diabetes en México encontré que el promedio de edad recae en " + str(prom) + " años. Mientras que el paciente más joven registrado es de " + str(min(edades)) + " años. Y el paciente mayor registrado es de " + str(max(edades)) + " años."
+                mensaje = "Con datos que consulté de pacientes de Diabetes en México encontré que el promedio de edad recae en {:.2f} años. Mientras que el paciente más joven registrado es de {:.2f} años. Y el paciente mayor registrado es de {:.2f} años.".format(prom, min(edades), max(edades))
                 dispatcher.utter_message(mensaje)
                 dispatcher.utter_message("Si te das cuenta, la diabetes es más presente en personas de la tercera edad, también te generé una gráfica a partir de los datos, espero te sea de ayuda")
                 dispatcher.utter_message(image="https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/edades_pacientes.png")
@@ -1452,7 +1454,7 @@ class ActionConsultasRed(Action):
                         temperaturas.append(float(row.temperatura))
     
                 prom = sum(temperaturas) / len(temperaturas)
-                mensaje = "Acabo de hacer una consulta a una red ontológica con datos de pacientes de diabetes en México y me encontré que el promedio de las temperaturas corporales registradas es de " + str(prom) + " grados centígrados. Mientras que el temperatura más baja registrado es de " + str(min(temperaturas)) + " grados centígrados. Y la temperatura más alta fue de " + str(max(temperaturas)) + " grados centígrados."
+                mensaje = "Acabo de hacer una consulta a una red ontológica con datos de pacientes de diabetes en México y me encontré que el promedio de las temperaturas corporales registradas es de {:.2f} grados centígrados. Mientras que la temperatura más baja registrada es de {:.2f} grados centígrados. Y la temperatura más alta fue de {:.2f} grados centígrados.".format(prom, min(temperaturas), max(temperaturas))
                 dispatcher.utter_message(mensaje)
                 dispatcher.utter_message("También te hice una gráfica de dispersión donde puedes ver con mayor detalle las temperaturas registradas en pacientes de diabetes en México, espero te sirva")
                 dispatcher.utter_message(image="https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/temperaturas_pacientes.png")
@@ -1475,7 +1477,7 @@ class ActionConsultasRed(Action):
                         estaturas.append(float(row.talla))
     
                 prom = sum(estaturas) / len(estaturas)
-                mensaje = "Estuve consultando datos de pacientes de diabetes en México y pude encontrar que el promedio de estaturas era de " + str(prom) + " metros. Mientras que la estatura más baja registrada es de " + str(min(estaturas)) + " metros. Y la estatura más alta registrada es de " + str(max(estaturas)) + " metros."
+                mensaje = "Estuve consultando datos de pacientes de diabetes en México y pude encontrar que el promedio de estaturas era de {:.2f} metros. Mientras que la estatura más baja registrada es de {:.2f} metros. Y la estatura más alta registrada es de {:.2f} metros.".format(prom, min(estaturas), max(estaturas))
                 dispatcher.utter_message(mensaje)
                 dispatcher.utter_message("Me tomé la libertad de generarte este diagrama de dispersión en el que puedes ver la tendencia de estaturas de los pacientes de diabetes, espero te sea de utilidad")
                 dispatcher.utter_message(image="https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/estaturas_pacientes.png")
@@ -1502,7 +1504,7 @@ class ActionConsultasRed(Action):
     
                 prom = sum(presionesDistolicas) / len(presionesDistolicas)
                 prom2 = sum(presionesSistolicas) / len(presionesSistolicas)
-                mensaje = "Acabo de consultar datos de pacientes de diabetes en México y encontré que el promedio de sus presiones diastólicas era de " + str(prom) + " mientras que las presiones sistólicas rondaban en " + str(prom2)
+                mensaje = "Acabo de consultar datos de pacientes de diabetes en México y encontré que el promedio de sus presiones diastólicas era de {:.2f} mientras que las presiones sistólicas rondaban en {:.2f}".format(prom, prom2)
                 dispatcher.utter_message(mensaje)
                 dispatcher.utter_message("También aproveché los datos y te hice una gráfica de dispersión sobre los niveles de presión sistólica y diastólica de pacientes con diabetes, quizá te sea útil")
                 dispatcher.utter_message(image="https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/presiones_sanguineas_pacientes.png")
@@ -1525,7 +1527,7 @@ class ActionConsultasRed(Action):
                         frecuencias.append(int(row.frecuencia))
 
                 prom = sum(frecuencias) / len(frecuencias)
-                mensaje = "Hice una consulta a datos de pacientes con diabetes en México y encontré que el promedio de las frecuencias respiratorias registradas era de " + str(prom) + " respiraciones por minuto, mientras que el valor de la frecuencia más baja fue de " + str(min(frecuencias)) + " respiraciones por minuto, y la frecuencia más alta fue de " + str(max(frecuencias)) + " respiraciones por minuto"
+                mensaje = "Hice una consulta a datos de pacientes con diabetes en México y encontré que el promedio de las frecuencias respiratorias registradas era de {:.2f} respiraciones por minuto, mientras que el valor de la frecuencia más baja fue de {:.2f} respiraciones por minuto, y la frecuencia más alta fue de {:.2f} respiraciones por minuto".format(prom, min(frecuencias), max(frecuencias))
                 dispatcher.utter_message(mensaje)
                 dispatcher.utter_message("Asímismo te acabo de generar una gráfica donde puedes ver como se distribuyen las frecuencias respiratorias en los pacientes de diabetes, quizá te resulte útil")
                 dispatcher.utter_message(image="https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/frecuencias_respiratorias_pacientes.png")
@@ -1548,7 +1550,7 @@ class ActionConsultasRed(Action):
                         frecuencias.append(int(row.frecuencia))
 
                 prom = sum(frecuencias) / len(frecuencias)
-                mensaje = "Checando expedientes de pacientes con diabetes en México pude ver que el promedio de las frecuencias cardiacas era de " + str(prom) + " pulsaciones por minuto. Mientras qué el valor más bajo registrado cayó en " + str(min(frecuencias)) + " pulsaciones por minuto y el ritmo cardiaco más alto cayó en " + str(max(frecuencias)) + " pulsaciones por minuto."
+                mensaje = "Checando expedientes de pacientes con diabetes en México pude ver que el promedio de las frecuencias cardiacas era de {:.2f} pulsaciones por minuto. Mientras qué el valor más bajo registrado cayó en {:.2f} pulsaciones por minuto y el ritmo cardiaco más alto cayó en {:.2f} pulsaciones por minuto.".format(prom, min(frecuencias), max(frecuencias))
                 dispatcher.utter_message(mensaje)
                 dispatcher.utter_message("Te hice una gráfica para que observes claramente cómo se distribuyen las frecuencias cardiacas en pacientes de diabetes, espero te sea de utilidad")
                 dispatcher.utter_message(image="https://raw.githubusercontent.com/GuillermoMejia22/ImagenesProyecto/main/frecuencias_cardiacas_pacientes.png")
@@ -1571,7 +1573,7 @@ class ActionConsultasRed(Action):
                         niveles_colesterol.append(float(row.colesterol))
             
                 prom = sum(niveles_colesterol) / len(niveles_colesterol)
-                mensaje = "Estuve revisando datos que se encuentran en una red ontológica de diabetes y encontré que los niveles de colesterol total promedio cayó en " + str(prom) + " mg/dl, mientras que el valor más bajo cayó en " + str(min(niveles_colesterol)) + " mg/dl, y el colesterol más alto registrado fue de " + str(max(niveles_colesterol)) + " mg/dl."
+                mensaje = "Estuve revisando datos que se encuentran en una red ontológica de diabetes y encontré que los niveles de colesterol total promedio cayó en {:.2f} mg/dl, mientras que el valor más bajo cayó en {:.2f} mg/dl, y el colesterol más alto registrado fue de {:.2f} mg/dl.".format(prom, min(niveles_colesterol), max(niveles_colesterol))
                 dispatcher.utter_message(mensaje)
                 dispatcher.utter_message("Como se observa es un promedio bastante bueno puesto que En general, se recomienda un nivel de colesterol inferior a los 200 mg/dl. Entre los 200 mg/dl y los 239 mg/dl, el nivel de colesterol se considera elevado o limítrofe y es aconsejable reducirlo. Un nivel de 240 mg/dl o más de colesterol se considera elevado y es necesario tomar medidas para reducirlo. Algunas maneras de reducir el nivel de colesterol son cambiar la alimentación, iniciar un programa de ejercicio físico y tomar medicamentos reductores del colesterol.\n\nFUENTE: https://www.texasheart.org/heart-health/heart-information-center/topics/colesterol/#:~:text=En%20general%2C%20se%20recomienda%20un,necesario%20tomar%20medidas%20para%20reducirlo.")
                 dispatcher.utter_message("Te hice una gráfica de dispersión con los datos registrados de colesterol total en pacientes con diabetes, espero te sea de utilidad")
@@ -1595,7 +1597,7 @@ class ActionConsultasRed(Action):
                         niveles_glucosa.append(float(row.glucosa))
     
                 prom = sum(niveles_glucosa) / len(niveles_glucosa)
-                mensaje = "De acuerdo con registros de pacientes de Diabetes se encontró que el promedio de glucosa era de " + str(prom) + " mg/dl. mientras que el nivel más bajo registrado fue de " + str(min(niveles_glucosa)) + " mg/dl y el valor de glucosa más alto llegó a " + str(max(niveles_glucosa)) + " mg/dl."
+                mensaje = "De acuerdo con registros de pacientes de Diabetes se encontró que el promedio de glucosa era de {:.2f} mg/dl. Mientras que el nivel más bajo registrado fue de {:.2f} mg/dl y el valor de glucosa más alto llegó a {:.2f} mg/dl.".format(prom, min(niveles_glucosa), max(niveles_glucosa))
                 dispatcher.utter_message(mensaje)
                 dispatcher.utter_message("Como se observa el promedio de glucosa es bastante elevado, normalmente el nivel de glucosa en una persona con diabetes es de 126 mg/dl.\n\nFUENTE: https://www.cdc.gov/diabetes/spanish/basics/getting-tested.html#:~:text=Los%20valores%20de%20az%C3%BAcar%20en,mayores%20indican%20que%20tiene%20diabetes.&text=Esta%20prueba%20mide%20sus%20niveles,un%20l%C3%ADquido%20que%20contiene%20glucosa.")
                 dispatcher.utter_message("Me tomé la libertad de hacerte esta gráfica para que observes el cómo se dispersan los valores de glucosa en los pacientes de diabetes de México")
@@ -1619,7 +1621,7 @@ class ActionConsultasRed(Action):
                         niveles_insulina.append(float(row.insulina))
     
                 prom = sum(niveles_insulina) / len(niveles_insulina)
-                mensaje = "Consulté registros de pacientes de diabetes y encontré que el promedio de insulina estaba en " + str(prom) + " mg/dl, mientras que el valor de insulina más bajo fue de " + str(min(niveles_insulina)) + " mg/dl y el valor más alto registrado fue de " + str(max(niveles_insulina)) + " mg/dl."
+                mensaje = "Consulté registros de pacientes de diabetes y encontré que el promedio de insulina estaba en {:.2f} mg/dl, mientras que el valor de insulina más bajo fue de {:.2f} mg/dl y el valor más alto registrado fue de {:.2f} mg/dl.".format(prom, min(niveles_insulina), max(niveles_insulina))
                 dispatcher.utter_message(mensaje)
                 dispatcher.utter_message("Como se observa el promedio de insulina es demasiado bajo. Los niveles normales, no diabéticos oscilan entre 60-100mg/dl y 140 mg/dl o menos después de las comidas y aperitivos..\n\nFUENTE: https://dtc.ucsf.edu/es/tipos-de-diabetes/diabetes-tipo-2/tratamiento-de-la-diabetes-tipo-2/medicamentos-y-terapias-2/prescripcion-de-insulina-para-diabetes-tipo-2/informacion-basica-sobre-la-insulina/")
                 dispatcher.utter_message("También te hice esta gráfica para que puedas ver la tendencia de insulina en diferentes pacientes, espero te ayude")

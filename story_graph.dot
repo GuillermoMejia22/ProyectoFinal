@@ -5,22 +5,23 @@ digraph  {
 2 [class=active, fontsize=12, label=action_saludo];
 3 [class=active, fontsize=12, label=utter_feliz];
 4 [class=active, fontsize=12, label=utter_en_que_puedo_ayudarte];
-5 [class=active, fontsize=12, label=action_manda_imagen];
+5 [class=active, fontsize=12, label=utter_explicar_objetivo];
+6 [class=active, fontsize=12, label=utter_que_es_la_diabetes];
 7 [class="intent dashed active", label="  ?  ", shape=rect];
 8 [class="intent active", fillcolor=lightblue, label="/saludar", shape=rect, style=filled];
 9 [class="intent active", fillcolor=lightblue, label="/mood_feliz", shape=rect, style=filled];
-10 [class="intent active", fillcolor=lightblue, label="/explica_hipoglucemia", shape=rect, style=filled];
-11 [class="intent active", fillcolor=lightblue, label="/explica_hipoglucemia", shape=rect, style=filled];
+10 [class="intent active", fillcolor=lightblue, label="/conocer_funcionalidades", shape=rect, style=filled];
+11 [class="intent active", fillcolor=lightblue, label="/que_es_la_diabetes", shape=rect, style=filled];
 0 -> "-1"  [class="", key=NONE, label=""];
 0 -> 1  [class=active, key=NONE, label=""];
 1 -> 8  [class=active, key=0];
 2 -> 9  [class=active, key=0];
 3 -> 4  [class=active, key=NONE, label=""];
 4 -> 10  [class=active, key=0];
-5 -> 7  [class=active, key=NONE, label=""];
 5 -> 11  [class=active, key=0];
+6 -> 7  [class=active, key=NONE, label=""];
 8 -> 2  [class=active, key=0];
 9 -> 3  [class=active, key=0];
 10 -> 5  [class=active, key=0];
-11 -> 5  [class=active, key=0];
+11 -> 6  [class=active, key=0];
 }
